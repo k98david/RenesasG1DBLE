@@ -1,0 +1,2280 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\dataflash.asm -_msgoff
+          -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\dataflash.asm
+Obj-file: DefaultBuild\dataflash.rel
+Prn-file: DefaultBuild\dataflash.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:27
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\dataflash\dataflas
+    5     5                      ;             h.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_E
+    6     6                      ;             XMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_R
+    7     7                      ;             BLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMP
+    8     8                      ;             LE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_
+    9     9                      ;             HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECL
+   10    10                      ;             IB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\
+   11    11                      ;             ..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\.
+   12    12                      ;             .\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataf
+   13    13                      ;             lash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i
+   14    14                      ;             ..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\.
+   15    15                      ;             .\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\
+   16    16                      ;             ..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf 
+   17    17                      ;             -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -
+   18    18                      ;             i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_
+   19    19                      ;             sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\dr
+   20    20                      ;             iver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..
+   21    21                      ;             \..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i.
+   22    22                      ;             .\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src
+   23    23                      ;             \sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -z
+   24    24                      ;             ps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\dataflash\dataflash.c
+   26    26                      ; Asm-file  : DefaultBuild\dataflash.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         01D0H,  0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, dataflash.c
+   37    37                      $DGS    MOD_NAM, dataflash,     00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, DFL_DATA,      U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, DFL_CNST,      U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, DFL_CODE,      U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    ENM_TAG, .26fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 01H,           022H
+   56    56                      $DGS    MEB_ENM, _FDL_OK,       00H,    0FFFFH, 04H,    010H,   00H,    00H
+   57    57                      $DGS    MEB_ENM, _FDL_BUSY,     0FFH,   0FFFFH, 04H,    010H,   00H,    00H
+   58    58                      $DGS    MEB_ENM, _FDL_ERR_INITIALIZATION,       02H,    0FFFFH, 04H,    010H,   00H,    00H
+   59    59                      $DGS    MEB_ENM, _FDL_ERR_REJECTED,     03H,    0FFFFH, 04H,    010H,   00H,    00H
+   60    60                      $DGS    MEB_ENM, _FDL_ERR_ABORTED,      04H,    0FFFFH, 04H,    010H,   00H,    00H
+   61    61                      $DGS    MEB_ENM, _FDL_ERR_PARAMETER,    05H,    0FFFFH, 04H,    010H,   00H,    00H
+   62    62                      $DGS    MEB_ENM, _FDL_ERR_STANDBY,      06H,    0FFFFH, 04H,    010H,   00H,    00H
+   63    63                      $DGS    MEB_ENM, _FDL_ERR_ERASE,        01AH,   0FFFFH, 04H,    010H,   00H,    00H
+   64    64                      $DGS    MEB_ENM, _FDL_ERR_BLANK_VERIFY, 01BH,   0FFFFH, 04H,    010H,   00H,    00H
+   65    65                      $DGS    MEB_ENM, _FDL_ERR_WRITE,        01CH,   0FFFFH, 04H,    010H,   00H,    00H
+   66    66                      $DGS    MEB_ENM, _FDL_ERR_CONFIGURATION,        01H,    0FFFFH, 04H,    010H,   00H,    00H
+   67    67                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   68    68                      $DGS    AUX_EOS, 013H,          01H
+   69    69                      $DGS    ENM_TAG, .38fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   70    70                      $DGS    AUX_TAG, 01H,           033H
+   71    71                      $DGS    MEB_ENM, _EEL_OK,       00H,    0FFFFH, 04H,    010H,   00H,    00H
+   72    72                      $DGS    MEB_ENM, _EEL_BUSY,     01H,    0FFFFH, 04H,    010H,   00H,    00H
+   73    73                      $DGS    MEB_ENM, _EEL_ERR_CONFIGURATION,        082H,   0FFFFH, 04H,    010H,   00H,    00H
+   74    74                      $DGS    MEB_ENM, _EEL_ERR_INITIALIZATION,       083H,   0FFFFH, 04H,    010H,   00H,    00H
+   75    75                      $DGS    MEB_ENM, _EEL_ERR_ACCESS_LOCKED,        084H,   0FFFFH, 04H,    010H,   00H,    00H
+   76    76                      $DGS    MEB_ENM, _EEL_ERR_PARAMETER,    085H,   0FFFFH, 04H,    010H,   00H,    00H
+   77    77                      $DGS    MEB_ENM, _EEL_ERR_VERIFY,       086H,   0FFFFH, 04H,    010H,   00H,    00H
+   78    78                      $DGS    MEB_ENM, _EEL_ERR_REJECTED,     087H,   0FFFFH, 04H,    010H,   00H,    00H
+   79    79                      $DGS    MEB_ENM, _EEL_ERR_NO_INSTANCE,  088H,   0FFFFH, 04H,    010H,   00H,    00H
+   80    80                      $DGS    MEB_ENM, _EEL_ERR_POOL_FULL,    089H,   0FFFFH, 04H,    010H,   00H,    00H
+   81    81                      $DGS    MEB_ENM, _EEL_ERR_POOL_INCONSISTENT,    08AH,   0FFFFH, 04H,    010H,   00H,    00H
+   82    82                      $DGS    MEB_ENM, _EEL_ERR_POOL_EXHAUSTED,       08BH,   0FFFFH, 04H,    010H,   00H,    00H
+   83    83                      $DGS    MEB_ENM, _EEL_ERR_INTERNAL,     08CH,   0FFFFH, 04H,    010H,   00H,    00H
+   84    84                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   85    85                      $DGS    AUX_EOS, 022H,          01H
+   86    86                      $DGS    STR_STR, .28fake,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   87    87                      $DGS    AUX_TAG, 0AH,           03EH
+   88    88                      $DGS    MEB_STR, _eel_pool_bytes_u16,   00H,    0FFFFH, 0EH,    08H,    00H,    00H
+   89    89                      $DGS    MEB_STR, _fdl_pool_bytes_u16,   02H,    0FFFFH, 0EH,    08H,    00H,    00H
+   90    90                      $DGS    MEB_STR, _fdl_delay_u16,        04H,    0FFFFH, 0EH,    08H,    00H,    00H
+   91    91                      $DGS    MEB_STR, _eel_pool_blocks_u08,  06H,    0FFFFH, 0CH,    08H,    00H,    00H
+   92    92                      $DGS    MEB_STR, _fdl_pool_blocks_u08,  07H,    0FFFFH, 0CH,    08H,    00H,    00H
+   93    93                      $DGS    MEB_STR, _fx_MHz_u08,   08H,    0FFFFH, 0CH,    08H,    00H,    00H
+   94    94                      $DGS    MEB_STR, _wide_voltage_mode_u08,        09H,    0FFFFH, 0CH,    08H,    00H,    00H
+   95    95                      $DGS    END_STR, .eos,          0AH,    0FFFFH, 00H,    066H,   01H,    00H
+   96    96                      $DGS    AUX_EOS, 033H,          0AH
+   97    97                      $DGS    STR_STR, _bd_addr,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   98    98                      $DGS    AUX_TAG, 06H,           044H
+   99    99                      $DGS    MEB_STR, _addr,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+  100   100                      $DGS    AUX_STR, 00H,           00H,    06H,    06H,    00H,    00H,    00H,    00H
+  101   101                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+  102   102                      $DGS    AUX_EOS, 03EH,          06H
+  103   103                      $DGS    ENM_TAG, .43fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+  104   104                      $DGS    AUX_TAG, 01H,           04CH
+  105   105                      $DGS    MEB_ENM, _DF_STAT_UNINIT,       00H,    0FFFFH, 04H,    010H,   00H,    00H
+  106   106                      $DGS    MEB_ENM, _DF_STAT_STOP, 01H,    0FFFFH, 04H,    010H,   00H,    00H
+  107   107                      $DGS    MEB_ENM, _DF_STAT_START,        02H,    0FFFFH, 04H,    010H,   00H,    00H
+  108   108                      $DGS    MEB_ENM, _DF_STAT_PROC, 03H,    0FFFFH, 04H,    010H,   00H,    00H
+  109   109                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  110   110                      $DGS    AUX_EOS, 044H,          01H
+  111   111                      $DGS    ENM_TAG, .36fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+  112   112                      $DGS    AUX_TAG, 01H,           058H
+  113   113                      $DGS    MEB_ENM, _EEL_CMD_UNDEFINED,    00H,    0FFFFH, 04H,    010H,   00H,    00H
+  114   114                      $DGS    MEB_ENM, _EEL_CMD_STARTUP,      01H,    0FFFFH, 04H,    010H,   00H,    00H
+  115   115                      $DGS    MEB_ENM, _EEL_CMD_WRITE,        02H,    0FFFFH, 04H,    010H,   00H,    00H
+  116   116                      $DGS    MEB_ENM, _EEL_CMD_READ, 03H,    0FFFFH, 04H,    010H,   00H,    00H
+  117   117                      $DGS    MEB_ENM, _EEL_CMD_REFRESH,      04H,    0FFFFH, 04H,    010H,   00H,    00H
+  118   118                      $DGS    MEB_ENM, _EEL_CMD_VERIFY,       05H,    0FFFFH, 04H,    010H,   00H,    00H
+  119   119                      $DGS    MEB_ENM, _EEL_CMD_FORMAT,       06H,    0FFFFH, 04H,    010H,   00H,    00H
+  120   120                      $DGS    MEB_ENM, _EEL_CMD_SHUTDOWN,     07H,    0FFFFH, 04H,    010H,   00H,    00H
+  121   121                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  122   122                      $DGS    AUX_EOS, 04CH,          01H
+  123   123                      $DGS    STR_STR, .39fake,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  124   124                      $DGS    AUX_TAG, 05H,           063H
+  125   125                      $DGS    MEB_STR, _address_pu08, 00H,    0FFFFH, 0CH,    08H,    01H,    01H
+  126   126                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  127   127                      $DGS    MEB_STR, _identifier_u08,       02H,    0FFFFH, 0CH,    08H,    00H,    00H
+  128   128                      $DGS    MEB_STR, _command_enu,  03H,    0FFFFH, 0AH,    08H,    01H,    00H
+  129   129                      $DGS    AUX_STR, 04CH,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  130   130                      $DGS    MEB_STR, _status_enu,   04H,    0FFFFH, 0AH,    08H,    01H,    00H
+  131   131                      $DGS    AUX_STR, 022H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  132   132                      $DGS    END_STR, .eos,          05H,    0FFFFH, 00H,    066H,   01H,    00H
+  133   133                      $DGS    AUX_EOS, 058H,          05H
+  134   134                      $DGS    STR_STR, _df_errno,     00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  135   135                      $DGS    AUX_TAG, 02H,           069H
+  136   136                      $DGS    MEB_STR, _eel,          00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  137   137                      $DGS    MEB_STR, _df,           01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  138   138                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  139   139                      $DGS    AUX_EOS, 063H,          02H
+  140   140                      $DGS    ENM_TAG, .23fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+  141   141                      $DGS    AUX_TAG, 01H,           06FH
+  142   142                      $DGS    MEB_ENM, _DF_READ,      00H,    0FFFFH, 04H,    010H,   00H,    00H
+  143   143                      $DGS    MEB_ENM, _DF_WRITE,     01H,    0FFFFH, 04H,    010H,   00H,    00H
+  144   144                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  145   145                      $DGS    AUX_EOS, 069H,          01H
+  146   146                      $DGS    LAB_SYM, bs_F0137,      U,      U,      00H,    06H,    00H,    00H
+  147   147                      $DGS    LAB_SYM, es_F0137,      U,      U,      00H,    06H,    00H,    00H
+  148   148                      $DGS    LAB_SYM, bs_S0136,      U,      U,      00H,    06H,    00H,    00H
+  149   149                      $DGS    LAB_SYM, es_S0136,      U,      U,      00H,    06H,    00H,    00H
+  150   150                      $DGS    LAB_SYM, bs_F0134,      U,      U,      00H,    06H,    00H,    00H
+  151   151                      $DGS    LAB_SYM, es_F0134,      U,      U,      00H,    06H,    00H,    00H
+  152   152                      $DGS    LAB_SYM, bs_F0135,      U,      U,      00H,    06H,    00H,    00H
+  153   153                      $DGS    LAB_SYM, es_F0135,      U,      U,      00H,    06H,    00H,    00H
+  154   154                      $DGS    LAB_SYM, bs_S0133,      U,      U,      00H,    06H,    00H,    00H
+  155   155                      $DGS    LAB_SYM, es_S0133,      U,      U,      00H,    06H,    00H,    00H
+  156   156                      $DGS    STA_SYM, _testadr,      U,      U,      0D008H, 03H,    01H,    00H
+  157   157                      $DGS    AUX_STR, 03EH,          00H,    06H,    00H,    00H,    00H,    00H,    00H
+  158   158                      $DGS    STA_SYM, _df_stat,      U,      U,      0AH,    03H,    01H,    00H
+  159   159                      $DGS    AUX_STR, 044H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  160   160                      $DGS    STA_SYM, _df_cmd,       U,      U,      0AH,    03H,    01H,    00H
+  161   161                      $DGS    AUX_STR, 04CH,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  162   162                      $DGS    STA_SYM, _df_req,       U,      U,      08H,    03H,    01H,    00H
+  163   163                      $DGS    AUX_STR, 058H,          00H,    05H,    00H,    00H,    00H,    00H,    00H
+  164   164                      $DGS    STA_SYM, _errno_list,   U,      U,      0D008H, 03H,    01H,    03H
+  165   165                      $DGS    AUX_STR, 063H,          00H,    018H,   0CH,    00H,    00H,    00H,    00H
+  166   166                      $DGS    GLV_SYM, _dataflash_init,       U,      U,      0CH,    026H,   01H,    02H
+  167   167                      $DGS    AUX_FUN, 00H,           U,      U,      094H,   01H,    00H
+  168   168                      $DGS    BEG_FUN, ??bf_dataflash_init,   U,      U,      00H,    065H,   01H,    00H
+  169   169                      $DGS    AUX_BEG, 09DH,          02H,    08AH
+  170   170                      $DGS    REG_VAR, _errno,        06H,    0FFFFH, 010CH,  04H,    00H,    00H
+  171   171                      $DGS    REG_VAR, _fal_status,   07H,    0FFFFH, 010AH,  04H,    01H,    00H
+  172   172                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  173   173                      $DGS    BEG_BLK, ??bb00_dataflash_init, U,      U,      00H,    064H,   01H,    00H
+  174   174                      $DGS    AUX_BEG, 0EH,           00H,    08CH
+  175   175                      $DGS    BEG_BLK, ??bb01_dataflash_init, U,      U,      00H,    064H,   01H,    00H
+  176   176                      $DGS    AUX_BEG, 016H,          00H,    00H
+  177   177                      $DGS    END_BLK, ??eb01_dataflash_init, U,      U,      00H,    064H,   01H,    00H
+  178   178                      $DGS    AUX_END, 019H
+  179   179                      $DGS    END_BLK, ??eb00_dataflash_init, U,      U,      00H,    064H,   01H,    00H
+  180   180                      $DGS    AUX_END, 01BH
+  181   181                      $DGS    END_FUN, ??ef_dataflash_init,   U,      U,      00H,    065H,   01H,    00H
+  182   182                      $DGS    AUX_END, 022H
+  183   183                      $DGS    GLV_SYM, _dataflash_start,      U,      U,      0CH,    026H,   01H,    02H
+  184   184                      $DGS    AUX_FUN, 00H,           U,      U,      0BCH,   01H,    00H
+  185   185                      $DGS    BEG_FUN, ??bf_dataflash_start,  U,      U,      00H,    065H,   01H,    00H
+  186   186                      $DGS    AUX_BEG, 0D0H,          02H,    09AH
+  187   187                      $DGS    REG_PAR, _mode,         06H,    0FFFFH, 0510CH, 011H,   00H,    00H
+  188   188                      $DGS    REG_VAR, _errno,        07H,    0FFFFH, 010CH,  04H,    00H,    00H
+  189   189                      $DGS    BEG_BLK, ??bb00_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  190   190                      $DGS    AUX_BEG, 06H,           00H,    09CH
+  191   191                      $DGS    BEG_BLK, ??bb01_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  192   192                      $DGS    AUX_BEG, 014H,          00H,    09EH
+  193   193                      $DGS    BEG_BLK, ??bb02_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  194   194                      $DGS    AUX_BEG, 01AH,          00H,    0A0H
+  195   195                      $DGS    BEG_BLK, ??bb03_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  196   196                      $DGS    AUX_BEG, 026H,          00H,    0A8H
+  197   197                      $DGS    END_BLK, ??eb03_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  198   198                      $DGS    AUX_END, 030H
+  199   199                      $DGS    END_BLK, ??eb02_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  200   200                      $DGS    AUX_END, 031H
+  201   201                      $DGS    END_BLK, ??eb01_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  202   202                      $DGS    AUX_END, 032H
+  203   203                      $DGS    BEG_BLK, ??bb04_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  204   204                      $DGS    AUX_BEG, 036H,          00H,    0AAH
+  205   205                      $DGS    BEG_BLK, ??bb05_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  206   206                      $DGS    AUX_BEG, 038H,          00H,    0AEH
+  207   207                      $DGS    END_BLK, ??eb05_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  208   208                      $DGS    AUX_END, 03BH
+  209   209                      $DGS    BEG_BLK, ??bb06_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  210   210                      $DGS    AUX_BEG, 03DH,          00H,    0B4H
+  211   211                      $DGS    END_BLK, ??eb06_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  212   212                      $DGS    AUX_END, 040H
+  213   213                      $DGS    END_BLK, ??eb04_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  214   214                      $DGS    AUX_END, 041H
+  215   215                      $DGS    BEG_BLK, ??bb07_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  216   216                      $DGS    AUX_BEG, 043H,          00H,    00H
+  217   217                      $DGS    END_BLK, ??eb07_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  218   218                      $DGS    AUX_END, 046H
+  219   219                      $DGS    END_BLK, ??eb00_dataflash_start,        U,      U,      00H,    064H,   01H,    00H
+  220   220                      $DGS    AUX_END, 047H
+  221   221                      $DGS    END_FUN, ??ef_dataflash_start,  U,      U,      00H,    065H,   01H,    00H
+  222   222                      $DGS    AUX_END, 04DH
+  223   223                      $DGS    GLV_SYM, _dataflash_stop,       U,      U,      0CH,    026H,   01H,    02H
+  224   224                      $DGS    AUX_FUN, 00H,           U,      U,      0D4H,   01H,    00H
+  225   225                      $DGS    BEG_FUN, ??bf_dataflash_stop,   U,      U,      00H,    065H,   01H,    00H
+  226   226                      $DGS    AUX_BEG, 012EH,         02H,    0C2H
+  227   227                      $DGS    REG_PAR, _mode,         06H,    0FFFFH, 0510CH, 011H,   00H,    00H
+  228   228                      $DGS    REG_VAR, _errno,        07H,    0FFFFH, 010CH,  04H,    00H,    00H
+  229   229                      $DGS    BEG_BLK, ??bb00_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  230   230                      $DGS    AUX_BEG, 06H,           00H,    0C4H
+  231   231                      $DGS    BEG_BLK, ??bb01_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  232   232                      $DGS    AUX_BEG, 011H,          00H,    0C6H
+  233   233                      $DGS    BEG_BLK, ??bb02_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  234   234                      $DGS    AUX_BEG, 013H,          00H,    0CAH
+  235   235                      $DGS    END_BLK, ??eb02_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  236   236                      $DGS    AUX_END, 020H
+  237   237                      $DGS    BEG_BLK, ??bb03_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  238   238                      $DGS    AUX_BEG, 022H,          00H,    00H
+  239   239                      $DGS    END_BLK, ??eb03_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  240   240                      $DGS    AUX_END, 025H
+  241   241                      $DGS    END_BLK, ??eb01_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  242   242                      $DGS    AUX_END, 026H
+  243   243                      $DGS    END_BLK, ??eb00_dataflash_stop, U,      U,      00H,    064H,   01H,    00H
+  244   244                      $DGS    AUX_END, 027H
+  245   245                      $DGS    END_FUN, ??ef_dataflash_stop,   U,      U,      00H,    065H,   01H,    00H
+  246   246                      $DGS    AUX_END, 02DH
+  247   247                      $DGS    GLV_SYM, _dataflash_rw, U,      U,      0CH,    026H,   01H,    02H
+  248   248                      $DGS    AUX_FUN, 00H,           U,      U,      0F9H,   01H,    00H
+  249   249                      $DGS    BEG_FUN, ??bf_dataflash_rw,     U,      U,      00H,    065H,   01H,    00H
+  250   250                      $DGS    AUX_BEG, 016FH,         04H,    0DFH
+  251   251                      $DGS    FUN_ARG, _mode,         02H,    0FFFFH, 0500CH, 09H,    00H,    00H
+  252   252                      $DGS    FUN_ARG, _rw,           0AH,    0FFFFH, 0500AH, 09H,    01H,    00H
+  253   253                      $DGS    AUX_STR, 069H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  254   254                      $DGS    FUN_ARG, _id,           0CH,    0FFFFH, 0500CH, 09H,    00H,    00H
+  255   255                      $DGS    FUN_ARG, _addr,         0EH,    0FFFFH, 0CH,    09H,    01H,    01H
+  256   256                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  257   257                      $DGS    AUT_VAR, _errno,        01H,    0FFFFH, 0CH,    01H,    00H,    00H
+  258   258                      $DGS    BEG_BLK, ??bb00_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  259   259                      $DGS    AUX_BEG, 06H,           00H,    0E1H
+  260   260                      $DGS    BEG_BLK, ??bb01_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  261   261                      $DGS    AUX_BEG, 012H,          00H,    0E3H
+  262   262                      $DGS    BEG_BLK, ??bb02_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  263   263                      $DGS    AUX_BEG, 014H,          00H,    0E7H
+  264   264                      $DGS    END_BLK, ??eb02_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  265   265                      $DGS    AUX_END, 017H
+  266   266                      $DGS    BEG_BLK, ??bb03_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  267   267                      $DGS    AUX_BEG, 01AH,          00H,    0EFH
+  268   268                      $DGS    END_BLK, ??eb03_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  269   269                      $DGS    AUX_END, 01CH
+  270   270                      $DGS    END_BLK, ??eb01_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  271   271                      $DGS    AUX_END, 01EH
+  272   272                      $DGS    END_BLK, ??eb00_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  273   273                      $DGS    AUX_END, 01FH
+  274   274                      $DGS    BEG_BLK, ??bb04_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  275   275                      $DGS    AUX_BEG, 021H,          00H,    0F3H
+  276   276                      $DGS    END_BLK, ??eb04_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  277   277                      $DGS    AUX_END, 023H
+  278   278                      $DGS    BEG_BLK, ??bb05_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  279   279                      $DGS    AUX_BEG, 025H,          00H,    00H
+  280   280                      $DGS    END_BLK, ??eb05_dataflash_rw,   U,      U,      00H,    064H,   01H,    00H
+  281   281                      $DGS    AUX_END, 027H
+  282   282                      $DGS    END_FUN, ??ef_dataflash_rw,     U,      U,      00H,    065H,   01H,    00H
+  283   283                      $DGS    AUX_END, 02DH
+  284   284                      $DGS    GLV_SYM, _dataflash_cleanup,    U,      U,      0CH,    026H,   01H,    02H
+  285   285                      $DGS    AUX_FUN, 00H,           U,      U,      0119H,  01H,    00H
+  286   286                      $DGS    BEG_FUN, ??bf_dataflash_cleanup,        U,      U,      00H,    065H,   01H,    00H
+  287   287                      $DGS    AUX_BEG, 01ADH,         02H,    0FFH
+  288   288                      $DGS    REG_PAR, _mode,         06H,    0FFFFH, 0510CH, 011H,   00H,    00H
+  289   289                      $DGS    REG_VAR, _errno,        07H,    0FFFFH, 010CH,  04H,    00H,    00H
+  290   290                      $DGS    BEG_BLK, ??bb00_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  291   291                      $DGS    AUX_BEG, 06H,           00H,    0101H
+  292   292                      $DGS    BEG_BLK, ??bb01_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  293   293                      $DGS    AUX_BEG, 013H,          00H,    0103H
+  294   294                      $DGS    BEG_BLK, ??bb02_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  295   295                      $DGS    AUX_BEG, 015H,          00H,    0107H
+  296   296                      $DGS    END_BLK, ??eb02_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  297   297                      $DGS    AUX_END, 018H
+  298   298                      $DGS    BEG_BLK, ??bb03_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  299   299                      $DGS    AUX_BEG, 01BH,          00H,    010FH
+  300   300                      $DGS    END_BLK, ??eb03_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  301   301                      $DGS    AUX_END, 01DH
+  302   302                      $DGS    END_BLK, ??eb01_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  303   303                      $DGS    AUX_END, 01FH
+  304   304                      $DGS    END_BLK, ??eb00_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  305   305                      $DGS    AUX_END, 020H
+  306   306                      $DGS    BEG_BLK, ??bb04_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  307   307                      $DGS    AUX_BEG, 022H,          00H,    0113H
+  308   308                      $DGS    END_BLK, ??eb04_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  309   309                      $DGS    AUX_END, 024H
+  310   310                      $DGS    BEG_BLK, ??bb05_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  311   311                      $DGS    AUX_BEG, 026H,          00H,    00H
+  312   312                      $DGS    END_BLK, ??eb05_dataflash_cleanup,      U,      U,      00H,    064H,   01H,    00H
+  313   313                      $DGS    AUX_END, 028H
+  314   314                      $DGS    END_FUN, ??ef_dataflash_cleanup,        U,      U,      00H,    065H,   01H,    00H
+  315   315                      $DGS    AUX_END, 02EH
+  316   316                      $DGS    GLV_SYM, _dataflash_format,     U,      U,      0CH,    026H,   01H,    02H
+  317   317                      $DGS    AUX_FUN, 00H,           U,      U,      013DH,  01H,    00H
+  318   318                      $DGS    BEG_FUN, ??bf_dataflash_format, U,      U,      00H,    065H,   01H,    00H
+  319   319                      $DGS    AUX_BEG, 01ECH,         02H,    011FH
+  320   320                      $DGS    REG_PAR, _mode,         06H,    0FFFFH, 0510CH, 011H,   00H,    00H
+  321   321                      $DGS    REG_VAR, _errno,        07H,    0FFFFH, 010CH,  04H,    00H,    00H
+  322   322                      $DGS    BEG_BLK, ??bb00_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  323   323                      $DGS    AUX_BEG, 06H,           00H,    0121H
+  324   324                      $DGS    BEG_BLK, ??bb01_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  325   325                      $DGS    AUX_BEG, 08H,           00H,    0125H
+  326   326                      $DGS    END_BLK, ??eb01_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  327   327                      $DGS    AUX_END, 0BH
+  328   328                      $DGS    BEG_BLK, ??bb02_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  329   329                      $DGS    AUX_BEG, 015H,          00H,    0127H
+  330   330                      $DGS    BEG_BLK, ??bb03_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  331   331                      $DGS    AUX_BEG, 017H,          00H,    012BH
+  332   332                      $DGS    END_BLK, ??eb03_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  333   333                      $DGS    AUX_END, 021H
+  334   334                      $DGS    BEG_BLK, ??bb04_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  335   335                      $DGS    AUX_BEG, 023H,          00H,    0133H
+  336   336                      $DGS    END_BLK, ??eb04_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  337   337                      $DGS    AUX_END, 026H
+  338   338                      $DGS    END_BLK, ??eb02_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  339   339                      $DGS    AUX_END, 027H
+  340   340                      $DGS    END_BLK, ??eb00_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  341   341                      $DGS    AUX_END, 028H
+  342   342                      $DGS    BEG_BLK, ??bb05_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  343   343                      $DGS    AUX_BEG, 02AH,          00H,    0137H
+  344   344                      $DGS    END_BLK, ??eb05_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  345   345                      $DGS    AUX_END, 02CH
+  346   346                      $DGS    BEG_BLK, ??bb06_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  347   347                      $DGS    AUX_BEG, 02EH,          00H,    00H
+  348   348                      $DGS    END_BLK, ??eb06_dataflash_format,       U,      U,      00H,    064H,   01H,    00H
+  349   349                      $DGS    AUX_END, 030H
+  350   350                      $DGS    END_FUN, ??ef_dataflash_format, U,      U,      00H,    065H,   01H,    00H
+  351   351                      $DGS    AUX_END, 036H
+  352   352                      $DGS    GLV_SYM, _dataflash_continue,   U,      U,      0CH,    026H,   01H,    02H
+  353   353                      $DGS    AUX_FUN, 00H,           U,      U,      015AH,  01H,    00H
+  354   354                      $DGS    BEG_FUN, ??bf_dataflash_continue,       U,      U,      00H,    065H,   01H,    00H
+  355   355                      $DGS    AUX_BEG, 022DH,         04H,    0144H
+  356   356                      $DGS    FUN_ARG, _fin_flg,      02H,    0FFFFH, 0CH,    09H,    01H,    01H
+  357   357                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  358   358                      $DGS    AUT_VAR, _errno,        01H,    0FFFFH, 0CH,    01H,    00H,    00H
+  359   359                      $DGS    BEG_BLK, ??bb00_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  360   360                      $DGS    AUX_BEG, 09H,           00H,    0146H
+  361   361                      $DGS    BEG_BLK, ??bb01_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  362   362                      $DGS    AUX_BEG, 013H,          00H,    014AH
+  363   363                      $DGS    END_BLK, ??eb01_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  364   364                      $DGS    AUX_END, 015H
+  365   365                      $DGS    BEG_BLK, ??bb02_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  366   366                      $DGS    AUX_BEG, 034H,          00H,    014CH
+  367   367                      $DGS    BEG_BLK, ??bb03_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  368   368                      $DGS    AUX_BEG, 039H,          00H,    0152H
+  369   369                      $DGS    END_BLK, ??eb03_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  370   370                      $DGS    AUX_END, 049H
+  371   371                      $DGS    END_BLK, ??eb02_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  372   372                      $DGS    AUX_END, 04AH
+  373   373                      $DGS    BEG_BLK, ??bb04_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  374   374                      $DGS    AUX_BEG, 04CH,          00H,    00H
+  375   375                      $DGS    END_BLK, ??eb04_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  376   376                      $DGS    AUX_END, 04FH
+  377   377                      $DGS    END_BLK, ??eb00_dataflash_continue,     U,      U,      00H,    064H,   01H,    00H
+  378   378                      $DGS    AUX_END, 051H
+  379   379                      $DGS    END_FUN, ??ef_dataflash_continue,       U,      U,      00H,    065H,   01H,    00H
+  380   380                      $DGS    AUX_END, 057H
+  381   381                      $DGS    GLV_SYM, _dataflash_get_space,  U,      U,      0CH,    026H,   01H,    02H
+  382   382                      $DGS    AUX_FUN, 00H,           U,      U,      0169H,  01H,    00H
+  383   383                      $DGS    BEG_FUN, ??bf_dataflash_get_space,      U,      U,      00H,    065H,   01H,    00H
+  384   384                      $DGS    AUX_BEG, 028FH,         04H,    0163H
+  385   385                      $DGS    FUN_ARG, _wsize,        02H,    0FFFFH, 0DH,    09H,    01H,    01H
+  386   386                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  387   387                      $DGS    AUT_VAR, _errno,        01H,    0FFFFH, 0CH,    01H,    00H,    00H
+  388   388                      $DGS    AUT_VAR, _status,       00H,    0FFFFH, 0AH,    01H,    01H,    00H
+  389   389                      $DGS    AUX_STR, 022H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  390   390                      $DGS    BEG_BLK, ??bb00_dataflash_get_space,    U,      U,      00H,    064H,   01H,    00H
+  391   391                      $DGS    AUX_BEG, 07H,           00H,    00H
+  392   392                      $DGS    END_BLK, ??eb00_dataflash_get_space,    U,      U,      00H,    064H,   01H,    00H
+  393   393                      $DGS    AUX_END, 0CH
+  394   394                      $DGS    END_FUN, ??ef_dataflash_get_space,      U,      U,      00H,    065H,   01H,    00H
+  395   395                      $DGS    AUX_END, 012H
+  396   396                      $DGS    GLV_SYM, _dataflash_getver,     U,      U,      0CH,    026H,   01H,    02H
+  397   397                      $DGS    AUX_FUN, 00H,           U,      U,      0185H,  01H,    00H
+  398   398                      $DGS    BEG_FUN, ??bf_dataflash_getver, U,      U,      00H,    065H,   01H,    00H
+  399   399                      $DGS    AUX_BEG, 02ACH,         08H,    0173H
+  400   400                      $DGS    FUN_ARG, _ver,          06H,    0FFFFH, 0CH,    09H,    01H,    01H
+  401   401                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  402   402                      $DGS    AUT_VAR, _errno,        05H,    0FFFFH, 0CH,    01H,    00H,    00H
+  403   403                      $DGS    AUT_VAR, _len,          04H,    0FFFFH, 0CH,    01H,    00H,    00H
+  404   404                      $DGS    AUT_VAR, _string,       00H,    0FFFFH, 0CH,    01H,    01H,    01H
+  405   405                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+  406   406                      $DGS    BEG_BLK, ??bb00_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  407   407                      $DGS    AUX_BEG, 08H,           00H,    0175H
+  408   408                      $DGS    BEG_BLK, ??bb01_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  409   409                      $DGS    AUX_BEG, 0DH,           00H,    0177H
+  410   410                      $DGS    BEG_BLK, ??bb02_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  411   411                      $DGS    AUX_BEG, 010H,          00H,    017DH
+  412   412                      $DGS    END_BLK, ??eb02_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  413   413                      $DGS    AUX_END, 012H
+  414   414                      $DGS    END_BLK, ??eb01_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  415   415                      $DGS    AUX_END, 013H
+  416   416                      $DGS    BEG_BLK, ??bb03_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  417   417                      $DGS    AUX_BEG, 016H,          00H,    00H
+  418   418                      $DGS    END_BLK, ??eb03_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  419   419                      $DGS    AUX_END, 018H
+  420   420                      $DGS    END_BLK, ??eb00_dataflash_getver,       U,      U,      00H,    064H,   01H,    00H
+  421   421                      $DGS    AUX_END, 01AH
+  422   422                      $DGS    END_FUN, ??ef_dataflash_getver, U,      U,      00H,    065H,   01H,    00H
+  423   423                      $DGS    AUX_END, 020H
+  424   424                      $DGS    GLV_SYM, _dataflash_is_stopped, U,      U,      0CH,    026H,   01H,    02H
+  425   425                      $DGS    AUX_FUN, 00H,           U,      U,      018BH,  01H,    00H
+  426   426                      $DGS    BEG_FUN, ??bf_dataflash_is_stopped,     U,      U,      00H,    065H,   01H,    00H
+  427   427                      $DGS    AUX_BEG, 02D6H,         00H,    018BH
+  428   428                      $DGS    END_FUN, ??ef_dataflash_is_stopped,     U,      U,      00H,    065H,   01H,    00H
+  429   429                      $DGS    AUX_END, 07H
+  430   430                      $DGS    STA_SYM, _dataflash_errno,      U,      U,      0CH,    03H,    01H,    02H
+  431   431                      $DGS    AUX_FUN, 00H,           U,      U,      019CH,  01H,    00H
+  432   432                      $DGS    BEG_FUN, ??bf_dataflash_errno,  U,      U,      00H,    065H,   01H,    00H
+  433   433                      $DGS    AUX_BEG, 02E9H,         02H,    0192H
+  434   434                      $DGS    REG_PAR, _eel_errno,    06H,    0FFFFH, 0510AH, 011H,   01H,    00H
+  435   435                      $DGS    AUX_STR, 022H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  436   436                      $DGS    REG_VAR, _idx,          07H,    0FFFFH, 010CH,  04H,    00H,    00H
+  437   437                      $DGS    BEG_BLK, ??bb00_dataflash_errno,        U,      U,      00H,    064H,   01H,    00H
+  438   438                      $DGS    AUX_BEG, 05H,           00H,    0194H
+  439   439                      $DGS    BEG_BLK, ??bb01_dataflash_errno,        U,      U,      00H,    064H,   01H,    00H
+  440   440                      $DGS    AUX_BEG, 07H,           00H,    00H
+  441   441                      $DGS    END_BLK, ??eb01_dataflash_errno,        U,      U,      00H,    064H,   01H,    00H
+  442   442                      $DGS    AUX_END, 09H
+  443   443                      $DGS    END_BLK, ??eb00_dataflash_errno,        U,      U,      00H,    064H,   01H,    00H
+  444   444                      $DGS    AUX_END, 0AH
+  445   445                      $DGS    END_FUN, ??ef_dataflash_errno,  U,      U,      00H,    065H,   01H,    00H
+  446   446                      $DGS    AUX_END, 0CH
+  447   447                      $DGS    STA_SYM, _dataflash_busy_handler,       U,      U,      01H,    03H,    01H,    02H
+  448   448                      $DGS    AUX_FUN, 00H,           U,      U,      01A6H,  01H,    00H
+  449   449                      $DGS    BEG_FUN, ??bf_dataflash_busy_handler,   U,      U,      00H,    065H,   01H,    00H
+  450   450                      $DGS    AUX_BEG, 02FFH,         00H,    01A0H
+  451   451                      $DGS    BEG_BLK, ??bb00_dataflash_busy_handler, U,      U,      00H,    064H,   01H,    00H
+  452   452                      $DGS    AUX_BEG, 03H,           00H,    00H
+  453   453                      $DGS    END_BLK, ??eb00_dataflash_busy_handler, U,      U,      00H,    064H,   01H,    00H
+  454   454                      $DGS    AUX_END, 05H
+  455   455                      $DGS    END_FUN, ??ef_dataflash_busy_handler,   U,      U,      00H,    065H,   01H,    00H
+  456   456                      $DGS    AUX_END, 06H
+  457   457                      $DGS    GLV_SYM, _flash_get_bda,        U,      U,      01H,    026H,   01H,    02H
+  458   458                      $DGS    AUX_FUN, 00H,           U,      U,      01D0H,  01H,    00H
+  459   459                      $DGS    BEG_FUN, ??bf_flash_get_bda,    U,      U,      00H,    065H,   01H,    00H
+  460   460                      $DGS    AUX_BEG, 0312H,         04H,    01AEH
+  461   461                      $DGS    FUN_ARG, _bda,          02H,    0FFFFH, 08H,    09H,    01H,    01H
+  462   462                      $DGS    AUX_STR, 03EH,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  463   463                      $DGS    AUT_VAR, _ii,           01H,    0FFFFH, 0CH,    01H,    00H,    00H
+  464   464                      $DGS    AUT_VAR, _invalid,      00H,    0FFFFH, 0CH,    01H,    00H,    00H
+  465   465                      $DGS    BEG_BLK, ??bb00_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  466   466                      $DGS    AUX_BEG, 08H,           00H,    01B0H
+  467   467                      $DGS    BEG_BLK, ??bb01_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  468   468                      $DGS    AUX_BEG, 0BH,           00H,    01B2H
+  469   469                      $DGS    BEG_BLK, ??bb02_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  470   470                      $DGS    AUX_BEG, 0EH,           00H,    01B4H
+  471   471                      $DGS    BEG_BLK, ??bb03_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  472   472                      $DGS    AUX_BEG, 010H,          00H,    01BEH
+  473   473                      $DGS    END_BLK, ??eb03_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  474   474                      $DGS    AUX_END, 013H
+  475   475                      $DGS    END_BLK, ??eb02_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  476   476                      $DGS    AUX_END, 014H
+  477   477                      $DGS    END_BLK, ??eb01_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  478   478                      $DGS    AUX_END, 015H
+  479   479                      $DGS    END_BLK, ??eb00_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  480   480                      $DGS    AUX_END, 017H
+  481   481                      $DGS    BEG_BLK, ??bb04_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  482   482                      $DGS    AUX_BEG, 01BH,          00H,    01C0H
+  483   483                      $DGS    BEG_BLK, ??bb05_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  484   484                      $DGS    AUX_BEG, 01EH,          00H,    01C2H
+  485   485                      $DGS    BEG_BLK, ??bb06_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  486   486                      $DGS    AUX_BEG, 022H,          00H,    01CAH
+  487   487                      $DGS    END_BLK, ??eb06_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  488   488                      $DGS    AUX_END, 024H
+  489   489                      $DGS    END_BLK, ??eb05_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  490   490                      $DGS    AUX_END, 025H
+  491   491                      $DGS    END_BLK, ??eb04_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  492   492                      $DGS    AUX_END, 026H
+  493   493                      $DGS    BEG_BLK, ??bb07_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  494   494                      $DGS    AUX_BEG, 029H,          00H,    00H
+  495   495                      $DGS    END_BLK, ??eb07_flash_get_bda,  U,      U,      00H,    064H,   01H,    00H
+  496   496                      $DGS    AUX_END, 02CH
+  497   497                      $DGS    END_FUN, ??ef_flash_get_bda,    U,      U,      00H,    065H,   01H,    00H
+  498   498                      $DGS    AUX_END, 02DH
+  499   499                      $DGS    GLV_SYM, _EEL_Execute,  U,      U,      01H,    02H,    01H,    02H
+  500   500                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  501   501                      $DGS    GLV_SYM, _memset,       U,      U,      01H,    02H,    01H,    06H
+  502   502                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    04H
+  503   503                      $DGS    GLV_SYM, _plf_hoco_start,       U,      U,      01H,    02H,    01H,    02H
+  504   504                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  505   505                      $DGS    GLV_SYM, _fdl_descriptor_str,   U,      U,      0D008H, 02H,    01H,    00H
+  506   506                      $DGS    AUX_STR, 033H,          00H,    0AH,    00H,    00H,    00H,    00H,    00H
+  507   507                      $DGS    GLV_SYM, _FDL_Init,     U,      U,      0AH,    02H,    01H,    02H
+  508   508                      $DGS    AUX_FUN, 013H,          U,      U,      00H,    01H,    00H
+  509   509                      $DGS    GLV_SYM, _FDL_Open,     U,      U,      01H,    02H,    01H,    02H
+  510   510                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  511   511                      $DGS    GLV_SYM, _EEL_Init,     U,      U,      0AH,    02H,    01H,    02H
+  512   512                      $DGS    AUX_FUN, 022H,          U,      U,      00H,    01H,    00H
+  513   513                      $DGS    GLV_SYM, _plf_hoco_stop,        U,      U,      01H,    02H,    01H,    02H
+  514   514                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  515   515                      $DGS    GLV_SYM, _EEL_Open,     U,      U,      01H,    02H,    01H,    02H
+  516   516                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  517   517                      $DGS    GLV_SYM, _EEL_Close,    U,      U,      01H,    02H,    01H,    02H
+  518   518                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  519   519                      $DGS    GLV_SYM, _EEL_Handler,  U,      U,      01H,    02H,    01H,    02H
+  520   520                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  521   521                      $DGS    GLV_SYM, _EEL_GetSpace, U,      U,      0AH,    02H,    01H,    02H
+  522   522                      $DGS    AUX_FUN, 022H,          U,      U,      00H,    01H,    00H
+  523   523                      $DGS    GLV_SYM, @@indao,       U,      U,      00H,    02H,    00H,    00H
+  524   524                      $DGS    GLV_SYM, @@inado,       U,      U,      00H,    02H,    00H,    00H
+  525   525                      $DGS    GLV_SYM, _EEL_GetVersionString, U,      U,      0CH,    02H,    01H,    06H
+  526   526                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    08H
+  527   527                      
+  528   528                              EXTRN   _EEL_Execute
+  529   529                              EXTRN   _memset
+  530   530                              EXTRN   _plf_hoco_start
+  531   531                              EXTRN   _fdl_descriptor_str
+  532   532                              EXTRN   _FDL_Init
+  533   533                              EXTRN   _FDL_Open
+  534   534                              EXTRN   _EEL_Init
+  535   535                              EXTRN   _plf_hoco_stop
+  536   536                              EXTRN   _EEL_Open
+  537   537                              EXTRN   _EEL_Close
+  538   538                              EXTRN   _EEL_Handler
+  539   539                              EXTRN   _EEL_GetSpace
+  540   540                              EXTRN   @@indao
+  541   541                              EXTRN   @@inado
+  542   542                              EXTRN   _EEL_GetVersionString
+  543   543                              PUBLIC  _dataflash_init
+  544   544                              PUBLIC  _dataflash_start
+  545   545                              PUBLIC  _dataflash_stop
+  546   546                              PUBLIC  _dataflash_rw
+  547   547                              PUBLIC  _dataflash_cleanup
+  548   548                              PUBLIC  _dataflash_format
+  549   549                              PUBLIC  _dataflash_continue
+  550   550                              PUBLIC  _dataflash_get_space
+  551   551                              PUBLIC  _dataflash_getver
+  552   552                              PUBLIC  _dataflash_is_stopped
+  553   553                              PUBLIC  _flash_get_bda
+  554   554                      
+  555   555 -----                @@BITS  BSEG
+  556   556                      
+  557   557 -----                @@CNST  CSEG    MIRRORP
+  558   558                      
+  559   559 -----                @@R_INIT        CSEG    UNIT64KP
+  560   560                      
+  561   561 -----                @@INIT  DSEG    BASEP
+  562   562                      
+  563   563 -----                DFL_DATA        DSEG    BASEP
+  564   564 00000                _df_stat:       DS      (1)
+  565   565 00001                _df_cmd:        DS      (1)
+  566   566 00002                _df_req:        DS      (5)
+  567   567 00007                        DS      (1)
+  568   568                      
+  569   569 -----                @@R_INIS        CSEG    UNIT64KP
+  570   570                      
+  571   571 -----                @@INIS  DSEG    SADDRP
+  572   572                      
+  573   573 -----                @@DATS  DSEG    SADDRP
+  574   574                      
+  575   575 -----                DFL_CNST        CSEG    PAGE64KP
+  576   576 00000  BC            _testadr:       DB      0BCH    ; 188
+  577   577 00001  9A                    DB      09AH    ; 154
+  578   578 00002  78                    DB      078H    ; 120
+  579   579 00003  56                    DB      056H    ; 86
+  580   580 00004  34                    DB      034H    ; 52
+  581   581 00005  12                    DB      012H    ; 18
+  582   582 00006  00            _errno_list:    DB      00H     ; 0
+  583   583 00007  00                    DB      00H     ; 0
+  584   584 00008  01                    DB      01H     ; 1
+  585   585 00009  00                    DB      00H     ; 0
+  586   586 0000A  83                    DB      083H    ; 131
+  587   587 0000B  05                    DB      05H     ; 5
+  588   588 0000C  84                    DB      084H    ; 132
+  589   589 0000D  06                    DB      06H     ; 6
+  590   590 0000E  86                    DB      086H    ; 134
+  591   591 0000F  07                    DB      07H     ; 7
+  592   592 00010  85                    DB      085H    ; 133
+  593   593 00011  08                    DB      08H     ; 8
+  594   594 00012  87                    DB      087H    ; 135
+  595   595 00013  09                    DB      09H     ; 9
+  596   596 00014  88                    DB      088H    ; 136
+  597   597 00015  0A                    DB      0AH     ; 10
+  598   598 00016  89                    DB      089H    ; 137
+  599   599 00017  0B                    DB      0BH     ; 11
+  600   600 00018  8A                    DB      08AH    ; 138
+  601   601 00019  0C                    DB      0CH     ; 12
+  602   602 0001A  8B                    DB      08BH    ; 139
+  603   603 0001B  0D                    DB      0DH     ; 13
+  604   604 0001C  8C                    DB      08CH    ; 140
+  605   605 0001D  0E                    DB      0EH     ; 14
+  606   606                      
+  607   607 -----                @@RLINIT        CSEG    UNIT64KP
+  608   608                      
+  609   609 -----                @@INITL DSEG    UNIT64KP
+  610   610                      
+  611   611 -----                @@DATAL DSEG    UNIT64KP
+  612   612                      
+  613   613 -----                @@CALT  CSEG    CALLT0
+  614   614                      
+  615   615                      ; Sub-Routines created by CC78K0R
+  616   616                      
+  617   617 -----                DFL_CODE        CSEG
+  618   618 00000                bs_F0137:
+  619   619 00000 R300200                movw    ax,#loww (_df_req)                              ;[INF] 3, 1
+  620   620 00003 REC000000              br      !!_EEL_Execute                                  ;[INF] 4, 3
+  621   621 00007                es_F0137:
+  622   622                      
+  623   623 -----                DFL_CODE        CSEG
+  624   624 00007                bs_S0136:
+  625   625 00007  8C04                  mov     a,[hl+4]                                        ;[INF] 2, 1
+  626   626 00009  318E                  shrw    ax,8                                            ;[INF] 2, 1
+  627   627 0000B  610906                addw    ax,[hl+6]                                       ;[INF] 3, 1
+  628   628 0000E  14                    movw    de,ax                                           ;[INF] 1, 1
+  629   629 0000F  D7                    ret                                                     ;[INF] 1, 6
+  630   630 00010                es_S0136:
+  631   631                      
+  632   632 -----                DFL_CODE        CSEG
+  633   633 00010                bs_F0134:
+  634   634 00010 RD90600                mov     x,!_df_req+4                                    ;[INF] 3, 1
+  635   635 00013  F1                    clrb    a                                               ;[INF] 1, 1
+  636   636 00014 RFC1D0300              call    !!_dataflash_errno                              ;[INF] 4, 3
+  637   637 00018  62                    mov     a,c                                             ;[INF] 1, 1
+  638   638 00019  77                    mov     h,a                                             ;[INF] 1, 1
+  639   639 0001A  D7                    ret                                                     ;[INF] 1, 6
+  640   640 0001B                es_F0134:
+  641   641                      
+  642   642 -----                DFL_CODE        CSEG
+  643   643 0001B                bs_F0135:
+  644   644 0001B RD90600                mov     x,!_df_req+4                                    ;[INF] 3, 1
+  645   645 0001E  F1                    clrb    a                                               ;[INF] 1, 1
+  646   646 0001F RFC1D0300              call    !!_dataflash_errno                              ;[INF] 4, 3
+  647   647 00023  62                    mov     a,c                                             ;[INF] 1, 1
+  648   648 00024  9C01                  mov     [hl+1],a                                        ;[INF] 2, 1
+  649   649 00026  D7                    ret                                                     ;[INF] 1, 6
+  650   650 00027                es_F0135:
+  651   651                      
+  652   652 -----                DFL_CODE        CSEG
+  653   653 00027                bs_S0133:
+  654   654 00027  AC02                  movw    ax,[hl+2]                                       ;[INF] 2, 1
+  655   655 00029  14                    movw    de,ax                                           ;[INF] 1, 1
+  656   656 0002A  8C01                  mov     a,[hl+1]                                        ;[INF] 2, 1
+  657   657 0002C  318E                  shrw    ax,8                                            ;[INF] 2, 1
+  658   658 0002E  05                    addw    ax,de                                           ;[INF] 1, 1
+  659   659 0002F  14                    movw    de,ax                                           ;[INF] 1, 1
+  660   660 00030  89                    mov     a,[de]                                          ;[INF] 1, 1
+  661   661 00031  81                    inc     a                                               ;[INF] 1, 1
+  662   662 00032  D7                    ret                                                     ;[INF] 1, 6
+  663   663 00033                es_S0133:
+  664   664                      
+  665   665                      ; *** Sub-Routine Information ***
+  666   666                      ;
+  667   667                      ; $SUB bs_S0133
+  668   668                      ;      CODE SIZE= 12 bytes
+  669   669                      ;
+  670   670                      ; $SUB bs_F0134
+  671   671                      ;      CODE SIZE= 11 bytes
+  672   672                      ;
+  673   673                      ; $SUB bs_F0135
+  674   674                      ;      CODE SIZE= 12 bytes
+  675   675                      ;
+  676   676                      ; $SUB bs_S0136
+  677   677                      ;      CODE SIZE= 9 bytes
+  678   678                      ;
+  679   679                      ; $SUB bs_F0137
+  680   680                      ;      CODE SIZE= 7 bytes
+  681   681                      
+  682   682                      ; End of Sub-Routines
+  683   683                      
+  684   684                      ; line    13
+  685   685                      ; line    14
+  686   686                      ; line    13
+  687   687                      ; line    14
+  688   688                      ; line    15
+  689   689                      ; line    74
+  690   690                      ; line    75
+  691   691                      ; line    76
+  692   692                      ; line    77
+  693   693                      ; line    79
+  694   694                      ; line    80
+  695   695                      ; line    84
+  696   696                      ; line    85
+  697   697                      ; line    16
+  698   698                      ; line    18
+  699   699                      ; line    19
+  700   700                      ; line    20
+  701   701                      ; line    21
+  702   702                      ; line    22
+  703   703                      ; line    23
+  704   704                      ; line    24
+  705   705                      ; line    25
+  706   706                      ; line    26
+  707   707                      ; line    27
+  708   708                      ; line    28
+  709   709                      ; line    29
+  710   710                      ; line    30
+  711   711                      ; line    31
+  712   712                      ; line    32
+  713   713                      ; line    33
+  714   714                      ; line    35
+  715   715                      ; line    37
+  716   716                      ; line    38
+  717   717                      ; line    39
+  718   718                      ; line    40
+  719   719                      ; line    43
+  720   720                      ; line    45
+  721   721                      ; line    46
+  722   722                      ; line    47
+  723   723                      ; line    48
+  724   724                      ; line    49
+  725   725                      ; line    50
+  726   726                      ; line    51
+  727   727                      ; line    52
+  728   728                      ; line    53
+  729   729                      ; line    54
+  730   730                      ; line    55
+  731   731                      ; line    56
+  732   732                      ; line    57
+  733   733                      ; line    58
+  734   734                      ; line    59
+  735   735                      ; line    60
+  736   736                      ; line    62
+  737   737                      ; line    64
+  738   738                      ; line    65
+  739   739                      ; line    66
+  740   740                      ; line    69
+  741   741                      ; line    71
+  742   742                      ; line    72
+  743   743                      ; line    73
+  744   744                      ; line    74
+  745   745                      ; line    75
+  746   746                      ; line    76
+  747   747                      ; line    77
+  748   748                      ; line    78
+  749   749                      ; line    79
+  750   750                      ; line    80
+  751   751                      ; line    81
+  752   752                      ; line    82
+  753   753                      ; line    83
+  754   754                      ; line    84
+  755   755                      ; line    85
+  756   756                      ; line    86
+  757   757                      ; line    88
+  758   758                      ; line    90
+  759   759                      ; line    91
+  760   760                      ; line    92
+  761   761                      ; line    20
+  762   762                      ; line    25
+  763   763                      ; line    29
+  764   764                      ; line    30
+  765   765                      ; line    31
+  766   766                      ; line    32
+  767   767                      ; line    33
+  768   768                      ; line    34
+  769   769                      ; line    35
+  770   770                      ; line    36
+  771   771                      ; line    37
+  772   772                      ; line    38
+  773   773                      ; line    39
+  774   774                      ; line    40
+  775   775                      ; line    41
+  776   776                      ; line    42
+  777   777                      ; line    43
+  778   778                      ; line    45
+  779   779                      ; line    46
+  780   780                      ; line    51
+  781   781                      ; line    52
+  782   782                      ; line    54
+  783   783                      ; line    59
+  784   784                      ; line    60
+  785   785                      ; line    65
+  786   786                      ; line    66
+  787   787                      ; line    67
+  788   788                      ; line    68
+  789   789                      ; line    70
+  790   790                      ; line    71
+  791   791                      ; line    72
+  792   792                      ; line    73
+  793   793                      ; line    74
+  794   794                      ; line    75
+  795   795                      ; line    76
+  796   796                      ; line    78
+  797   797                      ; line    83
+  798   798                      ; line    84
+  799   799                      ; line    89
+  800   800                      ; line    90
+  801   801                      ; line    92
+  802   802                      ; line    93
+  803   803                      ; line    94
+  804   804                      ; line    95
+  805   805                      ; line    96
+  806   806                      ; line    97
+  807   807                      ; line    98
+  808   808                      ; line   100
+  809   809                      ; line   105
+  810   810                      ; line   106
+  811   811                      ; line   111
+  812   812                      ; line   112
+  813   813                      ; line    95
+  814   814                      ; line   220
+  815   815                      ; line   221
+  816   816                      ; line    22
+  817   817                      ; line    23
+  818   818                      ; line    67
+  819   819                      ; line    68
+  820   820                      ; line   125
+  821   821                      ; line   686
+  822   822                      ; line   689
+  823   823                      ; line   692
+  824   824                      ; line   711
+  825   825                      ; line   727
+  826   826                      ; line    41
+  827   827                      ; line    42
+  828   828                      ; line    43
+  829   829                      ; line    44
+  830   830                      ; line    66
+  831   831                      ; line    87
+  832   832                      ; line    98
+  833   833                      ; line   113
+  834   834                      ; line    62
+  835   835                      ; line    75
+  836   836                      ; line    90
+  837   837                      ; line   111
+  838   838                      ; line   124
+  839   839                      ; line   138
+  840   840                      ; line   153
+  841   841                      ; line   167
+  842   842                      ; line   180
+  843   843                      ; line    41
+  844   844                      ; line    42
+  845   845                      ; line    43
+  846   846                      ; line    69
+  847   847                      ; line    77
+  848   848                      ; line    95
+  849   849                      ; line   104
+  850   850                      ; line    51
+  851   851                      ; line    62
+  852   852                      ; line    74
+  853   853                      ; line    87
+  854   854                      ; line    99
+  855   855                      ; line   112
+  856   856                      ; line   126
+  857   857                      ; line   139
+  858   858                      ; line    85
+  859   859                      ; line   103
+  860   860                      ; line   106
+  861   861                      ; line   107
+  862   862                      ; line   121
+  863   863                      ; line   129
+  864   864                      ; line   130
+  865   865                      ; line   132
+  866   866                      ; line   133
+  867   867                      ; line    89
+  868   868                      ; line    97
+  869   869                      ; line   104
+  870   870                      ; line   106
+  871   871                      ; line   107
+  872   872                      ; line   108
+  873   873                      ; line   110
+  874   874                      ; line   112
+  875   875                      ; line   113
+  876   876                      ; line   114
+  877   877                      ; line   115
+  878   878                      ; line   120
+  879   879                      ; line   121
+  880   880                      ; line   123
+  881   881                      ; line   124
+  882   882                      ; line   125
+  883   883                      ; line   126
+  884   884                      ; line   127
+  885   885                      ; line   128
+  886   886                      ; line   137
+  887   887                      ; line   139
+  888   888                      ; line   157
+  889   889                      
+  890   890 -----                DFL_CODE        CSEG
+  891   891 00033                _dataflash_init:
+  892   892                      $DGL    1,131
+  893   893 00033  C7                    push    hl                                              ;[INF] 1, 1
+  894   894 00034                ??bf_dataflash_init:
+  895   895                      ; line   159
+  896   896                      $DGL    0,3
+  897   897 00034  560F                  mov     l,#0FH  ; 15                                    ;[INF] 2, 1
+  898   898                      ; line   163
+  899   899                      $DGL    0,7
+  900   900 00036  300500                movw    ax,#05H ; 5                                     ;[INF] 3, 1
+  901   901 00039  C1                    push    ax                                              ;[INF] 1, 1
+  902   902 0003A  F6                    clrw    ax                                              ;[INF] 1, 1
+  903   903 0003B  C1                    push    ax                                              ;[INF] 1, 1
+  904   904 0003C R300200                movw    ax,#loww (_df_req)                              ;[INF] 3, 1
+  905   905 0003F RFC000000              call    !!_memset                                       ;[INF] 4, 3
+  906   906 00043  1004                  addw    sp,#04H ; 4                                     ;[INF] 2, 1
+  907   907                      ; line   166
+  908   908                      $DGL    0,10
+  909   909 00045 RFC000000              call    !!_plf_hoco_start                               ;[INF] 4, 3
+  910   910                      ; line   168
+  911   911                      $DGL    0,12
+  912   912 00049 R300000                movw    ax,#loww (_fdl_descriptor_str)                  ;[INF] 3, 1
+  913   913 0004C R5200                  mov     c,#highw (_fdl_descriptor_str)                  ;[INF] 2, 1
+  914   914 0004E  F3                    clrb    b                                               ;[INF] 1, 1
+  915   915 0004F RFC000000              call    !!_FDL_Init                                     ;[INF] 4, 3
+  916   916 00053  62                    mov     a,c                                             ;[INF] 1, 1
+  917   917 00054  77                    mov     h,a                                             ;[INF] 1, 1
+  918   918                      ; line   169
+  919   919                      $DGL    0,13
+  920   920 00055  D1                    cmp0    a                                               ;[INF] 1, 1
+  921   921 00056  DF1E                  bnz     $?L0003                                         ;[INF] 2, 4
+  922   922                      ; line   170
+  923   923 00058                ??bb00_dataflash_init:
+  924   924                      ; line   173
+  925   925                      $DGL    0,17
+  926   926 00058 RFC000000              call    !!_FDL_Open                                     ;[INF] 4, 3
+  927   927                      ; line   176
+  928   928                      $DGL    0,20
+  929   929 0005C RFC000000              call    !!_EEL_Init                                     ;[INF] 4, 3
+  930   930 00060  62                    mov     a,c                                             ;[INF] 1, 1
+  931   931 00061 R9F0600                mov     !_df_req+4,a                                    ;[INF] 3, 1
+  932   932                      ; line   177
+  933   933                      $DGL    0,21
+  934   934 00064 RD50600                cmp0    !_df_req+4                                      ;[INF] 3, 1
+  935   935 00067  61F8                  sknz                                                    ;[INF] 2, 1
+  936   936                      ; line   178
+  937   937 00069                ??bb01_dataflash_init:
+  938   938                      ; line   180
+  939   939                      $DGL    0,24
+  940   940 00069 RE50000                oneb    !_df_stat                                       ;[INF] 3, 1
+  941   941 0006C                ??eb01_dataflash_init:
+  942   942                      ; line   181
+  943   943 0006C                ?L0005:
+  944   944                      ; line   182
+  945   945                      $DGL    0,26
+  946   946 0006C RD90600                mov     x,!_df_req+4                                    ;[INF] 3, 1
+  947   947 0006F  F1                    clrb    a                                               ;[INF] 1, 1
+  948   948 00070 RFC1D0300              call    !!_dataflash_errno                              ;[INF] 4, 3
+  949   949 00074  62                    mov     a,c                                             ;[INF] 1, 1
+  950   950 00075  76                    mov     l,a                                             ;[INF] 1, 1
+  951   951 00076                ??eb00_dataflash_init:
+  952   952                      ; line   183
+  953   953 00076                ?L0003:
+  954   954                      ; line   184
+  955   955                      $DGL    0,28
+  956   956 00076 RFC000000              call    !!_plf_hoco_stop                                ;[INF] 4, 3
+  957   957                      ; line   186
+  958   958                      $DGL    0,30
+  959   959 0007A  17                    movw    ax,hl                                           ;[INF] 1, 1
+  960   960 0007B  F1                    clrb    a                                               ;[INF] 1, 1
+  961   961 0007C  12                    movw    bc,ax                                           ;[INF] 1, 1
+  962   962                      ; line   190
+  963   963                      ; line   190
+  964   964                      $DGL    0,34
+  965   965 0007D                ??ef_dataflash_init:
+  966   966 0007D  C6                    pop     hl                                              ;[INF] 1, 1
+  967   967 0007E  D7                    ret                                                     ;[INF] 1, 6
+  968   968 0007F                ??ee_dataflash_init:
+  969   969                      ; line   208
+  970   970 0007F                _dataflash_start:
+  971   971                      $DGL    1,148
+  972   972 0007F  C7                    push    hl                                              ;[INF] 1, 1
+  973   973 00080  16                    movw    hl,ax                                           ;[INF] 1, 1
+  974   974 00081                ??bf_dataflash_start:
+  975   975                      ; line   210
+  976   976                      $DGL    0,3
+  977   977 00081  5703                  mov     h,#03H  ; 3                                     ;[INF] 2, 1
+  978   978                      ; line   212
+  979   979                      $DGL    0,5
+  980   980 00083 R40000001              cmp     !_df_stat,#01H  ; 1                             ;[INF] 4, 1
+  981   981 00087  DF53                  bnz     $?L0018                                         ;[INF] 2, 4
+  982   982                      ; line   213
+  983   983 00089                ??bb00_dataflash_start:
+  984   984                      ; line   215
+  985   985                      $DGL    0,8
+  986   986 00089 RFC000000              call    !!_plf_hoco_start                               ;[INF] 4, 3
+  987   987                      ; line   216
+  988   988                      $DGL    0,9
+  989   989 0008D RFC000000              call    !!_EEL_Open                                     ;[INF] 4, 3
+  990   990                      ; line   219
+  991   991                      $DGL    0,12
+  992   992 00091 RE50100                oneb    !_df_cmd                                        ;[INF] 3, 1
+  993   993                      ; line   220
+  994   994                      $DGL    0,13
+  995   995 00094 RE50500                oneb    !_df_req+3                                      ;[INF] 3, 1
+  996   996                      ; line   224
+  997   997                      $DGL    0,17
+  998   998 00097  FE66FF                call    $!bs_F0137                                      ;[INF] 3, 3
+  999   999                      ; line   226
+ 1000  1000                      $DGL    0,19
+ 1001  1001 0009A  66                    mov     a,l                                             ;[INF] 1, 1
+ 1002  1002 0009B  81                    inc     a                                               ;[INF] 1, 1
+ 1003  1003 0009C  DF24                  bnz     $?L0015                                         ;[INF] 2, 4
+ 1004  1004                      ; line   227
+ 1005  1005 0009E                ??bb01_dataflash_start:
+ 1006  1006                      ; line   229
+ 1007  1007                      $DGL    0,22
+ 1008  1008 0009E RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1009  1009                      ; line   232
+ 1010  1010                      $DGL    0,25
+ 1011  1011 000A2 R4006008A              cmp     !_df_req+4,#08AH        ; 138                   ;[INF] 4, 1
+ 1012  1012 000A6  DF1A                  bnz     $?L0015                                         ;[INF] 2, 4
+ 1013  1013                      ; line   233
+ 1014  1014 000A8                ??bb02_dataflash_start:
+ 1015  1015                      ; line   235
+ 1016  1016                      $DGL    0,28
+ 1017  1017 000A8 RCF050006              mov     !_df_req+3,#06H ; 6                             ;[INF] 4, 1
+ 1018  1018                      ; line   239
+ 1019  1019                      $DGL    0,32
+ 1020  1020 000AC  FE51FF                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1021  1021                      ; line   242
+ 1022  1022                      $DGL    0,35
+ 1023  1023 000AF RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1024  1024                      ; line   244
+ 1025  1025                      $DGL    0,37
+ 1026  1026 000B3 RD50600                cmp0    !_df_req+4                                      ;[INF] 3, 1
+ 1027  1027 000B6  DF0A                  bnz     $?L0015                                         ;[INF] 2, 4
+ 1028  1028                      ; line   245
+ 1029  1029 000B8                ??bb03_dataflash_start:
+ 1030  1030                      ; line   247
+ 1031  1031                      $DGL    0,40
+ 1032  1032 000B8 RE50500                oneb    !_df_req+3                                      ;[INF] 3, 1
+ 1033  1033                      ; line   251
+ 1034  1034                      $DGL    0,44
+ 1035  1035 000BB  FE42FF                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1036  1036                      ; line   253
+ 1037  1037                      $DGL    0,46
+ 1038  1038 000BE RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1039  1039 000C2                ??eb03_dataflash_start:
+ 1040  1040                      ; line   255
+ 1041  1041 000C2                ?L0015:
+ 1042  1042 000C2                ??eb02_dataflash_start:
+ 1043  1043                      ; line   256
+ 1044  1044 000C2                ??eb01_dataflash_start:
+ 1045  1045                      ; line   257
+ 1046  1046                      ; line   259
+ 1047  1047                      $DGL    0,52
+ 1048  1048 000C2  FE4BFF                call    $!bs_F0134                                      ;[INF] 3, 3
+ 1049  1049                      ; line   260
+ 1050  1050                      $DGL    0,53
+ 1051  1051 000C5  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1052  1052 000C6  DF10                  bnz     $?L0017                                         ;[INF] 2, 4
+ 1053  1053                      ; line   261
+ 1054  1054 000C8                ??bb04_dataflash_start:
+ 1055  1055                      ; line   262
+ 1056  1056                      $DGL    0,55
+ 1057  1057 000C8  66                    mov     a,l                                             ;[INF] 1, 1
+ 1058  1058 000C9  81                    inc     a                                               ;[INF] 1, 1
+ 1059  1059 000CA  DF06                  bnz     $?L0019                                         ;[INF] 2, 4
+ 1060  1060                      ; line   263
+ 1061  1061 000CC                ??bb05_dataflash_start:
+ 1062  1062                      ; line   265
+ 1063  1063                      $DGL    0,58
+ 1064  1064 000CC RCF000002              mov     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1065  1065 000D0                ??eb05_dataflash_start:
+ 1066  1066                      ; line   267
+ 1067  1067                      $DGL    0,60
+ 1068  1068 000D0  EF0A                  br      $?L0018                                         ;[INF] 2, 3
+ 1069  1069 000D2                ?L0019:
+ 1070  1070                      ; line   268
+ 1071  1071 000D2                ??bb06_dataflash_start:
+ 1072  1072                      ; line   270
+ 1073  1073                      $DGL    0,63
+ 1074  1074 000D2 RCF000003              mov     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1075  1075 000D6                ??eb06_dataflash_start:
+ 1076  1076                      ; line   271
+ 1077  1077 000D6                ??eb04_dataflash_start:
+ 1078  1078                      ; line   273
+ 1079  1079                      $DGL    0,66
+ 1080  1080 000D6  EF04                  br      $?L0018                                         ;[INF] 2, 3
+ 1081  1081 000D8                ?L0017:
+ 1082  1082                      ; line   274
+ 1083  1083 000D8                ??bb07_dataflash_start:
+ 1084  1084                      ; line   276
+ 1085  1085                      $DGL    0,69
+ 1086  1086 000D8 RFC000000              call    !!_plf_hoco_stop                                ;[INF] 4, 3
+ 1087  1087 000DC                ??eb07_dataflash_start:
+ 1088  1088                      ; line   277
+ 1089  1089 000DC                ?L0018:
+ 1090  1090 000DC                ??eb00_dataflash_start:
+ 1091  1091                      ; line   278
+ 1092  1092                      ; line   280
+ 1093  1093                      $DGL    0,73
+ 1094  1094 000DC  67                    mov     a,h                                             ;[INF] 1, 1
+ 1095  1095 000DD  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1096  1096 000DF  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1097  1097                      ; line   284
+ 1098  1098                      ; line   284
+ 1099  1099                      $DGL    0,77
+ 1100  1100 000E0                ??ef_dataflash_start:
+ 1101  1101 000E0  C6                    pop     hl                                              ;[INF] 1, 1
+ 1102  1102 000E1  D7                    ret                                                     ;[INF] 1, 6
+ 1103  1103 000E2                ??ee_dataflash_start:
+ 1104  1104                      ; line   302
+ 1105  1105 000E2                _dataflash_stop:
+ 1106  1106                      $DGL    1,188
+ 1107  1107 000E2  C7                    push    hl                                              ;[INF] 1, 1
+ 1108  1108 000E3  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 1109  1109 000E4                ??bf_dataflash_stop:
+ 1110  1110                      ; line   304
+ 1111  1111                      $DGL    0,3
+ 1112  1112 000E4  5703                  mov     h,#03H  ; 3                                     ;[INF] 2, 1
+ 1113  1113                      ; line   306
+ 1114  1114                      $DGL    0,5
+ 1115  1115 000E6 R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1116  1116 000EA  DF26                  bnz     $?L0028                                         ;[INF] 2, 4
+ 1117  1117                      ; line   307
+ 1118  1118 000EC                ??bb00_dataflash_stop:
+ 1119  1119                      ; line   309
+ 1120  1120                      $DGL    0,8
+ 1121  1121 000EC RCF010007              mov     !_df_cmd,#07H   ; 7                             ;[INF] 4, 1
+ 1122  1122                      ; line   310
+ 1123  1123                      $DGL    0,9
+ 1124  1124 000F0 RCF050007              mov     !_df_req+3,#07H ; 7                             ;[INF] 4, 1
+ 1125  1125                      ; line   314
+ 1126  1126                      $DGL    0,13
+ 1127  1127 000F4  FE09FF                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1128  1128                      ; line   316
+ 1129  1129                      $DGL    0,15
+ 1130  1130 000F7  FE16FF                call    $!bs_F0134                                      ;[INF] 3, 3
+ 1131  1131                      ; line   317
+ 1132  1132                      $DGL    0,16
+ 1133  1133 000FA  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1134  1134 000FB  DF15                  bnz     $?L0028                                         ;[INF] 2, 4
+ 1135  1135                      ; line   318
+ 1136  1136 000FD                ??bb01_dataflash_stop:
+ 1137  1137                      ; line   319
+ 1138  1138                      $DGL    0,18
+ 1139  1139 000FD  66                    mov     a,l                                             ;[INF] 1, 1
+ 1140  1140 000FE  81                    inc     a                                               ;[INF] 1, 1
+ 1141  1141 000FF  DF0D                  bnz     $?L0027                                         ;[INF] 2, 4
+ 1142  1142                      ; line   320
+ 1143  1143 00101                ??bb02_dataflash_stop:
+ 1144  1144                      ; line   328
+ 1145  1145                      $DGL    0,27
+ 1146  1146 00101 RFC000000              call    !!_EEL_Close                                    ;[INF] 4, 3
+ 1147  1147                      ; line   329
+ 1148  1148                      $DGL    0,28
+ 1149  1149 00105 RFC000000              call    !!_plf_hoco_stop                                ;[INF] 4, 3
+ 1150  1150                      ; line   332
+ 1151  1151                      $DGL    0,31
+ 1152  1152 00109 RE50000                oneb    !_df_stat                                       ;[INF] 3, 1
+ 1153  1153 0010C                ??eb02_dataflash_stop:
+ 1154  1154                      ; line   334
+ 1155  1155                      $DGL    0,33
+ 1156  1156 0010C  EF04                  br      $?L0028                                         ;[INF] 2, 3
+ 1157  1157 0010E                ?L0027:
+ 1158  1158                      ; line   335
+ 1159  1159 0010E                ??bb03_dataflash_stop:
+ 1160  1160                      ; line   337
+ 1161  1161                      $DGL    0,36
+ 1162  1162 0010E RCF000003              mov     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1163  1163 00112                ??eb03_dataflash_stop:
+ 1164  1164                      ; line   338
+ 1165  1165 00112                ?L0028:
+ 1166  1166 00112                ??eb01_dataflash_stop:
+ 1167  1167                      ; line   339
+ 1168  1168 00112                ??eb00_dataflash_stop:
+ 1169  1169                      ; line   340
+ 1170  1170                      ; line   342
+ 1171  1171                      $DGL    0,41
+ 1172  1172 00112  67                    mov     a,h                                             ;[INF] 1, 1
+ 1173  1173 00113  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1174  1174 00115  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1175  1175                      ; line   346
+ 1176  1176                      ; line   346
+ 1177  1177                      $DGL    0,45
+ 1178  1178 00116                ??ef_dataflash_stop:
+ 1179  1179 00116  C6                    pop     hl                                              ;[INF] 1, 1
+ 1180  1180 00117  D7                    ret                                                     ;[INF] 1, 6
+ 1181  1181 00118                ??ee_dataflash_stop:
+ 1182  1182                      ; line   367
+ 1183  1183 00118                _dataflash_rw:
+ 1184  1184                      $DGL    1,212
+ 1185  1185 00118  C7                    push    hl                                              ;[INF] 1, 1
+ 1186  1186 00119  C1                    push    ax                                              ;[INF] 1, 1
+ 1187  1187 0011A  C1                    push    ax                                              ;[INF] 1, 1
+ 1188  1188 0011B  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1189  1189 0011E                ??bf_dataflash_rw:
+ 1190  1190                      ; line   371
+ 1191  1191                      $DGL    0,5
+ 1192  1192 0011E R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1193  1193 00122  DF3A                  bnz     $?L0031                                         ;[INF] 2, 4
+ 1194  1194                      ; line   372
+ 1195  1195 00124                ??bb00_dataflash_rw:
+ 1196  1196                      ; line   373
+ 1197  1197                      $DGL    0,7
+ 1198  1198 00124  8C0A                  mov     a,[hl+10]       ; rw                            ;[INF] 2, 1
+ 1199  1199 00126  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1200  1200 00127  DF05                  bnz     $?L0033                                         ;[INF] 2, 4
+ 1201  1201 00129  300300                movw    ax,#03H ; 3                                     ;[INF] 3, 1
+ 1202  1202 0012C  EF02                  br      $?L0034                                         ;[INF] 2, 3
+ 1203  1203 0012E                ?L0033:
+ 1204  1204 0012E  E6                    onew    ax                                              ;[INF] 1, 1
+ 1205  1205 0012F  A1                    incw    ax                                              ;[INF] 1, 1
+ 1206  1206 00130                ?L0034:
+ 1207  1207 00130  60                    mov     a,x                                             ;[INF] 1, 1
+ 1208  1208 00131 R9F0100                mov     !_df_cmd,a                                      ;[INF] 3, 1
+ 1209  1209                      ; line   374
+ 1210  1210                      $DGL    0,8
+ 1211  1211 00134  AC0E                  movw    ax,[hl+14]      ; addr                          ;[INF] 2, 1
+ 1212  1212 00136 RBF0200                movw    !_df_req,ax                                     ;[INF] 3, 1
+ 1213  1213                      ; line   375
+ 1214  1214                      $DGL    0,9
+ 1215  1215 00139  8C0C                  mov     a,[hl+12]       ; id                            ;[INF] 2, 1
+ 1216  1216 0013B R9F0400                mov     !_df_req+2,a                                    ;[INF] 3, 1
+ 1217  1217                      ; line   376
+ 1218  1218                      $DGL    0,10
+ 1219  1219 0013E R8F0100                mov     a,!_df_cmd                                      ;[INF] 3, 1
+ 1220  1220 00141 R9F0500                mov     !_df_req+3,a                                    ;[INF] 3, 1
+ 1221  1221                      ; line   380
+ 1222  1222                      $DGL    0,14
+ 1223  1223 00144  FEB9FE                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1224  1224                      ; line   382
+ 1225  1225                      $DGL    0,16
+ 1226  1226 00147  FED1FE                call    $!bs_F0135                                      ;[INF] 3, 3
+ 1227  1227                      ; line   383
+ 1228  1228                      $DGL    0,17
+ 1229  1229 0014A  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1230  1230 0014B  DF1F                  bnz     $?L0040                                         ;[INF] 2, 4
+ 1231  1231                      ; line   384
+ 1232  1232 0014D                ??bb01_dataflash_rw:
+ 1233  1233                      ; line   385
+ 1234  1234                      $DGL    0,19
+ 1235  1235 0014D  8C02                  mov     a,[hl+2]        ; mode                          ;[INF] 2, 1
+ 1236  1236 0014F  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1237  1237 00150  DF06                  bnz     $?L0037                                         ;[INF] 2, 4
+ 1238  1238                      ; line   386
+ 1239  1239 00152                ??bb02_dataflash_rw:
+ 1240  1240                      ; line   388
+ 1241  1241                      $DGL    0,22
+ 1242  1242 00152 RCF000003              mov     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1243  1243 00156                ??eb02_dataflash_rw:
+ 1244  1244                      ; line   391
+ 1245  1245                      $DGL    0,25
+ 1246  1246 00156  EF14                  br      $?L0040                                         ;[INF] 2, 3
+ 1247  1247 00158                ?L0037:
+ 1248  1248                      ; line   392
+ 1249  1249 00158                ??bb03_dataflash_rw:
+ 1250  1250                      ; line   393
+ 1251  1251                      $DGL    0,27
+ 1252  1252 00158 RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1253  1253 0015C                ??eb03_dataflash_rw:
+ 1254  1254                      ; line   394
+ 1255  1255 0015C                ??eb01_dataflash_rw:
+ 1256  1256                      ; line   396
+ 1257  1257 0015C                ??eb00_dataflash_rw:
+ 1258  1258                      ; line   398
+ 1259  1259                      $DGL    0,32
+ 1260  1260 0015C  EF0E                  br      $?L0040                                         ;[INF] 2, 3
+ 1261  1261 0015E                ?L0031:
+ 1262  1262 0015E R40000003              cmp     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1263  1263 00162  DF05                  bnz     $?L0039                                         ;[INF] 2, 4
+ 1264  1264                      ; line   399
+ 1265  1265 00164                ??bb04_dataflash_rw:
+ 1266  1266                      ; line   400
+ 1267  1267                      $DGL    0,34
+ 1268  1268 00164  CC0101                mov     [hl+1],#01H     ; errno,1                       ;[INF] 3, 1
+ 1269  1269 00167                ??eb04_dataflash_rw:
+ 1270  1270                      ; line   402
+ 1271  1271                      $DGL    0,36
+ 1272  1272 00167  EF03                  br      $?L0040                                         ;[INF] 2, 3
+ 1273  1273 00169                ?L0039:
+ 1274  1274                      ; line   403
+ 1275  1275 00169                ??bb05_dataflash_rw:
+ 1276  1276                      ; line   404
+ 1277  1277                      $DGL    0,38
+ 1278  1278 00169  CC0103                mov     [hl+1],#03H     ; errno,3                       ;[INF] 3, 1
+ 1279  1279 0016C                ??eb05_dataflash_rw:
+ 1280  1280                      ; line   405
+ 1281  1281 0016C                ?L0040:
+ 1282  1282                      ; line   407
+ 1283  1283                      $DGL    0,41
+ 1284  1284 0016C  8C01                  mov     a,[hl+1]        ; errno                         ;[INF] 2, 1
+ 1285  1285 0016E  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1286  1286 00170  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1287  1287                      ; line   411
+ 1288  1288                      ; line   411
+ 1289  1289                      $DGL    0,45
+ 1290  1290 00171                ??ef_dataflash_rw:
+ 1291  1291 00171  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 1292  1292 00173  C6                    pop     hl                                              ;[INF] 1, 1
+ 1293  1293 00174  D7                    ret                                                     ;[INF] 1, 6
+ 1294  1294 00175                ??ee_dataflash_rw:
+ 1295  1295                      ; line   429
+ 1296  1296 00175                _dataflash_cleanup:
+ 1297  1297                      $DGL    1,249
+ 1298  1298 00175  C7                    push    hl                                              ;[INF] 1, 1
+ 1299  1299 00176  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 1300  1300 00177                ??bf_dataflash_cleanup:
+ 1301  1301                      ; line   433
+ 1302  1302                      $DGL    0,5
+ 1303  1303 00177 R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1304  1304 0017B  DF21                  bnz     $?L0043                                         ;[INF] 2, 4
+ 1305  1305                      ; line   434
+ 1306  1306 0017D                ??bb00_dataflash_cleanup:
+ 1307  1307                      ; line   440
+ 1308  1308                      $DGL    0,12
+ 1309  1309 0017D RCF010004              mov     !_df_cmd,#04H   ; 4                             ;[INF] 4, 1
+ 1310  1310                      ; line   441
+ 1311  1311                      $DGL    0,13
+ 1312  1312 00181 RCF050004              mov     !_df_req+3,#04H ; 4                             ;[INF] 4, 1
+ 1313  1313                      ; line   443
+ 1314  1314                      $DGL    0,15
+ 1315  1315 00185  FE78FE                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1316  1316                      ; line   445
+ 1317  1317                      $DGL    0,17
+ 1318  1318 00188  FE85FE                call    $!bs_F0134                                      ;[INF] 3, 3
+ 1319  1319                      ; line   446
+ 1320  1320                      $DGL    0,18
+ 1321  1321 0018B  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1322  1322 0018C  DF1C                  bnz     $?L0050                                         ;[INF] 2, 4
+ 1323  1323                      ; line   447
+ 1324  1324 0018E                ??bb01_dataflash_cleanup:
+ 1325  1325                      ; line   448
+ 1326  1326                      $DGL    0,20
+ 1327  1327 0018E  66                    mov     a,l                                             ;[INF] 1, 1
+ 1328  1328 0018F  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1329  1329 00190  DF06                  bnz     $?L0047                                         ;[INF] 2, 4
+ 1330  1330                      ; line   449
+ 1331  1331 00192                ??bb02_dataflash_cleanup:
+ 1332  1332                      ; line   451
+ 1333  1333                      $DGL    0,23
+ 1334  1334 00192 RCF000003              mov     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1335  1335 00196                ??eb02_dataflash_cleanup:
+ 1336  1336                      ; line   454
+ 1337  1337                      $DGL    0,26
+ 1338  1338 00196  EF12                  br      $?L0050                                         ;[INF] 2, 3
+ 1339  1339 00198                ?L0047:
+ 1340  1340                      ; line   455
+ 1341  1341 00198                ??bb03_dataflash_cleanup:
+ 1342  1342                      ; line   456
+ 1343  1343                      $DGL    0,28
+ 1344  1344 00198 RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1345  1345 0019C                ??eb03_dataflash_cleanup:
+ 1346  1346                      ; line   457
+ 1347  1347 0019C                ??eb01_dataflash_cleanup:
+ 1348  1348                      ; line   459
+ 1349  1349 0019C                ??eb00_dataflash_cleanup:
+ 1350  1350                      ; line   461
+ 1351  1351                      $DGL    0,33
+ 1352  1352 0019C  EF0C                  br      $?L0050                                         ;[INF] 2, 3
+ 1353  1353 0019E                ?L0043:
+ 1354  1354 0019E R40000003              cmp     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1355  1355 001A2  DF04                  bnz     $?L0049                                         ;[INF] 2, 4
+ 1356  1356                      ; line   462
+ 1357  1357 001A4                ??bb04_dataflash_cleanup:
+ 1358  1358                      ; line   463
+ 1359  1359                      $DGL    0,35
+ 1360  1360 001A4  5701                  mov     h,#01H  ; 1                                     ;[INF] 2, 1
+ 1361  1361 001A6                ??eb04_dataflash_cleanup:
+ 1362  1362                      ; line   465
+ 1363  1363                      $DGL    0,37
+ 1364  1364 001A6  EF02                  br      $?L0050                                         ;[INF] 2, 3
+ 1365  1365 001A8                ?L0049:
+ 1366  1366                      ; line   466
+ 1367  1367 001A8                ??bb05_dataflash_cleanup:
+ 1368  1368                      ; line   467
+ 1369  1369                      $DGL    0,39
+ 1370  1370 001A8  5703                  mov     h,#03H  ; 3                                     ;[INF] 2, 1
+ 1371  1371 001AA                ??eb05_dataflash_cleanup:
+ 1372  1372                      ; line   468
+ 1373  1373 001AA                ?L0050:
+ 1374  1374                      ; line   470
+ 1375  1375                      $DGL    0,42
+ 1376  1376 001AA  67                    mov     a,h                                             ;[INF] 1, 1
+ 1377  1377 001AB  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1378  1378 001AD  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1379  1379                      ; line   474
+ 1380  1380                      ; line   474
+ 1381  1381                      $DGL    0,46
+ 1382  1382 001AE                ??ef_dataflash_cleanup:
+ 1383  1383 001AE  C6                    pop     hl                                              ;[INF] 1, 1
+ 1384  1384 001AF  D7                    ret                                                     ;[INF] 1, 6
+ 1385  1385 001B0                ??ee_dataflash_cleanup:
+ 1386  1386                      ; line   492
+ 1387  1387 001B0                _dataflash_format:
+ 1388  1388                      $DGL    1,281
+ 1389  1389 001B0  C7                    push    hl                                              ;[INF] 1, 1
+ 1390  1390 001B1  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 1391  1391 001B2                ??bf_dataflash_format:
+ 1392  1392                      ; line   496
+ 1393  1393                      $DGL    0,5
+ 1394  1394 001B2 R40000001              cmp     !_df_stat,#01H  ; 1                             ;[INF] 4, 1
+ 1395  1395 001B6  DD06                  bz      $?L0055                                         ;[INF] 2, 4
+ 1396  1396 001B8 R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1397  1397 001BC  DF3A                  bnz     $?L0053                                         ;[INF] 2, 4
+ 1398  1398 001BE                ?L0055:
+ 1399  1399                      ; line   497
+ 1400  1400 001BE                ??bb00_dataflash_format:
+ 1401  1401                      ; line   498
+ 1402  1402                      $DGL    0,7
+ 1403  1403 001BE R40000001              cmp     !_df_stat,#01H  ; 1                             ;[INF] 4, 1
+ 1404  1404 001C2  DF08                  bnz     $?L0056                                         ;[INF] 2, 4
+ 1405  1405                      ; line   499
+ 1406  1406 001C4                ??bb01_dataflash_format:
+ 1407  1407                      ; line   500
+ 1408  1408                      $DGL    0,9
+ 1409  1409 001C4 RFC000000              call    !!_plf_hoco_start                               ;[INF] 4, 3
+ 1410  1410                      ; line   501
+ 1411  1411                      $DGL    0,10
+ 1412  1412 001C8 RFC000000              call    !!_EEL_Open                                     ;[INF] 4, 3
+ 1413  1413 001CC                ??eb01_dataflash_format:
+ 1414  1414                      ; line   502
+ 1415  1415 001CC                ?L0056:
+ 1416  1416                      ; line   503
+ 1417  1417                      $DGL    0,12
+ 1418  1418 001CC RCF010006              mov     !_df_cmd,#06H   ; 6                             ;[INF] 4, 1
+ 1419  1419                      ; line   504
+ 1420  1420                      $DGL    0,13
+ 1421  1421 001D0 RCF050006              mov     !_df_req+3,#06H ; 6                             ;[INF] 4, 1
+ 1422  1422                      ; line   508
+ 1423  1423                      $DGL    0,17
+ 1424  1424 001D4  FE29FE                call    $!bs_F0137                                      ;[INF] 3, 3
+ 1425  1425                      ; line   510
+ 1426  1426                      $DGL    0,19
+ 1427  1427 001D7  FE36FE                call    $!bs_F0134                                      ;[INF] 3, 3
+ 1428  1428                      ; line   511
+ 1429  1429                      $DGL    0,20
+ 1430  1430 001DA  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1431  1431 001DB  DF27                  bnz     $?L0063                                         ;[INF] 2, 4
+ 1432  1432                      ; line   512
+ 1433  1433 001DD                ??bb02_dataflash_format:
+ 1434  1434                      ; line   513
+ 1435  1435                      $DGL    0,22
+ 1436  1436 001DD  66                    mov     a,l                                             ;[INF] 1, 1
+ 1437  1437 001DE  81                    inc     a                                               ;[INF] 1, 1
+ 1438  1438 001DF  DF11                  bnz     $?L0060                                         ;[INF] 2, 4
+ 1439  1439                      ; line   514
+ 1440  1440 001E1                ??bb03_dataflash_format:
+ 1441  1441                      ; line   516
+ 1442  1442                      $DGL    0,25
+ 1443  1443 001E1 RFC450300              call    !!_dataflash_busy_handler                       ;[INF] 4, 3
+ 1444  1444                      ; line   519
+ 1445  1445                      $DGL    0,28
+ 1446  1446 001E5 RFC000000              call    !!_EEL_Close                                    ;[INF] 4, 3
+ 1447  1447                      ; line   520
+ 1448  1448                      $DGL    0,29
+ 1449  1449 001E9 RFC000000              call    !!_plf_hoco_stop                                ;[INF] 4, 3
+ 1450  1450                      ; line   523
+ 1451  1451                      $DGL    0,32
+ 1452  1452 001ED RE50000                oneb    !_df_stat                                       ;[INF] 3, 1
+ 1453  1453 001F0                ??eb03_dataflash_format:
+ 1454  1454                      ; line   525
+ 1455  1455                      $DGL    0,34
+ 1456  1456 001F0  EF12                  br      $?L0063                                         ;[INF] 2, 3
+ 1457  1457 001F2                ?L0060:
+ 1458  1458                      ; line   526
+ 1459  1459 001F2                ??bb04_dataflash_format:
+ 1460  1460                      ; line   528
+ 1461  1461                      $DGL    0,37
+ 1462  1462 001F2 RCF000003              mov     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1463  1463 001F6                ??eb04_dataflash_format:
+ 1464  1464                      ; line   529
+ 1465  1465 001F6                ??eb02_dataflash_format:
+ 1466  1466                      ; line   530
+ 1467  1467 001F6                ??eb00_dataflash_format:
+ 1468  1468                      ; line   532
+ 1469  1469                      $DGL    0,41
+ 1470  1470 001F6  EF0C                  br      $?L0063                                         ;[INF] 2, 3
+ 1471  1471 001F8                ?L0053:
+ 1472  1472 001F8 R40000003              cmp     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1473  1473 001FC  DF04                  bnz     $?L0062                                         ;[INF] 2, 4
+ 1474  1474                      ; line   533
+ 1475  1475 001FE                ??bb05_dataflash_format:
+ 1476  1476                      ; line   534
+ 1477  1477                      $DGL    0,43
+ 1478  1478 001FE  5701                  mov     h,#01H  ; 1                                     ;[INF] 2, 1
+ 1479  1479 00200                ??eb05_dataflash_format:
+ 1480  1480                      ; line   536
+ 1481  1481                      $DGL    0,45
+ 1482  1482 00200  EF02                  br      $?L0063                                         ;[INF] 2, 3
+ 1483  1483 00202                ?L0062:
+ 1484  1484                      ; line   537
+ 1485  1485 00202                ??bb06_dataflash_format:
+ 1486  1486                      ; line   538
+ 1487  1487                      $DGL    0,47
+ 1488  1488 00202  5703                  mov     h,#03H  ; 3                                     ;[INF] 2, 1
+ 1489  1489 00204                ??eb06_dataflash_format:
+ 1490  1490                      ; line   539
+ 1491  1491 00204                ?L0063:
+ 1492  1492                      ; line   541
+ 1493  1493                      $DGL    0,50
+ 1494  1494 00204  67                    mov     a,h                                             ;[INF] 1, 1
+ 1495  1495 00205  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1496  1496 00207  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1497  1497                      ; line   545
+ 1498  1498                      ; line   545
+ 1499  1499                      $DGL    0,54
+ 1500  1500 00208                ??ef_dataflash_format:
+ 1501  1501 00208  C6                    pop     hl                                              ;[INF] 1, 1
+ 1502  1502 00209  D7                    ret                                                     ;[INF] 1, 6
+ 1503  1503 0020A                ??ee_dataflash_format:
+ 1504  1504                      ; line   557
+ 1505  1505 0020A                _dataflash_continue:
+ 1506  1506                      $DGL    1,317
+ 1507  1507 0020A  C7                    push    hl                                              ;[INF] 1, 1
+ 1508  1508 0020B  C1                    push    ax                                              ;[INF] 1, 1
+ 1509  1509 0020C  C1                    push    ax                                              ;[INF] 1, 1
+ 1510  1510 0020D  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1511  1511 00210                ??bf_dataflash_continue:
+ 1512  1512                      ; line   559
+ 1513  1513                      $DGL    0,3
+ 1514  1514 00210  CC0103                mov     [hl+1],#03H     ; errno,3                       ;[INF] 3, 1
+ 1515  1515                      ; line   564
+ 1516  1516                      $DGL    0,8
+ 1517  1517 00213 R40000003              cmp     !_df_stat,#03H  ; 3                             ;[INF] 4, 1
+ 1518  1518 00217  DF3F                  bnz     $?L0071                                         ;[INF] 2, 4
+ 1519  1519                      ; line   565
+ 1520  1520 00219                ??bb00_dataflash_continue:
+ 1521  1521                      ; line   574
+ 1522  1522                      $DGL    0,18
+ 1523  1523 00219 R40060001              cmp     !_df_req+4,#01H ; 1                             ;[INF] 4, 1
+ 1524  1524 0021D  61F8                  sknz                                                    ;[INF] 2, 1
+ 1525  1525                      ; line   575
+ 1526  1526 0021F                ??bb01_dataflash_continue:
+ 1527  1527                      ; line   576
+ 1528  1528                      $DGL    0,20
+ 1529  1529 0021F RFC000000              call    !!_EEL_Handler                                  ;[INF] 4, 3
+ 1530  1530 00223                ??eb01_dataflash_continue:
+ 1531  1531                      ; line   577
+ 1532  1532 00223                ?L0068:
+ 1533  1533                      ; line   580
+ 1534  1534                      $DGL    0,24
+ 1535  1535 00223  FEF5FD                call    $!bs_F0135                                      ;[INF] 3, 3
+ 1536  1536                      ; line   607
+ 1537  1537                      $DGL    0,51
+ 1538  1538 00226 R40060001              cmp     !_df_req+4,#01H ; 1                             ;[INF] 4, 1
+ 1539  1539 0022A  DD26                  bz      $?L0070                                         ;[INF] 2, 4
+ 1540  1540                      ; line   608
+ 1541  1541 0022C                ??bb02_dataflash_continue:
+ 1542  1542                      ; line   610
+ 1543  1543                      $DGL    0,54
+ 1544  1544 0022C  AC02                  movw    ax,[hl+2]       ; fin_flg                       ;[INF] 2, 1
+ 1545  1545 0022E  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1546  1546 0022F  CA0001                mov     [de+0],#01H     ; 1                             ;[INF] 3, 1
+ 1547  1547                      ; line   612
+ 1548  1548                      $DGL    0,56
+ 1549  1549 00232 R8F0100                mov     a,!_df_cmd                                      ;[INF] 3, 1
+ 1550  1550 00235  318F                  sarw    ax,8                                            ;[INF] 2, 1
+ 1551  1551 00237  E7                    onew    bc                                              ;[INF] 1, 1
+ 1552  1552 00238  240600                subw    ax,#06H ; 6                                     ;[INF] 3, 1
+ 1553  1553 0023B  23                    subw    ax,bc                                           ;[INF] 1, 1
+ 1554  1554 0023C  61C30D                bh      $?L0074                                         ;[INF] 3, 4
+ 1555  1555                      ; line   613
+ 1556  1556 0023F                ??bb03_dataflash_continue:
+ 1557  1557                      ; line   614
+ 1558  1558                      ; line   617
+ 1559  1559                      $DGL    0,61
+ 1560  1560 0023F RFC000000              call    !!_EEL_Close                                    ;[INF] 4, 3
+ 1561  1561                      ; line   618
+ 1562  1562                      $DGL    0,62
+ 1563  1563 00243 RFC000000              call    !!_plf_hoco_stop                                ;[INF] 4, 3
+ 1564  1564                      ; line   622
+ 1565  1565                      $DGL    0,66
+ 1566  1566 00247 RE50000                oneb    !_df_stat                                       ;[INF] 3, 1
+ 1567  1567                      ; line   623
+ 1568  1568                      $DGL    0,67
+ 1569  1569 0024A  EF0C                  br      $?L0071                                         ;[INF] 2, 3
+ 1570  1570                      ; line   624
+ 1571  1571 0024C                ?L0074:
+ 1572  1572                      ; line   627
+ 1573  1573                      $DGL    0,71
+ 1574  1574 0024C RCF000002              mov     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1575  1575                      ; line   628
+ 1576  1576                      $DGL    0,72
+ 1577  1577 00250  EF06                  br      $?L0071                                         ;[INF] 2, 3
+ 1578  1578 00252                ??eb03_dataflash_continue:
+ 1579  1579                      ; line   629
+ 1580  1580 00252                ??eb02_dataflash_continue:
+ 1581  1581                      ; line   631
+ 1582  1582 00252                ?L0070:
+ 1583  1583                      ; line   632
+ 1584  1584 00252                ??bb04_dataflash_continue:
+ 1585  1585                      ; line   634
+ 1586  1586                      $DGL    0,78
+ 1587  1587 00252  AC02                  movw    ax,[hl+2]       ; fin_flg                       ;[INF] 2, 1
+ 1588  1588 00254  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1589  1589 00255  CA0000                mov     [de+0],#00H     ; 0                             ;[INF] 3, 1
+ 1590  1590 00258                ??eb04_dataflash_continue:
+ 1591  1591                      ; line   635
+ 1592  1592 00258                ?L0071:
+ 1593  1593 00258                ??eb00_dataflash_continue:
+ 1594  1594                      ; line   637
+ 1595  1595                      ; line   639
+ 1596  1596                      $DGL    0,83
+ 1597  1597 00258  8C01                  mov     a,[hl+1]        ; errno                         ;[INF] 2, 1
+ 1598  1598 0025A  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1599  1599 0025C  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1600  1600                      ; line   643
+ 1601  1601                      ; line   643
+ 1602  1602                      $DGL    0,87
+ 1603  1603 0025D                ??ef_dataflash_continue:
+ 1604  1604 0025D  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 1605  1605 0025F  C6                    pop     hl                                              ;[INF] 1, 1
+ 1606  1606 00260  D7                    ret                                                     ;[INF] 1, 6
+ 1607  1607 00261                ??ee_dataflash_continue:
+ 1608  1608                      ; line   655
+ 1609  1609 00261                _dataflash_get_space:
+ 1610  1610                      $DGL    1,346
+ 1611  1611 00261  C7                    push    hl                                              ;[INF] 1, 1
+ 1612  1612 00262  C1                    push    ax                                              ;[INF] 1, 1
+ 1613  1613 00263  C1                    push    ax                                              ;[INF] 1, 1
+ 1614  1614 00264  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1615  1615 00267                ??bf_dataflash_get_space:
+ 1616  1616                      ; line   657
+ 1617  1617                      $DGL    0,3
+ 1618  1618 00267  CC0103                mov     [hl+1],#03H     ; errno,3                       ;[INF] 3, 1
+ 1619  1619                      ; line   660
+ 1620  1620                      $DGL    0,6
+ 1621  1621 0026A R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1622  1622 0026E  DF26                  bnz     $?L0079                                         ;[INF] 2, 4
+ 1623  1623                      ; line   661
+ 1624  1624 00270                ??bb00_dataflash_get_space:
+ 1625  1625                      ; line   662
+ 1626  1626                      $DGL    0,8
+ 1627  1627 00270  AC02                  movw    ax,[hl+2]       ; wsize                         ;[INF] 2, 1
+ 1628  1628 00272 RFC000000              call    !!_EEL_GetSpace                                 ;[INF] 4, 3
+ 1629  1629 00276  62                    mov     a,c                                             ;[INF] 1, 1
+ 1630  1630 00277  9B                    mov     [hl],a  ; status                                ;[INF] 1, 1
+ 1631  1631                      ; line   663
+ 1632  1632                      $DGL    0,9
+ 1633  1633 00278  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1634  1634 00279  DF08                  bnz     $?L0081                                         ;[INF] 2, 4
+ 1635  1635 0027B  AC02                  movw    ax,[hl+2]       ; wsize                         ;[INF] 2, 1
+ 1636  1636 0027D  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1637  1637 0027E RFD0000                call    !@@indao                                        ;[INF] 3, 3
+ 1638  1638 00281  EF01                  br      $?L0082                                         ;[INF] 2, 3
+ 1639  1639 00283                ?L0081:
+ 1640  1640 00283  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1641  1641 00284                ?L0082:
+ 1642  1642 00284  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1643  1643 00285  AC02                  movw    ax,[hl+2]       ; wsize                         ;[INF] 2, 1
+ 1644  1644 00287  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1645  1645 00288  13                    movw    ax,bc                                           ;[INF] 1, 1
+ 1646  1646 00289 RFD0000                call    !@@inado                                        ;[INF] 3, 3
+ 1647  1647                      ; line   665
+ 1648  1648                      $DGL    0,11
+ 1649  1649 0028C  8B                    mov     a,[hl]  ; status                                ;[INF] 1, 1
+ 1650  1650 0028D  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1651  1651 0028F RFC1D0300              call    !!_dataflash_errno                              ;[INF] 4, 3
+ 1652  1652 00293  62                    mov     a,c                                             ;[INF] 1, 1
+ 1653  1653 00294  9C01                  mov     [hl+1],a        ; errno                         ;[INF] 2, 1
+ 1654  1654 00296                ??eb00_dataflash_get_space:
+ 1655  1655                      ; line   666
+ 1656  1656 00296                ?L0079:
+ 1657  1657                      ; line   668
+ 1658  1658                      $DGL    0,14
+ 1659  1659 00296  8C01                  mov     a,[hl+1]        ; errno                         ;[INF] 2, 1
+ 1660  1660 00298  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1661  1661 0029A  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1662  1662                      ; line   672
+ 1663  1663                      ; line   672
+ 1664  1664                      $DGL    0,18
+ 1665  1665 0029B                ??ef_dataflash_get_space:
+ 1666  1666 0029B  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 1667  1667 0029D  C6                    pop     hl                                              ;[INF] 1, 1
+ 1668  1668 0029E  D7                    ret                                                     ;[INF] 1, 6
+ 1669  1669 0029F                ??ee_dataflash_get_space:
+ 1670  1670                      ; line   684
+ 1671  1671 0029F                _dataflash_getver:
+ 1672  1672                      $DGL    1,361
+ 1673  1673 0029F  C7                    push    hl                                              ;[INF] 1, 1
+ 1674  1674 002A0  C1                    push    ax                                              ;[INF] 1, 1
+ 1675  1675 002A1  2006                  subw    sp,#06H                                         ;[INF] 2, 1
+ 1676  1676 002A3  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1677  1677 002A6                ??bf_dataflash_getver:
+ 1678  1678                      ; line   686
+ 1679  1679                      $DGL    0,3
+ 1680  1680 002A6  CC0503                mov     [hl+5],#03H     ; errno,3                       ;[INF] 3, 1
+ 1681  1681                      ; line   690
+ 1682  1682                      $DGL    0,7
+ 1683  1683 002A9 R40000001              cmp     !_df_stat,#01H  ; 1                             ;[INF] 4, 1
+ 1684  1684 002AD  DD06                  bz      $?L0087                                         ;[INF] 2, 4
+ 1685  1685 002AF R40000002              cmp     !_df_stat,#02H  ; 2                             ;[INF] 4, 1
+ 1686  1686 002B3  DF4E                  bnz     $?L0085                                         ;[INF] 2, 4
+ 1687  1687 002B5                ?L0087:
+ 1688  1688                      ; line   691
+ 1689  1689 002B5                ??bb00_dataflash_getver:
+ 1690  1690                      ; line   692
+ 1691  1691                      $DGL    0,9
+ 1692  1692 002B5 RFC000000              call    !!_EEL_GetVersionString                         ;[INF] 4, 3
+ 1693  1693 002B9  13                    movw    ax,bc                                           ;[INF] 1, 1
+ 1694  1694 002BA  BB                    movw    [hl],ax ; string                                ;[INF] 1, 1
+ 1695  1695 002BB  64                    mov     a,e                                             ;[INF] 1, 1
+ 1696  1696 002BC  9C02                  mov     [hl+2],a        ; string                        ;[INF] 2, 1
+ 1697  1697                      ; line   695
+ 1698  1698                      $DGL    0,12
+ 1699  1699 002BE  CC0400                mov     [hl+4],#00H     ; len,0                         ;[INF] 3, 1
+ 1700  1700 002C1                ?L0088:
+ 1701  1701 002C1  8C04                  mov     a,[hl+4]        ; len                           ;[INF] 2, 1
+ 1702  1702 002C3  4C18                  cmp     a,#018H ; 24                                    ;[INF] 2, 1
+ 1703  1703 002C5  DE20                  bnc     $?L0089                                         ;[INF] 2, 4
+ 1704  1704                      ; line   696
+ 1705  1705 002C7                ??bb01_dataflash_getver:
+ 1706  1706                      ; line   697
+ 1707  1707                      $DGL    0,14
+ 1708  1708 002C7  8C04                  mov     a,[hl+4]        ; len                           ;[INF] 2, 1
+ 1709  1709 002C9  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1710  1710 002CB  610900                addw    ax,[hl+0]       ; string                        ;[INF] 3, 1
+ 1711  1711 002CE  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1712  1712 002CF  8C02                  mov     a,[hl+2]        ; string                        ;[INF] 2, 1
+ 1713  1713 002D1  9EFD                  mov     ES,a                                            ;[INF] 2, 1
+ 1714  1714 002D3  1189                  mov     a,ES:[de]                                       ;[INF] 2, 2
+ 1715  1715 002D5  72                    mov     c,a                                             ;[INF] 1, 1
+ 1716  1716 002D6  FE2EFD                call    $!bs_S0136                                      ;[INF] 3, 3
+ 1717  1717 002D9  62                    mov     a,c                                             ;[INF] 1, 1
+ 1718  1718 002DA  99                    mov     [de],a                                          ;[INF] 1, 1
+ 1719  1719                      ; line   698
+ 1720  1720                      $DGL    0,15
+ 1721  1721 002DB  FE29FD                call    $!bs_S0136                                      ;[INF] 3, 3
+ 1722  1722 002DE  89                    mov     a,[de]                                          ;[INF] 1, 1
+ 1723  1723 002DF  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1724  1724 002E0  DD05                  bz      $?L0089                                         ;[INF] 2, 4
+ 1725  1725                      ; line   699
+ 1726  1726 002E2                ??bb02_dataflash_getver:
+ 1727  1727                      ; line   700
+ 1728  1728 002E2                ??eb02_dataflash_getver:
+ 1729  1729                      ; line   701
+ 1730  1730 002E2                ??eb01_dataflash_getver:
+ 1731  1731                      ; line   702
+ 1732  1732                      $DGL    0,19
+ 1733  1733 002E2  615904                inc     [hl+4]  ; len                                   ;[INF] 3, 2
+ 1734  1734 002E5  EFDA                  br      $?L0088                                         ;[INF] 2, 3
+ 1735  1735 002E7                ?L0089:
+ 1736  1736                      ; line   704
+ 1737  1737                      $DGL    0,21
+ 1738  1738 002E7  8C04                  mov     a,[hl+4]        ; len                           ;[INF] 2, 1
+ 1739  1739 002E9  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1740  1740 002EB  A1                    incw    ax                                              ;[INF] 1, 1
+ 1741  1741 002EC  60                    mov     a,x                                             ;[INF] 1, 1
+ 1742  1742 002ED  9C04                  mov     [hl+4],a        ; len                           ;[INF] 2, 1
+ 1743  1743 002EF                ?L0093:
+ 1744  1744 002EF  8C04                  mov     a,[hl+4]        ; len                           ;[INF] 2, 1
+ 1745  1745 002F1  4C18                  cmp     a,#018H ; 24                                    ;[INF] 2, 1
+ 1746  1746 002F3  DE0B                  bnc     $?L0094                                         ;[INF] 2, 4
+ 1747  1747                      ; line   705
+ 1748  1748 002F5                ??bb03_dataflash_getver:
+ 1749  1749                      ; line   706
+ 1750  1750                      $DGL    0,23
+ 1751  1751 002F5  FE0FFD                call    $!bs_S0136                                      ;[INF] 3, 3
+ 1752  1752 002F8  CA0000                mov     [de+0],#00H     ; 0                             ;[INF] 3, 1
+ 1753  1753 002FB                ??eb03_dataflash_getver:
+ 1754  1754                      ; line   707
+ 1755  1755                      $DGL    0,24
+ 1756  1756 002FB  615904                inc     [hl+4]  ; len                                   ;[INF] 3, 2
+ 1757  1757 002FE  EFEF                  br      $?L0093                                         ;[INF] 2, 3
+ 1758  1758 00300                ?L0094:
+ 1759  1759                      ; line   708
+ 1760  1760                      $DGL    0,25
+ 1761  1761 00300  CC0500                mov     [hl+5],#00H     ; errno,0                       ;[INF] 3, 1
+ 1762  1762 00303                ??eb00_dataflash_getver:
+ 1763  1763                      ; line   709
+ 1764  1764 00303                ?L0085:
+ 1765  1765                      ; line   711
+ 1766  1766                      $DGL    0,28
+ 1767  1767 00303  8C05                  mov     a,[hl+5]        ; errno                         ;[INF] 2, 1
+ 1768  1768 00305  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1769  1769 00307  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1770  1770                      ; line   715
+ 1771  1771                      ; line   715
+ 1772  1772                      $DGL    0,32
+ 1773  1773 00308                ??ef_dataflash_getver:
+ 1774  1774 00308  1008                  addw    sp,#08H                                         ;[INF] 2, 1
+ 1775  1775 0030A  C6                    pop     hl                                              ;[INF] 1, 1
+ 1776  1776 0030B  D7                    ret                                                     ;[INF] 1, 6
+ 1777  1777 0030C                ??ee_dataflash_getver:
+ 1778  1778                      ; line   726
+ 1779  1779 0030C                _dataflash_is_stopped:
+ 1780  1780                      $DGL    1,389
+ 1781  1781 0030C                ??bf_dataflash_is_stopped:
+ 1782  1782                      ; line   728
+ 1783  1783                      $DGL    0,3
+ 1784  1784 0030C RD50000                cmp0    !_df_stat                                       ;[INF] 3, 1
+ 1785  1785 0030F  DD06                  bz      $?L0100                                         ;[INF] 2, 4
+ 1786  1786 00311 R40000001              cmp     !_df_stat,#01H  ; 1                             ;[INF] 4, 1
+ 1787  1787 00315  DF03                  bnz     $?L0098                                         ;[INF] 2, 4
+ 1788  1788 00317                ?L0100:
+ 1789  1789 00317  E6                    onew    ax                                              ;[INF] 1, 1
+ 1790  1790 00318  EF01                  br      $?L0099                                         ;[INF] 2, 3
+ 1791  1791 0031A                ?L0098:
+ 1792  1792 0031A  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1793  1793 0031B                ?L0099:
+ 1794  1794 0031B  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1795  1795                      ; line   732
+ 1796  1796                      ; line   732
+ 1797  1797                      $DGL    0,7
+ 1798  1798 0031C                ??ef_dataflash_is_stopped:
+ 1799  1799 0031C  D7                    ret                                                     ;[INF] 1, 6
+ 1800  1800 0031D                ??ee_dataflash_is_stopped:
+ 1801  1801                      ; line   745
+ 1802  1802 0031D                _dataflash_errno:
+ 1803  1803                      $DGL    1,395
+ 1804  1804 0031D  C7                    push    hl                                              ;[INF] 1, 1
+ 1805  1805 0031E  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 1806  1806 0031F                ??bf_dataflash_errno:
+ 1807  1807                      ; line   748
+ 1808  1808                      $DGL    0,4
+ 1809  1809 0031F  5700                  mov     h,#00H  ; 0                                     ;[INF] 2, 1
+ 1810  1810 00321                ?L0103:
+ 1811  1811 00321  67                    mov     a,h                                             ;[INF] 1, 1
+ 1812  1812 00322  4C0C                  cmp     a,#0CH  ; 12                                    ;[INF] 2, 1
+ 1813  1813 00324  DE1A                  bnc     $?L0104                                         ;[INF] 2, 4
+ 1814  1814                      ; line   749
+ 1815  1815 00326                ??bb00_dataflash_errno:
+ 1816  1816                      ; line   750
+ 1817  1817                      $DGL    0,6
+ 1818  1818 00326  F0                    clrb    x                                               ;[INF] 1, 1
+ 1819  1819 00327  317E                  shrw    ax,7                                            ;[INF] 2, 1
+ 1820  1820 00329  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1821  1821 0032A R4100                  mov     ES,#highw (_errno_list)                         ;[INF] 2, 1
+ 1822  1822 0032C R11490600              mov     a,ES:_errno_list[bc]                            ;[INF] 4, 2
+ 1823  1823 00330  614E                  cmp     a,l                                             ;[INF] 2, 1
+ 1824  1824 00332  DF09                  bnz     $?L0106                                         ;[INF] 2, 4
+ 1825  1825                      ; line   751
+ 1826  1826 00334                ??bb01_dataflash_errno:
+ 1827  1827                      ; line   752
+ 1828  1828                      $DGL    0,8
+ 1829  1829 00334 R11490700              mov     a,ES:_errno_list+1[bc]                          ;[INF] 4, 2
+ 1830  1830 00338  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1831  1831 0033A  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1832  1832 0033B  EF06                  br      $?L0102                                         ;[INF] 2, 3
+ 1833  1833 0033D                ??eb01_dataflash_errno:
+ 1834  1834                      ; line   753
+ 1835  1835 0033D                ?L0106:
+ 1836  1836 0033D                ??eb00_dataflash_errno:
+ 1837  1837                      ; line   754
+ 1838  1838                      $DGL    0,10
+ 1839  1839 0033D  87                    inc     h                                               ;[INF] 1, 1
+ 1840  1840 0033E  EFE1                  br      $?L0103                                         ;[INF] 2, 3
+ 1841  1841 00340                ?L0104:
+ 1842  1842                      ; line   755
+ 1843  1843                      $DGL    0,11
+ 1844  1844 00340  320F00                movw    bc,#0FH ; 15                                    ;[INF] 3, 1
+ 1845  1845                      ; line   756
+ 1846  1846 00343                ?L0102:
+ 1847  1847                      ; line   756
+ 1848  1848                      $DGL    0,12
+ 1849  1849 00343                ??ef_dataflash_errno:
+ 1850  1850 00343  C6                    pop     hl                                              ;[INF] 1, 1
+ 1851  1851 00344  D7                    ret                                                     ;[INF] 1, 6
+ 1852  1852 00345                ??ee_dataflash_errno:
+ 1853  1853                      ; line   767
+ 1854  1854 00345                _dataflash_busy_handler:
+ 1855  1855                      $DGL    1,412
+ 1856  1856 00345                ??bf_dataflash_busy_handler:
+ 1857  1857                      ; line   768
+ 1858  1858                      $DGL    0,2
+ 1859  1859 00345                ?L0110:
+ 1860  1860 00345 R40060001              cmp     !_df_req+4,#01H ; 1                             ;[INF] 4, 1
+ 1861  1861 00349  DF06                  bnz     $?L0111                                         ;[INF] 2, 4
+ 1862  1862                      ; line   769
+ 1863  1863 0034B                ??bb00_dataflash_busy_handler:
+ 1864  1864                      ; line   770
+ 1865  1865                      $DGL    0,4
+ 1866  1866 0034B RFC000000              call    !!_EEL_Handler                                  ;[INF] 4, 3
+ 1867  1867 0034F                ??eb00_dataflash_busy_handler:
+ 1868  1868                      ; line   771
+ 1869  1869                      $DGL    0,5
+ 1870  1870 0034F  EFF4                  br      $?L0110                                         ;[INF] 2, 3
+ 1871  1871 00351                ?L0111:
+ 1872  1872                      ; line   772
+ 1873  1873                      $DGL    0,6
+ 1874  1874 00351                ??ef_dataflash_busy_handler:
+ 1875  1875 00351  D7                    ret                                                     ;[INF] 1, 6
+ 1876  1876 00352                ??ee_dataflash_busy_handler:
+ 1877  1877                      ; line   786
+ 1878  1878 00352                _flash_get_bda:
+ 1879  1879                      $DGL    1,422
+ 1880  1880 00352  C7                    push    hl                                              ;[INF] 1, 1
+ 1881  1881 00353  C1                    push    ax                                              ;[INF] 1, 1
+ 1882  1882 00354  C1                    push    ax                                              ;[INF] 1, 1
+ 1883  1883 00355  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1884  1884 00358                ??bf_flash_get_bda:
+ 1885  1885                      ; line   788
+ 1886  1886                      $DGL    0,3
+ 1887  1887 00358  CC0001                mov     [hl+0],#01H     ; invalid,1                     ;[INF] 3, 1
+ 1888  1888                      ; line   792
+ 1889  1889                      $DGL    0,7
+ 1890  1890 0035B  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1891  1891 0035C  90                    dec     x                                               ;[INF] 1, 1
+ 1892  1892 0035D RFC7F0000              call    !!_dataflash_start                              ;[INF] 4, 3
+ 1893  1893 00361  D2                    cmp0    c                                               ;[INF] 1, 1
+ 1894  1894 00362  DF2F                  bnz     $?L0114                                         ;[INF] 2, 4
+ 1895  1895                      ; line   793
+ 1896  1896 00364                ??bb00_flash_get_bda:
+ 1897  1897                      ; line   795
+ 1898  1898                      $DGL    0,10
+ 1899  1899 00364  AC02                  movw    ax,[hl+2]       ; bda                           ;[INF] 2, 1
+ 1900  1900 00366  C1                    push    ax                                              ;[INF] 1, 1
+ 1901  1901 00367  E6                    onew    ax                                              ;[INF] 1, 1
+ 1902  1902 00368  C1                    push    ax                                              ;[INF] 1, 1
+ 1903  1903 00369  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1904  1904 0036A  C1                    push    ax                                              ;[INF] 1, 1
+ 1905  1905 0036B  90                    dec     x                                               ;[INF] 1, 1
+ 1906  1906 0036C RFC180100              call    !!_dataflash_rw                                 ;[INF] 4, 3
+ 1907  1907 00370  1006                  addw    sp,#06H ; 6                                     ;[INF] 2, 1
+ 1908  1908 00372  D2                    cmp0    c                                               ;[INF] 1, 1
+ 1909  1909 00373  DF18                  bnz     $?L0119                                         ;[INF] 2, 4
+ 1910  1910                      ; line   796
+ 1911  1911 00375                ??bb01_flash_get_bda:
+ 1912  1912                      ; line   798
+ 1913  1913                      $DGL    0,13
+ 1914  1914 00375  CC0100                mov     [hl+1],#00H     ; ii,0                          ;[INF] 3, 1
+ 1915  1915 00378                ?L0118:
+ 1916  1916 00378  8C01                  mov     a,[hl+1]        ; ii                            ;[INF] 2, 1
+ 1917  1917 0037A  4C06                  cmp     a,#06H  ; 6                                     ;[INF] 2, 1
+ 1918  1918 0037C  DE0F                  bnc     $?L0119                                         ;[INF] 2, 4
+ 1919  1919                      ; line   799
+ 1920  1920 0037E                ??bb02_flash_get_bda:
+ 1921  1921                      ; line   800
+ 1922  1922                      $DGL    0,15
+ 1923  1923 0037E  FEA6FC                call    $!bs_S0133                                      ;[INF] 3, 3
+ 1924  1924 00381  DD05                  bz      $?L0121                                         ;[INF] 2, 4
+ 1925  1925                      ; line   801
+ 1926  1926 00383                ??bb03_flash_get_bda:
+ 1927  1927                      ; line   802
+ 1928  1928                      $DGL    0,17
+ 1929  1929 00383  CC0000                mov     [hl+0],#00H     ; invalid,0                     ;[INF] 3, 1
+ 1930  1930                      ; line   803
+ 1931  1931                      $DGL    0,18
+ 1932  1932 00386  EF05                  br      $?L0119                                         ;[INF] 2, 3
+ 1933  1933 00388                ??eb03_flash_get_bda:
+ 1934  1934                      ; line   804
+ 1935  1935 00388                ?L0121:
+ 1936  1936 00388                ??eb02_flash_get_bda:
+ 1937  1937                      ; line   805
+ 1938  1938                      $DGL    0,20
+ 1939  1939 00388  615901                inc     [hl+1]  ; ii                                    ;[INF] 3, 2
+ 1940  1940 0038B  EFEB                  br      $?L0118                                         ;[INF] 2, 3
+ 1941  1941 0038D                ?L0119:
+ 1942  1942 0038D                ??eb01_flash_get_bda:
+ 1943  1943                      ; line   806
+ 1944  1944                      ; line   807
+ 1945  1945                      $DGL    0,22
+ 1946  1946 0038D  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1947  1947 0038E  90                    dec     x                                               ;[INF] 1, 1
+ 1948  1948 0038F RFCE20000              call    !!_dataflash_stop                               ;[INF] 4, 3
+ 1949  1949 00393                ??eb00_flash_get_bda:
+ 1950  1950                      ; line   808
+ 1951  1951 00393                ?L0114:
+ 1952  1952                      ; line   811
+ 1953  1953                      $DGL    0,26
+ 1954  1954 00393  8B                    mov     a,[hl]  ; invalid                               ;[INF] 1, 1
+ 1955  1955 00394  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1956  1956 00395  DD2B                  bz      $?L0126                                         ;[INF] 2, 4
+ 1957  1957                      ; line   812
+ 1958  1958 00397                ??bb04_flash_get_bda:
+ 1959  1959                      ; line   814
+ 1960  1960                      $DGL    0,29
+ 1961  1961 00397  CC0100                mov     [hl+1],#00H     ; ii,0                          ;[INF] 3, 1
+ 1962  1962 0039A                ?L0125:
+ 1963  1963 0039A  8C01                  mov     a,[hl+1]        ; ii                            ;[INF] 2, 1
+ 1964  1964 0039C  4C06                  cmp     a,#06H  ; 6                                     ;[INF] 2, 1
+ 1965  1965 0039E  DE22                  bnc     $?L0126                                         ;[INF] 2, 4
+ 1966  1966                      ; line   815
+ 1967  1967 003A0                ??bb05_flash_get_bda:
+ 1968  1968                      ; line   816
+ 1969  1969                      $DGL    0,31
+ 1970  1970 003A0  8C01                  mov     a,[hl+1]        ; ii                            ;[INF] 2, 1
+ 1971  1971 003A2  73                    mov     b,a                                             ;[INF] 1, 1
+ 1972  1972 003A3  4103                  mov     ES,#03H ; 3                                     ;[INF] 2, 1
+ 1973  1973 003A5  110900FC              mov     a,ES:64512[b]                                   ;[INF] 4, 2
+ 1974  1974 003A9  72                    mov     c,a                                             ;[INF] 1, 1
+ 1975  1975 003AA  AC02                  movw    ax,[hl+2]       ; bda                           ;[INF] 2, 1
+ 1976  1976 003AC  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1977  1977 003AD  8C01                  mov     a,[hl+1]        ; ii                            ;[INF] 2, 1
+ 1978  1978 003AF  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1979  1979 003B1  05                    addw    ax,de                                           ;[INF] 1, 1
+ 1980  1980 003B2  14                    movw    de,ax                                           ;[INF] 1, 1
+ 1981  1981 003B3  62                    mov     a,c                                             ;[INF] 1, 1
+ 1982  1982 003B4  99                    mov     [de],a                                          ;[INF] 1, 1
+ 1983  1983                      ; line   818
+ 1984  1984                      $DGL    0,33
+ 1985  1985 003B5  FE6FFC                call    $!bs_S0133                                      ;[INF] 3, 3
+ 1986  1986 003B8  61E8                  skz                                                     ;[INF] 2, 1
+ 1987  1987                      ; line   819
+ 1988  1988 003BA                ??bb06_flash_get_bda:
+ 1989  1989                      ; line   820
+ 1990  1990                      $DGL    0,35
+ 1991  1991 003BA  CC0000                mov     [hl+0],#00H     ; invalid,0                     ;[INF] 3, 1
+ 1992  1992 003BD                ??eb06_flash_get_bda:
+ 1993  1993                      ; line   821
+ 1994  1994 003BD                ?L0128:
+ 1995  1995 003BD                ??eb05_flash_get_bda:
+ 1996  1996                      ; line   822
+ 1997  1997                      $DGL    0,37
+ 1998  1998 003BD  615901                inc     [hl+1]  ; ii                                    ;[INF] 3, 2
+ 1999  1999 003C0  EFD8                  br      $?L0125                                         ;[INF] 2, 3
+ 2000  2000 003C2                ?L0126:
+ 2001  2001 003C2                ??eb04_flash_get_bda:
+ 2002  2002                      ; line   823
+ 2003  2003                      ; line   825
+ 2004  2004                      $DGL    0,40
+ 2005  2005 003C2  8B                    mov     a,[hl]  ; invalid                               ;[INF] 1, 1
+ 2006  2006 003C3  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2007  2007 003C4  DD12                  bz      $?L0130                                         ;[INF] 2, 4
+ 2008  2008                      ; line   826
+ 2009  2009 003C6                ??bb07_flash_get_bda:
+ 2010  2010                      ; line   828
+ 2011  2011                      $DGL    0,43
+ 2012  2012 003C6  AC02                  movw    ax,[hl+2]       ; bda                           ;[INF] 2, 1
+ 2013  2013 003C8  14                    movw    de,ax                                           ;[INF] 1, 1
+ 2014  2014 003C9  F7                    clrw    bc                                              ;[INF] 1, 1
+ 2015  2015 003CA R4100                  mov     ES,#highw (_testadr)                            ;[INF] 2, 1
+ 2016  2016 003CC  5006                  mov     x,#06H  ; 6                                     ;[INF] 2, 1
+ 2017  2017 003CE                ?L0132:
+ 2018  2018 003CE R11490000              mov     a,ES:_testadr[bc]                               ;[INF] 4, 2
+ 2019  2019 003D2  A3                    incw    bc                                              ;[INF] 1, 1
+ 2020  2020 003D3  99                    mov     [de],a                                          ;[INF] 1, 1
+ 2021  2021 003D4  A5                    incw    de                                              ;[INF] 1, 1
+ 2022  2022 003D5  90                    dec     x                                               ;[INF] 1, 1
+ 2023  2023 003D6  DFF6                  bnz     $?L0132                                         ;[INF] 2, 4
+ 2024  2024 003D8                ??eb07_flash_get_bda:
+ 2025  2025                      ; line   829
+ 2026  2026 003D8                ?L0130:
+ 2027  2027                      ; line   830
+ 2028  2028                      $DGL    0,45
+ 2029  2029 003D8                ??ef_flash_get_bda:
+ 2030  2030 003D8  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 2031  2031 003DA  C6                    pop     hl                                              ;[INF] 1, 1
+ 2032  2032 003DB  D7                    ret                                                     ;[INF] 1, 6
+ 2033  2033 003DC                ??ee_flash_get_bda:
+ 2034  2034                      
+ 2035  2035 -----                @@CODE  CSEG    BASE
+ 2036  2036                      
+ 2037  2037 -----                @@BASE  CSEG    BASE
+ 2038  2038                              END
+ 2039  2039                      
+ 2040  2040                      
+ 2041  2041                      ; *** Code Information ***
+ 2042  2042                      ;
+ 2043  2043                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+ 2044  2044                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\driver\dataflash
+ 2045  2045                      ;       \dataflash.c
+ 2046  2046                      ;
+ 2047  2047                      ; $FUNC dataflash_init(157)
+ 2048  2048                      ;       bc=(void)
+ 2049  2049                      ;       CODE SIZE= 76 bytes, CLOCK_SIZE= 58 clocks, STACK_SIZE= 10 bytes
+ 2050  2050                      ;
+ 2051  2051                      ; $CALL memset(163)
+ 2052  2052                      ;       bc=(pointer:ax, int:[sp+4], unsigned int:[sp+6])
+ 2053  2053                      ;
+ 2054  2054                      ; $CALL plf_hoco_start(166)
+ 2055  2055                      ;       void=(void)
+ 2056  2056                      ;
+ 2057  2057                      ; $CALL FDL_Init(168)
+ 2058  2058                      ;       bc=(pointer:ax,bc)
+ 2059  2059                      ;
+ 2060  2060                      ; $CALL FDL_Open(173)
+ 2061  2061                      ;       void=(void)
+ 2062  2062                      ;
+ 2063  2063                      ; $CALL EEL_Init(176)
+ 2064  2064                      ;       bc=(void)
+ 2065  2065                      ;
+ 2066  2066                      ; $CALL dataflash_errno(182)
+ 2067  2067                      ;       bc=(int:ax)
+ 2068  2068                      ;
+ 2069  2069                      ; $CALL plf_hoco_stop(184)
+ 2070  2070                      ;       void=(void)
+ 2071  2071                      ;
+ 2072  2072                      ; $FUNC dataflash_start(208)
+ 2073  2073                      ;       bc=(unsigned char mode:x)
+ 2074  2074                      ;       CODE SIZE= 99 bytes, CLOCK_SIZE= 112 clocks, STACK_SIZE= 10 bytes
+ 2075  2075                      ;
+ 2076  2076                      ; $CALL plf_hoco_start(215)
+ 2077  2077                      ;       void=(void)
+ 2078  2078                      ;
+ 2079  2079                      ; $CALL EEL_Open(216)
+ 2080  2080                      ;       void=(void)
+ 2081  2081                      ;
+ 2082  2082                      ; $CALL EEL_Execute(224)
+ 2083  2083                      ;       void=(pointer:ax)
+ 2084  2084                      ;
+ 2085  2085                      ; $CALL dataflash_busy_handler(229)
+ 2086  2086                      ;       void=(void)
+ 2087  2087                      ;
+ 2088  2088                      ; $CALL EEL_Execute(239)
+ 2089  2089                      ;       void=(pointer:ax)
+ 2090  2090                      ;
+ 2091  2091                      ; $CALL dataflash_busy_handler(242)
+ 2092  2092                      ;       void=(void)
+ 2093  2093                      ;
+ 2094  2094                      ; $CALL EEL_Execute(251)
+ 2095  2095                      ;       void=(pointer:ax)
+ 2096  2096                      ;
+ 2097  2097                      ; $CALL dataflash_busy_handler(253)
+ 2098  2098                      ;       void=(void)
+ 2099  2099                      ;
+ 2100  2100                      ; $CALL dataflash_errno(259)
+ 2101  2101                      ;       bc=(int:ax)
+ 2102  2102                      ;
+ 2103  2103                      ; $CALL plf_hoco_stop(276)
+ 2104  2104                      ;       void=(void)
+ 2105  2105                      ;
+ 2106  2106                      ; $FUNC dataflash_stop(302)
+ 2107  2107                      ;       bc=(unsigned char mode:x)
+ 2108  2108                      ;       CODE SIZE= 54 bytes, CLOCK_SIZE= 65 clocks, STACK_SIZE= 10 bytes
+ 2109  2109                      ;
+ 2110  2110                      ; $CALL EEL_Execute(314)
+ 2111  2111                      ;       void=(pointer:ax)
+ 2112  2112                      ;
+ 2113  2113                      ; $CALL dataflash_errno(316)
+ 2114  2114                      ;       bc=(int:ax)
+ 2115  2115                      ;
+ 2116  2116                      ; $CALL EEL_Close(328)
+ 2117  2117                      ;       void=(void)
+ 2118  2118                      ;
+ 2119  2119                      ; $CALL plf_hoco_stop(329)
+ 2120  2120                      ;       void=(void)
+ 2121  2121                      ;
+ 2122  2122                      ; $FUNC dataflash_rw(367)
+ 2123  2123                      ;       bc=(unsigned char mode:x, char rw:[sp+4], unsigned char id:[sp+6], 
+ 2124  2124                      ;           pointer addr:[sp+8])
+ 2125  2125                      ;       CODE SIZE= 93 bytes, CLOCK_SIZE= 94 clocks, STACK_SIZE= 14 bytes
+ 2126  2126                      ;
+ 2127  2127                      ; $CALL EEL_Execute(380)
+ 2128  2128                      ;       void=(pointer:ax)
+ 2129  2129                      ;
+ 2130  2130                      ; $CALL dataflash_errno(382)
+ 2131  2131                      ;       bc=(int:ax)
+ 2132  2132                      ;
+ 2133  2133                      ; $CALL dataflash_busy_handler(393)
+ 2134  2134                      ;       void=(void)
+ 2135  2135                      ;
+ 2136  2136                      ; $FUNC dataflash_cleanup(429)
+ 2137  2137                      ;       bc=(unsigned char mode:x)
+ 2138  2138                      ;       CODE SIZE= 59 bytes, CLOCK_SIZE= 73 clocks, STACK_SIZE= 10 bytes
+ 2139  2139                      ;
+ 2140  2140                      ; $CALL EEL_Execute(443)
+ 2141  2141                      ;       void=(pointer:ax)
+ 2142  2142                      ;
+ 2143  2143                      ; $CALL dataflash_errno(445)
+ 2144  2144                      ;       bc=(int:ax)
+ 2145  2145                      ;
+ 2146  2146                      ; $CALL dataflash_busy_handler(456)
+ 2147  2147                      ;       void=(void)
+ 2148  2148                      ;
+ 2149  2149                      ; $FUNC dataflash_format(492)
+ 2150  2150                      ;       bc=(unsigned char mode:x)
+ 2151  2151                      ;       CODE SIZE= 90 bytes, CLOCK_SIZE= 96 clocks, STACK_SIZE= 10 bytes
+ 2152  2152                      ;
+ 2153  2153                      ; $CALL plf_hoco_start(500)
+ 2154  2154                      ;       void=(void)
+ 2155  2155                      ;
+ 2156  2156                      ; $CALL EEL_Open(501)
+ 2157  2157                      ;       void=(void)
+ 2158  2158                      ;
+ 2159  2159                      ; $CALL EEL_Execute(508)
+ 2160  2160                      ;       void=(pointer:ax)
+ 2161  2161                      ;
+ 2162  2162                      ; $CALL dataflash_errno(510)
+ 2163  2163                      ;       bc=(int:ax)
+ 2164  2164                      ;
+ 2165  2165                      ; $CALL dataflash_busy_handler(516)
+ 2166  2166                      ;       void=(void)
+ 2167  2167                      ;
+ 2168  2168                      ; $CALL EEL_Close(519)
+ 2169  2169                      ;       void=(void)
+ 2170  2170                      ;
+ 2171  2171                      ; $CALL plf_hoco_stop(520)
+ 2172  2172                      ;       void=(void)
+ 2173  2173                      ;
+ 2174  2174                      ; $FUNC dataflash_continue(557)
+ 2175  2175                      ;       bc=(pointer fin_flg:ax)
+ 2176  2176                      ;       CODE SIZE= 87 bytes, CLOCK_SIZE= 76 clocks, STACK_SIZE= 14 bytes
+ 2177  2177                      ;
+ 2178  2178                      ; $CALL EEL_Handler(576)
+ 2179  2179                      ;       void=(void)
+ 2180  2180                      ;
+ 2181  2181                      ; $CALL dataflash_errno(580)
+ 2182  2182                      ;       bc=(int:ax)
+ 2183  2183                      ;
+ 2184  2184                      ; $CALL EEL_Close(617)
+ 2185  2185                      ;       void=(void)
+ 2186  2186                      ;
+ 2187  2187                      ; $CALL plf_hoco_stop(618)
+ 2188  2188                      ;       void=(void)
+ 2189  2189                      ;
+ 2190  2190                      ; $FUNC dataflash_get_space(655)
+ 2191  2191                      ;       bc=(pointer wsize:ax)
+ 2192  2192                      ;       CODE SIZE= 62 bytes, CLOCK_SIZE= 55 clocks, STACK_SIZE= 10 bytes
+ 2193  2193                      ;
+ 2194  2194                      ; $CALL EEL_GetSpace(662)
+ 2195  2195                      ;       bc=(pointer:ax)
+ 2196  2196                      ;
+ 2197  2197                      ; $CALL dataflash_errno(665)
+ 2198  2198                      ;       bc=(int:ax)
+ 2199  2199                      ;
+ 2200  2200                      ; $FUNC dataflash_getver(684)
+ 2201  2201                      ;       bc=(pointer ver:ax)
+ 2202  2202                      ;       CODE SIZE= 109 bytes, CLOCK_SIZE= 119 clocks, STACK_SIZE= 14 bytes
+ 2203  2203                      ;
+ 2204  2204                      ; $CALL EEL_GetVersionString(692)
+ 2205  2205                      ;       bc,de=(void)
+ 2206  2206                      ;
+ 2207  2207                      ; $FUNC dataflash_is_stopped(726)
+ 2208  2208                      ;       bc=(void)
+ 2209  2209                      ;       CODE SIZE= 17 bytes, CLOCK_SIZE= 22 clocks, STACK_SIZE= 0 bytes
+ 2210  2210                      ;
+ 2211  2211                      ; $FUNC dataflash_errno(745)
+ 2212  2212                      ;       bc=(unsigned char eel_errno:x)
+ 2213  2213                      ;       CODE SIZE= 40 bytes, CLOCK_SIZE= 39 clocks, STACK_SIZE= 2 bytes
+ 2214  2214                      ;
+ 2215  2215                      ; $FUNC dataflash_busy_handler(767)
+ 2216  2216                      ;       void=(void)
+ 2217  2217                      ;       CODE SIZE= 13 bytes, CLOCK_SIZE= 17 clocks, STACK_SIZE= 4 bytes
+ 2218  2218                      ;
+ 2219  2219                      ; $CALL EEL_Handler(770)
+ 2220  2220                      ;       void=(void)
+ 2221  2221                      ;
+ 2222  2222                      ; $FUNC flash_get_bda(786)
+ 2223  2223                      ;       void=(pointer bda:ax)
+ 2224  2224                      ;       CODE SIZE= 138 bytes, CLOCK_SIZE= 153 clocks, STACK_SIZE= 16 bytes
+ 2225  2225                      ;
+ 2226  2226                      ; $CALL dataflash_start(792)
+ 2227  2227                      ;       bc=(int:ax)
+ 2228  2228                      ;
+ 2229  2229                      ; $CALL dataflash_rw(795)
+ 2230  2230                      ;       bc=(int:ax, int:[sp+4], int:[sp+6], pointer:[sp+8])
+ 2231  2231                      ;
+ 2232  2232                      ; $CALL dataflash_stop(807)
+ 2233  2233                      ;       bc=(int:ax)
+ 2234  2234                      
+ 2235  2235                      ; Target chip : R5F11AGJ
+ 2236  2236                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00008H   DFL_DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 0001EH   DFL_CNST
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 003DCH   DFL_CODE
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

@@ -1,0 +1,1366 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\uart.asm -_msgoff -pDef
+          aultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\uart.asm
+Obj-file: DefaultBuild\uart.rel
+Prn-file: DefaultBuild\uart.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:27
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\uart\uart.c -oDefa
+    5     5                      ;             ultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_P
+    6     6                      ;             RESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBLE,CFG_US
+    7     7                      ;             E_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAM
+    8     8                      ;             PLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,
+    9     9                      ;             CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..
+   10    10                      ;             \..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\..\src\dri
+   11    11                      ;             ver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\sr
+   12    12                      ;             c\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\
+   13    13                      ;             ..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\..\.
+   14    14                      ;             .\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..
+   15    15                      ;             \src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\..\..\..\.
+   16    16                      ;             .\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..
+   17    17                      ;             \..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i..\..\..\
+   18    18                      ;             ..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..
+   19    19                      ;             \..\..\..\src\driver\push_state -i..\..\..\..\..\src\driver\pktmo
+   20    20                      ;             n -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\
+   21    21                      ;             src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..\..\..\..
+   22    22                      ;             \..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_ap
+   23    23                      ;             p\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm -mi
+   24    24                      ;             0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\uart\uart.c
+   26    26                      ; Asm-file  : DefaultBuild\uart.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 02H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         0B4H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, uart.c
+   37    37                      $DGS    MOD_NAM, uart,          00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, UARTDATA,      U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, UARTCODE,      U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, UARTBASE,      U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    SEC_NAM, @@VECT1A,      U,      U,      00H,    078H,   00H,    00H
+   55    55                      $DGS    SEC_NAM, @@VECT22,      U,      U,      00H,    078H,   00H,    00H
+   56    56                      $DGS    STR_STR, .7fake,        00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   57    57                      $DGS    AUX_TAG, 014H,          023H
+   58    58                      $DGS    MEB_STR, _rx_callback,  00H,    0FFFFH, 01H,    08H,    01H,    09H
+   59    59                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   60    60                      $DGS    MEB_STR, _tx_callback,  04H,    0FFFFH, 01H,    08H,    01H,    09H
+   61    61                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   62    62                      $DGS    MEB_STR, _err_callback, 08H,    0FFFFH, 01H,    08H,    01H,    09H
+   63    63                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   64    64                      $DGS    MEB_STR, _rx_first_byte_callback,       0CH,    0FFFFH, 0CH,    08H,    01H,    09H
+   65    65                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   66    66                      $DGS    MEB_STR, _rx_cmp_callback,      010H,   0FFFFH, 0CH,    08H,    01H,    09H
+   67    67                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   68    68                      $DGS    END_STR, .eos,          014H,   0FFFFH, 00H,    066H,   01H,    00H
+   69    69                      $DGS    AUX_EOS, 015H,          014H
+   70    70                      $DGS    STA_SYM, _stop_flg,     U,      U,      0CH,    03H,    00H,    00H
+   71    71                      $DGS    STA_SYM, _uart_callback,        U,      U,      08H,    03H,    01H,    00H
+   72    72                      $DGS    AUX_STR, 015H,          00H,    014H,   00H,    00H,    00H,    00H,    00H
+   73    73                      $DGS    STA_SYM, _uart_port_init,       U,      U,      01H,    03H,    01H,    02H
+   74    74                      $DGS    AUX_FUN, 00H,           U,      U,      02CH,   01H,    00H
+   75    75                      $DGS    BEG_FUN, ??bf_uart_port_init,   U,      U,      00H,    065H,   01H,    00H
+   76    76                      $DGS    AUX_BEG, 011EH,         00H,    02CH
+   77    77                      $DGS    END_FUN, ??ef_uart_port_init,   U,      U,      00H,    065H,   01H,    00H
+   78    78                      $DGS    AUX_END, 013H
+   79    79                      $DGS    STA_SYM, _dma0_init,    U,      U,      01H,    03H,    01H,    02H
+   80    80                      $DGS    AUX_FUN, 00H,           U,      U,      032H,   01H,    00H
+   81    81                      $DGS    BEG_FUN, ??bf_dma0_init,        U,      U,      00H,    065H,   01H,    00H
+   82    82                      $DGS    AUX_BEG, 0138H,         00H,    032H
+   83    83                      $DGS    END_FUN, ??ef_dma0_init,        U,      U,      00H,    065H,   01H,    00H
+   84    84                      $DGS    AUX_END, 013H
+   85    85                      $DGS    STA_SYM, _dma1_init,    U,      U,      01H,    03H,    01H,    02H
+   86    86                      $DGS    AUX_FUN, 00H,           U,      U,      038H,   01H,    00H
+   87    87                      $DGS    BEG_FUN, ??bf_dma1_init,        U,      U,      00H,    065H,   01H,    00H
+   88    88                      $DGS    AUX_BEG, 0152H,         00H,    038H
+   89    89                      $DGS    END_FUN, ??ef_dma1_init,        U,      U,      00H,    065H,   01H,    00H
+   90    90                      $DGS    AUX_END, 013H
+   91    91                      $DGS    GLV_SYM, _serial_init,  U,      U,      01H,    026H,   01H,    02H
+   92    92                      $DGS    AUX_FUN, 00H,           U,      U,      040H,   01H,    00H
+   93    93                      $DGS    BEG_FUN, ??bf_serial_init,      U,      U,      00H,    065H,   01H,    00H
+   94    94                      $DGS    AUX_BEG, 016DH,         02H,    040H
+   95    95                      $DGS    REG_PAR, _param,        0103H,  0FFFFH, 0108H,  011H,   01H,    01H
+   96    96                      $DGS    AUX_STR, 015H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+   97    97                      $DGS    END_FUN, ??ef_serial_init,      U,      U,      00H,    065H,   01H,    00H
+   98    98                      $DGS    AUX_END, 076H
+   99    99                      $DGS    GLV_SYM, _serial_read,  U,      U,      01H,    026H,   01H,    02H
+  100   100                      $DGS    AUX_FUN, 00H,           U,      U,      04DH,   01H,    00H
+  101   101                      $DGS    BEG_FUN, ??bf_serial_read,      U,      U,      00H,    065H,   01H,    00H
+  102   102                      $DGS    AUX_BEG, 0219H,         02H,    047H
+  103   103                      $DGS    FUN_ARG, _bufptr,       00H,    0FFFFH, 0CH,    09H,    01H,    01H
+  104   104                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  105   105                      $DGS    FUN_ARG, _size,         08H,    0FFFFH, 0500DH, 09H,    00H,    00H
+  106   106                      $DGS    BEG_BLK, ??bb00_serial_read,    U,      U,      00H,    064H,   01H,    00H
+  107   107                      $DGS    AUX_BEG, 0AH,           00H,    00H
+  108   108                      $DGS    END_BLK, ??eb00_serial_read,    U,      U,      00H,    064H,   01H,    00H
+  109   109                      $DGS    AUX_END, 0AH
+  110   110                      $DGS    END_FUN, ??ef_serial_read,      U,      U,      00H,    065H,   01H,    00H
+  111   111                      $DGS    AUX_END, 0BH
+  112   112                      $DGS    GLV_SYM, _serial_write, U,      U,      01H,    026H,   01H,    02H
+  113   113                      $DGS    AUX_FUN, 00H,           U,      U,      066H,   01H,    00H
+  114   114                      $DGS    BEG_FUN, ??bf_serial_write,     U,      U,      00H,    065H,   01H,    00H
+  115   115                      $DGS    AUX_BEG, 022FH,         02H,    054H
+  116   116                      $DGS    FUN_ARG, _bufptr,       00H,    0FFFFH, 0CH,    09H,    01H,    01H
+  117   117                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  118   118                      $DGS    FUN_ARG, _size,         08H,    0FFFFH, 0500DH, 09H,    00H,    00H
+  119   119                      $DGS    BEG_BLK, ??bb00_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  120   120                      $DGS    AUX_BEG, 03H,           00H,    058H
+  121   121                      $DGS    END_BLK, ??eb00_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  122   122                      $DGS    AUX_END, 03H
+  123   123                      $DGS    BEG_BLK, ??bb01_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  124   124                      $DGS    AUX_BEG, 05H,           00H,    05AH
+  125   125                      $DGS    BEG_BLK, ??bb02_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  126   126                      $DGS    AUX_BEG, 05H,           00H,    05EH
+  127   127                      $DGS    END_BLK, ??eb02_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  128   128                      $DGS    AUX_END, 05H
+  129   129                      $DGS    BEG_BLK, ??bb03_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  130   130                      $DGS    AUX_BEG, 0EH,           00H,    00H
+  131   131                      $DGS    END_BLK, ??eb03_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  132   132                      $DGS    AUX_END, 018H
+  133   133                      $DGS    END_BLK, ??eb01_serial_write,   U,      U,      00H,    064H,   01H,    00H
+  134   134                      $DGS    AUX_END, 01AH
+  135   135                      $DGS    END_FUN, ??ef_serial_write,     U,      U,      00H,    065H,   01H,    00H
+  136   136                      $DGS    AUX_END, 01BH
+  137   137                      $DGS    GLV_SYM, _serial_stop_ready,    U,      U,      0CH,    026H,   01H,    02H
+  138   138                      $DGS    AUX_FUN, 00H,           U,      U,      075H,   01H,    00H
+  139   139                      $DGS    BEG_FUN, ??bf_serial_stop_ready,        U,      U,      00H,    065H,   01H,    00H
+  140   140                      $DGS    AUX_BEG, 0253H,         02H,    06BH
+  141   141                      $DGS    REG_VAR, _ret,          06H,    0FFFFH, 010CH,  04H,    00H,    00H
+  142   142                      $DGS    BEG_BLK, ??bb00_serial_stop_ready,      U,      U,      00H,    064H,   01H,    00H
+  143   143                      $DGS    AUX_BEG, 09H,           00H,    06DH
+  144   144                      $DGS    BEG_BLK, ??bb01_serial_stop_ready,      U,      U,      00H,    064H,   01H,    00H
+  145   145                      $DGS    AUX_BEG, 0EH,           00H,    00H
+  146   146                      $DGS    END_BLK, ??eb01_serial_stop_ready,      U,      U,      00H,    064H,   01H,    00H
+  147   147                      $DGS    AUX_END, 023H
+  148   148                      $DGS    END_BLK, ??eb00_serial_stop_ready,      U,      U,      00H,    064H,   01H,    00H
+  149   149                      $DGS    AUX_END, 024H
+  150   150                      $DGS    END_FUN, ??ef_serial_stop_ready,        U,      U,      00H,    065H,   01H,    00H
+  151   151                      $DGS    AUX_END, 027H
+  152   152                      $DGS    GLV_SYM, _serial_stop_finish,   U,      U,      01H,    026H,   01H,    02H
+  153   153                      $DGS    AUX_FUN, 00H,           U,      U,      08BH,   01H,    00H
+  154   154                      $DGS    BEG_FUN, ??bf_serial_stop_finish,       U,      U,      00H,    065H,   01H,    00H
+  155   155                      $DGS    AUX_BEG, 0281H,         00H,    079H
+  156   156                      $DGS    BEG_BLK, ??bb00_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  157   157                      $DGS    AUX_BEG, 010H,          00H,    07BH
+  158   158                      $DGS    BEG_BLK, ??bb01_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  159   159                      $DGS    AUX_BEG, 013H,          00H,    081H
+  160   160                      $DGS    END_BLK, ??eb01_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  161   161                      $DGS    AUX_END, 016H
+  162   162                      $DGS    END_BLK, ??eb00_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  163   163                      $DGS    AUX_END, 01AH
+  164   164                      $DGS    BEG_BLK, ??bb02_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  165   165                      $DGS    AUX_BEG, 01CH,          00H,    085H
+  166   166                      $DGS    END_BLK, ??eb02_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  167   167                      $DGS    AUX_END, 021H
+  168   168                      $DGS    BEG_BLK, ??bb03_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  169   169                      $DGS    AUX_BEG, 023H,          00H,    00H
+  170   170                      $DGS    END_BLK, ??eb03_serial_stop_finish,     U,      U,      00H,    064H,   01H,    00H
+  171   171                      $DGS    AUX_END, 025H
+  172   172                      $DGS    END_FUN, ??ef_serial_stop_finish,       U,      U,      00H,    065H,   01H,    00H
+  173   173                      $DGS    AUX_END, 02AH
+  174   174                      $DGS    GLV_SYM, _dma0_isr,     U,      U,      0E001H, 026H,   01H,    02H
+  175   175                      $DGS    AUX_FUN, 00H,           U,      U,      095H,   00H,    00H
+  176   176                      $DGS    BEG_FUN, ??bf_dma0_isr, U,      U,      00H,    065H,   01H,    00H
+  177   177                      $DGS    AUX_BEG, 02DBH,         00H,    08FH
+  178   178                      $DGS    BEG_BLK, ??bb00_dma0_isr,       U,      U,      00H,    064H,   01H,    00H
+  179   179                      $DGS    AUX_BEG, 035H,          00H,    00H
+  180   180                      $DGS    END_BLK, ??eb00_dma0_isr,       U,      U,      00H,    064H,   01H,    00H
+  181   181                      $DGS    AUX_END, 047H
+  182   182                      $DGS    END_FUN, ??ef_dma0_isr, U,      U,      00H,    065H,   01H,    00H
+  183   183                      $DGS    AUX_END, 069H
+  184   184                      $DGS    GLV_SYM, _dma1_isr,     U,      U,      0E001H, 026H,   01H,    02H
+  185   185                      $DGS    AUX_FUN, 00H,           U,      U,      0A3H,   00H,    00H
+  186   186                      $DGS    BEG_FUN, ??bf_dma1_isr, U,      U,      00H,    065H,   01H,    00H
+  187   187                      $DGS    AUX_BEG, 0354H,         00H,    099H
+  188   188                      $DGS    BEG_BLK, ??bb00_dma1_isr,       U,      U,      00H,    064H,   01H,    00H
+  189   189                      $DGS    AUX_BEG, 01FH,          00H,    09BH
+  190   190                      $DGS    BEG_BLK, ??bb01_dma1_isr,       U,      U,      00H,    064H,   01H,    00H
+  191   191                      $DGS    AUX_BEG, 025H,          00H,    00H
+  192   192                      $DGS    END_BLK, ??eb01_dma1_isr,       U,      U,      00H,    064H,   01H,    00H
+  193   193                      $DGS    AUX_END, 028H
+  194   194                      $DGS    END_BLK, ??eb00_dma1_isr,       U,      U,      00H,    064H,   01H,    00H
+  195   195                      $DGS    AUX_END, 029H
+  196   196                      $DGS    END_FUN, ??ef_dma1_isr, U,      U,      00H,    065H,   01H,    00H
+  197   197                      $DGS    AUX_END, 049H
+  198   198                      $DGS    GLV_SYM, _st0_isr,      U,      U,      0E001H, 026H,   01H,    02H
+  199   199                      $DGS    AUX_FUN, 00H,           U,      U,      0ADH,   00H,    00H
+  200   200                      $DGS    BEG_FUN, ??bf_st0_isr,  U,      U,      00H,    065H,   01H,    00H
+  201   201                      $DGS    AUX_BEG, 03B1H,         016H,   0A7H
+  202   202                      $DGS    BEG_BLK, ??bb00_st0_isr,        U,      U,      00H,    064H,   01H,    00H
+  203   203                      $DGS    AUX_BEG, 01DH,          00H,    00H
+  204   204                      $DGS    END_BLK, ??eb00_st0_isr,        U,      U,      00H,    064H,   01H,    00H
+  205   205                      $DGS    AUX_END, 024H
+  206   206                      $DGS    END_FUN, ??ef_st0_isr,  U,      U,      00H,    065H,   01H,    00H
+  207   207                      $DGS    AUX_END, 02BH
+  208   208                      $DGS    GLV_SYM, _sre0_isr,     U,      U,      0E001H, 026H,   01H,    02H
+  209   209                      $DGS    AUX_FUN, 00H,           U,      U,      0B4H,   00H,    00H
+  210   210                      $DGS    BEG_FUN, ??bf_sre0_isr, U,      U,      00H,    065H,   01H,    00H
+  211   211                      $DGS    AUX_BEG, 03F0H,         018H,   0B4H
+  212   212                      $DGS    AUT_VAR, _trash_data,   01H,    0FFFFH, 0100CH, 01H,    00H,    00H
+  213   213                      $DGS    END_FUN, ??ef_sre0_isr, U,      U,      00H,    065H,   01H,    00H
+  214   214                      $DGS    AUX_END, 01AH
+  215   215                      $DGS    GLV_SYM, _@vect1a,      U,      U,      00H,    026H,   00H,    00H
+  216   216                      $DGS    GLV_SYM, _@vect1c,      U,      U,      00H,    026H,   00H,    00H
+  217   217                      $DGS    GLV_SYM, _@vect1e,      U,      U,      00H,    026H,   00H,    00H
+  218   218                      $DGS    GLV_SYM, _@vect22,      U,      U,      00H,    026H,   00H,    00H
+  219   219                      $DGS    GLV_SYM, _@SEGAX,       U,      U,      00H,    02H,    00H,    00H
+  220   220                      $DGS    GLV_SYM, _@SEGDE,       U,      U,      00H,    02H,    00H,    00H
+  221   221                      $DGS    GLV_SYM, _@RTARG0,      U,      U,      00H,    02H,    00H,    00H
+  222   222                      
+  223   223                              EXTRN   _@SEGAX
+  224   224                              EXTRN   _@SEGDE
+  225   225                              EXTRN   _@RTARG0
+  226   226                              PUBLIC  _sre0_isr
+  227   227                              PUBLIC  _st0_isr
+  228   228                              PUBLIC  _dma1_isr
+  229   229                              PUBLIC  _dma0_isr
+  230   230                              PUBLIC  _serial_init
+  231   231                              PUBLIC  _serial_read
+  232   232                              PUBLIC  _serial_write
+  233   233                              PUBLIC  _serial_stop_ready
+  234   234                              PUBLIC  _serial_stop_finish
+  235   235                              PUBLIC  _@vect1a
+  236   236                              PUBLIC  _@vect1c
+  237   237                              PUBLIC  _@vect1e
+  238   238                              PUBLIC  _@vect22
+  239   239                      
+  240   240 -----                @@BITS  BSEG
+  241   241                      
+  242   242 -----                @@CNST  CSEG    MIRRORP
+  243   243                      
+  244   244 -----                @@R_INIT        CSEG    UNIT64KP
+  245   245                      
+  246   246 -----                @@INIT  DSEG    BASEP
+  247   247                      
+  248   248 -----                UARTDATA        DSEG    BASEP
+  249   249 00000                _stop_flg:      DS      (1)
+  250   250 00001                        DS      (1)
+  251   251 00002                _uart_callback: DS      (20)
+  252   252                      
+  253   253 -----                @@R_INIS        CSEG    UNIT64KP
+  254   254                      
+  255   255 -----                @@INIS  DSEG    SADDRP
+  256   256                      
+  257   257 -----                @@DATS  DSEG    SADDRP
+  258   258                      
+  259   259 -----                @@CNSTL CSEG    PAGE64KP
+  260   260                      
+  261   261 -----                @@RLINIT        CSEG    UNIT64KP
+  262   262                      
+  263   263 -----                @@INITL DSEG    UNIT64KP
+  264   264                      
+  265   265 -----                @@DATAL DSEG    UNIT64KP
+  266   266                      
+  267   267 -----                @@CALT  CSEG    CALLT0
+  268   268                      
+  269   269                      ; line    13
+  270   270                      ; line    14
+  271   271                      ; line    13
+  272   272                      ; line    14
+  273   273                      ; line    15
+  274   274                      ; line    74
+  275   275                      ; line    75
+  276   276                      ; line    76
+  277   277                      ; line    77
+  278   278                      ; line    79
+  279   279                      ; line    80
+  280   280                      ; line    84
+  281   281                      ; line    85
+  282   282                      ; line    16
+  283   283                      ; line    18
+  284   284                      ; line    19
+  285   285                      ; line    20
+  286   286                      ; line    21
+  287   287                      ; line    22
+  288   288                      ; line    23
+  289   289                      ; line    24
+  290   290                      ; line    25
+  291   291                      ; line    26
+  292   292                      ; line    27
+  293   293                      ; line    28
+  294   294                      ; line    29
+  295   295                      ; line    30
+  296   296                      ; line    31
+  297   297                      ; line    32
+  298   298                      ; line    33
+  299   299                      ; line    35
+  300   300                      ; line    37
+  301   301                      ; line    38
+  302   302                      ; line    39
+  303   303                      ; line    40
+  304   304                      ; line    43
+  305   305                      ; line    45
+  306   306                      ; line    46
+  307   307                      ; line    47
+  308   308                      ; line    48
+  309   309                      ; line    49
+  310   310                      ; line    50
+  311   311                      ; line    51
+  312   312                      ; line    52
+  313   313                      ; line    53
+  314   314                      ; line    54
+  315   315                      ; line    55
+  316   316                      ; line    56
+  317   317                      ; line    57
+  318   318                      ; line    58
+  319   319                      ; line    59
+  320   320                      ; line    60
+  321   321                      ; line    62
+  322   322                      ; line    64
+  323   323                      ; line    65
+  324   324                      ; line    66
+  325   325                      ; line    69
+  326   326                      ; line    71
+  327   327                      ; line    72
+  328   328                      ; line    73
+  329   329                      ; line    74
+  330   330                      ; line    75
+  331   331                      ; line    76
+  332   332                      ; line    77
+  333   333                      ; line    78
+  334   334                      ; line    79
+  335   335                      ; line    80
+  336   336                      ; line    81
+  337   337                      ; line    82
+  338   338                      ; line    83
+  339   339                      ; line    84
+  340   340                      ; line    85
+  341   341                      ; line    86
+  342   342                      ; line    88
+  343   343                      ; line    90
+  344   344                      ; line    91
+  345   345                      ; line    92
+  346   346                      ; line    20
+  347   347                      ; line    25
+  348   348                      ; line    29
+  349   349                      ; line    30
+  350   350                      ; line    31
+  351   351                      ; line    32
+  352   352                      ; line    33
+  353   353                      ; line    34
+  354   354                      ; line    35
+  355   355                      ; line    36
+  356   356                      ; line    37
+  357   357                      ; line    38
+  358   358                      ; line    39
+  359   359                      ; line    40
+  360   360                      ; line    41
+  361   361                      ; line    42
+  362   362                      ; line    43
+  363   363                      ; line    45
+  364   364                      ; line    46
+  365   365                      ; line    51
+  366   366                      ; line    52
+  367   367                      ; line    54
+  368   368                      ; line    59
+  369   369                      ; line    60
+  370   370                      ; line    65
+  371   371                      ; line    66
+  372   372                      ; line    67
+  373   373                      ; line    68
+  374   374                      ; line    70
+  375   375                      ; line    71
+  376   376                      ; line    72
+  377   377                      ; line    73
+  378   378                      ; line    74
+  379   379                      ; line    75
+  380   380                      ; line    76
+  381   381                      ; line    78
+  382   382                      ; line    83
+  383   383                      ; line    84
+  384   384                      ; line    89
+  385   385                      ; line    90
+  386   386                      ; line    92
+  387   387                      ; line    93
+  388   388                      ; line    94
+  389   389                      ; line    95
+  390   390                      ; line    96
+  391   391                      ; line    97
+  392   392                      ; line    98
+  393   393                      ; line   100
+  394   394                      ; line   105
+  395   395                      ; line   106
+  396   396                      ; line   111
+  397   397                      ; line   112
+  398   398                      ; line    95
+  399   399                      ; line   220
+  400   400                      ; line   221
+  401   401                      ; line    22
+  402   402                      ; line    23
+  403   403                      ; line    67
+  404   404                      ; line    68
+  405   405                      ; line   125
+  406   406                      ; line    55
+  407   407                      ; line    56
+  408   408                      ; line    63
+  409   409                      ; line   135
+  410   410                      ; line   142
+  411   411                      ; line   149
+  412   412                      ; line   263
+  413   413                      ; line   270
+  414   414                      ; line   286
+  415   415                      
+  416   416 -----                UARTCODE        CSEG
+  417   417 00000                _uart_port_init:
+  418   418                      $DGL    1,38
+  419   419 00000                ??bf_uart_port_init:
+  420   420                      ; line   289
+  421   421                      $DGL    0,4
+  422   422 00000  712B21                clr1    PM1.2                                           ;[INF] 3, 2
+  423   423                      ; line   291
+  424   424                      $DGL    0,6
+  425   425 00003  71285100              clr1    !POM1.2                                         ;[INF] 4, 2
+  426   426                      ; line   293
+  427   427                      $DGL    0,8
+  428   428 00007  712201                set1    P1.2                                            ;[INF] 3, 2
+  429   429                      ; line   297
+  430   430                      $DGL    0,12
+  431   431 0000A  E57000                oneb    !NFEN0                                          ;[INF] 3, 1
+  432   432                      ; line   299
+  433   433                      $DGL    0,14
+  434   434 0000D  711A21                set1    PM1.1                                           ;[INF] 3, 2
+  435   435                      ; line   301
+  436   436                      $DGL    0,16
+  437   437 00010  71184100              clr1    !PIM1.1                                         ;[INF] 4, 2
+  438   438                      ; line   303
+  439   439                      $DGL    0,18
+  440   440 00014  71103100              set1    !PU1.1                                          ;[INF] 4, 2
+  441   441                      ; line   304
+  442   442                      $DGL    0,19
+  443   443 00018                ??ef_uart_port_init:
+  444   444 00018  D7                    ret                                                     ;[INF] 1, 6
+  445   445 00019                ??ee_uart_port_init:
+  446   446                      ; line   312
+  447   447 00019                _dma0_init:
+  448   448                      $DGL    1,44
+  449   449 00019                ??bf_dma0_init:
+  450   450                      ; line   314
+  451   451                      $DGL    0,3
+  452   452 00019  717ABC                set1    DRC0.7                                          ;[INF] 3, 2
+  453   453                      ; line   317
+  454   454                      $DGL    0,6
+  455   455 0001C  CEB012                mov     DSA0,#012H      ; 18                            ;[INF] 3, 1
+  456   456                      ; line   320
+  457   457                      $DGL    0,9
+  458   458 0001F  716BBA                clr1    DMC0.6                                          ;[INF] 3, 2
+  459   459                      ; line   321
+  460   460                      $DGL    0,10
+  461   461 00022  715BBA                clr1    DMC0.5                                          ;[INF] 3, 2
+  462   462                      ; line   322
+  463   463                      $DGL    0,11
+  464   464 00025  714BBA                clr1    DMC0.4                                          ;[INF] 3, 2
+  465   465                      ; line   325
+  466   466                      $DGL    0,14
+  467   467 00028  8EBA                  mov     a,DMC0                                          ;[INF] 2, 1
+  468   468 0002A  6C07                  or      a,#07H  ; 7                                     ;[INF] 2, 1
+  469   469 0002C  9EBA                  mov     DMC0,a                                          ;[INF] 2, 1
+  470   470                      ; line   328
+  471   471                      $DGL    0,17
+  472   472 0002E  713BE1                clr1    IF0H.3                                          ;[INF] 3, 2
+  473   473                      ; line   329
+  474   474                      $DGL    0,18
+  475   475 00031  713BE5                clr1    MK0H.3                                          ;[INF] 3, 2
+  476   476                      ; line   330
+  477   477                      $DGL    0,19
+  478   478 00034                ??ef_dma0_init:
+  479   479 00034  D7                    ret                                                     ;[INF] 1, 6
+  480   480 00035                ??ee_dma0_init:
+  481   481                      ; line   338
+  482   482 00035                _dma1_init:
+  483   483                      $DGL    1,50
+  484   484 00035                ??bf_dma1_init:
+  485   485                      ; line   340
+  486   486                      $DGL    0,3
+  487   487 00035  717ABD                set1    DRC1.7                                          ;[INF] 3, 2
+  488   488                      ; line   343
+  489   489                      $DGL    0,6
+  490   490 00038  CEB110                mov     DSA1,#010H      ; 16                            ;[INF] 3, 1
+  491   491                      ; line   346
+  492   492                      $DGL    0,9
+  493   493 0003B  716ABB                set1    DMC1.6                                          ;[INF] 3, 2
+  494   494                      ; line   347
+  495   495                      $DGL    0,10
+  496   496 0003E  715BBB                clr1    DMC1.5                                          ;[INF] 3, 2
+  497   497                      ; line   348
+  498   498                      $DGL    0,11
+  499   499 00041  714BBB                clr1    DMC1.4                                          ;[INF] 3, 2
+  500   500                      ; line   351
+  501   501                      $DGL    0,14
+  502   502 00044  8EBB                  mov     a,DMC1                                          ;[INF] 2, 1
+  503   503 00046  6C06                  or      a,#06H  ; 6                                     ;[INF] 2, 1
+  504   504 00048  9EBB                  mov     DMC1,a                                          ;[INF] 2, 1
+  505   505                      ; line   354
+  506   506                      $DGL    0,17
+  507   507 0004A  714BE1                clr1    IF0H.4                                          ;[INF] 3, 2
+  508   508                      ; line   355
+  509   509                      $DGL    0,18
+  510   510 0004D  714BE5                clr1    MK0H.4                                          ;[INF] 3, 2
+  511   511                      ; line   356
+  512   512                      $DGL    0,19
+  513   513 00050                ??ef_dma1_init:
+  514   514 00050  D7                    ret                                                     ;[INF] 1, 6
+  515   515 00051                ??ee_dma1_init:
+  516   516                      ; line   365
+  517   517 00051                _serial_init:
+  518   518                      $DGL    1,56
+  519   519 00051  C7                    push    hl                                              ;[INF] 1, 1
+  520   520 00052  16                    movw    hl,ax                                           ;[INF] 1, 1
+  521   521 00053                ??bf_serial_init:
+  522   522                      ; line   366
+  523   523                      $DGL    0,2
+  524   524 00053  17                    movw    ax,hl                                           ;[INF] 1, 1
+  525   525 00054  14                    movw    de,ax                                           ;[INF] 1, 1
+  526   526 00055  F7                    clrw    bc                                              ;[INF] 1, 1
+  527   527 00056  5014                  mov     x,#014H ; 20                                    ;[INF] 2, 1
+  528   528 00058                ?L0009:
+  529   529 00058  89                    mov     a,[de]                                          ;[INF] 1, 1
+  530   530 00059  A5                    incw    de                                              ;[INF] 1, 1
+  531   531 0005A R480200                mov     _uart_callback[bc],a                            ;[INF] 3, 1
+  532   532 0005D  A3                    incw    bc                                              ;[INF] 1, 1
+  533   533 0005E  90                    dec     x                                               ;[INF] 1, 1
+  534   534 0005F  DFF7                  bnz     $?L0009                                         ;[INF] 2, 4
+  535   535                      ; line   369
+  536   536                      $DGL    0,5
+  537   537 00061  CF240103              mov     !ST0L,#03H      ; 3                             ;[INF] 4, 1
+  538   538                      ; line   372
+  539   539                      $DGL    0,8
+  540   540 00065  7120F000              set1    !PER0.2                                         ;[INF] 4, 2
+  541   541                      ; line   375
+  542   542                      $DGL    0,11
+  543   543 00069  00                    nop                                                     ;[INF] 1, 1
+  544   544                      ; line   376
+  545   545                      $DGL    0,12
+  546   546 0006A  00                    nop                                                     ;[INF] 1, 1
+  547   547                      ; line   377
+  548   548                      $DGL    0,13
+  549   549 0006B  00                    nop                                                     ;[INF] 1, 1
+  550   550                      ; line   378
+  551   551                      $DGL    0,14
+  552   552 0006C  00                    nop                                                     ;[INF] 1, 1
+  553   553                      ; line   398
+  554   554                      $DGL    0,34
+  555   555 0006D  8F2601                mov     a,!SPS0L                                        ;[INF] 3, 1
+  556   556 00070  6C02                  or      a,#02H  ; 2                                     ;[INF] 2, 1
+  557   557 00072  9F2601                mov     !SPS0L,a                                        ;[INF] 3, 1
+  558   558                      ; line   399
+  559   559                      $DGL    0,35
+  560   560 00075  C9100033              movw    SDR00,#03300H   ; 13056                         ;[INF] 4, 1
+  561   561                      ; line   400
+  562   562                      $DGL    0,36
+  563   563 00079  C9120033              movw    SDR01,#03300H   ; 13056                         ;[INF] 4, 1
+  564   564                      ; line   416
+  565   565                      $DGL    0,52
+  566   566 0007D RE50000                oneb    !_stop_flg                                      ;[INF] 3, 1
+  567   567                      ; line   427
+  568   568                      $DGL    0,63
+  569   569 00080  302200                movw    ax,#022H        ; 34                            ;[INF] 3, 1
+  570   570 00083  BF1001                movw    !SMR00,ax                                       ;[INF] 3, 1
+  571   571                      ; line   430
+  572   572                      $DGL    0,66
+  573   573 00086  E1                    oneb    a                                               ;[INF] 1, 1
+  574   574 00087  BF1201                movw    !SMR01,ax                                       ;[INF] 3, 1
+  575   575                      ; line   433
+  576   576                      $DGL    0,69
+  577   577 0008A  309780                movw    ax,#08097H      ; -32617                        ;[INF] 3, 1
+  578   578 0008D  BF1801                movw    !SCR00,ax                                       ;[INF] 3, 1
+  579   579                      ; line   434
+  580   580                      $DGL    0,70
+  581   581 00090  5144                  mov     a,#044H ; 68                                    ;[INF] 2, 1
+  582   582 00092  BF1A01                movw    !SCR01,ax                                       ;[INF] 3, 1
+  583   583                      ; line   437
+  584   584                      $DGL    0,73
+  585   585 00095  F53401                clrb    !SOL0L                                          ;[INF] 3, 1
+  586   586                      ; line   440
+  587   587                      $DGL    0,76
+  588   588 00098  300F0F                movw    ax,#0F0FH       ; 3855                          ;[INF] 3, 1
+  589   589 0009B  BF2801                movw    !SO0,ax                                         ;[INF] 3, 1
+  590   590                      ; line   443
+  591   591                      $DGL    0,79
+  592   592 0009E  8F2A01                mov     a,!SOE0L                                        ;[INF] 3, 1
+  593   593 000A1  6C01                  or      a,#01H  ; 1                                     ;[INF] 2, 1
+  594   594 000A3  9F2A01                mov     !SOE0L,a                                        ;[INF] 3, 1
+  595   595                      ; line   446
+  596   596                      $DGL    0,82
+  597   597 000A6 RFC000000              call    !!_uart_port_init                               ;[INF] 4, 3
+  598   598                      ; line   449
+  599   599                      $DGL    0,85
+  600   600 000AA  CF0A0107              mov     !SIR01L,#07H    ; 7                             ;[INF] 4, 1
+  601   601                      ; line   453
+  602   602                      $DGL    0,89
+  603   603 000AE  715AED                set1    PR10H.5                                         ;[INF] 3, 2
+  604   604                      ; line   454
+  605   605                      $DGL    0,90
+  606   606 000B1  715BE9                clr1    PR00H.5                                         ;[INF] 3, 2
+  607   607                      ; line   455
+  608   608                      $DGL    0,91
+  609   609 000B4  714AED                set1    PR10H.4                                         ;[INF] 3, 2
+  610   610                      ; line   456
+  611   611                      $DGL    0,92
+  612   612 000B7  714BE9                clr1    PR00H.4                                         ;[INF] 3, 2
+  613   613                      ; line   459
+  614   614                      $DGL    0,95
+  615   615 000BA  716BE1                clr1    IF0H.6                                          ;[INF] 3, 2
+  616   616                      ; line   460
+  617   617                      $DGL    0,96
+  618   618 000BD  717BE1                clr1    IF0H.7                                          ;[INF] 3, 2
+  619   619                      ; line   463
+  620   620                      $DGL    0,99
+  621   621 000C0  715AE5                set1    MK0H.5                                          ;[INF] 3, 2
+  622   622                      ; line   464
+  623   623                      $DGL    0,100
+  624   624 000C3  716AE5                set1    MK0H.6                                          ;[INF] 3, 2
+  625   625                      ; line   465
+  626   626                      $DGL    0,101
+  627   627 000C6  717BE5                clr1    MK0H.7                                          ;[INF] 3, 2
+  628   628                      ; line   468
+  629   629                      $DGL    0,104
+  630   630 000C9 RFC190000              call    !!_dma0_init                                    ;[INF] 4, 3
+  631   631                      ; line   471
+  632   632                      $DGL    0,107
+  633   633 000CD RFC350000              call    !!_dma1_init                                    ;[INF] 4, 3
+  634   634                      ; line   479
+  635   635                      $DGL    0,115
+  636   636 000D1  8F2201                mov     a,!SS0L                                         ;[INF] 3, 1
+  637   637 000D4  6C03                  or      a,#03H  ; 3                                     ;[INF] 2, 1
+  638   638 000D6  9F2201                mov     !SS0L,a                                         ;[INF] 3, 1
+  639   639                      ; line   481
+  640   640                      ; line   482
+  641   641                      ; line   482
+  642   642                      $DGL    0,118
+  643   643 000D9                ??ef_serial_init:
+  644   644 000D9  C6                    pop     hl                                              ;[INF] 1, 1
+  645   645 000DA  D7                    ret                                                     ;[INF] 1, 6
+  646   646 000DB                ??ee_serial_init:
+  647   647                      ; line   537
+  648   648 000DB                _serial_read:
+  649   649                      $DGL    1,64
+  650   650 000DB  C7                    push    hl                                              ;[INF] 1, 1
+  651   651 000DC  C1                    push    ax                                              ;[INF] 1, 1
+  652   652 000DD  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  653   653 000E0                ??bf_serial_read:
+  654   654                      ; line   546
+  655   655                      $DGL    0,10
+  656   656 000E0                ??bb00_serial_read:
+  657   657 000E0  710BBC                clr1    DRC0.0                                          ;[INF] 3, 2
+  658   658 000E3  AB                    movw    ax,[hl] ; bufptr                                ;[INF] 1, 1
+  659   659 000E4  BEB2                  movw    DRA0,ax                                         ;[INF] 2, 1
+  660   660 000E6  AC08                  movw    ax,[hl+8]       ; size                          ;[INF] 2, 1
+  661   661 000E8  BEB6                  movw    DBC0,ax                                         ;[INF] 2, 1
+  662   662 000EA  710ABC                set1    DRC0.0                                          ;[INF] 3, 2
+  663   663 000ED                ??eb00_serial_read:
+  664   664                      ; line   547
+  665   665                      $DGL    0,11
+  666   666 000ED                ??ef_serial_read:
+  667   667 000ED  C0                    pop     ax                                              ;[INF] 1, 1
+  668   668 000EE  C6                    pop     hl                                              ;[INF] 1, 1
+  669   669 000EF  D7                    ret                                                     ;[INF] 1, 6
+  670   670 000F0                ??ee_serial_read:
+  671   671                      ; line   559
+  672   672 000F0                _serial_write:
+  673   673                      $DGL    1,77
+  674   674 000F0  C7                    push    hl                                              ;[INF] 1, 1
+  675   675 000F1  C1                    push    ax                                              ;[INF] 1, 1
+  676   676 000F2  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  677   677 000F5                ??bf_serial_write:
+  678   678                      ; line   561
+  679   679                      $DGL    0,3
+  680   680 000F5                ??bb00_serial_write:
+  681   681 000F5  710BBD                clr1    DRC1.0                                          ;[INF] 3, 2
+  682   682 000F8  AB                    movw    ax,[hl] ; bufptr                                ;[INF] 1, 1
+  683   683 000F9  BEB4                  movw    DRA1,ax                                         ;[INF] 2, 1
+  684   684 000FB  AC08                  movw    ax,[hl+8]       ; size                          ;[INF] 2, 1
+  685   685 000FD  BEB8                  movw    DBC1,ax                                         ;[INF] 2, 1
+  686   686 000FF                ??eb00_serial_write:
+  687   687                      ; line   563
+  688   688                      $DGL    0,5
+  689   689 000FF                ?L0014:
+  690   690 000FF                ??bb01_serial_write:
+  691   691 000FF  61DD          PUSH PSW
+  692   692 00101                ??bb02_serial_write:
+  693   693 00101  717BFA                di                                                      ;[INF] 3, 4
+  694   694 00104                ??eb02_serial_write:
+  695   695                      ; line   572
+  696   696 00104                ??bb03_serial_write:
+  697   697                      ; line   578
+  698   698                      $DGL    0,20
+  699   699 00104  710ABD                set1    DRC1.0                                          ;[INF] 3, 2
+  700   700                      ; line   581
+  701   701                      $DGL    0,23
+  702   702 00107  717ABB                set1    DMC1.7                                          ;[INF] 3, 2
+  703   703 0010A                ??eb03_serial_write:
+  704   704                      ; line   584
+  705   705                      $DGL    0,26
+  706   706 0010A  61CD          POP PSW
+  707   707 0010C                ??eb01_serial_write:
+  708   708 0010C                ?L0016:
+  709   709 0010C                ?L0015:
+  710   710                      ; line   585
+  711   711                      $DGL    0,27
+  712   712 0010C                ??ef_serial_write:
+  713   713 0010C  C0                    pop     ax                                              ;[INF] 1, 1
+  714   714 0010D  C6                    pop     hl                                              ;[INF] 1, 1
+  715   715 0010E  D7                    ret                                                     ;[INF] 1, 6
+  716   716 0010F                ??ee_serial_write:
+  717   717                      ; line   595
+  718   718 0010F                _serial_stop_ready:
+  719   719                      $DGL    1,102
+  720   720 0010F  C7                    push    hl                                              ;[INF] 1, 1
+  721   721 00110                ??bf_serial_stop_ready:
+  722   722                      ; line   596
+  723   723                      $DGL    0,2
+  724   724 00110  5600                  mov     l,#00H  ; 0                                     ;[INF] 2, 1
+  725   725                      ; line   599
+  726   726                      $DGL    0,5
+  727   727 00112  8F2A01                mov     a,!SOE0L                                        ;[INF] 3, 1
+  728   728 00115  5C01                  and     a,#01H  ; 1                                     ;[INF] 2, 1
+  729   729 00117  D1                    cmp0    a                                               ;[INF] 1, 1
+  730   730 00118  DF03                  bnz     $?L0019                                         ;[INF] 2, 4
+  731   731 0011A  E7                    onew    bc                                              ;[INF] 1, 1
+  732   732 0011B  EF2E                  br      $?L0018                                         ;[INF] 2, 3
+  733   733 0011D                ?L0019:
+  734   734                      ; line   602
+  735   735                      $DGL    0,8
+  736   736 0011D RD50000                cmp0    !_stop_flg                                      ;[INF] 3, 1
+  737   737 00120  DD26                  bz      $?L0023                                         ;[INF] 2, 4
+  738   738                      ; line   603
+  739   739 00122                ??bb00_serial_stop_ready:
+  740   740                      ; line   607
+  741   741                      $DGL    0,13
+  742   742 00122  8F0201                mov     a,!SSR01L                                       ;[INF] 3, 1
+  743   743 00125  5C60                  and     a,#060H ; 96                                    ;[INF] 2, 1
+  744   744 00127  D1                    cmp0    a                                               ;[INF] 1, 1
+  745   745 00128  DF1E                  bnz     $?L0023                                         ;[INF] 2, 4
+  746   746 0012A  31E2E11A              bt      IF0H.6,$?L0023                                  ;[INF] 4, 5
+  747   747 0012E  31F2E116              bt      IF0H.7,$?L0023                                  ;[INF] 4, 5
+  748   748                      ; line   608
+  749   749 00132                ??bb01_serial_stop_ready:
+  750   750                      ; line   616
+  751   751                      $DGL    0,22
+  752   752 00132  CF240103              mov     !ST0L,#03H      ; 3                             ;[INF] 4, 1
+  753   753                      ; line   617
+  754   754                      $DGL    0,23
+  755   755 00136  F53801                clrb    !SSC0L                                          ;[INF] 3, 1
+  756   756                      ; line   618
+  757   757                      $DGL    0,24
+  758   758 00139  E53801                oneb    !SSC0L                                          ;[INF] 3, 1
+  759   759                      ; line   619
+  760   760                      $DGL    0,25
+  761   761 0013C  CF220103              mov     !SS0L,#03H      ; 3                             ;[INF] 4, 1
+  762   762                      ; line   622
+  763   763                      $DGL    0,28
+  764   764 00140  716BE5                clr1    MK0H.6                                          ;[INF] 3, 2
+  765   765                      ; line   626
+  766   766                      $DGL    0,32
+  767   767 00143  710BBC                clr1    DRC0.0                                          ;[INF] 3, 2
+  768   768                      ; line   628
+  769   769                      $DGL    0,34
+  770   770 00146  5601                  mov     l,#01H  ; 1                                     ;[INF] 2, 1
+  771   771 00148                ??eb01_serial_stop_ready:
+  772   772                      ; line   629
+  773   773 00148                ?L0023:
+  774   774 00148                ??eb00_serial_stop_ready:
+  775   775                      ; line   630
+  776   776                      ; line   632
+  777   777                      $DGL    0,38
+  778   778 00148  17                    movw    ax,hl                                           ;[INF] 1, 1
+  779   779 00149  F1                    clrb    a                                               ;[INF] 1, 1
+  780   780 0014A  12                    movw    bc,ax                                           ;[INF] 1, 1
+  781   781                      ; line   633
+  782   782 0014B                ?L0018:
+  783   783                      ; line   633
+  784   784                      $DGL    0,39
+  785   785 0014B                ??ef_serial_stop_ready:
+  786   786 0014B  C6                    pop     hl                                              ;[INF] 1, 1
+  787   787 0014C  D7                    ret                                                     ;[INF] 1, 6
+  788   788 0014D                ??ee_serial_stop_ready:
+  789   789                      ; line   641
+  790   790 0014D                _serial_stop_finish:
+  791   791                      $DGL    1,117
+  792   792 0014D                ??bf_serial_stop_finish:
+  793   793                      ; line   643
+  794   794                      $DGL    0,3
+  795   795 0014D  8F2A01                mov     a,!SOE0L                                        ;[INF] 3, 1
+  796   796 00150  5C01                  and     a,#01H  ; 1                                     ;[INF] 2, 1
+  797   797 00152  D1                    cmp0    a                                               ;[INF] 1, 1
+  798   798 00153  DD29                  bz      $?L0026                                         ;[INF] 2, 4
+  799   799                      ; line   646
+  800   800                      $DGL    0,6
+  801   801 00155  710ABC                set1    DRC0.0                                          ;[INF] 3, 2
+  802   802                      ; line   655
+  803   803                      $DGL    0,15
+  804   804 00158  31E4E10C              bf      IF0H.6,$?L0029                                  ;[INF] 4, 5
+  805   805                      ; line   656
+  806   806 0015C                ??bb00_serial_stop_finish:
+  807   807                      ; line   658
+  808   808                      $DGL    0,18
+  809   809 0015C  31F2E103              bt      IF0H.7,$?L0031                                  ;[INF] 4, 5
+  810   810                      ; line   659
+  811   811 00160                ??bb01_serial_stop_finish:
+  812   812                      ; line   661
+  813   813                      $DGL    0,21
+  814   814 00160  717ABA                set1    DMC0.7                                          ;[INF] 3, 2
+  815   815 00163                ??eb01_serial_stop_finish:
+  816   816                      ; line   662
+  817   817 00163                ?L0031:
+  818   818                      ; line   665
+  819   819                      $DGL    0,25
+  820   820 00163  716BE1                clr1    IF0H.6                                          ;[INF] 3, 2
+  821   821 00166                ??eb00_serial_stop_finish:
+  822   822                      ; line   667
+  823   823                      $DGL    0,27
+  824   824 00166  EF13                  br      $?L0033                                         ;[INF] 2, 3
+  825   825 00168                ?L0029:
+  826   826 00168  8F0201                mov     a,!SSR01L                                       ;[INF] 3, 1
+  827   827 0016B  5C40                  and     a,#040H ; 64                                    ;[INF] 2, 1
+  828   828 0016D  D1                    cmp0    a                                               ;[INF] 1, 1
+  829   829 0016E  DF0B                  bnz     $?L0033                                         ;[INF] 2, 4
+  830   830                      ; line   668
+  831   831 00170                ??bb02_serial_stop_finish:
+  832   832                      ; line   670
+  833   833                      $DGL    0,30
+  834   834 00170  CF240103              mov     !ST0L,#03H      ; 3                             ;[INF] 4, 1
+  835   835                      ; line   671
+  836   836                      $DGL    0,31
+  837   837 00174  F53801                clrb    !SSC0L                                          ;[INF] 3, 1
+  838   838                      ; line   672
+  839   839                      $DGL    0,32
+  840   840 00177  CF220103              mov     !SS0L,#03H      ; 3                             ;[INF] 4, 1
+  841   841 0017B                ??eb02_serial_stop_finish:
+  842   842                      ; line   674
+  843   843 0017B                ?L0033:
+  844   844                      ; line   675
+  845   845 0017B                ??bb03_serial_stop_finish:
+  846   846 0017B                ??eb03_serial_stop_finish:
+  847   847                      ; line   677
+  848   848                      ; line   680
+  849   849                      $DGL    0,40
+  850   850 0017B  716AE5                set1    MK0H.6                                          ;[INF] 3, 2
+  851   851                      ; line   682
+  852   852 0017E                ?L0026:
+  853   853                      ; line   682
+  854   854                      $DGL    0,42
+  855   855 0017E                ??ef_serial_stop_finish:
+  856   856 0017E  D7                    ret                                                     ;[INF] 1, 6
+  857   857 0017F                ??ee_serial_stop_finish:
+  858   858                      ; line   731
+  859   859                      
+  860   860 -----                UARTBASE        CSEG    BASE
+  861   861 00000                _dma0_isr:
+  862   862                      $DGL    1,139
+  863   863 00000                ??bf_dma0_isr:
+  864   864                      ; line   734
+  865   865                      $DGL    0,5
+  866   866 00000  C1                push    ax
+  867   867                      $DGL    0,6
+  868   868 00001  C3                push    bc
+  869   869                      $DGL    0,7
+  870   870 00002  C5                push    de
+  871   871                      $DGL    0,8
+  872   872 00003  C7                push    hl
+  873   873                      $DGL    0,9
+  874   874 00004 R340000            movw    de,#_@SEGAX
+  875   875                      $DGL    0,10
+  876   876 00007  AA0A              movw    ax,[de+0AH]
+  877   877                      $DGL    0,11
+  878   878 00009  C1                push    ax
+  879   879                      $DGL    0,12
+  880   880 0000A  AA08              movw    ax,[de+08H]
+  881   881                      $DGL    0,13
+  882   882 0000C  C1                push    ax
+  883   883                      $DGL    0,14
+  884   884 0000D  AA06              movw    ax,[de+06H]
+  885   885                      $DGL    0,15
+  886   886 0000F  C1                push    ax
+  887   887                      $DGL    0,16
+  888   888 00010  AA04              movw    ax,[de+04H]
+  889   889                      $DGL    0,17
+  890   890 00012  C1                push    ax
+  891   891                      $DGL    0,18
+  892   892 00013  AA02              movw    ax,[de+02H]
+  893   893                      $DGL    0,19
+  894   894 00015  C1                push    ax
+  895   895                      $DGL    0,20
+  896   896 00016  AA00              movw    ax,[de+00H]
+  897   897                      $DGL    0,21
+  898   898 00018  C1                push    ax
+  899   899                      $DGL    0,22
+  900   900 00019  8EFD              mov     a,ES
+  901   901                      $DGL    0,23
+  902   902 0001B  70                mov     x,a
+  903   903                      $DGL    0,24
+  904   904 0001C  8EFC              mov     a,CS
+  905   905                      $DGL    0,25
+  906   906 0001E  C1                push    ax
+  907   907                      $DGL    0,26
+  908   908                          ; line   783
+  909   909 0001F                ??bb00_dma0_isr:
+  910   910                      ; line   785
+  911   911                      $DGL    0,55
+  912   912 0001F RAF0200                movw    ax,!_uart_callback                              ;[INF] 3, 1
+  913   913 00022  6168                  or      a,x                                             ;[INF] 2, 1
+  914   914 00024 R6F0400                or      a,!_uart_callback+2                             ;[INF] 3, 1
+  915   915 00027  DD0A                  bz      $?L0037                                         ;[INF] 2, 4
+  916   916 00029 R8F0400                mov     a,!_uart_callback+2                             ;[INF] 3, 1
+  917   917 0002C  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  918   918 0002E RAF0200                movw    ax,!_uart_callback                              ;[INF] 3, 1
+  919   919 00031  61CA                  call    ax                                              ;[INF] 2, 3
+  920   920 00033                ?L0037:
+  921   921 00033                ?L0038:
+  922   922 00033                ??eb00_dma0_isr:
+  923   923                      ; line   807
+  924   924                      $DGL    0,77
+  925   925 00033  716BE1                clr1    IF0H.6                                          ;[INF] 3, 2
+  926   926                      ; line   811
+  927   927                      $DGL    0,82
+  928   928 00036  C0                pop     ax
+  929   929                      $DGL    0,83
+  930   930 00037  9EFC              mov     CS,a
+  931   931                      $DGL    0,84
+  932   932 00039  60                mov     a,x
+  933   933                      $DGL    0,85
+  934   934 0003A  9EFD              mov     ES,a
+  935   935                      $DGL    0,86
+  936   936 0003C R340000            movw    de,#_@SEGAX
+  937   937                      $DGL    0,87
+  938   938 0003F  C0                pop     ax
+  939   939                      $DGL    0,88
+  940   940 00040  B9                movw    [de],ax
+  941   941                      $DGL    0,89
+  942   942 00041  C0                pop     ax
+  943   943                      $DGL    0,90
+  944   944 00042  BA02              movw    [de+02H],ax
+  945   945                      $DGL    0,91
+  946   946 00044  C0                pop     ax
+  947   947                      $DGL    0,92
+  948   948 00045  BA04              movw    [de+04H],ax
+  949   949                      $DGL    0,93
+  950   950 00047  C0                pop     ax
+  951   951                      $DGL    0,94
+  952   952 00048  BA06              movw    [de+06H],ax
+  953   953                      $DGL    0,95
+  954   954 0004A  C0                pop     ax
+  955   955                      $DGL    0,96
+  956   956 0004B  BA08              movw    [de+08H],ax
+  957   957                      $DGL    0,97
+  958   958 0004D  C0                pop     ax
+  959   959                      $DGL    0,98
+  960   960 0004E  BA0A              movw    [de+0AH],ax
+  961   961                      $DGL    0,99
+  962   962 00050  C6                pop     hl
+  963   963                      $DGL    0,100
+  964   964 00051  C4                pop     de
+  965   965                      $DGL    0,101
+  966   966 00052  C2                pop     bc
+  967   967                      $DGL    0,102
+  968   968 00053  C0                pop     ax
+  969   969                      $DGL    0,103
+  970   970                          ; line   835
+  971   971                      $DGL    0,105
+  972   972 00054                ??ef_dma0_isr:
+  973   973 00054  61FC                  reti                                                    ;[INF] 2, 6
+  974   974 00056                ??ee_dma0_isr:
+  975   975                      ; line   852
+  976   976 00056                _dma1_isr:
+  977   977                      $DGL    1,149
+  978   978 00056                ??bf_dma1_isr:
+  979   979                      ; line   855
+  980   980                      $DGL    0,5
+  981   981 00056  C1                push    ax
+  982   982                      $DGL    0,6
+  983   983 00057  C3                push    bc
+  984   984                      $DGL    0,7
+  985   985 00058  C5                push    de
+  986   986                      $DGL    0,8
+  987   987 00059  C7                push    hl
+  988   988                      $DGL    0,9
+  989   989 0005A R340000            movw    de,#_@SEGAX
+  990   990                      $DGL    0,10
+  991   991 0005D  AA0A              movw    ax,[de+0AH]
+  992   992                      $DGL    0,11
+  993   993 0005F  C1                push    ax
+  994   994                      $DGL    0,12
+  995   995 00060  AA08              movw    ax,[de+08H]
+  996   996                      $DGL    0,13
+  997   997 00062  C1                push    ax
+  998   998                      $DGL    0,14
+  999   999 00063  AA06              movw    ax,[de+06H]
+ 1000  1000                      $DGL    0,15
+ 1001  1001 00065  C1                push    ax
+ 1002  1002                      $DGL    0,16
+ 1003  1003 00066  AA04              movw    ax,[de+04H]
+ 1004  1004                      $DGL    0,17
+ 1005  1005 00068  C1                push    ax
+ 1006  1006                      $DGL    0,18
+ 1007  1007 00069  AA02              movw    ax,[de+02H]
+ 1008  1008                      $DGL    0,19
+ 1009  1009 0006B  C1                push    ax
+ 1010  1010                      $DGL    0,20
+ 1011  1011 0006C  AA00              movw    ax,[de+00H]
+ 1012  1012                      $DGL    0,21
+ 1013  1013 0006E  C1                push    ax
+ 1014  1014                      $DGL    0,22
+ 1015  1015 0006F  8EFD              mov     a,ES
+ 1016  1016                      $DGL    0,23
+ 1017  1017 00071  70                mov     x,a
+ 1018  1018                      $DGL    0,24
+ 1019  1019 00072  8EFC              mov     a,CS
+ 1020  1020                      $DGL    0,25
+ 1021  1021 00074  C1                push    ax
+ 1022  1022                      $DGL    0,26
+ 1023  1023                          ; line   881
+ 1024  1024                      $DGL    0,30
+ 1025  1025 00075  8F0001                mov     a,!SSR00L                                       ;[INF] 3, 1
+ 1026  1026 00078  5C60                  and     a,#060H ; 96                                    ;[INF] 2, 1
+ 1027  1027 0007A  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1028  1028 0007B  DD0E                  bz      $?L0041                                         ;[INF] 2, 4
+ 1029  1029                      ; line   882
+ 1030  1030 0007D                ??bb00_dma1_isr:
+ 1031  1031                      ; line   884
+ 1032  1032                      $DGL    0,33
+ 1033  1033 0007D  715BE1                clr1    IF0H.5                                          ;[INF] 3, 2
+ 1034  1034                      ; line   887
+ 1035  1035                      $DGL    0,36
+ 1036  1036 00080  8F0001                mov     a,!SSR00L                                       ;[INF] 3, 1
+ 1037  1037 00083  5C60                  and     a,#060H ; 96                                    ;[INF] 2, 1
+ 1038  1038 00085  D1                    cmp0    a                                               ;[INF] 1, 1
+ 1039  1039 00086  61F8                  sknz                                                    ;[INF] 2, 1
+ 1040  1040                      ; line   888
+ 1041  1041 00088                ??bb01_dma1_isr:
+ 1042  1042                      ; line   890
+ 1043  1043                      $DGL    0,39
+ 1044  1044 00088  715AE1                set1    IF0H.5                                          ;[INF] 3, 2
+ 1045  1045 0008B                ??eb01_dma1_isr:
+ 1046  1046                      ; line   891
+ 1047  1047 0008B                ?L0043:
+ 1048  1048 0008B                ?L0044:
+ 1049  1049 0008B                ??eb00_dma1_isr:
+ 1050  1050                      ; line   892
+ 1051  1051 0008B                ?L0041:
+ 1052  1052 0008B                ?L0042:
+ 1053  1053                      ; line   894
+ 1054  1054                      $DGL    0,43
+ 1055  1055 0008B  715BE5                clr1    MK0H.5                                          ;[INF] 3, 2
+ 1056  1056                      ; line   900
+ 1057  1057                      $DGL    0,50
+ 1058  1058 0008E  C0                pop     ax
+ 1059  1059                      $DGL    0,51
+ 1060  1060 0008F  9EFC              mov     CS,a
+ 1061  1061                      $DGL    0,52
+ 1062  1062 00091  60                mov     a,x
+ 1063  1063                      $DGL    0,53
+ 1064  1064 00092  9EFD              mov     ES,a
+ 1065  1065                      $DGL    0,54
+ 1066  1066 00094 R340000            movw    de,#_@SEGAX
+ 1067  1067                      $DGL    0,55
+ 1068  1068 00097  C0                pop     ax
+ 1069  1069                      $DGL    0,56
+ 1070  1070 00098  B9                movw    [de],ax
+ 1071  1071                      $DGL    0,57
+ 1072  1072 00099  C0                pop     ax
+ 1073  1073                      $DGL    0,58
+ 1074  1074 0009A  BA02              movw    [de+02H],ax
+ 1075  1075                      $DGL    0,59
+ 1076  1076 0009C  C0                pop     ax
+ 1077  1077                      $DGL    0,60
+ 1078  1078 0009D  BA04              movw    [de+04H],ax
+ 1079  1079                      $DGL    0,61
+ 1080  1080 0009F  C0                pop     ax
+ 1081  1081                      $DGL    0,62
+ 1082  1082 000A0  BA06              movw    [de+06H],ax
+ 1083  1083                      $DGL    0,63
+ 1084  1084 000A2  C0                pop     ax
+ 1085  1085                      $DGL    0,64
+ 1086  1086 000A3  BA08              movw    [de+08H],ax
+ 1087  1087                      $DGL    0,65
+ 1088  1088 000A5  C0                pop     ax
+ 1089  1089                      $DGL    0,66
+ 1090  1090 000A6  BA0A              movw    [de+0AH],ax
+ 1091  1091                      $DGL    0,67
+ 1092  1092 000A8  C6                pop     hl
+ 1093  1093                      $DGL    0,68
+ 1094  1094 000A9  C4                pop     de
+ 1095  1095                      $DGL    0,69
+ 1096  1096 000AA  C2                pop     bc
+ 1097  1097                      $DGL    0,70
+ 1098  1098 000AB  C0                pop     ax
+ 1099  1099                      $DGL    0,71
+ 1100  1100                          ; line   924
+ 1101  1101                      $DGL    0,73
+ 1102  1102 000AC                ??ef_dma1_isr:
+ 1103  1103 000AC  61FC                  reti                                                    ;[INF] 2, 6
+ 1104  1104 000AE                ??ee_dma1_isr:
+ 1105  1105                      ; line   945
+ 1106  1106 000AE                _st0_isr:
+ 1107  1107                      $DGL    1,163
+ 1108  1108 000AE  C1                    push    ax                                              ;[INF] 1, 1
+ 1109  1109 000AF  C3                    push    bc                                              ;[INF] 1, 1
+ 1110  1110 000B0  C5                    push    de                                              ;[INF] 1, 1
+ 1111  1111 000B1  C7                    push    hl                                              ;[INF] 1, 1
+ 1112  1112 000B2  520C                  mov     c,#0CH                                          ;[INF] 2, 1
+ 1113  1113 000B4  92                    dec     c                                               ;[INF] 1, 1
+ 1114  1114 000B5  92                    dec     c                                               ;[INF] 1, 1
+ 1115  1115 000B6 R690000                movw    ax,_@SEGAX[c]                                   ;[INF] 3, 1
+ 1116  1116 000B9  C1                    push    ax                                              ;[INF] 1, 1
+ 1117  1117 000BA  DFF8                  bnz     $$-6                                            ;[INF] 2, 4
+ 1118  1118 000BC  8EFD                  mov     a,ES                                            ;[INF] 2, 1
+ 1119  1119 000BE  70                    mov     x,a                                             ;[INF] 1, 1
+ 1120  1120 000BF  8EFC                  mov     a,CS                                            ;[INF] 2, 1
+ 1121  1121 000C1  C1                    push    ax                                              ;[INF] 1, 1
+ 1122  1122 000C2                ??bf_st0_isr:
+ 1123  1123                      ; line   973
+ 1124  1124 000C2                ??bb00_st0_isr:
+ 1125  1125                      ; line   979
+ 1126  1126                      $DGL    0,35
+ 1127  1127 000C2 RAF0600                movw    ax,!_uart_callback+4                            ;[INF] 3, 1
+ 1128  1128 000C5  6168                  or      a,x                                             ;[INF] 2, 1
+ 1129  1129 000C7 R6F0800                or      a,!_uart_callback+6                             ;[INF] 3, 1
+ 1130  1130 000CA  DD0A                  bz      $?L0047                                         ;[INF] 2, 4
+ 1131  1131 000CC R8F0800                mov     a,!_uart_callback+6                             ;[INF] 3, 1
+ 1132  1132 000CF  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+ 1133  1133 000D1 RAF0600                movw    ax,!_uart_callback+4                            ;[INF] 3, 1
+ 1134  1134 000D4  61CA                  call    ax                                              ;[INF] 2, 3
+ 1135  1135 000D6                ?L0047:
+ 1136  1136 000D6                ??eb00_st0_isr:
+ 1137  1137                      ; line   986
+ 1138  1138                      $DGL    0,42
+ 1139  1139 000D6  715AE5                set1    MK0H.5                                          ;[INF] 3, 2
+ 1140  1140                      ; line   987
+ 1141  1141                      $DGL    0,43
+ 1142  1142 000D9                ??ef_st0_isr:
+ 1143  1143 000D9  C0                    pop     ax                                              ;[INF] 1, 1
+ 1144  1144 000DA  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+ 1145  1145 000DC  60                    mov     a,x                                             ;[INF] 1, 1
+ 1146  1146 000DD  9EFD                  mov     ES,a                                            ;[INF] 2, 1
+ 1147  1147 000DF R340000                movw    de,#_@SEGAX                                     ;[INF] 3, 1
+ 1148  1148 000E2  5206                  mov     c,#06H                                          ;[INF] 2, 1
+ 1149  1149 000E4  C0                    pop     ax                                              ;[INF] 1, 1
+ 1150  1150 000E5  B9                    movw    [de],ax                                         ;[INF] 1, 1
+ 1151  1151 000E6  A5                    incw    de                                              ;[INF] 1, 1
+ 1152  1152 000E7  A5                    incw    de                                              ;[INF] 1, 1
+ 1153  1153 000E8  92                    dec     c                                               ;[INF] 1, 1
+ 1154  1154 000E9  DFF9                  bnz     $$-5                                            ;[INF] 2, 4
+ 1155  1155 000EB  C6                    pop     hl                                              ;[INF] 1, 1
+ 1156  1156 000EC  C4                    pop     de                                              ;[INF] 1, 1
+ 1157  1157 000ED  C2                    pop     bc                                              ;[INF] 1, 1
+ 1158  1158 000EE  C0                    pop     ax                                              ;[INF] 1, 1
+ 1159  1159 000EF  61FC                  reti                                                    ;[INF] 2, 6
+ 1160  1160 000F1                ??ee_st0_isr:
+ 1161  1161                      ; line  1008
+ 1162  1162 000F1                _sre0_isr:
+ 1163  1163                      $DGL    1,173
+ 1164  1164 000F1  C1                    push    ax                                              ;[INF] 1, 1
+ 1165  1165 000F2  C3                    push    bc                                              ;[INF] 1, 1
+ 1166  1166 000F3  C5                    push    de                                              ;[INF] 1, 1
+ 1167  1167 000F4  C7                    push    hl                                              ;[INF] 1, 1
+ 1168  1168 000F5  520C                  mov     c,#0CH                                          ;[INF] 2, 1
+ 1169  1169 000F7  92                    dec     c                                               ;[INF] 1, 1
+ 1170  1170 000F8  92                    dec     c                                               ;[INF] 1, 1
+ 1171  1171 000F9 R690000                movw    ax,_@SEGAX[c]                                   ;[INF] 3, 1
+ 1172  1172 000FC  C1                    push    ax                                              ;[INF] 1, 1
+ 1173  1173 000FD  DFF8                  bnz     $$-6                                            ;[INF] 2, 4
+ 1174  1174 000FF  8EFD                  mov     a,ES                                            ;[INF] 2, 1
+ 1175  1175 00101  70                    mov     x,a                                             ;[INF] 1, 1
+ 1176  1176 00102  8EFC                  mov     a,CS                                            ;[INF] 2, 1
+ 1177  1177 00104  C1                    push    ax                                              ;[INF] 1, 1
+ 1178  1178 00105  C1                    push    ax                                              ;[INF] 1, 1
+ 1179  1179 00106  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1180  1180 00109                ??bf_sre0_isr:
+ 1181  1181                      ; line  1012
+ 1182  1182                      $DGL    0,5
+ 1183  1183 00109  710BBC                clr1    DRC0.0                                          ;[INF] 3, 2
+ 1184  1184                      ; line  1019
+ 1185  1185                      $DGL    0,12
+ 1186  1186 0010C RAF0A00                movw    ax,!_uart_callback+8                            ;[INF] 3, 1
+ 1187  1187 0010F  6168                  or      a,x                                             ;[INF] 2, 1
+ 1188  1188 00111 R6F0C00                or      a,!_uart_callback+10                            ;[INF] 3, 1
+ 1189  1189 00114  DD0A                  bz      $?L0051                                         ;[INF] 2, 4
+ 1190  1190 00116 R8F0C00                mov     a,!_uart_callback+10                            ;[INF] 3, 1
+ 1191  1191 00119  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+ 1192  1192 0011B RAF0A00                movw    ax,!_uart_callback+8                            ;[INF] 3, 1
+ 1193  1193 0011E  61CA                  call    ax                                              ;[INF] 2, 3
+ 1194  1194 00120                ?L0051:
+ 1195  1195                      ; line  1025
+ 1196  1196                      $DGL    0,18
+ 1197  1197 00120  713BE1                clr1    IF0H.3                                          ;[INF] 3, 2
+ 1198  1198                      ; line  1026
+ 1199  1199                      $DGL    0,19
+ 1200  1200 00123  716BE1                clr1    IF0H.6                                          ;[INF] 3, 2
+ 1201  1201                      ; line  1029
+ 1202  1202                      $DGL    0,22
+ 1203  1203 00126  8D12                  mov     a,RXD0                                          ;[INF] 2, 1
+ 1204  1204 00128  9C01                  mov     [hl+1],a        ; trash_data                    ;[INF] 2, 1
+ 1205  1205                      ; line  1032
+ 1206  1206                      $DGL    0,25
+ 1207  1207 0012A  CF0A0107              mov     !SIR01L,#07H    ; 7                             ;[INF] 4, 1
+ 1208  1208                      ; line  1033
+ 1209  1209                      $DGL    0,26
+ 1210  1210 0012E                ??ef_sre0_isr:
+ 1211  1211 0012E  C0                    pop     ax                                              ;[INF] 1, 1
+ 1212  1212 0012F  C0                    pop     ax                                              ;[INF] 1, 1
+ 1213  1213 00130  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+ 1214  1214 00132  60                    mov     a,x                                             ;[INF] 1, 1
+ 1215  1215 00133  9EFD                  mov     ES,a                                            ;[INF] 2, 1
+ 1216  1216 00135 R340000                movw    de,#_@SEGAX                                     ;[INF] 3, 1
+ 1217  1217 00138  5206                  mov     c,#06H                                          ;[INF] 2, 1
+ 1218  1218 0013A  C0                    pop     ax                                              ;[INF] 1, 1
+ 1219  1219 0013B  B9                    movw    [de],ax                                         ;[INF] 1, 1
+ 1220  1220 0013C  A5                    incw    de                                              ;[INF] 1, 1
+ 1221  1221 0013D  A5                    incw    de                                              ;[INF] 1, 1
+ 1222  1222 0013E  92                    dec     c                                               ;[INF] 1, 1
+ 1223  1223 0013F  DFF9                  bnz     $$-5                                            ;[INF] 2, 4
+ 1224  1224 00141  C6                    pop     hl                                              ;[INF] 1, 1
+ 1225  1225 00142  C4                    pop     de                                              ;[INF] 1, 1
+ 1226  1226 00143  C2                    pop     bc                                              ;[INF] 1, 1
+ 1227  1227 00144  C0                    pop     ax                                              ;[INF] 1, 1
+ 1228  1228 00145  61FC                  reti                                                    ;[INF] 2, 6
+ 1229  1229 00147                ??ee_sre0_isr:
+ 1230  1230                      
+ 1231  1231 -----                @@VECT1A        CSEG    AT    001AH
+ 1232  1232 0001A                _@vect1a:
+ 1233  1233 0001A R0000                  DW      _dma0_isr
+ 1234  1234 0001C                _@vect1c:
+ 1235  1235 0001C R5600                  DW      _dma1_isr
+ 1236  1236 0001E                _@vect1e:
+ 1237  1237 0001E RAE00                  DW      _st0_isr
+ 1238  1238                      
+ 1239  1239 -----                @@VECT22        CSEG    AT    0022H
+ 1240  1240 00022                _@vect22:
+ 1241  1241 00022 RF100                  DW      _sre0_isr
+ 1242  1242                      
+ 1243  1243 -----                @@CODE  CSEG    BASE
+ 1244  1244                              END
+ 1245  1245                      
+ 1246  1246                      
+ 1247  1247                      ; *** Code Information ***
+ 1248  1248                      ;
+ 1249  1249                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+ 1250  1250                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\driver\uart\uart
+ 1251  1251                      ;       .c
+ 1252  1252                      ;
+ 1253  1253                      ; $FUNC uart_port_init(286)
+ 1254  1254                      ;       void=(void)
+ 1255  1255                      ;       CODE SIZE= 25 bytes, CLOCK_SIZE= 19 clocks, STACK_SIZE= 0 bytes
+ 1256  1256                      ;
+ 1257  1257                      ; $FUNC dma0_init(312)
+ 1258  1258                      ;       void=(void)
+ 1259  1259                      ;       CODE SIZE= 28 bytes, CLOCK_SIZE= 22 clocks, STACK_SIZE= 0 bytes
+ 1260  1260                      ;
+ 1261  1261                      ; $FUNC dma1_init(338)
+ 1262  1262                      ;       void=(void)
+ 1263  1263                      ;       CODE SIZE= 28 bytes, CLOCK_SIZE= 22 clocks, STACK_SIZE= 0 bytes
+ 1264  1264                      ;
+ 1265  1265                      ; $FUNC serial_init(365)
+ 1266  1266                      ;       void=(pointer param:ax)
+ 1267  1267                      ;       CODE SIZE= 138 bytes, CLOCK_SIZE= 80 clocks, STACK_SIZE= 6 bytes
+ 1268  1268                      ;
+ 1269  1269                      ; $CALL uart_port_init(446)
+ 1270  1270                      ;       void=(void)
+ 1271  1271                      ;
+ 1272  1272                      ; $CALL dma0_init(468)
+ 1273  1273                      ;       void=(void)
+ 1274  1274                      ;
+ 1275  1275                      ; $CALL dma1_init(471)
+ 1276  1276                      ;       void=(void)
+ 1277  1277                      ;
+ 1278  1278                      ; $FUNC serial_read(537)
+ 1279  1279                      ;       void=(pointer bufptr:ax, unsigned short size:[sp+4])
+ 1280  1280                      ;       CODE SIZE= 21 bytes, CLOCK_SIZE= 19 clocks, STACK_SIZE= 4 bytes
+ 1281  1281                      ;
+ 1282  1282                      ; $FUNC serial_write(559)
+ 1283  1283                      ;       void=(pointer bufptr:ax, unsigned short size:[sp+4])
+ 1284  1284                      ;       CODE SIZE= 27 bytes, CLOCK_SIZE= 25 clocks, STACK_SIZE= 4 bytes
+ 1285  1285                      ;
+ 1286  1286                      ; $FUNC serial_stop_ready(595)
+ 1287  1287                      ;       bc=(void)
+ 1288  1288                      ;       CODE SIZE= 62 bytes, CLOCK_SIZE= 54 clocks, STACK_SIZE= 2 bytes
+ 1289  1289                      ;
+ 1290  1290                      ; $FUNC serial_stop_finish(641)
+ 1291  1291                      ;       void=(void)
+ 1292  1292                      ;       CODE SIZE= 50 bytes, CLOCK_SIZE= 44 clocks, STACK_SIZE= 0 bytes
+ 1293  1293                      ;
+ 1294  1294                      ; $FUNC dma0_isr(731)
+ 1295  1295                      ;       void=(void)
+ 1296  1296                      ;       CODE SIZE= 25 bytes, CLOCK_SIZE= 21 clocks, STACK_SIZE= 4 bytes
+ 1297  1297                      ;
+ 1298  1298                      ; $CALL uart_callback(785)
+ 1299  1299                      ;       void=(void)
+ 1300  1300                      ;
+ 1301  1301                      ; $FUNC dma1_isr(852)
+ 1302  1302                      ;       void=(void)
+ 1303  1303                      ;       CODE SIZE= 27 bytes, CLOCK_SIZE= 23 clocks, STACK_SIZE= 0 bytes
+ 1304  1304                      ;
+ 1305  1305                      ; $FUNC st0_isr(945)
+ 1306  1306                      ;       void=(void)
+ 1307  1307                      ;       CODE SIZE= 67 bytes, CLOCK_SIZE= 57 clocks, STACK_SIZE= 26 bytes
+ 1308  1308                      ;
+ 1309  1309                      ; $CALL uart_callback(979)
+ 1310  1310                      ;       void=(void)
+ 1311  1311                      ;
+ 1312  1312                      ; $FUNC sre0_isr(1008)
+ 1313  1313                      ;       void=(void)
+ 1314  1314                      ;       CODE SIZE= 86 bytes, CLOCK_SIZE= 67 clocks, STACK_SIZE= 28 bytes
+ 1315  1315                      ;
+ 1316  1316                      ; $CALL uart_callback(1019)
+ 1317  1317                      ;       void=(void)
+ 1318  1318                      
+ 1319  1319                      ; Target chip : R5F11AGJ
+ 1320  1320                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00016H   UARTDATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 0017FH   UARTCODE
+00000 00147H   UARTBASE
+0001A 00006H   @@VECT1A
+00022 00002H   @@VECT22
+00000 00000H   @@CODE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

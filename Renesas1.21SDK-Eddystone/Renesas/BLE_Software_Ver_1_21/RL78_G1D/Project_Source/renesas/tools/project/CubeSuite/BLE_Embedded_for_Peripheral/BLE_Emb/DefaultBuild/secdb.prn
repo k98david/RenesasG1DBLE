@@ -1,0 +1,2756 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:15 Dec 2017 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\secdb.asm -_msgoff -pDe
+          faultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\secdb.asm
+Obj-file: DefaultBuild\secdb.rel
+Prn-file: DefaultBuild\secdb.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:15 Dec 2017 Time:16:48:21
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_app\seclib
+    5     5                      ;             \secdb.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,
+    6     6                      ;             CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,
+    7     7                      ;             CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG
+    8     8                      ;             _SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE
+    9     9                      ;             ,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE
+   10    10                      ;             _SECLIB -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\d
+   11    11                      ;             river\wakeup -i..\..\..\..\..\src\driver\dataflash\cs -i..\..\..\
+   12    12                      ;             ..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -
+   13    13                      ;             i..\..\..\..\..\src -i..\..\..\..\..\src\compiler -i..\..\..\..\.
+   14    14                      ;             .\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\.
+   15    15                      ;             .\src\driver\led -i..\..\..\..\..\src\driver\led_onoff -i..\..\..
+   16    16                      ;             \..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..
+   17    17                      ;             \..\..\src\driver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\
+   18    18                      ;             ..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push_state -
+   19    19                      ;             i..\..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\c
+   20    20                      ;             ommon -i..\..\..\..\..\..\bleip\src\rwble -i.\ -i..\..\..\..\..\.
+   21    21                      ;             .\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\.
+   22    22                      ;             .\..\..\..\..\rBLE\src\sample_app\seclib -i..\..\..\..\..\..\rBLE
+   23    23                      ;             \src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaul
+   24    24                      ;             tBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\seclib\secdb.c
+   26    26                      ; Asm-file  : DefaultBuild\secdb.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 02H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         022CH,  0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, secdb.c
+   37    37                      $DGS    MOD_NAM, secdb,         00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    ENM_TAG, .49fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 01H,           01AH
+   56    56                      $DGS    MEB_ENM, _SECDB_STATE_NONE,     00H,    0FFFFH, 04H,    010H,   00H,    00H
+   57    57                      $DGS    MEB_ENM, _SECDB_STATE_INIT_COMP,        01H,    0FFFFH, 04H,    010H,   00H,    00H
+   58    58                      $DGS    MEB_ENM, _SECDB_STATE_ACCESSING,        02H,    0FFFFH, 04H,    010H,   00H,    00H
+   59    59                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   60    60                      $DGS    AUX_EOS, 013H,          01H
+   61    61                      $DGS    ENM_TAG, .50fake,       00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   62    62                      $DGS    AUX_TAG, 01H,           027H
+   63    63                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_NONE, 00H,    0FFFFH, 04H,    010H,   00H,    00H
+   64    64                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_MANAGEMENT_START_COMP,  01H,    0FFFFH, 04H,    010H,   00H
+                                 ,       00H
+   65    65                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_ACCESS_LD_IRK_COMP,     02H,    0FFFFH, 04H,    010H,   00H
+                                 ,       00H
+   66    66                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_ACCESS_MD_COMP, 04H,    0FFFFH, 04H,    010H,   00H,    00H
+   67    67                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_ACCESS_BOND_COMP,       08H,    0FFFFH, 04H,    010H,   00H
+                                 ,       00H
+   68    68                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_MANAGEMENT_STOP_COMP,   010H,   0FFFFH, 04H,    010H,   00H
+                                 ,       00H
+   69    69                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_FLASH_OPERATION_CLEANUP_COMP, 020H,   0FFFFH, 04H,    010H,   00H
+                                 ,       00H
+   70    70                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_DONE, 03FH,   0FFFFH, 04H,    010H,   00H,    00H
+   71    71                      $DGS    MEB_ENM, _SECDB_SEQ_STATE_DIALLOWD_ERR_HANDLE,  040H,   0FFFFH, 04H,    010H,   00H,    00H
+   72    72                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   73    73                      $DGS    AUX_EOS, 01AH,          01H
+   74    74                      $DGS    STR_STR, _RBLE_KEY_VALUE_t,     00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   75    75                      $DGS    AUX_TAG, 010H,          02DH
+   76    76                      $DGS    MEB_STR, _key,          00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   77    77                      $DGS    AUX_STR, 00H,           00H,    010H,   010H,   00H,    00H,    00H,    00H
+   78    78                      $DGS    END_STR, .eos,          010H,   0FFFFH, 00H,    066H,   01H,    00H
+   79    79                      $DGS    AUX_EOS, 027H,          010H
+   80    80                      $DGS    STR_STR, _secdb_irk_t,  00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   81    81                      $DGS    AUX_TAG, 012H,          034H
+   82    82                      $DGS    MEB_STR, _valid,        00H,    0FFFFH, 0DH,    08H,    00H,    00H
+   83    83                      $DGS    MEB_STR, _val,          02H,    0FFFFH, 08H,    08H,    01H,    00H
+   84    84                      $DGS    AUX_STR, 027H,          00H,    010H,   00H,    00H,    00H,    00H,    00H
+   85    85                      $DGS    END_STR, .eos,          012H,   0FFFFH, 00H,    066H,   01H,    00H
+   86    86                      $DGS    AUX_EOS, 02DH,          012H
+   87    87                      $DGS    STR_STR, _secdb_md_t,   00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   88    88                      $DGS    AUX_TAG, 04H,           03AH
+   89    89                      $DGS    MEB_STR, _data,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   90    90                      $DGS    AUX_STR, 00H,           00H,    04H,    04H,    00H,    00H,    00H,    00H
+   91    91                      $DGS    END_STR, .eos,          04H,    0FFFFH, 00H,    066H,   01H,    00H
+   92    92                      $DGS    AUX_EOS, 034H,          04H
+   93    93                      $DGS    STR_STR, _RBLE_BD_ADDR_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   94    94                      $DGS    AUX_TAG, 06H,           040H
+   95    95                      $DGS    MEB_STR, _addr,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   96    96                      $DGS    AUX_STR, 00H,           00H,    06H,    06H,    00H,    00H,    00H,    00H
+   97    97                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+   98    98                      $DGS    AUX_EOS, 03AH,          06H
+   99    99                      $DGS    STR_STR, _RBLE_RAND_NB_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  100   100                      $DGS    AUX_TAG, 08H,           046H
+  101   101                      $DGS    MEB_STR, _nb,           00H,    0FFFFH, 0CH,    08H,    01H,    03H
+  102   102                      $DGS    AUX_STR, 00H,           00H,    08H,    08H,    00H,    00H,    00H,    00H
+  103   103                      $DGS    END_STR, .eos,          08H,    0FFFFH, 00H,    066H,   01H,    00H
+  104   104                      $DGS    AUX_EOS, 040H,          08H
+  105   105                      $DGS    STR_STR, _secdb_ltk_t,  00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  106   106                      $DGS    AUX_TAG, 01CH,          050H
+  107   107                      $DGS    MEB_STR, _valid,        00H,    0FFFFH, 0DH,    08H,    00H,    00H
+  108   108                      $DGS    MEB_STR, _val,          02H,    0FFFFH, 08H,    08H,    01H,    00H
+  109   109                      $DGS    AUX_STR, 027H,          00H,    010H,   00H,    00H,    00H,    00H,    00H
+  110   110                      $DGS    MEB_STR, _ediv,         012H,   0FFFFH, 0DH,    08H,    00H,    00H
+  111   111                      $DGS    MEB_STR, _nb,           014H,   0FFFFH, 08H,    08H,    01H,    00H
+  112   112                      $DGS    AUX_STR, 040H,          00H,    08H,    00H,    00H,    00H,    00H,    00H
+  113   113                      $DGS    END_STR, .eos,          01CH,   0FFFFH, 00H,    066H,   01H,    00H
+  114   114                      $DGS    AUX_EOS, 046H,          01CH
+  115   115                      $DGS    STR_STR, _secdb_bond_t, 00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  116   116                      $DGS    AUX_TAG, 054H,          060H
+  117   117                      $DGS    MEB_STR, _sec_prop,     00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  118   118                      $DGS    MEB_STR, _key_size,     01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  119   119                      $DGS    MEB_STR, _peer_addr,    02H,    0FFFFH, 08H,    08H,    01H,    00H
+  120   120                      $DGS    AUX_STR, 03AH,          00H,    06H,    00H,    00H,    00H,    00H,    00H
+  121   121                      $DGS    MEB_STR, _peer_addr_type,       08H,    0FFFFH, 0CH,    08H,    00H,    00H
+  122   122                      $DGS    MEB_STR, _dummy,        09H,    0FFFFH, 0CH,    08H,    00H,    00H
+  123   123                      $DGS    MEB_STR, _pd_irk,       0AH,    0FFFFH, 08H,    08H,    01H,    00H
+  124   124                      $DGS    AUX_STR, 02DH,          00H,    012H,   00H,    00H,    00H,    00H,    00H
+  125   125                      $DGS    MEB_STR, _pd_ltk,       01CH,   0FFFFH, 08H,    08H,    01H,    00H
+  126   126                      $DGS    AUX_STR, 046H,          00H,    01CH,   00H,    00H,    00H,    00H,    00H
+  127   127                      $DGS    MEB_STR, _ld_ltk,       038H,   0FFFFH, 08H,    08H,    01H,    00H
+  128   128                      $DGS    AUX_STR, 046H,          00H,    01CH,   00H,    00H,    00H,    00H,    00H
+  129   129                      $DGS    END_STR, .eos,          054H,   0FFFFH, 00H,    066H,   01H,    00H
+  130   130                      $DGS    AUX_EOS, 050H,          054H
+  131   131                      $DGS    STR_STR, _secdb_db_t,   00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  132   132                      $DGS    AUX_TAG, 0166H,         06AH
+  133   133                      $DGS    MEB_STR, _ld_irk,       00H,    0FFFFH, 08H,    08H,    01H,    00H
+  134   134                      $DGS    AUX_STR, 02DH,          00H,    012H,   00H,    00H,    00H,    00H,    00H
+  135   135                      $DGS    MEB_STR, _md,           012H,   0FFFFH, 08H,    08H,    01H,    00H
+  136   136                      $DGS    AUX_STR, 034H,          00H,    04H,    00H,    00H,    00H,    00H,    00H
+  137   137                      $DGS    MEB_STR, _bonds,        016H,   0FFFFH, 08H,    08H,    01H,    03H
+  138   138                      $DGS    AUX_STR, 050H,          00H,    0150H,  04H,    00H,    00H,    00H,    00H
+  139   139                      $DGS    END_STR, .eos,          0166H,  0FFFFH, 00H,    066H,   01H,    00H
+  140   140                      $DGS    AUX_EOS, 060H,          0166H
+  141   141                      $DGS    STR_STR, _secdb_info_t, 00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  142   142                      $DGS    AUX_TAG, 013H,          07DH
+  143   143                      $DGS    MEB_STR, _vs_callback,  00H,    0FFFFH, 01H,    08H,    01H,    09H
+  144   144                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+  145   145                      $DGS    MEB_STR, _db_callback,  04H,    0FFFFH, 01H,    08H,    01H,    09H
+  146   146                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+  147   147                      $DGS    MEB_STR, _state,        08H,    0FFFFH, 0AH,    08H,    01H,    00H
+  148   148                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  149   149                      $DGS    MEB_STR, _seq_state,    09H,    0FFFFH, 0AH,    08H,    01H,    00H
+  150   150                      $DGS    AUX_STR, 01AH,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  151   151                      $DGS    MEB_STR, _db,           0AH,    0FFFFH, 08H,    08H,    01H,    01H
+  152   152                      $DGS    AUX_STR, 060H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  153   153                      $DGS    MEB_STR, _cmd,          0CH,    0FFFFH, 0CH,    08H,    00H,    00H
+  154   154                      $DGS    MEB_STR, _saved_bond_bitmap,    0DH,    0FFFFH, 0DH,    08H,    00H,    00H
+  155   155                      $DGS    MEB_STR, _bond_bitmap,  0FH,    0FFFFH, 0DH,    08H,    00H,    00H
+  156   156                      $DGS    MEB_STR, _ld_irk,       011H,   0FFFFH, 0CH,    08H,    00H,    00H
+  157   157                      $DGS    MEB_STR, _md,           012H,   0FFFFH, 0CH,    08H,    00H,    00H
+  158   158                      $DGS    END_STR, .eos,          013H,   0FFFFH, 00H,    066H,   01H,    00H
+  159   159                      $DGS    AUX_EOS, 06AH,          013H
+  160   160                      $DGS    STR_STR, _RBLE_VS_FLASH_ACCESS_PARAM_t, 00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  161   161                      $DGS    AUX_TAG, 06H,           087H
+  162   162                      $DGS    MEB_STR, _cmd,          00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  163   163                      $DGS    MEB_STR, _id,           01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  164   164                      $DGS    MEB_STR, _size,         02H,    0FFFFH, 0CH,    08H,    00H,    00H
+  165   165                      $DGS    MEB_STR, _reserved,     03H,    0FFFFH, 0CH,    08H,    00H,    00H
+  166   166                      $DGS    MEB_STR, _addr,         04H,    0FFFFH, 0CH,    08H,    01H,    01H
+  167   167                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  168   168                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+  169   169                      $DGS    AUX_EOS, 07DH,          06H
+  170   170                      $DGS    STR_STR, _RBLE_VS_Flash_Management_Comp_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  171   171                      $DGS    AUX_TAG, 02H,           08DH
+  172   172                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  173   173                      $DGS    MEB_STR, _cmd,          01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  174   174                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  175   175                      $DGS    AUX_EOS, 087H,          02H
+  176   176                      $DGS    STR_STR, _RBLE_VS_Flash_Access_Comp_t,  00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  177   177                      $DGS    AUX_TAG, 06H,           097H
+  178   178                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  179   179                      $DGS    MEB_STR, _cmd,          01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  180   180                      $DGS    MEB_STR, _id,           02H,    0FFFFH, 0CH,    08H,    00H,    00H
+  181   181                      $DGS    MEB_STR, _size,         03H,    0FFFFH, 0CH,    08H,    00H,    00H
+  182   182                      $DGS    MEB_STR, _addr,         04H,    0FFFFH, 0CH,    08H,    01H,    01H
+  183   183                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  184   184                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+  185   185                      $DGS    AUX_EOS, 08DH,          06H
+  186   186                      $DGS    STR_STR, _RBLE_VS_Flash_Operation_Comp_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  187   187                      $DGS    AUX_TAG, 02H,           09DH
+  188   188                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  189   189                      $DGS    MEB_STR, _cmd,          01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  190   190                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  191   191                      $DGS    AUX_EOS, 097H,          02H
+  192   192                      $DGS    STR_STR, _RBLE_VS_Test_End_Comp_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  193   193                      $DGS    AUX_TAG, 04H,           0A4H
+  194   194                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  195   195                      $DGS    MEB_STR, _reserved,     01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  196   196                      $DGS    MEB_STR, _nb_packet_received,   02H,    0FFFFH, 0DH,    08H,    00H,    00H
+  197   197                      $DGS    END_STR, .eos,          04H,    0FFFFH, 00H,    066H,   01H,    00H
+  198   198                      $DGS    AUX_EOS, 09DH,          04H
+  199   199                      $DGS    STR_STR, _RBLE_VS_Read_Test_RSSI_Comp_t,        00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  200   200                      $DGS    AUX_TAG, 02H,           0AAH
+  201   201                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  202   202                      $DGS    MEB_STR, _rssi,         01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  203   203                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  204   204                      $DGS    AUX_EOS, 0A4H,          02H
+  205   205                      $DGS    STR_STR, _RBLE_VS_GPIO_Dir_Comp_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  206   206                      $DGS    AUX_TAG, 02H,           0B0H
+  207   207                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  208   208                      $DGS    MEB_STR, _mask,         01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  209   209                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  210   210                      $DGS    AUX_EOS, 0AAH,          02H
+  211   211                      $DGS    STR_STR, _RBLE_VS_GPIO_Access_Comp_t,   00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  212   212                      $DGS    AUX_TAG, 02H,           0B6H
+  213   213                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  214   214                      $DGS    MEB_STR, _value,        01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  215   215                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  216   216                      $DGS    AUX_EOS, 0B0H,          02H
+  217   217                      $DGS    STR_STR, _RBLE_VS_Flash_Get_Space_Comp_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  218   218                      $DGS    AUX_TAG, 04H,           0BDH
+  219   219                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  220   220                      $DGS    MEB_STR, _reserved,     01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  221   221                      $DGS    MEB_STR, _size,         02H,    0FFFFH, 0DH,    08H,    00H,    00H
+  222   222                      $DGS    END_STR, .eos,          04H,    0FFFFH, 00H,    066H,   01H,    00H
+  223   223                      $DGS    AUX_EOS, 0B6H,          04H
+  224   224                      $DGS    STR_STR, _RBLE_VS_Flash_Get_EEL_Ver_Comp_t,     00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  225   225                      $DGS    AUX_TAG, 019H,          0C4H
+  226   226                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  227   227                      $DGS    MEB_STR, _version,      01H,    0FFFFH, 0CH,    08H,    01H,    03H
+  228   228                      $DGS    AUX_STR, 00H,           00H,    018H,   018H,   00H,    00H,    00H,    00H
+  229   229                      $DGS    END_STR, .eos,          019H,   0FFFFH, 00H,    066H,   01H,    00H
+  230   230                      $DGS    AUX_EOS, 0BDH,          019H
+  231   231                      $DGS    STR_STR, _RBLE_VS_Adapt_Enable_Comp_t,  00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  232   232                      $DGS    AUX_TAG, 02H,           0CAH
+  233   233                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  234   234                      $DGS    MEB_STR, _cmd,          01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  235   235                      $DGS    END_STR, .eos,          02H,    0FFFFH, 00H,    066H,   01H,    00H
+  236   236                      $DGS    AUX_EOS, 0C4H,          02H
+  237   237                      $DGS    STR_STR, _RBLE_VS_Adapt_State_Ind_t,    00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  238   238                      $DGS    AUX_TAG, 01H,           0CFH
+  239   239                      $DGS    MEB_STR, _state,        00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  240   240                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  241   241                      $DGS    AUX_EOS, 0CAH,          01H
+  242   242                      $DGS    STR_STR, _RBLE_VS_RF_Control_Comp_t,    00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  243   243                      $DGS    AUX_TAG, 01H,           0D4H
+  244   244                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  245   245                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  246   246                      $DGS    AUX_EOS, 0CFH,          01H
+  247   247                      $DGS    STR_STR, _RBLE_VS_Command_Disallowed_Ind_t,     00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  248   248                      $DGS    AUX_TAG, 04H,           0DBH
+  249   249                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  250   250                      $DGS    MEB_STR, _reserved,     01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  251   251                      $DGS    MEB_STR, _opcode,       02H,    0FFFFH, 0DH,    08H,    00H,    00H
+  252   252                      $DGS    END_STR, .eos,          04H,    0FFFFH, 00H,    066H,   01H,    00H
+  253   253                      $DGS    AUX_EOS, 0D4H,          04H
+  254   254                      $DGS    UNI_TAG, _Event_Vs_Parameter_u, 00H,    0FFFEH, 09H,    0CH,    01H,    00H
+  255   255                      $DGS    AUX_TAG, 019H,          0FAH
+  256   256                      $DGS    MEB_UNI, _status,       00H,    0FFFFH, 0CH,    0BH,    00H,    00H
+  257   257                      $DGS    MEB_UNI, _test_end_cmp, 00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  258   258                      $DGS    AUX_STR, 09DH,          00H,    04H,    00H,    00H,    00H,    00H,    00H
+  259   259                      $DGS    MEB_UNI, _test_rssi_cmp,        00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  260   260                      $DGS    AUX_STR, 0A4H,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  261   261                      $DGS    MEB_UNI, _gpio_dir_cmp, 00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  262   262                      $DGS    AUX_STR, 0AAH,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  263   263                      $DGS    MEB_UNI, _gpio_access_cmp,      00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  264   264                      $DGS    AUX_STR, 0B0H,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  265   265                      $DGS    MEB_UNI, _management_comp,      00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  266   266                      $DGS    AUX_STR, 087H,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  267   267                      $DGS    MEB_UNI, _access_comp,  00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  268   268                      $DGS    AUX_STR, 08DH,          00H,    06H,    00H,    00H,    00H,    00H,    00H
+  269   269                      $DGS    MEB_UNI, _operation_comp,       00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  270   270                      $DGS    AUX_STR, 097H,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  271   271                      $DGS    MEB_UNI, _get_space,    00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  272   272                      $DGS    AUX_STR, 0B6H,          00H,    04H,    00H,    00H,    00H,    00H,    00H
+  273   273                      $DGS    MEB_UNI, _get_eel_ver,  00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  274   274                      $DGS    AUX_STR, 0BDH,          00H,    019H,   00H,    00H,    00H,    00H,    00H
+  275   275                      $DGS    MEB_UNI, _adapt_enable_cmp,     00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  276   276                      $DGS    AUX_STR, 0C4H,          00H,    02H,    00H,    00H,    00H,    00H,    00H
+  277   277                      $DGS    MEB_UNI, _adapt_state_ind,      00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  278   278                      $DGS    AUX_STR, 0CAH,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  279   279                      $DGS    MEB_UNI, _rf_control_cmp,       00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  280   280                      $DGS    AUX_STR, 0CFH,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  281   281                      $DGS    MEB_UNI, _cmd_disallowed_ind,   00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  282   282                      $DGS    AUX_STR, 0D4H,          00H,    04H,    00H,    00H,    00H,    00H,    00H
+  283   283                      $DGS    END_STR, .eos,          019H,   0FFFFH, 00H,    066H,   01H,    00H
+  284   284                      $DGS    AUX_EOS, 0DBH,          019H
+  285   285                      $DGS    STR_STR, _RBLE_VS_EVENT_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  286   286                      $DGS    AUX_TAG, 01BH,          0102H
+  287   287                      $DGS    MEB_STR, _type,         00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  288   288                      $DGS    MEB_STR, _reserved,     01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  289   289                      $DGS    MEB_STR, _param,        02H,    0FFFFH, 09H,    08H,    01H,    00H
+  290   290                      $DGS    AUX_STR, 0DBH,          00H,    019H,   00H,    00H,    00H,    00H,    00H
+  291   291                      $DGS    END_STR, .eos,          01BH,   0FFFFH, 00H,    066H,   01H,    00H
+  292   292                      $DGS    AUX_EOS, 0FAH,          01BH
+  293   293                      $DGS    ENM_TAG, .3fake,        00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+  294   294                      $DGS    AUX_TAG, 01H,           0108H
+  295   295                      $DGS    MEB_ENM, _SECDB_EVENT_LOAD_COMP,        01H,    0FFFFH, 04H,    010H,   00H,    00H
+  296   296                      $DGS    MEB_ENM, _SECDB_EVENT_SAVE_COMP,        02H,    0FFFFH, 04H,    010H,   00H,    00H
+  297   297                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+  298   298                      $DGS    AUX_EOS, 0102H,         01H
+  299   299                      $DGS    STR_STR, _SecDb_Access_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  300   300                      $DGS    AUX_TAG, 05H,           0110H
+  301   301                      $DGS    MEB_STR, _status,       00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  302   302                      $DGS    MEB_STR, _bond_bitmap,  01H,    0FFFFH, 0DH,    08H,    00H,    00H
+  303   303                      $DGS    MEB_STR, _ld_irk,       03H,    0FFFFH, 0CH,    08H,    00H,    00H
+  304   304                      $DGS    MEB_STR, _md,           04H,    0FFFFH, 0CH,    08H,    00H,    00H
+  305   305                      $DGS    END_STR, .eos,          05H,    0FFFFH, 00H,    066H,   01H,    00H
+  306   306                      $DGS    AUX_EOS, 0108H,         05H
+  307   307                      $DGS    UNI_TAG, .4fake,        00H,    0FFFEH, 09H,    0CH,    01H,    00H
+  308   308                      $DGS    AUX_TAG, 05H,           0116H
+  309   309                      $DGS    MEB_UNI, _access,       00H,    0FFFFH, 08H,    0BH,    01H,    00H
+  310   310                      $DGS    AUX_STR, 0108H,         00H,    05H,    00H,    00H,    00H,    00H,    00H
+  311   311                      $DGS    END_STR, .eos,          05H,    0FFFFH, 00H,    066H,   01H,    00H
+  312   312                      $DGS    AUX_EOS, 0110H,         05H
+  313   313                      $DGS    STR_STR, _secdb_event_t,        00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  314   314                      $DGS    AUX_TAG, 06H,           011EH
+  315   315                      $DGS    MEB_STR, _type,         00H,    0FFFFH, 0AH,    08H,    01H,    00H
+  316   316                      $DGS    AUX_STR, 0102H,         00H,    01H,    00H,    00H,    00H,    00H,    00H
+  317   317                      $DGS    MEB_STR, _param,        01H,    0FFFFH, 09H,    08H,    01H,    00H
+  318   318                      $DGS    AUX_STR, 0110H,         00H,    05H,    00H,    00H,    00H,    00H,    00H
+  319   319                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+  320   320                      $DGS    AUX_EOS, 0116H,         06H
+  321   321                      $DGS    LAB_SYM, bs_F0124,      U,      U,      00H,    06H,    00H,    00H
+  322   322                      $DGS    LAB_SYM, es_F0124,      U,      U,      00H,    06H,    00H,    00H
+  323   323                      $DGS    LAB_SYM, bs_F0122,      U,      U,      00H,    06H,    00H,    00H
+  324   324                      $DGS    LAB_SYM, es_F0122,      U,      U,      00H,    06H,    00H,    00H
+  325   325                      $DGS    LAB_SYM, bs_S0123,      U,      U,      00H,    06H,    00H,    00H
+  326   326                      $DGS    LAB_SYM, es_S0123,      U,      U,      00H,    06H,    00H,    00H
+  327   327                      $DGS    LAB_SYM, bs_F0121,      U,      U,      00H,    06H,    00H,    00H
+  328   328                      $DGS    LAB_SYM, es_F0121,      U,      U,      00H,    06H,    00H,    00H
+  329   329                      $DGS    LAB_SYM, bs_S0120,      U,      U,      00H,    06H,    00H,    00H
+  330   330                      $DGS    LAB_SYM, es_S0120,      U,      U,      00H,    06H,    00H,    00H
+  331   331                      $DGS    STA_SYM, _info,         U,      U,      08H,    03H,    01H,    00H
+  332   332                      $DGS    AUX_STR, 06AH,          00H,    013H,   00H,    00H,    00H,    00H,    00H
+  333   333                      $DGS    GLV_SYM, _SecDb_Init,   U,      U,      0CH,    026H,   01H,    02H
+  334   334                      $DGS    AUX_FUN, 00H,           U,      U,      0134H,  01H,    00H
+  335   335                      $DGS    BEG_FUN, ??bf_SecDb_Init,       U,      U,      00H,    065H,   01H,    00H
+  336   336                      $DGS    AUX_BEG, 07EH,          04H,    0134H
+  337   337                      $DGS    FUN_ARG, _vs_callback,  00H,    0FFFFH, 01H,    09H,    01H,    09H
+  338   338                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+  339   339                      $DGS    FUN_ARG, _db_callback,  0AH,    0FFFFH, 01H,    09H,    01H,    09H
+  340   340                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+  341   341                      $DGS    END_FUN, ??ef_SecDb_Init,       U,      U,      00H,    065H,   01H,    00H
+  342   342                      $DGS    AUX_END, 08H
+  343   343                      $DGS    GLV_SYM, _SecDb_Load,   U,      U,      0CH,    026H,   01H,    02H
+  344   344                      $DGS    AUX_FUN, 00H,           U,      U,      013FH,  01H,    00H
+  345   345                      $DGS    BEG_FUN, ??bf_SecDb_Load,       U,      U,      00H,    065H,   01H,    00H
+  346   346                      $DGS    AUX_BEG, 092H,          02H,    013FH
+  347   347                      $DGS    FUN_ARG, _db,           00H,    0FFFFH, 08H,    09H,    01H,    01H
+  348   348                      $DGS    AUX_STR, 060H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  349   349                      $DGS    FUN_ARG, _bond_bitmap,  08H,    0FFFFH, 0DH,    09H,    00H,    00H
+  350   350                      $DGS    FUN_ARG, _ld_irk,       0AH,    0FFFFH, 0CH,    09H,    00H,    00H
+  351   351                      $DGS    FUN_ARG, _md,           0CH,    0FFFFH, 0CH,    09H,    00H,    00H
+  352   352                      $DGS    END_FUN, ??ef_SecDb_Load,       U,      U,      00H,    065H,   01H,    00H
+  353   353                      $DGS    AUX_END, 03H
+  354   354                      $DGS    GLV_SYM, _SecDb_Save,   U,      U,      0CH,    026H,   01H,    02H
+  355   355                      $DGS    AUX_FUN, 00H,           U,      U,      014AH,  01H,    00H
+  356   356                      $DGS    BEG_FUN, ??bf_SecDb_Save,       U,      U,      00H,    065H,   01H,    00H
+  357   357                      $DGS    AUX_BEG, 0A1H,          02H,    014AH
+  358   358                      $DGS    FUN_ARG, _db,           00H,    0FFFFH, 08H,    09H,    01H,    01H
+  359   359                      $DGS    AUX_STR, 060H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  360   360                      $DGS    FUN_ARG, _bond_bitmap,  08H,    0FFFFH, 0DH,    09H,    00H,    00H
+  361   361                      $DGS    FUN_ARG, _ld_irk,       0AH,    0FFFFH, 0CH,    09H,    00H,    00H
+  362   362                      $DGS    FUN_ARG, _md,           0CH,    0FFFFH, 0CH,    09H,    00H,    00H
+  363   363                      $DGS    END_FUN, ??ef_SecDb_Save,       U,      U,      00H,    065H,   01H,    00H
+  364   364                      $DGS    AUX_END, 03H
+  365   365                      $DGS    STA_SYM, _secdb_access, U,      U,      0CH,    03H,    01H,    02H
+  366   366                      $DGS    AUX_FUN, 00H,           U,      U,      016EH,  01H,    00H
+  367   367                      $DGS    BEG_FUN, ??bf_secdb_access,     U,      U,      00H,    065H,   01H,    00H
+  368   368                      $DGS    AUX_BEG, 0ABH,          02H,    0154H
+  369   369                      $DGS    FUN_ARG, _db,           00H,    0FFFFH, 08H,    09H,    01H,    01H
+  370   370                      $DGS    AUX_STR, 060H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  371   371                      $DGS    FUN_ARG, _cmd,          08H,    0FFFFH, 0CH,    09H,    00H,    00H
+  372   372                      $DGS    FUN_ARG, _bond_bitmap,  0AH,    0FFFFH, 0DH,    09H,    00H,    00H
+  373   373                      $DGS    FUN_ARG, _ld_irk,       0CH,    0FFFFH, 0CH,    09H,    00H,    00H
+  374   374                      $DGS    FUN_ARG, _md,           0EH,    0FFFFH, 0CH,    09H,    00H,    00H
+  375   375                      $DGS    BEG_BLK, ??bb00_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  376   376                      $DGS    AUX_BEG, 03H,           00H,    0158H
+  377   377                      $DGS    END_BLK, ??eb00_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  378   378                      $DGS    AUX_END, 06H
+  379   379                      $DGS    BEG_BLK, ??bb01_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  380   380                      $DGS    AUX_BEG, 09H,           00H,    015CH
+  381   381                      $DGS    END_BLK, ??eb01_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  382   382                      $DGS    AUX_END, 0CH
+  383   383                      $DGS    BEG_BLK, ??bb02_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  384   384                      $DGS    AUX_BEG, 0FH,           00H,    0160H
+  385   385                      $DGS    END_BLK, ??eb02_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  386   386                      $DGS    AUX_END, 012H
+  387   387                      $DGS    BEG_BLK, ??bb03_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  388   388                      $DGS    AUX_BEG, 020H,          00H,    0164H
+  389   389                      $DGS    END_BLK, ??eb03_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  390   390                      $DGS    AUX_END, 022H
+  391   391                      $DGS    BEG_BLK, ??bb04_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  392   392                      $DGS    AUX_BEG, 024H,          00H,    0168H
+  393   393                      $DGS    END_BLK, ??eb04_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  394   394                      $DGS    AUX_END, 026H
+  395   395                      $DGS    BEG_BLK, ??bb05_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  396   396                      $DGS    AUX_BEG, 028H,          00H,    00H
+  397   397                      $DGS    END_BLK, ??eb05_secdb_access,   U,      U,      00H,    064H,   01H,    00H
+  398   398                      $DGS    AUX_END, 02AH
+  399   399                      $DGS    END_FUN, ??ef_secdb_access,     U,      U,      00H,    065H,   01H,    00H
+  400   400                      $DGS    AUX_END, 030H
+  401   401                      $DGS    STA_SYM, _secdb_flash_sequence, U,      U,      01H,    03H,    01H,    02H
+  402   402                      $DGS    AUX_FUN, 00H,           U,      U,      0197H,  01H,    00H
+  403   403                      $DGS    BEG_FUN, ??bf_secdb_flash_sequence,     U,      U,      00H,    065H,   01H,    00H
+  404   404                      $DGS    AUX_BEG, 0DEH,          08H,    0175H
+  405   405                      $DGS    AUT_VAR, _param,        02H,    0FFFFH, 08H,    01H,    01H,    00H
+  406   406                      $DGS    AUX_STR, 07DH,          00H,    06H,    00H,    00H,    00H,    00H,    00H
+  407   407                      $DGS    AUT_VAR, _bidx,         00H,    0FFFFH, 0DH,    01H,    00H,    00H
+  408   408                      $DGS    BEG_BLK, ??bb00_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  409   409                      $DGS    AUX_BEG, 08H,           00H,    0179H
+  410   410                      $DGS    END_BLK, ??eb00_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  411   411                      $DGS    AUX_END, 0BH
+  412   412                      $DGS    BEG_BLK, ??bb01_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  413   413                      $DGS    AUX_BEG, 0DH,           00H,    017DH
+  414   414                      $DGS    END_BLK, ??eb01_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  415   415                      $DGS    AUX_END, 010H
+  416   416                      $DGS    BEG_BLK, ??bb02_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  417   417                      $DGS    AUX_BEG, 012H,          00H,    0181H
+  418   418                      $DGS    END_BLK, ??eb02_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  419   419                      $DGS    AUX_END, 017H
+  420   420                      $DGS    BEG_BLK, ??bb03_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  421   421                      $DGS    AUX_BEG, 019H,          00H,    0185H
+  422   422                      $DGS    END_BLK, ??eb03_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  423   423                      $DGS    AUX_END, 01EH
+  424   424                      $DGS    BEG_BLK, ??bb04_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  425   425                      $DGS    AUX_BEG, 020H,          00H,    0189H
+  426   426                      $DGS    END_BLK, ??eb04_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  427   427                      $DGS    AUX_END, 026H
+  428   428                      $DGS    BEG_BLK, ??bb05_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  429   429                      $DGS    AUX_BEG, 028H,          00H,    018DH
+  430   430                      $DGS    END_BLK, ??eb05_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  431   431                      $DGS    AUX_END, 02AH
+  432   432                      $DGS    BEG_BLK, ??bb06_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  433   433                      $DGS    AUX_BEG, 02BH,          00H,    0191H
+  434   434                      $DGS    END_BLK, ??eb06_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  435   435                      $DGS    AUX_END, 02EH
+  436   436                      $DGS    BEG_BLK, ??bb07_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  437   437                      $DGS    AUX_BEG, 02FH,          00H,    00H
+  438   438                      $DGS    END_BLK, ??eb07_secdb_flash_sequence,   U,      U,      00H,    064H,   01H,    00H
+  439   439                      $DGS    AUX_END, 031H
+  440   440                      $DGS    END_FUN, ??ef_secdb_flash_sequence,     U,      U,      00H,    065H,   01H,    00H
+  441   441                      $DGS    AUX_END, 032H
+  442   442                      $DGS    STA_SYM, _secdb_vs_flash_management_comp_handler,       U,      U,      01H,    03H,    01H
+                                 ,       02H
+  443   443                      $DGS    AUX_FUN, 00H,           U,      U,      01BFH,  01H,    00H
+  444   444                      $DGS    BEG_FUN, ??bf_secdb_vs_flash_management_comp_handler,   U,      U,      00H,    065H,   01H
+                                 ,       00H
+  445   445                      $DGS    AUX_BEG, 0113H,         02H,    019DH
+  446   446                      $DGS    REG_PAR, _result,       0103H,  0FFFFH, 0108H,  011H,   01H,    01H
+  447   447                      $DGS    AUX_STR, 087H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  448   448                      $DGS    BEG_BLK, ??bb00_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  449   449                      $DGS    AUX_BEG, 02H,           00H,    019FH
+  450   450                      $DGS    BEG_BLK, ??bb01_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  451   451                      $DGS    AUX_BEG, 03H,           00H,    01A3H
+  452   452                      $DGS    END_BLK, ??eb01_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  453   453                      $DGS    AUX_END, 05H
+  454   454                      $DGS    BEG_BLK, ??bb02_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  455   455                      $DGS    AUX_BEG, 06H,           00H,    01A7H
+  456   456                      $DGS    END_BLK, ??eb02_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  457   457                      $DGS    AUX_END, 08H
+  458   458                      $DGS    BEG_BLK, ??bb03_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  459   459                      $DGS    AUX_BEG, 09H,           00H,    01ABH
+  460   460                      $DGS    END_BLK, ??eb03_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  461   461                      $DGS    AUX_END, 0BH
+  462   462                      $DGS    BEG_BLK, ??bb04_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  463   463                      $DGS    AUX_BEG, 0CH,           00H,    01B1H
+  464   464                      $DGS    END_BLK, ??eb04_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  465   465                      $DGS    AUX_END, 0EH
+  466   466                      $DGS    END_BLK, ??eb00_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  467   467                      $DGS    AUX_END, 011H
+  468   468                      $DGS    BEG_BLK, ??bb05_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  469   469                      $DGS    AUX_BEG, 012H,          00H,    01B3H
+  470   470                      $DGS    BEG_BLK, ??bb06_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  471   471                      $DGS    AUX_BEG, 014H,          00H,    01B7H
+  472   472                      $DGS    END_BLK, ??eb06_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  473   473                      $DGS    AUX_END, 017H
+  474   474                      $DGS    BEG_BLK, ??bb07_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  475   475                      $DGS    AUX_BEG, 018H,          00H,    00H
+  476   476                      $DGS    END_BLK, ??eb07_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  477   477                      $DGS    AUX_END, 01BH
+  478   478                      $DGS    END_BLK, ??eb05_secdb_vs_flash_management_comp_handler, U,      U,      00H,    064H,   01H
+                                 ,       00H
+  479   479                      $DGS    AUX_END, 01CH
+  480   480                      $DGS    END_FUN, ??ef_secdb_vs_flash_management_comp_handler,   U,      U,      00H,    065H,   01H
+                                 ,       00H
+  481   481                      $DGS    AUX_END, 01DH
+  482   482                      $DGS    STA_SYM, _secdb_vs_flash_access_comp_handler,   U,      U,      01H,    03H,    01H,    02H
+  483   483                      $DGS    AUX_FUN, 00H,           U,      U,      01E7H,  01H,    00H
+  484   484                      $DGS    BEG_FUN, ??bf_secdb_vs_flash_access_comp_handler,       U,      U,      00H,    065H,   01H
+                                 ,       00H
+  485   485                      $DGS    AUX_BEG, 0133H,         02H,    01C5H
+  486   486                      $DGS    REG_PAR, _result,       0103H,  0FFFFH, 0108H,  011H,   01H,    01H
+  487   487                      $DGS    AUX_STR, 08DH,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  488   488                      $DGS    BEG_BLK, ??bb00_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  489   489                      $DGS    AUX_BEG, 04H,           00H,    01C7H
+  490   490                      $DGS    BEG_BLK, ??bb01_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  491   491                      $DGS    AUX_BEG, 05H,           00H,    01C9H
+  492   492                      $DGS    BEG_BLK, ??bb02_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  493   493                      $DGS    AUX_BEG, 08H,           00H,    01CFH
+  494   494                      $DGS    END_BLK, ??eb02_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  495   495                      $DGS    AUX_END, 0AH
+  496   496                      $DGS    END_BLK, ??eb01_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  497   497                      $DGS    AUX_END, 0BH
+  498   498                      $DGS    BEG_BLK, ??bb03_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  499   499                      $DGS    AUX_BEG, 0CH,           00H,    01D3H
+  500   500                      $DGS    END_BLK, ??eb03_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  501   501                      $DGS    AUX_END, 0EH
+  502   502                      $DGS    BEG_BLK, ??bb04_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  503   503                      $DGS    AUX_BEG, 0FH,           00H,    01D7H
+  504   504                      $DGS    END_BLK, ??eb04_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  505   505                      $DGS    AUX_END, 011H
+  506   506                      $DGS    BEG_BLK, ??bb05_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  507   507                      $DGS    AUX_BEG, 012H,          00H,    01DDH
+  508   508                      $DGS    END_BLK, ??eb05_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  509   509                      $DGS    AUX_END, 014H
+  510   510                      $DGS    END_BLK, ??eb00_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  511   511                      $DGS    AUX_END, 017H
+  512   512                      $DGS    BEG_BLK, ??bb06_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  513   513                      $DGS    AUX_BEG, 018H,          00H,    01E1H
+  514   514                      $DGS    END_BLK, ??eb06_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  515   515                      $DGS    AUX_END, 01CH
+  516   516                      $DGS    BEG_BLK, ??bb07_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  517   517                      $DGS    AUX_BEG, 01DH,          00H,    00H
+  518   518                      $DGS    END_BLK, ??eb07_secdb_vs_flash_access_comp_handler,     U,      U,      00H,    064H,   01H
+                                 ,       00H
+  519   519                      $DGS    AUX_END, 020H
+  520   520                      $DGS    END_FUN, ??ef_secdb_vs_flash_access_comp_handler,       U,      U,      00H,    065H,   01H
+                                 ,       00H
+  521   521                      $DGS    AUX_END, 021H
+  522   522                      $DGS    STA_SYM, _secdb_vs_flash_operation_comp_handler,        U,      U,      01H,    03H,    01H
+                                 ,       02H
+  523   523                      $DGS    AUX_FUN, 00H,           U,      U,      01F7H,  01H,    00H
+  524   524                      $DGS    BEG_FUN, ??bf_secdb_vs_flash_operation_comp_handler,    U,      U,      00H,    065H,   01H
+                                 ,       00H
+  525   525                      $DGS    AUX_BEG, 0157H,         02H,    01EDH
+  526   526                      $DGS    REG_PAR, _result,       0103H,  0FFFFH, 0108H,  011H,   01H,    01H
+  527   527                      $DGS    AUX_STR, 097H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  528   528                      $DGS    BEG_BLK, ??bb00_secdb_vs_flash_operation_comp_handler,  U,      U,      00H,    064H,   01H
+                                 ,       00H
+  529   529                      $DGS    AUX_BEG, 02H,           00H,    01F1H
+  530   530                      $DGS    END_BLK, ??eb00_secdb_vs_flash_operation_comp_handler,  U,      U,      00H,    064H,   01H
+                                 ,       00H
+  531   531                      $DGS    AUX_END, 05H
+  532   532                      $DGS    BEG_BLK, ??bb01_secdb_vs_flash_operation_comp_handler,  U,      U,      00H,    064H,   01H
+                                 ,       00H
+  533   533                      $DGS    AUX_BEG, 06H,           00H,    00H
+  534   534                      $DGS    END_BLK, ??eb01_secdb_vs_flash_operation_comp_handler,  U,      U,      00H,    064H,   01H
+                                 ,       00H
+  535   535                      $DGS    AUX_END, 09H
+  536   536                      $DGS    END_FUN, ??ef_secdb_vs_flash_operation_comp_handler,    U,      U,      00H,    065H,   01H
+                                 ,       00H
+  537   537                      $DGS    AUX_END, 0AH
+  538   538                      $DGS    STA_SYM, _secdb_vs_callback,    U,      U,      01H,    03H,    01H,    02H
+  539   539                      $DGS    AUX_FUN, 00H,           U,      U,      0213H,  01H,    00H
+  540   540                      $DGS    BEG_FUN, ??bf_secdb_vs_callback,        U,      U,      00H,    065H,   01H,    00H
+  541   541                      $DGS    AUX_BEG, 0167H,         02H,    01FDH
+  542   542                      $DGS    REG_PAR, _event,        0103H,  0FFFFH, 0108H,  011H,   01H,    01H
+  543   543                      $DGS    AUX_STR, 0FAH,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  544   544                      $DGS    BEG_BLK, ??bb00_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  545   545                      $DGS    AUX_BEG, 03H,           00H,    01FFH
+  546   546                      $DGS    BEG_BLK, ??bb01_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  547   547                      $DGS    AUX_BEG, 04H,           00H,    0201H
+  548   548                      $DGS    BEG_BLK, ??bb02_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  549   549                      $DGS    AUX_BEG, 012H,          00H,    0209H
+  550   550                      $DGS    END_BLK, ??eb02_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  551   551                      $DGS    AUX_END, 014H
+  552   552                      $DGS    END_BLK, ??eb01_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  553   553                      $DGS    AUX_END, 016H
+  554   554                      $DGS    END_BLK, ??eb00_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  555   555                      $DGS    AUX_END, 017H
+  556   556                      $DGS    BEG_BLK, ??bb03_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  557   557                      $DGS    AUX_BEG, 018H,          00H,    020BH
+  558   558                      $DGS    BEG_BLK, ??bb04_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  559   559                      $DGS    AUX_BEG, 019H,          00H,    00H
+  560   560                      $DGS    END_BLK, ??eb04_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  561   561                      $DGS    AUX_END, 01BH
+  562   562                      $DGS    END_BLK, ??eb03_secdb_vs_callback,      U,      U,      00H,    064H,   01H,    00H
+  563   563                      $DGS    AUX_END, 01CH
+  564   564                      $DGS    END_FUN, ??ef_secdb_vs_callback,        U,      U,      00H,    065H,   01H,    00H
+  565   565                      $DGS    AUX_END, 01DH
+  566   566                      $DGS    STA_SYM, _secdb_send_event,     U,      U,      01H,    03H,    01H,    02H
+  567   567                      $DGS    AUX_FUN, 00H,           U,      U,      021CH,  01H,    00H
+  568   568                      $DGS    BEG_FUN, ??bf_secdb_send_event, U,      U,      00H,    065H,   01H,    00H
+  569   569                      $DGS    AUX_BEG, 018AH,         08H,    021CH
+  570   570                      $DGS    FUN_ARG, _status,       06H,    0FFFFH, 0CH,    09H,    00H,    00H
+  571   571                      $DGS    AUT_VAR, _event,        00H,    0FFFFH, 08H,    01H,    01H,    00H
+  572   572                      $DGS    AUX_STR, 0116H,         00H,    06H,    00H,    00H,    00H,    00H,    00H
+  573   573                      $DGS    END_FUN, ??ef_secdb_send_event, U,      U,      00H,    065H,   01H,    00H
+  574   574                      $DGS    AUX_END, 0EH
+  575   575                      $DGS    STA_SYM, _secdb_ffs,    U,      U,      0DH,    03H,    01H,    02H
+  576   576                      $DGS    AUX_FUN, 00H,           U,      U,      022CH,  01H,    00H
+  577   577                      $DGS    BEG_FUN, ??bf_secdb_ffs,        U,      U,      00H,    065H,   01H,    00H
+  578   578                      $DGS    AUX_BEG, 019BH,         04H,    0222H
+  579   579                      $DGS    FUN_ARG, _val,          02H,    0FFFFH, 0DH,    09H,    00H,    00H
+  580   580                      $DGS    AUT_VAR, _i,            00H,    0FFFFH, 0DH,    01H,    00H,    00H
+  581   581                      $DGS    BEG_BLK, ??bb00_secdb_ffs,      U,      U,      00H,    064H,   01H,    00H
+  582   582                      $DGS    AUX_BEG, 04H,           00H,    0224H
+  583   583                      $DGS    BEG_BLK, ??bb01_secdb_ffs,      U,      U,      00H,    064H,   01H,    00H
+  584   584                      $DGS    AUX_BEG, 05H,           00H,    00H
+  585   585                      $DGS    END_BLK, ??eb01_secdb_ffs,      U,      U,      00H,    064H,   01H,    00H
+  586   586                      $DGS    AUX_END, 07H
+  587   587                      $DGS    END_BLK, ??eb00_secdb_ffs,      U,      U,      00H,    064H,   01H,    00H
+  588   588                      $DGS    AUX_END, 08H
+  589   589                      $DGS    END_FUN, ??ef_secdb_ffs,        U,      U,      00H,    065H,   01H,    00H
+  590   590                      $DGS    AUX_END, 0BH
+  591   591                      $DGS    GLV_SYM, _RBLE_VS_Flash_Access, U,      U,      0CH,    02H,    01H,    02H
+  592   592                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  593   593                      $DGS    GLV_SYM, _@SEGDE,       U,      U,      00H,    02H,    00H,    00H
+  594   594                      $DGS    GLV_SYM, _@SEGAX,       U,      U,      00H,    02H,    00H,    00H
+  595   595                      $DGS    GLV_SYM, _RBLE_VS_Enable,       U,      U,      0CH,    02H,    01H,    02H
+  596   596                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  597   597                      $DGS    GLV_SYM, _RBLE_VS_Flash_Operation,      U,      U,      0CH,    02H,    01H,    02H
+  598   598                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  599   599                      $DGS    GLV_SYM, _RBLE_VS_Flash_Management,     U,      U,      0CH,    02H,    01H,    02H
+  600   600                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  601   601                      
+  602   602                              EXTRN   _RBLE_VS_Flash_Access
+  603   603                              EXTRN   _@SEGDE
+  604   604                              EXTRN   _@SEGAX
+  605   605                              EXTRN   _RBLE_VS_Enable
+  606   606                              EXTRN   _RBLE_VS_Flash_Operation
+  607   607                              EXTRN   _RBLE_VS_Flash_Management
+  608   608                              PUBLIC  _SecDb_Init
+  609   609                              PUBLIC  _SecDb_Load
+  610   610                              PUBLIC  _SecDb_Save
+  611   611                      
+  612   612 -----                @@BITS  BSEG
+  613   613                      
+  614   614 -----                @@CNST  CSEG    MIRRORP
+  615   615                      
+  616   616 -----                @@R_INIT        CSEG    UNIT64KP
+  617   617                      
+  618   618 -----                @@INIT  DSEG    BASEP
+  619   619                      
+  620   620 -----                @@DATA  DSEG    BASEP
+  621   621 00000                _info:  DS      (19)
+  622   622 00013                        DS      (1)
+  623   623                      
+  624   624 -----                @@R_INIS        CSEG    UNIT64KP
+  625   625                      
+  626   626 -----                @@INIS  DSEG    SADDRP
+  627   627                      
+  628   628 -----                @@DATS  DSEG    SADDRP
+  629   629                      
+  630   630 -----                @@CNSTL CSEG    PAGE64KP
+  631   631                      
+  632   632 -----                @@RLINIT        CSEG    UNIT64KP
+  633   633                      
+  634   634 -----                @@INITL DSEG    UNIT64KP
+  635   635                      
+  636   636 -----                @@DATAL DSEG    UNIT64KP
+  637   637                      
+  638   638 -----                @@CALT  CSEG    CALLT0
+  639   639                      
+  640   640                      ; Sub-Routines created by CC78K0R
+  641   641                      
+  642   642 -----                @@CODEL CSEG
+  643   643 00000                bs_F0124:
+  644   644 00000  30F000                movw    ax,#0F0H        ; 240                           ;[INF] 3, 1
+  645   645 00003 REC5B0300              br      !!_secdb_send_event                             ;[INF] 4, 3
+  646   646 00007                es_F0124:
+  647   647                      
+  648   648 -----                @@CODEL CSEG
+  649   649 00007                bs_F0122:
+  650   650 00007  17                    movw    ax,hl                                           ;[INF] 1, 1
+  651   651 00008  040200                addw    ax,#02H ; 2                                     ;[INF] 3, 1
+  652   652 0000B REC000000              br      !!_RBLE_VS_Flash_Access                         ;[INF] 4, 3
+  653   653 0000F                es_F0122:
+  654   654                      
+  655   655 -----                @@CODEL CSEG
+  656   656 0000F                bs_S0123:
+  657   657 0000F RAF0000                movw    ax,!_info                                       ;[INF] 3, 1
+  658   658 00012  6168                  or      a,x                                             ;[INF] 2, 1
+  659   659 00014 R6F0200                or      a,!_info+2                                      ;[INF] 3, 1
+  660   660 00017  D7                    ret                                                     ;[INF] 1, 6
+  661   661 00018                es_S0123:
+  662   662                      
+  663   663 -----                @@CODEL CSEG
+  664   664 00018                bs_F0121:
+  665   665 00018  C7                    push    hl                                              ;[INF] 1, 1
+  666   666 00019 R8D00                  mov     a,_@SEGDE                                       ;[INF] 2, 1
+  667   667 0001B  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  668   668 0001D  C0                    pop     ax                                              ;[INF] 1, 1
+  669   669 0001E  61EA                  call    de                                              ;[INF] 2, 3
+  670   670 00020  D7                    ret                                                     ;[INF] 1, 6
+  671   671 00021                es_F0121:
+  672   672                      
+  673   673 -----                @@CODEL CSEG
+  674   674 00021                bs_S0120:
+  675   675 00021 R8F0200                mov     a,!_info+2                                      ;[INF] 3, 1
+  676   676 00024 R9D00                  mov     _@SEGAX,a                                       ;[INF] 2, 1
+  677   677 00026 RAF0000                movw    ax,!_info                                       ;[INF] 3, 1
+  678   678 00029  C1                    push    ax                                              ;[INF] 1, 1
+  679   679 0002A R8D00                  mov     a,_@SEGAX                                       ;[INF] 2, 1
+  680   680 0002C R9D00                  mov     _@SEGDE,a                                       ;[INF] 2, 1
+  681   681 0002E  C0                    pop     ax                                              ;[INF] 1, 1
+  682   682 0002F  14                    movw    de,ax                                           ;[INF] 1, 1
+  683   683 00030  D7                    ret                                                     ;[INF] 1, 6
+  684   684 00031                es_S0120:
+  685   685                      
+  686   686                      ; *** Sub-Routine Information ***
+  687   687                      ;
+  688   688                      ; $SUB bs_S0120
+  689   689                      ;      CODE SIZE= 16 bytes
+  690   690                      ;
+  691   691                      ; $SUB bs_F0121
+  692   692                      ;      CODE SIZE= 9 bytes
+  693   693                      ;
+  694   694                      ; $SUB bs_F0122
+  695   695                      ;      CODE SIZE= 8 bytes
+  696   696                      ;
+  697   697                      ; $SUB bs_S0123
+  698   698                      ;      CODE SIZE= 9 bytes
+  699   699                      ;
+  700   700                      ; $SUB bs_F0124
+  701   701                      ;      CODE SIZE= 7 bytes
+  702   702                      
+  703   703                      ; End of Sub-Routines
+  704   704                      
+  705   705                      ; line    13
+  706   706                      ; line    14
+  707   707                      ; line    13
+  708   708                      ; line    14
+  709   709                      ; line    15
+  710   710                      ; line    74
+  711   711                      ; line    75
+  712   712                      ; line    76
+  713   713                      ; line    77
+  714   714                      ; line    79
+  715   715                      ; line    80
+  716   716                      ; line    84
+  717   717                      ; line    85
+  718   718                      ; line    16
+  719   719                      ; line    18
+  720   720                      ; line    19
+  721   721                      ; line    20
+  722   722                      ; line    21
+  723   723                      ; line    22
+  724   724                      ; line    23
+  725   725                      ; line    24
+  726   726                      ; line    25
+  727   727                      ; line    26
+  728   728                      ; line    27
+  729   729                      ; line    28
+  730   730                      ; line    29
+  731   731                      ; line    30
+  732   732                      ; line    31
+  733   733                      ; line    32
+  734   734                      ; line    33
+  735   735                      ; line    35
+  736   736                      ; line    37
+  737   737                      ; line    38
+  738   738                      ; line    39
+  739   739                      ; line    40
+  740   740                      ; line    43
+  741   741                      ; line    45
+  742   742                      ; line    46
+  743   743                      ; line    47
+  744   744                      ; line    48
+  745   745                      ; line    49
+  746   746                      ; line    50
+  747   747                      ; line    51
+  748   748                      ; line    52
+  749   749                      ; line    53
+  750   750                      ; line    54
+  751   751                      ; line    55
+  752   752                      ; line    56
+  753   753                      ; line    57
+  754   754                      ; line    58
+  755   755                      ; line    59
+  756   756                      ; line    60
+  757   757                      ; line    62
+  758   758                      ; line    64
+  759   759                      ; line    65
+  760   760                      ; line    66
+  761   761                      ; line    69
+  762   762                      ; line    71
+  763   763                      ; line    72
+  764   764                      ; line    73
+  765   765                      ; line    74
+  766   766                      ; line    75
+  767   767                      ; line    76
+  768   768                      ; line    77
+  769   769                      ; line    78
+  770   770                      ; line    79
+  771   771                      ; line    80
+  772   772                      ; line    81
+  773   773                      ; line    82
+  774   774                      ; line    83
+  775   775                      ; line    84
+  776   776                      ; line    85
+  777   777                      ; line    86
+  778   778                      ; line    88
+  779   779                      ; line    90
+  780   780                      ; line    91
+  781   781                      ; line    92
+  782   782                      ; line    20
+  783   783                      ; line    25
+  784   784                      ; line    29
+  785   785                      ; line    30
+  786   786                      ; line    31
+  787   787                      ; line    32
+  788   788                      ; line    33
+  789   789                      ; line    34
+  790   790                      ; line    35
+  791   791                      ; line    36
+  792   792                      ; line    37
+  793   793                      ; line    38
+  794   794                      ; line    39
+  795   795                      ; line    40
+  796   796                      ; line    41
+  797   797                      ; line    42
+  798   798                      ; line    43
+  799   799                      ; line    45
+  800   800                      ; line    46
+  801   801                      ; line    51
+  802   802                      ; line    52
+  803   803                      ; line    54
+  804   804                      ; line    59
+  805   805                      ; line    60
+  806   806                      ; line    65
+  807   807                      ; line    66
+  808   808                      ; line    67
+  809   809                      ; line    68
+  810   810                      ; line    70
+  811   811                      ; line    71
+  812   812                      ; line    72
+  813   813                      ; line    73
+  814   814                      ; line    74
+  815   815                      ; line    75
+  816   816                      ; line    76
+  817   817                      ; line    78
+  818   818                      ; line    83
+  819   819                      ; line    84
+  820   820                      ; line    89
+  821   821                      ; line    90
+  822   822                      ; line    92
+  823   823                      ; line    93
+  824   824                      ; line    94
+  825   825                      ; line    95
+  826   826                      ; line    96
+  827   827                      ; line    97
+  828   828                      ; line    98
+  829   829                      ; line   100
+  830   830                      ; line   105
+  831   831                      ; line   106
+  832   832                      ; line   111
+  833   833                      ; line   112
+  834   834                      ; line    95
+  835   835                      ; line   220
+  836   836                      ; line   221
+  837   837                      ; line    22
+  838   838                      ; line    23
+  839   839                      ; line    67
+  840   840                      ; line    68
+  841   841                      ; line   125
+  842   842                      ; line    17
+  843   843                      ; line    18
+  844   844                      ; line    19
+  845   845                      ; line    20
+  846   846                      ; line    21
+  847   847                      ; line    22
+  848   848                      ; line    23
+  849   849                      ; line    24
+  850   850                      ; line    25
+  851   851                      ; line    26
+  852   852                      ; line    27
+  853   853                      ; line    29
+  854   854                      ; line    30
+  855   855                      ; line    31
+  856   856                      ; line    32
+  857   857                      ; line    33
+  858   858                      ; line    34
+  859   859                      ; line    35
+  860   860                      ; line    36
+  861   861                      ; line    37
+  862   862                      ; line    39
+  863   863                      ; line    40
+  864   864                      ; line    41
+  865   865                      ; line    42
+  866   866                      ; line    43
+  867   867                      ; line    44
+  868   868                      ; line    45
+  869   869                      ; line    46
+  870   870                      ; line    47
+  871   871                      ; line    16
+  872   872                      ; line    17
+  873   873                      ; line    18
+  874   874                      ; line    19
+  875   875                      ; line    20
+  876   876                      ; line    21
+  877   877                      ; line    23
+  878   878                      ; line   321
+  879   879                      ; line   736
+  880   880                      ; line   845
+  881   881                      ; line   856
+  882   882                      ; line   869
+  883   883                      ; line   872
+  884   884                      ; line   876
+  885   885                      ; line   880
+  886   886                      ; line   578
+  887   887                      ; line  1621
+  888   888                      ; line  1627
+  889   889                      ; line  1633
+  890   890                      ; line  1650
+  891   891                      ; line  1656
+  892   892                      ; line  1663
+  893   893                      ; line  1669
+  894   894                      ; line  1676
+  895   895                      ; line  1684
+  896   896                      ; line  1695
+  897   897                      ; line  1703
+  898   898                      ; line  1711
+  899   899                      ; line  1729
+  900   900                      ; line  1744
+  901   901                      ; line  1751
+  902   902                      ; line  1763
+  903   903                      ; line  1777
+  904   904                      ; line  1786
+  905   905                      ; line  1798
+  906   906                      ; line  1804
+  907   907                      ; line  1816
+  908   908                      ; line  1822
+  909   909                      ; line  1830
+  910   910                      ; line  1835
+  911   911                      ; line  1844
+  912   912                      ; line  1853
+  913   913                      ; line  1862
+  914   914                      ; line  1877
+  915   915                      ; line  1891
+  916   916                      ; line  1903
+  917   917                      ; line  1919
+  918   918                      ; line  1934
+  919   919                      ; line  1946
+  920   920                      ; line  1957
+  921   921                      ; line  1967
+  922   922                      ; line  1977
+  923   923                      ; line  1989
+  924   924                      ; line  2001
+  925   925                      ; line  2012
+  926   926                      ; line  2021
+  927   927                      ; line  2030
+  928   928                      ; line  2038
+  929   929                      ; line  2048
+  930   930                      ; line  2058
+  931   931                      ; line  2069
+  932   932                      ; line  2080
+  933   933                      ; line  2088
+  934   934                      ; line  2096
+  935   935                      ; line  2105
+  936   936                      ; line  2113
+  937   937                      ; line  2127
+  938   938                      ; line  2138
+  939   939                      ; line  2146
+  940   940                      ; line  2154
+  941   941                      ; line  2166
+  942   942                      ; line  2174
+  943   943                      ; line  2182
+  944   944                      ; line  2191
+  945   945                      ; line  2202
+  946   946                      ; line  2214
+  947   947                      ; line  2225
+  948   948                      ; line  2253
+  949   949                      ; line  2292
+  950   950                      ; line  2301
+  951   951                      ; line  2316
+  952   952                      ; line  2338
+  953   953                      ; line  2355
+  954   954                      ; line  2367
+  955   955                      ; line  2425
+  956   956                      ; line  2435
+  957   957                      ; line  2447
+  958   958                      ; line  2458
+  959   959                      ; line  2466
+  960   960                      ; line  2473
+  961   961                      ; line  2488
+  962   962                      ; line  2496
+  963   963                      ; line  2506
+  964   964                      ; line  2529
+  965   965                      ; line  2539
+  966   966                      ; line  2549
+  967   967                      ; line  2560
+  968   968                      ; line  2588
+  969   969                      ; line  2597
+  970   970                      ; line  2610
+  971   971                      ; line  2629
+  972   972                      ; line  2641
+  973   973                      ; line  2650
+  974   974                      ; line  2679
+  975   975                      ; line  2691
+  976   976                      ; line  2713
+  977   977                      ; line  2725
+  978   978                      ; line  2739
+  979   979                      ; line  2755
+  980   980                      ; line  2785
+  981   981                      ; line  2796
+  982   982                      ; line  2802
+  983   983                      ; line  2810
+  984   984                      ; line  2817
+  985   985                      ; line  2823
+  986   986                      ; line  2834
+  987   987                      ; line  2856
+  988   988                      ; line  2867
+  989   989                      ; line  2883
+  990   990                      ; line  2891
+  991   991                      ; line  2899
+  992   992                      ; line  2905
+  993   993                      ; line  2911
+  994   994                      ; line  2944
+  995   995                      ; line  2952
+  996   996                      ; line  2966
+  997   997                      ; line  2978
+  998   998                      ; line  2990
+  999   999                      ; line  3001
+ 1000  1000                      ; line  3011
+ 1001  1001                      ; line  3040
+ 1002  1002                      ; line  3048
+ 1003  1003                      ; line  3069
+ 1004  1004                      ; line  3078
+ 1005  1005                      ; line  3087
+ 1006  1006                      ; line  3098
+ 1007  1007                      ; line  3122
+ 1008  1008                      ; line  3134
+ 1009  1009                      ; line  3175
+ 1010  1010                      ; line  3341
+ 1011  1011                      ; line  3343
+ 1012  1012                      ; line  3361
+ 1013  1013                      ; line  3445
+ 1014  1014                      ; line  3448
+ 1015  1015                      ; line  3486
+ 1016  1016                      ; line  3760
+ 1017  1017                      ; line  3762
+ 1018  1018                      ; line  3779
+ 1019  1019                      ; line  3816
+ 1020  1020                      ; line  3854
+ 1021  1021                      ; line  3856
+ 1022  1022                      ; line  3857
+ 1023  1023                      ; line  3875
+ 1024  1024                      ; line  3912
+ 1025  1025                      ; line  3965
+ 1026  1026                      ; line  3967
+ 1027  1027                      ; line  3968
+ 1028  1028                      ; line  3991
+ 1029  1029                      ; line  4053
+ 1030  1030                      ; line  4117
+ 1031  1031                      ; line  4119
+ 1032  1032                      ; line  4120
+ 1033  1033                      ; line  4139
+ 1034  1034                      ; line  4189
+ 1035  1035                      ; line  4248
+ 1036  1036                      ; line  4250
+ 1037  1037                      ; line  4251
+ 1038  1038                      ; line  4284
+ 1039  1039                      ; line  4375
+ 1040  1040                      ; line  4441
+ 1041  1041                      ; line  4522
+ 1042  1042                      ; line  4524
+ 1043  1043                      ; line  4525
+ 1044  1044                      ; line  4526
+ 1045  1045                      ; line  4543
+ 1046  1046                      ; line  4594
+ 1047  1047                      ; line  4640
+ 1048  1048                      ; line  4642
+ 1049  1049                      ; line  4643
+ 1050  1050                      ; line  4663
+ 1051  1051                      ; line  4720
+ 1052  1052                      ; line  4781
+ 1053  1053                      ; line  4783
+ 1054  1054                      ; line  4784
+ 1055  1055                      ; line  4807
+ 1056  1056                      ; line  4870
+ 1057  1057                      ; line  4939
+ 1058  1058                      ; line  4941
+ 1059  1059                      ; line  4942
+ 1060  1060                      ; line  4966
+ 1061  1061                      ; line  5035
+ 1062  1062                      ; line  5108
+ 1063  1063                      ; line  5110
+ 1064  1064                      ; line  5111
+ 1065  1065                      ; line  5138
+ 1066  1066                      ; line  5218
+ 1067  1067                      ; line  5300
+ 1068  1068                      ; line  5302
+ 1069  1069                      ; line  5303
+ 1070  1070                      ; line  5326
+ 1071  1071                      ; line  5390
+ 1072  1072                      ; line  5453
+ 1073  1073                      ; line  5455
+ 1074  1074                      ; line  5456
+ 1075  1075                      ; line  5479
+ 1076  1076                      ; line  5546
+ 1077  1077                      ; line  5612
+ 1078  1078                      ; line  5614
+ 1079  1079                      ; line  5615
+ 1080  1080                      ; line  5643
+ 1081  1081                      ; line  5722
+ 1082  1082                      ; line  5801
+ 1083  1083                      ; line  5803
+ 1084  1084                      ; line  5804
+ 1085  1085                      ; line  5826
+ 1086  1086                      ; line  5887
+ 1087  1087                      ; line  5951
+ 1088  1088                      ; line  5953
+ 1089  1089                      ; line  5954
+ 1090  1090                      ; line  5976
+ 1091  1091                      ; line  6038
+ 1092  1092                      ; line  6106
+ 1093  1093                      ; line  6108
+ 1094  1094                      ; line  6109
+ 1095  1095                      ; line  6134
+ 1096  1096                      ; line  6225
+ 1097  1097                      ; line  6227
+ 1098  1098                      ; line  6231
+ 1099  1099                      ; line  6236
+ 1100  1100                      ; line  6239
+ 1101  1101                      ; line  6242
+ 1102  1102                      ; line  6243
+ 1103  1103                      ; line  6244
+ 1104  1104                      ; line  6245
+ 1105  1105                      ; line  6246
+ 1106  1106                      ; line  6247
+ 1107  1107                      ; line  6248
+ 1108  1108                      ; line  6249
+ 1109  1109                      ; line  6250
+ 1110  1110                      ; line  6251
+ 1111  1111                      ; line  6252
+ 1112  1112                      ; line  6253
+ 1113  1113                      ; line  6254
+ 1114  1114                      ; line  6255
+ 1115  1115                      ; line  6256
+ 1116  1116                      ; line  6257
+ 1117  1117                      ; line  6258
+ 1118  1118                      ; line  6259
+ 1119  1119                      ; line  6260
+ 1120  1120                      ; line  6261
+ 1121  1121                      ; line  6262
+ 1122  1122                      ; line  6263
+ 1123  1123                      ; line  6264
+ 1124  1124                      ; line  6265
+ 1125  1125                      ; line  6266
+ 1126  1126                      ; line  6267
+ 1127  1127                      ; line  6268
+ 1128  1128                      ; line  6271
+ 1129  1129                      ; line  6272
+ 1130  1130                      ; line  6273
+ 1131  1131                      ; line  6274
+ 1132  1132                      ; line  6275
+ 1133  1133                      ; line  6276
+ 1134  1134                      ; line  6277
+ 1135  1135                      ; line  6280
+ 1136  1136                      ; line  6281
+ 1137  1137                      ; line  6282
+ 1138  1138                      ; line  6283
+ 1139  1139                      ; line  6284
+ 1140  1140                      ; line  6285
+ 1141  1141                      ; line  6286
+ 1142  1142                      ; line  6287
+ 1143  1143                      ; line  6288
+ 1144  1144                      ; line  6289
+ 1145  1145                      ; line  6290
+ 1146  1146                      ; line  6291
+ 1147  1147                      ; line  6292
+ 1148  1148                      ; line  6295
+ 1149  1149                      ; line  6296
+ 1150  1150                      ; line  6297
+ 1151  1151                      ; line  6298
+ 1152  1152                      ; line  6299
+ 1153  1153                      ; line  6302
+ 1154  1154                      ; line  6303
+ 1155  1155                      ; line  6304
+ 1156  1156                      ; line  6305
+ 1157  1157                      ; line  6306
+ 1158  1158                      ; line  6307
+ 1159  1159                      ; line  6308
+ 1160  1160                      ; line  6311
+ 1161  1161                      ; line  6312
+ 1162  1162                      ; line  6313
+ 1163  1163                      ; line  6314
+ 1164  1164                      ; line  6315
+ 1165  1165                      ; line  6316
+ 1166  1166                      ; line  6317
+ 1167  1167                      ; line  6318
+ 1168  1168                      ; line  6319
+ 1169  1169                      ; line  6322
+ 1170  1170                      ; line  6323
+ 1171  1171                      ; line  6324
+ 1172  1172                      ; line  6325
+ 1173  1173                      ; line  6326
+ 1174  1174                      ; line  6327
+ 1175  1175                      ; line  6328
+ 1176  1176                      ; line  6331
+ 1177  1177                      ; line  6332
+ 1178  1178                      ; line  6333
+ 1179  1179                      ; line  6334
+ 1180  1180                      ; line  6335
+ 1181  1181                      ; line  6336
+ 1182  1182                      ; line  6337
+ 1183  1183                      ; line  6338
+ 1184  1184                      ; line  6339
+ 1185  1185                      ; line  6340
+ 1186  1186                      ; line  6341
+ 1187  1187                      ; line  6342
+ 1188  1188                      ; line  6343
+ 1189  1189                      ; line  6344
+ 1190  1190                      ; line  6345
+ 1191  1191                      ; line  6346
+ 1192  1192                      ; line  6347
+ 1193  1193                      ; line  6348
+ 1194  1194                      ; line  6349
+ 1195  1195                      ; line  6350
+ 1196  1196                      ; line  6351
+ 1197  1197                      ; line  6352
+ 1198  1198                      ; line  6355
+ 1199  1199                      ; line  6356
+ 1200  1200                      ; line  6357
+ 1201  1201                      ; line  6358
+ 1202  1202                      ; line  6359
+ 1203  1203                      ; line  6360
+ 1204  1204                      ; line  6361
+ 1205  1205                      ; line  6364
+ 1206  1206                      ; line  6365
+ 1207  1207                      ; line  6366
+ 1208  1208                      ; line  6367
+ 1209  1209                      ; line  6368
+ 1210  1210                      ; line  6369
+ 1211  1211                      ; line  6370
+ 1212  1212                      ; line  6371
+ 1213  1213                      ; line  6374
+ 1214  1214                      ; line  6375
+ 1215  1215                      ; line  6376
+ 1216  1216                      ; line  6377
+ 1217  1217                      ; line  6378
+ 1218  1218                      ; line  6379
+ 1219  1219                      ; line  6380
+ 1220  1220                      ; line  6381
+ 1221  1221                      ; line  6382
+ 1222  1222                      ; line  6385
+ 1223  1223                      ; line  6386
+ 1224  1224                      ; line  6387
+ 1225  1225                      ; line  6388
+ 1226  1226                      ; line  6389
+ 1227  1227                      ; line  6390
+ 1228  1228                      ; line  6391
+ 1229  1229                      ; line  6392
+ 1230  1230                      ; line  6393
+ 1231  1231                      ; line  6394
+ 1232  1232                      ; line  6397
+ 1233  1233                      ; line  6398
+ 1234  1234                      ; line  6399
+ 1235  1235                      ; line  6400
+ 1236  1236                      ; line  6401
+ 1237  1237                      ; line  6402
+ 1238  1238                      ; line  6403
+ 1239  1239                      ; line  6404
+ 1240  1240                      ; line  6405
+ 1241  1241                      ; line  6406
+ 1242  1242                      ; line  6407
+ 1243  1243                      ; line  6408
+ 1244  1244                      ; line  6409
+ 1245  1245                      ; line  6412
+ 1246  1246                      ; line  6413
+ 1247  1247                      ; line  6414
+ 1248  1248                      ; line  6415
+ 1249  1249                      ; line  6416
+ 1250  1250                      ; line  6417
+ 1251  1251                      ; line  6418
+ 1252  1252                      ; line  6419
+ 1253  1253                      ; line  6420
+ 1254  1254                      ; line  6423
+ 1255  1255                      ; line  6424
+ 1256  1256                      ; line  6425
+ 1257  1257                      ; line  6426
+ 1258  1258                      ; line  6427
+ 1259  1259                      ; line  6428
+ 1260  1260                      ; line  6429
+ 1261  1261                      ; line  6430
+ 1262  1262                      ; line  6431
+ 1263  1263                      ; line  6434
+ 1264  1264                      ; line  6435
+ 1265  1265                      ; line  6436
+ 1266  1266                      ; line  6437
+ 1267  1267                      ; line  6438
+ 1268  1268                      ; line  6439
+ 1269  1269                      ; line  6440
+ 1270  1270                      ; line  6441
+ 1271  1271                      ; line  6442
+ 1272  1272                      ; line  6443
+ 1273  1273                      ; line  6444
+ 1274  1274                      ; line  6445
+ 1275  1275                      ; line  6448
+ 1276  1276                      ; line  6449
+ 1277  1277                      ; line  6450
+ 1278  1278                      ; line  6451
+ 1279  1279                      ; line  6452
+ 1280  1280                      ; line  6453
+ 1281  1281                      ; line  6454
+ 1282  1282                      ; line  6455
+ 1283  1283                      ; line  6456
+ 1284  1284                      ; line  6459
+ 1285  1285                      ; line  6460
+ 1286  1286                      ; line  6461
+ 1287  1287                      ; line  6462
+ 1288  1288                      ; line  6463
+ 1289  1289                      ; line  6464
+ 1290  1290                      ; line  6465
+ 1291  1291                      ; line  6466
+ 1292  1292                      ; line  6467
+ 1293  1293                      ; line  6470
+ 1294  1294                      ; line  6471
+ 1295  1295                      ; line  6472
+ 1296  1296                      ; line  6473
+ 1297  1297                      ; line  6474
+ 1298  1298                      ; line  6475
+ 1299  1299                      ; line  6476
+ 1300  1300                      ; line  6477
+ 1301  1301                      ; line  6478
+ 1302  1302                      ; line  6479
+ 1303  1303                      ; line  6480
+ 1304  1304                      ; line  6481
+ 1305  1305                      ; line  6482
+ 1306  1306                      ; line  6483
+ 1307  1307                      ; line  6484
+ 1308  1308                      ; line  6485
+ 1309  1309                      ; line  6486
+ 1310  1310                      ; line  6487
+ 1311  1311                      ; line    40
+ 1312  1312                      ; line    53
+ 1313  1313                      ; line    56
+ 1314  1314                      ; line    64
+ 1315  1315                      ; line    70
+ 1316  1316                      ; line    82
+ 1317  1317                      ; line    87
+ 1318  1318                      ; line    94
+ 1319  1319                      ; line   124
+ 1320  1320                      ; line   125
+ 1321  1321                      ; line   150
+ 1322  1322                      ; line   151
+ 1323  1323                      ; line   152
+ 1324  1324                      ; line   153
+ 1325  1325                      ; line   154
+ 1326  1326                      ; line   155
+ 1327  1327                      ; line   156
+ 1328  1328                      ; line   157
+ 1329  1329                      ; line   167
+ 1330  1330                      ; line   168
+ 1331  1331                      ; line   169
+ 1332  1332                      ; line   170
+ 1333  1333                      ; line   171
+ 1334  1334                      ; line   172
+ 1335  1335                      ; line   173
+ 1336  1336                      ; line   174
+ 1337  1337                      ; line   175
+ 1338  1338                      ; line   197
+ 1339  1339                      ; line   198
+ 1340  1340                      ; line   199
+ 1341  1341                      ; line   213
+ 1342  1342                      ; line   214
+ 1343  1343                      ; line   215
+ 1344  1344                      ; line   216
+ 1345  1345                      ; line   217
+ 1346  1346                      ; line   218
+ 1347  1347                      ; line   219
+ 1348  1348                      ; line   237
+ 1349  1349                      ; line   238
+ 1350  1350                      ; line   239
+ 1351  1351                      ; line   240
+ 1352  1352                      ; line   241
+ 1353  1353                      ; line   260
+ 1354  1354                      ; line   264
+ 1355  1355                      ; line   265
+ 1356  1356                      ; line   266
+ 1357  1357                      ; line   267
+ 1358  1358                      ; line   268
+ 1359  1359                      ; line   269
+ 1360  1360                      ; line   292
+ 1361  1361                      ; line   293
+ 1362  1362                      ; line   294
+ 1363  1363                      ; line   295
+ 1364  1364                      ; line   296
+ 1365  1365                      ; line   297
+ 1366  1366                      ; line   298
+ 1367  1367                      ; line   328
+ 1368  1368                      ; line   329
+ 1369  1369                      ; line   330
+ 1370  1370                      ; line   331
+ 1371  1371                      ; line   350
+ 1372  1372                      ; line   352
+ 1373  1373                      ; line   353
+ 1374  1374                      ; line   354
+ 1375  1375                      ; line   355
+ 1376  1376                      ; line   356
+ 1377  1377                      ; line   514
+ 1378  1378                      ; line   515
+ 1379  1379                      ; line   516
+ 1380  1380                      ; line   546
+ 1381  1381                      ; line   547
+ 1382  1382                      ; line   548
+ 1383  1383                      ; line   557
+ 1384  1384                      ; line   558
+ 1385  1385                      ; line   559
+ 1386  1386                      ; line   570
+ 1387  1387                      ; line   571
+ 1388  1388                      ; line   572
+ 1389  1389                      ; line   581
+ 1390  1390                      ; line   582
+ 1391  1391                      ; line   583
+ 1392  1392                      ; line   601
+ 1393  1393                      ; line   602
+ 1394  1394                      ; line   603
+ 1395  1395                      ; line   613
+ 1396  1396                      ; line   614
+ 1397  1397                      ; line   615
+ 1398  1398                      ; line   628
+ 1399  1399                      ; line   629
+ 1400  1400                      ; line   630
+ 1401  1401                      ; line   639
+ 1402  1402                      ; line   640
+ 1403  1403                      ; line   641
+ 1404  1404                      ; line   650
+ 1405  1405                      ; line   651
+ 1406  1406                      ; line   652
+ 1407  1407                      ; line   661
+ 1408  1408                      ; line   662
+ 1409  1409                      ; line   663
+ 1410  1410                      ; line   673
+ 1411  1411                      ; line   674
+ 1412  1412                      ; line   675
+ 1413  1413                      ; line   690
+ 1414  1414                      ; line   691
+ 1415  1415                      ; line   692
+ 1416  1416                      ; line   705
+ 1417  1417                      ; line   706
+ 1418  1418                      ; line   707
+ 1419  1419                      ; line   713
+ 1420  1420                      ; line   714
+ 1421  1421                      ; line   715
+ 1422  1422                      ; line   721
+ 1423  1423                      ; line   722
+ 1424  1424                      ; line   723
+ 1425  1425                      ; line   729
+ 1426  1426                      ; line   730
+ 1427  1427                      ; line   731
+ 1428  1428                      ; line   737
+ 1429  1429                      ; line   738
+ 1430  1430                      ; line   739
+ 1431  1431                      ; line   745
+ 1432  1432                      ; line   746
+ 1433  1433                      ; line   747
+ 1434  1434                      ; line   753
+ 1435  1435                      ; line   754
+ 1436  1436                      ; line   755
+ 1437  1437                      ; line   761
+ 1438  1438                      ; line   762
+ 1439  1439                      ; line   763
+ 1440  1440                      ; line   769
+ 1441  1441                      ; line   770
+ 1442  1442                      ; line   771
+ 1443  1443                      ; line   777
+ 1444  1444                      ; line   778
+ 1445  1445                      ; line   779
+ 1446  1446                      ; line   785
+ 1447  1447                      ; line   786
+ 1448  1448                      ; line   787
+ 1449  1449                      ; line   793
+ 1450  1450                      ; line   794
+ 1451  1451                      ; line   795
+ 1452  1452                      ; line   801
+ 1453  1453                      ; line   802
+ 1454  1454                      ; line   803
+ 1455  1455                      ; line   809
+ 1456  1456                      ; line   810
+ 1457  1457                      ; line   811
+ 1458  1458                      ; line   817
+ 1459  1459                      ; line   818
+ 1460  1460                      ; line   819
+ 1461  1461                      ; line   825
+ 1462  1462                      ; line   826
+ 1463  1463                      ; line   827
+ 1464  1464                      ; line   833
+ 1465  1465                      ; line   834
+ 1466  1466                      ; line   835
+ 1467  1467                      ; line   841
+ 1468  1468                      ; line   842
+ 1469  1469                      ; line   843
+ 1470  1470                      ; line   849
+ 1471  1471                      ; line   850
+ 1472  1472                      ; line   851
+ 1473  1473                      ; line   857
+ 1474  1474                      ; line   858
+ 1475  1475                      ; line   859
+ 1476  1476                      ; line   865
+ 1477  1477                      ; line   866
+ 1478  1478                      ; line   867
+ 1479  1479                      ; line   873
+ 1480  1480                      ; line   874
+ 1481  1481                      ; line   875
+ 1482  1482                      ; line   881
+ 1483  1483                      ; line   882
+ 1484  1484                      ; line   883
+ 1485  1485                      ; line   889
+ 1486  1486                      ; line   890
+ 1487  1487                      ; line   891
+ 1488  1488                      ; line   897
+ 1489  1489                      ; line   898
+ 1490  1490                      ; line   899
+ 1491  1491                      ; line   905
+ 1492  1492                      ; line   906
+ 1493  1493                      ; line   907
+ 1494  1494                      ; line   913
+ 1495  1495                      ; line   914
+ 1496  1496                      ; line   915
+ 1497  1497                      ; line   921
+ 1498  1498                      ; line   922
+ 1499  1499                      ; line   923
+ 1500  1500                      ; line   929
+ 1501  1501                      ; line   930
+ 1502  1502                      ; line   931
+ 1503  1503                      ; line   937
+ 1504  1504                      ; line   938
+ 1505  1505                      ; line   939
+ 1506  1506                      ; line   945
+ 1507  1507                      ; line   946
+ 1508  1508                      ; line   947
+ 1509  1509                      ; line   958
+ 1510  1510                      ; line   959
+ 1511  1511                      ; line   960
+ 1512  1512                      ; line  1016
+ 1513  1513                      ; line  1017
+ 1514  1514                      ; line  1018
+ 1515  1515                      ; line  1019
+ 1516  1516                      ; line  1022
+ 1517  1517                      ; line    62
+ 1518  1518                      ; line    67
+ 1519  1519                      ; line    72
+ 1520  1520                      ; line    73
+ 1521  1521                      ; line    74
+ 1522  1522                      ; line    79
+ 1523  1523                      ; line    80
+ 1524  1524                      ; line    81
+ 1525  1525                      ; line    82
+ 1526  1526                      ; line    83
+ 1527  1527                      ; line   686
+ 1528  1528                      ; line   689
+ 1529  1529                      ; line   692
+ 1530  1530                      ; line   711
+ 1531  1531                      ; line   727
+ 1532  1532                      ; line    41
+ 1533  1533                      ; line    81
+ 1534  1534                      ; line    98
+ 1535  1535                      ; line   115
+ 1536  1536                      ; line   135
+ 1537  1537                      ; line   152
+ 1538  1538                      ; line   169
+ 1539  1539                      ; line   180
+ 1540  1540                      ; line   191
+ 1541  1541                      ; line   202
+ 1542  1542                      ; line   212
+ 1543  1543                      ; line   223
+ 1544  1544                      ; line    61
+ 1545  1545                      ; line    63
+ 1546  1546                      ; line    64
+ 1547  1547                      ; line    65
+ 1548  1548                      ; line    66
+ 1549  1549                      ; line    75
+ 1550  1550                      ; line    92
+ 1551  1551                      ; line   111
+ 1552  1552                      ; line   126
+ 1553  1553                      
+ 1554  1554 -----                @@CODEL CSEG
+ 1555  1555 00031                _SecDb_Init:
+ 1556  1556                      $DGL    1,298
+ 1557  1557 00031  C7                    push    hl                                              ;[INF] 1, 1
+ 1558  1558 00032  C3                    push    bc                                              ;[INF] 1, 1
+ 1559  1559 00033  C1                    push    ax                                              ;[INF] 1, 1
+ 1560  1560 00034  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1561  1561 00037                ??bf_SecDb_Init:
+ 1562  1562                      ; line   128
+ 1563  1563                      $DGL    0,3
+ 1564  1564 00037  AB                    movw    ax,[hl] ; vs_callback                           ;[INF] 1, 1
+ 1565  1565 00038 RBF0000                movw    !_info,ax                                       ;[INF] 3, 1
+ 1566  1566 0003B  8C02                  mov     a,[hl+2]        ; vs_callback                   ;[INF] 2, 1
+ 1567  1567 0003D R9F0200                mov     !_info+2,a                                      ;[INF] 3, 1
+ 1568  1568                      ; line   129
+ 1569  1569                      $DGL    0,4
+ 1570  1570 00040  AC0A                  movw    ax,[hl+10]      ; db_callback                   ;[INF] 2, 1
+ 1571  1571 00042 RBF0400                movw    !_info+4,ax                                     ;[INF] 3, 1
+ 1572  1572 00045  8C0C                  mov     a,[hl+12]       ; db_callback                   ;[INF] 2, 1
+ 1573  1573 00047 R9F0600                mov     !_info+6,a                                      ;[INF] 3, 1
+ 1574  1574                      ; line   130
+ 1575  1575                      $DGL    0,5
+ 1576  1576 0004A RE50800                oneb    !_info+8                                        ;[INF] 3, 1
+ 1577  1577                      ; line   132
+ 1578  1578                      $DGL    0,7
+ 1579  1579 0004D R300203                movw    ax,#loww (_secdb_vs_callback)                   ;[INF] 3, 1
+ 1580  1580 00050 R5200                  mov     c,#highw (_secdb_vs_callback)                   ;[INF] 2, 1
+ 1581  1581 00052  F3                    clrb    b                                               ;[INF] 1, 1
+ 1582  1582 00053 RFC000000              call    !!_RBLE_VS_Enable                               ;[INF] 4, 3
+ 1583  1583 00057  F3                    clrb    b                                               ;[INF] 1, 1
+ 1584  1584                      ; line   133
+ 1585  1585                      ; line   133
+ 1586  1586                      $DGL    0,8
+ 1587  1587 00058                ??ef_SecDb_Init:
+ 1588  1588 00058  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 1589  1589 0005A  C6                    pop     hl                                              ;[INF] 1, 1
+ 1590  1590 0005B  D7                    ret                                                     ;[INF] 1, 6
+ 1591  1591 0005C                ??ee_SecDb_Init:
+ 1592  1592                      ; line   146
+ 1593  1593 0005C                _SecDb_Load:
+ 1594  1594                      $DGL    1,308
+ 1595  1595 0005C  C7                    push    hl                                              ;[INF] 1, 1
+ 1596  1596 0005D  C1                    push    ax                                              ;[INF] 1, 1
+ 1597  1597 0005E  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1598  1598 00061                ??bf_SecDb_Load:
+ 1599  1599                      ; line   147
+ 1600  1600                      $DGL    0,2
+ 1601  1601 00061  8C0C                  mov     a,[hl+12]       ; md                            ;[INF] 2, 1
+ 1602  1602 00063  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1603  1603 00065  C1                    push    ax                                              ;[INF] 1, 1
+ 1604  1604 00066  8C0A                  mov     a,[hl+10]       ; ld_irk                        ;[INF] 2, 1
+ 1605  1605 00068  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1606  1606 0006A  C1                    push    ax                                              ;[INF] 1, 1
+ 1607  1607 0006B  AC08                  movw    ax,[hl+8]       ; bond_bitmap                   ;[INF] 2, 1
+ 1608  1608 0006D  C1                    push    ax                                              ;[INF] 1, 1
+ 1609  1609 0006E  300300                movw    ax,#03H ; 3                                     ;[INF] 3, 1
+ 1610  1610 00071  C1                    push    ax                                              ;[INF] 1, 1
+ 1611  1611 00072  AB                    movw    ax,[hl] ; db                                    ;[INF] 1, 1
+ 1612  1612 00073 RFC9D0000              call    !!_secdb_access                                 ;[INF] 4, 3
+ 1613  1613 00077  1008                  addw    sp,#08H ; 8                                     ;[INF] 2, 1
+ 1614  1614 00079  F3                    clrb    b                                               ;[INF] 1, 1
+ 1615  1615                      ; line   148
+ 1616  1616                      ; line   148
+ 1617  1617                      $DGL    0,3
+ 1618  1618 0007A                ??ef_SecDb_Load:
+ 1619  1619 0007A  C0                    pop     ax                                              ;[INF] 1, 1
+ 1620  1620 0007B  C6                    pop     hl                                              ;[INF] 1, 1
+ 1621  1621 0007C  D7                    ret                                                     ;[INF] 1, 6
+ 1622  1622 0007D                ??ee_SecDb_Load:
+ 1623  1623                      ; line   161
+ 1624  1624 0007D                _SecDb_Save:
+ 1625  1625                      $DGL    1,319
+ 1626  1626 0007D  C7                    push    hl                                              ;[INF] 1, 1
+ 1627  1627 0007E  C1                    push    ax                                              ;[INF] 1, 1
+ 1628  1628 0007F  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1629  1629 00082                ??bf_SecDb_Save:
+ 1630  1630                      ; line   162
+ 1631  1631                      $DGL    0,2
+ 1632  1632 00082  8C0C                  mov     a,[hl+12]       ; md                            ;[INF] 2, 1
+ 1633  1633 00084  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1634  1634 00086  C1                    push    ax                                              ;[INF] 1, 1
+ 1635  1635 00087  8C0A                  mov     a,[hl+10]       ; ld_irk                        ;[INF] 2, 1
+ 1636  1636 00089  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1637  1637 0008B  C1                    push    ax                                              ;[INF] 1, 1
+ 1638  1638 0008C  AC08                  movw    ax,[hl+8]       ; bond_bitmap                   ;[INF] 2, 1
+ 1639  1639 0008E  C1                    push    ax                                              ;[INF] 1, 1
+ 1640  1640 0008F  E6                    onew    ax                                              ;[INF] 1, 1
+ 1641  1641 00090  A1                    incw    ax                                              ;[INF] 1, 1
+ 1642  1642 00091  C1                    push    ax                                              ;[INF] 1, 1
+ 1643  1643 00092  AB                    movw    ax,[hl] ; db                                    ;[INF] 1, 1
+ 1644  1644 00093 RFC9D0000              call    !!_secdb_access                                 ;[INF] 4, 3
+ 1645  1645 00097  1008                  addw    sp,#08H ; 8                                     ;[INF] 2, 1
+ 1646  1646 00099  F3                    clrb    b                                               ;[INF] 1, 1
+ 1647  1647                      ; line   163
+ 1648  1648                      ; line   163
+ 1649  1649                      $DGL    0,3
+ 1650  1650 0009A                ??ef_SecDb_Save:
+ 1651  1651 0009A  C0                    pop     ax                                              ;[INF] 1, 1
+ 1652  1652 0009B  C6                    pop     hl                                              ;[INF] 1, 1
+ 1653  1653 0009C  D7                    ret                                                     ;[INF] 1, 6
+ 1654  1654 0009D                ??ee_SecDb_Save:
+ 1655  1655                      ; line   171
+ 1656  1656 0009D                _secdb_access:
+ 1657  1657                      $DGL    1,330
+ 1658  1658 0009D  C7                    push    hl                                              ;[INF] 1, 1
+ 1659  1659 0009E  C1                    push    ax                                              ;[INF] 1, 1
+ 1660  1660 0009F  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1661  1661 000A2                ??bf_secdb_access:
+ 1662  1662                      ; line   173
+ 1663  1663                      $DGL    0,3
+ 1664  1664 000A2  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1665  1665 000A3  614900                cmpw    ax,[hl+0]       ; db                            ;[INF] 3, 1
+ 1666  1666 000A6  DF05                  bnz     $?L0009                                         ;[INF] 2, 4
+ 1667  1667 000A8                ??bb00_secdb_access:
+ 1668  1668                      ; line   175
+ 1669  1669                      $DGL    0,5
+ 1670  1670 000A8  32F300                movw    bc,#0F3H        ; 243                           ;[INF] 3, 1
+ 1671  1671 000AB  EF7B                  br      $?L0008                                         ;[INF] 2, 3
+ 1672  1672 000AD                ??eb00_secdb_access:
+ 1673  1673                      ; line   176
+ 1674  1674 000AD                ?L0009:
+ 1675  1675                      ; line   179
+ 1676  1676                      $DGL    0,9
+ 1677  1677 000AD R8F0800                mov     a,!_info+8                                      ;[INF] 3, 1
+ 1678  1678 000B0  5C01                  and     a,#01H  ; 1                                     ;[INF] 2, 1
+ 1679  1679 000B2  91                    dec     a                                               ;[INF] 1, 1
+ 1680  1680 000B3  DD03                  bz      $?L0013                                         ;[INF] 2, 4
+ 1681  1681 000B5  E6                    onew    ax                                              ;[INF] 1, 1
+ 1682  1682 000B6  EF01                  br      $?L0014                                         ;[INF] 2, 3
+ 1683  1683 000B8                ?L0013:
+ 1684  1684 000B8  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1685  1685 000B9                ?L0014:
+ 1686  1686 000B9  6168                  or      a,x                                             ;[INF] 2, 1
+ 1687  1687 000BB  DD05                  bz      $?L0011                                         ;[INF] 2, 4
+ 1688  1688 000BD                ??bb01_secdb_access:
+ 1689  1689                      ; line   181
+ 1690  1690                      $DGL    0,11
+ 1691  1691 000BD  32F200                movw    bc,#0F2H        ; 242                           ;[INF] 3, 1
+ 1692  1692 000C0  EF66                  br      $?L0008                                         ;[INF] 2, 3
+ 1693  1693 000C2                ??eb01_secdb_access:
+ 1694  1694                      ; line   182
+ 1695  1695 000C2                ?L0011:
+ 1696  1696                      ; line   185
+ 1697  1697                      $DGL    0,15
+ 1698  1698 000C2 R8F0800                mov     a,!_info+8                                      ;[INF] 3, 1
+ 1699  1699 000C5  5C02                  and     a,#02H  ; 2                                     ;[INF] 2, 1
+ 1700  1700 000C7  4C02                  cmp     a,#02H  ; 2                                     ;[INF] 2, 1
+ 1701  1701 000C9  DF03                  bnz     $?L0017                                         ;[INF] 2, 4
+ 1702  1702 000CB  E6                    onew    ax                                              ;[INF] 1, 1
+ 1703  1703 000CC  EF01                  br      $?L0018                                         ;[INF] 2, 3
+ 1704  1704 000CE                ?L0017:
+ 1705  1705 000CE  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1706  1706 000CF                ?L0018:
+ 1707  1707 000CF  6168                  or      a,x                                             ;[INF] 2, 1
+ 1708  1708 000D1  DD05                  bz      $?L0015                                         ;[INF] 2, 4
+ 1709  1709 000D3                ??bb02_secdb_access:
+ 1710  1710                      ; line   187
+ 1711  1711                      $DGL    0,17
+ 1712  1712 000D3  32F200                movw    bc,#0F2H        ; 242                           ;[INF] 3, 1
+ 1713  1713 000D6  EF50                  br      $?L0008                                         ;[INF] 2, 3
+ 1714  1714 000D8                ??eb02_secdb_access:
+ 1715  1715                      ; line   188
+ 1716  1716 000D8                ?L0015:
+ 1717  1717                      ; line   191
+ 1718  1718                      $DGL    0,21
+ 1719  1719 000D8  AB                    movw    ax,[hl] ; db                                    ;[INF] 1, 1
+ 1720  1720 000D9 RBF0A00                movw    !_info+10,ax                                    ;[INF] 3, 1
+ 1721  1721                      ; line   192
+ 1722  1722                      $DGL    0,22
+ 1723  1723 000DC  8C08                  mov     a,[hl+8]        ; cmd                           ;[INF] 2, 1
+ 1724  1724 000DE R9F0C00                mov     !_info+12,a                                     ;[INF] 3, 1
+ 1725  1725                      ; line   193
+ 1726  1726                      $DGL    0,23
+ 1727  1727 000E1  AC0A                  movw    ax,[hl+10]      ; bond_bitmap                   ;[INF] 2, 1
+ 1728  1728 000E3 R9F0E00                mov     !_info+14,a                                     ;[INF] 3, 1
+ 1729  1729 000E6  08                    xch     a,x                                             ;[INF] 1, 1
+ 1730  1730 000E7 R9F0D00                mov     !_info+13,a                                     ;[INF] 3, 1
+ 1731  1731                      ; line   194
+ 1732  1732                      $DGL    0,24
+ 1733  1733 000EA  AC0A                  movw    ax,[hl+10]      ; bond_bitmap                   ;[INF] 2, 1
+ 1734  1734 000EC R9F1000                mov     !_info+16,a                                     ;[INF] 3, 1
+ 1735  1735 000EF  08                    xch     a,x                                             ;[INF] 1, 1
+ 1736  1736 000F0 R9F0F00                mov     !_info+15,a                                     ;[INF] 3, 1
+ 1737  1737                      ; line   195
+ 1738  1738                      $DGL    0,25
+ 1739  1739 000F3  8C0C                  mov     a,[hl+12]       ; ld_irk                        ;[INF] 2, 1
+ 1740  1740 000F5 R9F1100                mov     !_info+17,a                                     ;[INF] 3, 1
+ 1741  1741                      ; line   196
+ 1742  1742                      $DGL    0,26
+ 1743  1743 000F8  8C0E                  mov     a,[hl+14]       ; md                            ;[INF] 2, 1
+ 1744  1744 000FA R9F1200                mov     !_info+18,a                                     ;[INF] 3, 1
+ 1745  1745                      ; line   197
+ 1746  1746                      $DGL    0,27
+ 1747  1747 000FD R71100800              set1    !_info+8.1                                      ;[INF] 4, 2
+ 1748  1748                      ; line   200
+ 1749  1749                      $DGL    0,30
+ 1750  1750 00101 RCF090020              mov     !_info+9,#020H  ; 32                            ;[INF] 4, 1
+ 1751  1751                      ; line   202
+ 1752  1752                      $DGL    0,32
+ 1753  1753 00105 RD51100                cmp0    !_info+17                                       ;[INF] 3, 1
+ 1754  1754 00108  61F8                  sknz                                                    ;[INF] 2, 1
+ 1755  1755 0010A                ??bb03_secdb_access:
+ 1756  1756                      ; line   203
+ 1757  1757                      $DGL    0,33
+ 1758  1758 0010A R71100900              set1    !_info+9.1                                      ;[INF] 4, 2
+ 1759  1759 0010E                ??eb03_secdb_access:
+ 1760  1760                      ; line   204
+ 1761  1761 0010E                ?L0019:
+ 1762  1762                      ; line   206
+ 1763  1763                      $DGL    0,36
+ 1764  1764 0010E RD51200                cmp0    !_info+18                                       ;[INF] 3, 1
+ 1765  1765 00111  61F8                  sknz                                                    ;[INF] 2, 1
+ 1766  1766 00113                ??bb04_secdb_access:
+ 1767  1767                      ; line   207
+ 1768  1768                      $DGL    0,37
+ 1769  1769 00113 R71200900              set1    !_info+9.2                                      ;[INF] 4, 2
+ 1770  1770 00117                ??eb04_secdb_access:
+ 1771  1771                      ; line   208
+ 1772  1772 00117                ?L0021:
+ 1773  1773                      ; line   210
+ 1774  1774                      $DGL    0,40
+ 1775  1775 00117 R8F0D00                mov     a,!_info+13                                     ;[INF] 3, 1
+ 1776  1776 0011A R6F0E00                or      a,!_info+14                                     ;[INF] 3, 1
+ 1777  1777 0011D  61F8                  sknz                                                    ;[INF] 2, 1
+ 1778  1778 0011F                ??bb05_secdb_access:
+ 1779  1779                      ; line   211
+ 1780  1780                      $DGL    0,41
+ 1781  1781 0011F R71300900              set1    !_info+9.3                                      ;[INF] 4, 2
+ 1782  1782 00123                ??eb05_secdb_access:
+ 1783  1783                      ; line   212
+ 1784  1784 00123                ?L0023:
+ 1785  1785                      ; line   215
+ 1786  1786                      $DGL    0,45
+ 1787  1787 00123 RFC2B0100              call    !!_secdb_flash_sequence                         ;[INF] 4, 3
+ 1788  1788                      ; line   217
+ 1789  1789                      $DGL    0,47
+ 1790  1790 00127  F7                    clrw    bc                                              ;[INF] 1, 1
+ 1791  1791                      ; line   218
+ 1792  1792 00128                ?L0008:
+ 1793  1793                      ; line   218
+ 1794  1794                      $DGL    0,48
+ 1795  1795 00128                ??ef_secdb_access:
+ 1796  1796 00128  C0                    pop     ax                                              ;[INF] 1, 1
+ 1797  1797 00129  C6                    pop     hl                                              ;[INF] 1, 1
+ 1798  1798 0012A  D7                    ret                                                     ;[INF] 1, 6
+ 1799  1799 0012B                ??ee_secdb_access:
+ 1800  1800                      ; line   222
+ 1801  1801 0012B                _secdb_flash_sequence:
+ 1802  1802                      $DGL    1,366
+ 1803  1803 0012B  C7                    push    hl                                              ;[INF] 1, 1
+ 1804  1804 0012C  2008                  subw    sp,#08H                                         ;[INF] 2, 1
+ 1805  1805 0012E  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1806  1806 00131                ??bf_secdb_flash_sequence:
+ 1807  1807                      ; line   226
+ 1808  1808                      $DGL    0,5
+ 1809  1809 00131 R8F0C00                mov     a,!_info+12                                     ;[INF] 3, 1
+ 1810  1810 00134  9C02                  mov     [hl+2],a        ; param                         ;[INF] 2, 1
+ 1811  1811                      ; line   229
+ 1812  1812                      $DGL    0,8
+ 1813  1813 00136 R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1814  1814 00139  5C20                  and     a,#020H ; 32                                    ;[INF] 2, 1
+ 1815  1815 0013B  4C20                  cmp     a,#020H ; 32                                    ;[INF] 2, 1
+ 1816  1816 0013D  DD03                  bz      $?L0029                                         ;[INF] 2, 4
+ 1817  1817 0013F  E6                    onew    ax                                              ;[INF] 1, 1
+ 1818  1818 00140  EF01                  br      $?L0030                                         ;[INF] 2, 3
+ 1819  1819 00142                ?L0029:
+ 1820  1820 00142  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1821  1821 00143                ?L0030:
+ 1822  1822 00143  6168                  or      a,x                                             ;[INF] 2, 1
+ 1823  1823 00145  DD0A                  bz      $?L0027                                         ;[INF] 2, 4
+ 1824  1824 00147                ??bb00_secdb_flash_sequence:
+ 1825  1825                      ; line   231
+ 1826  1826                      $DGL    0,10
+ 1827  1827 00147  300400                movw    ax,#04H ; 4                                     ;[INF] 3, 1
+ 1828  1828 0014A RFC000000              call    !!_RBLE_VS_Flash_Operation                      ;[INF] 4, 3
+ 1829  1829 0014E                ??eb00_secdb_flash_sequence:
+ 1830  1830                      ; line   234
+ 1831  1831                      $DGL    0,13
+ 1832  1832 0014E  EED000                br      $!?L0051                                        ;[INF] 3, 3
+ 1833  1833 00151                ?L0027:
+ 1834  1834 00151 R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1835  1835 00154  5C01                  and     a,#01H  ; 1                                     ;[INF] 2, 1
+ 1836  1836 00156  91                    dec     a                                               ;[INF] 1, 1
+ 1837  1837 00157  DD03                  bz      $?L0033                                         ;[INF] 2, 4
+ 1838  1838 00159  E6                    onew    ax                                              ;[INF] 1, 1
+ 1839  1839 0015A  EF01                  br      $?L0034                                         ;[INF] 2, 3
+ 1840  1840 0015C                ?L0033:
+ 1841  1841 0015C  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1842  1842 0015D                ?L0034:
+ 1843  1843 0015D  6168                  or      a,x                                             ;[INF] 2, 1
+ 1844  1844 0015F  DD08                  bz      $?L0031                                         ;[INF] 2, 4
+ 1845  1845 00161                ??bb01_secdb_flash_sequence:
+ 1846  1846                      ; line   236
+ 1847  1847                      $DGL    0,15
+ 1848  1848 00161  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1849  1849 00162 RFC000000              call    !!_RBLE_VS_Flash_Management                     ;[INF] 4, 3
+ 1850  1850 00166                ??eb01_secdb_flash_sequence:
+ 1851  1851                      ; line   239
+ 1852  1852                      $DGL    0,18
+ 1853  1853 00166  EEB800                br      $!?L0051                                        ;[INF] 3, 3
+ 1854  1854 00169                ?L0031:
+ 1855  1855 00169 R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1856  1856 0016C  5C04                  and     a,#04H  ; 4                                     ;[INF] 2, 1
+ 1857  1857 0016E  4C04                  cmp     a,#04H  ; 4                                     ;[INF] 2, 1
+ 1858  1858 00170  DD03                  bz      $?L0037                                         ;[INF] 2, 4
+ 1859  1859 00172  E6                    onew    ax                                              ;[INF] 1, 1
+ 1860  1860 00173  EF01                  br      $?L0038                                         ;[INF] 2, 3
+ 1861  1861 00175                ?L0037:
+ 1862  1862 00175  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1863  1863 00176                ?L0038:
+ 1864  1864 00176  6168                  or      a,x                                             ;[INF] 2, 1
+ 1865  1865 00178  DD14                  bz      $?L0035                                         ;[INF] 2, 4
+ 1866  1866 0017A                ??bb02_secdb_flash_sequence:
+ 1867  1867                      ; line   240
+ 1868  1868                      $DGL    0,19
+ 1869  1869 0017A  CC0302                mov     [hl+3],#02H     ; param,2                       ;[INF] 3, 1
+ 1870  1870                      ; line   241
+ 1871  1871                      $DGL    0,20
+ 1872  1872 0017D  CC0404                mov     [hl+4],#04H     ; param,4                       ;[INF] 3, 1
+ 1873  1873                      ; line   242
+ 1874  1874                      $DGL    0,21
+ 1875  1875 00180 RAF0A00                movw    ax,!_info+10                                    ;[INF] 3, 1
+ 1876  1876 00183  041200                addw    ax,#012H        ; 18                            ;[INF] 3, 1
+ 1877  1877 00186  BC06                  movw    [hl+6],ax       ; param                         ;[INF] 2, 1
+ 1878  1878                      ; line   243
+ 1879  1879                      $DGL    0,22
+ 1880  1880 00188  FE7CFE                call    $!bs_F0122                                      ;[INF] 3, 3
+ 1881  1881 0018B                ??eb02_secdb_flash_sequence:
+ 1882  1882                      ; line   246
+ 1883  1883                      $DGL    0,25
+ 1884  1884 0018B  EE9300                br      $!?L0051                                        ;[INF] 3, 3
+ 1885  1885 0018E                ?L0035:
+ 1886  1886 0018E R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1887  1887 00191  5C02                  and     a,#02H  ; 2                                     ;[INF] 2, 1
+ 1888  1888 00193  4C02                  cmp     a,#02H  ; 2                                     ;[INF] 2, 1
+ 1889  1889 00195  DD03                  bz      $?L0041                                         ;[INF] 2, 4
+ 1890  1890 00197  E6                    onew    ax                                              ;[INF] 1, 1
+ 1891  1891 00198  EF01                  br      $?L0042                                         ;[INF] 2, 3
+ 1892  1892 0019A                ?L0041:
+ 1893  1893 0019A  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1894  1894 0019B                ?L0042:
+ 1895  1895 0019B  6168                  or      a,x                                             ;[INF] 2, 1
+ 1896  1896 0019D  DD10                  bz      $?L0039                                         ;[INF] 2, 4
+ 1897  1897 0019F                ??bb03_secdb_flash_sequence:
+ 1898  1898                      ; line   247
+ 1899  1899                      $DGL    0,26
+ 1900  1900 0019F  CC0303                mov     [hl+3],#03H     ; param,3                       ;[INF] 3, 1
+ 1901  1901                      ; line   248
+ 1902  1902                      $DGL    0,27
+ 1903  1903 001A2  CC0412                mov     [hl+4],#012H    ; param,18                      ;[INF] 3, 1
+ 1904  1904                      ; line   249
+ 1905  1905                      $DGL    0,28
+ 1906  1906 001A5 RAF0A00                movw    ax,!_info+10                                    ;[INF] 3, 1
+ 1907  1907 001A8  BC06                  movw    [hl+6],ax       ; param                         ;[INF] 2, 1
+ 1908  1908                      ; line   250
+ 1909  1909                      $DGL    0,29
+ 1910  1910 001AA  FE5AFE                call    $!bs_F0122                                      ;[INF] 3, 3
+ 1911  1911 001AD                ??eb03_secdb_flash_sequence:
+ 1912  1912                      ; line   253
+ 1913  1913                      $DGL    0,32
+ 1914  1914 001AD  EF72                  br      $?L0051                                         ;[INF] 2, 3
+ 1915  1915 001AF                ?L0039:
+ 1916  1916 001AF R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1917  1917 001B2  5C08                  and     a,#08H  ; 8                                     ;[INF] 2, 1
+ 1918  1918 001B4  4C08                  cmp     a,#08H  ; 8                                     ;[INF] 2, 1
+ 1919  1919 001B6  DD03                  bz      $?L0045                                         ;[INF] 2, 4
+ 1920  1920 001B8  E6                    onew    ax                                              ;[INF] 1, 1
+ 1921  1921 001B9  EF01                  br      $?L0046                                         ;[INF] 2, 3
+ 1922  1922 001BB                ?L0045:
+ 1923  1923 001BB  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1924  1924 001BC                ?L0046:
+ 1925  1925 001BC  6168                  or      a,x                                             ;[INF] 2, 1
+ 1926  1926 001BE  DD33                  bz      $?L0043                                         ;[INF] 2, 4
+ 1927  1927 001C0                ??bb04_secdb_flash_sequence:
+ 1928  1928                      ; line   254
+ 1929  1929                      $DGL    0,33
+ 1930  1930 001C0 RD90F00                mov     x,!_info+15                                     ;[INF] 3, 1
+ 1931  1931 001C3 R8F1000                mov     a,!_info+16                                     ;[INF] 3, 1
+ 1932  1932 001C6 RFCA50300              call    !!_secdb_ffs                                    ;[INF] 4, 3
+ 1933  1933 001CA  13                    movw    ax,bc                                           ;[INF] 1, 1
+ 1934  1934 001CB  BB                    movw    [hl],ax ; bidx                                  ;[INF] 1, 1
+ 1935  1935                      ; line   255
+ 1936  1936                      $DGL    0,34
+ 1937  1937 001CC  8B                    mov     a,[hl]  ; bidx                                  ;[INF] 1, 1
+ 1938  1938 001CD  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1939  1939 001CF  040400                addw    ax,#04H ; 4                                     ;[INF] 3, 1
+ 1940  1940 001D2  60                    mov     a,x                                             ;[INF] 1, 1
+ 1941  1941 001D3  9C03                  mov     [hl+3],a        ; param                         ;[INF] 2, 1
+ 1942  1942                      ; line   256
+ 1943  1943                      $DGL    0,35
+ 1944  1944 001D5  CC0454                mov     [hl+4],#054H    ; param,84                      ;[INF] 3, 1
+ 1945  1945                      ; line   257
+ 1946  1946                      $DGL    0,36
+ 1947  1947 001D8 REB0A00                movw    de,!_info+10                                    ;[INF] 3, 1
+ 1948  1948 001DB  AB                    movw    ax,[hl] ; bidx                                  ;[INF] 1, 1
+ 1949  1949 001DC  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 1950  1950 001DD  5054                  mov     x,#054H ; 84                                    ;[INF] 2, 1
+ 1951  1951 001DF  D6                    mulu    x                                               ;[INF] 1, 1
+ 1952  1952 001E0  33                    xchw    ax,bc                                           ;[INF] 1, 1
+ 1953  1953 001E1  5154                  mov     a,#054H ; 84                                    ;[INF] 2, 1
+ 1954  1954 001E3  D6                    mulu    x                                               ;[INF] 1, 1
+ 1955  1955 001E4  610A                  add     a,c                                             ;[INF] 2, 1
+ 1956  1956 001E6  35                    xchw    ax,de                                           ;[INF] 1, 1
+ 1957  1957 001E7  041600                addw    ax,#016H        ; 22                            ;[INF] 3, 1
+ 1958  1958 001EA  35                    xchw    ax,de                                           ;[INF] 1, 1
+ 1959  1959 001EB  05                    addw    ax,de                                           ;[INF] 1, 1
+ 1960  1960 001EC  BC06                  movw    [hl+6],ax       ; param                         ;[INF] 2, 1
+ 1961  1961                      ; line   258
+ 1962  1962                      $DGL    0,37
+ 1963  1963 001EE  FE16FE                call    $!bs_F0122                                      ;[INF] 3, 3
+ 1964  1964 001F1                ??eb04_secdb_flash_sequence:
+ 1965  1965                      ; line   261
+ 1966  1966                      $DGL    0,40
+ 1967  1967 001F1  EF2E                  br      $?L0051                                         ;[INF] 2, 3
+ 1968  1968 001F3                ?L0043:
+ 1969  1969 001F3 R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1970  1970 001F6  5C10                  and     a,#010H ; 16                                    ;[INF] 2, 1
+ 1971  1971 001F8  4C10                  cmp     a,#010H ; 16                                    ;[INF] 2, 1
+ 1972  1972 001FA  DD03                  bz      $?L0049                                         ;[INF] 2, 4
+ 1973  1973 001FC  E6                    onew    ax                                              ;[INF] 1, 1
+ 1974  1974 001FD  EF01                  br      $?L0050                                         ;[INF] 2, 3
+ 1975  1975 001FF                ?L0049:
+ 1976  1976 001FF  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1977  1977 00200                ?L0050:
+ 1978  1978 00200  6168                  or      a,x                                             ;[INF] 2, 1
+ 1979  1979 00202  DD07                  bz      $?L0047                                         ;[INF] 2, 4
+ 1980  1980 00204                ??bb05_secdb_flash_sequence:
+ 1981  1981                      ; line   262
+ 1982  1982                      $DGL    0,41
+ 1983  1983 00204  E6                    onew    ax                                              ;[INF] 1, 1
+ 1984  1984 00205 RFC000000              call    !!_RBLE_VS_Flash_Management                     ;[INF] 4, 3
+ 1985  1985 00209                ??eb05_secdb_flash_sequence:
+ 1986  1986                      ; line   264
+ 1987  1987                      $DGL    0,43
+ 1988  1988 00209  EF16                  br      $?L0051                                         ;[INF] 2, 3
+ 1989  1989 0020B                ?L0047:
+ 1990  1990 0020B R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 1991  1991 0020E  5C3F                  and     a,#03FH ; 63                                    ;[INF] 2, 1
+ 1992  1992 00210  4C3F                  cmp     a,#03FH ; 63                                    ;[INF] 2, 1
+ 1993  1993 00212  DF03                  bnz     $?L0053                                         ;[INF] 2, 4
+ 1994  1994 00214  E6                    onew    ax                                              ;[INF] 1, 1
+ 1995  1995 00215  EF01                  br      $?L0054                                         ;[INF] 2, 3
+ 1996  1996 00217                ?L0053:
+ 1997  1997 00217  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1998  1998 00218                ?L0054:
+ 1999  1999 00218  6168                  or      a,x                                             ;[INF] 2, 1
+ 2000  2000 0021A  DD05                  bz      $?L0051                                         ;[INF] 2, 4
+ 2001  2001 0021C                ??bb06_secdb_flash_sequence:
+ 2002  2002                      ; line   266
+ 2003  2003                      $DGL    0,45
+ 2004  2004 0021C  F6                    clrw    ax                                              ;[INF] 1, 1
+ 2005  2005 0021D RFC5B0300              call    !!_secdb_send_event                             ;[INF] 4, 3
+ 2006  2006 00221                ??eb06_secdb_flash_sequence:
+ 2007  2007                      ; line   268
+ 2008  2008 00221                ?L0051:
+ 2009  2009 00221                ??bb07_secdb_flash_sequence:
+ 2010  2010                      ; line   269
+ 2011  2011 00221                ??eb07_secdb_flash_sequence:
+ 2012  2012                      ; line   270
+ 2013  2013                      ; line   271
+ 2014  2014                      $DGL    0,50
+ 2015  2015 00221                ??ef_secdb_flash_sequence:
+ 2016  2016 00221  1008                  addw    sp,#08H                                         ;[INF] 2, 1
+ 2017  2017 00223  C6                    pop     hl                                              ;[INF] 1, 1
+ 2018  2018 00224  D7                    ret                                                     ;[INF] 1, 6
+ 2019  2019 00225                ??ee_secdb_flash_sequence:
+ 2020  2020                      ; line   275
+ 2021  2021 00225                _secdb_vs_flash_management_comp_handler:
+ 2022  2022                      $DGL    1,407
+ 2023  2023 00225  C7                    push    hl                                              ;[INF] 1, 1
+ 2024  2024 00226  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 2025  2025 00227                ??bf_secdb_vs_flash_management_comp_handler:
+ 2026  2026                      ; line   276
+ 2027  2027                      $DGL    0,2
+ 2028  2028 00227  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2029  2029 00228  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2030  2030 00229  DF31                  bnz     $?L0057                                         ;[INF] 2, 4
+ 2031  2031 0022B                ??bb00_secdb_vs_flash_management_comp_handler:
+ 2032  2032                      ; line   277
+ 2033  2033                      $DGL    0,3
+ 2034  2034 0022B R8F0900                mov     a,!_info+9                                      ;[INF] 3, 1
+ 2035  2035 0022E  5C40                  and     a,#040H ; 64                                    ;[INF] 2, 1
+ 2036  2036 00230  4C40                  cmp     a,#040H ; 64                                    ;[INF] 2, 1
+ 2037  2037 00232  DF03                  bnz     $?L0061                                         ;[INF] 2, 4
+ 2038  2038 00234  E6                    onew    ax                                              ;[INF] 1, 1
+ 2039  2039 00235  EF01                  br      $?L0062                                         ;[INF] 2, 3
+ 2040  2040 00237                ?L0061:
+ 2041  2041 00237  F6                    clrw    ax                                              ;[INF] 1, 1
+ 2042  2042 00238                ?L0062:
+ 2043  2043 00238  6168                  or      a,x                                             ;[INF] 2, 1
+ 2044  2044 0023A  DD06                  bz      $?L0059                                         ;[INF] 2, 4
+ 2045  2045 0023C                ??bb01_secdb_vs_flash_management_comp_handler:
+ 2046  2046                      ; line   278
+ 2047  2047                      $DGL    0,4
+ 2048  2048 0023C R71680900              clr1    !_info+9.6                                      ;[INF] 4, 2
+ 2049  2049 00240                ??eb01_secdb_vs_flash_management_comp_handler:
+ 2050  2050                      ; line   280
+ 2051  2051                      $DGL    0,6
+ 2052  2052 00240  EF14                  br      $?L0065                                         ;[INF] 2, 3
+ 2053  2053 00242                ?L0059:
+ 2054  2054 00242  8C01                  mov     a,[hl+1]                                        ;[INF] 2, 1
+ 2055  2055 00244  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2056  2056 00245  DF06                  bnz     $?L0063                                         ;[INF] 2, 4
+ 2057  2057 00247                ??bb02_secdb_vs_flash_management_comp_handler:
+ 2058  2058                      ; line   281
+ 2059  2059                      $DGL    0,7
+ 2060  2060 00247 R71000900              set1    !_info+9.0                                      ;[INF] 4, 2
+ 2061  2061 0024B                ??eb02_secdb_vs_flash_management_comp_handler:
+ 2062  2062                      ; line   283
+ 2063  2063                      $DGL    0,9
+ 2064  2064 0024B  EF09                  br      $?L0065                                         ;[INF] 2, 3
+ 2065  2065 0024D                ?L0063:
+ 2066  2066 0024D  8C01                  mov     a,[hl+1]                                        ;[INF] 2, 1
+ 2067  2067 0024F  91                    dec     a                                               ;[INF] 1, 1
+ 2068  2068 00250  61F8                  sknz                                                    ;[INF] 2, 1
+ 2069  2069 00252                ??bb03_secdb_vs_flash_management_comp_handler:
+ 2070  2070                      ; line   284
+ 2071  2071                      $DGL    0,10
+ 2072  2072 00252 R71400900              set1    !_info+9.4                                      ;[INF] 4, 2
+ 2073  2073 00256                ??eb03_secdb_vs_flash_management_comp_handler:
+ 2074  2074                      ; line   286
+ 2075  2075 00256                ?L0065:
+ 2076  2076 00256                ??bb04_secdb_vs_flash_management_comp_handler:
+ 2077  2077                      ; line   287
+ 2078  2078 00256                ??eb04_secdb_vs_flash_management_comp_handler:
+ 2079  2079                      ; line   288
+ 2080  2080                      ; line   290
+ 2081  2081                      $DGL    0,16
+ 2082  2082 00256 RFC2B0100              call    !!_secdb_flash_sequence                         ;[INF] 4, 3
+ 2083  2083 0025A                ??eb00_secdb_vs_flash_management_comp_handler:
+ 2084  2084                      ; line   292
+ 2085  2085                      $DGL    0,18
+ 2086  2086 0025A  EF18                  br      $?L0068                                         ;[INF] 2, 3
+ 2087  2087 0025C                ?L0057:
+ 2088  2088 0025C                ??bb05_secdb_vs_flash_management_comp_handler:
+ 2089  2089                      ; line   294
+ 2090  2090                      $DGL    0,20
+ 2091  2091 0025C  8C01                  mov     a,[hl+1]                                        ;[INF] 2, 1
+ 2092  2092 0025E  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2093  2093 0025F  DF10                  bnz     $?L0067                                         ;[INF] 2, 4
+ 2094  2094 00261  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2095  2095 00262  4C03                  cmp     a,#03H  ; 3                                     ;[INF] 2, 1
+ 2096  2096 00264  DF0B                  bnz     $?L0067                                         ;[INF] 2, 4
+ 2097  2097 00266                ??bb06_secdb_vs_flash_management_comp_handler:
+ 2098  2098                      ; line   295
+ 2099  2099                      $DGL    0,21
+ 2100  2100 00266 R71600900              set1    !_info+9.6                                      ;[INF] 4, 2
+ 2101  2101                      ; line   296
+ 2102  2102                      $DGL    0,22
+ 2103  2103 0026A  E6                    onew    ax                                              ;[INF] 1, 1
+ 2104  2104 0026B RFC000000              call    !!_RBLE_VS_Flash_Management                     ;[INF] 4, 3
+ 2105  2105 0026F                ??eb06_secdb_vs_flash_management_comp_handler:
+ 2106  2106                      ; line   298
+ 2107  2107                      $DGL    0,24
+ 2108  2108 0026F  EF03                  br      $?L0068                                         ;[INF] 2, 3
+ 2109  2109 00271                ?L0067:
+ 2110  2110 00271                ??bb07_secdb_vs_flash_management_comp_handler:
+ 2111  2111                      ; line   300
+ 2112  2112                      $DGL    0,26
+ 2113  2113 00271  FE8CFD                call    $!bs_F0124                                      ;[INF] 3, 3
+ 2114  2114 00274                ??eb07_secdb_vs_flash_management_comp_handler:
+ 2115  2115                      ; line   301
+ 2116  2116 00274                ?L0068:
+ 2117  2117 00274                ??eb05_secdb_vs_flash_management_comp_handler:
+ 2118  2118                      ; line   302
+ 2119  2119                      ; line   303
+ 2120  2120                      $DGL    0,29
+ 2121  2121 00274                ??ef_secdb_vs_flash_management_comp_handler:
+ 2122  2122 00274  C6                    pop     hl                                              ;[INF] 1, 1
+ 2123  2123 00275  D7                    ret                                                     ;[INF] 1, 6
+ 2124  2124 00276                ??ee_secdb_vs_flash_management_comp_handler:
+ 2125  2125                      ; line   307
+ 2126  2126 00276                _secdb_vs_flash_access_comp_handler:
+ 2127  2127                      $DGL    1,447
+ 2128  2128 00276  C7                    push    hl                                              ;[INF] 1, 1
+ 2129  2129 00277  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 2130  2130 00278                ??bf_secdb_vs_flash_access_comp_handler:
+ 2131  2131                      ; line   310
+ 2132  2132                      $DGL    0,4
+ 2133  2133 00278  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2134  2134 00279  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2135  2135 0027A  DD05                  bz      $?L0073                                         ;[INF] 2, 4
+ 2136  2136 0027C  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2137  2137 0027D  4C0A                  cmp     a,#0AH  ; 10                                    ;[INF] 2, 1
+ 2138  2138 0027F  DF58                  bnz     $?L0071                                         ;[INF] 2, 4
+ 2139  2139 00281                ?L0073:
+ 2140  2140 00281                ??bb00_secdb_vs_flash_access_comp_handler:
+ 2141  2141                      ; line   311
+ 2142  2142                      $DGL    0,5
+ 2143  2143 00281  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+ 2144  2144 00283  4C04                  cmp     a,#04H  ; 4                                     ;[INF] 2, 1
+ 2145  2145 00285  DC36                  bc      $?L0074                                         ;[INF] 2, 4
+ 2146  2146 00287  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+ 2147  2147 00289  4C08                  cmp     a,#08H  ; 8                                     ;[INF] 2, 1
+ 2148  2148 0028B  DE30                  bnc     $?L0074                                         ;[INF] 2, 4
+ 2149  2149 0028D                ??bb01_secdb_vs_flash_access_comp_handler:
+ 2150  2150                      ; line   312
+ 2151  2151                      $DGL    0,6
+ 2152  2152 0028D  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+ 2153  2153 0028F  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 2154  2154 00291  240400                subw    ax,#04H ; 4                                     ;[INF] 3, 1
+ 2155  2155 00294  08                    xch     a,x                                             ;[INF] 1, 1
+ 2156  2156 00295  72                    mov     c,a                                             ;[INF] 1, 1
+ 2157  2157 00296  08                    xch     a,x                                             ;[INF] 1, 1
+ 2158  2158 00297  E6                    onew    ax                                              ;[INF] 1, 1
+ 2159  2159 00298  D2                    cmp0    c                                               ;[INF] 1, 1
+ 2160  2160 00299  DD04                  bz      $?L0076                                         ;[INF] 2, 4
+ 2161  2161 0029B                ?L0077:
+ 2162  2162 0029B  01                    addw    ax,ax                                           ;[INF] 1, 1
+ 2163  2163 0029C  92                    dec     c                                               ;[INF] 1, 1
+ 2164  2164 0029D  DFFC                  bnz     $?L0077                                         ;[INF] 2, 4
+ 2165  2165 0029F                ?L0076:
+ 2166  2166 0029F  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 2167  2167 002A0  F6                    clrw    ax                                              ;[INF] 1, 1
+ 2168  2168 002A1  B1                    decw    ax                                              ;[INF] 1, 1
+ 2169  2169 002A2  23                    subw    ax,bc                                           ;[INF] 1, 1
+ 2170  2170 002A3 R5F1000                and     a,!_info+16                                     ;[INF] 3, 1
+ 2171  2171 002A6  08                    xch     a,x                                             ;[INF] 1, 1
+ 2172  2172 002A7 R5F0F00                and     a,!_info+15                                     ;[INF] 3, 1
+ 2173  2173 002AA  08                    xch     a,x                                             ;[INF] 1, 1
+ 2174  2174 002AB R9F1000                mov     !_info+16,a                                     ;[INF] 3, 1
+ 2175  2175 002AE  08                    xch     a,x                                             ;[INF] 1, 1
+ 2176  2176 002AF R9F0F00                mov     !_info+15,a                                     ;[INF] 3, 1
+ 2177  2177                      ; line   314
+ 2178  2178                      $DGL    0,8
+ 2179  2179 002B2 R6F1000                or      a,!_info+16                                     ;[INF] 3, 1
+ 2180  2180 002B5  DF1C                  bnz     $?L0082                                         ;[INF] 2, 4
+ 2181  2181 002B7                ??bb02_secdb_vs_flash_access_comp_handler:
+ 2182  2182                      ; line   315
+ 2183  2183                      $DGL    0,9
+ 2184  2184 002B7 R71300900              set1    !_info+9.3                                      ;[INF] 4, 2
+ 2185  2185 002BB                ??eb02_secdb_vs_flash_access_comp_handler:
+ 2186  2186                      ; line   316
+ 2187  2187 002BB                ??eb01_secdb_vs_flash_access_comp_handler:
+ 2188  2188                      ; line   318
+ 2189  2189                      $DGL    0,12
+ 2190  2190 002BB  EF16                  br      $?L0082                                         ;[INF] 2, 3
+ 2191  2191 002BD                ?L0074:
+ 2192  2192 002BD  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+ 2193  2193 002BF  4C03                  cmp     a,#03H  ; 3                                     ;[INF] 2, 1
+ 2194  2194 002C1  DF06                  bnz     $?L0080                                         ;[INF] 2, 4
+ 2195  2195 002C3                ??bb03_secdb_vs_flash_access_comp_handler:
+ 2196  2196                      ; line   319
+ 2197  2197                      $DGL    0,13
+ 2198  2198 002C3 R71100900              set1    !_info+9.1                                      ;[INF] 4, 2
+ 2199  2199 002C7                ??eb03_secdb_vs_flash_access_comp_handler:
+ 2200  2200                      ; line   321
+ 2201  2201                      $DGL    0,15
+ 2202  2202 002C7  EF0A                  br      $?L0082                                         ;[INF] 2, 3
+ 2203  2203 002C9                ?L0080:
+ 2204  2204 002C9  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+ 2205  2205 002CB  4C02                  cmp     a,#02H  ; 2                                     ;[INF] 2, 1
+ 2206  2206 002CD  61F8                  sknz                                                    ;[INF] 2, 1
+ 2207  2207 002CF                ??bb04_secdb_vs_flash_access_comp_handler:
+ 2208  2208                      ; line   322
+ 2209  2209                      $DGL    0,16
+ 2210  2210 002CF R71200900              set1    !_info+9.2                                      ;[INF] 4, 2
+ 2211  2211 002D3                ??eb04_secdb_vs_flash_access_comp_handler:
+ 2212  2212                      ; line   324
+ 2213  2213 002D3                ?L0082:
+ 2214  2214 002D3                ??bb05_secdb_vs_flash_access_comp_handler:
+ 2215  2215                      ; line   325
+ 2216  2216 002D3                ??eb05_secdb_vs_flash_access_comp_handler:
+ 2217  2217                      ; line   326
+ 2218  2218                      ; line   328
+ 2219  2219                      $DGL    0,22
+ 2220  2220 002D3 RFC2B0100              call    !!_secdb_flash_sequence                         ;[INF] 4, 3
+ 2221  2221 002D7                ??eb00_secdb_vs_flash_access_comp_handler:
+ 2222  2222                      ; line   330
+ 2223  2223                      $DGL    0,24
+ 2224  2224 002D7  EF12                  br      $?L0085                                         ;[INF] 2, 3
+ 2225  2225 002D9                ?L0071:
+ 2226  2226 002D9  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2227  2227 002DA  4C0B                  cmp     a,#0BH  ; 11                                    ;[INF] 2, 1
+ 2228  2228 002DC  DF0A                  bnz     $?L0084                                         ;[INF] 2, 4
+ 2229  2229 002DE                ??bb06_secdb_vs_flash_access_comp_handler:
+ 2230  2230                      ; line   332
+ 2231  2231                      $DGL    0,26
+ 2232  2232 002DE R71580900              clr1    !_info+9.5                                      ;[INF] 4, 2
+ 2233  2233                      ; line   333
+ 2234  2234                      $DGL    0,27
+ 2235  2235 002E2 RFC2B0100              call    !!_secdb_flash_sequence                         ;[INF] 4, 3
+ 2236  2236 002E6                ??eb06_secdb_vs_flash_access_comp_handler:
+ 2237  2237                      ; line   335
+ 2238  2238                      $DGL    0,29
+ 2239  2239 002E6  EF03                  br      $?L0085                                         ;[INF] 2, 3
+ 2240  2240 002E8                ?L0084:
+ 2241  2241 002E8                ??bb07_secdb_vs_flash_access_comp_handler:
+ 2242  2242                      ; line   337
+ 2243  2243                      $DGL    0,31
+ 2244  2244 002E8  FE15FD                call    $!bs_F0124                                      ;[INF] 3, 3
+ 2245  2245 002EB                ??eb07_secdb_vs_flash_access_comp_handler:
+ 2246  2246                      ; line   338
+ 2247  2247 002EB                ?L0085:
+ 2248  2248                      ; line   339
+ 2249  2249                      $DGL    0,33
+ 2250  2250 002EB                ??ef_secdb_vs_flash_access_comp_handler:
+ 2251  2251 002EB  C6                    pop     hl                                              ;[INF] 1, 1
+ 2252  2252 002EC  D7                    ret                                                     ;[INF] 1, 6
+ 2253  2253 002ED                ??ee_secdb_vs_flash_access_comp_handler:
+ 2254  2254                      ; line   343
+ 2255  2255 002ED                _secdb_vs_flash_operation_comp_handler:
+ 2256  2256                      $DGL    1,487
+ 2257  2257 002ED  C7                    push    hl                                              ;[INF] 1, 1
+ 2258  2258 002EE  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 2259  2259 002EF                ??bf_secdb_vs_flash_operation_comp_handler:
+ 2260  2260                      ; line   344
+ 2261  2261                      $DGL    0,2
+ 2262  2262 002EF  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2263  2263 002F0  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2264  2264 002F1  DF0A                  bnz     $?L0088                                         ;[INF] 2, 4
+ 2265  2265 002F3                ??bb00_secdb_vs_flash_operation_comp_handler:
+ 2266  2266                      ; line   345
+ 2267  2267                      $DGL    0,3
+ 2268  2268 002F3 R71500900              set1    !_info+9.5                                      ;[INF] 4, 2
+ 2269  2269                      ; line   346
+ 2270  2270                      $DGL    0,4
+ 2271  2271 002F7 RFC2B0100              call    !!_secdb_flash_sequence                         ;[INF] 4, 3
+ 2272  2272 002FB                ??eb00_secdb_vs_flash_operation_comp_handler:
+ 2273  2273                      ; line   348
+ 2274  2274                      $DGL    0,6
+ 2275  2275 002FB  EF03                  br      $?L0089                                         ;[INF] 2, 3
+ 2276  2276 002FD                ?L0088:
+ 2277  2277 002FD                ??bb01_secdb_vs_flash_operation_comp_handler:
+ 2278  2278                      ; line   350
+ 2279  2279                      $DGL    0,8
+ 2280  2280 002FD  FE00FD                call    $!bs_F0124                                      ;[INF] 3, 3
+ 2281  2281 00300                ??eb01_secdb_vs_flash_operation_comp_handler:
+ 2282  2282                      ; line   351
+ 2283  2283 00300                ?L0089:
+ 2284  2284                      ; line   352
+ 2285  2285                      $DGL    0,10
+ 2286  2286 00300                ??ef_secdb_vs_flash_operation_comp_handler:
+ 2287  2287 00300  C6                    pop     hl                                              ;[INF] 1, 1
+ 2288  2288 00301  D7                    ret                                                     ;[INF] 1, 6
+ 2289  2289 00302                ??ee_secdb_vs_flash_operation_comp_handler:
+ 2290  2290                      ; line   359
+ 2291  2291 00302                _secdb_vs_callback:
+ 2292  2292                      $DGL    1,503
+ 2293  2293 00302  C7                    push    hl                                              ;[INF] 1, 1
+ 2294  2294 00303  16                    movw    hl,ax                                           ;[INF] 1, 1
+ 2295  2295 00304                ??bf_secdb_vs_callback:
+ 2296  2296                      ; line   361
+ 2297  2297                      $DGL    0,3
+ 2298  2298 00304 R8F0800                mov     a,!_info+8                                      ;[INF] 3, 1
+ 2299  2299 00307  5C02                  and     a,#02H  ; 2                                     ;[INF] 2, 1
+ 2300  2300 00309  4C02                  cmp     a,#02H  ; 2                                     ;[INF] 2, 1
+ 2301  2301 0030B  DF03                  bnz     $?L0094                                         ;[INF] 2, 4
+ 2302  2302 0030D  E6                    onew    ax                                              ;[INF] 1, 1
+ 2303  2303 0030E  EF01                  br      $?L0095                                         ;[INF] 2, 3
+ 2304  2304 00310                ?L0094:
+ 2305  2305 00310  F6                    clrw    ax                                              ;[INF] 1, 1
+ 2306  2306 00311                ?L0095:
+ 2307  2307 00311  6168                  or      a,x                                             ;[INF] 2, 1
+ 2308  2308 00313  DD39                  bz      $?L0092                                         ;[INF] 2, 4
+ 2309  2309 00315                ??bb00_secdb_vs_callback:
+ 2310  2310                      ; line   362
+ 2311  2311                      $DGL    0,4
+ 2312  2312 00315  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+ 2313  2313 00316  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 2314  2314 00318  E7                    onew    bc                                              ;[INF] 1, 1
+ 2315  2315 00319  240900                subw    ax,#09H ; 9                                     ;[INF] 3, 1
+ 2316  2316 0031C  DD08                  bz      $?L0097                                         ;[INF] 2, 4
+ 2317  2317 0031E  23                    subw    ax,bc                                           ;[INF] 1, 1
+ 2318  2318 0031F  DD0E                  bz      $?L0098                                         ;[INF] 2, 4
+ 2319  2319 00321  23                    subw    ax,bc                                           ;[INF] 1, 1
+ 2320  2320 00322  DD14                  bz      $?L0099                                         ;[INF] 2, 4
+ 2321  2321 00324  EF1B                  br      $?L0100                                         ;[INF] 2, 3
+ 2322  2322 00326                ??bb01_secdb_vs_callback:
+ 2323  2323                      ; line   363
+ 2324  2324 00326                ?L0097:
+ 2325  2325                      ; line   364
+ 2326  2326                      $DGL    0,6
+ 2327  2327 00326  17                    movw    ax,hl                                           ;[INF] 1, 1
+ 2328  2328 00327  A1                    incw    ax                                              ;[INF] 1, 1
+ 2329  2329 00328  A1                    incw    ax                                              ;[INF] 1, 1
+ 2330  2330 00329 RFC250200              call    !!_secdb_vs_flash_management_comp_handler       ;[INF] 4, 3
+ 2331  2331                      ; line   365
+ 2332  2332                      $DGL    0,7
+ 2333  2333 0032D  EF2A                  br      $?L0105                                         ;[INF] 2, 3
+ 2334  2334                      ; line   367
+ 2335  2335 0032F                ?L0098:
+ 2336  2336                      ; line   368
+ 2337  2337                      $DGL    0,10
+ 2338  2338 0032F  17                    movw    ax,hl                                           ;[INF] 1, 1
+ 2339  2339 00330  A1                    incw    ax                                              ;[INF] 1, 1
+ 2340  2340 00331  A1                    incw    ax                                              ;[INF] 1, 1
+ 2341  2341 00332 RFC760200              call    !!_secdb_vs_flash_access_comp_handler           ;[INF] 4, 3
+ 2342  2342                      ; line   369
+ 2343  2343                      $DGL    0,11
+ 2344  2344 00336  EF21                  br      $?L0105                                         ;[INF] 2, 3
+ 2345  2345                      ; line   371
+ 2346  2346 00338                ?L0099:
+ 2347  2347                      ; line   372
+ 2348  2348                      $DGL    0,14
+ 2349  2349 00338  17                    movw    ax,hl                                           ;[INF] 1, 1
+ 2350  2350 00339  A1                    incw    ax                                              ;[INF] 1, 1
+ 2351  2351 0033A  A1                    incw    ax                                              ;[INF] 1, 1
+ 2352  2352 0033B RFCED0200              call    !!_secdb_vs_flash_operation_comp_handler        ;[INF] 4, 3
+ 2353  2353                      ; line   373
+ 2354  2354                      $DGL    0,15
+ 2355  2355 0033F  EF18                  br      $?L0105                                         ;[INF] 2, 3
+ 2356  2356                      ; line   375
+ 2357  2357 00341                ?L0100:
+ 2358  2358                      ; line   376
+ 2359  2359                      $DGL    0,18
+ 2360  2360 00341  FECBFC                call    $!bs_S0123                                      ;[INF] 3, 3
+ 2361  2361 00344  DD13                  bz      $?L0105                                         ;[INF] 2, 4
+ 2362  2362 00346                ??bb02_secdb_vs_callback:
+ 2363  2363                      ; line   377
+ 2364  2364                      $DGL    0,19
+ 2365  2365 00346  FED8FC                call    $!bs_S0120                                      ;[INF] 3, 3
+ 2366  2366 00349  FECCFC                call    $!bs_F0121                                      ;[INF] 3, 3
+ 2367  2367 0034C                ??eb02_secdb_vs_callback:
+ 2368  2368                      ; line   378
+ 2369  2369                      ; line   379
+ 2370  2370                      $DGL    0,21
+ 2371  2371 0034C  EF0B                  br      $?L0105                                         ;[INF] 2, 3
+ 2372  2372 0034E                ??eb01_secdb_vs_callback:
+ 2373  2373                      ; line   380
+ 2374  2374 0034E                ??eb00_secdb_vs_callback:
+ 2375  2375                      ; line   382
+ 2376  2376 0034E                ?L0092:
+ 2377  2377 0034E                ??bb03_secdb_vs_callback:
+ 2378  2378                      ; line   383
+ 2379  2379                      $DGL    0,25
+ 2380  2380 0034E  FEBEFC                call    $!bs_S0123                                      ;[INF] 3, 3
+ 2381  2381 00351  DD06                  bz      $?L0105                                         ;[INF] 2, 4
+ 2382  2382 00353                ??bb04_secdb_vs_callback:
+ 2383  2383                      ; line   384
+ 2384  2384                      $DGL    0,26
+ 2385  2385 00353  FECBFC                call    $!bs_S0120                                      ;[INF] 3, 3
+ 2386  2386 00356  FEBFFC                call    $!bs_F0121                                      ;[INF] 3, 3
+ 2387  2387 00359                ??eb04_secdb_vs_callback:
+ 2388  2388                      ; line   385
+ 2389  2389 00359                ?L0105:
+ 2390  2390 00359                ??eb03_secdb_vs_callback:
+ 2391  2391                      ; line   386
+ 2392  2392                      ; line   387
+ 2393  2393                      $DGL    0,29
+ 2394  2394 00359                ??ef_secdb_vs_callback:
+ 2395  2395 00359  C6                    pop     hl                                              ;[INF] 1, 1
+ 2396  2396 0035A  D7                    ret                                                     ;[INF] 1, 6
+ 2397  2397 0035B                ??ee_secdb_vs_callback:
+ 2398  2398                      ; line   394
+ 2399  2399 0035B                _secdb_send_event:
+ 2400  2400                      $DGL    1,531
+ 2401  2401 0035B  C7                    push    hl                                              ;[INF] 1, 1
+ 2402  2402 0035C  C1                    push    ax                                              ;[INF] 1, 1
+ 2403  2403 0035D  2006                  subw    sp,#06H                                         ;[INF] 2, 1
+ 2404  2404 0035F  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 2405  2405 00362                ??bf_secdb_send_event:
+ 2406  2406                      ; line   398
+ 2407  2407                      $DGL    0,5
+ 2408  2408 00362 R400C0002              cmp     !_info+12,#02H  ; 2                             ;[INF] 4, 1
+ 2409  2409 00366  DF04                  bnz     $?L0109                                         ;[INF] 2, 4
+ 2410  2410 00368  E6                    onew    ax                                              ;[INF] 1, 1
+ 2411  2411 00369  A1                    incw    ax                                              ;[INF] 1, 1
+ 2412  2412 0036A  EF01                  br      $?L0110                                         ;[INF] 2, 3
+ 2413  2413 0036C                ?L0109:
+ 2414  2414 0036C  E6                    onew    ax                                              ;[INF] 1, 1
+ 2415  2415 0036D                ?L0110:
+ 2416  2416 0036D  60                    mov     a,x                                             ;[INF] 1, 1
+ 2417  2417 0036E  9B                    mov     [hl],a  ; event                                 ;[INF] 1, 1
+ 2418  2418                      ; line   399
+ 2419  2419                      $DGL    0,6
+ 2420  2420 0036F  8C06                  mov     a,[hl+6]        ; status                        ;[INF] 2, 1
+ 2421  2421 00371  9C01                  mov     [hl+1],a        ; event                         ;[INF] 2, 1
+ 2422  2422                      ; line   400
+ 2423  2423                      $DGL    0,7
+ 2424  2424 00373 RD90D00                mov     x,!_info+13                                     ;[INF] 3, 1
+ 2425  2425 00376 R8F0E00                mov     a,!_info+14                                     ;[INF] 3, 1
+ 2426  2426 00379  BC02                  movw    [hl+2],ax       ; event                         ;[INF] 2, 1
+ 2427  2427                      ; line   401
+ 2428  2428                      $DGL    0,8
+ 2429  2429 0037B R8F1100                mov     a,!_info+17                                     ;[INF] 3, 1
+ 2430  2430 0037E  9C04                  mov     [hl+4],a        ; event                         ;[INF] 2, 1
+ 2431  2431                      ; line   402
+ 2432  2432                      $DGL    0,9
+ 2433  2433 00380 R8F1200                mov     a,!_info+18                                     ;[INF] 3, 1
+ 2434  2434 00383  9C05                  mov     [hl+5],a        ; event                         ;[INF] 2, 1
+ 2435  2435                      ; line   404
+ 2436  2436                      $DGL    0,11
+ 2437  2437 00385 R71180800              clr1    !_info+8.1                                      ;[INF] 4, 2
+ 2438  2438                      ; line   406
+ 2439  2439                      $DGL    0,13
+ 2440  2440 00389 R8F0600                mov     a,!_info+6                                      ;[INF] 3, 1
+ 2441  2441 0038C R9D00                  mov     _@SEGAX,a                                       ;[INF] 2, 1
+ 2442  2442 0038E RAF0400                movw    ax,!_info+4                                     ;[INF] 3, 1
+ 2443  2443 00391  C1                    push    ax                                              ;[INF] 1, 1
+ 2444  2444 00392 R8D00                  mov     a,_@SEGAX                                       ;[INF] 2, 1
+ 2445  2445 00394 R9D00                  mov     _@SEGDE,a                                       ;[INF] 2, 1
+ 2446  2446 00396  C0                    pop     ax                                              ;[INF] 1, 1
+ 2447  2447 00397  14                    movw    de,ax                                           ;[INF] 1, 1
+ 2448  2448 00398  17                    movw    ax,hl                                           ;[INF] 1, 1
+ 2449  2449 00399  C1                    push    ax                                              ;[INF] 1, 1
+ 2450  2450 0039A R8D00                  mov     a,_@SEGDE                                       ;[INF] 2, 1
+ 2451  2451 0039C  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+ 2452  2452 0039E  C0                    pop     ax                                              ;[INF] 1, 1
+ 2453  2453 0039F  61EA                  call    de                                              ;[INF] 2, 3
+ 2454  2454                      ; line   407
+ 2455  2455                      $DGL    0,14
+ 2456  2456 003A1                ??ef_secdb_send_event:
+ 2457  2457 003A1  1008                  addw    sp,#08H                                         ;[INF] 2, 1
+ 2458  2458 003A3  C6                    pop     hl                                              ;[INF] 1, 1
+ 2459  2459 003A4  D7                    ret                                                     ;[INF] 1, 6
+ 2460  2460 003A5                ??ee_secdb_send_event:
+ 2461  2461                      ; line   411
+ 2462  2462 003A5                _secdb_ffs:
+ 2463  2463                      $DGL    1,540
+ 2464  2464 003A5  C7                    push    hl                                              ;[INF] 1, 1
+ 2465  2465 003A6  C1                    push    ax                                              ;[INF] 1, 1
+ 2466  2466 003A7  C1                    push    ax                                              ;[INF] 1, 1
+ 2467  2467 003A8  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 2468  2468 003AB                ??bf_secdb_ffs:
+ 2469  2469                      ; line   414
+ 2470  2470                      $DGL    0,4
+ 2471  2471 003AB  F6                    clrw    ax                                              ;[INF] 1, 1
+ 2472  2472 003AC  BB                    movw    [hl],ax ; i                                     ;[INF] 1, 1
+ 2473  2473 003AD                ?L0113:
+ 2474  2474 003AD  AB                    movw    ax,[hl] ; i                                     ;[INF] 1, 1
+ 2475  2475 003AE  441000                cmpw    ax,#010H        ; 16                            ;[INF] 3, 1
+ 2476  2476 003B1  DE1B                  bnc     $?L0114                                         ;[INF] 2, 4
+ 2477  2477 003B3                ??bb00_secdb_ffs:
+ 2478  2478                      ; line   415
+ 2479  2479                      $DGL    0,5
+ 2480  2480 003B3  8B                    mov     a,[hl]  ; i                                     ;[INF] 1, 1
+ 2481  2481 003B4  72                    mov     c,a                                             ;[INF] 1, 1
+ 2482  2482 003B5  AC02                  movw    ax,[hl+2]       ; val                           ;[INF] 2, 1
+ 2483  2483 003B7  D2                    cmp0    c                                               ;[INF] 1, 1
+ 2484  2484 003B8  DD05                  bz      $?L0118                                         ;[INF] 2, 4
+ 2485  2485 003BA                ?L0119:
+ 2486  2486 003BA  311E                  shrw    ax,1                                            ;[INF] 2, 1
+ 2487  2487 003BC  92                    dec     c                                               ;[INF] 1, 1
+ 2488  2488 003BD  DFFB                  bnz     $?L0119                                         ;[INF] 2, 4
+ 2489  2489 003BF                ?L0118:
+ 2490  2490 003BF  60                    mov     a,x                                             ;[INF] 1, 1
+ 2491  2491 003C0  5C01                  and     a,#01H  ; 1                                     ;[INF] 2, 1
+ 2492  2492 003C2  D1                    cmp0    a                                               ;[INF] 1, 1
+ 2493  2493 003C3  DD04                  bz      $?L0116                                         ;[INF] 2, 4
+ 2494  2494 003C5                ??bb01_secdb_ffs:
+ 2495  2495                      ; line   416
+ 2496  2496                      $DGL    0,6
+ 2497  2497 003C5  AB                    movw    ax,[hl] ; i                                     ;[INF] 1, 1
+ 2498  2498 003C6  12                    movw    bc,ax                                           ;[INF] 1, 1
+ 2499  2499 003C7  EF07                  br      $?L0112                                         ;[INF] 2, 3
+ 2500  2500 003C9                ??eb01_secdb_ffs:
+ 2501  2501                      ; line   417
+ 2502  2502 003C9                ?L0116:
+ 2503  2503 003C9                ??eb00_secdb_ffs:
+ 2504  2504                      ; line   418
+ 2505  2505                      $DGL    0,8
+ 2506  2506 003C9  617900                incw    [hl+0]  ; i                                     ;[INF] 3, 2
+ 2507  2507 003CC  EFDF                  br      $?L0113                                         ;[INF] 2, 3
+ 2508  2508 003CE                ?L0114:
+ 2509  2509                      ; line   420
+ 2510  2510                      $DGL    0,10
+ 2511  2511 003CE  F7                    clrw    bc                                              ;[INF] 1, 1
+ 2512  2512 003CF  B3                    decw    bc                                              ;[INF] 1, 1
+ 2513  2513                      ; line   421
+ 2514  2514 003D0                ?L0112:
+ 2515  2515                      ; line   421
+ 2516  2516                      $DGL    0,11
+ 2517  2517 003D0                ??ef_secdb_ffs:
+ 2518  2518 003D0  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+ 2519  2519 003D2  C6                    pop     hl                                              ;[INF] 1, 1
+ 2520  2520 003D3  D7                    ret                                                     ;[INF] 1, 6
+ 2521  2521 003D4                ??ee_secdb_ffs:
+ 2522  2522                      
+ 2523  2523 -----                @@CODE  CSEG    BASE
+ 2524  2524                      
+ 2525  2525 -----                @@BASE  CSEG    BASE
+ 2526  2526                              END
+ 2527  2527                      
+ 2528  2528                      
+ 2529  2529                      ; *** Code Information ***
+ 2530  2530                      ;
+ 2531  2531                      ; $FILE C:\Users\K98David\Desktop\Renesas1.21SDK\Renesas\BLE_Software_Ver_1_21\
+ 2532  2532                      ;       RL78_G1D\Project_Source\rBLE\src\sample_app\seclib\secdb.c
+ 2533  2533                      ;
+ 2534  2534                      ; $FUNC SecDb_Init(126)
+ 2535  2535                      ;       bc=(pointer vs_callback:ax,bc, pointer db_callback:[sp+4])
+ 2536  2536                      ;       CODE SIZE= 43 bytes, CLOCK_SIZE= 28 clocks, STACK_SIZE= 10 bytes
+ 2537  2537                      ;
+ 2538  2538                      ; $CALL RBLE_VS_Enable(132)
+ 2539  2539                      ;       bc=(pointer:ax,bc)
+ 2540  2540                      ;
+ 2541  2541                      ; $FUNC SecDb_Load(146)
+ 2542  2542                      ;       bc=(pointer db:ax, unsigned short bond_bitmap:[sp+4], 
+ 2543  2543                      ;           unsigned char ld_irk:[sp+6], unsigned char md:[sp+8])
+ 2544  2544                      ;       CODE SIZE= 33 bytes, CLOCK_SIZE= 27 clocks, STACK_SIZE= 16 bytes
+ 2545  2545                      ;
+ 2546  2546                      ; $CALL secdb_access(147)
+ 2547  2547                      ;       bc=(pointer:ax, int:[sp+4], unsigned short:[sp+6], int:[sp+8], 
+ 2548  2548                      ;           int:[sp+10])
+ 2549  2549                      ;
+ 2550  2550                      ; $FUNC SecDb_Save(161)
+ 2551  2551                      ;       bc=(pointer db:ax, unsigned short bond_bitmap:[sp+4], 
+ 2552  2552                      ;           unsigned char ld_irk:[sp+6], unsigned char md:[sp+8])
+ 2553  2553                      ;       CODE SIZE= 32 bytes, CLOCK_SIZE= 28 clocks, STACK_SIZE= 16 bytes
+ 2554  2554                      ;
+ 2555  2555                      ; $CALL secdb_access(162)
+ 2556  2556                      ;       bc=(pointer:ax, int:[sp+4], unsigned short:[sp+6], int:[sp+8], 
+ 2557  2557                      ;           int:[sp+10])
+ 2558  2558                      ;
+ 2559  2559                      ; $FUNC secdb_access(171)
+ 2560  2560                      ;       bc=(pointer db:ax, unsigned char cmd:[sp+4], 
+ 2561  2561                      ;           unsigned short bond_bitmap:[sp+6], unsigned char ld_irk:[sp+8], 
+ 2562  2562                      ;           unsigned char md:[sp+10])
+ 2563  2563                      ;       CODE SIZE= 142 bytes, CLOCK_SIZE= 99 clocks, STACK_SIZE= 8 bytes
+ 2564  2564                      ;
+ 2565  2565                      ; $CALL secdb_flash_sequence(215)
+ 2566  2566                      ;       void=(void)
+ 2567  2567                      ;
+ 2568  2568                      ; $FUNC secdb_flash_sequence(222)
+ 2569  2569                      ;       void=(void)
+ 2570  2570                      ;       CODE SIZE= 250 bytes, CLOCK_SIZE= 226 clocks, STACK_SIZE= 14 bytes
+ 2571  2571                      ;
+ 2572  2572                      ; $CALL RBLE_VS_Flash_Operation(231)
+ 2573  2573                      ;       bc=(int:ax)
+ 2574  2574                      ;
+ 2575  2575                      ; $CALL RBLE_VS_Flash_Management(236)
+ 2576  2576                      ;       bc=(int:ax)
+ 2577  2577                      ;
+ 2578  2578                      ; $CALL RBLE_VS_Flash_Access(243)
+ 2579  2579                      ;       bc=(pointer:ax)
+ 2580  2580                      ;
+ 2581  2581                      ; $CALL RBLE_VS_Flash_Access(250)
+ 2582  2582                      ;       bc=(pointer:ax)
+ 2583  2583                      ;
+ 2584  2584                      ; $CALL secdb_ffs(254)
+ 2585  2585                      ;       bc=(unsigned short:ax)
+ 2586  2586                      ;
+ 2587  2587                      ; $CALL RBLE_VS_Flash_Access(258)
+ 2588  2588                      ;       bc=(pointer:ax)
+ 2589  2589                      ;
+ 2590  2590                      ; $CALL RBLE_VS_Flash_Management(262)
+ 2591  2591                      ;       bc=(int:ax)
+ 2592  2592                      ;
+ 2593  2593                      ; $CALL secdb_send_event(266)
+ 2594  2594                      ;       void=(int:ax)
+ 2595  2595                      ;
+ 2596  2596                      ; $FUNC secdb_vs_flash_management_comp_handler(275)
+ 2597  2597                      ;       void=(pointer result:ax)
+ 2598  2598                      ;       CODE SIZE= 81 bytes, CLOCK_SIZE= 87 clocks, STACK_SIZE= 6 bytes
+ 2599  2599                      ;
+ 2600  2600                      ; $CALL secdb_flash_sequence(290)
+ 2601  2601                      ;       void=(void)
+ 2602  2602                      ;
+ 2603  2603                      ; $CALL RBLE_VS_Flash_Management(296)
+ 2604  2604                      ;       bc=(int:ax)
+ 2605  2605                      ;
+ 2606  2606                      ; $CALL secdb_send_event(300)
+ 2607  2607                      ;       void=(int:ax)
+ 2608  2608                      ;
+ 2609  2609                      ; $FUNC secdb_vs_flash_access_comp_handler(307)
+ 2610  2610                      ;       void=(pointer result:ax)
+ 2611  2611                      ;       CODE SIZE= 119 bytes, CLOCK_SIZE= 115 clocks, STACK_SIZE= 6 bytes
+ 2612  2612                      ;
+ 2613  2613                      ; $CALL secdb_flash_sequence(328)
+ 2614  2614                      ;       void=(void)
+ 2615  2615                      ;
+ 2616  2616                      ; $CALL secdb_flash_sequence(333)
+ 2617  2617                      ;       void=(void)
+ 2618  2618                      ;
+ 2619  2619                      ; $CALL secdb_send_event(337)
+ 2620  2620                      ;       void=(int:ax)
+ 2621  2621                      ;
+ 2622  2622                      ; $FUNC secdb_vs_flash_operation_comp_handler(343)
+ 2623  2623                      ;       void=(pointer result:ax)
+ 2624  2624                      ;       CODE SIZE= 21 bytes, CLOCK_SIZE= 30 clocks, STACK_SIZE= 6 bytes
+ 2625  2625                      ;
+ 2626  2626                      ; $CALL secdb_flash_sequence(346)
+ 2627  2627                      ;       void=(void)
+ 2628  2628                      ;
+ 2629  2629                      ; $CALL secdb_send_event(350)
+ 2630  2630                      ;       void=(int:ax)
+ 2631  2631                      ;
+ 2632  2632                      ; $FUNC secdb_vs_callback(359)
+ 2633  2633                      ;       void=(pointer event:ax)
+ 2634  2634                      ;       CODE SIZE= 89 bytes, CLOCK_SIZE= 175 clocks, STACK_SIZE= 10 bytes
+ 2635  2635                      ;
+ 2636  2636                      ; $CALL secdb_vs_flash_management_comp_handler(364)
+ 2637  2637                      ;       void=(pointer:ax)
+ 2638  2638                      ;
+ 2639  2639                      ; $CALL secdb_vs_flash_access_comp_handler(368)
+ 2640  2640                      ;       void=(pointer:ax)
+ 2641  2641                      ;
+ 2642  2642                      ; $CALL secdb_vs_flash_operation_comp_handler(372)
+ 2643  2643                      ;       void=(pointer:ax)
+ 2644  2644                      ;
+ 2645  2645                      ; $CALL info(377)
+ 2646  2646                      ;       void=(pointer:ax)
+ 2647  2647                      ;
+ 2648  2648                      ; $CALL info(384)
+ 2649  2649                      ;       void=(pointer:ax)
+ 2650  2650                      ;
+ 2651  2651                      ; $FUNC secdb_send_event(394)
+ 2652  2652                      ;       void=(unsigned char status:x)
+ 2653  2653                      ;       CODE SIZE= 74 bytes, CLOCK_SIZE= 52 clocks, STACK_SIZE= 14 bytes
+ 2654  2654                      ;
+ 2655  2655                      ; $CALL info(406)
+ 2656  2656                      ;       void=(pointer:ax)
+ 2657  2657                      ;
+ 2658  2658                      ; $FUNC secdb_ffs(411)
+ 2659  2659                      ;       bc=(unsigned short val:ax)
+ 2660  2660                      ;       CODE SIZE= 47 bytes, CLOCK_SIZE= 53 clocks, STACK_SIZE= 6 bytes
+ 2661  2661                      
+ 2662  2662                      ; Target chip : R5F11AGJ
+ 2663  2663                      ; Device file : V1.10 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00014H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 003D4H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.10
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

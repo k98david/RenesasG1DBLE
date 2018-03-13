@@ -1,0 +1,159 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\r_cg_cgc_user.asm -_msg
+          off -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\r_cg_cgc_user.asm
+Obj-file: DefaultBuild\r_cg_cgc_user.rel
+Prn-file: DefaultBuild\r_cg_cgc_user.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:39
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile cg_src\r_cg_cgc_user.c -oDefaultBuild -_msgo
+    5     5                      ;             ff -qwvjl3 -icg_src -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaul
+    6     6                      ;             tBuild -g2
+    7     7                      ; In-file   : cg_src\r_cg_cgc_user.c
+    8     8                      ; Asm-file  : DefaultBuild\r_cg_cgc_user.asm
+    9     9                      ; Para-file : 
+   10    10                      
+   11    11                      $PROCESSOR(F11AGJ)
+   12    12                      $DEBUG
+   13    13                      $NODEBUGA
+   14    14                      $KANJICODE SJIS
+   15    15                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   16    16                      
+   17    17                      $DGS    FIL_NAM, .file,         01AH,   0FFFEH, 03FH,   067H,   01H,    00H
+   18    18                      $DGS    AUX_FIL, r_cg_cgc_user.c
+   19    19                      $DGS    MOD_NAM, r_cg_cgc_user, 00H,    0FFFEH, 00H,    077H,   00H,    00H
+   20    20                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   21    21                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   22    22                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   23    23                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   24    24                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   25    25                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   26    26                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   27    27                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   28    28                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   29    29                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   30    30                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   31    31                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   32    32                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   33    33                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   34    34                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   35    35                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   36    36                      $DGS    GLV_SYM, _R_CGC_Get_ResetSource,        U,      U,      01H,    026H,   01H,    02H
+   37    37                      $DGS    AUX_FUN, 00H,           U,      U,      01AH,   01H,    00H
+   38    38                      $DGS    BEG_FUN, ??bf_R_CGC_Get_ResetSource,    U,      U,      00H,    065H,   01H,    00H
+   39    39                      $DGS    AUX_BEG, 039H,          02H,    01AH
+   40    40                      $DGS    REG_VAR, _reset_flag,   06H,    0FFFFH, 010CH,  04H,    00H,    00H
+   41    41                      $DGS    END_FUN, ??ef_R_CGC_Get_ResetSource,    U,      U,      00H,    065H,   01H,    00H
+   42    42                      $DGS    AUX_END, 05H
+   43    43                      
+   44    44                              PUBLIC  _R_CGC_Get_ResetSource
+   45    45                      
+   46    46 -----                @@BITS  BSEG
+   47    47                      
+   48    48 -----                @@CNST  CSEG    MIRRORP
+   49    49                      
+   50    50 -----                @@R_INIT        CSEG    UNIT64KP
+   51    51                      
+   52    52 -----                @@INIT  DSEG    BASEP
+   53    53                      
+   54    54 -----                @@DATA  DSEG    BASEP
+   55    55                      
+   56    56 -----                @@R_INIS        CSEG    UNIT64KP
+   57    57                      
+   58    58 -----                @@INIS  DSEG    SADDRP
+   59    59                      
+   60    60 -----                @@DATS  DSEG    SADDRP
+   61    61                      
+   62    62 -----                @@CNSTL CSEG    PAGE64KP
+   63    63                      
+   64    64 -----                @@RLINIT        CSEG    UNIT64KP
+   65    65                      
+   66    66 -----                @@INITL DSEG    UNIT64KP
+   67    67                      
+   68    68 -----                @@DATAL DSEG    UNIT64KP
+   69    69                      
+   70    70 -----                @@CALT  CSEG    CALLT0
+   71    71                      
+   72    72                      ; line    72
+   73    73                      ; line    73
+   74    74                      ; line    74
+   75    75                      ; line    75
+   76    76                      ; line    76
+   77    77                      ; line    77
+   78    78                      ; line    78
+   79    79                      ; line   161
+   80    80                      ; line   166
+   81    81                      ; line    57
+   82    82                      
+   83    83 -----                @@CODEL CSEG
+   84    84 00000                _R_CGC_Get_ResetSource:
+   85    85                      $DGL    1,19
+   86    86 00000  C7                    push    hl                                              ;[INF] 1, 1
+   87    87 00001                ??bf_R_CGC_Get_ResetSource:
+   88    88                      ; line    58
+   89    89                      $DGL    0,2
+   90    90 00001  8EA8                  mov     a,RESF                                          ;[INF] 2, 1
+   91    91                      ; line    61
+   92    92                      $DGL    0,5
+   93    93 00003                ??ef_R_CGC_Get_ResetSource:
+   94    94 00003  C6                    pop     hl                                              ;[INF] 1, 1
+   95    95 00004  D7                    ret                                                     ;[INF] 1, 6
+   96    96 00005                ??ee_R_CGC_Get_ResetSource:
+   97    97                      
+   98    98 -----                @@CODE  CSEG    BASE
+   99    99                      
+  100   100 -----                @@BASE  CSEG    BASE
+  101   101                              END
+  102   102                      
+  103   103                      
+  104   104                      ; *** Code Information ***
+  105   105                      ;
+  106   106                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  107   107                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\tools\project\CubeSu
+  108   108                      ;       ite\BLE_Embedded_for_Peripheral\cg_src\r_cg_cgc_user.c
+  109   109                      ;
+  110   110                      ; $FUNC R_CGC_Get_ResetSource(57)
+  111   111                      ;       void=(void)
+  112   112                      ;       CODE SIZE= 5 bytes, CLOCK_SIZE= 9 clocks, STACK_SIZE= 2 bytes
+  113   113                      
+  114   114                      ; Target chip : R5F11AGJ
+  115   115                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00005H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

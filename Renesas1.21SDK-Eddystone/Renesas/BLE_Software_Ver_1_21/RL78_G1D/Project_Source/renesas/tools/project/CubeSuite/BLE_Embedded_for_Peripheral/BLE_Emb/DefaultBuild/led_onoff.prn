@@ -1,0 +1,580 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\led_onoff.asm -_msgoff
+          -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\led_onoff.asm
+Obj-file: DefaultBuild\led_onoff.rel
+Prn-file: DefaultBuild\led_onoff.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:31
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\led_onoff\led_onof
+    5     5                      ;             f.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_E
+    6     6                      ;             XMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_R
+    7     7                      ;             BLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMP
+    8     8                      ;             LE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_
+    9     9                      ;             HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECL
+   10    10                      ;             IB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\
+   11    11                      ;             ..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\.
+   12    12                      ;             .\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataf
+   13    13                      ;             lash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i
+   14    14                      ;             ..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\.
+   15    15                      ;             .\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\
+   16    16                      ;             ..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf 
+   17    17                      ;             -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -
+   18    18                      ;             i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_
+   19    19                      ;             sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\dr
+   20    20                      ;             iver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..
+   21    21                      ;             \..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i.
+   22    22                      ;             .\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src
+   23    23                      ;             \sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -z
+   24    24                      ;             ps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\led_onoff\led_onoff.c
+   26    26                      ; Asm-file  : DefaultBuild\led_onoff.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         04BH,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, led_onoff.c
+   37    37                      $DGS    MOD_NAM, led_onoff,     00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    ENM_TAG, .7fake,        00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 01H,           019H
+   56    56                      $DGS    MEB_ENM, _R_LED3,       00H,    0FFFFH, 04H,    010H,   00H,    00H
+   57    57                      $DGS    MEB_ENM, _R_LED4,       01H,    0FFFFH, 04H,    010H,   00H,    00H
+   58    58                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   59    59                      $DGS    AUX_EOS, 013H,          01H
+   60    60                      $DGS    ENM_TAG, .8fake,        00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   61    61                      $DGS    AUX_TAG, 01H,           01FH
+   62    62                      $DGS    MEB_ENM, _R_LED_STATE_OFF,      00H,    0FFFFH, 04H,    010H,   00H,    00H
+   63    63                      $DGS    MEB_ENM, _R_LED_STATE_ON,       01H,    0FFFFH, 04H,    010H,   00H,    00H
+   64    64                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   65    65                      $DGS    AUX_EOS, 019H,          01H
+   66    66                      $DGS    LAB_SYM, bs_S0029,      U,      U,      00H,    06H,    00H,    00H
+   67    67                      $DGS    LAB_SYM, es_S0029,      U,      U,      00H,    06H,    00H,    00H
+   68    68                      $DGS    GLV_SYM, _led_onoff_init,       U,      U,      04H,    026H,   01H,    02H
+   69    69                      $DGS    AUX_FUN, 00H,           U,      U,      02DH,   01H,    00H
+   70    70                      $DGS    BEG_FUN, ??bf_led_onoff_init,   U,      U,      00H,    065H,   01H,    00H
+   71    71                      $DGS    AUX_BEG, 02CH,          02H,    027H
+   72    72                      $DGS    REG_PAR, _led,          06H,    0FFFFH, 010AH,  011H,   01H,    00H
+   73    73                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+   74    74                      $DGS    BEG_BLK, ??bb00_led_onoff_init, U,      U,      00H,    064H,   01H,    00H
+   75    75                      $DGS    AUX_BEG, 02H,           00H,    00H
+   76    76                      $DGS    END_BLK, ??eb00_led_onoff_init, U,      U,      00H,    064H,   01H,    00H
+   77    77                      $DGS    AUX_END, 010H
+   78    78                      $DGS    END_FUN, ??ef_led_onoff_init,   U,      U,      00H,    065H,   01H,    00H
+   79    79                      $DGS    AUX_END, 013H
+   80    80                      $DGS    GLV_SYM, _led_onoff_set,        U,      U,      04H,    026H,   01H,    02H
+   81    81                      $DGS    AUX_FUN, 00H,           U,      U,      03CH,   01H,    00H
+   82    82                      $DGS    BEG_FUN, ??bf_led_onoff_set,    U,      U,      00H,    065H,   01H,    00H
+   83    83                      $DGS    AUX_BEG, 041H,          04H,    036H
+   84    84                      $DGS    FUN_ARG, _led,          02H,    0FFFFH, 0AH,    09H,    01H,    00H
+   85    85                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+   86    86                      $DGS    FUN_ARG, _state,        0AH,    0FFFFH, 0AH,    09H,    01H,    00H
+   87    87                      $DGS    AUX_STR, 019H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+   88    88                      $DGS    AUT_VAR, _set,          01H,    0FFFFH, 0CH,    01H,    00H,    00H
+   89    89                      $DGS    BEG_BLK, ??bb00_led_onoff_set,  U,      U,      00H,    064H,   01H,    00H
+   90    90                      $DGS    AUX_BEG, 06H,           00H,    00H
+   91    91                      $DGS    END_BLK, ??eb00_led_onoff_set,  U,      U,      00H,    064H,   01H,    00H
+   92    92                      $DGS    AUX_END, 011H
+   93    93                      $DGS    END_FUN, ??ef_led_onoff_set,    U,      U,      00H,    065H,   01H,    00H
+   94    94                      $DGS    AUX_END, 014H
+   95    95                      $DGS    GLV_SYM, _led_onoff_state,      U,      U,      04H,    026H,   01H,    02H
+   96    96                      $DGS    AUX_FUN, 00H,           U,      U,      04BH,   01H,    00H
+   97    97                      $DGS    BEG_FUN, ??bf_led_onoff_state,  U,      U,      00H,    065H,   01H,    00H
+   98    98                      $DGS    AUX_BEG, 057H,          04H,    045H
+   99    99                      $DGS    FUN_ARG, _led,          02H,    0FFFFH, 0AH,    09H,    01H,    00H
+  100   100                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+  101   101                      $DGS    FUN_ARG, _state,        0AH,    0FFFFH, 0AH,    09H,    01H,    01H
+  102   102                      $DGS    AUX_STR, 019H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+  103   103                      $DGS    AUT_VAR, _val,          00H,    0FFFFH, 0DH,    01H,    00H,    00H
+  104   104                      $DGS    BEG_BLK, ??bb00_led_onoff_state,        U,      U,      00H,    064H,   01H,    00H
+  105   105                      $DGS    AUX_BEG, 04H,           00H,    00H
+  106   106                      $DGS    END_BLK, ??eb00_led_onoff_state,        U,      U,      00H,    064H,   01H,    00H
+  107   107                      $DGS    AUX_END, 0FH
+  108   108                      $DGS    END_FUN, ??ef_led_onoff_state,  U,      U,      00H,    065H,   01H,    00H
+  109   109                      $DGS    AUX_END, 014H
+  110   110                      
+  111   111                              PUBLIC  _led_onoff_init
+  112   112                              PUBLIC  _led_onoff_set
+  113   113                              PUBLIC  _led_onoff_state
+  114   114                      
+  115   115 -----                @@BITS  BSEG
+  116   116                      
+  117   117 -----                @@CNST  CSEG    MIRRORP
+  118   118                      
+  119   119 -----                @@R_INIT        CSEG    UNIT64KP
+  120   120                      
+  121   121 -----                @@INIT  DSEG    BASEP
+  122   122                      
+  123   123 -----                @@DATA  DSEG    BASEP
+  124   124                      
+  125   125 -----                @@R_INIS        CSEG    UNIT64KP
+  126   126                      
+  127   127 -----                @@INIS  DSEG    SADDRP
+  128   128                      
+  129   129 -----                @@DATS  DSEG    SADDRP
+  130   130                      
+  131   131 -----                @@CNSTL CSEG    PAGE64KP
+  132   132                      
+  133   133 -----                @@RLINIT        CSEG    UNIT64KP
+  134   134                      
+  135   135 -----                @@INITL DSEG    UNIT64KP
+  136   136                      
+  137   137 -----                @@DATAL DSEG    UNIT64KP
+  138   138                      
+  139   139 -----                @@CALT  CSEG    CALLT0
+  140   140                      
+  141   141                      ; Sub-Routines created by CC78K0R
+  142   142                      
+  143   143 -----                @@CODEL CSEG
+  144   144 00000                bs_S0029:
+  145   145 00000  8C02                  mov     a,[hl+2]                                        ;[INF] 2, 1
+  146   146 00002  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  147   147 00004  E7                    onew    bc                                              ;[INF] 1, 1
+  148   148 00005  240000                subw    ax,#00H ; 0                                     ;[INF] 3, 1
+  149   149 00008  D7                    ret                                                     ;[INF] 1, 6
+  150   150 00009                es_S0029:
+  151   151                      
+  152   152                      ; *** Sub-Routine Information ***
+  153   153                      ;
+  154   154                      ; $SUB bs_S0029
+  155   155                      ;      CODE SIZE= 9 bytes
+  156   156                      
+  157   157                      ; End of Sub-Routines
+  158   158                      
+  159   159                      ; line    13
+  160   160                      ; line    14
+  161   161                      ; line    13
+  162   162                      ; line    14
+  163   163                      ; line    15
+  164   164                      ; line    74
+  165   165                      ; line    75
+  166   166                      ; line    76
+  167   167                      ; line    77
+  168   168                      ; line    79
+  169   169                      ; line    80
+  170   170                      ; line    84
+  171   171                      ; line    85
+  172   172                      ; line    16
+  173   173                      ; line    18
+  174   174                      ; line    19
+  175   175                      ; line    20
+  176   176                      ; line    21
+  177   177                      ; line    22
+  178   178                      ; line    23
+  179   179                      ; line    24
+  180   180                      ; line    25
+  181   181                      ; line    26
+  182   182                      ; line    27
+  183   183                      ; line    28
+  184   184                      ; line    29
+  185   185                      ; line    30
+  186   186                      ; line    31
+  187   187                      ; line    32
+  188   188                      ; line    33
+  189   189                      ; line    35
+  190   190                      ; line    37
+  191   191                      ; line    38
+  192   192                      ; line    39
+  193   193                      ; line    40
+  194   194                      ; line    43
+  195   195                      ; line    45
+  196   196                      ; line    46
+  197   197                      ; line    47
+  198   198                      ; line    48
+  199   199                      ; line    49
+  200   200                      ; line    50
+  201   201                      ; line    51
+  202   202                      ; line    52
+  203   203                      ; line    53
+  204   204                      ; line    54
+  205   205                      ; line    55
+  206   206                      ; line    56
+  207   207                      ; line    57
+  208   208                      ; line    58
+  209   209                      ; line    59
+  210   210                      ; line    60
+  211   211                      ; line    62
+  212   212                      ; line    64
+  213   213                      ; line    65
+  214   214                      ; line    66
+  215   215                      ; line    69
+  216   216                      ; line    71
+  217   217                      ; line    72
+  218   218                      ; line    73
+  219   219                      ; line    74
+  220   220                      ; line    75
+  221   221                      ; line    76
+  222   222                      ; line    77
+  223   223                      ; line    78
+  224   224                      ; line    79
+  225   225                      ; line    80
+  226   226                      ; line    81
+  227   227                      ; line    82
+  228   228                      ; line    83
+  229   229                      ; line    84
+  230   230                      ; line    85
+  231   231                      ; line    86
+  232   232                      ; line    88
+  233   233                      ; line    90
+  234   234                      ; line    91
+  235   235                      ; line    92
+  236   236                      ; line    20
+  237   237                      ; line    25
+  238   238                      ; line    29
+  239   239                      ; line    30
+  240   240                      ; line    31
+  241   241                      ; line    32
+  242   242                      ; line    33
+  243   243                      ; line    34
+  244   244                      ; line    35
+  245   245                      ; line    36
+  246   246                      ; line    37
+  247   247                      ; line    38
+  248   248                      ; line    39
+  249   249                      ; line    40
+  250   250                      ; line    41
+  251   251                      ; line    42
+  252   252                      ; line    43
+  253   253                      ; line    45
+  254   254                      ; line    46
+  255   255                      ; line    51
+  256   256                      ; line    52
+  257   257                      ; line    54
+  258   258                      ; line    59
+  259   259                      ; line    60
+  260   260                      ; line    65
+  261   261                      ; line    66
+  262   262                      ; line    67
+  263   263                      ; line    68
+  264   264                      ; line    70
+  265   265                      ; line    71
+  266   266                      ; line    72
+  267   267                      ; line    73
+  268   268                      ; line    74
+  269   269                      ; line    75
+  270   270                      ; line    76
+  271   271                      ; line    78
+  272   272                      ; line    83
+  273   273                      ; line    84
+  274   274                      ; line    89
+  275   275                      ; line    90
+  276   276                      ; line    92
+  277   277                      ; line    93
+  278   278                      ; line    94
+  279   279                      ; line    95
+  280   280                      ; line    96
+  281   281                      ; line    97
+  282   282                      ; line    98
+  283   283                      ; line   100
+  284   284                      ; line   105
+  285   285                      ; line   106
+  286   286                      ; line   111
+  287   287                      ; line   112
+  288   288                      ; line    95
+  289   289                      ; line   220
+  290   290                      ; line   221
+  291   291                      ; line    22
+  292   292                      ; line    23
+  293   293                      ; line    67
+  294   294                      ; line    68
+  295   295                      ; line   125
+  296   296                      ; line    40
+  297   297                      ; line    45
+  298   298                      ; line    44
+  299   299                      
+  300   300 -----                @@CODEL CSEG
+  301   301 00009                _led_onoff_init:
+  302   302                      $DGL    1,33
+  303   303 00009  C7                    push    hl                                              ;[INF] 1, 1
+  304   304 0000A  16                    movw    hl,ax                                           ;[INF] 1, 1
+  305   305 0000B                ??bf_led_onoff_init:
+  306   306                      ; line    45
+  307   307                      $DGL    0,2
+  308   308 0000B  66                    mov     a,l                                             ;[INF] 1, 1
+  309   309 0000C  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  310   310 0000E  E7                    onew    bc                                              ;[INF] 1, 1
+  311   311 0000F  240000                subw    ax,#00H ; 0                                     ;[INF] 3, 1
+  312   312 00012  DD05                  bz      $?L0004                                         ;[INF] 2, 4
+  313   313 00014  23                    subw    ax,bc                                           ;[INF] 1, 1
+  314   314 00015  DD0E                  bz      $?L0005                                         ;[INF] 2, 4
+  315   315 00017  EF14                  br      $?L0006                                         ;[INF] 2, 3
+  316   316 00019                ??bb00_led_onoff_init:
+  317   317                      ; line    46
+  318   318 00019                ?L0004:
+  319   319                      ; line    47
+  320   320                      $DGL    0,4
+  321   321 00019  713B20                clr1    PM0.3                                           ;[INF] 3, 2
+  322   322                      ; line    48
+  323   323                      $DGL    0,5
+  324   324 0001C  71386000              clr1    !PMC0.3                                         ;[INF] 4, 2
+  325   325                      ; line    49
+  326   326                      $DGL    0,6
+  327   327 00020  713200                set1    P0.3                                            ;[INF] 3, 2
+  328   328                      ; line    50
+  329   329                      $DGL    0,7
+  330   330 00023  EF0C                  br      $?L0003                                         ;[INF] 2, 3
+  331   331                      ; line    52
+  332   332 00025                ?L0005:
+  333   333                      ; line    53
+  334   334                      $DGL    0,10
+  335   335 00025  710B26                clr1    PM6.0                                           ;[INF] 3, 2
+  336   336                      ; line    54
+  337   337                      $DGL    0,11
+  338   338 00028  710206                set1    P6.0                                            ;[INF] 3, 2
+  339   339                      ; line    55
+  340   340                      $DGL    0,12
+  341   341 0002B  EF04                  br      $?L0003                                         ;[INF] 2, 3
+  342   342                      ; line    57
+  343   343 0002D                ?L0006:
+  344   344                      ; line    58
+  345   345                      $DGL    0,15
+  346   346 0002D  F7                    clrw    bc                                              ;[INF] 1, 1
+  347   347 0002E  B3                    decw    bc                                              ;[INF] 1, 1
+  348   348 0002F  EF01                  br      $?L0002                                         ;[INF] 2, 3
+  349   349 00031                ??eb00_led_onoff_init:
+  350   350                      ; line    59
+  351   351 00031                ?L0003:
+  352   352                      ; line    61
+  353   353                      $DGL    0,18
+  354   354 00031  F7                    clrw    bc                                              ;[INF] 1, 1
+  355   355                      ; line    62
+  356   356 00032                ?L0002:
+  357   357                      ; line    62
+  358   358                      $DGL    0,19
+  359   359 00032                ??ef_led_onoff_init:
+  360   360 00032  C6                    pop     hl                                              ;[INF] 1, 1
+  361   361 00033  D7                    ret                                                     ;[INF] 1, 6
+  362   362 00034                ??ee_led_onoff_init:
+  363   363                      ; line    65
+  364   364 00034                _led_onoff_set:
+  365   365                      $DGL    1,45
+  366   366 00034  C7                    push    hl                                              ;[INF] 1, 1
+  367   367 00035  C1                    push    ax                                              ;[INF] 1, 1
+  368   368 00036  C1                    push    ax                                              ;[INF] 1, 1
+  369   369 00037  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  370   370 0003A                ??bf_led_onoff_set:
+  371   371                      ; line    68
+  372   372                      $DGL    0,4
+  373   373 0003A  8C0A                  mov     a,[hl+10]       ; state                         ;[INF] 2, 1
+  374   374 0003C  91                    dec     a                                               ;[INF] 1, 1
+  375   375 0003D  DF03                  bnz     $?L0011                                         ;[INF] 2, 4
+  376   376 0003F  F6                    clrw    ax                                              ;[INF] 1, 1
+  377   377 00040  EF01                  br      $?L0012                                         ;[INF] 2, 3
+  378   378 00042                ?L0011:
+  379   379 00042  E6                    onew    ax                                              ;[INF] 1, 1
+  380   380 00043                ?L0012:
+  381   381 00043  60                    mov     a,x                                             ;[INF] 1, 1
+  382   382 00044  9C01                  mov     [hl+1],a        ; set                           ;[INF] 2, 1
+  383   383                      ; line    70
+  384   384                      $DGL    0,6
+  385   385 00046  FEB7FF                call    $!bs_S0029                                      ;[INF] 3, 3
+  386   386 00049  DD05                  bz      $?L0014                                         ;[INF] 2, 4
+  387   387 0004B  23                    subw    ax,bc                                           ;[INF] 1, 1
+  388   388 0004C  DD0B                  bz      $?L0015                                         ;[INF] 2, 4
+  389   389 0004E  EF12                  br      $?L0016                                         ;[INF] 2, 3
+  390   390 00050                ??bb00_led_onoff_set:
+  391   391                      ; line    71
+  392   392 00050                ?L0014:
+  393   393                      ; line    72
+  394   394                      $DGL    0,8
+  395   395 00050  8C01                  mov     a,[hl+1]        ; set                           ;[INF] 2, 1
+  396   396 00052  718C                  mov1    CY,a.0                                          ;[INF] 2, 1
+  397   397 00054  713100                mov1    P0.3,CY                                         ;[INF] 3, 2
+  398   398                      ; line    73
+  399   399                      $DGL    0,9
+  400   400 00057  EF0D                  br      $?L0013                                         ;[INF] 2, 3
+  401   401                      ; line    75
+  402   402 00059                ?L0015:
+  403   403                      ; line    76
+  404   404                      $DGL    0,12
+  405   405 00059  8C01                  mov     a,[hl+1]        ; set                           ;[INF] 2, 1
+  406   406 0005B  718C                  mov1    CY,a.0                                          ;[INF] 2, 1
+  407   407 0005D  710106                mov1    P6.0,CY                                         ;[INF] 3, 2
+  408   408                      ; line    77
+  409   409                      $DGL    0,13
+  410   410 00060  EF04                  br      $?L0013                                         ;[INF] 2, 3
+  411   411                      ; line    79
+  412   412 00062                ?L0016:
+  413   413                      ; line    80
+  414   414                      $DGL    0,16
+  415   415 00062  F7                    clrw    bc                                              ;[INF] 1, 1
+  416   416 00063  B3                    decw    bc                                              ;[INF] 1, 1
+  417   417 00064  EF01                  br      $?L0010                                         ;[INF] 2, 3
+  418   418 00066                ??eb00_led_onoff_set:
+  419   419                      ; line    81
+  420   420 00066                ?L0013:
+  421   421                      ; line    83
+  422   422                      $DGL    0,19
+  423   423 00066  F7                    clrw    bc                                              ;[INF] 1, 1
+  424   424                      ; line    84
+  425   425 00067                ?L0010:
+  426   426                      ; line    84
+  427   427                      $DGL    0,20
+  428   428 00067                ??ef_led_onoff_set:
+  429   429 00067  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  430   430 00069  C6                    pop     hl                                              ;[INF] 1, 1
+  431   431 0006A  D7                    ret                                                     ;[INF] 1, 6
+  432   432 0006B                ??ee_led_onoff_set:
+  433   433                      ; line    87
+  434   434 0006B                _led_onoff_state:
+  435   435                      $DGL    1,60
+  436   436 0006B  C7                    push    hl                                              ;[INF] 1, 1
+  437   437 0006C  C1                    push    ax                                              ;[INF] 1, 1
+  438   438 0006D  C1                    push    ax                                              ;[INF] 1, 1
+  439   439 0006E  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  440   440 00071                ??bf_led_onoff_state:
+  441   441                      ; line    90
+  442   442                      $DGL    0,4
+  443   443 00071  FE8CFF                call    $!bs_S0029                                      ;[INF] 3, 3
+  444   444 00074  DD05                  bz      $?L0022                                         ;[INF] 2, 4
+  445   445 00076  23                    subw    ax,bc                                           ;[INF] 1, 1
+  446   446 00077  DD0B                  bz      $?L0023                                         ;[INF] 2, 4
+  447   447 00079  EF12                  br      $?L0024                                         ;[INF] 2, 3
+  448   448 0007B                ??bb00_led_onoff_state:
+  449   449                      ; line    91
+  450   450 0007B                ?L0022:
+  451   451                      ; line    92
+  452   452                      $DGL    0,6
+  453   453 0007B  F6                    clrw    ax                                              ;[INF] 1, 1
+  454   454 0007C  713400                mov1    CY,P0.3                                         ;[INF] 3, 1
+  455   455 0007F  6110                  addc    x,a                                             ;[INF] 2, 1
+  456   456 00081  BB                    movw    [hl],ax ; val                                   ;[INF] 1, 1
+  457   457                      ; line    93
+  458   458                      $DGL    0,7
+  459   459 00082  EF0D                  br      $?L0021                                         ;[INF] 2, 3
+  460   460                      ; line    95
+  461   461 00084                ?L0023:
+  462   462                      ; line    96
+  463   463                      $DGL    0,10
+  464   464 00084  F6                    clrw    ax                                              ;[INF] 1, 1
+  465   465 00085  710406                mov1    CY,P6.0                                         ;[INF] 3, 1
+  466   466 00088  6110                  addc    x,a                                             ;[INF] 2, 1
+  467   467 0008A  BB                    movw    [hl],ax ; val                                   ;[INF] 1, 1
+  468   468                      ; line    97
+  469   469                      $DGL    0,11
+  470   470 0008B  EF04                  br      $?L0021                                         ;[INF] 2, 3
+  471   471                      ; line    99
+  472   472 0008D                ?L0024:
+  473   473                      ; line   100
+  474   474                      $DGL    0,14
+  475   475 0008D  F7                    clrw    bc                                              ;[INF] 1, 1
+  476   476 0008E  B3                    decw    bc                                              ;[INF] 1, 1
+  477   477 0008F  EF13                  br      $?L0020                                         ;[INF] 2, 3
+  478   478 00091                ??eb00_led_onoff_state:
+  479   479                      ; line   101
+  480   480 00091                ?L0021:
+  481   481                      ; line   103
+  482   482                      $DGL    0,17
+  483   483 00091  F6                    clrw    ax                                              ;[INF] 1, 1
+  484   484 00092  614900                cmpw    ax,[hl+0]       ; val                           ;[INF] 3, 1
+  485   485 00095  DF03                  bnz     $?L0027                                         ;[INF] 2, 4
+  486   486 00097  E6                    onew    ax                                              ;[INF] 1, 1
+  487   487 00098  EF01                  br      $?L0028                                         ;[INF] 2, 3
+  488   488 0009A                ?L0027:
+  489   489 0009A  F6                    clrw    ax                                              ;[INF] 1, 1
+  490   490 0009B                ?L0028:
+  491   491 0009B  08                    xch     a,x                                             ;[INF] 1, 1
+  492   492 0009C  72                    mov     c,a                                             ;[INF] 1, 1
+  493   493 0009D  08                    xch     a,x                                             ;[INF] 1, 1
+  494   494 0009E  AC0A                  movw    ax,[hl+10]      ; state                         ;[INF] 2, 1
+  495   495 000A0  14                    movw    de,ax                                           ;[INF] 1, 1
+  496   496 000A1  62                    mov     a,c                                             ;[INF] 1, 1
+  497   497 000A2  99                    mov     [de],a                                          ;[INF] 1, 1
+  498   498                      ; line   105
+  499   499                      $DGL    0,19
+  500   500 000A3  F7                    clrw    bc                                              ;[INF] 1, 1
+  501   501                      ; line   106
+  502   502 000A4                ?L0020:
+  503   503                      ; line   106
+  504   504                      $DGL    0,20
+  505   505 000A4                ??ef_led_onoff_state:
+  506   506 000A4  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  507   507 000A6  C6                    pop     hl                                              ;[INF] 1, 1
+  508   508 000A7  D7                    ret                                                     ;[INF] 1, 6
+  509   509 000A8                ??ee_led_onoff_state:
+  510   510                      
+  511   511 -----                @@CODE  CSEG    BASE
+  512   512                      
+  513   513 -----                @@BASE  CSEG    BASE
+  514   514                              END
+  515   515                      
+  516   516                      
+  517   517                      ; *** Code Information ***
+  518   518                      ;
+  519   519                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  520   520                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\driver\led_onoff
+  521   521                      ;       \led_onoff.c
+  522   522                      ;
+  523   523                      ; $FUNC led_onoff_init(44)
+  524   524                      ;       bc=(char led:x)
+  525   525                      ;       CODE SIZE= 43 bytes, CLOCK_SIZE= 47 clocks, STACK_SIZE= 2 bytes
+  526   526                      ;
+  527   527                      ; $FUNC led_onoff_set(65)
+  528   528                      ;       bc=(char led:x, char state:[sp+4])
+  529   529                      ;       CODE SIZE= 55 bytes, CLOCK_SIZE= 70 clocks, STACK_SIZE= 10 bytes
+  530   530                      ;
+  531   531                      ; $FUNC led_onoff_state(87)
+  532   532                      ;       bc=(char led:x, pointer state:[sp+4])
+  533   533                      ;       CODE SIZE= 61 bytes, CLOCK_SIZE= 75 clocks, STACK_SIZE= 10 bytes
+  534   534                      
+  535   535                      ; Target chip : R5F11AGJ
+  536   536                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 000A8H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

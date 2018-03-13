@@ -1,0 +1,274 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\fw_update_count0.asm -_
+          msgoff -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\fw_update_count0.asm
+Obj-file: DefaultBuild\fw_update_count0.rel
+Prn-file: DefaultBuild\fw_update_count0.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:24
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\arch\rl78\fw_update_count
+    5     5                      ;             0.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_E
+    6     6                      ;             XMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_R
+    7     7                      ;             BLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMP
+    8     8                      ;             LE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_
+    9     9                      ;             HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECL
+   10    10                      ;             IB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\
+   11    11                      ;             ..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\.
+   12    12                      ;             .\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataf
+   13    13                      ;             lash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i
+   14    14                      ;             ..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\.
+   15    15                      ;             .\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\
+   16    16                      ;             ..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf 
+   17    17                      ;             -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -
+   18    18                      ;             i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_
+   19    19                      ;             sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\dr
+   20    20                      ;             iver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..
+   21    21                      ;             \..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i.
+   22    22                      ;             .\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src
+   23    23                      ;             \sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -z
+   24    24                      ;             ps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\arch\rl78\fw_update_count0.c
+   26    26                      ; Asm-file  : DefaultBuild\fw_update_count0.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         013H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, fw_update_count0.c
+   37    37                      $DGS    MOD_NAM, fw_update_count0,      00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, MAIN_CN0,      U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    GLV_SYM, _fw_update_count_0,    U,      U,      0D00DH, 026H,   00H,    00H
+   55    55                      
+   56    56                              PUBLIC  _fw_update_count_0
+   57    57                      
+   58    58 -----                @@BITS  BSEG
+   59    59                      
+   60    60 -----                @@CNST  CSEG    MIRRORP
+   61    61                      
+   62    62 -----                @@R_INIT        CSEG    UNIT64KP
+   63    63                      
+   64    64 -----                @@INIT  DSEG    BASEP
+   65    65                      
+   66    66 -----                @@DATA  DSEG    BASEP
+   67    67                      
+   68    68 -----                @@R_INIS        CSEG    UNIT64KP
+   69    69                      
+   70    70 -----                @@INIS  DSEG    SADDRP
+   71    71                      
+   72    72 -----                @@DATS  DSEG    SADDRP
+   73    73                      
+   74    74 -----                MAIN_CN0        CSEG    PAGE64KP
+   75    75 00000  0000          _fw_update_count_0:     DW      00H     ; 0
+   76    76                      
+   77    77 -----                @@RLINIT        CSEG    UNIT64KP
+   78    78                      
+   79    79 -----                @@INITL DSEG    UNIT64KP
+   80    80                      
+   81    81 -----                @@DATAL DSEG    UNIT64KP
+   82    82                      
+   83    83 -----                @@CALT  CSEG    CALLT0
+   84    84                      
+   85    85                      ; line    13
+   86    86                      ; line    14
+   87    87                      ; line    13
+   88    88                      ; line    14
+   89    89                      ; line    15
+   90    90                      ; line    74
+   91    91                      ; line    75
+   92    92                      ; line    76
+   93    93                      ; line    77
+   94    94                      ; line    79
+   95    95                      ; line    80
+   96    96                      ; line    84
+   97    97                      ; line    85
+   98    98                      ; line    16
+   99    99                      ; line    18
+  100   100                      ; line    19
+  101   101                      ; line    20
+  102   102                      ; line    21
+  103   103                      ; line    22
+  104   104                      ; line    23
+  105   105                      ; line    24
+  106   106                      ; line    25
+  107   107                      ; line    26
+  108   108                      ; line    27
+  109   109                      ; line    28
+  110   110                      ; line    29
+  111   111                      ; line    30
+  112   112                      ; line    31
+  113   113                      ; line    32
+  114   114                      ; line    33
+  115   115                      ; line    35
+  116   116                      ; line    37
+  117   117                      ; line    38
+  118   118                      ; line    39
+  119   119                      ; line    40
+  120   120                      ; line    43
+  121   121                      ; line    45
+  122   122                      ; line    46
+  123   123                      ; line    47
+  124   124                      ; line    48
+  125   125                      ; line    49
+  126   126                      ; line    50
+  127   127                      ; line    51
+  128   128                      ; line    52
+  129   129                      ; line    53
+  130   130                      ; line    54
+  131   131                      ; line    55
+  132   132                      ; line    56
+  133   133                      ; line    57
+  134   134                      ; line    58
+  135   135                      ; line    59
+  136   136                      ; line    60
+  137   137                      ; line    62
+  138   138                      ; line    64
+  139   139                      ; line    65
+  140   140                      ; line    66
+  141   141                      ; line    69
+  142   142                      ; line    71
+  143   143                      ; line    72
+  144   144                      ; line    73
+  145   145                      ; line    74
+  146   146                      ; line    75
+  147   147                      ; line    76
+  148   148                      ; line    77
+  149   149                      ; line    78
+  150   150                      ; line    79
+  151   151                      ; line    80
+  152   152                      ; line    81
+  153   153                      ; line    82
+  154   154                      ; line    83
+  155   155                      ; line    84
+  156   156                      ; line    85
+  157   157                      ; line    86
+  158   158                      ; line    88
+  159   159                      ; line    90
+  160   160                      ; line    91
+  161   161                      ; line    92
+  162   162                      ; line    20
+  163   163                      ; line    25
+  164   164                      ; line    29
+  165   165                      ; line    30
+  166   166                      ; line    31
+  167   167                      ; line    32
+  168   168                      ; line    33
+  169   169                      ; line    34
+  170   170                      ; line    35
+  171   171                      ; line    36
+  172   172                      ; line    37
+  173   173                      ; line    38
+  174   174                      ; line    39
+  175   175                      ; line    40
+  176   176                      ; line    41
+  177   177                      ; line    42
+  178   178                      ; line    43
+  179   179                      ; line    45
+  180   180                      ; line    46
+  181   181                      ; line    51
+  182   182                      ; line    52
+  183   183                      ; line    54
+  184   184                      ; line    59
+  185   185                      ; line    60
+  186   186                      ; line    65
+  187   187                      ; line    66
+  188   188                      ; line    67
+  189   189                      ; line    68
+  190   190                      ; line    70
+  191   191                      ; line    71
+  192   192                      ; line    72
+  193   193                      ; line    73
+  194   194                      ; line    74
+  195   195                      ; line    75
+  196   196                      ; line    76
+  197   197                      ; line    78
+  198   198                      ; line    83
+  199   199                      ; line    84
+  200   200                      ; line    89
+  201   201                      ; line    90
+  202   202                      ; line    92
+  203   203                      ; line    93
+  204   204                      ; line    94
+  205   205                      ; line    95
+  206   206                      ; line    96
+  207   207                      ; line    97
+  208   208                      ; line    98
+  209   209                      ; line   100
+  210   210                      ; line   105
+  211   211                      ; line   106
+  212   212                      ; line   111
+  213   213                      ; line   112
+  214   214                      ; line    95
+  215   215                      ; line   220
+  216   216                      ; line   221
+  217   217                      ; line    26
+  218   218                      
+  219   219 -----                @@CODE  CSEG    BASE
+  220   220                      
+  221   221 -----                @@CODEL CSEG
+  222   222                      
+  223   223 -----                @@BASE  CSEG    BASE
+  224   224                              END
+  225   225                      
+  226   226                      
+  227   227                      ; *** Code Information ***
+  228   228                      
+  229   229                      ; Target chip : R5F11AGJ
+  230   230                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00002H   MAIN_CN0
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00000H   @@CODE
+00000 00000H   @@CODEL
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

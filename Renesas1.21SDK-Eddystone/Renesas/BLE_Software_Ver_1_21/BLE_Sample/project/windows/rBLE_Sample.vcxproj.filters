@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{a343b917-6bf0-41b2-9e77-2f8a40d3285d}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
+    </Filter>
+    <Filter Include="Source Files\rBLE">
+      <UniqueIdentifier>{2244c5f2-5c24-4e1a-b515-6437d680131f}</UniqueIdentifier>
+      <Extensions>c</Extensions>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src">
+      <UniqueIdentifier>{3157905d-21e7-48c1-afbc-4b1ef2102ed9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\rscip">
+      <UniqueIdentifier>{34175d36-9b6c-48c1-8fa1-d003d02a3094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\sample_app">
+      <UniqueIdentifier>{98b147c0-a00c-464b-ba50-b36b6fc907ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host">
+      <UniqueIdentifier>{4772cc64-a8a4-422a-9edf-3007550b96f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\blp">
+      <UniqueIdentifier>{9af210bb-e50e-47a4-b7ec-f81ca12b1214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\fmp">
+      <UniqueIdentifier>{688483f6-c5bd-4bfe-b1db-60b5ffbe5367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\gap">
+      <UniqueIdentifier>{6b342e03-ee43-434b-bb3f-d54123ebb779}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\htp">
+      <UniqueIdentifier>{b9e66c18-4e6d-424e-9a7b-45089dc8f0b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\pxp">
+      <UniqueIdentifier>{9575450d-bdeb-4d33-99e8-5246eff7122b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\sm">
+      <UniqueIdentifier>{557a07c7-798b-4c0a-bd71-8abec7d2d25c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\vs">
+      <UniqueIdentifier>{3e7eb006-fdca-47af-97bb-e383d477b351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\hogp">
+      <UniqueIdentifier>{cba6a5cb-f598-4efd-816c-174d116a9b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\scpp">
+      <UniqueIdentifier>{b8511dee-84cf-45f1-ae3f-fd5970e19343}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\gatt">
+      <UniqueIdentifier>{ecd08783-7816-4a49-b9b9-12047ddd217b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\cscp">
+      <UniqueIdentifier>{74ba7f89-b9df-44ac-b427-367f5e6de11b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\hrp">
+      <UniqueIdentifier>{fc70cef0-7100-4028-a028-c83401c3d36c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\glp">
+      <UniqueIdentifier>{b1f622c3-92d8-4b62-9351-d483b014e063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\cpp">
+      <UniqueIdentifier>{3668bc45-01ca-486d-83e6-1021e9743b41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\tip">
+      <UniqueIdentifier>{30454e2a-8c18-4479-8677-f420b077565a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\anp">
+      <UniqueIdentifier>{566de78f-923f-4e28-a844-465f46065a11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\lnp">
+      <UniqueIdentifier>{ea957bb5-0f9b-4145-96a2-768753f566fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\rscp">
+      <UniqueIdentifier>{803f540d-da25-47de-b52c-8f2d24cd6d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\host\pasp">
+      <UniqueIdentifier>{30892d83-bc49-47e6-aac7-7ee634bb641b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\sample_profile">
+      <UniqueIdentifier>{a9cc49a3-93a9-48d9-ab16-50db3f0a3842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\sample_profile\scp">
+      <UniqueIdentifier>{05054930-cb6e-45e2-9192-65f3f595f596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\rBLE\src\sample_profile\fwup">
+      <UniqueIdentifier>{47ca8561-5791-4ae2-9f2a-8e52be81ba4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver">
+      <UniqueIdentifier>{6d4c41d5-47e2-4898-9773-7712bd09f15b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver\Serial">
+      <UniqueIdentifier>{b65b4718-66f8-4a44-91b2-3c0d659cc31a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver\Timer">
+      <UniqueIdentifier>{06f999c9-3833-44fb-8936-ba31f1c49f18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Driver\Console">
+      <UniqueIdentifier>{bc2953aa-169f-4d90-be3e-e06b4b78dc91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{37155261-c971-4234-876d-92ae94d97e68}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{32399b18-a33c-40fc-886c-e0e69e0dcf2e}</UniqueIdentifier>
+      <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Platform\win32_vc\rBLE_Sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Platform\win32_vc\StdAfx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\rscip\rscip.c">
+      <Filter>Source Files\rBLE\src\rscip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\rscip\rscip_cntl.c">
+      <Filter>Source Files\rBLE\src\rscip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\rscip\rscip_uart.c">
+      <Filter>Source Files\rBLE\src\rscip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\menu_sel.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_fw_up_sender_app.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\rble_host.c">
+      <Filter>Source Files\rBLE\src\host</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\rble_if_api_cb.c">
+      <Filter>Source Files\rBLE\src\host</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\blp\rble_api_blpc.c">
+      <Filter>Source Files\rBLE\src\host\blp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\blp\rble_api_blps.c">
+      <Filter>Source Files\rBLE\src\host\blp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\fmp\rble_api_fmpl.c">
+      <Filter>Source Files\rBLE\src\host\fmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\fmp\rble_api_fmpt.c">
+      <Filter>Source Files\rBLE\src\host\fmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\gap\rble_api_gap.c">
+      <Filter>Source Files\rBLE\src\host\gap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\htp\rble_api_htpc.c">
+      <Filter>Source Files\rBLE\src\host\htp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\htp\rble_api_htpt.c">
+      <Filter>Source Files\rBLE\src\host\htp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\pxp\rble_api_pxpm.c">
+      <Filter>Source Files\rBLE\src\host\pxp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\pxp\rble_api_pxpr.c">
+      <Filter>Source Files\rBLE\src\host\pxp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\sm\rble_api_sm.c">
+      <Filter>Source Files\rBLE\src\host\sm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\vs\rble_api_vs.c">
+      <Filter>Source Files\rBLE\src\host\vs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\hogp\rble_api_hgbh.c">
+      <Filter>Source Files\rBLE\src\host\hogp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\hogp\rble_api_hghd.c">
+      <Filter>Source Files\rBLE\src\host\hogp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\hogp\rble_api_hgrh.c">
+      <Filter>Source Files\rBLE\src\host\hogp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\scpp\rble_api_sppc.c">
+      <Filter>Source Files\rBLE\src\host\scpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\scpp\rble_api_spps.c">
+      <Filter>Source Files\rBLE\src\host\scpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\gatt\rble_api_gatt.c">
+      <Filter>Source Files\rBLE\src\host\gatt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\cscp\rble_api_cscpc.c">
+      <Filter>Source Files\rBLE\src\host\cscp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\cscp\rble_api_cscps.c">
+      <Filter>Source Files\rBLE\src\host\cscp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\hrp\rble_api_hrpc.c">
+      <Filter>Source Files\rBLE\src\host\hrp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\hrp\rble_api_hrps.c">
+      <Filter>Source Files\rBLE\src\host\hrp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\glp\rble_api_glpc.c">
+      <Filter>Source Files\rBLE\src\host\glp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\glp\rble_api_glps.c">
+      <Filter>Source Files\rBLE\src\host\glp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\cpp\rble_api_cppc.c">
+      <Filter>Source Files\rBLE\src\host\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\cpp\rble_api_cpps.c">
+      <Filter>Source Files\rBLE\src\host\cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\tip\rble_api_tipc.c">
+      <Filter>Source Files\rBLE\src\host\tip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\tip\rble_api_tips.c">
+      <Filter>Source Files\rBLE\src\host\tip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\anp\rble_api_anpc.c">
+      <Filter>Source Files\rBLE\src\host\anp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\anp\rble_api_anps.c">
+      <Filter>Source Files\rBLE\src\host\anp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\lnp\rble_api_lnpc.c">
+      <Filter>Source Files\rBLE\src\host\lnp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\lnp\rble_api_lnps.c">
+      <Filter>Source Files\rBLE\src\host\lnp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\rscp\rble_api_rscpc.c">
+      <Filter>Source Files\rBLE\src\host\rscp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\rscp\rble_api_rscps.c">
+      <Filter>Source Files\rBLE\src\host\rscp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\pasp\rble_api_paspc.c">
+      <Filter>Source Files\rBLE\src\host\pasp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\host\pasp\rble_api_pasps.c">
+      <Filter>Source Files\rBLE\src\host\pasp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_profile\scp\scpc.c">
+      <Filter>Source Files\rBLE\src\sample_profile\scp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_profile\scp\scps.c">
+      <Filter>Source Files\rBLE\src\sample_profile\scp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_profile\fwup\fwups.c">
+      <Filter>Source Files\rBLE\src\sample_profile\fwup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Platform\win32_vc\driver\serial\Serial_drv_sample.cpp">
+      <Filter>Source Files\Driver\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Platform\win32_vc\driver\serial\SerialIF.cpp">
+      <Filter>Source Files\Driver\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Platform\win32_vc\driver\timer\timer.cpp">
+      <Filter>Source Files\Driver\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\Platform\win32_vc\driver\console\Console.c">
+      <Filter>Source Files\Driver\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_anp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_blp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_cpp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_cscp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_custom.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_fmp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_fwup.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_gap_sm_gatt.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_glp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_hogp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_hrp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_htp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_lnp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_pasp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_pxp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_rscp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_scpp.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_tip.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\rBLE\src\sample_app\rble_sample_app_vendor.c">
+      <Filter>Source Files\rBLE\src\sample_app</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Platform\win32_vc\StdAfx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

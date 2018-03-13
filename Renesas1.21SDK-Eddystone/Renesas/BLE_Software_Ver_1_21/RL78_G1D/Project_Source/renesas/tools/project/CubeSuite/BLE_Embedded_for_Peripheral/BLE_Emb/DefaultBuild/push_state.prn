@@ -1,0 +1,482 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\push_state.asm -_msgoff
+          -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\push_state.asm
+Obj-file: DefaultBuild\push_state.rel
+Prn-file: DefaultBuild\push_state.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:31
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\push_state\push_st
+    5     5                      ;             ate.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG
+    6     6                      ;             _EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG
+    7     7                      ;             _RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SA
+    8     8                      ;             MPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CL
+    9     9                      ;             K_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SE
+   10    10                      ;             CLIB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\.
+   11    11                      ;             .\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..
+   12    12                      ;             \..\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dat
+   13    13                      ;             aflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src 
+   14    14                      ;             -i..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..
+   15    15                      ;             \..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i.
+   16    16                      ;             .\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\pl
+   17    17                      ;             f -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf
+   18    18                      ;              -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\pus
+   19    19                      ;             h_sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\
+   20    20                      ;             driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\
+   21    21                      ;             ..\..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -
+   22    22                      ;             i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\s
+   23    23                      ;             rc\sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile 
+   24    24                      ;             -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\push_state\push_state.c
+   26    26                      ; Asm-file  : DefaultBuild\push_state.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         03EH,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, push_state.c
+   37    37                      $DGS    MOD_NAM, push_state,    00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    ENM_TAG, .7fake,        00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 01H,           019H
+   56    56                      $DGS    MEB_ENM, _R_SW3,        00H,    0FFFFH, 04H,    010H,   00H,    00H
+   57    57                      $DGS    MEB_ENM, _R_SW4,        01H,    0FFFFH, 04H,    010H,   00H,    00H
+   58    58                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   59    59                      $DGS    AUX_EOS, 013H,          01H
+   60    60                      $DGS    ENM_TAG, .8fake,        00H,    0FFFEH, 0AH,    0FH,    01H,    00H
+   61    61                      $DGS    AUX_TAG, 01H,           01FH
+   62    62                      $DGS    MEB_ENM, _R_PUSH_STATE_RELEASE, 00H,    0FFFFH, 04H,    010H,   00H,    00H
+   63    63                      $DGS    MEB_ENM, _R_PUSH_STATE_PUSH,    01H,    0FFFFH, 04H,    010H,   00H,    00H
+   64    64                      $DGS    END_STR, .eos,          01H,    0FFFFH, 00H,    066H,   01H,    00H
+   65    65                      $DGS    AUX_EOS, 019H,          01H
+   66    66                      $DGS    GLV_SYM, _push_state_init,      U,      U,      04H,    026H,   01H,    02H
+   67    67                      $DGS    AUX_FUN, 00H,           U,      U,      02BH,   01H,    00H
+   68    68                      $DGS    BEG_FUN, ??bf_push_state_init,  U,      U,      00H,    065H,   01H,    00H
+   69    69                      $DGS    AUX_BEG, 02BH,          02H,    025H
+   70    70                      $DGS    REG_PAR, _sw,           06H,    0FFFFH, 010AH,  011H,   01H,    00H
+   71    71                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+   72    72                      $DGS    BEG_BLK, ??bb00_push_state_init,        U,      U,      00H,    064H,   01H,    00H
+   73    73                      $DGS    AUX_BEG, 02H,           00H,    00H
+   74    74                      $DGS    END_BLK, ??eb00_push_state_init,        U,      U,      00H,    064H,   01H,    00H
+   75    75                      $DGS    AUX_END, 0DH
+   76    76                      $DGS    END_FUN, ??ef_push_state_init,  U,      U,      00H,    065H,   01H,    00H
+   77    77                      $DGS    AUX_END, 010H
+   78    78                      $DGS    GLV_SYM, _push_state,   U,      U,      04H,    026H,   01H,    02H
+   79    79                      $DGS    AUX_FUN, 00H,           U,      U,      03EH,   01H,    00H
+   80    80                      $DGS    BEG_FUN, ??bf_push_state,       U,      U,      00H,    065H,   01H,    00H
+   81    81                      $DGS    AUX_BEG, 03DH,          04H,    034H
+   82    82                      $DGS    FUN_ARG, _sw,           02H,    0FFFFH, 0AH,    09H,    01H,    00H
+   83    83                      $DGS    AUX_STR, 013H,          00H,    01H,    00H,    00H,    00H,    00H,    00H
+   84    84                      $DGS    FUN_ARG, _state,        0AH,    0FFFFH, 0AH,    09H,    01H,    01H
+   85    85                      $DGS    AUX_STR, 019H,          00H,    02H,    00H,    00H,    00H,    00H,    01H
+   86    86                      $DGS    AUT_VAR, _val,          01H,    0FFFFH, 0CH,    01H,    00H,    00H
+   87    87                      $DGS    BEG_BLK, ??bb00_push_state,     U,      U,      00H,    064H,   01H,    00H
+   88    88                      $DGS    AUX_BEG, 04H,           00H,    038H
+   89    89                      $DGS    END_BLK, ??eb00_push_state,     U,      U,      00H,    064H,   01H,    00H
+   90    90                      $DGS    AUX_END, 06H
+   91    91                      $DGS    BEG_BLK, ??bb01_push_state,     U,      U,      00H,    064H,   01H,    00H
+   92    92                      $DGS    AUX_BEG, 08H,           00H,    00H
+   93    93                      $DGS    END_BLK, ??eb01_push_state,     U,      U,      00H,    064H,   01H,    00H
+   94    94                      $DGS    AUX_END, 013H
+   95    95                      $DGS    END_FUN, ??ef_push_state,       U,      U,      00H,    065H,   01H,    00H
+   96    96                      $DGS    AUX_END, 018H
+   97    97                      
+   98    98                              PUBLIC  _push_state_init
+   99    99                              PUBLIC  _push_state
+  100   100                      
+  101   101 -----                @@BITS  BSEG
+  102   102                      
+  103   103 -----                @@CNST  CSEG    MIRRORP
+  104   104                      
+  105   105 -----                @@R_INIT        CSEG    UNIT64KP
+  106   106                      
+  107   107 -----                @@INIT  DSEG    BASEP
+  108   108                      
+  109   109 -----                @@DATA  DSEG    BASEP
+  110   110                      
+  111   111 -----                @@R_INIS        CSEG    UNIT64KP
+  112   112                      
+  113   113 -----                @@INIS  DSEG    SADDRP
+  114   114                      
+  115   115 -----                @@DATS  DSEG    SADDRP
+  116   116                      
+  117   117 -----                @@CNSTL CSEG    PAGE64KP
+  118   118                      
+  119   119 -----                @@RLINIT        CSEG    UNIT64KP
+  120   120                      
+  121   121 -----                @@INITL DSEG    UNIT64KP
+  122   122                      
+  123   123 -----                @@DATAL DSEG    UNIT64KP
+  124   124                      
+  125   125 -----                @@CALT  CSEG    CALLT0
+  126   126                      
+  127   127                      ; line    13
+  128   128                      ; line    14
+  129   129                      ; line    13
+  130   130                      ; line    14
+  131   131                      ; line    15
+  132   132                      ; line    74
+  133   133                      ; line    75
+  134   134                      ; line    76
+  135   135                      ; line    77
+  136   136                      ; line    79
+  137   137                      ; line    80
+  138   138                      ; line    84
+  139   139                      ; line    85
+  140   140                      ; line    16
+  141   141                      ; line    18
+  142   142                      ; line    19
+  143   143                      ; line    20
+  144   144                      ; line    21
+  145   145                      ; line    22
+  146   146                      ; line    23
+  147   147                      ; line    24
+  148   148                      ; line    25
+  149   149                      ; line    26
+  150   150                      ; line    27
+  151   151                      ; line    28
+  152   152                      ; line    29
+  153   153                      ; line    30
+  154   154                      ; line    31
+  155   155                      ; line    32
+  156   156                      ; line    33
+  157   157                      ; line    35
+  158   158                      ; line    37
+  159   159                      ; line    38
+  160   160                      ; line    39
+  161   161                      ; line    40
+  162   162                      ; line    43
+  163   163                      ; line    45
+  164   164                      ; line    46
+  165   165                      ; line    47
+  166   166                      ; line    48
+  167   167                      ; line    49
+  168   168                      ; line    50
+  169   169                      ; line    51
+  170   170                      ; line    52
+  171   171                      ; line    53
+  172   172                      ; line    54
+  173   173                      ; line    55
+  174   174                      ; line    56
+  175   175                      ; line    57
+  176   176                      ; line    58
+  177   177                      ; line    59
+  178   178                      ; line    60
+  179   179                      ; line    62
+  180   180                      ; line    64
+  181   181                      ; line    65
+  182   182                      ; line    66
+  183   183                      ; line    69
+  184   184                      ; line    71
+  185   185                      ; line    72
+  186   186                      ; line    73
+  187   187                      ; line    74
+  188   188                      ; line    75
+  189   189                      ; line    76
+  190   190                      ; line    77
+  191   191                      ; line    78
+  192   192                      ; line    79
+  193   193                      ; line    80
+  194   194                      ; line    81
+  195   195                      ; line    82
+  196   196                      ; line    83
+  197   197                      ; line    84
+  198   198                      ; line    85
+  199   199                      ; line    86
+  200   200                      ; line    88
+  201   201                      ; line    90
+  202   202                      ; line    91
+  203   203                      ; line    92
+  204   204                      ; line    20
+  205   205                      ; line    25
+  206   206                      ; line    29
+  207   207                      ; line    30
+  208   208                      ; line    31
+  209   209                      ; line    32
+  210   210                      ; line    33
+  211   211                      ; line    34
+  212   212                      ; line    35
+  213   213                      ; line    36
+  214   214                      ; line    37
+  215   215                      ; line    38
+  216   216                      ; line    39
+  217   217                      ; line    40
+  218   218                      ; line    41
+  219   219                      ; line    42
+  220   220                      ; line    43
+  221   221                      ; line    45
+  222   222                      ; line    46
+  223   223                      ; line    51
+  224   224                      ; line    52
+  225   225                      ; line    54
+  226   226                      ; line    59
+  227   227                      ; line    60
+  228   228                      ; line    65
+  229   229                      ; line    66
+  230   230                      ; line    67
+  231   231                      ; line    68
+  232   232                      ; line    70
+  233   233                      ; line    71
+  234   234                      ; line    72
+  235   235                      ; line    73
+  236   236                      ; line    74
+  237   237                      ; line    75
+  238   238                      ; line    76
+  239   239                      ; line    78
+  240   240                      ; line    83
+  241   241                      ; line    84
+  242   242                      ; line    89
+  243   243                      ; line    90
+  244   244                      ; line    92
+  245   245                      ; line    93
+  246   246                      ; line    94
+  247   247                      ; line    95
+  248   248                      ; line    96
+  249   249                      ; line    97
+  250   250                      ; line    98
+  251   251                      ; line   100
+  252   252                      ; line   105
+  253   253                      ; line   106
+  254   254                      ; line   111
+  255   255                      ; line   112
+  256   256                      ; line    95
+  257   257                      ; line   220
+  258   258                      ; line   221
+  259   259                      ; line    22
+  260   260                      ; line    23
+  261   261                      ; line    67
+  262   262                      ; line    68
+  263   263                      ; line   125
+  264   264                      ; line    40
+  265   265                      ; line    45
+  266   266                      ; line    43
+  267   267                      
+  268   268 -----                @@CODEL CSEG
+  269   269 00000                _push_state_init:
+  270   270                      $DGL    1,31
+  271   271 00000  C7                    push    hl                                              ;[INF] 1, 1
+  272   272 00001  16                    movw    hl,ax                                           ;[INF] 1, 1
+  273   273 00002                ??bf_push_state_init:
+  274   274                      ; line    44
+  275   275                      $DGL    0,2
+  276   276 00002  66                    mov     a,l                                             ;[INF] 1, 1
+  277   277 00003  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  278   278 00005  E7                    onew    bc                                              ;[INF] 1, 1
+  279   279 00006  240000                subw    ax,#00H ; 0                                     ;[INF] 3, 1
+  280   280 00009  DD05                  bz      $?L0004                                         ;[INF] 2, 4
+  281   281 0000B  23                    subw    ax,bc                                           ;[INF] 1, 1
+  282   282 0000C  DD07                  bz      $?L0005                                         ;[INF] 2, 4
+  283   283 0000E  EF0A                  br      $?L0006                                         ;[INF] 2, 3
+  284   284 00010                ??bb00_push_state_init:
+  285   285                      ; line    45
+  286   286 00010                ?L0004:
+  287   287                      ; line    46
+  288   288                      $DGL    0,4
+  289   289 00010  713A22                set1    PM2.3                                           ;[INF] 3, 2
+  290   290                      ; line    47
+  291   291                      $DGL    0,5
+  292   292 00013  EF09                  br      $?L0003                                         ;[INF] 2, 3
+  293   293                      ; line    49
+  294   294 00015                ?L0005:
+  295   295                      ; line    50
+  296   296                      $DGL    0,8
+  297   297 00015  712A22                set1    PM2.2                                           ;[INF] 3, 2
+  298   298                      ; line    51
+  299   299                      $DGL    0,9
+  300   300 00018  EF04                  br      $?L0003                                         ;[INF] 2, 3
+  301   301                      ; line    53
+  302   302 0001A                ?L0006:
+  303   303                      ; line    54
+  304   304                      $DGL    0,12
+  305   305 0001A  F7                    clrw    bc                                              ;[INF] 1, 1
+  306   306 0001B  B3                    decw    bc                                              ;[INF] 1, 1
+  307   307 0001C  EF01                  br      $?L0002                                         ;[INF] 2, 3
+  308   308 0001E                ??eb00_push_state_init:
+  309   309                      ; line    55
+  310   310 0001E                ?L0003:
+  311   311                      ; line    57
+  312   312                      $DGL    0,15
+  313   313 0001E  F7                    clrw    bc                                              ;[INF] 1, 1
+  314   314                      ; line    58
+  315   315 0001F                ?L0002:
+  316   316                      ; line    58
+  317   317                      $DGL    0,16
+  318   318 0001F                ??ef_push_state_init:
+  319   319 0001F  C6                    pop     hl                                              ;[INF] 1, 1
+  320   320 00020  D7                    ret                                                     ;[INF] 1, 6
+  321   321 00021                ??ee_push_state_init:
+  322   322                      ; line    61
+  323   323 00021                _push_state:
+  324   324                      $DGL    1,43
+  325   325 00021  C7                    push    hl                                              ;[INF] 1, 1
+  326   326 00022  C1                    push    ax                                              ;[INF] 1, 1
+  327   327 00023  C1                    push    ax                                              ;[INF] 1, 1
+  328   328 00024  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  329   329 00027                ??bf_push_state:
+  330   330                      ; line    64
+  331   331                      $DGL    0,4
+  332   332 00027  F6                    clrw    ax                                              ;[INF] 1, 1
+  333   333 00028  61490A                cmpw    ax,[hl+10]      ; state                         ;[INF] 3, 1
+  334   334 0002B  DF04                  bnz     $?L0011                                         ;[INF] 2, 4
+  335   335 0002D                ??bb00_push_state:
+  336   336                      ; line    65
+  337   337                      $DGL    0,5
+  338   338 0002D  F7                    clrw    bc                                              ;[INF] 1, 1
+  339   339 0002E  B3                    decw    bc                                              ;[INF] 1, 1
+  340   340 0002F  EF39                  br      $?L0010                                         ;[INF] 2, 3
+  341   341 00031                ??eb00_push_state:
+  342   342                      ; line    66
+  343   343 00031                ?L0011:
+  344   344                      ; line    68
+  345   345                      $DGL    0,8
+  346   346 00031  8C02                  mov     a,[hl+2]        ; sw                            ;[INF] 2, 1
+  347   347 00033  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  348   348 00035  E7                    onew    bc                                              ;[INF] 1, 1
+  349   349 00036  240000                subw    ax,#00H ; 0                                     ;[INF] 3, 1
+  350   350 00039  DD05                  bz      $?L0014                                         ;[INF] 2, 4
+  351   351 0003B  23                    subw    ax,bc                                           ;[INF] 1, 1
+  352   352 0003C  DD0C                  bz      $?L0015                                         ;[INF] 2, 4
+  353   353 0003E  EF14                  br      $?L0016                                         ;[INF] 2, 3
+  354   354 00040                ??bb01_push_state:
+  355   355                      ; line    69
+  356   356 00040                ?L0014:
+  357   357                      ; line    70
+  358   358                      $DGL    0,10
+  359   359 00040  F1                    clrb    a                                               ;[INF] 1, 1
+  360   360 00041  713402                mov1    CY,P2.3                                         ;[INF] 3, 1
+  361   361 00044  7189                  mov1    a.0,CY                                          ;[INF] 2, 1
+  362   362 00046  9C01                  mov     [hl+1],a        ; val                           ;[INF] 2, 1
+  363   363                      ; line    71
+  364   364                      $DGL    0,11
+  365   365 00048  EF0E                  br      $?L0013                                         ;[INF] 2, 3
+  366   366                      ; line    73
+  367   367 0004A                ?L0015:
+  368   368                      ; line    74
+  369   369                      $DGL    0,14
+  370   370 0004A  F1                    clrb    a                                               ;[INF] 1, 1
+  371   371 0004B  712402                mov1    CY,P2.2                                         ;[INF] 3, 1
+  372   372 0004E  7189                  mov1    a.0,CY                                          ;[INF] 2, 1
+  373   373 00050  9C01                  mov     [hl+1],a        ; val                           ;[INF] 2, 1
+  374   374                      ; line    75
+  375   375                      $DGL    0,15
+  376   376 00052  EF04                  br      $?L0013                                         ;[INF] 2, 3
+  377   377                      ; line    77
+  378   378 00054                ?L0016:
+  379   379                      ; line    78
+  380   380                      $DGL    0,18
+  381   381 00054  F7                    clrw    bc                                              ;[INF] 1, 1
+  382   382 00055  B3                    decw    bc                                              ;[INF] 1, 1
+  383   383 00056  EF12                  br      $?L0010                                         ;[INF] 2, 3
+  384   384 00058                ??eb01_push_state:
+  385   385                      ; line    79
+  386   386 00058                ?L0013:
+  387   387                      ; line    81
+  388   388                      $DGL    0,21
+  389   389 00058  8C01                  mov     a,[hl+1]        ; val                           ;[INF] 2, 1
+  390   390 0005A  D1                    cmp0    a                                               ;[INF] 1, 1
+  391   391 0005B  DF03                  bnz     $?L0019                                         ;[INF] 2, 4
+  392   392 0005D  E6                    onew    ax                                              ;[INF] 1, 1
+  393   393 0005E  EF01                  br      $?L0020                                         ;[INF] 2, 3
+  394   394 00060                ?L0019:
+  395   395 00060  F6                    clrw    ax                                              ;[INF] 1, 1
+  396   396 00061                ?L0020:
+  397   397 00061  08                    xch     a,x                                             ;[INF] 1, 1
+  398   398 00062  72                    mov     c,a                                             ;[INF] 1, 1
+  399   399 00063  08                    xch     a,x                                             ;[INF] 1, 1
+  400   400 00064  AC0A                  movw    ax,[hl+10]      ; state                         ;[INF] 2, 1
+  401   401 00066  14                    movw    de,ax                                           ;[INF] 1, 1
+  402   402 00067  62                    mov     a,c                                             ;[INF] 1, 1
+  403   403 00068  99                    mov     [de],a                                          ;[INF] 1, 1
+  404   404                      ; line    83
+  405   405                      $DGL    0,23
+  406   406 00069  F7                    clrw    bc                                              ;[INF] 1, 1
+  407   407                      ; line    84
+  408   408 0006A                ?L0010:
+  409   409                      ; line    84
+  410   410                      $DGL    0,24
+  411   411 0006A                ??ef_push_state:
+  412   412 0006A  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  413   413 0006C  C6                    pop     hl                                              ;[INF] 1, 1
+  414   414 0006D  D7                    ret                                                     ;[INF] 1, 6
+  415   415 0006E                ??ee_push_state:
+  416   416                      
+  417   417 -----                @@CODE  CSEG    BASE
+  418   418                      
+  419   419 -----                @@BASE  CSEG    BASE
+  420   420                              END
+  421   421                      
+  422   422                      
+  423   423                      ; *** Code Information ***
+  424   424                      ;
+  425   425                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  426   426                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\driver\push_stat
+  427   427                      ;       e\push_state.c
+  428   428                      ;
+  429   429                      ; $FUNC push_state_init(43)
+  430   430                      ;       bc=(char sw:x)
+  431   431                      ;       CODE SIZE= 33 bytes, CLOCK_SIZE= 41 clocks, STACK_SIZE= 2 bytes
+  432   432                      ;
+  433   433                      ; $FUNC push_state(61)
+  434   434                      ;       bc=(char sw:x, pointer state:[sp+4])
+  435   435                      ;       CODE SIZE= 77 bytes, CLOCK_SIZE= 77 clocks, STACK_SIZE= 6 bytes
+  436   436                      
+  437   437                      ; Target chip : R5F11AGJ
+  438   438                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 0006EH   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

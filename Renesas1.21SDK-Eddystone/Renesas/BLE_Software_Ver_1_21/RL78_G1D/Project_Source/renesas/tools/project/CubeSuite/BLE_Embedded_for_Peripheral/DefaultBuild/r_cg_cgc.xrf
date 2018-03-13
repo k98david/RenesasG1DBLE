@@ -1,0 +1,188 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:13 Mar 2018 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile cg_src\r_cg_cgc.c -oDefaultBuild -
+            _msgoff -qwvjl3 -icg_src -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : cg_src\r_cg_cgc.c
+Xref-file : DefaultBuild\r_cg_cgc.xrf
+Para-file : 
+Inc-file  : [ 1] cg_src\\r_cg_macrodriver.h
+            [ 2] cg_src\\r_cg_cgc.h
+            [ 3] cg_src\\r_cg_userdefine.h
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+EXTERN RWSFR  uchar   CMC                         61
+EXTERN RWSFR  bit     HIOSTOP                     78
+EXTERN RWSFR  bit     XTSTOP                      66
+EXTERN RWSFR  bit     MSTOP                       62
+EXTERN RWSFR  bit     MCM0                        64
+EXTERN RWSFR  bit     CSS                         76
+EXTERN RWSFR  uchar   OSMC                        74
+EXTYP         char    int8_t             72: 1
+EXTYP         uchar   uint8_t            73: 1
+EXTYP         short   int16_t            74: 1
+EXTYP         ushort  uint16_t           75: 1
+EXTYP         long    int32_t            76: 1
+EXTYP         ulong   uint32_t           77: 1
+EXTYP         ushort  MD_STATUS          78: 1
+MEMBER NEAR   int     HIOCLK            156: 2
+MEMBER NEAR   int     SYSX1CLK          157: 2
+MEMBER NEAR   int     SYSEXTCLK         158: 2
+MEMBER NEAR   int     SUBXT1CLK         159: 2
+MEMBER NEAR   int     SUBEXTCLK         161: 2
+EXTYP         enum    clock_mode_t      161: 2
+EXTERN FAR    func    R_CGC_Create       56      166: 2
+EXTERN FAR    func    R_CGC_Get_ResetSource
+                                                 167: 2
+AUTO1  VLT    ulong   w_count            58       69       69       69
+INLINE        func    NOP                         71
+              #define MODULEID_H         29: 1
+              #define MD_STATUSBASE      49: 1
+              #define MD_OK              50: 1
+              #define MD_SPT             51: 1
+              #define MD_NACK            52: 1
+              #define MD_BUSY1           53: 1
+              #define MD_BUSY2           54: 1
+              #define MD_OVERRUN         55: 1
+              #define MD_ERRORBASE       58: 1
+              #define MD_ERROR           59: 1
+              #define MD_ARGERROR        60: 1
+              #define MD_ERROR1          61: 1
+              #define MD_ERROR2          62: 1
+              #define MD_ERROR3          63: 1
+              #define MD_ERROR4          64: 1
+              #define MD_ERROR5          65: 1
+              #define __TYPEDEF__        79: 1
+              #define CGC_H              29: 2
+              #define _C0_CGC_HISYS_PIN
+                                         38: 2
+              #define _00_CGC_HISYS_PORT
+                                         39: 2    61
+              #define _40_CGC_HISYS_OSC
+                                         40: 2
+              #define _80_CGC_HISYS_PORT1
+                                         41: 2
+              #define _C0_CGC_HISYS_EXT
+                                         42: 2
+              #define _30_CGC_SUB_PIN    44: 2
+              #define _00_CGC_SUB_PORT
+                                         45: 2
+              #define _10_CGC_SUB_OSC    46: 2    61
+              #define _20_CGC_SUB_PORT1
+                                         47: 2
+              #define _30_CGC_SUB_EXT    48: 2
+              #define _00_CGC_SUBMODE_DEFAULT
+                                         50: 2
+              #define _00_CGC_SUBMODE_LOW
+                                         51: 2    61
+              #define _02_CGC_SUBMODE_NORMAL
+                                         52: 2
+              #define _04_CGC_SUBMODE_ULOW
+                                         53: 2
+              #define _00_CGC_SYSOSC_UNDER10M
+                                         55: 2
+              #define _01_CGC_SYSOSC_OVER10M
+                                         56: 2
+              #define _00_CGC_CPUCLK_MAIN
+                                         62: 2
+              #define _80_CGC_CPUCLK_SUB
+                                         63: 2
+              #define _00_CGC_CPUCLK_SELMAIN
+                                         65: 2
+              #define _40_CGC_CPUCLK_SELSUB
+                                         66: 2
+              #define _00_CGC_MAINCLK_HIO
+                                         68: 2
+              #define _20_CGC_MAINCLK_HISYS
+                                         69: 2
+              #define _00_CGC_MAINCLK_SELHIO
+                                         71: 2
+              #define _10_CGC_MAINCLK_SELHISYS
+                                         72: 2
+              #define _00_CGC_HISYS_OPER
+                                         78: 2
+              #define _80_CGC_HISYS_STOP
+                                         79: 2
+              #define _00_CGC_SUB_OPER
+                                         81: 2
+              #define _40_CGC_SUB_STOP
+                                         82: 2
+              #define _00_CGC_HIO_OPER
+                                         84: 2
+              #define _01_CGC_HIO_STOP
+                                         85: 2
+              #define _00_CGC_OSCSTAB_STA0
+                                         91: 2
+              #define _80_CGC_OSCSTAB_STA8
+                                         92: 2
+              #define _C0_CGC_OSCSTAB_STA9
+                                         93: 2
+              #define _E0_CGC_OSCSTAB_STA10
+                                         94: 2
+              #define _F0_CGC_OSCSTAB_STA11
+                                         95: 2
+              #define _F8_CGC_OSCSTAB_STA13
+                                         96: 2
+              #define _FC_CGC_OSCSTAB_STA15
+                                         97: 2
+              #define _FE_CGC_OSCSTAB_STA17
+                                         98: 2
+              #define _FF_CGC_OSCSTAB_STA18
+                                         99: 2
+              #define _00_CGC_OSCSTAB_SEL8
+                                        105: 2
+              #define _01_CGC_OSCSTAB_SEL9
+                                        106: 2
+              #define _02_CGC_OSCSTAB_SEL10
+                                        107: 2
+              #define _03_CGC_OSCSTAB_SEL11
+                                        108: 2
+              #define _04_CGC_OSCSTAB_SEL13
+                                        109: 2
+              #define _05_CGC_OSCSTAB_SEL15
+                                        110: 2
+              #define _06_CGC_OSCSTAB_SEL17
+                                        111: 2
+              #define _07_CGC_OSCSTAB_SEL18
+                                        112: 2
+              #define _00_CGC_SUBINHALT_ON
+                                        119: 2    74
+              #define _80_CGC_SUBINHALT_OFF
+                                        120: 2
+              #define _00_CGC_RTC_IT_LCD_CLK_FSUB
+                                        122: 2
+              #define _10_CGC_RTC_IT_LCD_CLK_FIL
+                                        123: 2    74
+              #define _00_CGC_ILLEGAL_ACCESS_OFF
+                                        129: 2
+              #define _80_CGC_ILLEGAL_ACCESS_ON
+                                        130: 2
+              #define _00_CGC_RAM_GUARD_OFF
+                                        132: 2
+              #define _10_CGC_RAM_GUARD_ARAE0
+                                        133: 2
+              #define _20_CGC_RAM_GUARD_ARAE1
+                                        134: 2
+              #define _30_CGC_RAM_GUARD_ARAE2
+                                        135: 2
+              #define _00_CGC_PORT_GUARD_OFF
+                                        137: 2
+              #define _04_CGC_PORT_GUARD_ON
+                                        138: 2
+              #define _00_CGC_INT_GUARD_OFF
+                                        140: 2
+              #define _02_CGC_INT_GUARD_ON
+                                        141: 2
+              #define _00_CGC_CSC_GUARD_OFF
+                                        143: 2
+              #define _01_CGC_CSC_GUARD_ON
+                                        144: 2
+              #define CGC_SUBWAITTIME   149: 2    69
+              #define _USER_DEF_H        29: 3
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.20 

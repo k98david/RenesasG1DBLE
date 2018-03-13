@@ -1,0 +1,189 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\r_cg_wdt.asm -_msgoff -
+          pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\r_cg_wdt.asm
+Obj-file: DefaultBuild\r_cg_wdt.rel
+Prn-file: DefaultBuild\r_cg_wdt.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:40
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile cg_src\r_cg_wdt.c -oDefaultBuild -_msgoff -q
+    5     5                      ;             wvjl3 -icg_src -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuil
+    6     6                      ;             d -g2
+    7     7                      ; In-file   : cg_src\r_cg_wdt.c
+    8     8                      ; Asm-file  : DefaultBuild\r_cg_wdt.asm
+    9     9                      ; Para-file : 
+   10    10                      
+   11    11                      $PROCESSOR(F11AGJ)
+   12    12                      $DEBUG
+   13    13                      $NODEBUGA
+   14    14                      $KANJICODE SJIS
+   15    15                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   16    16                      
+   17    17                      $DGS    FIL_NAM, .file,         01FH,   0FFFEH, 03FH,   067H,   01H,    00H
+   18    18                      $DGS    AUX_FIL, r_cg_wdt.c
+   19    19                      $DGS    MOD_NAM, r_cg_wdt,      00H,    0FFFEH, 00H,    077H,   00H,    00H
+   20    20                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   21    21                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   22    22                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   23    23                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   24    24                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   25    25                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   26    26                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   27    27                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   28    28                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   29    29                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   30    30                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   31    31                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   32    32                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   33    33                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   34    34                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   35    35                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   36    36                      $DGS    GLV_SYM, _R_WDT_Create, U,      U,      01H,    026H,   01H,    02H
+   37    37                      $DGS    AUX_FUN, 00H,           U,      U,      019H,   01H,    00H
+   38    38                      $DGS    BEG_FUN, ??bf_R_WDT_Create,     U,      U,      00H,    065H,   01H,    00H
+   39    39                      $DGS    AUX_BEG, 039H,          00H,    019H
+   40    40                      $DGS    END_FUN, ??ef_R_WDT_Create,     U,      U,      00H,    065H,   01H,    00H
+   41    41                      $DGS    AUX_END, 08H
+   42    42                      $DGS    GLV_SYM, _R_WDT_Restart,        U,      U,      01H,    026H,   01H,    02H
+   43    43                      $DGS    AUX_FUN, 00H,           U,      U,      01FH,   01H,    00H
+   44    44                      $DGS    BEG_FUN, ??bf_R_WDT_Restart,    U,      U,      00H,    065H,   01H,    00H
+   45    45                      $DGS    AUX_BEG, 048H,          00H,    01FH
+   46    46                      $DGS    END_FUN, ??ef_R_WDT_Restart,    U,      U,      00H,    065H,   01H,    00H
+   47    47                      $DGS    AUX_END, 03H
+   48    48                      
+   49    49                              PUBLIC  _R_WDT_Create
+   50    50                              PUBLIC  _R_WDT_Restart
+   51    51                      
+   52    52 -----                @@BITS  BSEG
+   53    53                      
+   54    54 -----                @@CNST  CSEG    MIRRORP
+   55    55                      
+   56    56 -----                @@R_INIT        CSEG    UNIT64KP
+   57    57                      
+   58    58 -----                @@INIT  DSEG    BASEP
+   59    59                      
+   60    60 -----                @@DATA  DSEG    BASEP
+   61    61                      
+   62    62 -----                @@R_INIS        CSEG    UNIT64KP
+   63    63                      
+   64    64 -----                @@INIS  DSEG    SADDRP
+   65    65                      
+   66    66 -----                @@DATS  DSEG    SADDRP
+   67    67                      
+   68    68 -----                @@CNSTL CSEG    PAGE64KP
+   69    69                      
+   70    70 -----                @@RLINIT        CSEG    UNIT64KP
+   71    71                      
+   72    72 -----                @@INITL DSEG    UNIT64KP
+   73    73                      
+   74    74 -----                @@DATAL DSEG    UNIT64KP
+   75    75                      
+   76    76 -----                @@CALT  CSEG    CALLT0
+   77    77                      
+   78    78                      ; line    72
+   79    79                      ; line    73
+   80    80                      ; line    74
+   81    81                      ; line    75
+   82    82                      ; line    76
+   83    83                      ; line    77
+   84    84                      ; line    78
+   85    85                      ; line    57
+   86    86                      
+   87    87 -----                @@CODEL CSEG
+   88    88 00000                _R_WDT_Create:
+   89    89                      $DGL    1,19
+   90    90 00000                ??bf_R_WDT_Create:
+   91    91                      ; line    58
+   92    92                      $DGL    0,2
+   93    93 00000  710AE4                set1    MK0L.0                                          ;[INF] 3, 2
+   94    94                      ; line    59
+   95    95                      $DGL    0,3
+   96    96 00003  710BE0                clr1    IF0L.0                                          ;[INF] 3, 2
+   97    97                      ; line    61
+   98    98                      $DGL    0,5
+   99    99 00006  710AEC                set1    PR10L.0                                         ;[INF] 3, 2
+  100   100                      ; line    62
+  101   101                      $DGL    0,6
+  102   102 00009  710AE8                set1    PR00L.0                                         ;[INF] 3, 2
+  103   103                      ; line    63
+  104   104                      $DGL    0,7
+  105   105 0000C  710BE4                clr1    MK0L.0                                          ;[INF] 3, 2
+  106   106                      ; line    64
+  107   107                      $DGL    0,8
+  108   108 0000F                ??ef_R_WDT_Create:
+  109   109 0000F  D7                    ret                                                     ;[INF] 1, 6
+  110   110 00010                ??ee_R_WDT_Create:
+  111   111                      ; line    72
+  112   112 00010                _R_WDT_Restart:
+  113   113                      $DGL    1,25
+  114   114 00010                ??bf_R_WDT_Restart:
+  115   115                      ; line    73
+  116   116                      $DGL    0,2
+  117   117 00010  CEABAC                mov     WDTE,#0ACH      ; 172                           ;[INF] 3, 1
+  118   118                      ; line    74
+  119   119                      $DGL    0,3
+  120   120 00013                ??ef_R_WDT_Restart:
+  121   121 00013  D7                    ret                                                     ;[INF] 1, 6
+  122   122 00014                ??ee_R_WDT_Restart:
+  123   123                      
+  124   124 -----                @@CODE  CSEG    BASE
+  125   125                      
+  126   126 -----                @@BASE  CSEG    BASE
+  127   127                              END
+  128   128                      
+  129   129                      
+  130   130                      ; *** Code Information ***
+  131   131                      ;
+  132   132                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  133   133                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\tools\project\CubeSu
+  134   134                      ;       ite\BLE_Embedded_for_Peripheral\cg_src\r_cg_wdt.c
+  135   135                      ;
+  136   136                      ; $FUNC R_WDT_Create(57)
+  137   137                      ;       void=(void)
+  138   138                      ;       CODE SIZE= 16 bytes, CLOCK_SIZE= 16 clocks, STACK_SIZE= 0 bytes
+  139   139                      ;
+  140   140                      ; $FUNC R_WDT_Restart(72)
+  141   141                      ;       void=(void)
+  142   142                      ;       CODE SIZE= 4 bytes, CLOCK_SIZE= 7 clocks, STACK_SIZE= 0 bytes
+  143   143                      
+  144   144                      ; Target chip : R5F11AGJ
+  145   145                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00014H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

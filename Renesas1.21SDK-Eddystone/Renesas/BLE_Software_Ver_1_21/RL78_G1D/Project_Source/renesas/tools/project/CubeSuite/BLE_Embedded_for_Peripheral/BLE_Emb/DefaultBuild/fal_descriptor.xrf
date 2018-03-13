@@ -1,0 +1,164 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:20 Dec 2017 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile ..\..\..\..\..\src\driver\dataflas
+            h\fal_descriptor.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROF
+            EMB,CFG_SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_US
+            E_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..\..\..\..\
+            ..\rBLE\src\sample_profile\sam -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\sr
+            c\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i
+            ..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver
+            \led -i..\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\.
+            .\..\src\driver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push
+            _state -i..\..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\src\rwble -i.\ 
+            -i..\..\..\..\..\..\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_app\sec
+            lib -i..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : ..\..\..\..\..\src\driver\dataflash\fal_descriptor.c
+Xref-file : DefaultBuild\fal_descriptor.xrf
+Para-file : 
+Inc-file  : [ 1] ..\..\..\..\..\src\driver\dataflash\cs\fdl_types.h
+            [ 2] ..\..\..\..\..\src\driver\dataflash\\fal_descriptor.h
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+EXTYP         uchar   fdl_u08            42: 1
+EXTYP         uint    fdl_u16            43: 1
+EXTYP         ulong   fdl_u32            44: 1
+MEMBER NEAR   int     FDL_CMD_READ_BYTES
+                                         61: 1
+MEMBER NEAR   int     FDL_CMD_IVERIFY_BYTES
+                                         62: 1
+MEMBER NEAR   int     FDL_CMD_BLANKCHECK_BYTES
+                                         63: 1
+MEMBER NEAR   int     FDL_CMD_WRITE_BYTES
+                                         64: 1
+MEMBER NEAR   int     FDL_CMD_ERASE_BLOCK
+                                         66: 1
+EXTYP         enum    fdl_command_t      66: 1
+MEMBER NEAR   int     FDL_OK             74: 1
+MEMBER NEAR   int     FDL_BUSY           75: 1
+MEMBER NEAR   int     FDL_ERR_INITIALIZATION
+                                         76: 1
+MEMBER NEAR   int     FDL_ERR_REJECTED
+                                         77: 1
+MEMBER NEAR   int     FDL_ERR_ABORTED    78: 1
+MEMBER NEAR   int     FDL_ERR_PARAMETER
+                                         79: 1
+MEMBER NEAR   int     FDL_ERR_STANDBY    80: 1
+MEMBER NEAR   int     FDL_ERR_ERASE      82: 1
+MEMBER NEAR   int     FDL_ERR_BLANK_VERIFY
+                                         83: 1
+MEMBER NEAR   int     FDL_ERR_WRITE      84: 1
+MEMBER NEAR   int     FDL_ERR_CONFIGURATION
+                                         87: 1
+EXTYP         enum    fdl_status_t       87: 1
+MEMBER        uint    index_u16          93: 1
+MEMBER        pointer data_pu08          94: 1
+MEMBER        uint    bytecount_u16      95: 1
+MEMBER        enum    command_enu        96: 1
+MEMBER        enum    status_enu         97: 1
+EXTYP         struct  fdl_request_t      98: 1
+MEMBER        uint    eel_pool_bytes_u16
+                                        106: 1
+MEMBER        uint    fdl_pool_bytes_u16
+                                        107: 1
+MEMBER        uint    fdl_delay_u16     108: 1
+MEMBER        uchar   eel_pool_blocks_u08
+                                        109: 1
+MEMBER        uchar   fdl_pool_blocks_u08
+                                        110: 1
+MEMBER        uchar   fx_MHz_u08        111: 1
+MEMBER        uchar   wide_voltage_mode_u08
+                                        112: 1
+EXTYP         struct  fdl_descriptor_t
+                                        113: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_132
+                                        132: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_133
+                                        133: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_134
+                                        134: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_137
+                                        137: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_138
+                                        138: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_141
+                                        141: 1
+MEMBER NEAR   int     R_FDLT02_ASSERT_LINE_142
+                                        142: 1
+              #define __LINE__                   132: 1   133: 1   134: 1   137: 1   138: 1   141: 1   142: 1
+              #define CFG_USE_EEL                 18: 2
+              #define _USE_REL_RL78               19
+              #define _FAL_CNST          24      141
+              #define FAL_DESCRIPTOR_H
+                                         16: 2
+              #define __FDL_TYPES_H_INCLUDED
+                                         36: 1
+              #define R_FDLT02_ASSERT_CONCAT_
+                                        126: 1   132: 1   133: 1   134: 1   137: 1   138: 1   141: 1   142: 1
+              #define R_FDLT02_ASSERT_CONCAT
+                                        127: 1   132: 1   133: 1   134: 1   137: 1   138: 1   141: 1   142: 1
+              #define R_FDLT02_STATIC_ASSERT
+                                        128: 1   132: 1   133: 1   134: 1   137: 1   138: 1   141: 1   142: 1
+              #define FDL_SYSTEM_FREQUENCY
+                                         30: 2   177
+              #define FDL_WIDE_VOLTAGE_MODE
+                                         33: 2   131
+              #define FAL_POOL_SIZE      36: 2    39       59      104      146      154      162      166      173      175
+              #define EEL_POOL_SIZE      39: 2    39       83      104      147      155      163      167      174      175
+              #define FAL_BLOCK_SIZE     48      146      146      147      147      162      163      166      167      170
+                                                 171
+              #define FAL_DATA_FLASH_START_ADDR
+                                         51      142      143      146      147
+              #define FAL_DATA_FLASH_END_ADDR
+                                         52
+              #define FAL_POOL_FIRST_BLOCK
+                                         57      150
+              #define FAL_POOL_LAST_BLOCK
+                                         60      146      154
+              #define FAL_POOL_FIRST_ADDRESS
+                                         61      142      143      146      147
+              #define FAL_POOL_LAST_ADDRESS
+                                         62      146
+              #define FAL_POOL_WSIZE     63      162      166
+              #define FAL_POOL_FIRST_WIDX
+                                         64      158
+              #define FAL_POOL_LAST_WIDX
+                                         65      162
+              #define FAL_BLOCK_WSIZE    66      171
+              #define EEL_POOL_FIRST_BLOCK
+                                         81      147      151      155
+              #define EEL_POOL_LAST_BLOCK
+                                         84      147      155
+              #define EEL_POOL_FIRST_ADDRESS
+                                         85      143
+              #define EEL_POOL_LAST_ADDRESS
+                                         86      147
+              #define EEL_POOL_WSIZE     87      163      167
+              #define EEL_POOL_FIRST_WIDX
+                                         88      159
+              #define EEL_POOL_LAST_WIDX
+                                         89      163
+              #define USER_POOL_SIZE    102      104      175
+              #define USER_POOL_FIRST_BLOCK
+                                        119      152
+              #define USER_POOL_LAST_BLOCK
+                                        120      156
+              #define USER_POOL_FIRST_ADDRESS
+                                        121      144
+              #define USER_POOL_LAST_ADDRESS
+                                        122      148
+              #define USER_POOL_WSIZE   123      168
+              #define USER_POOL_FIRST_WIDX
+                                        124      160
+              #define USER_POOL_LAST_WIDX
+                                        125      164
+              #define FDL_FX_MHZ        129      177
+              #define FDL_VOLTAGE_MODE
+                                        132      178
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.10 

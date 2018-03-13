@@ -1,0 +1,938 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\DTM2Wire.asm -_msgoff -
+          pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\DTM2Wire.asm
+Obj-file: DefaultBuild\DTM2Wire.rel
+Prn-file: DefaultBuild\DTM2Wire.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:29
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\DTM2Wire\DTM2Wire.
+    5     5                      ;             c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXM
+    6     6                      ;             EM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBL
+    7     7                      ;             E,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE
+    8     8                      ;             ,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HO
+    9     9                      ;             CO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB
+   10    10                      ;              -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\..
+   11    11                      ;             \src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\
+   12    12                      ;             ..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\datafla
+   13    13                      ;             sh -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..
+   14    14                      ;             \..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\
+   15    15                      ;             ..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\..
+   16    16                      ;             \..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i
+   17    17                      ;             ..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i.
+   18    18                      ;             .\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw
+   19    19                      ;              -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\driv
+   20    20                      ;             er\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\.
+   21    21                      ;             .\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..\
+   22    22                      ;             ..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\s
+   23    23                      ;             ample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zps
+   24    24                      ;              -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\DTM2Wire\DTM2Wire.c
+   26    26                      ; Asm-file  : DefaultBuild\DTM2Wire.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         013H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, DTM2Wire.c
+   37    37                      $DGS    MOD_NAM, DTM2Wire,      00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      
+   55    55                      
+   56    56 -----                @@BITS  BSEG
+   57    57                      
+   58    58 -----                @@CNST  CSEG    MIRRORP
+   59    59                      
+   60    60 -----                @@R_INIT        CSEG    UNIT64KP
+   61    61                      
+   62    62 -----                @@INIT  DSEG    BASEP
+   63    63                      
+   64    64 -----                @@DATA  DSEG    BASEP
+   65    65                      
+   66    66 -----                @@R_INIS        CSEG    UNIT64KP
+   67    67                      
+   68    68 -----                @@INIS  DSEG    SADDRP
+   69    69                      
+   70    70 -----                @@DATS  DSEG    SADDRP
+   71    71                      
+   72    72 -----                @@CNSTL CSEG    PAGE64KP
+   73    73                      
+   74    74 -----                @@RLINIT        CSEG    UNIT64KP
+   75    75                      
+   76    76 -----                @@INITL DSEG    UNIT64KP
+   77    77                      
+   78    78 -----                @@DATAL DSEG    UNIT64KP
+   79    79                      
+   80    80 -----                @@CALT  CSEG    CALLT0
+   81    81                      
+   82    82                      ; line    13
+   83    83                      ; line    14
+   84    84                      ; line    13
+   85    85                      ; line    14
+   86    86                      ; line    15
+   87    87                      ; line    74
+   88    88                      ; line    75
+   89    89                      ; line    76
+   90    90                      ; line    77
+   91    91                      ; line    79
+   92    92                      ; line    80
+   93    93                      ; line    84
+   94    94                      ; line    85
+   95    95                      ; line    16
+   96    96                      ; line    18
+   97    97                      ; line    19
+   98    98                      ; line    20
+   99    99                      ; line    21
+  100   100                      ; line    22
+  101   101                      ; line    23
+  102   102                      ; line    24
+  103   103                      ; line    25
+  104   104                      ; line    26
+  105   105                      ; line    27
+  106   106                      ; line    28
+  107   107                      ; line    29
+  108   108                      ; line    30
+  109   109                      ; line    31
+  110   110                      ; line    32
+  111   111                      ; line    33
+  112   112                      ; line    35
+  113   113                      ; line    37
+  114   114                      ; line    38
+  115   115                      ; line    39
+  116   116                      ; line    40
+  117   117                      ; line    43
+  118   118                      ; line    45
+  119   119                      ; line    46
+  120   120                      ; line    47
+  121   121                      ; line    48
+  122   122                      ; line    49
+  123   123                      ; line    50
+  124   124                      ; line    51
+  125   125                      ; line    52
+  126   126                      ; line    53
+  127   127                      ; line    54
+  128   128                      ; line    55
+  129   129                      ; line    56
+  130   130                      ; line    57
+  131   131                      ; line    58
+  132   132                      ; line    59
+  133   133                      ; line    60
+  134   134                      ; line    62
+  135   135                      ; line    64
+  136   136                      ; line    65
+  137   137                      ; line    66
+  138   138                      ; line    69
+  139   139                      ; line    71
+  140   140                      ; line    72
+  141   141                      ; line    73
+  142   142                      ; line    74
+  143   143                      ; line    75
+  144   144                      ; line    76
+  145   145                      ; line    77
+  146   146                      ; line    78
+  147   147                      ; line    79
+  148   148                      ; line    80
+  149   149                      ; line    81
+  150   150                      ; line    82
+  151   151                      ; line    83
+  152   152                      ; line    84
+  153   153                      ; line    85
+  154   154                      ; line    86
+  155   155                      ; line    88
+  156   156                      ; line    90
+  157   157                      ; line    91
+  158   158                      ; line    92
+  159   159                      ; line    20
+  160   160                      ; line    25
+  161   161                      ; line    29
+  162   162                      ; line    30
+  163   163                      ; line    31
+  164   164                      ; line    32
+  165   165                      ; line    33
+  166   166                      ; line    34
+  167   167                      ; line    35
+  168   168                      ; line    36
+  169   169                      ; line    37
+  170   170                      ; line    38
+  171   171                      ; line    39
+  172   172                      ; line    40
+  173   173                      ; line    41
+  174   174                      ; line    42
+  175   175                      ; line    43
+  176   176                      ; line    45
+  177   177                      ; line    46
+  178   178                      ; line    51
+  179   179                      ; line    52
+  180   180                      ; line    54
+  181   181                      ; line    59
+  182   182                      ; line    60
+  183   183                      ; line    65
+  184   184                      ; line    66
+  185   185                      ; line    67
+  186   186                      ; line    68
+  187   187                      ; line    70
+  188   188                      ; line    71
+  189   189                      ; line    72
+  190   190                      ; line    73
+  191   191                      ; line    74
+  192   192                      ; line    75
+  193   193                      ; line    76
+  194   194                      ; line    78
+  195   195                      ; line    83
+  196   196                      ; line    84
+  197   197                      ; line    89
+  198   198                      ; line    90
+  199   199                      ; line    92
+  200   200                      ; line    93
+  201   201                      ; line    94
+  202   202                      ; line    95
+  203   203                      ; line    96
+  204   204                      ; line    97
+  205   205                      ; line    98
+  206   206                      ; line   100
+  207   207                      ; line   105
+  208   208                      ; line   106
+  209   209                      ; line   111
+  210   210                      ; line   112
+  211   211                      ; line    95
+  212   212                      ; line   220
+  213   213                      ; line   221
+  214   214                      ; line    22
+  215   215                      ; line    23
+  216   216                      ; line    67
+  217   217                      ; line    68
+  218   218                      ; line   125
+  219   219                      ; line   124
+  220   220                      ; line   125
+  221   221                      ; line   150
+  222   222                      ; line   151
+  223   223                      ; line   152
+  224   224                      ; line   153
+  225   225                      ; line   154
+  226   226                      ; line   155
+  227   227                      ; line   156
+  228   228                      ; line   157
+  229   229                      ; line   167
+  230   230                      ; line   168
+  231   231                      ; line   169
+  232   232                      ; line   170
+  233   233                      ; line   171
+  234   234                      ; line   172
+  235   235                      ; line   173
+  236   236                      ; line   174
+  237   237                      ; line   175
+  238   238                      ; line   197
+  239   239                      ; line   198
+  240   240                      ; line   199
+  241   241                      ; line   213
+  242   242                      ; line   214
+  243   243                      ; line   215
+  244   244                      ; line   216
+  245   245                      ; line   217
+  246   246                      ; line   218
+  247   247                      ; line   219
+  248   248                      ; line   237
+  249   249                      ; line   238
+  250   250                      ; line   239
+  251   251                      ; line   240
+  252   252                      ; line   241
+  253   253                      ; line   260
+  254   254                      ; line   264
+  255   255                      ; line   265
+  256   256                      ; line   266
+  257   257                      ; line   267
+  258   258                      ; line   268
+  259   259                      ; line   269
+  260   260                      ; line   292
+  261   261                      ; line   293
+  262   262                      ; line   294
+  263   263                      ; line   295
+  264   264                      ; line   296
+  265   265                      ; line   297
+  266   266                      ; line   298
+  267   267                      ; line   328
+  268   268                      ; line   329
+  269   269                      ; line   330
+  270   270                      ; line   331
+  271   271                      ; line   350
+  272   272                      ; line   352
+  273   273                      ; line   353
+  274   274                      ; line   354
+  275   275                      ; line   355
+  276   276                      ; line   356
+  277   277                      ; line   514
+  278   278                      ; line   515
+  279   279                      ; line   516
+  280   280                      ; line   546
+  281   281                      ; line   547
+  282   282                      ; line   548
+  283   283                      ; line   557
+  284   284                      ; line   558
+  285   285                      ; line   559
+  286   286                      ; line   570
+  287   287                      ; line   571
+  288   288                      ; line   572
+  289   289                      ; line   581
+  290   290                      ; line   582
+  291   291                      ; line   583
+  292   292                      ; line   601
+  293   293                      ; line   602
+  294   294                      ; line   603
+  295   295                      ; line   613
+  296   296                      ; line   614
+  297   297                      ; line   615
+  298   298                      ; line   628
+  299   299                      ; line   629
+  300   300                      ; line   630
+  301   301                      ; line   639
+  302   302                      ; line   640
+  303   303                      ; line   641
+  304   304                      ; line   650
+  305   305                      ; line   651
+  306   306                      ; line   652
+  307   307                      ; line   661
+  308   308                      ; line   662
+  309   309                      ; line   663
+  310   310                      ; line   673
+  311   311                      ; line   674
+  312   312                      ; line   675
+  313   313                      ; line   690
+  314   314                      ; line   691
+  315   315                      ; line   692
+  316   316                      ; line   705
+  317   317                      ; line   706
+  318   318                      ; line   707
+  319   319                      ; line   713
+  320   320                      ; line   714
+  321   321                      ; line   715
+  322   322                      ; line   721
+  323   323                      ; line   722
+  324   324                      ; line   723
+  325   325                      ; line   729
+  326   326                      ; line   730
+  327   327                      ; line   731
+  328   328                      ; line   737
+  329   329                      ; line   738
+  330   330                      ; line   739
+  331   331                      ; line   745
+  332   332                      ; line   746
+  333   333                      ; line   747
+  334   334                      ; line   753
+  335   335                      ; line   754
+  336   336                      ; line   755
+  337   337                      ; line   761
+  338   338                      ; line   762
+  339   339                      ; line   763
+  340   340                      ; line   769
+  341   341                      ; line   770
+  342   342                      ; line   771
+  343   343                      ; line   777
+  344   344                      ; line   778
+  345   345                      ; line   779
+  346   346                      ; line   785
+  347   347                      ; line   786
+  348   348                      ; line   787
+  349   349                      ; line   793
+  350   350                      ; line   794
+  351   351                      ; line   795
+  352   352                      ; line   801
+  353   353                      ; line   802
+  354   354                      ; line   803
+  355   355                      ; line   809
+  356   356                      ; line   810
+  357   357                      ; line   811
+  358   358                      ; line   817
+  359   359                      ; line   818
+  360   360                      ; line   819
+  361   361                      ; line   825
+  362   362                      ; line   826
+  363   363                      ; line   827
+  364   364                      ; line   833
+  365   365                      ; line   834
+  366   366                      ; line   835
+  367   367                      ; line   841
+  368   368                      ; line   842
+  369   369                      ; line   843
+  370   370                      ; line   849
+  371   371                      ; line   850
+  372   372                      ; line   851
+  373   373                      ; line   857
+  374   374                      ; line   858
+  375   375                      ; line   859
+  376   376                      ; line   865
+  377   377                      ; line   866
+  378   378                      ; line   867
+  379   379                      ; line   873
+  380   380                      ; line   874
+  381   381                      ; line   875
+  382   382                      ; line   881
+  383   383                      ; line   882
+  384   384                      ; line   883
+  385   385                      ; line   889
+  386   386                      ; line   890
+  387   387                      ; line   891
+  388   388                      ; line   897
+  389   389                      ; line   898
+  390   390                      ; line   899
+  391   391                      ; line   905
+  392   392                      ; line   906
+  393   393                      ; line   907
+  394   394                      ; line   913
+  395   395                      ; line   914
+  396   396                      ; line   915
+  397   397                      ; line   921
+  398   398                      ; line   922
+  399   399                      ; line   923
+  400   400                      ; line   929
+  401   401                      ; line   930
+  402   402                      ; line   931
+  403   403                      ; line   937
+  404   404                      ; line   938
+  405   405                      ; line   939
+  406   406                      ; line   945
+  407   407                      ; line   946
+  408   408                      ; line   947
+  409   409                      ; line   958
+  410   410                      ; line   959
+  411   411                      ; line   960
+  412   412                      ; line  1016
+  413   413                      ; line  1017
+  414   414                      ; line  1018
+  415   415                      ; line  1019
+  416   416                      ; line  1022
+  417   417                      ; line    16
+  418   418                      ; line    17
+  419   419                      ; line    18
+  420   420                      ; line    19
+  421   421                      ; line    20
+  422   422                      ; line    21
+  423   423                      ; line    23
+  424   424                      ; line   321
+  425   425                      ; line   736
+  426   426                      ; line   845
+  427   427                      ; line   856
+  428   428                      ; line   869
+  429   429                      ; line   872
+  430   430                      ; line   876
+  431   431                      ; line   880
+  432   432                      ; line   578
+  433   433                      ; line  1621
+  434   434                      ; line  1627
+  435   435                      ; line  1633
+  436   436                      ; line  1650
+  437   437                      ; line  1656
+  438   438                      ; line  1663
+  439   439                      ; line  1669
+  440   440                      ; line  1676
+  441   441                      ; line  1684
+  442   442                      ; line  1695
+  443   443                      ; line  1703
+  444   444                      ; line  1711
+  445   445                      ; line  1729
+  446   446                      ; line  1744
+  447   447                      ; line  1751
+  448   448                      ; line  1763
+  449   449                      ; line  1777
+  450   450                      ; line  1786
+  451   451                      ; line  1798
+  452   452                      ; line  1804
+  453   453                      ; line  1816
+  454   454                      ; line  1822
+  455   455                      ; line  1830
+  456   456                      ; line  1835
+  457   457                      ; line  1844
+  458   458                      ; line  1853
+  459   459                      ; line  1862
+  460   460                      ; line  1877
+  461   461                      ; line  1891
+  462   462                      ; line  1903
+  463   463                      ; line  1919
+  464   464                      ; line  1934
+  465   465                      ; line  1946
+  466   466                      ; line  1957
+  467   467                      ; line  1967
+  468   468                      ; line  1977
+  469   469                      ; line  1989
+  470   470                      ; line  2001
+  471   471                      ; line  2012
+  472   472                      ; line  2021
+  473   473                      ; line  2030
+  474   474                      ; line  2038
+  475   475                      ; line  2048
+  476   476                      ; line  2058
+  477   477                      ; line  2069
+  478   478                      ; line  2080
+  479   479                      ; line  2088
+  480   480                      ; line  2096
+  481   481                      ; line  2105
+  482   482                      ; line  2113
+  483   483                      ; line  2127
+  484   484                      ; line  2138
+  485   485                      ; line  2146
+  486   486                      ; line  2154
+  487   487                      ; line  2166
+  488   488                      ; line  2174
+  489   489                      ; line  2182
+  490   490                      ; line  2191
+  491   491                      ; line  2202
+  492   492                      ; line  2214
+  493   493                      ; line  2225
+  494   494                      ; line  2253
+  495   495                      ; line  2292
+  496   496                      ; line  2301
+  497   497                      ; line  2316
+  498   498                      ; line  2338
+  499   499                      ; line  2355
+  500   500                      ; line  2367
+  501   501                      ; line  2425
+  502   502                      ; line  2435
+  503   503                      ; line  2447
+  504   504                      ; line  2458
+  505   505                      ; line  2466
+  506   506                      ; line  2473
+  507   507                      ; line  2488
+  508   508                      ; line  2496
+  509   509                      ; line  2506
+  510   510                      ; line  2529
+  511   511                      ; line  2539
+  512   512                      ; line  2549
+  513   513                      ; line  2560
+  514   514                      ; line  2588
+  515   515                      ; line  2597
+  516   516                      ; line  2610
+  517   517                      ; line  2629
+  518   518                      ; line  2641
+  519   519                      ; line  2650
+  520   520                      ; line  2679
+  521   521                      ; line  2691
+  522   522                      ; line  2713
+  523   523                      ; line  2725
+  524   524                      ; line  2739
+  525   525                      ; line  2755
+  526   526                      ; line  2785
+  527   527                      ; line  2796
+  528   528                      ; line  2802
+  529   529                      ; line  2810
+  530   530                      ; line  2817
+  531   531                      ; line  2823
+  532   532                      ; line  2834
+  533   533                      ; line  2856
+  534   534                      ; line  2867
+  535   535                      ; line  2883
+  536   536                      ; line  2891
+  537   537                      ; line  2899
+  538   538                      ; line  2905
+  539   539                      ; line  2911
+  540   540                      ; line  2944
+  541   541                      ; line  2952
+  542   542                      ; line  2966
+  543   543                      ; line  2978
+  544   544                      ; line  2990
+  545   545                      ; line  3001
+  546   546                      ; line  3011
+  547   547                      ; line  3040
+  548   548                      ; line  3048
+  549   549                      ; line  3069
+  550   550                      ; line  3078
+  551   551                      ; line  3087
+  552   552                      ; line  3098
+  553   553                      ; line  3122
+  554   554                      ; line  3134
+  555   555                      ; line  3175
+  556   556                      ; line  3341
+  557   557                      ; line  3343
+  558   558                      ; line  3361
+  559   559                      ; line  3445
+  560   560                      ; line  3448
+  561   561                      ; line  3486
+  562   562                      ; line  3760
+  563   563                      ; line  3762
+  564   564                      ; line  3779
+  565   565                      ; line  3816
+  566   566                      ; line  3854
+  567   567                      ; line  3856
+  568   568                      ; line  3857
+  569   569                      ; line  3875
+  570   570                      ; line  3912
+  571   571                      ; line  3965
+  572   572                      ; line  3967
+  573   573                      ; line  3968
+  574   574                      ; line  3991
+  575   575                      ; line  4053
+  576   576                      ; line  4117
+  577   577                      ; line  4119
+  578   578                      ; line  4120
+  579   579                      ; line  4139
+  580   580                      ; line  4189
+  581   581                      ; line  4248
+  582   582                      ; line  4250
+  583   583                      ; line  4251
+  584   584                      ; line  4284
+  585   585                      ; line  4375
+  586   586                      ; line  4441
+  587   587                      ; line  4522
+  588   588                      ; line  4524
+  589   589                      ; line  4525
+  590   590                      ; line  4526
+  591   591                      ; line  4543
+  592   592                      ; line  4594
+  593   593                      ; line  4640
+  594   594                      ; line  4642
+  595   595                      ; line  4643
+  596   596                      ; line  4663
+  597   597                      ; line  4720
+  598   598                      ; line  4781
+  599   599                      ; line  4783
+  600   600                      ; line  4784
+  601   601                      ; line  4807
+  602   602                      ; line  4870
+  603   603                      ; line  4939
+  604   604                      ; line  4941
+  605   605                      ; line  4942
+  606   606                      ; line  4966
+  607   607                      ; line  5035
+  608   608                      ; line  5108
+  609   609                      ; line  5110
+  610   610                      ; line  5111
+  611   611                      ; line  5138
+  612   612                      ; line  5218
+  613   613                      ; line  5300
+  614   614                      ; line  5302
+  615   615                      ; line  5303
+  616   616                      ; line  5326
+  617   617                      ; line  5390
+  618   618                      ; line  5453
+  619   619                      ; line  5455
+  620   620                      ; line  5456
+  621   621                      ; line  5479
+  622   622                      ; line  5546
+  623   623                      ; line  5612
+  624   624                      ; line  5614
+  625   625                      ; line  5615
+  626   626                      ; line  5643
+  627   627                      ; line  5722
+  628   628                      ; line  5801
+  629   629                      ; line  5803
+  630   630                      ; line  5804
+  631   631                      ; line  5826
+  632   632                      ; line  5887
+  633   633                      ; line  5951
+  634   634                      ; line  5953
+  635   635                      ; line  5954
+  636   636                      ; line  5976
+  637   637                      ; line  6038
+  638   638                      ; line  6106
+  639   639                      ; line  6108
+  640   640                      ; line  6109
+  641   641                      ; line  6134
+  642   642                      ; line  6225
+  643   643                      ; line  6227
+  644   644                      ; line  6231
+  645   645                      ; line  6236
+  646   646                      ; line  6239
+  647   647                      ; line  6242
+  648   648                      ; line  6243
+  649   649                      ; line  6244
+  650   650                      ; line  6245
+  651   651                      ; line  6246
+  652   652                      ; line  6247
+  653   653                      ; line  6248
+  654   654                      ; line  6249
+  655   655                      ; line  6250
+  656   656                      ; line  6251
+  657   657                      ; line  6252
+  658   658                      ; line  6253
+  659   659                      ; line  6254
+  660   660                      ; line  6255
+  661   661                      ; line  6256
+  662   662                      ; line  6257
+  663   663                      ; line  6258
+  664   664                      ; line  6259
+  665   665                      ; line  6260
+  666   666                      ; line  6261
+  667   667                      ; line  6262
+  668   668                      ; line  6263
+  669   669                      ; line  6264
+  670   670                      ; line  6265
+  671   671                      ; line  6266
+  672   672                      ; line  6267
+  673   673                      ; line  6268
+  674   674                      ; line  6271
+  675   675                      ; line  6272
+  676   676                      ; line  6273
+  677   677                      ; line  6274
+  678   678                      ; line  6275
+  679   679                      ; line  6276
+  680   680                      ; line  6277
+  681   681                      ; line  6280
+  682   682                      ; line  6281
+  683   683                      ; line  6282
+  684   684                      ; line  6283
+  685   685                      ; line  6284
+  686   686                      ; line  6285
+  687   687                      ; line  6286
+  688   688                      ; line  6287
+  689   689                      ; line  6288
+  690   690                      ; line  6289
+  691   691                      ; line  6290
+  692   692                      ; line  6291
+  693   693                      ; line  6292
+  694   694                      ; line  6295
+  695   695                      ; line  6296
+  696   696                      ; line  6297
+  697   697                      ; line  6298
+  698   698                      ; line  6299
+  699   699                      ; line  6302
+  700   700                      ; line  6303
+  701   701                      ; line  6304
+  702   702                      ; line  6305
+  703   703                      ; line  6306
+  704   704                      ; line  6307
+  705   705                      ; line  6308
+  706   706                      ; line  6311
+  707   707                      ; line  6312
+  708   708                      ; line  6313
+  709   709                      ; line  6314
+  710   710                      ; line  6315
+  711   711                      ; line  6316
+  712   712                      ; line  6317
+  713   713                      ; line  6318
+  714   714                      ; line  6319
+  715   715                      ; line  6322
+  716   716                      ; line  6323
+  717   717                      ; line  6324
+  718   718                      ; line  6325
+  719   719                      ; line  6326
+  720   720                      ; line  6327
+  721   721                      ; line  6328
+  722   722                      ; line  6331
+  723   723                      ; line  6332
+  724   724                      ; line  6333
+  725   725                      ; line  6334
+  726   726                      ; line  6335
+  727   727                      ; line  6336
+  728   728                      ; line  6337
+  729   729                      ; line  6338
+  730   730                      ; line  6339
+  731   731                      ; line  6340
+  732   732                      ; line  6341
+  733   733                      ; line  6342
+  734   734                      ; line  6343
+  735   735                      ; line  6344
+  736   736                      ; line  6345
+  737   737                      ; line  6346
+  738   738                      ; line  6347
+  739   739                      ; line  6348
+  740   740                      ; line  6349
+  741   741                      ; line  6350
+  742   742                      ; line  6351
+  743   743                      ; line  6352
+  744   744                      ; line  6355
+  745   745                      ; line  6356
+  746   746                      ; line  6357
+  747   747                      ; line  6358
+  748   748                      ; line  6359
+  749   749                      ; line  6360
+  750   750                      ; line  6361
+  751   751                      ; line  6364
+  752   752                      ; line  6365
+  753   753                      ; line  6366
+  754   754                      ; line  6367
+  755   755                      ; line  6368
+  756   756                      ; line  6369
+  757   757                      ; line  6370
+  758   758                      ; line  6371
+  759   759                      ; line  6374
+  760   760                      ; line  6375
+  761   761                      ; line  6376
+  762   762                      ; line  6377
+  763   763                      ; line  6378
+  764   764                      ; line  6379
+  765   765                      ; line  6380
+  766   766                      ; line  6381
+  767   767                      ; line  6382
+  768   768                      ; line  6385
+  769   769                      ; line  6386
+  770   770                      ; line  6387
+  771   771                      ; line  6388
+  772   772                      ; line  6389
+  773   773                      ; line  6390
+  774   774                      ; line  6391
+  775   775                      ; line  6392
+  776   776                      ; line  6393
+  777   777                      ; line  6394
+  778   778                      ; line  6397
+  779   779                      ; line  6398
+  780   780                      ; line  6399
+  781   781                      ; line  6400
+  782   782                      ; line  6401
+  783   783                      ; line  6402
+  784   784                      ; line  6403
+  785   785                      ; line  6404
+  786   786                      ; line  6405
+  787   787                      ; line  6406
+  788   788                      ; line  6407
+  789   789                      ; line  6408
+  790   790                      ; line  6409
+  791   791                      ; line  6412
+  792   792                      ; line  6413
+  793   793                      ; line  6414
+  794   794                      ; line  6415
+  795   795                      ; line  6416
+  796   796                      ; line  6417
+  797   797                      ; line  6418
+  798   798                      ; line  6419
+  799   799                      ; line  6420
+  800   800                      ; line  6423
+  801   801                      ; line  6424
+  802   802                      ; line  6425
+  803   803                      ; line  6426
+  804   804                      ; line  6427
+  805   805                      ; line  6428
+  806   806                      ; line  6429
+  807   807                      ; line  6430
+  808   808                      ; line  6431
+  809   809                      ; line  6434
+  810   810                      ; line  6435
+  811   811                      ; line  6436
+  812   812                      ; line  6437
+  813   813                      ; line  6438
+  814   814                      ; line  6439
+  815   815                      ; line  6440
+  816   816                      ; line  6441
+  817   817                      ; line  6442
+  818   818                      ; line  6443
+  819   819                      ; line  6444
+  820   820                      ; line  6445
+  821   821                      ; line  6448
+  822   822                      ; line  6449
+  823   823                      ; line  6450
+  824   824                      ; line  6451
+  825   825                      ; line  6452
+  826   826                      ; line  6453
+  827   827                      ; line  6454
+  828   828                      ; line  6455
+  829   829                      ; line  6456
+  830   830                      ; line  6459
+  831   831                      ; line  6460
+  832   832                      ; line  6461
+  833   833                      ; line  6462
+  834   834                      ; line  6463
+  835   835                      ; line  6464
+  836   836                      ; line  6465
+  837   837                      ; line  6466
+  838   838                      ; line  6467
+  839   839                      ; line  6470
+  840   840                      ; line  6471
+  841   841                      ; line  6472
+  842   842                      ; line  6473
+  843   843                      ; line  6474
+  844   844                      ; line  6475
+  845   845                      ; line  6476
+  846   846                      ; line  6477
+  847   847                      ; line  6478
+  848   848                      ; line  6479
+  849   849                      ; line  6480
+  850   850                      ; line  6481
+  851   851                      ; line  6482
+  852   852                      ; line  6483
+  853   853                      ; line  6484
+  854   854                      ; line  6485
+  855   855                      ; line  6486
+  856   856                      ; line  6487
+  857   857                      ; line    55
+  858   858                      ; line    56
+  859   859                      ; line    63
+  860   860                      ; line    82
+  861   861                      ; line    93
+  862   862                      ; line   104
+  863   863                      ; line   113
+  864   864                      ; line   120
+  865   865                      ; line   135
+  866   866                      ; line   142
+  867   867                      ; line   149
+  868   868                      ; line   162
+  869   869                      ; line   176
+  870   870                      ; line   190
+  871   871                      ; line    30
+  872   872                      ; line    41
+  873   873                      ; line    42
+  874   874                      ; line    43
+  875   875                      ; line    44
+  876   876                      ; line    45
+  877   877                      ; line    46
+  878   878                      ; line    49
+  879   879                      ; line    51
+  880   880                      ; line    53
+  881   881                      ; line    55
+  882   882                      
+  883   883 -----                @@CODE  CSEG    BASE
+  884   884                      
+  885   885 -----                @@CODEL CSEG
+  886   886                      
+  887   887 -----                @@BASE  CSEG    BASE
+  888   888                              END
+  889   889                      
+  890   890                      
+  891   891                      ; *** Code Information ***
+  892   892                      
+  893   893                      ; Target chip : R5F11AGJ
+  894   894                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00000H   @@CODE
+00000 00000H   @@CODEL
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

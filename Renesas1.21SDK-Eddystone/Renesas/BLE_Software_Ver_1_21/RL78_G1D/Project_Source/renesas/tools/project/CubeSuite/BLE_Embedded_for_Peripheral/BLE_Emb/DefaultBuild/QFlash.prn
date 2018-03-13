@@ -1,0 +1,1431 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\QFlash.asm -_msgoff -pD
+          efaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\QFlash.asm
+Obj-file: DefaultBuild\QFlash.rel
+Prn-file: DefaultBuild\QFlash.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:33
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_app\QFlash
+    5     5                      ;             .c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EX
+    6     6                      ;             MEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RB
+    7     7                      ;             LE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPL
+    8     8                      ;             E,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_H
+    9     9                      ;             OCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLI
+   10    10                      ;             B -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\.
+   11    11                      ;             .\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..
+   12    12                      ;             \..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\datafl
+   13    13                      ;             ash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i.
+   14    14                      ;             .\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..
+   15    15                      ;             \..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\.
+   16    16                      ;             .\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -
+   17    17                      ;             i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i
+   18    18                      ;             ..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_s
+   19    19                      ;             w -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\dri
+   20    20                      ;             ver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\
+   21    21                      ;             ..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..
+   22    22                      ;             \..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\
+   23    23                      ;             sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zp
+   24    24                      ;             s -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\QFlash.c
+   26    26                      ; Asm-file  : DefaultBuild\QFlash.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 02H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         087H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, QFlash.c
+   37    37                      $DGS    MOD_NAM, QFlash,        00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    STR_STR, _RBLE_BD_ADDR_t,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 06H,           019H
+   56    56                      $DGS    MEB_STR, _addr,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   57    57                      $DGS    AUX_STR, 00H,           00H,    06H,    06H,    00H,    00H,    00H,    00H
+   58    58                      $DGS    END_STR, .eos,          06H,    0FFFFH, 00H,    066H,   01H,    00H
+   59    59                      $DGS    AUX_EOS, 013H,          06H
+   60    60                      $DGS    STR_STR, _RBLE_SET_ADV_PARAM_t, 00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   61    61                      $DGS    AUX_TAG, 010H,          027H
+   62    62                      $DGS    MEB_STR, _adv_intv_min, 00H,    0FFFFH, 0DH,    08H,    00H,    00H
+   63    63                      $DGS    MEB_STR, _adv_intv_max, 02H,    0FFFFH, 0DH,    08H,    00H,    00H
+   64    64                      $DGS    MEB_STR, _adv_type,     04H,    0FFFFH, 0CH,    08H,    00H,    00H
+   65    65                      $DGS    MEB_STR, _own_addr_type,        05H,    0FFFFH, 0CH,    08H,    00H,    00H
+   66    66                      $DGS    MEB_STR, _direct_addr_type,     06H,    0FFFFH, 0CH,    08H,    00H,    00H
+   67    67                      $DGS    MEB_STR, _direct_addr,  07H,    0FFFFH, 08H,    08H,    01H,    00H
+   68    68                      $DGS    AUX_STR, 013H,          00H,    06H,    00H,    00H,    00H,    00H,    00H
+   69    69                      $DGS    MEB_STR, _adv_chnl_map, 0DH,    0FFFFH, 0CH,    08H,    00H,    00H
+   70    70                      $DGS    MEB_STR, _adv_filt_policy,      0EH,    0FFFFH, 0CH,    08H,    00H,    00H
+   71    71                      $DGS    MEB_STR, _reserved,     0FH,    0FFFFH, 0CH,    08H,    00H,    00H
+   72    72                      $DGS    END_STR, .eos,          010H,   0FFFFH, 00H,    066H,   01H,    00H
+   73    73                      $DGS    AUX_EOS, 019H,          010H
+   74    74                      $DGS    STR_STR, _RBLE_ADV_DATA_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   75    75                      $DGS    AUX_TAG, 01FH,          02DH
+   76    76                      $DGS    MEB_STR, _data,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   77    77                      $DGS    AUX_STR, 00H,           00H,    01FH,   01FH,   00H,    00H,    00H,    00H
+   78    78                      $DGS    END_STR, .eos,          01FH,   0FFFFH, 00H,    066H,   01H,    00H
+   79    79                      $DGS    AUX_EOS, 027H,          01FH
+   80    80                      $DGS    STR_STR, _RBLE_SET_ADV_DATA_t,  00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   81    81                      $DGS    AUX_TAG, 020H,          034H
+   82    82                      $DGS    MEB_STR, _adv_data_len, 00H,    0FFFFH, 0CH,    08H,    00H,    00H
+   83    83                      $DGS    MEB_STR, _adv_data,     01H,    0FFFFH, 08H,    08H,    01H,    00H
+   84    84                      $DGS    AUX_STR, 027H,          00H,    01FH,   00H,    00H,    00H,    00H,    00H
+   85    85                      $DGS    END_STR, .eos,          020H,   0FFFFH, 00H,    066H,   01H,    00H
+   86    86                      $DGS    AUX_EOS, 02DH,          020H
+   87    87                      $DGS    STR_STR, _RBLE_SCAN_RSP_DATA_t, 00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   88    88                      $DGS    AUX_TAG, 01FH,          03AH
+   89    89                      $DGS    MEB_STR, _data,         00H,    0FFFFH, 0CH,    08H,    01H,    03H
+   90    90                      $DGS    AUX_STR, 00H,           00H,    01FH,   01FH,   00H,    00H,    00H,    00H
+   91    91                      $DGS    END_STR, .eos,          01FH,   0FFFFH, 00H,    066H,   01H,    00H
+   92    92                      $DGS    AUX_EOS, 034H,          01FH
+   93    93                      $DGS    STR_STR, _RBLE_SET_SCAN_RSP_DATA_t,     00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   94    94                      $DGS    AUX_TAG, 020H,          041H
+   95    95                      $DGS    MEB_STR, _scan_rsp_data_len,    00H,    0FFFFH, 0CH,    08H,    00H,    00H
+   96    96                      $DGS    MEB_STR, _data,         01H,    0FFFFH, 08H,    08H,    01H,    00H
+   97    97                      $DGS    AUX_STR, 034H,          00H,    01FH,   00H,    00H,    00H,    00H,    00H
+   98    98                      $DGS    END_STR, .eos,          020H,   0FFFFH, 00H,    066H,   01H,    00H
+   99    99                      $DGS    AUX_EOS, 03AH,          020H
+  100   100                      $DGS    STR_STR, _RBLE_ADV_INFO_t,      00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  101   101                      $DGS    AUX_TAG, 050H,          04BH
+  102   102                      $DGS    MEB_STR, _adv_param,    00H,    0FFFFH, 08H,    08H,    01H,    00H
+  103   103                      $DGS    AUX_STR, 019H,          00H,    010H,   00H,    00H,    00H,    00H,    00H
+  104   104                      $DGS    MEB_STR, _adv_data,     010H,   0FFFFH, 08H,    08H,    01H,    00H
+  105   105                      $DGS    AUX_STR, 02DH,          00H,    020H,   00H,    00H,    00H,    00H,    00H
+  106   106                      $DGS    MEB_STR, _scan_rsp_data,        030H,   0FFFFH, 08H,    08H,    01H,    00H
+  107   107                      $DGS    AUX_STR, 03AH,          00H,    020H,   00H,    00H,    00H,    00H,    00H
+  108   108                      $DGS    END_STR, .eos,          050H,   0FFFFH, 00H,    066H,   01H,    00H
+  109   109                      $DGS    AUX_EOS, 041H,          050H
+  110   110                      $DGS    STR_STR, .21fake,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  111   111                      $DGS    AUX_TAG, 0BH,           05AH
+  112   112                      $DGS    MEB_STR, _Mark,         00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  113   113                      $DGS    MEB_STR, _Adv_Interval, 01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  114   114                      $DGS    MEB_STR, _Adv_Range,    02H,    0FFFFH, 0CH,    08H,    00H,    00H
+  115   115                      $DGS    MEB_STR, _LED_Switch,   03H,    0FFFFH, 0CH,    08H,    00H,    00H
+  116   116                      $DGS    MEB_STR, _LED_Color,    04H,    0FFFFH, 0CH,    08H,    00H,    00H
+  117   117                      $DGS    MEB_STR, _LED_Count,    05H,    0FFFFH, 0CH,    08H,    00H,    00H
+  118   118                      $DGS    MEB_STR, _Sound_Switch, 06H,    0FFFFH, 0CH,    08H,    00H,    00H
+  119   119                      $DGS    MEB_STR, _Sound_Count,  07H,    0FFFFH, 0CH,    08H,    00H,    00H
+  120   120                      $DGS    MEB_STR, _Mod_Time,     08H,    0FFFFH, 0CH,    08H,    00H,    00H
+  121   121                      $DGS    MEB_STR, _Auto_Rec,     09H,    0FFFFH, 0CH,    08H,    00H,    00H
+  122   122                      $DGS    MEB_STR, _Auto_Rec_ID,  0AH,    0FFFFH, 0CH,    08H,    00H,    00H
+  123   123                      $DGS    END_STR, .eos,          0BH,    0FFFFH, 00H,    066H,   01H,    00H
+  124   124                      $DGS    AUX_EOS, 04BH,          0BH
+  125   125                      $DGS    STR_STR, .22fake,       00H,    0FFFEH, 08H,    0AH,    01H,    00H
+  126   126                      $DGS    AUX_TAG, 03H,           061H
+  127   127                      $DGS    MEB_STR, _Mark,         00H,    0FFFFH, 0CH,    08H,    00H,    00H
+  128   128                      $DGS    MEB_STR, _Left_Button,  01H,    0FFFFH, 0CH,    08H,    00H,    00H
+  129   129                      $DGS    MEB_STR, _Right_Button, 02H,    0FFFFH, 0CH,    08H,    00H,    00H
+  130   130                      $DGS    END_STR, .eos,          03H,    0FFFFH, 00H,    066H,   01H,    00H
+  131   131                      $DGS    AUX_EOS, 05AH,          03H
+  132   132                      $DGS    GLV_SYM, _Write_Data_flash,     U,      U,      01H,    026H,   01H,    02H
+  133   133                      $DGS    AUX_FUN, 00H,           U,      U,      06EH,   01H,    00H
+  134   134                      $DGS    BEG_FUN, ??bf_Write_Data_flash, U,      U,      00H,    065H,   01H,    00H
+  135   135                      $DGS    AUX_BEG, 012H,          02H,    068H
+  136   136                      $DGS    FUN_ARG, _Arr,          00H,    0FFFFH, 0CH,    09H,    01H,    01H
+  137   137                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  138   138                      $DGS    FUN_ARG, _id,           08H,    0FFFFH, 0CH,    09H,    00H,    00H
+  139   139                      $DGS    BEG_BLK, ??bb00_Write_Data_flash,       U,      U,      00H,    064H,   01H,    00H
+  140   140                      $DGS    AUX_BEG, 016H,          00H,    00H
+  141   141                      $DGS    END_BLK, ??eb00_Write_Data_flash,       U,      U,      00H,    064H,   01H,    00H
+  142   142                      $DGS    AUX_END, 01AH
+  143   143                      $DGS    END_FUN, ??ef_Write_Data_flash, U,      U,      00H,    065H,   01H,    00H
+  144   144                      $DGS    AUX_END, 01CH
+  145   145                      $DGS    GLV_SYM, _Read_Data_flash,      U,      U,      01H,    026H,   01H,    02H
+  146   146                      $DGS    AUX_FUN, 00H,           U,      U,      07BH,   01H,    00H
+  147   147                      $DGS    BEG_FUN, ??bf_Read_Data_flash,  U,      U,      00H,    065H,   01H,    00H
+  148   148                      $DGS    AUX_BEG, 02FH,          02H,    075H
+  149   149                      $DGS    FUN_ARG, _Arr,          00H,    0FFFFH, 0CH,    09H,    01H,    01H
+  150   150                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+  151   151                      $DGS    FUN_ARG, _id,           08H,    0FFFFH, 0CH,    09H,    00H,    00H
+  152   152                      $DGS    BEG_BLK, ??bb00_Read_Data_flash,        U,      U,      00H,    064H,   01H,    00H
+  153   153                      $DGS    AUX_BEG, 015H,          00H,    00H
+  154   154                      $DGS    END_BLK, ??eb00_Read_Data_flash,        U,      U,      00H,    064H,   01H,    00H
+  155   155                      $DGS    AUX_END, 019H
+  156   156                      $DGS    END_FUN, ??ef_Read_Data_flash,  U,      U,      00H,    065H,   01H,    00H
+  157   157                      $DGS    AUX_END, 01BH
+  158   158                      $DGS    GLV_SYM, _Push_Data_to_G1D,     U,      U,      01H,    026H,   01H,    02H
+  159   159                      $DGS    AUX_FUN, 00H,           U,      U,      081H,   01H,    00H
+  160   160                      $DGS    BEG_FUN, ??bf_Push_Data_to_G1D, U,      U,      00H,    065H,   01H,    00H
+  161   161                      $DGS    AUX_BEG, 04BH,          00H,    081H
+  162   162                      $DGS    END_FUN, ??ef_Push_Data_to_G1D, U,      U,      00H,    065H,   01H,    00H
+  163   163                      $DGS    AUX_END, 069H
+  164   164                      $DGS    GLV_SYM, _Stop_Data_flash,      U,      U,      01H,    026H,   01H,    02H
+  165   165                      $DGS    AUX_FUN, 00H,           U,      U,      087H,   01H,    00H
+  166   166                      $DGS    BEG_FUN, ??bf_Stop_Data_flash,  U,      U,      00H,    065H,   01H,    00H
+  167   167                      $DGS    AUX_BEG, 0B4H,          00H,    087H
+  168   168                      $DGS    END_FUN, ??ef_Stop_Data_flash,  U,      U,      00H,    065H,   01H,    00H
+  169   169                      $DGS    AUX_END, 012H
+  170   170                      $DGS    GLV_SYM, _L_Seting_Data,        U,      U,      08H,    026H,   01H,    00H
+  171   171                      $DGS    AUX_STR, 04BH,          00H,    0BH,    00H,    00H,    00H,    00H,    00H
+  172   172                      $DGS    GLV_SYM, _R_Seting_Data,        U,      U,      08H,    026H,   01H,    00H
+  173   173                      $DGS    AUX_STR, 04BH,          00H,    0BH,    00H,    00H,    00H,    00H,    00H
+  174   174                      $DGS    GLV_SYM, _ButtSet,      U,      U,      08H,    026H,   01H,    00H
+  175   175                      $DGS    AUX_STR, 05AH,          00H,    03H,    00H,    00H,    00H,    00H,    00H
+  176   176                      $DGS    GLV_SYM, _temp,         U,      U,      0CH,    026H,   01H,    03H
+  177   177                      $DGS    AUX_STR, 00H,           00H,    032H,   032H,   00H,    00H,    00H,    00H
+  178   178                      $DGS    GLV_SYM, _x,            U,      U,      0CH,    026H,   00H,    00H
+  179   179                      $DGS    GLV_SYM, _Readtemp,     U,      U,      0CH,    026H,   01H,    03H
+  180   180                      $DGS    AUX_STR, 00H,           00H,    032H,   032H,   00H,    00H,    00H,    00H
+  181   181                      $DGS    GLV_SYM, _dataflash_start,      U,      U,      0CH,    02H,    01H,    02H
+  182   182                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  183   183                      $DGS    GLV_SYM, _dataflash_rw, U,      U,      0CH,    02H,    01H,    02H
+  184   184                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  185   185                      $DGS    GLV_SYM, _dataflash_stop,       U,      U,      0CH,    02H,    01H,    02H
+  186   186                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+  187   187                      $DGS    GLV_SYM, _Eddystone_URL_N_flash,        U,      U,      08H,    02H,    01H,    00H
+  188   188                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  189   189                      $DGS    GLV_SYM, _Eddystone_URL_L_flash,        U,      U,      08H,    02H,    01H,    00H
+  190   190                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  191   191                      $DGS    GLV_SYM, _Eddystone_URL_R_flash,        U,      U,      08H,    02H,    01H,    00H
+  192   192                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  193   193                      $DGS    GLV_SYM, _Eddystone_UID_N_flash,        U,      U,      08H,    02H,    01H,    00H
+  194   194                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  195   195                      $DGS    GLV_SYM, _Eddystone_UID_L_flash,        U,      U,      08H,    02H,    01H,    00H
+  196   196                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  197   197                      $DGS    GLV_SYM, _Eddystone_UID_R_flash,        U,      U,      08H,    02H,    01H,    00H
+  198   198                      $DGS    AUX_STR, 041H,          00H,    050H,   00H,    00H,    00H,    00H,    00H
+  199   199                      
+  200   200                              EXTRN   _dataflash_start
+  201   201                              EXTRN   _dataflash_rw
+  202   202                              EXTRN   _dataflash_stop
+  203   203                              EXTRN   _Eddystone_URL_N_flash
+  204   204                              EXTRN   _Eddystone_URL_L_flash
+  205   205                              EXTRN   _Eddystone_URL_R_flash
+  206   206                              EXTRN   _Eddystone_UID_N_flash
+  207   207                              EXTRN   _Eddystone_UID_L_flash
+  208   208                              EXTRN   _Eddystone_UID_R_flash
+  209   209                              PUBLIC  _L_Seting_Data
+  210   210                              PUBLIC  _R_Seting_Data
+  211   211                              PUBLIC  _ButtSet
+  212   212                              PUBLIC  _temp
+  213   213                              PUBLIC  _x
+  214   214                              PUBLIC  _Readtemp
+  215   215                              PUBLIC  _Write_Data_flash
+  216   216                              PUBLIC  _Read_Data_flash
+  217   217                              PUBLIC  _Push_Data_to_G1D
+  218   218                              PUBLIC  _Stop_Data_flash
+  219   219                      
+  220   220 -----                @@BITS  BSEG
+  221   221                      
+  222   222 -----                @@CNST  CSEG    MIRRORP
+  223   223                      
+  224   224 -----                @@R_INIT        CSEG    UNIT64KP
+  225   225 00000  00                    DB      00H     ; 0
+  226   226 00001  00000000              DB      (49)
+            00005  00000000
+            00009  00000000
+            0000D  00000000
+            00011  00000000
+            00015  00000000
+            00019  00000000
+            0001D  00000000
+            00021  00000000
+            00025  00000000
+            00029  00000000
+            0002D  00000000
+            00031  00
+  227   227 00032  00                    DB      00H     ; 0
+  228   228 00033  00                    DB      00H     ; 0
+  229   229 00034  00000000              DB      (49)
+            00038  00000000
+            0003C  00000000
+            00040  00000000
+            00044  00000000
+            00048  00000000
+            0004C  00000000
+            00050  00000000
+            00054  00000000
+            00058  00000000
+            0005C  00000000
+            00060  00000000
+            00064  00
+  230   230 00065  00                    DB      (1)
+  231   231                      
+  232   232 -----                @@INIT  DSEG    BASEP
+  233   233 00000                _temp:  DS      (50)
+  234   234 00032                _x:     DS      (1)
+  235   235 00033                _Readtemp:      DS      (50)
+  236   236 00065                        DS      (1)
+  237   237                      
+  238   238 -----                @@DATA  DSEG    BASEP
+  239   239 00000                _L_Seting_Data: DS      (11)
+  240   240 0000B                        DS      (1)
+  241   241 0000C                _R_Seting_Data: DS      (11)
+  242   242 00017                        DS      (1)
+  243   243 00018                _ButtSet:       DS      (3)
+  244   244 0001B                        DS      (1)
+  245   245                      
+  246   246 -----                @@R_INIS        CSEG    UNIT64KP
+  247   247                      
+  248   248 -----                @@INIS  DSEG    SADDRP
+  249   249                      
+  250   250 -----                @@DATS  DSEG    SADDRP
+  251   251                      
+  252   252 -----                @@CNSTL CSEG    PAGE64KP
+  253   253                      
+  254   254 -----                @@RLINIT        CSEG    UNIT64KP
+  255   255                      
+  256   256 -----                @@INITL DSEG    UNIT64KP
+  257   257                      
+  258   258 -----                @@DATAL DSEG    UNIT64KP
+  259   259                      
+  260   260 -----                @@CALT  CSEG    CALLT0
+  261   261                      
+  262   262                      ; line    13
+  263   263                      ; line    14
+  264   264                      ; line    13
+  265   265                      ; line    14
+  266   266                      ; line    15
+  267   267                      ; line    74
+  268   268                      ; line    75
+  269   269                      ; line    76
+  270   270                      ; line    77
+  271   271                      ; line    79
+  272   272                      ; line    80
+  273   273                      ; line    84
+  274   274                      ; line    85
+  275   275                      ; line    16
+  276   276                      ; line    18
+  277   277                      ; line    19
+  278   278                      ; line    20
+  279   279                      ; line    21
+  280   280                      ; line    22
+  281   281                      ; line    23
+  282   282                      ; line    24
+  283   283                      ; line    25
+  284   284                      ; line    26
+  285   285                      ; line    27
+  286   286                      ; line    28
+  287   287                      ; line    29
+  288   288                      ; line    30
+  289   289                      ; line    31
+  290   290                      ; line    32
+  291   291                      ; line    33
+  292   292                      ; line    35
+  293   293                      ; line    37
+  294   294                      ; line    38
+  295   295                      ; line    39
+  296   296                      ; line    40
+  297   297                      ; line    43
+  298   298                      ; line    45
+  299   299                      ; line    46
+  300   300                      ; line    47
+  301   301                      ; line    48
+  302   302                      ; line    49
+  303   303                      ; line    50
+  304   304                      ; line    51
+  305   305                      ; line    52
+  306   306                      ; line    53
+  307   307                      ; line    54
+  308   308                      ; line    55
+  309   309                      ; line    56
+  310   310                      ; line    57
+  311   311                      ; line    58
+  312   312                      ; line    59
+  313   313                      ; line    60
+  314   314                      ; line    62
+  315   315                      ; line    64
+  316   316                      ; line    65
+  317   317                      ; line    66
+  318   318                      ; line    69
+  319   319                      ; line    71
+  320   320                      ; line    72
+  321   321                      ; line    73
+  322   322                      ; line    74
+  323   323                      ; line    75
+  324   324                      ; line    76
+  325   325                      ; line    77
+  326   326                      ; line    78
+  327   327                      ; line    79
+  328   328                      ; line    80
+  329   329                      ; line    81
+  330   330                      ; line    82
+  331   331                      ; line    83
+  332   332                      ; line    84
+  333   333                      ; line    85
+  334   334                      ; line    86
+  335   335                      ; line    88
+  336   336                      ; line    90
+  337   337                      ; line    91
+  338   338                      ; line    92
+  339   339                      ; line    20
+  340   340                      ; line    25
+  341   341                      ; line    29
+  342   342                      ; line    30
+  343   343                      ; line    31
+  344   344                      ; line    32
+  345   345                      ; line    33
+  346   346                      ; line    34
+  347   347                      ; line    35
+  348   348                      ; line    36
+  349   349                      ; line    37
+  350   350                      ; line    38
+  351   351                      ; line    39
+  352   352                      ; line    40
+  353   353                      ; line    41
+  354   354                      ; line    42
+  355   355                      ; line    43
+  356   356                      ; line    45
+  357   357                      ; line    46
+  358   358                      ; line    51
+  359   359                      ; line    52
+  360   360                      ; line    54
+  361   361                      ; line    59
+  362   362                      ; line    60
+  363   363                      ; line    65
+  364   364                      ; line    66
+  365   365                      ; line    67
+  366   366                      ; line    68
+  367   367                      ; line    70
+  368   368                      ; line    71
+  369   369                      ; line    72
+  370   370                      ; line    73
+  371   371                      ; line    74
+  372   372                      ; line    75
+  373   373                      ; line    76
+  374   374                      ; line    78
+  375   375                      ; line    83
+  376   376                      ; line    84
+  377   377                      ; line    89
+  378   378                      ; line    90
+  379   379                      ; line    92
+  380   380                      ; line    93
+  381   381                      ; line    94
+  382   382                      ; line    95
+  383   383                      ; line    96
+  384   384                      ; line    97
+  385   385                      ; line    98
+  386   386                      ; line   100
+  387   387                      ; line   105
+  388   388                      ; line   106
+  389   389                      ; line   111
+  390   390                      ; line   112
+  391   391                      ; line    95
+  392   392                      ; line   220
+  393   393                      ; line   221
+  394   394                      ; line    22
+  395   395                      ; line    23
+  396   396                      ; line    67
+  397   397                      ; line    68
+  398   398                      ; line   125
+  399   399                      ; line   124
+  400   400                      ; line   125
+  401   401                      ; line   150
+  402   402                      ; line   151
+  403   403                      ; line   152
+  404   404                      ; line   153
+  405   405                      ; line   154
+  406   406                      ; line   155
+  407   407                      ; line   156
+  408   408                      ; line   157
+  409   409                      ; line   167
+  410   410                      ; line   168
+  411   411                      ; line   169
+  412   412                      ; line   170
+  413   413                      ; line   171
+  414   414                      ; line   172
+  415   415                      ; line   173
+  416   416                      ; line   174
+  417   417                      ; line   175
+  418   418                      ; line   197
+  419   419                      ; line   198
+  420   420                      ; line   199
+  421   421                      ; line   213
+  422   422                      ; line   214
+  423   423                      ; line   215
+  424   424                      ; line   216
+  425   425                      ; line   217
+  426   426                      ; line   218
+  427   427                      ; line   219
+  428   428                      ; line   237
+  429   429                      ; line   238
+  430   430                      ; line   239
+  431   431                      ; line   240
+  432   432                      ; line   241
+  433   433                      ; line   260
+  434   434                      ; line   264
+  435   435                      ; line   265
+  436   436                      ; line   266
+  437   437                      ; line   267
+  438   438                      ; line   268
+  439   439                      ; line   269
+  440   440                      ; line   292
+  441   441                      ; line   293
+  442   442                      ; line   294
+  443   443                      ; line   295
+  444   444                      ; line   296
+  445   445                      ; line   297
+  446   446                      ; line   298
+  447   447                      ; line   328
+  448   448                      ; line   329
+  449   449                      ; line   330
+  450   450                      ; line   331
+  451   451                      ; line   350
+  452   452                      ; line   352
+  453   453                      ; line   353
+  454   454                      ; line   354
+  455   455                      ; line   355
+  456   456                      ; line   356
+  457   457                      ; line   514
+  458   458                      ; line   515
+  459   459                      ; line   516
+  460   460                      ; line   546
+  461   461                      ; line   547
+  462   462                      ; line   548
+  463   463                      ; line   557
+  464   464                      ; line   558
+  465   465                      ; line   559
+  466   466                      ; line   570
+  467   467                      ; line   571
+  468   468                      ; line   572
+  469   469                      ; line   581
+  470   470                      ; line   582
+  471   471                      ; line   583
+  472   472                      ; line   601
+  473   473                      ; line   602
+  474   474                      ; line   603
+  475   475                      ; line   613
+  476   476                      ; line   614
+  477   477                      ; line   615
+  478   478                      ; line   628
+  479   479                      ; line   629
+  480   480                      ; line   630
+  481   481                      ; line   639
+  482   482                      ; line   640
+  483   483                      ; line   641
+  484   484                      ; line   650
+  485   485                      ; line   651
+  486   486                      ; line   652
+  487   487                      ; line   661
+  488   488                      ; line   662
+  489   489                      ; line   663
+  490   490                      ; line   673
+  491   491                      ; line   674
+  492   492                      ; line   675
+  493   493                      ; line   690
+  494   494                      ; line   691
+  495   495                      ; line   692
+  496   496                      ; line   705
+  497   497                      ; line   706
+  498   498                      ; line   707
+  499   499                      ; line   713
+  500   500                      ; line   714
+  501   501                      ; line   715
+  502   502                      ; line   721
+  503   503                      ; line   722
+  504   504                      ; line   723
+  505   505                      ; line   729
+  506   506                      ; line   730
+  507   507                      ; line   731
+  508   508                      ; line   737
+  509   509                      ; line   738
+  510   510                      ; line   739
+  511   511                      ; line   745
+  512   512                      ; line   746
+  513   513                      ; line   747
+  514   514                      ; line   753
+  515   515                      ; line   754
+  516   516                      ; line   755
+  517   517                      ; line   761
+  518   518                      ; line   762
+  519   519                      ; line   763
+  520   520                      ; line   769
+  521   521                      ; line   770
+  522   522                      ; line   771
+  523   523                      ; line   777
+  524   524                      ; line   778
+  525   525                      ; line   779
+  526   526                      ; line   785
+  527   527                      ; line   786
+  528   528                      ; line   787
+  529   529                      ; line   793
+  530   530                      ; line   794
+  531   531                      ; line   795
+  532   532                      ; line   801
+  533   533                      ; line   802
+  534   534                      ; line   803
+  535   535                      ; line   809
+  536   536                      ; line   810
+  537   537                      ; line   811
+  538   538                      ; line   817
+  539   539                      ; line   818
+  540   540                      ; line   819
+  541   541                      ; line   825
+  542   542                      ; line   826
+  543   543                      ; line   827
+  544   544                      ; line   833
+  545   545                      ; line   834
+  546   546                      ; line   835
+  547   547                      ; line   841
+  548   548                      ; line   842
+  549   549                      ; line   843
+  550   550                      ; line   849
+  551   551                      ; line   850
+  552   552                      ; line   851
+  553   553                      ; line   857
+  554   554                      ; line   858
+  555   555                      ; line   859
+  556   556                      ; line   865
+  557   557                      ; line   866
+  558   558                      ; line   867
+  559   559                      ; line   873
+  560   560                      ; line   874
+  561   561                      ; line   875
+  562   562                      ; line   881
+  563   563                      ; line   882
+  564   564                      ; line   883
+  565   565                      ; line   889
+  566   566                      ; line   890
+  567   567                      ; line   891
+  568   568                      ; line   897
+  569   569                      ; line   898
+  570   570                      ; line   899
+  571   571                      ; line   905
+  572   572                      ; line   906
+  573   573                      ; line   907
+  574   574                      ; line   913
+  575   575                      ; line   914
+  576   576                      ; line   915
+  577   577                      ; line   921
+  578   578                      ; line   922
+  579   579                      ; line   923
+  580   580                      ; line   929
+  581   581                      ; line   930
+  582   582                      ; line   931
+  583   583                      ; line   937
+  584   584                      ; line   938
+  585   585                      ; line   939
+  586   586                      ; line   945
+  587   587                      ; line   946
+  588   588                      ; line   947
+  589   589                      ; line   958
+  590   590                      ; line   959
+  591   591                      ; line   960
+  592   592                      ; line  1016
+  593   593                      ; line  1017
+  594   594                      ; line  1018
+  595   595                      ; line  1019
+  596   596                      ; line  1022
+  597   597                      ; line    16
+  598   598                      ; line    17
+  599   599                      ; line    18
+  600   600                      ; line    19
+  601   601                      ; line    20
+  602   602                      ; line    21
+  603   603                      ; line    23
+  604   604                      ; line   321
+  605   605                      ; line   736
+  606   606                      ; line   845
+  607   607                      ; line   856
+  608   608                      ; line   869
+  609   609                      ; line   872
+  610   610                      ; line   876
+  611   611                      ; line   880
+  612   612                      ; line   578
+  613   613                      ; line  1621
+  614   614                      ; line  1627
+  615   615                      ; line  1633
+  616   616                      ; line  1650
+  617   617                      ; line  1656
+  618   618                      ; line  1663
+  619   619                      ; line  1669
+  620   620                      ; line  1676
+  621   621                      ; line  1684
+  622   622                      ; line  1695
+  623   623                      ; line  1703
+  624   624                      ; line  1711
+  625   625                      ; line  1729
+  626   626                      ; line  1744
+  627   627                      ; line  1751
+  628   628                      ; line  1763
+  629   629                      ; line  1777
+  630   630                      ; line  1786
+  631   631                      ; line  1798
+  632   632                      ; line  1804
+  633   633                      ; line  1816
+  634   634                      ; line  1822
+  635   635                      ; line  1830
+  636   636                      ; line  1835
+  637   637                      ; line  1844
+  638   638                      ; line  1853
+  639   639                      ; line  1862
+  640   640                      ; line  1877
+  641   641                      ; line  1891
+  642   642                      ; line  1903
+  643   643                      ; line  1919
+  644   644                      ; line  1934
+  645   645                      ; line  1946
+  646   646                      ; line  1957
+  647   647                      ; line  1967
+  648   648                      ; line  1977
+  649   649                      ; line  1989
+  650   650                      ; line  2001
+  651   651                      ; line  2012
+  652   652                      ; line  2021
+  653   653                      ; line  2030
+  654   654                      ; line  2038
+  655   655                      ; line  2048
+  656   656                      ; line  2058
+  657   657                      ; line  2069
+  658   658                      ; line  2080
+  659   659                      ; line  2088
+  660   660                      ; line  2096
+  661   661                      ; line  2105
+  662   662                      ; line  2113
+  663   663                      ; line  2127
+  664   664                      ; line  2138
+  665   665                      ; line  2146
+  666   666                      ; line  2154
+  667   667                      ; line  2166
+  668   668                      ; line  2174
+  669   669                      ; line  2182
+  670   670                      ; line  2191
+  671   671                      ; line  2202
+  672   672                      ; line  2214
+  673   673                      ; line  2225
+  674   674                      ; line  2253
+  675   675                      ; line  2292
+  676   676                      ; line  2301
+  677   677                      ; line  2316
+  678   678                      ; line  2338
+  679   679                      ; line  2355
+  680   680                      ; line  2367
+  681   681                      ; line  2425
+  682   682                      ; line  2435
+  683   683                      ; line  2447
+  684   684                      ; line  2458
+  685   685                      ; line  2466
+  686   686                      ; line  2473
+  687   687                      ; line  2488
+  688   688                      ; line  2496
+  689   689                      ; line  2506
+  690   690                      ; line  2529
+  691   691                      ; line  2539
+  692   692                      ; line  2549
+  693   693                      ; line  2560
+  694   694                      ; line  2588
+  695   695                      ; line  2597
+  696   696                      ; line  2610
+  697   697                      ; line  2629
+  698   698                      ; line  2641
+  699   699                      ; line  2650
+  700   700                      ; line  2679
+  701   701                      ; line  2691
+  702   702                      ; line  2713
+  703   703                      ; line  2725
+  704   704                      ; line  2739
+  705   705                      ; line  2755
+  706   706                      ; line  2785
+  707   707                      ; line  2796
+  708   708                      ; line  2802
+  709   709                      ; line  2810
+  710   710                      ; line  2817
+  711   711                      ; line  2823
+  712   712                      ; line  2834
+  713   713                      ; line  2856
+  714   714                      ; line  2867
+  715   715                      ; line  2883
+  716   716                      ; line  2891
+  717   717                      ; line  2899
+  718   718                      ; line  2905
+  719   719                      ; line  2911
+  720   720                      ; line  2944
+  721   721                      ; line  2952
+  722   722                      ; line  2966
+  723   723                      ; line  2978
+  724   724                      ; line  2990
+  725   725                      ; line  3001
+  726   726                      ; line  3011
+  727   727                      ; line  3040
+  728   728                      ; line  3048
+  729   729                      ; line  3069
+  730   730                      ; line  3078
+  731   731                      ; line  3087
+  732   732                      ; line  3098
+  733   733                      ; line  3122
+  734   734                      ; line  3134
+  735   735                      ; line  3175
+  736   736                      ; line  3341
+  737   737                      ; line  3343
+  738   738                      ; line  3361
+  739   739                      ; line  3445
+  740   740                      ; line  3448
+  741   741                      ; line  3486
+  742   742                      ; line  3760
+  743   743                      ; line  3762
+  744   744                      ; line  3779
+  745   745                      ; line  3816
+  746   746                      ; line  3854
+  747   747                      ; line  3856
+  748   748                      ; line  3857
+  749   749                      ; line  3875
+  750   750                      ; line  3912
+  751   751                      ; line  3965
+  752   752                      ; line  3967
+  753   753                      ; line  3968
+  754   754                      ; line  3991
+  755   755                      ; line  4053
+  756   756                      ; line  4117
+  757   757                      ; line  4119
+  758   758                      ; line  4120
+  759   759                      ; line  4139
+  760   760                      ; line  4189
+  761   761                      ; line  4248
+  762   762                      ; line  4250
+  763   763                      ; line  4251
+  764   764                      ; line  4284
+  765   765                      ; line  4375
+  766   766                      ; line  4441
+  767   767                      ; line  4522
+  768   768                      ; line  4524
+  769   769                      ; line  4525
+  770   770                      ; line  4526
+  771   771                      ; line  4543
+  772   772                      ; line  4594
+  773   773                      ; line  4640
+  774   774                      ; line  4642
+  775   775                      ; line  4643
+  776   776                      ; line  4663
+  777   777                      ; line  4720
+  778   778                      ; line  4781
+  779   779                      ; line  4783
+  780   780                      ; line  4784
+  781   781                      ; line  4807
+  782   782                      ; line  4870
+  783   783                      ; line  4939
+  784   784                      ; line  4941
+  785   785                      ; line  4942
+  786   786                      ; line  4966
+  787   787                      ; line  5035
+  788   788                      ; line  5108
+  789   789                      ; line  5110
+  790   790                      ; line  5111
+  791   791                      ; line  5138
+  792   792                      ; line  5218
+  793   793                      ; line  5300
+  794   794                      ; line  5302
+  795   795                      ; line  5303
+  796   796                      ; line  5326
+  797   797                      ; line  5390
+  798   798                      ; line  5453
+  799   799                      ; line  5455
+  800   800                      ; line  5456
+  801   801                      ; line  5479
+  802   802                      ; line  5546
+  803   803                      ; line  5612
+  804   804                      ; line  5614
+  805   805                      ; line  5615
+  806   806                      ; line  5643
+  807   807                      ; line  5722
+  808   808                      ; line  5801
+  809   809                      ; line  5803
+  810   810                      ; line  5804
+  811   811                      ; line  5826
+  812   812                      ; line  5887
+  813   813                      ; line  5951
+  814   814                      ; line  5953
+  815   815                      ; line  5954
+  816   816                      ; line  5976
+  817   817                      ; line  6038
+  818   818                      ; line  6106
+  819   819                      ; line  6108
+  820   820                      ; line  6109
+  821   821                      ; line  6134
+  822   822                      ; line  6225
+  823   823                      ; line  6227
+  824   824                      ; line  6231
+  825   825                      ; line  6236
+  826   826                      ; line  6239
+  827   827                      ; line  6242
+  828   828                      ; line  6243
+  829   829                      ; line  6244
+  830   830                      ; line  6245
+  831   831                      ; line  6246
+  832   832                      ; line  6247
+  833   833                      ; line  6248
+  834   834                      ; line  6249
+  835   835                      ; line  6250
+  836   836                      ; line  6251
+  837   837                      ; line  6252
+  838   838                      ; line  6253
+  839   839                      ; line  6254
+  840   840                      ; line  6255
+  841   841                      ; line  6256
+  842   842                      ; line  6257
+  843   843                      ; line  6258
+  844   844                      ; line  6259
+  845   845                      ; line  6260
+  846   846                      ; line  6261
+  847   847                      ; line  6262
+  848   848                      ; line  6263
+  849   849                      ; line  6264
+  850   850                      ; line  6265
+  851   851                      ; line  6266
+  852   852                      ; line  6267
+  853   853                      ; line  6268
+  854   854                      ; line  6271
+  855   855                      ; line  6272
+  856   856                      ; line  6273
+  857   857                      ; line  6274
+  858   858                      ; line  6275
+  859   859                      ; line  6276
+  860   860                      ; line  6277
+  861   861                      ; line  6280
+  862   862                      ; line  6281
+  863   863                      ; line  6282
+  864   864                      ; line  6283
+  865   865                      ; line  6284
+  866   866                      ; line  6285
+  867   867                      ; line  6286
+  868   868                      ; line  6287
+  869   869                      ; line  6288
+  870   870                      ; line  6289
+  871   871                      ; line  6290
+  872   872                      ; line  6291
+  873   873                      ; line  6292
+  874   874                      ; line  6295
+  875   875                      ; line  6296
+  876   876                      ; line  6297
+  877   877                      ; line  6298
+  878   878                      ; line  6299
+  879   879                      ; line  6302
+  880   880                      ; line  6303
+  881   881                      ; line  6304
+  882   882                      ; line  6305
+  883   883                      ; line  6306
+  884   884                      ; line  6307
+  885   885                      ; line  6308
+  886   886                      ; line  6311
+  887   887                      ; line  6312
+  888   888                      ; line  6313
+  889   889                      ; line  6314
+  890   890                      ; line  6315
+  891   891                      ; line  6316
+  892   892                      ; line  6317
+  893   893                      ; line  6318
+  894   894                      ; line  6319
+  895   895                      ; line  6322
+  896   896                      ; line  6323
+  897   897                      ; line  6324
+  898   898                      ; line  6325
+  899   899                      ; line  6326
+  900   900                      ; line  6327
+  901   901                      ; line  6328
+  902   902                      ; line  6331
+  903   903                      ; line  6332
+  904   904                      ; line  6333
+  905   905                      ; line  6334
+  906   906                      ; line  6335
+  907   907                      ; line  6336
+  908   908                      ; line  6337
+  909   909                      ; line  6338
+  910   910                      ; line  6339
+  911   911                      ; line  6340
+  912   912                      ; line  6341
+  913   913                      ; line  6342
+  914   914                      ; line  6343
+  915   915                      ; line  6344
+  916   916                      ; line  6345
+  917   917                      ; line  6346
+  918   918                      ; line  6347
+  919   919                      ; line  6348
+  920   920                      ; line  6349
+  921   921                      ; line  6350
+  922   922                      ; line  6351
+  923   923                      ; line  6352
+  924   924                      ; line  6355
+  925   925                      ; line  6356
+  926   926                      ; line  6357
+  927   927                      ; line  6358
+  928   928                      ; line  6359
+  929   929                      ; line  6360
+  930   930                      ; line  6361
+  931   931                      ; line  6364
+  932   932                      ; line  6365
+  933   933                      ; line  6366
+  934   934                      ; line  6367
+  935   935                      ; line  6368
+  936   936                      ; line  6369
+  937   937                      ; line  6370
+  938   938                      ; line  6371
+  939   939                      ; line  6374
+  940   940                      ; line  6375
+  941   941                      ; line  6376
+  942   942                      ; line  6377
+  943   943                      ; line  6378
+  944   944                      ; line  6379
+  945   945                      ; line  6380
+  946   946                      ; line  6381
+  947   947                      ; line  6382
+  948   948                      ; line  6385
+  949   949                      ; line  6386
+  950   950                      ; line  6387
+  951   951                      ; line  6388
+  952   952                      ; line  6389
+  953   953                      ; line  6390
+  954   954                      ; line  6391
+  955   955                      ; line  6392
+  956   956                      ; line  6393
+  957   957                      ; line  6394
+  958   958                      ; line  6397
+  959   959                      ; line  6398
+  960   960                      ; line  6399
+  961   961                      ; line  6400
+  962   962                      ; line  6401
+  963   963                      ; line  6402
+  964   964                      ; line  6403
+  965   965                      ; line  6404
+  966   966                      ; line  6405
+  967   967                      ; line  6406
+  968   968                      ; line  6407
+  969   969                      ; line  6408
+  970   970                      ; line  6409
+  971   971                      ; line  6412
+  972   972                      ; line  6413
+  973   973                      ; line  6414
+  974   974                      ; line  6415
+  975   975                      ; line  6416
+  976   976                      ; line  6417
+  977   977                      ; line  6418
+  978   978                      ; line  6419
+  979   979                      ; line  6420
+  980   980                      ; line  6423
+  981   981                      ; line  6424
+  982   982                      ; line  6425
+  983   983                      ; line  6426
+  984   984                      ; line  6427
+  985   985                      ; line  6428
+  986   986                      ; line  6429
+  987   987                      ; line  6430
+  988   988                      ; line  6431
+  989   989                      ; line  6434
+  990   990                      ; line  6435
+  991   991                      ; line  6436
+  992   992                      ; line  6437
+  993   993                      ; line  6438
+  994   994                      ; line  6439
+  995   995                      ; line  6440
+  996   996                      ; line  6441
+  997   997                      ; line  6442
+  998   998                      ; line  6443
+  999   999                      ; line  6444
+ 1000  1000                      ; line  6445
+ 1001  1001                      ; line  6448
+ 1002  1002                      ; line  6449
+ 1003  1003                      ; line  6450
+ 1004  1004                      ; line  6451
+ 1005  1005                      ; line  6452
+ 1006  1006                      ; line  6453
+ 1007  1007                      ; line  6454
+ 1008  1008                      ; line  6455
+ 1009  1009                      ; line  6456
+ 1010  1010                      ; line  6459
+ 1011  1011                      ; line  6460
+ 1012  1012                      ; line  6461
+ 1013  1013                      ; line  6462
+ 1014  1014                      ; line  6463
+ 1015  1015                      ; line  6464
+ 1016  1016                      ; line  6465
+ 1017  1017                      ; line  6466
+ 1018  1018                      ; line  6467
+ 1019  1019                      ; line  6470
+ 1020  1020                      ; line  6471
+ 1021  1021                      ; line  6472
+ 1022  1022                      ; line  6473
+ 1023  1023                      ; line  6474
+ 1024  1024                      ; line  6475
+ 1025  1025                      ; line  6476
+ 1026  1026                      ; line  6477
+ 1027  1027                      ; line  6478
+ 1028  1028                      ; line  6479
+ 1029  1029                      ; line  6480
+ 1030  1030                      ; line  6481
+ 1031  1031                      ; line  6482
+ 1032  1032                      ; line  6483
+ 1033  1033                      ; line  6484
+ 1034  1034                      ; line  6485
+ 1035  1035                      ; line  6486
+ 1036  1036                      ; line  6487
+ 1037  1037                      ; line    79
+ 1038  1038                      ; line    86
+ 1039  1039                      ; line    93
+ 1040  1040                      ; line   127
+ 1041  1041                      ; line   149
+ 1042  1042                      ; line   218
+ 1043  1043                      ; line   284
+ 1044  1044                      ; line   286
+ 1045  1045                      ; line   287
+ 1046  1046                      ; line   290
+ 1047  1047                      ; line   291
+ 1048  1048                      ; line   292
+ 1049  1049                      ; line   293
+ 1050  1050                      ; line   294
+ 1051  1051                      ; line   295
+ 1052  1052                      ; line   296
+ 1053  1053                      ; line   297
+ 1054  1054                      ; line    44
+ 1055  1055                      ; line    45
+ 1056  1056                      ; line    46
+ 1057  1057                      ; line    52
+ 1058  1058                      ; line    54
+ 1059  1059                      ; line    55
+ 1060  1060                      ; line    56
+ 1061  1061                      ; line    57
+ 1062  1062                      ; line    58
+ 1063  1063                      ; line    59
+ 1064  1064                      ; line    60
+ 1065  1065                      ; line    61
+ 1066  1066                      ; line    62
+ 1067  1067                      ; line    63
+ 1068  1068                      ; line    64
+ 1069  1069                      ; line    65
+ 1070  1070                      ; line    66
+ 1071  1071                      ; line    67
+ 1072  1072                      ; line    68
+ 1073  1073                      ; line    70
+ 1074  1074                      ; line    71
+ 1075  1075                      ; line    72
+ 1076  1076                      ; line    73
+ 1077  1077                      ; line    74
+ 1078  1078                      ; line    75
+ 1079  1079                      ; line    27
+ 1080  1080                      ; line    33
+ 1081  1081                      ; line    60
+ 1082  1082                      ; line    62
+ 1083  1083                      ; line    63
+ 1084  1084                      ; line    64
+ 1085  1085                      ; line    71
+ 1086  1086                      ; line    76
+ 1087  1087                      ; line   108
+ 1088  1088                      ; line   686
+ 1089  1089                      ; line   689
+ 1090  1090                      ; line   692
+ 1091  1091                      ; line   711
+ 1092  1092                      ; line   727
+ 1093  1093                      ; line    41
+ 1094  1094                      ; line    81
+ 1095  1095                      ; line    98
+ 1096  1096                      ; line   115
+ 1097  1097                      ; line   135
+ 1098  1098                      ; line   152
+ 1099  1099                      ; line   169
+ 1100  1100                      ; line   180
+ 1101  1101                      ; line   191
+ 1102  1102                      ; line   202
+ 1103  1103                      ; line   212
+ 1104  1104                      ; line   223
+ 1105  1105                      ; line    66
+ 1106  1106                      ; line    76
+ 1107  1107                      ; line    77
+ 1108  1108                      ; line    78
+ 1109  1109                      ; line    79
+ 1110  1110                      ; line    80
+ 1111  1111                      ; line    84
+ 1112  1112                      ; line    85
+ 1113  1113                      ; line    86
+ 1114  1114                      ; line    90
+ 1115  1115                      ; line    91
+ 1116  1116                      ; line    92
+ 1117  1117                      ; line    93
+ 1118  1118                      ; line    94
+ 1119  1119                      ; line    96
+ 1120  1120                      ; line    97
+ 1121  1121                      ; line    98
+ 1122  1122                      ; line    99
+ 1123  1123                      ; line    10
+ 1124  1124                      ; line    11
+ 1125  1125                      ; line    72
+ 1126  1126                      ; line    73
+ 1127  1127                      ; line    74
+ 1128  1128                      ; line    75
+ 1129  1129                      ; line    76
+ 1130  1130                      ; line    77
+ 1131  1131                      ; line    78
+ 1132  1132                      ; line    79
+ 1133  1133                      ; line    80
+ 1134  1134                      ; line    81
+ 1135  1135                      ; line    82
+ 1136  1136                      ; line    86
+ 1137  1137                      ; line    87
+ 1138  1138                      ; line    88
+ 1139  1139                      ; line    90
+ 1140  1140                      ; line    91
+ 1141  1141                      ; line     8
+ 1142  1142                      ; line     9
+ 1143  1143                      ; line    10
+ 1144  1144                      ; line    12
+ 1145  1145                      ; line    13
+ 1146  1146                      ; line    13
+ 1147  1147                      ; line    14
+ 1148  1148                      ; line    16
+ 1149  1149                      ; line    18
+ 1150  1150                      
+ 1151  1151 -----                @@CODEL CSEG
+ 1152  1152 00000                _Write_Data_flash:
+ 1153  1153                      $DGL    1,97
+ 1154  1154 00000  C7                    push    hl                                              ;[INF] 1, 1
+ 1155  1155 00001  C1                    push    ax                                              ;[INF] 1, 1
+ 1156  1156 00002  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1157  1157 00005                ??bf_Write_Data_flash:
+ 1158  1158                      ; line    38
+ 1159  1159                      $DGL    0,21
+ 1160  1160 00005  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1161  1161 00006  90                    dec     x                                               ;[INF] 1, 1
+ 1162  1162 00007 RFC000000              call    !!_dataflash_start                              ;[INF] 4, 3
+ 1163  1163 0000B  D2                    cmp0    c                                               ;[INF] 1, 1
+ 1164  1164 0000C  DF17                  bnz     $?L0003                                         ;[INF] 2, 4
+ 1165  1165                      ; line    39
+ 1166  1166 0000E                ??bb00_Write_Data_flash:
+ 1167  1167                      ; line    40
+ 1168  1168                      $DGL    0,23
+ 1169  1169 0000E  AB                    movw    ax,[hl] ; Arr                                   ;[INF] 1, 1
+ 1170  1170 0000F  C1                    push    ax                                              ;[INF] 1, 1
+ 1171  1171 00010  8C08                  mov     a,[hl+8]        ; id                            ;[INF] 2, 1
+ 1172  1172 00012  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1173  1173 00014  C1                    push    ax                                              ;[INF] 1, 1
+ 1174  1174 00015  E6                    onew    ax                                              ;[INF] 1, 1
+ 1175  1175 00016  C1                    push    ax                                              ;[INF] 1, 1
+ 1176  1176 00017  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1177  1177 00018  90                    dec     x                                               ;[INF] 1, 1
+ 1178  1178 00019 RFC000000              call    !!_dataflash_rw                                 ;[INF] 4, 3
+ 1179  1179 0001D  1006                  addw    sp,#06H ; 6                                     ;[INF] 2, 1
+ 1180  1180                      ; line    42
+ 1181  1181                      $DGL    0,25
+ 1182  1182 0001F  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1183  1183 00020  90                    dec     x                                               ;[INF] 1, 1
+ 1184  1184 00021 RFC000000              call    !!_dataflash_stop                               ;[INF] 4, 3
+ 1185  1185 00025                ??eb00_Write_Data_flash:
+ 1186  1186                      ; line    43
+ 1187  1187 00025                ?L0003:
+ 1188  1188                      ; line    45
+ 1189  1189                      $DGL    0,28
+ 1190  1190 00025                ??ef_Write_Data_flash:
+ 1191  1191 00025  C0                    pop     ax                                              ;[INF] 1, 1
+ 1192  1192 00026  C6                    pop     hl                                              ;[INF] 1, 1
+ 1193  1193 00027  D7                    ret                                                     ;[INF] 1, 6
+ 1194  1194 00028                ??ee_Write_Data_flash:
+ 1195  1195                      ; line    47
+ 1196  1196 00028                _Read_Data_flash:
+ 1197  1197                      $DGL    1,110
+ 1198  1198 00028  C7                    push    hl                                              ;[INF] 1, 1
+ 1199  1199 00029  C1                    push    ax                                              ;[INF] 1, 1
+ 1200  1200 0002A  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+ 1201  1201 0002D                ??bf_Read_Data_flash:
+ 1202  1202                      ; line    66
+ 1203  1203                      $DGL    0,20
+ 1204  1204 0002D  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1205  1205 0002E  90                    dec     x                                               ;[INF] 1, 1
+ 1206  1206 0002F RFC000000              call    !!_dataflash_start                              ;[INF] 4, 3
+ 1207  1207 00033  D2                    cmp0    c                                               ;[INF] 1, 1
+ 1208  1208 00034  DF16                  bnz     $?L0007                                         ;[INF] 2, 4
+ 1209  1209                      ; line    67
+ 1210  1210 00036                ??bb00_Read_Data_flash:
+ 1211  1211                      ; line    68
+ 1212  1212                      $DGL    0,22
+ 1213  1213 00036  AB                    movw    ax,[hl] ; Arr                                   ;[INF] 1, 1
+ 1214  1214 00037  C1                    push    ax                                              ;[INF] 1, 1
+ 1215  1215 00038  8C08                  mov     a,[hl+8]        ; id                            ;[INF] 2, 1
+ 1216  1216 0003A  318E                  shrw    ax,8                                            ;[INF] 2, 1
+ 1217  1217 0003C  C1                    push    ax                                              ;[INF] 1, 1
+ 1218  1218 0003D  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1219  1219 0003E  C1                    push    ax                                              ;[INF] 1, 1
+ 1220  1220 0003F  90                    dec     x                                               ;[INF] 1, 1
+ 1221  1221 00040 RFC000000              call    !!_dataflash_rw                                 ;[INF] 4, 3
+ 1222  1222 00044  1006                  addw    sp,#06H ; 6                                     ;[INF] 2, 1
+ 1223  1223                      ; line    70
+ 1224  1224                      $DGL    0,24
+ 1225  1225 00046  F6                    clrw    ax                                              ;[INF] 1, 1
+ 1226  1226 00047  90                    dec     x                                               ;[INF] 1, 1
+ 1227  1227 00048 RFC000000              call    !!_dataflash_stop                               ;[INF] 4, 3
+ 1228  1228 0004C                ??eb00_Read_Data_flash:
+ 1229  1229                      ; line    71
+ 1230  1230 0004C                ?L0007:
+ 1231  1231                      ; line    73
+ 1232  1232                      $DGL    0,27
+ 1233  1233 0004C                ??ef_Read_Data_flash:
+ 1234  1234 0004C  C0                    pop     ax                                              ;[INF] 1, 1
+ 1235  1235 0004D  C6                    pop     hl                                              ;[INF] 1, 1
+ 1236  1236 0004E  D7                    ret                                                     ;[INF] 1, 6
+ 1237  1237 0004F                ??ee_Read_Data_flash:
+ 1238  1238                      ; line    75
+ 1239  1239 0004F                _Push_Data_to_G1D:
+ 1240  1240                      $DGL    1,123
+ 1241  1241 0004F                ??bf_Push_Data_to_G1D:
+ 1242  1242                      ; line    82
+ 1243  1243                      $DGL    0,8
+ 1244  1244 0004F  300900                movw    ax,#09H ; 9                                     ;[INF] 3, 1
+ 1245  1245 00052  C1                    push    ax                                              ;[INF] 1, 1
+ 1246  1246 00053 R300000                movw    ax,#loww (_Eddystone_URL_N_flash)               ;[INF] 3, 1
+ 1247  1247 00056 RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1248  1248 0005A  C0                    pop     ax                                              ;[INF] 1, 1
+ 1249  1249                      ; line    83
+ 1250  1250                      $DGL    0,9
+ 1251  1251 0005B  300D00                movw    ax,#0DH ; 13                                    ;[INF] 3, 1
+ 1252  1252 0005E  C1                    push    ax                                              ;[INF] 1, 1
+ 1253  1253 0005F R300000                movw    ax,#loww (_Eddystone_URL_L_flash)               ;[INF] 3, 1
+ 1254  1254 00062 RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1255  1255 00066  C0                    pop     ax                                              ;[INF] 1, 1
+ 1256  1256                      ; line    84
+ 1257  1257                      $DGL    0,10
+ 1258  1258 00067  300E00                movw    ax,#0EH ; 14                                    ;[INF] 3, 1
+ 1259  1259 0006A  C1                    push    ax                                              ;[INF] 1, 1
+ 1260  1260 0006B R300000                movw    ax,#loww (_Eddystone_URL_R_flash)               ;[INF] 3, 1
+ 1261  1261 0006E RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1262  1262 00072  C0                    pop     ax                                              ;[INF] 1, 1
+ 1263  1263                      ; line    86
+ 1264  1264                      $DGL    0,12
+ 1265  1265 00073  300A00                movw    ax,#0AH ; 10                                    ;[INF] 3, 1
+ 1266  1266 00076  C1                    push    ax                                              ;[INF] 1, 1
+ 1267  1267 00077 R300000                movw    ax,#loww (_Eddystone_UID_N_flash)               ;[INF] 3, 1
+ 1268  1268 0007A RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1269  1269 0007E  C0                    pop     ax                                              ;[INF] 1, 1
+ 1270  1270                      ; line    87
+ 1271  1271                      $DGL    0,13
+ 1272  1272 0007F  300B00                movw    ax,#0BH ; 11                                    ;[INF] 3, 1
+ 1273  1273 00082  C1                    push    ax                                              ;[INF] 1, 1
+ 1274  1274 00083 R300000                movw    ax,#loww (_Eddystone_UID_L_flash)               ;[INF] 3, 1
+ 1275  1275 00086 RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1276  1276 0008A  C0                    pop     ax                                              ;[INF] 1, 1
+ 1277  1277                      ; line    88
+ 1278  1278                      $DGL    0,14
+ 1279  1279 0008B  300C00                movw    ax,#0CH ; 12                                    ;[INF] 3, 1
+ 1280  1280 0008E  C1                    push    ax                                              ;[INF] 1, 1
+ 1281  1281 0008F R300000                movw    ax,#loww (_Eddystone_UID_R_flash)               ;[INF] 3, 1
+ 1282  1282 00092 RFC280000              call    !!_Read_Data_flash                              ;[INF] 4, 3
+ 1283  1283 00096  C0                    pop     ax                                              ;[INF] 1, 1
+ 1284  1284                      ; line   179
+ 1285  1285                      $DGL    0,105
+ 1286  1286 00097                ??ef_Push_Data_to_G1D:
+ 1287  1287 00097  D7                    ret                                                     ;[INF] 1, 6
+ 1288  1288 00098                ??ee_Push_Data_to_G1D:
+ 1289  1289                      ; line   180
+ 1290  1290 00098                _Stop_Data_flash:
+ 1291  1291                      $DGL    1,129
+ 1292  1292 00098                ??bf_Stop_Data_flash:
+ 1293  1293                      ; line   197
+ 1294  1294                      $DGL    0,18
+ 1295  1295 00098                ??ef_Stop_Data_flash:
+ 1296  1296 00098  D7                    ret                                                     ;[INF] 1, 6
+ 1297  1297 00099                ??ee_Stop_Data_flash:
+ 1298  1298                      
+ 1299  1299 -----                @@CODE  CSEG    BASE
+ 1300  1300                      
+ 1301  1301 -----                @@BASE  CSEG    BASE
+ 1302  1302                              END
+ 1303  1303                      
+ 1304  1304                      
+ 1305  1305                      ; *** Code Information ***
+ 1306  1306                      ;
+ 1307  1307                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+ 1308  1308                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\rBLE\src\sample_app\QFlash.c
+ 1309  1309                      ;
+ 1310  1310                      ; $FUNC Write_Data_flash(18)
+ 1311  1311                      ;       void=(pointer Arr:ax, unsigned char id:[sp+4])
+ 1312  1312                      ;       CODE SIZE= 40 bytes, CLOCK_SIZE= 39 clocks, STACK_SIZE= 14 bytes
+ 1313  1313                      ;
+ 1314  1314                      ; $CALL dataflash_start(38)
+ 1315  1315                      ;       bc=(int:ax)
+ 1316  1316                      ;
+ 1317  1317                      ; $CALL dataflash_rw(40)
+ 1318  1318                      ;       bc=(int:ax, int:[sp+4], int:[sp+6], pointer:[sp+8])
+ 1319  1319                      ;
+ 1320  1320                      ; $CALL dataflash_stop(42)
+ 1321  1321                      ;       bc=(int:ax)
+ 1322  1322                      ;
+ 1323  1323                      ; $FUNC Read_Data_flash(47)
+ 1324  1324                      ;       void=(pointer Arr:ax, unsigned char id:[sp+4])
+ 1325  1325                      ;       CODE SIZE= 39 bytes, CLOCK_SIZE= 38 clocks, STACK_SIZE= 14 bytes
+ 1326  1326                      ;
+ 1327  1327                      ; $CALL dataflash_start(66)
+ 1328  1328                      ;       bc=(int:ax)
+ 1329  1329                      ;
+ 1330  1330                      ; $CALL dataflash_rw(68)
+ 1331  1331                      ;       bc=(int:ax, int:[sp+4], int:[sp+6], pointer:[sp+8])
+ 1332  1332                      ;
+ 1333  1333                      ; $CALL dataflash_stop(70)
+ 1334  1334                      ;       bc=(int:ax)
+ 1335  1335                      ;
+ 1336  1336                      ; $FUNC Push_Data_to_G1D(75)
+ 1337  1337                      ;       void=(void)
+ 1338  1338                      ;       CODE SIZE= 73 bytes, CLOCK_SIZE= 48 clocks, STACK_SIZE= 6 bytes
+ 1339  1339                      ;
+ 1340  1340                      ; $CALL Read_Data_flash(82)
+ 1341  1341                      ;       void=(pointer:ax, int:[sp+4])
+ 1342  1342                      ;
+ 1343  1343                      ; $CALL Read_Data_flash(83)
+ 1344  1344                      ;       void=(pointer:ax, int:[sp+4])
+ 1345  1345                      ;
+ 1346  1346                      ; $CALL Read_Data_flash(84)
+ 1347  1347                      ;       void=(pointer:ax, int:[sp+4])
+ 1348  1348                      ;
+ 1349  1349                      ; $CALL Read_Data_flash(86)
+ 1350  1350                      ;       void=(pointer:ax, int:[sp+4])
+ 1351  1351                      ;
+ 1352  1352                      ; $CALL Read_Data_flash(87)
+ 1353  1353                      ;       void=(pointer:ax, int:[sp+4])
+ 1354  1354                      ;
+ 1355  1355                      ; $CALL Read_Data_flash(88)
+ 1356  1356                      ;       void=(pointer:ax, int:[sp+4])
+ 1357  1357                      ;
+ 1358  1358                      ; $FUNC Stop_Data_flash(180)
+ 1359  1359                      ;       void=(void)
+ 1360  1360                      ;       CODE SIZE= 1 bytes, CLOCK_SIZE= 6 clocks, STACK_SIZE= 0 bytes
+ 1361  1361                      
+ 1362  1362                      ; Target chip : R5F11AGJ
+ 1363  1363                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00066H   @@R_INIT
+00000 00066H   @@INIT
+00000 0001CH   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00099H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

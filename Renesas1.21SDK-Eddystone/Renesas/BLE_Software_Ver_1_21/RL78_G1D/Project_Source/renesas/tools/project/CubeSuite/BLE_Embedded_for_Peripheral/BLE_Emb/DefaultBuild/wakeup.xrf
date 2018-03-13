@@ -1,0 +1,476 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:13 Mar 2018 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile ..\..\..\..\..\src\driver\wakeup\w
+            akeup.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SEC
+            URITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUS
+            E_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..\..\..\..\..\rBLE\src
+            \sample_profile\sam -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\src\driver\da
+            taflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\..\..
+            \..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\.
+            .\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\dr
+            iver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push_state -i..
+            \..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\src\rwble -i.\ -i..\..\..\
+            ..\..\..\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_app\seclib -i..\..
+            \..\..\..\..\rBLE\src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : ..\..\..\..\..\src\driver\wakeup\wakeup.c
+Xref-file : DefaultBuild\wakeup.xrf
+Para-file : 
+Inc-file  : [ 1] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [ 2] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdarg.h
+            [ 3] ..\..\..\..\..\src\compiler\compiler.h
+            [ 4] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\string.h
+            [ 5] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdlib.h
+            [ 6] ..\..\..\..\..\src\arch\rl78\ll\ll.h
+            [ 7] ..\..\..\..\..\src\arch\rl78\arch.h
+            [ 8] ..\..\..\..\..\src\driver\wakeup\\wakeup.h
+            [ 9] ..\..\..\..\..\src\driver\serial\serial.h
+            [10] ..\..\..\..\..\src\driver\port\port.h
+            [11] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\limits.h
+            [12] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [13] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [14] ..\..\..\..\..\..\bleip\src\rwble\rwble_config.h
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+EXTYP         int     ptrdiff_t          13: 1
+EXTYP         uint    size_t             14: 1
+EXTYP         pointer va_list            13: 2
+EXTYP         pointer va_list_n          14: 2
+EXTYP         pointer va_list_f          15: 2
+EXTYP         char    int8_t             74: 3
+EXTYP         short   int16_t            75: 3
+EXTYP         uchar   uint8_t            76: 3
+EXTYP         ushort  uint16_t           77: 3
+EXTYP         long    int32_t            79: 3
+EXTYP         ulong   uint32_t           80: 3
+EXTYP         ulong   uintptr_t          84: 3
+EXTYP         uchar   _Bool              85: 3
+EXTERN FAR    func    memcpy                      16: 4
+EXTERN FAR    func    memmove                     18: 4
+EXTERN FAR    func    strcpy                      19: 4
+EXTERN FAR    func    strncpy                     20: 4
+EXTERN FAR    func    strcat                      21: 4
+EXTERN FAR    func    strncat                     22: 4
+EXTERN FAR    func    memcmp                      23: 4
+EXTERN FAR    func    strcmp                      24: 4
+EXTERN FAR    func    strncmp                     25: 4
+EXTERN FAR    func    memchr                      26: 4
+EXTERN FAR    func    strchr                      27: 4
+EXTERN FAR    func    strcspn                     28: 4
+EXTERN FAR    func    strpbrk                     29: 4
+EXTERN FAR    func    strrchr                     30: 4
+EXTERN FAR    func    strspn                      31: 4
+EXTERN FAR    func    strstr                      32: 4
+EXTERN FAR    func    strtok                      33: 4
+EXTERN FAR    func    memset                      35: 4
+EXTERN FAR    func    strerror                    37: 4
+EXTERN FAR    func    strlen                      38: 4
+EXTERN FAR    func    strcoll                     39: 4
+EXTERN FAR    func    strxfrm                     40: 4
+EXTERN FAR    func    memcpy_n                    43: 4
+EXTERN FAR    func    memmove_n                   45: 4
+EXTERN FAR    func    strcpy_n                    46: 4
+EXTERN FAR    func    strncpy_n                   47: 4
+EXTERN FAR    func    strcat_n                    48: 4
+EXTERN FAR    func    strncat_n                   49: 4
+EXTERN FAR    func    memcmp_n                    50: 4
+EXTERN FAR    func    strcmp_n                    51: 4
+EXTERN FAR    func    strncmp_n                   52: 4
+EXTERN FAR    func    memchr_n                    53: 4
+EXTERN FAR    func    strchr_n                    54: 4
+EXTERN FAR    func    strcspn_n                   55: 4
+EXTERN FAR    func    strpbrk_n                   56: 4
+EXTERN FAR    func    strrchr_n                   57: 4
+EXTERN FAR    func    strspn_n                    58: 4
+EXTERN FAR    func    strstr_n                    59: 4
+EXTERN FAR    func    strtok_n                    60: 4
+EXTERN FAR    func    memset_n                    62: 4
+EXTERN FAR    func    strlen_n                    64: 4
+EXTERN FAR    func    strcoll_n                   65: 4
+EXTERN FAR    func    strxfrm_n                   66: 4
+EXTERN FAR    func    memcpy_f                    69: 4
+EXTERN FAR    func    memmove_f                   71: 4
+EXTERN FAR    func    strcpy_f                    72: 4
+EXTERN FAR    func    strncpy_f                   73: 4
+EXTERN FAR    func    strcat_f                    74: 4
+EXTERN FAR    func    strncat_f                   75: 4
+EXTERN FAR    func    memcmp_f                    76: 4
+EXTERN FAR    func    strcmp_f                    77: 4
+EXTERN FAR    func    strncmp_f                   78: 4
+EXTERN FAR    func    memchr_f                    79: 4
+EXTERN FAR    func    strchr_f                    80: 4
+EXTERN FAR    func    strcspn_f                   81: 4
+EXTERN FAR    func    strpbrk_f                   82: 4
+EXTERN FAR    func    strrchr_f                   83: 4
+EXTERN FAR    func    strspn_f                    84: 4
+EXTERN FAR    func    strstr_f                    85: 4
+EXTERN FAR    func    strtok_f                    86: 4
+EXTERN FAR    func    memset_f                    88: 4
+EXTERN FAR    func    strlen_f                    90: 4
+EXTERN FAR    func    strcoll_f                   91: 4
+EXTERN FAR    func    strxfrm_f                   92: 4
+MEMBER        int     quot               18: 5
+MEMBER        int     rem                19: 5
+EXTYP         struct  div_t              20: 5
+MEMBER        long    quot               23: 5
+MEMBER        long    rem                24: 5
+EXTYP         struct  ldiv_t             25: 5
+EXTERN FAR    func    atoi                        29: 5
+EXTERN FAR    func    atol                        30: 5
+EXTERN FAR    func    strtol                      31: 5
+EXTERN FAR    func    strtoul                     32: 5
+EXTERN FAR    func    calloc                      33: 5
+EXTERN FAR    func    free                        34: 5
+EXTERN FAR    func    malloc                      35: 5
+EXTERN FAR    func    realloc                     36: 5
+EXTERN FAR    func    abort                       37: 5
+EXTERN FAR    func    atexit                      38: 5
+EXTERN FAR    func    exit                        39: 5
+EXTERN FAR    func    abs                         40: 5
+EXTERN FAR    func    div                         41: 5
+EXTERN FAR    func    labs                        42: 5
+EXTERN FAR    func    ldiv                        43: 5
+EXTERN FAR    func    brk                         45: 5
+EXTERN FAR    func    sbrk                        46: 5
+EXTERN FAR    func    atof                        51: 5
+EXTERN FAR    func    strtod                      52: 5
+EXTERN FAR    func    itoa                        54: 5
+EXTERN FAR    func    ltoa                        59: 5
+EXTERN FAR    func    ultoa                       60: 5
+EXTERN FAR    func    rand                        65: 5
+EXTERN FAR    func    srand                       66: 5
+EXTERN FAR    func    bsearch                     67: 5
+EXTERN FAR    func    qsort                       68: 5
+EXTERN FAR    func    atoi_n                      70: 5
+EXTERN FAR    func    atol_n                      71: 5
+EXTERN FAR    func    strtol_n                    72: 5
+EXTERN FAR    func    strtoul_n                   73: 5
+EXTERN FAR    func    atexit_n                    74: 5
+EXTERN FAR    func    atof_n                      75: 5
+EXTERN FAR    func    strtod_n                    76: 5
+EXTERN FAR    func    itoa_n                      78: 5
+EXTERN FAR    func    ltoa_n                      83: 5
+EXTERN FAR    func    ultoa_n                     84: 5
+EXTERN FAR    func    bsearch_n                   89: 5
+EXTERN FAR    func    qsort_n                     90: 5
+EXTERN FAR    func    atoi_f                      92: 5
+EXTERN FAR    func    atol_f                      93: 5
+EXTERN FAR    func    strtol_f                    94: 5
+EXTERN FAR    func    strtoul_f                   95: 5
+EXTERN FAR    func    atexit_f                    96: 5
+EXTERN FAR    func    atof_f                      97: 5
+EXTERN FAR    func    strtod_f                    98: 5
+EXTERN FAR    func    itoa_f                     100: 5
+EXTERN FAR    func    ltoa_f                     105: 5
+EXTERN FAR    func    ultoa_f                    106: 5
+EXTERN FAR    func    bsearch_f                  111: 5
+EXTERN FAR    func    qsort_f                    112: 5
+EXTYP         char    char_t             95: 3
+EXTYP         ulong   uintcodeptr_t     220: 3
+EXTYP         ulong   uintdataptr_t     221: 3
+EXTYP         uchar   __istate_t         22: 6
+EXTERN FAR    func    __get_interrupt_state
+                                                  23: 6
+EXTERN FAR    func    assert_err                  67: 7
+EXTERN FAR    func    assert_warn                 68: 7
+EXTERN FAR    func    platform_reset             125: 7
+EXTERN FAR    func    wakeup_init_ent    76       48: 8
+EXTERN FAR    func    wakeup_init                 49: 8
+EXTERN FAR    func    wakeup_ready      110       58: 8
+EXTERN FAR    func    wakeup_finish     144       65: 8
+EXTYP         pointer SERIAL_EVENT_VOID_HANDLER
+                                         55: 9
+EXTYP         pointer SERIAL_EVENT_BOOL_HANDLER
+                                         56: 9
+MEMBER        pointer rx_callback        58: 9
+MEMBER        pointer tx_callback        59: 9
+MEMBER        pointer err_callback       60: 9
+MEMBER        pointer rx_first_byte_callback
+                                         61: 9
+MEMBER        pointer rx_cmp_callback    62: 9
+EXTYP         struct  SERIAL_EVENT_PARAM
+                                         63: 9
+EXTERN FAR    func    serial_init                 82: 9
+EXTERN FAR    func    serial_read                 93: 9
+EXTERN FAR    func    serial_write               104: 9
+EXTERN FAR    func    serial_stop_ready
+                                                 113: 9   135
+EXTERN FAR    func    serial_stop_finish
+                                                 120: 9   173
+MEMBER NEAR   int     PORT_OUTPUT_NORMAL
+                                         51:10
+MEMBER NEAR   int     PORT_OUTPUT_NCH    53:10
+MEMBER NEAR   int     PORT_INPUT_NORMAL
+                                         58:10
+MEMBER NEAR   int     PORT_INPUT_TTL     60:10
+MEMBER NEAR   int     PORT_OUTPUT        65:10
+MEMBER NEAR   int     PORT_INPUT         67:10
+MEMBER NEAR   int     IRQ_ENABLE         73:10
+MEMBER NEAR   int     IRQ_DISABLE        75:10
+MEMBER NEAR   int     PORT_OUTPUT_0      81:10
+MEMBER NEAR   int     PORT_OUTPUT_1      83:10
+              #define CFG_FULLEMB                126:14
+              #define CFG_EXMEM_NOT_PRESENT
+                                                  165:14
+              #define CFG_BLECORE_10              79:14
+              #define CONFIG_EMBEDDED             22       51
+              #define _USE_REL_RL78               19: 3    27: 3    48: 3   120: 3   217: 3    21: 6
+              #define USE_WAKEUP_SIGNAL_PORT
+                                         25       28       46       47      182
+              #define _ARCH_H_           18: 7
+              #define _COMPILER_H_       16: 3
+              #define _USE_STD_C89       28: 3   248: 3
+              #define _USE_PADDING2      29: 3
+              #define offsetof           15: 1
+              #define NULL               17: 1
+              #define _STDDEF_H          20: 1    11:12    11:13
+              #define __EVENSIZEOF       16: 2
+              #define va_start           17: 2
+              #define va_starttop        18: 2
+              #define va_arg             19: 2
+              #define va_end             20: 2
+              #define _STDARG_H          22: 2
+              #define CHAR_BIT           13:11
+              #define CHAR_MAX           16:11
+              #define CHAR_MIN           17:11
+              #define SCHAR_MAX          22:11
+              #define SCHAR_MIN          23:11
+              #define UCHAR_MAX          24:11
+              #define INT_MAX            25:11
+              #define INT_MIN            26:11
+              #define SHRT_MAX           27:11
+              #define SHRT_MIN           28:11
+              #define UINT_MAX           29:11    39: 7
+              #define USHRT_MAX          30:11
+              #define SINT_MAX           31:11
+              #define SINT_MIN           32:11
+              #define SSHRT_MAX          33:11
+              #define SSHRT_MIN          34:11
+              #define LONG_MAX           35:11
+              #define LONG_MIN           36:11
+              #define ULONG_MAX          37:11    78: 3
+              #define _LIMITS_H          39:11
+              #define bool               86: 3    58: 8    56: 9   113: 9   110
+              #define true               87: 3
+              #define false              88: 3
+              #define _STRING_H          94: 4
+              #define EXIT_SUCCESS       14: 5
+              #define EXIT_FAILURE       15: 5
+              #define RAND_MAX           27: 5
+              #define _STDLIB_H         114: 5
+              #define _char_t_defined_
+                                         96: 3
+              #define read_sfr          124: 3
+              #define read_sfrp         125: 3
+              #define write_sfr         126: 3
+              #define write_sfrp        127: 3
+              #define read1_sfr         128: 3
+              #define write1_sfr        129: 3
+              #define write1_sfrbit     130: 3
+              #define write1_sfr2bit    131: 3
+              #define toggle1_sfr       132: 3
+              #define toggle1_sfrbit    133: 3
+              #define __sfr_function_defined__
+                                        134: 3   229: 3
+              #define __BLEIRQ          136: 3   202: 3
+              #define __IRQ             137: 3
+              #define __FIQ             138: 3
+              #define __INLINE          198: 3
+              #define __MODULE__        213: 3
+              #define codeptr           218: 3
+              #define dataptr           219: 3
+              #define __NO_INIT         256: 3
+              #define CALLT             272: 3
+              #define DPRTN             273: 3
+              #define RWBLE_CONFIG_H_    19:14
+              #define CFG_EMB            22:14   130:14
+              #define CFG_CENTRAL        23:14   182:14   182:14   201:14   232:14   506:14
+              #define CFG_ALLROLES       24:14   182:14   182:14   182:14   182:14   201:14   201:14   203:14   232:14   232:14
+                                                 506:14   506:14
+              #define CFG_DBG            25:14   102:14
+              #define CFG_PRF_PXPM       26:14   257:14
+              #define CFG_PRF_PXPR       27:14   264:14
+              #define CFG_PRF_FMPL       28:14   271:14
+              #define CFG_PRF_FMPT       29:14   278:14
+              #define CFG_PRF_HTPC       30:14   285:14
+              #define CFG_PRF_HTPT       31:14   292:14
+              #define CFG_PRF_BLPC       32:14   299:14
+              #define CFG_PRF_BLPS       33:14   306:14
+              #define CFG_PRF_HGHD       34:14   313:14
+              #define CFG_PRF_HGBH       35:14   323:14
+              #define CFG_PRF_HGRH       36:14   330:14
+              #define CFG_PRF_SCANS      37:14   337:14
+              #define CFG_PRF_SCANC      38:14   344:14
+              #define CFG_PRF_HRPC       39:14   351:14
+              #define CFG_PRF_HRPS       40:14   358:14
+              #define CFG_PRF_CSCPC      41:14   365:14
+              #define CFG_PRF_CSCPS      42:14   372:14
+              #define CFG_PRF_GLPC       43:14   379:14
+              #define CFG_PRF_GLPS       44:14   386:14
+              #define CFG_PRF_CPPC       45:14   393:14
+              #define CFG_PRF_CPPS       46:14   400:14
+              #define CFG_PRF_TIPC       47:14   407:14
+              #define CFG_PRF_TIPS       48:14   414:14
+              #define CFG_PRF_ANPC       49:14   421:14
+              #define CFG_PRF_ANPS       50:14   428:14
+              #define CFG_PRF_LNPC       51:14   435:14
+              #define CFG_PRF_LNPS       52:14   442:14
+              #define CFG_PRF_PASPC      53:14   449:14
+              #define CFG_PRF_PASPS      54:14   456:14
+              #define CFG_PRF_RSCPC      55:14   463:14
+              #define CFG_PRF_RSCPS      56:14   470:14
+              #define RW_BLE_SUPPORT     71:14
+              #define RW_DM_SUPPORT      75:14
+              #define BLE10_HW           80:14
+              #define DEEP_SLEEP         94:14
+              #define BLE_DEBUG         103:14
+              #define KE_PROFILING      105:14
+              #define BLE_DEBUG_MEM     115:14
+              #define BLE_DEBUG_STACK_PROF
+                                        122:14
+              #define BLE_FULLEMB       127:14
+              #define BLE_SPLIT         128:14
+              #define BLE_FULLHOST      129:14
+              #define BLE_HOST_PRESENT
+                                        131:14   187:14
+              #define BLE_EMB_PRESENT   132:14   164:14
+              #define BLE_APP_PRESENT   133:14   597:14
+              #define BLE_EM_PRESENT    166:14
+              #define BLE_BROADCASTER   175:14   182:14   203:14   506:14
+              #define BLE_OBSERVER      176:14   182:14   506:14
+              #define BLE_PERIPHERAL    177:14   182:14   201:14   232:14
+              #define BLE_CENTRAL       178:14   182:14   201:14   232:14
+              #define RW_BLE_USE_CRYPT
+                                        179:14
+              #define RW_BLE_WLAN_COEX
+                                        180:14
+              #define BLE_RAM_OPTIMIZED
+                                        189:14
+              #define BLE_SDS           191:14
+              #define BLE_TEST_MODE_SUPPORT
+                                        194:14
+              #define BLE_RX_BUFFER_CNT
+                                        202:14
+              #define BLE_DUPLICATE_FILTER_MAX
+                                        210:14
+              #define BLE_ADV_REPORTS_MAX
+                                        213:14
+              #define BLE_HEAP_END      216:14
+              #define BLE_COMP_ID       219:14
+              #define BITE_VERS_1_0_3_0
+                                        223:14
+              #define BLE_UPF           226:14
+              #define MODEM2MODEM       229:14
+              #define ATT_QUALIF_MODE   238:14
+              #define BLE_Q_NOCHK_MCFM
+                                        243:14
+              #define BLE_Q_BREDR_ATT_ERR
+                                        245:14
+              #define BLE_Q_BAD_PREP_WR_RSP
+                                        247:14
+              #define BLE_Q_NOCHK_HDL   250:14
+              #define BLE_Q_TEMPM_LEN   252:14
+              #define BLE_Q_SVC_SHOW    254:14
+              #define BLE_PROX_MONITOR
+                                        258:14   477:14
+              #define BLE_PROX_REPORTER
+                                        265:14   484:14
+              #define BLE_FINDME_LOCATOR
+                                        272:14   477:14
+              #define BLE_FINDME_TARGET
+                                        279:14   484:14
+              #define BLE_HT_COLLECTOR
+                                        286:14   477:14
+              #define BLE_HT_THERMOM    293:14   484:14
+              #define BLE_BL_COLLECTOR
+                                        300:14   477:14
+              #define BLE_BL_SENSOR     307:14   484:14
+              #define BLE_HOG_HDEVICE   314:14   484:14
+              #define HID_MULTI_SERVICE
+                                        317:14
+              #define BLE_HOG_BHOST     324:14   477:14
+              #define BLE_HOG_RHOST     331:14   477:14
+              #define BLE_SCANPARAM_SERVER
+                                        338:14   484:14
+              #define BLE_SCANPARAM_CLIENT
+                                        345:14   477:14
+              #define BLE_HR_COLLECTOR
+                                        352:14   477:14
+              #define BLE_HR_SENSOR     359:14   484:14
+              #define BLE_CSC_COLLECTOR
+                                        366:14   477:14
+              #define BLE_CSC_SENSOR    373:14   484:14
+              #define BLE_GL_COLLECTOR
+                                        380:14   477:14
+              #define BLE_GL_SENSOR     387:14   484:14
+              #define BLE_CP_COLLECTOR
+                                        394:14   477:14
+              #define BLE_CP_SENSOR     401:14   484:14
+              #define BLE_TI_CLIENT     408:14
+              #define BLE_TI_SERVER     415:14
+              #define BLE_AN_CLIENT     422:14   477:14
+              #define BLE_AN_SERVER     429:14   484:14
+              #define BLE_LN_COLLECTOR
+                                        436:14   477:14
+              #define BLE_LN_SENSOR     443:14   484:14
+              #define BLE_PAS_CLIENT    450:14   477:14
+              #define BLE_PAS_SERVER    457:14   484:14
+              #define BLE_RSC_COLLECTOR
+                                        464:14   477:14
+              #define BLE_RSC_SENSOR    471:14   484:14
+              #define BLE_CLIENT_PRF    478:14   492:14
+              #define BLE_SERVER_PRF    485:14   499:14
+              #define BLE_ATTC          493:14
+              #define BLE_ATTS          500:14
+              #define BLE_ACCEL         600:14
+              #define ATT_CHANGED_IDX   604:14
+              #define GATT_PTS          607:14
+              #define __DTM2WIRE_UART_USE__
+                                        610:14
+              #define _LL_H_             16: 6
+              #define __enable_interrupt
+                                         24: 6
+              #define __disable_interrupt
+                                         25: 6
+              #define __no_operation     26: 6
+              #define __halt             27: 6
+              #define GLOBAL_INT_START
+                                         55: 6
+              #define GLOBAL_INT_STOP    69: 6
+              #define GLOBAL_INT_DISABLE
+                                        101: 6
+              #define GLOBAL_INT_RESTORE
+                                        124: 6
+              #define WFI               139: 6
+              #define CPU_WORD_SIZE      40: 7
+              #define CPU_LE             50: 7
+              #define RESET_NO_ERROR     53: 7
+              #define RESET_MEM_ALLOC_FAIL
+                                         54: 7
+              #define ASSERT_ERR         90: 7
+              #define ASSERT_WARN        93: 7
+              #define LOG_OUTPUT        104: 7
+              #define _SERIAL_H_         16: 9
+              #define SERIAL_U_2WIRE     43: 9    47
+              #define SERIAL_U_3WIRE     44: 9   122: 9    46       78       85      112
+              #define SERIAL_U_DIV_2WIRE
+                                         45: 9   122: 9    46       78       93      119      146
+              #define SERIAL_C_4WIRE     46: 9    47
+              #define SERIAL_C_5WIRE     47: 9   122: 9    46       78       85      112
+              #define SERIAL_I_3WIRE     48: 9
+              #define SERIAL_CALLBACK_VOID
+                                         69: 9
+              #define SERIAL_CALLBACK_BOOL
+                                         70: 9
+              #define PORT_H_            18:10
+              #define PORT_PULLUP        39:10
+              #define PORT_LATCH         42:10
+              #define IRQ_CLEAR          45:10
+              #define IRQ_SET            59
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.20 

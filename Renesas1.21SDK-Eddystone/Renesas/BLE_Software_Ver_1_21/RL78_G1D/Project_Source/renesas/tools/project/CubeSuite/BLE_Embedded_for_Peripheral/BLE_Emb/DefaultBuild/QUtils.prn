@@ -1,0 +1,947 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\QUtils.asm -_msgoff -pD
+          efaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\QUtils.asm
+Obj-file: DefaultBuild\QUtils.rel
+Prn-file: DefaultBuild\QUtils.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:36
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_app\QUtils
+    5     5                      ;             .c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EX
+    6     6                      ;             MEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RB
+    7     7                      ;             LE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPL
+    8     8                      ;             E,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_H
+    9     9                      ;             OCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLI
+   10    10                      ;             B -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\.
+   11    11                      ;             .\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..
+   12    12                      ;             \..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\datafl
+   13    13                      ;             ash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i.
+   14    14                      ;             .\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..
+   15    15                      ;             \..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\.
+   16    16                      ;             .\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -
+   17    17                      ;             i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i
+   18    18                      ;             ..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_s
+   19    19                      ;             w -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\dri
+   20    20                      ;             ver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\
+   21    21                      ;             ..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..
+   22    22                      ;             \..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\
+   23    23                      ;             sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zp
+   24    24                      ;             s -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\QUtils.c
+   26    26                      ; Asm-file  : DefaultBuild\QUtils.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 02H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         06AH,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, QUtils.c
+   37    37                      $DGS    MOD_NAM, QUtils,        00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    LAB_SYM, bs_S0026,      U,      U,      00H,    06H,    00H,    00H
+   55    55                      $DGS    LAB_SYM, es_S0026,      U,      U,      00H,    06H,    00H,    00H
+   56    56                      $DGS    LAB_SYM, bs_S0027,      U,      U,      00H,    06H,    00H,    00H
+   57    57                      $DGS    LAB_SYM, es_S0027,      U,      U,      00H,    06H,    00H,    00H
+   58    58                      $DGS    LAB_SYM, bs_S0028,      U,      U,      00H,    06H,    00H,    00H
+   59    59                      $DGS    LAB_SYM, es_S0028,      U,      U,      00H,    06H,    00H,    00H
+   60    60                      $DGS    LAB_SYM, bs_S0023,      U,      U,      00H,    06H,    00H,    00H
+   61    61                      $DGS    LAB_SYM, es_S0023,      U,      U,      00H,    06H,    00H,    00H
+   62    62                      $DGS    LAB_SYM, bs_S0024,      U,      U,      00H,    06H,    00H,    00H
+   63    63                      $DGS    LAB_SYM, es_S0024,      U,      U,      00H,    06H,    00H,    00H
+   64    64                      $DGS    LAB_SYM, bs_S0025,      U,      U,      00H,    06H,    00H,    00H
+   65    65                      $DGS    LAB_SYM, es_S0025,      U,      U,      00H,    06H,    00H,    00H
+   66    66                      $DGS    GLV_SYM, _convertASCII2Hex,     U,      U,      0CH,    026H,   01H,    02H
+   67    67                      $DGS    AUX_FUN, 00H,           U,      U,      048H,   01H,    00H
+   68    68                      $DGS    BEG_FUN, ??bf_convertASCII2Hex, U,      U,      00H,    065H,   01H,    00H
+   69    69                      $DGS    AUX_BEG, 0AH,           04H,    026H
+   70    70                      $DGS    FUN_ARG, _aWord,        02H,    0FFFFH, 02H,    09H,    01H,    01H
+   71    71                      $DGS    AUX_STR, 00H,           00H,    02H,    00H,    00H,    00H,    00H,    01H
+   72    72                      $DGS    AUT_VAR, _abyte,        01H,    0FFFFH, 02H,    01H,    00H,    00H
+   73    73                      $DGS    BEG_BLK, ??bb00_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   74    74                      $DGS    AUX_BEG, 05H,           00H,    02AH
+   75    75                      $DGS    END_BLK, ??eb00_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   76    76                      $DGS    AUX_END, 08H
+   77    77                      $DGS    BEG_BLK, ??bb01_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   78    78                      $DGS    AUX_BEG, 08H,           00H,    02CH
+   79    79                      $DGS    BEG_BLK, ??bb02_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   80    80                      $DGS    AUX_BEG, 09H,           00H,    030H
+   81    81                      $DGS    END_BLK, ??eb02_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   82    82                      $DGS    AUX_END, 0CH
+   83    83                      $DGS    BEG_BLK, ??bb03_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   84    84                      $DGS    AUX_BEG, 0CH,           00H,    036H
+   85    85                      $DGS    END_BLK, ??eb03_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   86    86                      $DGS    AUX_END, 0FH
+   87    87                      $DGS    END_BLK, ??eb01_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   88    88                      $DGS    AUX_END, 010H
+   89    89                      $DGS    BEG_BLK, ??bb04_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   90    90                      $DGS    AUX_BEG, 011H,          00H,    03AH
+   91    91                      $DGS    END_BLK, ??eb04_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   92    92                      $DGS    AUX_END, 013H
+   93    93                      $DGS    BEG_BLK, ??bb05_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   94    94                      $DGS    AUX_BEG, 013H,          00H,    03CH
+   95    95                      $DGS    BEG_BLK, ??bb06_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   96    96                      $DGS    AUX_BEG, 014H,          00H,    040H
+   97    97                      $DGS    END_BLK, ??eb06_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+   98    98                      $DGS    AUX_END, 016H
+   99    99                      $DGS    BEG_BLK, ??bb07_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+  100   100                      $DGS    AUX_BEG, 016H,          00H,    00H
+  101   101                      $DGS    END_BLK, ??eb07_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+  102   102                      $DGS    AUX_END, 018H
+  103   103                      $DGS    END_BLK, ??eb05_convertASCII2Hex,       U,      U,      00H,    064H,   01H,    00H
+  104   104                      $DGS    AUX_END, 019H
+  105   105                      $DGS    END_FUN, ??ef_convertASCII2Hex, U,      U,      00H,    065H,   01H,    00H
+  106   106                      $DGS    AUX_END, 01CH
+  107   107                      $DGS    GLV_SYM, _convertHex2ASCII_HighNibble,  U,      U,      02H,    026H,   01H,    02H
+  108   108                      $DGS    AUX_FUN, 00H,           U,      U,      059H,   01H,    00H
+  109   109                      $DGS    BEG_FUN, ??bf_convertHex2ASCII_HighNibble,      U,      U,      00H,    065H,   01H,    00H
+  110   110                      $DGS    AUX_BEG, 027H,          04H,    04FH
+  111   111                      $DGS    FUN_ARG, _hexdigit,     02H,    0FFFFH, 0CH,    09H,    00H,    00H
+  112   112                      $DGS    AUT_VAR, _result,       01H,    0FFFFH, 02H,    01H,    00H,    00H
+  113   113                      $DGS    AUT_VAR, _value,        00H,    0FFFFH, 0CH,    01H,    00H,    00H
+  114   114                      $DGS    BEG_BLK, ??bb00_convertHex2ASCII_HighNibble,    U,      U,      00H,    064H,   01H,    00H
+  115   115                      $DGS    AUX_BEG, 05H,           00H,    053H
+  116   116                      $DGS    END_BLK, ??eb00_convertHex2ASCII_HighNibble,    U,      U,      00H,    064H,   01H,    00H
+  117   117                      $DGS    AUX_END, 07H
+  118   118                      $DGS    BEG_BLK, ??bb01_convertHex2ASCII_HighNibble,    U,      U,      00H,    064H,   01H,    00H
+  119   119                      $DGS    AUX_BEG, 07H,           00H,    00H
+  120   120                      $DGS    END_BLK, ??eb01_convertHex2ASCII_HighNibble,    U,      U,      00H,    064H,   01H,    00H
+  121   121                      $DGS    AUX_END, 09H
+  122   122                      $DGS    END_FUN, ??ef_convertHex2ASCII_HighNibble,      U,      U,      00H,    065H,   01H,    00H
+  123   123                      $DGS    AUX_END, 0BH
+  124   124                      $DGS    GLV_SYM, _convertHex2ASCII_LowNibble,   U,      U,      02H,    026H,   01H,    02H
+  125   125                      $DGS    AUX_FUN, 00H,           U,      U,      06AH,   01H,    00H
+  126   126                      $DGS    BEG_FUN, ??bf_convertHex2ASCII_LowNibble,       U,      U,      00H,    065H,   01H,    00H
+  127   127                      $DGS    AUX_BEG, 033H,          04H,    060H
+  128   128                      $DGS    FUN_ARG, _hexdigit,     02H,    0FFFFH, 0CH,    09H,    00H,    00H
+  129   129                      $DGS    AUT_VAR, _result,       01H,    0FFFFH, 02H,    01H,    00H,    00H
+  130   130                      $DGS    AUT_VAR, _value,        00H,    0FFFFH, 0CH,    01H,    00H,    00H
+  131   131                      $DGS    BEG_BLK, ??bb00_convertHex2ASCII_LowNibble,     U,      U,      00H,    064H,   01H,    00H
+  132   132                      $DGS    AUX_BEG, 05H,           00H,    064H
+  133   133                      $DGS    END_BLK, ??eb00_convertHex2ASCII_LowNibble,     U,      U,      00H,    064H,   01H,    00H
+  134   134                      $DGS    AUX_END, 07H
+  135   135                      $DGS    BEG_BLK, ??bb01_convertHex2ASCII_LowNibble,     U,      U,      00H,    064H,   01H,    00H
+  136   136                      $DGS    AUX_BEG, 07H,           00H,    00H
+  137   137                      $DGS    END_BLK, ??eb01_convertHex2ASCII_LowNibble,     U,      U,      00H,    064H,   01H,    00H
+  138   138                      $DGS    AUX_END, 09H
+  139   139                      $DGS    END_FUN, ??ef_convertHex2ASCII_LowNibble,       U,      U,      00H,    065H,   01H,    00H
+  140   140                      $DGS    AUX_END, 0BH
+  141   141                      
+  142   142                              PUBLIC  _convertASCII2Hex
+  143   143                              PUBLIC  _convertHex2ASCII_HighNibble
+  144   144                              PUBLIC  _convertHex2ASCII_LowNibble
+  145   145                      
+  146   146 -----                @@BITS  BSEG
+  147   147                      
+  148   148 -----                @@CNST  CSEG    MIRRORP
+  149   149                      
+  150   150 -----                @@R_INIT        CSEG    UNIT64KP
+  151   151                      
+  152   152 -----                @@INIT  DSEG    BASEP
+  153   153                      
+  154   154 -----                @@DATA  DSEG    BASEP
+  155   155                      
+  156   156 -----                @@R_INIS        CSEG    UNIT64KP
+  157   157                      
+  158   158 -----                @@INIS  DSEG    SADDRP
+  159   159                      
+  160   160 -----                @@DATS  DSEG    SADDRP
+  161   161                      
+  162   162 -----                @@CNSTL CSEG    PAGE64KP
+  163   163                      
+  164   164 -----                @@RLINIT        CSEG    UNIT64KP
+  165   165                      
+  166   166 -----                @@INITL DSEG    UNIT64KP
+  167   167                      
+  168   168 -----                @@DATAL DSEG    UNIT64KP
+  169   169                      
+  170   170 -----                @@CALT  CSEG    CALLT0
+  171   171                      
+  172   172                      ; Sub-Routines created by CC78K0R
+  173   173                      
+  174   174 -----                @@CODEL CSEG
+  175   175 00000                bs_S0026:
+  176   176 00000  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  177   177 00002  4CC1                  cmp     a,#0C1H ; 193                                   ;[INF] 2, 1
+  178   178 00004  E6                    onew    ax                                              ;[INF] 1, 1
+  179   179 00005  6130                  subc    x,a                                             ;[INF] 2, 1
+  180   180 00007  12                    movw    bc,ax                                           ;[INF] 1, 1
+  181   181 00008  D7                    ret                                                     ;[INF] 1, 6
+  182   182 00009                es_S0026:
+  183   183                      
+  184   184 -----                @@CODEL CSEG
+  185   185 00009                bs_S0027:
+  186   186 00009  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  187   187 0000B  4CE1                  cmp     a,#0E1H ; 225                                   ;[INF] 2, 1
+  188   188 0000D  E6                    onew    ax                                              ;[INF] 1, 1
+  189   189 0000E  6130                  subc    x,a                                             ;[INF] 2, 1
+  190   190 00010  12                    movw    bc,ax                                           ;[INF] 1, 1
+  191   191 00011  D7                    ret                                                     ;[INF] 1, 6
+  192   192 00012                es_S0027:
+  193   193                      
+  194   194 -----                @@CODEL CSEG
+  195   195 00012                bs_S0028:
+  196   196 00012  8B                    mov     a,[hl]                                          ;[INF] 1, 1
+  197   197 00013  318E                  shrw    ax,8                                            ;[INF] 2, 1
+  198   198 00015  043700                addw    ax,#037H        ; 55                            ;[INF] 3, 1
+  199   199 00018  60                    mov     a,x                                             ;[INF] 1, 1
+  200   200 00019  9C01                  mov     [hl+1],a                                        ;[INF] 2, 1
+  201   201 0001B  D7                    ret                                                     ;[INF] 1, 6
+  202   202 0001C                es_S0028:
+  203   203                      
+  204   204 -----                @@CODEL CSEG
+  205   205 0001C                bs_S0023:
+  206   206 0001C  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  207   207 0001E  4CBA                  cmp     a,#0BAH ; 186                                   ;[INF] 2, 1
+  208   208 00020  F6                    clrw    ax                                              ;[INF] 1, 1
+  209   209 00021  6110                  addc    x,a                                             ;[INF] 2, 1
+  210   210 00023  615B                  and     a,b                                             ;[INF] 2, 1
+  211   211 00025  08                    xch     a,x                                             ;[INF] 1, 1
+  212   212 00026  615A                  and     a,c                                             ;[INF] 2, 1
+  213   213 00028  08                    xch     a,x                                             ;[INF] 1, 1
+  214   214 00029  D7                    ret                                                     ;[INF] 1, 6
+  215   215 0002A                es_S0023:
+  216   216                      
+  217   217 -----                @@CODEL CSEG
+  218   218 0002A                bs_S0024:
+  219   219 0002A  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  220   220 0002C  4CC7                  cmp     a,#0C7H ; 199                                   ;[INF] 2, 1
+  221   221 0002E  F6                    clrw    ax                                              ;[INF] 1, 1
+  222   222 0002F  6110                  addc    x,a                                             ;[INF] 2, 1
+  223   223 00031  615B                  and     a,b                                             ;[INF] 2, 1
+  224   224 00033  08                    xch     a,x                                             ;[INF] 1, 1
+  225   225 00034  615A                  and     a,c                                             ;[INF] 2, 1
+  226   226 00036  08                    xch     a,x                                             ;[INF] 1, 1
+  227   227 00037  D7                    ret                                                     ;[INF] 1, 6
+  228   228 00038                es_S0024:
+  229   229                      
+  230   230 -----                @@CODEL CSEG
+  231   231 00038                bs_S0025:
+  232   232 00038  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  233   233 0003A  4CE7                  cmp     a,#0E7H ; 231                                   ;[INF] 2, 1
+  234   234 0003C  F6                    clrw    ax                                              ;[INF] 1, 1
+  235   235 0003D  6110                  addc    x,a                                             ;[INF] 2, 1
+  236   236 0003F  615B                  and     a,b                                             ;[INF] 2, 1
+  237   237 00041  08                    xch     a,x                                             ;[INF] 1, 1
+  238   238 00042  615A                  and     a,c                                             ;[INF] 2, 1
+  239   239 00044  08                    xch     a,x                                             ;[INF] 1, 1
+  240   240 00045  D7                    ret                                                     ;[INF] 1, 6
+  241   241 00046                es_S0025:
+  242   242                      
+  243   243                      ; *** Sub-Routine Information ***
+  244   244                      ;
+  245   245                      ; $SUB bs_S0023
+  246   246                      ;      CODE SIZE= 14 bytes
+  247   247                      ;
+  248   248                      ; $SUB bs_S0024
+  249   249                      ;      CODE SIZE= 14 bytes
+  250   250                      ;
+  251   251                      ; $SUB bs_S0025
+  252   252                      ;      CODE SIZE= 14 bytes
+  253   253                      ;
+  254   254                      ; $SUB bs_S0026
+  255   255                      ;      CODE SIZE= 9 bytes
+  256   256                      ;
+  257   257                      ; $SUB bs_S0027
+  258   258                      ;      CODE SIZE= 9 bytes
+  259   259                      ;
+  260   260                      ; $SUB bs_S0028
+  261   261                      ;      CODE SIZE= 10 bytes
+  262   262                      
+  263   263                      ; End of Sub-Routines
+  264   264                      
+  265   265                      ; line    13
+  266   266                      ; line    14
+  267   267                      ; line    13
+  268   268                      ; line    14
+  269   269                      ; line    15
+  270   270                      ; line    74
+  271   271                      ; line    75
+  272   272                      ; line    76
+  273   273                      ; line    77
+  274   274                      ; line    79
+  275   275                      ; line    80
+  276   276                      ; line    84
+  277   277                      ; line    85
+  278   278                      ; line    16
+  279   279                      ; line    18
+  280   280                      ; line    19
+  281   281                      ; line    20
+  282   282                      ; line    21
+  283   283                      ; line    22
+  284   284                      ; line    23
+  285   285                      ; line    24
+  286   286                      ; line    25
+  287   287                      ; line    26
+  288   288                      ; line    27
+  289   289                      ; line    28
+  290   290                      ; line    29
+  291   291                      ; line    30
+  292   292                      ; line    31
+  293   293                      ; line    32
+  294   294                      ; line    33
+  295   295                      ; line    35
+  296   296                      ; line    37
+  297   297                      ; line    38
+  298   298                      ; line    39
+  299   299                      ; line    40
+  300   300                      ; line    43
+  301   301                      ; line    45
+  302   302                      ; line    46
+  303   303                      ; line    47
+  304   304                      ; line    48
+  305   305                      ; line    49
+  306   306                      ; line    50
+  307   307                      ; line    51
+  308   308                      ; line    52
+  309   309                      ; line    53
+  310   310                      ; line    54
+  311   311                      ; line    55
+  312   312                      ; line    56
+  313   313                      ; line    57
+  314   314                      ; line    58
+  315   315                      ; line    59
+  316   316                      ; line    60
+  317   317                      ; line    62
+  318   318                      ; line    64
+  319   319                      ; line    65
+  320   320                      ; line    66
+  321   321                      ; line    69
+  322   322                      ; line    71
+  323   323                      ; line    72
+  324   324                      ; line    73
+  325   325                      ; line    74
+  326   326                      ; line    75
+  327   327                      ; line    76
+  328   328                      ; line    77
+  329   329                      ; line    78
+  330   330                      ; line    79
+  331   331                      ; line    80
+  332   332                      ; line    81
+  333   333                      ; line    82
+  334   334                      ; line    83
+  335   335                      ; line    84
+  336   336                      ; line    85
+  337   337                      ; line    86
+  338   338                      ; line    88
+  339   339                      ; line    90
+  340   340                      ; line    91
+  341   341                      ; line    92
+  342   342                      ; line    20
+  343   343                      ; line    25
+  344   344                      ; line    29
+  345   345                      ; line    30
+  346   346                      ; line    31
+  347   347                      ; line    32
+  348   348                      ; line    33
+  349   349                      ; line    34
+  350   350                      ; line    35
+  351   351                      ; line    36
+  352   352                      ; line    37
+  353   353                      ; line    38
+  354   354                      ; line    39
+  355   355                      ; line    40
+  356   356                      ; line    41
+  357   357                      ; line    42
+  358   358                      ; line    43
+  359   359                      ; line    45
+  360   360                      ; line    46
+  361   361                      ; line    51
+  362   362                      ; line    52
+  363   363                      ; line    54
+  364   364                      ; line    59
+  365   365                      ; line    60
+  366   366                      ; line    65
+  367   367                      ; line    66
+  368   368                      ; line    67
+  369   369                      ; line    68
+  370   370                      ; line    70
+  371   371                      ; line    71
+  372   372                      ; line    72
+  373   373                      ; line    73
+  374   374                      ; line    74
+  375   375                      ; line    75
+  376   376                      ; line    76
+  377   377                      ; line    78
+  378   378                      ; line    83
+  379   379                      ; line    84
+  380   380                      ; line    89
+  381   381                      ; line    90
+  382   382                      ; line    92
+  383   383                      ; line    93
+  384   384                      ; line    94
+  385   385                      ; line    95
+  386   386                      ; line    96
+  387   387                      ; line    97
+  388   388                      ; line    98
+  389   389                      ; line   100
+  390   390                      ; line   105
+  391   391                      ; line   106
+  392   392                      ; line   111
+  393   393                      ; line   112
+  394   394                      ; line    95
+  395   395                      ; line   220
+  396   396                      ; line   221
+  397   397                      ; line    22
+  398   398                      ; line    23
+  399   399                      ; line    67
+  400   400                      ; line    68
+  401   401                      ; line   125
+  402   402                      ; line   124
+  403   403                      ; line   125
+  404   404                      ; line   150
+  405   405                      ; line   151
+  406   406                      ; line   152
+  407   407                      ; line   153
+  408   408                      ; line   154
+  409   409                      ; line   155
+  410   410                      ; line   156
+  411   411                      ; line   157
+  412   412                      ; line   167
+  413   413                      ; line   168
+  414   414                      ; line   169
+  415   415                      ; line   170
+  416   416                      ; line   171
+  417   417                      ; line   172
+  418   418                      ; line   173
+  419   419                      ; line   174
+  420   420                      ; line   175
+  421   421                      ; line   197
+  422   422                      ; line   198
+  423   423                      ; line   199
+  424   424                      ; line   213
+  425   425                      ; line   214
+  426   426                      ; line   215
+  427   427                      ; line   216
+  428   428                      ; line   217
+  429   429                      ; line   218
+  430   430                      ; line   219
+  431   431                      ; line   237
+  432   432                      ; line   238
+  433   433                      ; line   239
+  434   434                      ; line   240
+  435   435                      ; line   241
+  436   436                      ; line   260
+  437   437                      ; line   264
+  438   438                      ; line   265
+  439   439                      ; line   266
+  440   440                      ; line   267
+  441   441                      ; line   268
+  442   442                      ; line   269
+  443   443                      ; line   292
+  444   444                      ; line   293
+  445   445                      ; line   294
+  446   446                      ; line   295
+  447   447                      ; line   296
+  448   448                      ; line   297
+  449   449                      ; line   298
+  450   450                      ; line   328
+  451   451                      ; line   329
+  452   452                      ; line   330
+  453   453                      ; line   331
+  454   454                      ; line   350
+  455   455                      ; line   352
+  456   456                      ; line   353
+  457   457                      ; line   354
+  458   458                      ; line   355
+  459   459                      ; line   356
+  460   460                      ; line   514
+  461   461                      ; line   515
+  462   462                      ; line   516
+  463   463                      ; line   546
+  464   464                      ; line   547
+  465   465                      ; line   548
+  466   466                      ; line   557
+  467   467                      ; line   558
+  468   468                      ; line   559
+  469   469                      ; line   570
+  470   470                      ; line   571
+  471   471                      ; line   572
+  472   472                      ; line   581
+  473   473                      ; line   582
+  474   474                      ; line   583
+  475   475                      ; line   601
+  476   476                      ; line   602
+  477   477                      ; line   603
+  478   478                      ; line   613
+  479   479                      ; line   614
+  480   480                      ; line   615
+  481   481                      ; line   628
+  482   482                      ; line   629
+  483   483                      ; line   630
+  484   484                      ; line   639
+  485   485                      ; line   640
+  486   486                      ; line   641
+  487   487                      ; line   650
+  488   488                      ; line   651
+  489   489                      ; line   652
+  490   490                      ; line   661
+  491   491                      ; line   662
+  492   492                      ; line   663
+  493   493                      ; line   673
+  494   494                      ; line   674
+  495   495                      ; line   675
+  496   496                      ; line   690
+  497   497                      ; line   691
+  498   498                      ; line   692
+  499   499                      ; line   705
+  500   500                      ; line   706
+  501   501                      ; line   707
+  502   502                      ; line   713
+  503   503                      ; line   714
+  504   504                      ; line   715
+  505   505                      ; line   721
+  506   506                      ; line   722
+  507   507                      ; line   723
+  508   508                      ; line   729
+  509   509                      ; line   730
+  510   510                      ; line   731
+  511   511                      ; line   737
+  512   512                      ; line   738
+  513   513                      ; line   739
+  514   514                      ; line   745
+  515   515                      ; line   746
+  516   516                      ; line   747
+  517   517                      ; line   753
+  518   518                      ; line   754
+  519   519                      ; line   755
+  520   520                      ; line   761
+  521   521                      ; line   762
+  522   522                      ; line   763
+  523   523                      ; line   769
+  524   524                      ; line   770
+  525   525                      ; line   771
+  526   526                      ; line   777
+  527   527                      ; line   778
+  528   528                      ; line   779
+  529   529                      ; line   785
+  530   530                      ; line   786
+  531   531                      ; line   787
+  532   532                      ; line   793
+  533   533                      ; line   794
+  534   534                      ; line   795
+  535   535                      ; line   801
+  536   536                      ; line   802
+  537   537                      ; line   803
+  538   538                      ; line   809
+  539   539                      ; line   810
+  540   540                      ; line   811
+  541   541                      ; line   817
+  542   542                      ; line   818
+  543   543                      ; line   819
+  544   544                      ; line   825
+  545   545                      ; line   826
+  546   546                      ; line   827
+  547   547                      ; line   833
+  548   548                      ; line   834
+  549   549                      ; line   835
+  550   550                      ; line   841
+  551   551                      ; line   842
+  552   552                      ; line   843
+  553   553                      ; line   849
+  554   554                      ; line   850
+  555   555                      ; line   851
+  556   556                      ; line   857
+  557   557                      ; line   858
+  558   558                      ; line   859
+  559   559                      ; line   865
+  560   560                      ; line   866
+  561   561                      ; line   867
+  562   562                      ; line   873
+  563   563                      ; line   874
+  564   564                      ; line   875
+  565   565                      ; line   881
+  566   566                      ; line   882
+  567   567                      ; line   883
+  568   568                      ; line   889
+  569   569                      ; line   890
+  570   570                      ; line   891
+  571   571                      ; line   897
+  572   572                      ; line   898
+  573   573                      ; line   899
+  574   574                      ; line   905
+  575   575                      ; line   906
+  576   576                      ; line   907
+  577   577                      ; line   913
+  578   578                      ; line   914
+  579   579                      ; line   915
+  580   580                      ; line   921
+  581   581                      ; line   922
+  582   582                      ; line   923
+  583   583                      ; line   929
+  584   584                      ; line   930
+  585   585                      ; line   931
+  586   586                      ; line   937
+  587   587                      ; line   938
+  588   588                      ; line   939
+  589   589                      ; line   945
+  590   590                      ; line   946
+  591   591                      ; line   947
+  592   592                      ; line   958
+  593   593                      ; line   959
+  594   594                      ; line   960
+  595   595                      ; line  1016
+  596   596                      ; line  1017
+  597   597                      ; line  1018
+  598   598                      ; line  1019
+  599   599                      ; line  1022
+  600   600                      ; line    10
+  601   601                      
+  602   602 -----                @@CODEL CSEG
+  603   603 00046                _convertASCII2Hex:
+  604   604                      $DGL    1,31
+  605   605 00046  C7                    push    hl                                              ;[INF] 1, 1
+  606   606 00047  C1                    push    ax                                              ;[INF] 1, 1
+  607   607 00048  C1                    push    ax                                              ;[INF] 1, 1
+  608   608 00049  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  609   609 0004C                ??bf_convertASCII2Hex:
+  610   610                      ; line    14
+  611   611                      $DGL    0,5
+  612   612 0004C  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  613   613 0004E  14                    movw    de,ax                                           ;[INF] 1, 1
+  614   614 0004F  89                    mov     a,[de]                                          ;[INF] 1, 1
+  615   615 00050  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  616   616 00052  4CB0                  cmp     a,#0B0H ; 176                                   ;[INF] 2, 1
+  617   617 00054  E6                    onew    ax                                              ;[INF] 1, 1
+  618   618 00055  6130                  subc    x,a                                             ;[INF] 2, 1
+  619   619 00057  12                    movw    bc,ax                                           ;[INF] 1, 1
+  620   620 00058  89                    mov     a,[de]                                          ;[INF] 1, 1
+  621   621 00059  FEC0FF                call    $!bs_S0023                                      ;[INF] 3, 3
+  622   622 0005C  6168                  or      a,x                                             ;[INF] 2, 1
+  623   623 0005E  DD0F                  bz      $?L0003                                         ;[INF] 2, 4
+  624   624 00060                ??bb00_convertASCII2Hex:
+  625   625                      ; line    15
+  626   626                      $DGL    0,6
+  627   627 00060  89                    mov     a,[de]                                          ;[INF] 1, 1
+  628   628 00061  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  629   629 00063  243000                subw    ax,#030H        ; 48                            ;[INF] 3, 1
+  630   630 00066  60                    mov     a,x                                             ;[INF] 1, 1
+  631   631 00067  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  632   632                      ; line    16
+  633   633                      $DGL    0,7
+  634   634 00069  3149                  shl     a,4                                             ;[INF] 2, 1
+  635   635 0006B  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  636   636 0006D                ??eb00_convertASCII2Hex:
+  637   637                      ; line    17
+  638   638                      $DGL    0,8
+  639   639 0006D  EF3A                  br      $?L0007                                         ;[INF] 2, 3
+  640   640 0006F                ?L0003:
+  641   641 0006F                ??bb01_convertASCII2Hex:
+  642   642                      ; line    18
+  643   643                      $DGL    0,9
+  644   644 0006F  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  645   645 00071  14                    movw    de,ax                                           ;[INF] 1, 1
+  646   646 00072  89                    mov     a,[de]                                          ;[INF] 1, 1
+  647   647 00073  FE8AFF                call    $!bs_S0026                                      ;[INF] 3, 3
+  648   648 00076  89                    mov     a,[de]                                          ;[INF] 1, 1
+  649   649 00077  FEB0FF                call    $!bs_S0024                                      ;[INF] 3, 3
+  650   650 0007A  6168                  or      a,x                                             ;[INF] 2, 1
+  651   651 0007C  DD0F                  bz      $?L0005                                         ;[INF] 2, 4
+  652   652 0007E                ??bb02_convertASCII2Hex:
+  653   653                      ; line    19
+  654   654                      $DGL    0,10
+  655   655 0007E  89                    mov     a,[de]                                          ;[INF] 1, 1
+  656   656 0007F  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  657   657 00081  243700                subw    ax,#037H        ; 55                            ;[INF] 3, 1
+  658   658 00084  60                    mov     a,x                                             ;[INF] 1, 1
+  659   659 00085  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  660   660                      ; line    20
+  661   661                      $DGL    0,11
+  662   662 00087  3149                  shl     a,4                                             ;[INF] 2, 1
+  663   663 00089  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  664   664 0008B                ??eb02_convertASCII2Hex:
+  665   665                      ; line    21
+  666   666                      $DGL    0,12
+  667   667 0008B  EF1C                  br      $?L0007                                         ;[INF] 2, 3
+  668   668 0008D                ?L0005:
+  669   669 0008D  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  670   670 0008F  14                    movw    de,ax                                           ;[INF] 1, 1
+  671   671 00090  89                    mov     a,[de]                                          ;[INF] 1, 1
+  672   672 00091  FE75FF                call    $!bs_S0027                                      ;[INF] 3, 3
+  673   673 00094  89                    mov     a,[de]                                          ;[INF] 1, 1
+  674   674 00095  FEA0FF                call    $!bs_S0025                                      ;[INF] 3, 3
+  675   675 00098  6168                  or      a,x                                             ;[INF] 2, 1
+  676   676 0009A  DD0D                  bz      $?L0007                                         ;[INF] 2, 4
+  677   677 0009C                ??bb03_convertASCII2Hex:
+  678   678                      ; line    22
+  679   679                      $DGL    0,13
+  680   680 0009C  89                    mov     a,[de]                                          ;[INF] 1, 1
+  681   681 0009D  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  682   682 0009F  245700                subw    ax,#057H        ; 87                            ;[INF] 3, 1
+  683   683 000A2  60                    mov     a,x                                             ;[INF] 1, 1
+  684   684 000A3  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  685   685                      ; line    23
+  686   686                      $DGL    0,14
+  687   687 000A5  3149                  shl     a,4                                             ;[INF] 2, 1
+  688   688 000A7  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  689   689 000A9                ??eb03_convertASCII2Hex:
+  690   690                      ; line    24
+  691   691 000A9                ?L0007:
+  692   692 000A9                ??eb01_convertASCII2Hex:
+  693   693                      ; line    25
+  694   694                      ; line    26
+  695   695                      $DGL    0,17
+  696   696 000A9  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  697   697 000AB  14                    movw    de,ax                                           ;[INF] 1, 1
+  698   698 000AC  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  699   699 000AE  7C80                  xor     a,#080H ; 128                                   ;[INF] 2, 1
+  700   700 000B0  4CB1                  cmp     a,#0B1H ; 177                                   ;[INF] 2, 1
+  701   701 000B2  E6                    onew    ax                                              ;[INF] 1, 1
+  702   702 000B3  6130                  subc    x,a                                             ;[INF] 2, 1
+  703   703 000B5  12                    movw    bc,ax                                           ;[INF] 1, 1
+  704   704 000B6  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  705   705 000B8  FE61FF                call    $!bs_S0023                                      ;[INF] 3, 3
+  706   706 000BB  6168                  or      a,x                                             ;[INF] 2, 1
+  707   707 000BD  DD0E                  bz      $?L0009                                         ;[INF] 2, 4
+  708   708 000BF                ??bb04_convertASCII2Hex:
+  709   709                      ; line    27
+  710   710                      $DGL    0,18
+  711   711 000BF  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  712   712 000C1  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  713   713 000C3  243000                subw    ax,#030H        ; 48                            ;[INF] 3, 1
+  714   714 000C6  60                    mov     a,x                                             ;[INF] 1, 1
+  715   715 000C7  0E01                  add     a,[hl+1]        ; abyte                         ;[INF] 2, 1
+  716   716 000C9  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  717   717 000CB                ??eb04_convertASCII2Hex:
+  718   718                      ; line    28
+  719   719                      $DGL    0,19
+  720   720 000CB  EF3C                  br      $?L0013                                         ;[INF] 2, 3
+  721   721 000CD                ?L0009:
+  722   722 000CD                ??bb05_convertASCII2Hex:
+  723   723                      ; line    29
+  724   724                      $DGL    0,20
+  725   725 000CD  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  726   726 000CF  14                    movw    de,ax                                           ;[INF] 1, 1
+  727   727 000D0  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  728   728 000D2  FE2BFF                call    $!bs_S0026                                      ;[INF] 3, 3
+  729   729 000D5  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  730   730 000D7  FE50FF                call    $!bs_S0024                                      ;[INF] 3, 3
+  731   731 000DA  6168                  or      a,x                                             ;[INF] 2, 1
+  732   732 000DC  DD0E                  bz      $?L0011                                         ;[INF] 2, 4
+  733   733 000DE                ??bb06_convertASCII2Hex:
+  734   734                      ; line    30
+  735   735                      $DGL    0,21
+  736   736 000DE  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  737   737 000E0  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  738   738 000E2  243700                subw    ax,#037H        ; 55                            ;[INF] 3, 1
+  739   739 000E5  60                    mov     a,x                                             ;[INF] 1, 1
+  740   740 000E6  0E01                  add     a,[hl+1]        ; abyte                         ;[INF] 2, 1
+  741   741 000E8  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  742   742 000EA                ??eb06_convertASCII2Hex:
+  743   743                      ; line    31
+  744   744                      $DGL    0,22
+  745   745 000EA  EF1D                  br      $?L0013                                         ;[INF] 2, 3
+  746   746 000EC                ?L0011:
+  747   747 000EC  AC02                  movw    ax,[hl+2]       ; aWord                         ;[INF] 2, 1
+  748   748 000EE  14                    movw    de,ax                                           ;[INF] 1, 1
+  749   749 000EF  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  750   750 000F1  FE15FF                call    $!bs_S0027                                      ;[INF] 3, 3
+  751   751 000F4  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  752   752 000F6  FE3FFF                call    $!bs_S0025                                      ;[INF] 3, 3
+  753   753 000F9  6168                  or      a,x                                             ;[INF] 2, 1
+  754   754 000FB  DD0C                  bz      $?L0013                                         ;[INF] 2, 4
+  755   755 000FD                ??bb07_convertASCII2Hex:
+  756   756                      ; line    32
+  757   757                      $DGL    0,23
+  758   758 000FD  8A01                  mov     a,[de+1]                                        ;[INF] 2, 1
+  759   759 000FF  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  760   760 00101  245700                subw    ax,#057H        ; 87                            ;[INF] 3, 1
+  761   761 00104  60                    mov     a,x                                             ;[INF] 1, 1
+  762   762 00105  0E01                  add     a,[hl+1]        ; abyte                         ;[INF] 2, 1
+  763   763 00107  9C01                  mov     [hl+1],a        ; abyte                         ;[INF] 2, 1
+  764   764 00109                ??eb07_convertASCII2Hex:
+  765   765                      ; line    33
+  766   766 00109                ?L0013:
+  767   767 00109                ??eb05_convertASCII2Hex:
+  768   768                      ; line    34
+  769   769                      ; line    36
+  770   770                      $DGL    0,27
+  771   771 00109  8C01                  mov     a,[hl+1]        ; abyte                         ;[INF] 2, 1
+  772   772 0010B  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  773   773 0010D  12                    movw    bc,ax                                           ;[INF] 1, 1
+  774   774                      ; line    37
+  775   775                      ; line    37
+  776   776                      $DGL    0,28
+  777   777 0010E                ??ef_convertASCII2Hex:
+  778   778 0010E  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  779   779 00110  C6                    pop     hl                                              ;[INF] 1, 1
+  780   780 00111  D7                    ret                                                     ;[INF] 1, 6
+  781   781 00112                ??ee_convertASCII2Hex:
+  782   782                      ; line    39
+  783   783 00112                _convertHex2ASCII_HighNibble:
+  784   784                      $DGL    1,72
+  785   785 00112  C7                    push    hl                                              ;[INF] 1, 1
+  786   786 00113  C1                    push    ax                                              ;[INF] 1, 1
+  787   787 00114  C1                    push    ax                                              ;[INF] 1, 1
+  788   788 00115  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  789   789 00118                ??bf_convertHex2ASCII_HighNibble:
+  790   790                      ; line    42
+  791   791                      $DGL    0,4
+  792   792 00118  8C02                  mov     a,[hl+2]        ; hexdigit                      ;[INF] 2, 1
+  793   793 0011A  314A                  shr     a,4                                             ;[INF] 2, 1
+  794   794 0011C  9B                    mov     [hl],a  ; value                                 ;[INF] 1, 1
+  795   795                      ; line    43
+  796   796                      $DGL    0,5
+  797   797 0011D  4C0A                  cmp     a,#0AH  ; 10                                    ;[INF] 2, 1
+  798   798 0011F  DE07                  bnc     $?L0017                                         ;[INF] 2, 4
+  799   799 00121                ??bb00_convertHex2ASCII_HighNibble:
+  800   800                      ; line    44
+  801   801                      $DGL    0,6
+  802   802 00121  5130                  mov     a,#030H ; 48                                    ;[INF] 2, 1
+  803   803 00123  0D                    add     a,[hl]  ; value                                 ;[INF] 1, 1
+  804   804 00124  9C01                  mov     [hl+1],a        ; result                        ;[INF] 2, 1
+  805   805 00126                ??eb00_convertHex2ASCII_HighNibble:
+  806   806                      ; line    45
+  807   807                      $DGL    0,7
+  808   808 00126  EF03                  br      $?L0018                                         ;[INF] 2, 3
+  809   809 00128                ?L0017:
+  810   810 00128                ??bb01_convertHex2ASCII_HighNibble:
+  811   811                      ; line    46
+  812   812                      $DGL    0,8
+  813   813 00128  FEE7FE                call    $!bs_S0028                                      ;[INF] 3, 3
+  814   814 0012B                ??eb01_convertHex2ASCII_HighNibble:
+  815   815                      ; line    47
+  816   816 0012B                ?L0018:
+  817   817                      ; line    48
+  818   818                      $DGL    0,10
+  819   819 0012B  8C01                  mov     a,[hl+1]        ; result                        ;[INF] 2, 1
+  820   820 0012D  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  821   821 0012F  12                    movw    bc,ax                                           ;[INF] 1, 1
+  822   822                      ; line    49
+  823   823                      ; line    49
+  824   824                      $DGL    0,11
+  825   825 00130                ??ef_convertHex2ASCII_HighNibble:
+  826   826 00130  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  827   827 00132  C6                    pop     hl                                              ;[INF] 1, 1
+  828   828 00133  D7                    ret                                                     ;[INF] 1, 6
+  829   829 00134                ??ee_convertHex2ASCII_HighNibble:
+  830   830                      ; line    51
+  831   831 00134                _convertHex2ASCII_LowNibble:
+  832   832                      $DGL    1,89
+  833   833 00134  C7                    push    hl                                              ;[INF] 1, 1
+  834   834 00135  C1                    push    ax                                              ;[INF] 1, 1
+  835   835 00136  C1                    push    ax                                              ;[INF] 1, 1
+  836   836 00137  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  837   837 0013A                ??bf_convertHex2ASCII_LowNibble:
+  838   838                      ; line    54
+  839   839                      $DGL    0,4
+  840   840 0013A  8C02                  mov     a,[hl+2]        ; hexdigit                      ;[INF] 2, 1
+  841   841 0013C  5C0F                  and     a,#0FH  ; 15                                    ;[INF] 2, 1
+  842   842 0013E  9B                    mov     [hl],a  ; value                                 ;[INF] 1, 1
+  843   843                      ; line    55
+  844   844                      $DGL    0,5
+  845   845 0013F  4C0A                  cmp     a,#0AH  ; 10                                    ;[INF] 2, 1
+  846   846 00141  DE07                  bnc     $?L0021                                         ;[INF] 2, 4
+  847   847 00143                ??bb00_convertHex2ASCII_LowNibble:
+  848   848                      ; line    56
+  849   849                      $DGL    0,6
+  850   850 00143  5130                  mov     a,#030H ; 48                                    ;[INF] 2, 1
+  851   851 00145  0D                    add     a,[hl]  ; value                                 ;[INF] 1, 1
+  852   852 00146  9C01                  mov     [hl+1],a        ; result                        ;[INF] 2, 1
+  853   853 00148                ??eb00_convertHex2ASCII_LowNibble:
+  854   854                      ; line    57
+  855   855                      $DGL    0,7
+  856   856 00148  EF03                  br      $?L0022                                         ;[INF] 2, 3
+  857   857 0014A                ?L0021:
+  858   858 0014A                ??bb01_convertHex2ASCII_LowNibble:
+  859   859                      ; line    58
+  860   860                      $DGL    0,8
+  861   861 0014A  FEC5FE                call    $!bs_S0028                                      ;[INF] 3, 3
+  862   862 0014D                ??eb01_convertHex2ASCII_LowNibble:
+  863   863                      ; line    59
+  864   864 0014D                ?L0022:
+  865   865                      ; line    60
+  866   866                      $DGL    0,10
+  867   867 0014D  8C01                  mov     a,[hl+1]        ; result                        ;[INF] 2, 1
+  868   868 0014F  318F                  sarw    ax,8                                            ;[INF] 2, 1
+  869   869 00151  12                    movw    bc,ax                                           ;[INF] 1, 1
+  870   870                      ; line    61
+  871   871                      ; line    61
+  872   872                      $DGL    0,11
+  873   873 00152                ??ef_convertHex2ASCII_LowNibble:
+  874   874 00152  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  875   875 00154  C6                    pop     hl                                              ;[INF] 1, 1
+  876   876 00155  D7                    ret                                                     ;[INF] 1, 6
+  877   877 00156                ??ee_convertHex2ASCII_LowNibble:
+  878   878                      
+  879   879 -----                @@CODE  CSEG    BASE
+  880   880                      
+  881   881 -----                @@BASE  CSEG    BASE
+  882   882                              END
+  883   883                      
+  884   884                      
+  885   885                      ; *** Code Information ***
+  886   886                      ;
+  887   887                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  888   888                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\rBLE\src\sample_app\QUtils.c
+  889   889                      ;
+  890   890                      ; $FUNC convertASCII2Hex(10)
+  891   891                      ;       bc=(pointer aWord:ax)
+  892   892                      ;       CODE SIZE= 204 bytes, CLOCK_SIZE= 288 clocks, STACK_SIZE= 10 bytes
+  893   893                      ;
+  894   894                      ; $FUNC convertHex2ASCII_HighNibble(39)
+  895   895                      ;       bc=(unsigned char hexdigit:x)
+  896   896                      ;       CODE SIZE= 34 bytes, CLOCK_SIZE= 43 clocks, STACK_SIZE= 10 bytes
+  897   897                      ;
+  898   898                      ; $FUNC convertHex2ASCII_LowNibble(51)
+  899   899                      ;       bc=(unsigned char hexdigit:x)
+  900   900                      ;       CODE SIZE= 34 bytes, CLOCK_SIZE= 43 clocks, STACK_SIZE= 10 bytes
+  901   901                      
+  902   902                      ; Target chip : R5F11AGJ
+  903   903                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00156H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

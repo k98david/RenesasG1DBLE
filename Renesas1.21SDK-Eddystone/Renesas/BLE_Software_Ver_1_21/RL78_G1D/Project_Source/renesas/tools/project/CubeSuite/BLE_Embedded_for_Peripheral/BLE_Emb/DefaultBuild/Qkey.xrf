@@ -1,0 +1,27 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:21 Dec 2017 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_
+            app\Qkey.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_
+            SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,n
+            oUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..\..\..\..\..\rBLE\
+            src\sample_profile\sam -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\src\driver
+            \dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\..
+            \..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i.
+            .\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src
+            \driver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push_state -
+            i..\..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\src\rwble -i.\ -i..\..\
+            ..\..\..\..\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_app\seclib -i..
+            \..\..\..\..\..\rBLE\src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\Qkey.c
+Xref-file : DefaultBuild\Qkey.xrf
+Para-file : 
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.10 

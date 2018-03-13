@@ -1,0 +1,238 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\r_cg_cgc.asm -_msgoff -
+          pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\r_cg_cgc.asm
+Obj-file: DefaultBuild\r_cg_cgc.rel
+Prn-file: DefaultBuild\r_cg_cgc.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:35
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_app\r_cg_c
+    5     5                      ;             gc.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_
+    6     6                      ;             EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_
+    7     7                      ;             RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAM
+    8     8                      ;             PLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK
+    9     9                      ;             _HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SEC
+   10    10                      ;             LIB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..
+   11    11                      ;             \..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\
+   12    12                      ;             ..\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\data
+   13    13                      ;             flash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -
+   14    14                      ;             i..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\
+   15    15                      ;             ..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..
+   16    16                      ;             \..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf
+   17    17                      ;              -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf 
+   18    18                      ;             -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push
+   19    19                      ;             _sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\d
+   20    20                      ;             river\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\.
+   21    21                      ;             .\..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i
+   22    22                      ;             ..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\sr
+   23    23                      ;             c\sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -
+   24    24                      ;             zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\r_cg_cgc.c
+   26    26                      ; Asm-file  : DefaultBuild\r_cg_cgc.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         01EH,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, r_cg_cgc.c
+   37    37                      $DGS    MOD_NAM, r_cg_cgc,      00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    GLV_SYM, _R_CGC_Create, U,      U,      01H,    026H,   01H,    02H
+   55    55                      $DGS    AUX_FUN, 00H,           U,      U,      01EH,   01H,    00H
+   56    56                      $DGS    BEG_FUN, ??bf_R_CGC_Create,     U,      U,      00H,    065H,   01H,    00H
+   57    57                      $DGS    AUX_BEG, 039H,          04H,    018H
+   58    58                      $DGS    AUT_VAR, _w_count,      00H,    0FFFFH, 0100FH, 01H,    00H,    00H
+   59    59                      $DGS    BEG_BLK, ??bb00_R_CGC_Create,   U,      U,      00H,    064H,   01H,    00H
+   60    60                      $DGS    AUX_BEG, 0EH,           00H,    00H
+   61    61                      $DGS    END_BLK, ??eb00_R_CGC_Create,   U,      U,      00H,    064H,   01H,    00H
+   62    62                      $DGS    AUX_END, 010H
+   63    63                      $DGS    END_FUN, ??ef_R_CGC_Create,     U,      U,      00H,    065H,   01H,    00H
+   64    64                      $DGS    AUX_END, 017H
+   65    65                      
+   66    66                              PUBLIC  _R_CGC_Create
+   67    67                      
+   68    68 -----                @@BITS  BSEG
+   69    69                      
+   70    70 -----                @@CNST  CSEG    MIRRORP
+   71    71                      
+   72    72 -----                @@R_INIT        CSEG    UNIT64KP
+   73    73                      
+   74    74 -----                @@INIT  DSEG    BASEP
+   75    75                      
+   76    76 -----                @@DATA  DSEG    BASEP
+   77    77                      
+   78    78 -----                @@R_INIS        CSEG    UNIT64KP
+   79    79                      
+   80    80 -----                @@INIS  DSEG    SADDRP
+   81    81                      
+   82    82 -----                @@DATS  DSEG    SADDRP
+   83    83                      
+   84    84 -----                @@CNSTL CSEG    PAGE64KP
+   85    85                      
+   86    86 -----                @@RLINIT        CSEG    UNIT64KP
+   87    87                      
+   88    88 -----                @@INITL DSEG    UNIT64KP
+   89    89                      
+   90    90 -----                @@DATAL DSEG    UNIT64KP
+   91    91                      
+   92    92 -----                @@CALT  CSEG    CALLT0
+   93    93                      
+   94    94                      ; line    72
+   95    95                      ; line    73
+   96    96                      ; line    74
+   97    97                      ; line    75
+   98    98                      ; line    76
+   99    99                      ; line    77
+  100   100                      ; line    78
+  101   101                      ; line   161
+  102   102                      ; line   167
+  103   103                      ; line    36
+  104   104                      ; line    37
+  105   105                      ; line    38
+  106   106                      ; line    57
+  107   107                      
+  108   108 -----                @@CODEL CSEG
+  109   109 00000                _R_CGC_Create:
+  110   110                      $DGL    1,19
+  111   111 00000  C7                    push    hl                                              ;[INF] 1, 1
+  112   112 00001  2004                  subw    sp,#04H                                         ;[INF] 2, 1
+  113   113 00003  FBF8FF                movw    hl,sp                                           ;[INF] 3, 1
+  114   114 00006                ??bf_R_CGC_Create:
+  115   115                      ; line    61
+  116   116                      $DGL    0,5
+  117   117 00006  CEA010                mov     CMC,#010H       ; 16                            ;[INF] 3, 1
+  118   118                      ; line    62
+  119   119                      $DGL    0,6
+  120   120 00009  717AA1                set1    CSC.7                                           ;[INF] 3, 2
+  121   121                      ; line    64
+  122   122                      $DGL    0,8
+  123   123 0000C  714BA4                clr1    CKC.4                                           ;[INF] 3, 2
+  124   124                      ; line    66
+  125   125                      $DGL    0,10
+  126   126 0000F  716BA1                clr1    CSC.6                                           ;[INF] 3, 2
+  127   127                      ; line    69
+  128   128                      $DGL    0,13
+  129   129 00012  F6                    clrw    ax                                              ;[INF] 1, 1
+  130   130 00013  BB                    movw    [hl],ax ; w_count                               ;[INF] 1, 1
+  131   131 00014  BC02                  movw    [hl+2],ax       ; w_count                       ;[INF] 2, 1
+  132   132 00016                ?L0003:
+  133   133 00016  F6                    clrw    ax                                              ;[INF] 1, 1
+  134   134 00017  614902                cmpw    ax,[hl+2]       ; w_count                       ;[INF] 3, 1
+  135   135 0001A  DF05                  bnz     $?L0006                                         ;[INF] 2, 4
+  136   136 0001C  501E                  mov     x,#01EH ; 30                                    ;[INF] 2, 1
+  137   137 0001E  614900                cmpw    ax,[hl+0]       ; w_count                       ;[INF] 3, 1
+  138   138 00021                ?L0006:
+  139   139 00021  DC11                  bc      $?L0004                                         ;[INF] 2, 4
+  140   140                      ; line    70
+  141   141 00023                ??bb00_R_CGC_Create:
+  142   142                      ; line    71
+  143   143                      $DGL    0,15
+  144   144 00023  00                    nop                                                     ;[INF] 1, 1
+  145   145 00024                ??eb00_R_CGC_Create:
+  146   146                      ; line    72
+  147   147                      $DGL    0,16
+  148   148 00024  AC02                  movw    ax,[hl+2]       ; w_count                       ;[INF] 2, 1
+  149   149 00026  12                    movw    bc,ax                                           ;[INF] 1, 1
+  150   150 00027  AB                    movw    ax,[hl] ; w_count                               ;[INF] 1, 1
+  151   151 00028  040100                addw    ax,#01H ; 1                                     ;[INF] 3, 1
+  152   152 0002B  61D8                  sknc                                                    ;[INF] 2, 1
+  153   153 0002D  A3                    incw    bc                                              ;[INF] 1, 1
+  154   154 0002E                ?L0007:
+  155   155 0002E  BB                    movw    [hl],ax ; w_count                               ;[INF] 1, 1
+  156   156 0002F  33                    xchw    ax,bc                                           ;[INF] 1, 1
+  157   157 00030  BC02                  movw    [hl+2],ax       ; w_count                       ;[INF] 2, 1
+  158   158 00032  EFE2                  br      $?L0003                                         ;[INF] 2, 3
+  159   159 00034                ?L0004:
+  160   160                      ; line    74
+  161   161                      $DGL    0,18
+  162   162 00034  CFF30010              mov     !OSMC,#010H     ; 16                            ;[INF] 4, 1
+  163   163                      ; line    76
+  164   164                      $DGL    0,20
+  165   165 00038  716BA4                clr1    CKC.6                                           ;[INF] 3, 2
+  166   166                      ; line    78
+  167   167                      $DGL    0,22
+  168   168 0003B  710BA1                clr1    CSC.0                                           ;[INF] 3, 2
+  169   169                      ; line    79
+  170   170                      $DGL    0,23
+  171   171 0003E                ??ef_R_CGC_Create:
+  172   172 0003E  1004                  addw    sp,#04H                                         ;[INF] 2, 1
+  173   173 00040  C6                    pop     hl                                              ;[INF] 1, 1
+  174   174 00041  D7                    ret                                                     ;[INF] 1, 6
+  175   175 00042                ??ee_R_CGC_Create:
+  176   176                      
+  177   177 -----                @@CODE  CSEG    BASE
+  178   178                      
+  179   179 -----                @@BASE  CSEG    BASE
+  180   180                              END
+  181   181                      
+  182   182                      
+  183   183                      ; *** Code Information ***
+  184   184                      ;
+  185   185                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  186   186                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\rBLE\src\sample_app\r_cg_cgc
+  187   187                      ;       .c
+  188   188                      ;
+  189   189                      ; $FUNC R_CGC_Create(57)
+  190   190                      ;       void=(void)
+  191   191                      ;       CODE SIZE= 66 bytes, CLOCK_SIZE= 51 clocks, STACK_SIZE= 6 bytes
+  192   192                      
+  193   193                      ; Target chip : R5F11AGJ
+  194   194                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00042H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

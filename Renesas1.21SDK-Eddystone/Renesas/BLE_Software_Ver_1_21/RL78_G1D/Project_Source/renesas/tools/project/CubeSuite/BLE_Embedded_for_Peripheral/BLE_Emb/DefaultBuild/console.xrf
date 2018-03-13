@@ -1,0 +1,2910 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:13 Mar 2018 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_
+            app\console.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,C
+            FG_SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEA
+            K,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..\..\..\..\..\rB
+            LE\src\sample_profile\sam -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\src\dri
+            ver\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..
+            \..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led 
+            -i..\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\
+            src\driver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push_stat
+            e -i..\..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\src\rwble -i.\ -i..\
+            ..\..\..\..\..\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_app\seclib -
+            i..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\console.c
+Xref-file : DefaultBuild\console.xrf
+Para-file : 
+Inc-file  : [ 1] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [ 2] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdarg.h
+            [ 3] ..\..\..\..\..\src\compiler\compiler.h
+            [ 4] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\string.h
+            [ 5] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdlib.h
+            [ 6] ..\..\..\..\..\src\arch\rl78\ll\ll.h
+            [ 7] ..\..\..\..\..\src\arch\rl78\arch.h
+            [ 8] ..\..\..\..\..\src\types.h
+            [ 9] ..\..\..\..\..\..\rble\src\include\rble.h
+            [10] ..\..\..\..\..\src\arch\rl78\db_handle.h
+            [11] ..\..\..\..\..\src\arch\rl78\rwke_api.h
+            [12] ..\..\..\..\..\..\rBLE\src\sample_app\\console.h
+            [13] ..\..\..\..\..\src\driver\serial\serial.h
+            [14] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdio.h
+            [15] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\limits.h
+            [16] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [17] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [18] ..\..\..\..\..\..\bleip\src\rwble\rwble_config.h
+            [19] ..\..\..\..\..\src\arch\rl78\arch.h
+            [20] ..\..\..\..\..\src\arch\rl78\config.h
+            [21] ..\..\..\..\..\src\compiler\compiler.h
+            [22] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+            [23] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+            [24] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+            [25] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [26] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdarg.h
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+EXTYP         int     ptrdiff_t          13: 1
+EXTYP         uint    size_t             14: 1
+EXTYP         pointer va_list            13: 2
+EXTYP         pointer va_list_n          14: 2
+EXTYP         pointer va_list_f          15: 2
+EXTYP         char    int8_t             74: 3
+EXTYP         short   int16_t            75: 3
+EXTYP         uchar   uint8_t            76: 3
+EXTYP         ushort  uint16_t           77: 3
+EXTYP         long    int32_t            79: 3
+EXTYP         ulong   uint32_t           80: 3
+EXTYP         ulong   uintptr_t          84: 3
+EXTYP         uchar   _Bool              85: 3
+EXTERN FAR    func    memcpy                      16: 4    93
+EXTERN FAR    func    memmove                     18: 4
+EXTERN FAR    func    strcpy                      19: 4
+EXTERN FAR    func    strncpy                     20: 4
+EXTERN FAR    func    strcat                      21: 4
+EXTERN FAR    func    strncat                     22: 4
+EXTERN FAR    func    memcmp                      23: 4
+EXTERN FAR    func    strcmp                      24: 4
+EXTERN FAR    func    strncmp                     25: 4
+EXTERN FAR    func    memchr                      26: 4
+EXTERN FAR    func    strchr                      27: 4
+EXTERN FAR    func    strcspn                     28: 4
+EXTERN FAR    func    strpbrk                     29: 4
+EXTERN FAR    func    strrchr                     30: 4
+EXTERN FAR    func    strspn                      31: 4
+EXTERN FAR    func    strstr                      32: 4
+EXTERN FAR    func    strtok                      33: 4
+EXTERN FAR    func    memset                      35: 4
+EXTERN FAR    func    strerror                    37: 4
+EXTERN FAR    func    strlen                      38: 4   199
+EXTERN FAR    func    strcoll                     39: 4
+EXTERN FAR    func    strxfrm                     40: 4
+EXTERN FAR    func    memcpy_n                    43: 4
+EXTERN FAR    func    memmove_n                   45: 4
+EXTERN FAR    func    strcpy_n                    46: 4
+EXTERN FAR    func    strncpy_n                   47: 4
+EXTERN FAR    func    strcat_n                    48: 4
+EXTERN FAR    func    strncat_n                   49: 4
+EXTERN FAR    func    memcmp_n                    50: 4
+EXTERN FAR    func    strcmp_n                    51: 4
+EXTERN FAR    func    strncmp_n                   52: 4
+EXTERN FAR    func    memchr_n                    53: 4
+EXTERN FAR    func    strchr_n                    54: 4
+EXTERN FAR    func    strcspn_n                   55: 4
+EXTERN FAR    func    strpbrk_n                   56: 4
+EXTERN FAR    func    strrchr_n                   57: 4
+EXTERN FAR    func    strspn_n                    58: 4
+EXTERN FAR    func    strstr_n                    59: 4
+EXTERN FAR    func    strtok_n                    60: 4
+EXTERN FAR    func    memset_n                    62: 4
+EXTERN FAR    func    strlen_n                    64: 4
+EXTERN FAR    func    strcoll_n                   65: 4
+EXTERN FAR    func    strxfrm_n                   66: 4
+EXTERN FAR    func    memcpy_f                    69: 4
+EXTERN FAR    func    memmove_f                   71: 4
+EXTERN FAR    func    strcpy_f                    72: 4
+EXTERN FAR    func    strncpy_f                   73: 4
+EXTERN FAR    func    strcat_f                    74: 4
+EXTERN FAR    func    strncat_f                   75: 4
+EXTERN FAR    func    memcmp_f                    76: 4
+EXTERN FAR    func    strcmp_f                    77: 4
+EXTERN FAR    func    strncmp_f                   78: 4
+EXTERN FAR    func    memchr_f                    79: 4
+EXTERN FAR    func    strchr_f                    80: 4
+EXTERN FAR    func    strcspn_f                   81: 4
+EXTERN FAR    func    strpbrk_f                   82: 4
+EXTERN FAR    func    strrchr_f                   83: 4
+EXTERN FAR    func    strspn_f                    84: 4
+EXTERN FAR    func    strstr_f                    85: 4
+EXTERN FAR    func    strtok_f                    86: 4
+EXTERN FAR    func    memset_f                    88: 4
+EXTERN FAR    func    strlen_f                    90: 4
+EXTERN FAR    func    strcoll_f                   91: 4
+EXTERN FAR    func    strxfrm_f                   92: 4
+MEMBER        int     quot               18: 5
+MEMBER        int     rem                19: 5
+EXTYP         struct  div_t              20: 5
+MEMBER        long    quot               23: 5
+MEMBER        long    rem                24: 5
+EXTYP         struct  ldiv_t             25: 5
+EXTERN FAR    func    atoi                        29: 5
+EXTERN FAR    func    atol                        30: 5
+EXTERN FAR    func    strtol                      31: 5
+EXTERN FAR    func    strtoul                     32: 5
+EXTERN FAR    func    calloc                      33: 5
+EXTERN FAR    func    free                        34: 5
+EXTERN FAR    func    malloc                      35: 5
+EXTERN FAR    func    realloc                     36: 5
+EXTERN FAR    func    abort                       37: 5
+EXTERN FAR    func    atexit                      38: 5
+EXTERN FAR    func    exit                        39: 5
+EXTERN FAR    func    abs                         40: 5
+EXTERN FAR    func    div                         41: 5
+EXTERN FAR    func    labs                        42: 5
+EXTERN FAR    func    ldiv                        43: 5
+EXTERN FAR    func    brk                         45: 5
+EXTERN FAR    func    sbrk                        46: 5
+EXTERN FAR    func    atof                        51: 5
+EXTERN FAR    func    strtod                      52: 5
+EXTERN FAR    func    itoa                        54: 5
+EXTERN FAR    func    ltoa                        59: 5
+EXTERN FAR    func    ultoa                       60: 5
+EXTERN FAR    func    rand                        65: 5
+EXTERN FAR    func    srand                       66: 5
+EXTERN FAR    func    bsearch                     67: 5
+EXTERN FAR    func    qsort                       68: 5
+EXTERN FAR    func    atoi_n                      70: 5
+EXTERN FAR    func    atol_n                      71: 5
+EXTERN FAR    func    strtol_n                    72: 5
+EXTERN FAR    func    strtoul_n                   73: 5
+EXTERN FAR    func    atexit_n                    74: 5
+EXTERN FAR    func    atof_n                      75: 5
+EXTERN FAR    func    strtod_n                    76: 5
+EXTERN FAR    func    itoa_n                      78: 5
+EXTERN FAR    func    ltoa_n                      83: 5
+EXTERN FAR    func    ultoa_n                     84: 5
+EXTERN FAR    func    bsearch_n                   89: 5
+EXTERN FAR    func    qsort_n                     90: 5
+EXTERN FAR    func    atoi_f                      92: 5
+EXTERN FAR    func    atol_f                      93: 5
+EXTERN FAR    func    strtol_f                    94: 5
+EXTERN FAR    func    strtoul_f                   95: 5
+EXTERN FAR    func    atexit_f                    96: 5
+EXTERN FAR    func    atof_f                      97: 5
+EXTERN FAR    func    strtod_f                    98: 5
+EXTERN FAR    func    itoa_f                     100: 5
+EXTERN FAR    func    ltoa_f                     105: 5
+EXTERN FAR    func    ultoa_f                    106: 5
+EXTERN FAR    func    bsearch_f                  111: 5
+EXTERN FAR    func    qsort_f                    112: 5
+EXTYP         char    char_t             95: 3
+EXTYP         ulong   uintcodeptr_t     220: 3
+EXTYP         ulong   uintdataptr_t     221: 3
+EXTYP         uchar   __istate_t         22: 6
+EXTERN FAR    func    __get_interrupt_state
+                                                  23: 6
+EXTERN FAR    func    assert_err                  67: 7
+EXTERN FAR    func    assert_warn                 68: 7
+EXTERN FAR    func    platform_reset             125: 7
+EXTYP         char    INT8               16: 8
+EXTYP         short   INT16              17: 8
+EXTYP         long    INT32              18: 8
+EXTYP         uchar   UINT8              19: 8
+EXTYP         ushort  UINT16             20: 8
+EXTYP         ulong   UINT32             21: 8
+EXTYP         long    STATUS             23: 8
+TAG           enum    RBLE_COMMAND_NO_enum
+                                         28: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_TOP
+                                         30: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_RESET
+                                         31: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_SET_NAME
+                                         32: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_OBSERVATION_ENABLE
+                                         33: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_OBSERVATION_DISABLE
+                                         34: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_BROADCAST_ENABLE
+                                         35: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_BROADCAST_DISABLE
+                                         36: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_SET_BONDING_MODE
+                                         37: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_SET_SECURITY_REQUEST
+                                         38: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_GET_DEVICE_INFO
+                                         39: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_GET_WHITE_LIST_SIZE
+                                         40: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_ADD_TO_WHITE_LIST
+                                         41: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_DEL_FROM_WHITE_LIST
+                                         42: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_GET_REMOTE_DEVICE_NAME
+                                         43: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_GET_REMOTE_DEVICE_INFO
+                                         44: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_DEVICE_SEARCH
+                                         45: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_SET_RANDOM_ADDRESS
+                                         46: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_SET_PRIVACY_FEATURE
+                                         47: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_CREATE_CONNECTION
+                                         48: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_CONNECTION_CANCEL
+                                         49: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_DISCONNECT
+                                         50: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_START_BONDING
+                                         51: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_BONDING_INFO_IND
+                                         52: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_BONDING_RESPONSE
+                                         53: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_CHANGE_CONNECTION_PARAM
+                                         54: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_CHANNEL_MAP_REQ
+                                         55: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_READ_RSSI
+                                         56: 9
+MEMBER NEAR   int     RBLE_CMD_GAP_AUTHORIZED_INFO_IND
+                                         57: 9
+MEMBER NEAR   int     RBLE_CMD_SM_TOP    60: 9
+MEMBER NEAR   int     RBLE_CMD_SM_SET_KEY
+                                         61: 9
+MEMBER NEAR   int     RBLE_CMD_SM_START_ENC
+                                         62: 9
+MEMBER NEAR   int     RBLE_CMD_SM_TK_REQ_RESP
+                                         63: 9
+MEMBER NEAR   int     RBLE_CMD_SM_LTK_REQ_RESP
+                                         64: 9
+MEMBER NEAR   int     RBLE_CMD_SM_IRK_REQ_RESP
+                                         65: 9
+MEMBER NEAR   int     RBLE_CMD_SM_CSRK_REQ_RESP
+                                         66: 9
+MEMBER NEAR   int     RBLE_CMD_SM_CHK_BD_ADDR_REQ_RESP
+                                         67: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_TOP
+                                         69: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_ENABLE
+                                         70: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_DISCOVERY_SERVICE_REQUEST
+                                         71: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_DISCOVERY_CHAR_REQUEST
+                                         72: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_DISCOVERY_CHAR_DESCRIPTOR_REQUEST
+                                         73: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_READ_CHAR_REQUEST
+                                         74: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_WRITE_CHAR_REQUEST
+                                         75: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_WRITE_RELIABLE_REQUEST
+                                         76: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_EXECUTE_WRITE_CHAR_REQUEST
+                                         77: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_NOTIFY_REQUEST
+                                         78: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_INDICATE_REQUEST
+                                         79: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_WRITE_RESP
+                                         80: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_SET_PERM
+                                         81: 9
+MEMBER NEAR   int     RBLE_CMD_GATT_SET_DATA
+                                         82: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_TARGET_TOP
+                                         86: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_TARGET_ENABLE
+                                         87: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_TARGET_DISABLE
+                                         88: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_LOCATOR_TOP
+                                         90: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_LOCATOR_ENABLE
+                                         91: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_LOCATOR_DISABLE
+                                         92: 9
+MEMBER NEAR   int     RBLE_CMD_FMP_LOCATOR_SET_ALERT
+                                         93: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_REPORTER_TOP
+                                         95: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_REPORTER_ENABLE
+                                         96: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_REPORTER_DISABLE
+                                         97: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_TOP
+                                         99: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_ENABLE
+                                        100: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_DISABLE
+                                        101: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_GET_ALERT_LEVEL
+                                        102: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_SET_ALERT_LEVEL
+                                        103: 9
+MEMBER NEAR   int     RBLE_CMD_PXP_MONITOR_GET_TX_POWER
+                                        104: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_THERMOMETER_TOP
+                                        106: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_THERMOMETER_ENABLE
+                                        107: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_THERMOMETER_DISABLE
+                                        108: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_THERMOMETER_SEND_TEMP
+                                        109: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_THERMOMETER_REQ_MEASUREMENT_PERIOD_IND
+                                        110: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR
+                                        112: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR_ENABLE
+                                        113: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR_DISABLE
+                                        114: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR_READ_CHAR
+                                        115: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR_WRITE_CHAR
+                                        116: 9
+MEMBER NEAR   int     RBLE_CMD_HTP_COLLECTOR_SET_MEASUREMENT_PERIOD
+                                        117: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_SENSOR_TOP
+                                        119: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_SENSOR_ENABLE
+                                        120: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_SENSOR_DISABLE
+                                        121: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_SENSOR_SEND_MEASUREMENTS
+                                        122: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_COLLECTOR
+                                        124: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_COLLECTOR_ENABLE
+                                        125: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_COLLECTOR_DISABLE
+                                        126: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_COLLECTOR_READ_CHAR
+                                        127: 9
+MEMBER NEAR   int     RBLE_CMD_BLP_COLLECTOR_WRITE_CHAR
+                                        128: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_HDEVICE_TOP
+                                        130: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_HDEVICE_ENABLE
+                                        131: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_HDEVICE_DISABLE
+                                        132: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_HDEVICE_SEND_REPORT
+                                        133: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_HDEVICE_SEND_BATTERY_LEVEL
+                                        134: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_TOP
+                                        136: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_ENABLE
+                                        137: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_DISABLE
+                                        138: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_READ_CHAR
+                                        139: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_READ_CHAR_BY_UUID
+                                        140: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_WRITE_CHAR
+                                        141: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_SET_REPORT
+                                        142: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_SET_PROTOCOL_MODE
+                                        143: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_BHOST_DATA_OUTPUT
+                                        144: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_TOP
+                                        146: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_ENABLE
+                                        147: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_DISABLE
+                                        148: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_READ_CHAR
+                                        149: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_READ_CHAR_BY_UUID
+                                        150: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_READ_LONG_CHAR
+                                        151: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_WRITE_CHAR
+                                        152: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_SET_REPORT
+                                        153: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_SET_PROTOCOL_MODE
+                                        154: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_DATA_OUTPUT
+                                        155: 9
+MEMBER NEAR   int     RBLE_CMD_HGP_RHOST_SET_CONTROL_POINT
+                                        156: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_SERVER_TOP
+                                        158: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_SERVER_ENABLE
+                                        159: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_SERVER_DISABLE
+                                        160: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_SERVER_SEND_REFRESH
+                                        161: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_CLIENT_TOP
+                                        163: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_CLIENT_ENABLE
+                                        164: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_CLIENT_DISABLE
+                                        165: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_CLIENT_WRITE_CHAR
+                                        166: 9
+MEMBER NEAR   int     RBLE_CMD_SPP_CLIENT_SET_INTERVAL
+                                        167: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_SENSOR_TOP
+                                        169: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_SENSOR_ENABLE
+                                        170: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_SENSOR_DISABLE
+                                        171: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_SENSOR_SEND_MEASUREMENTS
+                                        172: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_TOP
+                                        174: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_ENABLE
+                                        175: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_DISABLE
+                                        176: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_READ_CHAR
+                                        177: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_WRITE_CONTROL_POINT
+                                        178: 9
+MEMBER NEAR   int     RBLE_CMD_HRP_COLLECTOR_WRITE_CHAR
+                                        179: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_SENSOR_TOP
+                                        181: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_SENSOR_ENABLE
+                                        182: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_SENSOR_DISABLE
+                                        183: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_SENSOR_SEND_MEASUREMENTS
+                                        184: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_SENSOR_SEND_SC_CONTROL_POINT
+                                        185: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_TOP
+                                        187: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_ENABLE
+                                        188: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_DISABLE
+                                        189: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_READ_CHAR
+                                        190: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_WRITE_SC_CONTROL_POINT
+                                        191: 9
+MEMBER NEAR   int     RBLE_CMD_CSCP_COLLECTOR_WRITE_CHAR
+                                        192: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_TOP
+                                        194: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_ENABLE
+                                        195: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_DISABLE
+                                        196: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_SEND_MEASUREMENTS
+                                        197: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_SEND_MEASUREMENTS_CONTEXT
+                                        198: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_SENSOR_SEND_RA_CONTROL_POINT
+                                        199: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_TOP
+                                        201: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_ENABLE
+                                        202: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_DISABLE
+                                        203: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_READ_CHAR
+                                        204: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_WRITE_RA_CONTROL_POINT
+                                        205: 9
+MEMBER NEAR   int     RBLE_CMD_GLP_COLLECTOR_WRITE_CHAR
+                                        206: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_TOP
+                                        208: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_ENABLE
+                                        209: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_DISABLE
+                                        210: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_SEND_MEASUREMENTS
+                                        211: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_BROADCAST_MEASUREMENTS
+                                        212: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_SEND_VECTOR
+                                        213: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_SEND_CONTROL_POINT
+                                        214: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_SEND_BATTERY_LEVEL
+                                        215: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_SENSOR_SEND_WRITE_RESPONSE
+                                        216: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_TOP
+                                        218: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_ENABLE
+                                        219: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_DISABLE
+                                        220: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_READ_CHAR
+                                        221: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_WRITE_CONTROL_POINT
+                                        222: 9
+MEMBER NEAR   int     RBLE_CMD_CPP_COLLECTOR_WRITE_CHAR
+                                        223: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_SERVER_TOP
+                                        226: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_SERVER_ENABLE
+                                        227: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_SERVER_DISABLE
+                                        228: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_SERVER_SEND_CURRENT_TIME
+                                        229: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_SERVER_WRITE_DATA
+                                        230: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_TOP
+                                        232: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_ENABLE
+                                        233: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_DISABLE
+                                        234: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_READ_CHAR
+                                        235: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_WRITE_CHAR
+                                        236: 9
+MEMBER NEAR   int     RBLE_CMD_TIP_CLIENT_WRITE_TIME_UPDATE_CP
+                                        237: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_SERVER_TOP
+                                        240: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_SERVER_ENABLE
+                                        241: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_SERVER_DISABLE
+                                        242: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_SERVER_SEND_NEW_ALERT
+                                        243: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_SERVER_SEND_UNREAD_ALERT
+                                        244: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_TOP
+                                        246: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_ENABLE
+                                        247: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_DISABLE
+                                        248: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_READ_CHAR
+                                        249: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_WRITE_ALERT_NOTIFICATION_CP
+                                        250: 9
+MEMBER NEAR   int     RBLE_CMD_ANP_CLIENT_WRITE_CHAR
+                                        251: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_TOP
+                                        254: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_ENABLE
+                                        255: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_DISABLE
+                                        256: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_SEND_LOCATION_SPEED
+                                        257: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_SET_POSITION_QUALITY
+                                        258: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_SEND_LN_CONTROL_POINT
+                                        259: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_SEND_NAVIGATION
+                                        260: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_SENSOR_SEND_BATTERY_LEVEL
+                                        261: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_TOP
+                                        263: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_ENABLE
+                                        264: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_DISABLE
+                                        265: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_READ_CHAR
+                                        266: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_WRITE_LN_CONTROL_POINT
+                                        267: 9
+MEMBER NEAR   int     RBLE_CMD_LNP_COLLECTOR_WRITE_CHAR
+                                        268: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_SERVER_TOP
+                                        271: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_SERVER_ENABLE
+                                        272: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_SERVER_DISABLE
+                                        273: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_SERVER_SEND_ALERT_STATUS
+                                        274: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_SERVER_SEND_RINGER_SETTING
+                                        275: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_TOP
+                                        277: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_ENABLE
+                                        278: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_DISABLE
+                                        279: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_READ_CHAR
+                                        280: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_WRITE_RINGER_CONTROL_POINT
+                                        281: 9
+MEMBER NEAR   int     RBLE_CMD_PASP_CLIENT_WRITE_CHAR
+                                        282: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_SENSOR_TOP
+                                        285: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_SENSOR_ENABLE
+                                        286: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_SENSOR_DISABLE
+                                        287: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_SENSOR_SEND_MEASUREMENTS
+                                        288: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_SENSOR_SEND_SC_CONTROL_POINT
+                                        289: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_TOP
+                                        291: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_ENABLE
+                                        292: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_DISABLE
+                                        293: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_READ_CHAR
+                                        294: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_WRITE_SC_CONTROL_POINT
+                                        295: 9
+MEMBER NEAR   int     RBLE_CMD_RSCP_COLLECTOR_WRITE_CHAR
+                                        296: 9
+MEMBER NEAR   int     RBLE_CMD_VS_TOP   299: 9
+MEMBER NEAR   int     RBLE_CMD_VS_ENABLE
+                                        300: 9
+MEMBER NEAR   int     RBLE_CMD_VS_TEST_RX_START
+                                        301: 9
+MEMBER NEAR   int     RBLE_CMD_VS_TEST_TX_START
+                                        302: 9
+MEMBER NEAR   int     RBLE_CMD_VS_TEST_END
+                                        303: 9
+MEMBER NEAR   int     RBLE_CMD_VS_SET_TEST_PARAMETER
+                                        304: 9
+MEMBER NEAR   int     RBLE_CMD_VS_READ_TEST_RSSI
+                                        305: 9
+MEMBER NEAR   int     RBLE_CMD_VS_WRITE_BD_ADDRESS
+                                        306: 9
+MEMBER NEAR   int     RBLE_CMD_VS_SET_TX_POWER
+                                        307: 9
+MEMBER NEAR   int     RBLE_CMD_VS_GPIO_DIR
+                                        308: 9
+MEMBER NEAR   int     RBLE_CMD_VS_GPIO_ACCESS
+                                        309: 9
+MEMBER NEAR   int     RBLE_CMD_VS_FLASH_MANAGEMENT
+                                        310: 9
+MEMBER NEAR   int     RBLE_CMD_VS_FLASH_ACCESS
+                                        311: 9
+MEMBER NEAR   int     RBLE_CMD_VS_FLASH_OPERATION
+                                        312: 9
+MEMBER NEAR   int     RBLE_CMD_VS_FLASH_GET_SPACE
+                                        313: 9
+MEMBER NEAR   int     RBLE_CMD_VS_FLASH_GET_EEL_VER
+                                        314: 9
+MEMBER NEAR   int     RBLE_CMD_VS_ADAPT_ENABLE
+                                        315: 9
+MEMBER NEAR   int     RBLE_CMD_VS_SET_PARAMS
+                                        316: 9
+MEMBER NEAR   int     RBLE_CMD_VS_RF_CONTROL
+                                        317: 9
+EXTYP         ushort  RBLE_COMMAND_NO   321: 9
+TAG           enum    RBLE_EVENT_NO_enum
+                                        327: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_TOP
+                                        329: 9   361: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_RESET_RESULT
+                                        330: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_SET_NAME_COMP
+                                        331: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_OBSERVATION_ENABLE_COMP
+                                        332: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_OBSERVATION_DISABLE_COMP
+                                        333: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_BROADCAST_ENABLE_COMP
+                                        334: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_BROADCAST_DISABLE_COMP
+                                        335: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_SET_BONDING_MODE_COMP
+                                        336: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_SET_SECURITY_REQUEST_COMP
+                                        337: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_GET_DEVICE_INFO_COMP
+                                        338: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_GET_WHITE_LIST_SIZE_COMP
+                                        339: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_ADD_TO_WHITE_LIST_COMP
+                                        340: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_DEL_FROM_WHITE_LIST_COMP
+                                        341: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_GET_REMOTE_DEVICE_NAME_COMP
+                                        342: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_GET_REMOTE_DEVICE_INFO_COMP
+                                        343: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_DEVICE_SEARCH_COMP
+                                        344: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_DEVICE_SEARCH_RESULT_IND
+                                        345: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_RPA_RESOLVED
+                                        346: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_SET_RANDOM_ADDRESS_COMP
+                                        347: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_SET_PRIVACY_FEATURE_COMP
+                                        348: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CONNECTION_COMP
+                                        349: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CONNECTION_CANCEL_COMP
+                                        350: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_DISCONNECT_COMP
+                                        351: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_ADVERTISING_REPORT_IND
+                                        352: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_BONDING_COMP
+                                        353: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_BONDING_REQ_IND
+                                        354: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CHANGE_CONNECTION_PARAM_REQ_IND
+                                        355: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CHANGE_CONNECTION_PARAM_COMP
+                                        356: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CHANGE_CONNECTION_PARAM_RESPONSE
+                                        357: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CHANNEL_MAP_REQ_CMP_EVT
+                                        358: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_READ_RSSI_COMP
+                                        359: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_WR_CHAR_IND
+                                        360: 9
+MEMBER NEAR   int     RBLE_EVT_GAP_CMD_DISALLOWED_IND
+                                        361: 9
+MEMBER NEAR   int     RBLE_EVT_SM_TOP   363: 9   374: 9
+MEMBER NEAR   int     RBLE_EVT_SM_SET_KEY_CNF
+                                        364: 9
+MEMBER NEAR   int     RBLE_EVT_SM_SEC_START_IND
+                                        365: 9
+MEMBER NEAR   int     RBLE_EVT_SM_TK_REQ_IND
+                                        366: 9
+MEMBER NEAR   int     RBLE_EVT_SM_LTK_REQ_IND
+                                        367: 9
+MEMBER NEAR   int     RBLE_EVT_SM_IRK_REQ_IND
+                                        368: 9
+MEMBER NEAR   int     RBLE_EVT_SM_CSRK_REQ_IND
+                                        369: 9
+MEMBER NEAR   int     RBLE_EVT_SM_KEY_IND
+                                        370: 9
+MEMBER NEAR   int     RBLE_EVT_SM_CHK_BD_ADDR_REQ_IND
+                                        371: 9
+MEMBER NEAR   int     RBLE_EVT_SM_TIMEOUT_EVT
+                                        372: 9
+MEMBER NEAR   int     RBLE_EVT_SM_LTK_REQ_FOR_ENC_IND
+                                        373: 9
+MEMBER NEAR   int     RBLE_EVT_SM_CMD_DISALLOWED_IND
+                                        374: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_TOP
+                                        376: 9   404: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_SVC_ALL_CMP
+                                        377: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_SVC_ALL_128_CMP
+                                        378: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_SVC_BY_UUID_CMP
+                                        379: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_SVC_INCL_CMP
+                                        380: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_ALL_CMP
+                                        381: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_ALL_128_CMP
+                                        382: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_BY_UUID_CMP
+                                        383: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_BY_UUID_128_CMP
+                                        384: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_DESC_CMP
+                                        385: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISC_CHAR_DESC_128_CMP
+                                        386: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_READ_CHAR_RESP
+                                        387: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_READ_CHAR_LONG_RESP
+                                        388: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_READ_CHAR_MULT_RESP
+                                        389: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_READ_CHAR_LONG_DESC_RESP
+                                        390: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_WRITE_CHAR_RESP
+                                        391: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_WRITE_CHAR_RELIABLE_RESP
+                                        392: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_CANCEL_WRITE_CHAR_RESP
+                                        393: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_HANDLE_VALUE_NOTIF
+                                        394: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_HANDLE_VALUE_IND
+                                        395: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_HANDLE_VALUE_CFM
+                                        396: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_DISCOVERY_CMP
+                                        397: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_COMPLETE
+                                        398: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_WRITE_CMD_IND
+                                        399: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_RESP_TIMEOUT
+                                        400: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_SET_PERM_CMP
+                                        401: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_SET_DATA_CMP
+                                        402: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_NOTIFY_CMP
+                                        403: 9
+MEMBER NEAR   int     RBLE_EVT_GATT_CMD_DISALLOWED_IND
+                                        404: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_TARGET_TOP
+                                        406: 9   410: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_TARGET_ENABLE_COMP
+                                        407: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_TARGET_DISABLE_COMP
+                                        408: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_TARGET_ALERT_IND
+                                        409: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_TARGET_CMD_DISALLOWED_IND
+                                        410: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_LOCATOR_TOP
+                                        412: 9   416: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_LOCATOR_ENABLE_COMP
+                                        413: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_LOCATOR_DISABLE_COMP
+                                        414: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_LOCATOR_ERROR_IND
+                                        415: 9
+MEMBER NEAR   int     RBLE_EVT_FMP_LOCATOR_CMD_DISALLOWED_IND
+                                        416: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_REPORTER_TOP
+                                        418: 9   422: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_REPORTER_ENABLE_COMP
+                                        419: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_REPORTER_DISABLE_COMP
+                                        420: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_REPORTER_ALERT_IND
+                                        421: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_REPORTER_CMD_DISALLOWED_IND
+                                        422: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_TOP
+                                        424: 9   430: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_ENABLE_COMP
+                                        425: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_DISABLE_COMP
+                                        426: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_ERROR_IND
+                                        427: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_READ_CHAR_RESPONSE
+                                        428: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_WRITE_CHAR_RESPONSE
+                                        429: 9
+MEMBER NEAR   int     RBLE_EVT_PXP_MONITOR_CMD_DISALLOWED_IND
+                                        430: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_TOP
+                                        432: 9   440: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_ENABLE_COMP
+                                        433: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_DISABLE_COMP
+                                        434: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_ERROR_IND
+                                        435: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_SEND_TEMP_COMP
+                                        436: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_REQ_MEASUREMENT_PERIOD_IND_COMP
+                                        437: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_MEAS_INTV_CHG_IND
+                                        438: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_CFG_INDNTF_IND
+                                        439: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_THERMOMETER_CMD_DISALLOWED_IND
+                                        440: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_TOP
+                                        442: 9   450: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_ENABLE_COMP
+                                        443: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_DISABLE_COMP
+                                        444: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_ERROR_IND
+                                        445: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_TEMP_IND
+                                        446: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_MEAS_INTV_IND
+                                        447: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_READ_CHAR_RESPONSE
+                                        448: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        449: 9
+MEMBER NEAR   int     RBLE_EVT_HTP_COLLECTOR_CMD_DISALLOWED_IND
+                                        450: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_TOP
+                                        452: 9   458: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_ENABLE_COMP
+                                        453: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_DISABLE_COMP
+                                        454: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_ERROR_IND
+                                        455: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        456: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_CFG_INDNTF_IND
+                                        457: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_SENSOR_CMD_DISALLOWED_IND
+                                        458: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_TOP
+                                        460: 9   467: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_ENABLE_COMP
+                                        461: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_DISABLE_COMP
+                                        462: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_ERROR_IND
+                                        463: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_MEASUREMENTS_IND
+                                        464: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_READ_CHAR_RESPONSE
+                                        465: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        466: 9
+MEMBER NEAR   int     RBLE_EVT_BLP_COLLECTOR_CMD_DISALLOWED_IND
+                                        467: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_TOP
+                                        469: 9   480: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_ENABLE_COMP
+                                        470: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_DISABLE_COMP
+                                        471: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_ERROR_IND
+                                        472: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_CFG_INDNTF_IND
+                                        473: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_REPORT_IND
+                                        474: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_PROTOCOL_MODE_CHG_EVT
+                                        475: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_REPORT_EVT
+                                        476: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_HID_CP_CHG_EVT
+                                        477: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_REPORT_COMP
+                                        478: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_SEND_BATTERY_LEVEL_COMP
+                                        479: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_HDEVICE_CMD_DISALLOWED_IND
+                                        480: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_TOP
+                                        482: 9   489: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_ENABLE_COMP
+                                        483: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_DISABLE_COMP
+                                        484: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_ERROR_IND
+                                        485: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_READ_CHAR_RESPONSE
+                                        486: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_WRITE_CHAR_RESPONSE
+                                        487: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_REPORT_NTF
+                                        488: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_BHOST_CMD_DISALLOWED_IND
+                                        489: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_TOP
+                                        491: 9   500: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_ENABLE_COMP
+                                        492: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_DISABLE_COMP
+                                        493: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_ERROR_IND
+                                        494: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_READ_CHAR_RESPONSE
+                                        495: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_READ_LONG_CHAR_RESPONSE
+                                        496: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_WRITE_CHAR_RESPONSE
+                                        497: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_REPORT_NTF
+                                        498: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_BATTERY_LEVEL_NTF
+                                        499: 9
+MEMBER NEAR   int     RBLE_EVT_HGP_RHOST_CMD_DISALLOWED_IND
+                                        500: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_TOP
+                                        502: 9   508: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_ENABLE_COMP
+                                        503: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_DISABLE_COMP
+                                        504: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_CFG_INDNTF_IND
+                                        505: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_SEND_REFRESH_COMP
+                                        506: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_INTERVAL_CHG_EVT
+                                        507: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_SERVER_CMD_DISALLOWED_IND
+                                        508: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_TOP
+                                        510: 9   515: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_ENABLE_COMP
+                                        511: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_DISABLE_COMP
+                                        512: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_ERROR_IND
+                                        513: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_WRITE_CHAR_RESPONSE
+                                        514: 9
+MEMBER NEAR   int     RBLE_EVT_SPP_CLIENT_CMD_DISALLOWED_IND
+                                        515: 9
+MEMBER NEAR   int     RBLE_EVT_VS_TOP   518: 9   537: 9
+MEMBER NEAR   int     RBLE_EVT_VS_TEST_RX_START_COMP
+                                        519: 9
+MEMBER NEAR   int     RBLE_EVT_VS_TEST_TX_START_COMP
+                                        520: 9
+MEMBER NEAR   int     RBLE_EVT_VS_TEST_END_COMP
+                                        521: 9
+MEMBER NEAR   int     RBLE_EVT_VS_WR_BD_ADDR_COMP
+                                        522: 9
+MEMBER NEAR   int     RBLE_EVT_VS_SET_TEST_PARAM_COMP
+                                        523: 9
+MEMBER NEAR   int     RBLE_EVT_VS_READ_TEST_RSSI_COMP
+                                        524: 9
+MEMBER NEAR   int     RBLE_EVT_VS_SET_TX_POWER_IND
+                                        525: 9
+MEMBER NEAR   int     RBLE_EVT_VS_GPIO_DIR_COMP
+                                        526: 9
+MEMBER NEAR   int     RBLE_EVT_VS_GPIO_ACCESS_COMP
+                                        527: 9
+MEMBER NEAR   int     RBLE_EVT_VS_FLASH_MANAGEMENT_COMP
+                                        528: 9
+MEMBER NEAR   int     RBLE_EVT_VS_FLASH_ACCESS_COMP
+                                        529: 9
+MEMBER NEAR   int     RBLE_EVT_VS_FLASH_OPERATION_COMP
+                                        530: 9
+MEMBER NEAR   int     RBLE_EVT_VS_FLASH_GET_SPACE_COMP
+                                        531: 9
+MEMBER NEAR   int     RBLE_EVT_VS_FLASH_GET_EEL_VER_COMP
+                                        532: 9
+MEMBER NEAR   int     RBLE_EVT_VS_ADAPT_ENABLE_COMP
+                                        533: 9
+MEMBER NEAR   int     RBLE_EVT_VS_ADAPT_STATE_IND
+                                        534: 9
+MEMBER NEAR   int     RBLE_EVT_VS_SET_PARAMS_COMP
+                                        535: 9
+MEMBER NEAR   int     RBLE_EVT_VS_RF_CONTROL_COMP
+                                        536: 9
+MEMBER NEAR   int     RBLE_EVT_VS_CMD_DISALLOWED_IND
+                                        537: 9
+TAG           enum    RBLE_EVENT_ADD_NO_enum
+                                        539: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_TOP
+                                        541: 9   548: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_ENABLE_COMP
+                                        542: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_DISABLE_COMP
+                                        543: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_ERROR_IND
+                                        544: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        545: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_CHG_CP_IND
+                                        546: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_CFG_NTF_IND
+                                        547: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_SENSOR_CMD_DISALLOWED_IND
+                                        548: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_TOP
+                                        550: 9   557: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_ENABLE_COMP
+                                        551: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_DISABLE_COMP
+                                        552: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_ERROR_IND
+                                        553: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_MEASUREMENTS_NTF
+                                        554: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_READ_CHAR_RESPONSE
+                                        555: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        556: 9
+MEMBER NEAR   int     RBLE_EVT_HRP_COLLECTOR_CMD_DISALLOWED_IND
+                                        557: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_TOP
+                                        559: 9   567: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_ENABLE_COMP
+                                        560: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_DISABLE_COMP
+                                        561: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_ERROR_IND
+                                        562: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        563: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_SEND_SC_CP_COMP
+                                        564: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_CHG_SC_CP_IND
+                                        565: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_CFG_INDNTF_IND
+                                        566: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_SENSOR_CMD_DISALLOWED_IND
+                                        567: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_TOP
+                                        569: 9   577: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_ENABLE_COMP
+                                        570: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_DISABLE_COMP
+                                        571: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_ERROR_IND
+                                        572: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_MEASUREMENTS_NTF
+                                        573: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_SC_CP_IND
+                                        574: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_READ_CHAR_RESPONSE
+                                        575: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        576: 9
+MEMBER NEAR   int     RBLE_EVT_CSCP_COLLECTOR_CMD_DISALLOWED_IND
+                                        577: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_TOP
+                                        579: 9   588: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_ENABLE_COMP
+                                        580: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_DISABLE_COMP
+                                        581: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_ERROR_IND
+                                        582: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        583: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_SEND_MEASUREMENTS_CONTEXT_COMP
+                                        584: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_SEND_RA_CP_COMP
+                                        585: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_CHG_RA_CP_IND
+                                        586: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_CFG_INDNTF_IND
+                                        587: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_SENSOR_CMD_DISALLOWED_IND
+                                        588: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_TOP
+                                        590: 9   599: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_ENABLE_COMP
+                                        591: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_DISABLE_COMP
+                                        592: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_ERROR_IND
+                                        593: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_MEASUREMENTS_NTF
+                                        594: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_MEASUREMENTS_CONTEXT_NTF
+                                        595: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_RA_CP_IND
+                                        596: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_READ_CHAR_RESPONSE
+                                        597: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        598: 9
+MEMBER NEAR   int     RBLE_EVT_GLP_COLLECTOR_CMD_DISALLOWED_IND
+                                        599: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_TOP
+                                        601: 9   612: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_ENABLE_COMP
+                                        602: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_DISABLE_COMP
+                                        603: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_ERROR_IND
+                                        604: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        605: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_BROADCAST_MEASUREMENTS_COMP
+                                        606: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_SEND_VECTOR_COMP
+                                        607: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_SEND_CP_CP_COMP
+                                        608: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_SEND_BATTERY_LEVEL_COMP
+                                        609: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_CHG_CP_CP_IND
+                                        610: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_CFG_INDNTFBRD_IND
+                                        611: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_SENSOR_CMD_DISALLOWED_IND
+                                        612: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_TOP
+                                        614: 9   624: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_ENABLE_COMP
+                                        615: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_DISABLE_COMP
+                                        616: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_ERROR_IND
+                                        617: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_MEASUREMENTS_NTF
+                                        618: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_VECTOR_NTF
+                                        619: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_CP_CP_IND
+                                        620: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_BATTERY_LEVEL_NTF
+                                        621: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_READ_CHAR_RESPONSE
+                                        622: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        623: 9
+MEMBER NEAR   int     RBLE_EVT_CPP_COLLECTOR_CMD_DISALLOWED_IND
+                                        624: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_TOP
+                                        627: 9   635: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_ENABLE_COMP
+                                        628: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_DISABLE_COMP
+                                        629: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_ERROR_IND
+                                        630: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_SEND_CURRENT_TIME_COMP
+                                        631: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_WRITE_DATA_COMP
+                                        632: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_CHG_TIME_UPDATE_CP_IND
+                                        633: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_CFG_NTF_IND
+                                        634: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_SERVER_CMD_DISALLOWED_IND
+                                        635: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_TOP
+                                        637: 9   644: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_ENABLE_COMP
+                                        638: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_DISABLE_COMP
+                                        639: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_ERROR_IND
+                                        640: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_CURRENT_TIME_NTF
+                                        641: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_READ_CHAR_RESPONSE
+                                        642: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_WRITE_CHAR_RESPONSE
+                                        643: 9
+MEMBER NEAR   int     RBLE_EVT_TIP_CLIENT_CMD_DISALLOWED_IND
+                                        644: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_TOP
+                                        647: 9   655: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_ENABLE_COMP
+                                        648: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_DISABLE_COMP
+                                        649: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_ERROR_IND
+                                        650: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_SEND_NEW_ALERT_COMP
+                                        651: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_SEND_UNREAD_ALERT_COMP
+                                        652: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_CHG_ALERT_NTF_CP_IND
+                                        653: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_CFG_NTF_IND
+                                        654: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_SERVER_CMD_DISALLOWED_IND
+                                        655: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_TOP
+                                        657: 9   665: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_ENABLE_COMP
+                                        658: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_DISABLE_COMP
+                                        659: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_ERROR_IND
+                                        660: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_NEW_ALERT_NTF
+                                        661: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_UNREAD_ALERT_NTF
+                                        662: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_READ_CHAR_RESPONSE
+                                        663: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_WRITE_CHAR_RESPONSE
+                                        664: 9
+MEMBER NEAR   int     RBLE_EVT_ANP_CLIENT_CMD_DISALLOWED_IND
+                                        665: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_TOP
+                                        668: 9   679: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_ENABLE_COMP
+                                        669: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_DISABLE_COMP
+                                        670: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_ERROR_IND
+                                        671: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_SEND_LOCATION_SPEED_COMP
+                                        672: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_SET_POSITION_QUALITY_COMP
+                                        673: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_SEND_LN_CP_COMP
+                                        674: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_SEND_NAVIGATION_COMP
+                                        675: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_SEND_BATTERY_LEVEL_COMP
+                                        676: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_CHG_LN_CP_IND
+                                        677: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_CFG_INDNTF_IND
+                                        678: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_SENSOR_CMD_DISALLOWED_IND
+                                        679: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_TOP
+                                        681: 9   691: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_ENABLE_COMP
+                                        682: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_DISABLE_COMP
+                                        683: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_ERROR_IND
+                                        684: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_LOCATION_SPEED_NTF
+                                        685: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_LN_CP_IND
+                                        686: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_NAVIGATION_NTF
+                                        687: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_BATTERY_LEVEL_NTF
+                                        688: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_READ_CHAR_RESPONSE
+                                        689: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        690: 9
+MEMBER NEAR   int     RBLE_EVT_LNP_COLLECTOR_CMD_DISALLOWED_IND
+                                        691: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_TOP
+                                        694: 9   702: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_ENABLE_COMP
+                                        695: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_DISABLE_COMP
+                                        696: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_ERROR_IND
+                                        697: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_SEND_ALERT_STATUS_COMP
+                                        698: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_SEND_RINGER_SETTING_COMP
+                                        699: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_CHG_RINGER_CP_IND
+                                        700: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_CFG_NTF_IND
+                                        701: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_SERVER_CMD_DISALLOWED_IND
+                                        702: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_TOP
+                                        704: 9   712: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_ENABLE_COMP
+                                        705: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_DISABLE_COMP
+                                        706: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_ERROR_IND
+                                        707: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_ALERT_STATUS_NTF
+                                        708: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_RINGER_SETTING_NTF
+                                        709: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_READ_CHAR_RESPONSE
+                                        710: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_WRITE_CHAR_RESPONSE
+                                        711: 9
+MEMBER NEAR   int     RBLE_EVT_PASP_CLIENT_CMD_DISALLOWED_IND
+                                        712: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_TOP
+                                        714: 9   722: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_ENABLE_COMP
+                                        715: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_DISABLE_COMP
+                                        716: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_ERROR_IND
+                                        717: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_SEND_MEASUREMENTS_COMP
+                                        718: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_SEND_SC_CP_COMP
+                                        719: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_CHG_SC_CP_IND
+                                        720: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_CFG_INDNTF_IND
+                                        721: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_SENSOR_CMD_DISALLOWED_IND
+                                        722: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_TOP
+                                        724: 9   732: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_ENABLE_COMP
+                                        725: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_DISABLE_COMP
+                                        726: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_ERROR_IND
+                                        727: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_MEASUREMENTS_NTF
+                                        728: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_SC_CP_IND
+                                        729: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_READ_CHAR_RESPONSE
+                                        730: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_WRITE_CHAR_RESPONSE
+                                        731: 9
+MEMBER NEAR   int     RBLE_EVT_RSCP_COLLECTOR_CMD_DISALLOWED_IND
+                                        732: 9
+EXTYP         ushort  RBLE_EVENT_NO     736: 9
+TAG           enum    RBLE_STATUS_enum
+                                        739: 9
+MEMBER NEAR   int     RBLE_OK           740: 9
+MEMBER NEAR   int     RBLE_UNKNOWN_HCI_COMMAND
+                                        741: 9
+MEMBER NEAR   int     RBLE_UNKNOWN_CONNECTION_ID
+                                        742: 9
+MEMBER NEAR   int     RBLE_HARDWARE_FAILURE
+                                        743: 9
+MEMBER NEAR   int     RBLE_PAGE_TIMEOUT
+                                        744: 9
+MEMBER NEAR   int     RBLE_AUTH_FAILURE
+                                        745: 9
+MEMBER NEAR   int     RBLE_PIN_MISSING
+                                        746: 9
+MEMBER NEAR   int     RBLE_MEMORY_CAPA_EXCEED
+                                        747: 9
+MEMBER NEAR   int     RBLE_CON_TIMEOUT
+                                        748: 9
+MEMBER NEAR   int     RBLE_CON_LIMIT_EXCEED
+                                        749: 9
+MEMBER NEAR   int     RBLE_COMMAND_DISALLOWED
+                                        750: 9
+MEMBER NEAR   int     RBLE_CONN_REJ_LIMITED_RESOURCES
+                                        751: 9
+MEMBER NEAR   int     RBLE_CONN_REJ_SECURITY_REASONS
+                                        752: 9
+MEMBER NEAR   int     RBLE_CONN_REJ_UNACCEPTABLE_BDADDR
+                                        753: 9
+MEMBER NEAR   int     RBLE_CONN_ACCEPT_TIMEOUT_EXCEED
+                                        754: 9
+MEMBER NEAR   int     RBLE_UNSUPPORTED
+                                        755: 9
+MEMBER NEAR   int     RBLE_INVALID_HCI_PARAM
+                                        756: 9
+MEMBER NEAR   int     RBLE_REMOTE_USER_TERM_CON
+                                        757: 9
+MEMBER NEAR   int     RBLE_REMOTE_DEV_TERM_LOW_RESOURCES
+                                        758: 9
+MEMBER NEAR   int     RBLE_REMOTE_DEV_POWER_OFF
+                                        759: 9
+MEMBER NEAR   int     RBLE_CON_TERM_BY_LOCAL_HOST
+                                        760: 9
+MEMBER NEAR   int     RBLE_REPEATED_ATTEMPTS
+                                        761: 9
+MEMBER NEAR   int     RBLE_PAIRING_NOT_ALLOWED
+                                        762: 9
+MEMBER NEAR   int     RBLE_UNSUPPORTED_REMOTE_FEATURE
+                                        763: 9
+MEMBER NEAR   int     RBLE_UNSPECIFIED_ERROR
+                                        764: 9
+MEMBER NEAR   int     RBLE_LMP_RSP_TIMEOUT
+                                        765: 9
+MEMBER NEAR   int     RBLE_ENC_MODE_NOT_ACCEPT
+                                        766: 9
+MEMBER NEAR   int     RBLE_LINK_KEY_CANT_CHANGE
+                                        767: 9
+MEMBER NEAR   int     RBLE_INSTANT_PASSED
+                                        768: 9
+MEMBER NEAR   int     RBLE_PAIRING_WITH_UNIT_KEY_NOT_SUP
+                                        769: 9
+MEMBER NEAR   int     RBLE_DIFF_TRANSACTION_COLLISION
+                                        770: 9
+MEMBER NEAR   int     RBLE_CHANNEL_CLASS_NOT_SUP
+                                        771: 9
+MEMBER NEAR   int     RBLE_INSUFFICIENT_SECURITY
+                                        772: 9
+MEMBER NEAR   int     RBLE_PARAM_OUT_OF_MAND_RANGE
+                                        773: 9
+MEMBER NEAR   int     RBLE_SP_NOT_SUPPORTED_HOST
+                                        774: 9
+MEMBER NEAR   int     RBLE_HOST_BUSY_PAIRING
+                                        775: 9
+MEMBER NEAR   int     RBLE_CONTROLLER_BUSY
+                                        776: 9
+MEMBER NEAR   int     RBLE_UNACCEPTABLE_CONN_INT
+                                        777: 9
+MEMBER NEAR   int     RBLE_DIRECT_ADV_TO
+                                        778: 9
+MEMBER NEAR   int     RBLE_TERMINATED_MIC_FAILURE
+                                        779: 9
+MEMBER NEAR   int     RBLE_CONN_FAILED_TO_BE_ES
+                                        780: 9
+MEMBER NEAR   int     RBLE_GAP_INVALID_PARAM_ERR
+                                        783: 9
+MEMBER NEAR   int     RBLE_GAP_AUTO_EST_ERR
+                                        784: 9
+MEMBER NEAR   int     RBLE_GAP_SELECT_EST_ERR
+                                        785: 9
+MEMBER NEAR   int     RBLE_GAP_SET_RECON_ADDR_ERR
+                                        786: 9
+MEMBER NEAR   int     RBLE_GAP_SET_PRIVACY_FEAT_ERR
+                                        787: 9
+MEMBER NEAR   int     RBLE_GATT_INVALID_PARAM_ERR
+                                        790: 9
+MEMBER NEAR   int     RBLE_GATT_INDICATE_NOT_ALLOWED
+                                        791: 9
+MEMBER NEAR   int     RBLE_GATT_NOTIFY_NOT_ALLOWED
+                                        792: 9
+MEMBER NEAR   int     RBLE_GATT_INVALID_TYPE_IN_SVC_SEARCH
+                                        793: 9
+MEMBER NEAR   int     RBLE_GATT_ATTRIBUTE_CLIENT_MISSING
+                                        794: 9
+MEMBER NEAR   int     RBLE_GATT_ATTRIBUTE_SERVER_MISSING
+                                        795: 9
+MEMBER NEAR   int     RBLE_GATT_RELIABLE_WRITE_ERR
+                                        796: 9
+MEMBER NEAR   int     RBLE_GATT_BUFF_OVER_ERR
+                                        797: 9
+MEMBER NEAR   int     RBLE_ATT_INVALID_PARAM_ERR
+                                        800: 9
+MEMBER NEAR   int     RBLE_SM_INVALID_PARAM_ERR
+                                        803: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_PASSKEY_ENTRY_FAILED
+                                        804: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_OOB_NOT_AVAILABLE
+                                        805: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_AUTH_REQUIREMENTS
+                                        806: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_CFM_VAL_FAILED
+                                        807: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_PAIRING_NOT_SUPPORTED
+                                        808: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_ENCRYPTION_KEY_SIZE
+                                        809: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_CMD_NOT_SUPPORTED
+                                        810: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_UNSPECIFIED_REASON
+                                        811: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_REPEATED_ATTEMPTS
+                                        812: 9
+MEMBER NEAR   int     RBLE_SM_PAIR_ERR_INVALID_PARAMS
+                                        813: 9
+MEMBER NEAR   int     RBLE_L2C_INVALID_PARAM_ERR
+                                        816: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_INVALID_PARAM
+                                        819: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_INEXISTENT_HDL
+                                        820: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_STOP_DISC_CHAR_MISSING
+                                        821: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_MULTIPLE_IAS
+                                        822: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_INCORRECT_PROP
+                                        823: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_MULTIPLE_CHAR
+                                        824: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_NOT_WRITABLE
+                                        825: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_NOT_READABLE
+                                        826: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_REQ_DISALLOWED
+                                        827: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_NTF_DISABLED
+                                        828: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_IND_DISABLED
+                                        829: 9
+MEMBER NEAR   int     RBLE_PRF_ERR_ATT_NOT_SUPPORTED
+                                        830: 9
+MEMBER NEAR   int     RBLE_ERR          833: 9
+MEMBER NEAR   int     RBLE_TRANS_ERR    834: 9
+MEMBER NEAR   int     RBLE_STATUS_ERROR
+                                        835: 9
+MEMBER NEAR   int     RBLE_PARAM_ERR    836: 9
+MEMBER NEAR   int     RBLE_BUSY         837: 9
+MEMBER NEAR   int     RBLE_SHORTAGE_OF_RESOURCE
+                                        838: 9
+MEMBER NEAR   int     RBLE_EXIT         839: 9
+MEMBER NEAR   int     RBLE_VERSION_FAIL
+                                        840: 9
+MEMBER NEAR   int     RBLE_TEST_VERSION
+                                        842: 9
+EXTYP         uchar   RBLE_STATUS       845: 9
+TAG           enum    RBLE_MODE_enum    848: 9
+MEMBER NEAR   int     RBLE_MODE_INITIALIZE
+                                        849: 9
+MEMBER NEAR   int     RBLE_MODE_ACTIVE
+                                        850: 9
+MEMBER NEAR   int     RBLE_MODE_RESET   851: 9
+MEMBER NEAR   int     RBLE_MODE_SLEEP   852: 9
+MEMBER NEAR   int     RBLE_MODE_ERROR   854: 9
+EXTYP         uchar   RBLE_MODE         856: 9
+EXTYP         int     int_t             869: 9
+EXTYP         uint    uint_t            872: 9
+EXTYP         uchar   BOOL              876: 9
+EXTYP         pointer RBLE_INIT_CB      880: 9
+MEMBER NEAR   int     GAP_HDL_PRIM_SVC
+                                         32:10
+MEMBER NEAR   int     GAP_HDL_CHAR_DEVNAME
+                                         33:10
+MEMBER NEAR   int     GAP_HDL_DEVNAME    34:10
+MEMBER NEAR   int     GAP_HDL_CHAR_ICON
+                                         35:10
+MEMBER NEAR   int     GAP_HDL_ICON       36:10
+MEMBER NEAR   int     GAP_HDL_CHAR_SLAVE_PREF_PARAM
+                                         37:10
+MEMBER NEAR   int     GAP_HDL_SLAVE_PREF_PARAM
+                                         38:10
+MEMBER NEAR   int     GATT_HDL_PRIM_SVC
+                                         41:10
+MEMBER NEAR   int     GATT_HDL_CHAR_SVC_CHANGED
+                                         42:10
+MEMBER NEAR   int     GATT_HDL_SVC_CHANGED
+                                         43:10
+MEMBER NEAR   int     GATT_HDL_SVC_CHANGED_IND_CFG
+                                         44:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_SVC_BEACON_SERVICE
+                                         48:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_CHAR
+                                         49:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_VAL
+                                         50:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_DESC
+                                         51:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_CHAR
+                                         52:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_VAL
+                                         53:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_DESC
+                                         54:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_CHAR
+                                         55:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_VAL
+                                         56:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_DESC
+                                         57:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_CHAR
+                                         59:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_VAL
+                                         60:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_DESC
+                                         61:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_CHAR
+                                         62:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_VAL
+                                         63:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_DESC
+                                         64:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_CHAR
+                                         65:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_VAL
+                                         66:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_DESC
+                                         67:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_CHAR
+                                         69:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_VAL
+                                         70:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_DESC
+                                         71:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_CHAR
+                                         72:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_VAL
+                                         73:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_DESC
+                                         74:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_CHAR
+                                         75:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_VAL
+                                         76:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_DESC
+                                         77:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_CHAR
+                                         78:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_VAL
+                                         79:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_DESC
+                                         80:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_CHAR
+                                         83:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_VAL
+                                         84:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_DESC
+                                         85:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_SVC_DEVICE_INFORMATION
+                                         87:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MANUFACTURER_NAME_STRING_CHAR
+                                         88:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MANUFACTURER_NAME_STRING_VAL
+                                         89:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MODEL_NUMBER_STRING_CHAR
+                                         90:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MODEL_NUMBER_STRING_VAL
+                                         91:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SERIAL_NUMBER_STRING_CHAR
+                                         92:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SERIAL_NUMBER_STRING_VAL
+                                         93:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_HARDWARE_REVISION_STRING_CHAR
+                                         94:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_HARDWARE_REVISION_STRING_VAL
+                                         95:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_FIRMWARE_REVISION_STRING_CHAR
+                                         96:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_FIRMWARE_REVISION_STRING_VAL
+                                         97:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SOFTWARE_REVISION_STRING_CHAR
+                                         98:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SOFTWARE_REVISION_STRING_VAL
+                                         99:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SYSTEM_ID_CHAR
+                                        100:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SYSTEM_ID_VAL
+                                        101:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_IEEE_11073_20601_REGULATORY_CERTIFICATION_DATA_LIST_CHAR
+                                        102:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_IEEE_11073_20601_REGULATORY_CERTIFICATION_DATA_LIST_VAL
+                                        103:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_PNP_ID_CHAR
+                                        104:10
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_PNP_ID_VAL
+                                        105:10
+MEMBER NEAR   int     DB_HDL_MAX        110:10
+EXTERN FAR    func    co_bswap32                 124:11
+EXTERN CALLT  func    co_bswap16                 125:11
+EXTERN FAR    func    co_clz                     150:11
+EXTERN FAR    func    co_random_init             151:11
+EXTERN FAR    func    co_rand_byte               152:11
+EXTERN FAR    func    co_rand_hword              153:11
+EXTERN FAR    func    co_rand_word               154:11
+EXTERN FAR    func    co_min                     155:11
+EXTERN FAR    func    co_max                     156:11
+EXTERN FAR    func    co_abs                     157:11
+EXTERN FAR    func    co_read32                  167:11
+EXTERN FAR    func    co_read16                  168:11
+EXTERN FAR    func    co_write32                 169:11
+EXTERN FAR    func    co_write16                 170:11
+EXTERN FAR    func    co_write8                  171:11
+EXTERN FAR    func    co_read32p                 172:11
+EXTERN CALLT  func    co_read16p                 173:11
+EXTERN FAR    func    co_write32p                174:11
+EXTERN FAR    func    co_write16p                175:11
+TAG           struct  co_list_hdr       183:11
+MEMBER        pointer next              184:11
+TAG           struct  co_list           188:11
+MEMBER        pointer first             189:11
+MEMBER        pointer last              190:11
+EXTERN FAR    func    co_list_is_empty
+                                                 197:11
+EXTERN FAR    func    co_list_pick               198:11
+EXTERN FAR    func    co_list_next               199:11
+EXTYP         ulong   evt_field_t       213:11
+EXTYP         pointer evt_ptr_t         214:11
+EXTYP         ushort  ke_state_t        215:11
+EXTYP         ushort  ke_task_id_t      216:11
+EXTYP         ushort  ke_msg_id_t       217:11
+EXTYP         pointer ke_msg_func_t     218:11
+EXTYP         ushort  ke_time_t         219:11
+TAG           struct  mblock_used       228:11
+MEMBER        uint    size              229:11
+TAG           struct  mblock_free       232:11
+MEMBER        pointer next              233:11
+MEMBER        uint    size              234:11
+EXTERN NEAR   pointer ke_mem_heap                237:11
+EXTERN NEAR   pointer ke_mem_heap_end            238:11
+TAG           struct  block_free        239:11
+EXTERN FAR    func    ke_mem_init                239:11
+EXTERN CALLT  func    ke_malloc                  240:11
+EXTERN FAR    func    ke_free                    241:11
+TAG           struct  ke_env_tag        246:11
+MEMBER VLT    ulong   evt_field         247:11
+MEMBER        struct  queue_send        248:11
+MEMBER        struct  queue_saved       249:11
+MEMBER        struct  queue_timer       250:11
+MEMBER        pointer mblock_first      251:11
+MEMBER        ulong   heap_used         256:11
+MEMBER        uchar   nak_req           257:11
+EXTERN NEAR   struct  ke_env                     260:11
+EXTERN FAR    func    ke_evt_get                 264:11
+EXTERN FAR    func    ke_evt_set                 265:11
+EXTERN FAR    func    ke_evt_clear               266:11
+EXTERN FAR    func    ke_evt_init                267:11
+EXTERN FAR    func    ke_evt_flush               268:11
+EXTERN FAR    func    ke_evt_schedule            269:11
+TAG           enum    ke_msg_status_tag
+                                        273:11
+MEMBER NEAR   int     KE_MSG_CONSUMED   274:11   132      150
+MEMBER NEAR   int     KE_MSG_NO_FREE    275:11
+MEMBER NEAR   int     KE_MSG_SAVED      277:11
+TAG           struct  ke_msg            279:11
+MEMBER        struct  hdr               280:11
+MEMBER        uchar   hci_type          282:11
+MEMBER        char    hci_off           283:11
+MEMBER        ushort  hci_len           284:11
+MEMBER        ushort  id                286:11
+MEMBER        ushort  dest_id           287:11
+MEMBER        ushort  src_id            288:11
+MEMBER        ushort  param_len         289:11
+MEMBER        array   param             290:11
+EXTERN FAR    func    ke_param2msg               292:11
+EXTERN FAR    func    ke_msg2param               293:11
+EXTERN CALLT  func    ke_msg_alloc               294:11    90
+EXTERN CALLT  func    ke_msg_send                295:11    95
+EXTERN CALLT  func    ke_msg_send_basic
+                                                 296:11   155
+EXTERN FAR    func    ke_msg_forward             297:11
+EXTERN FAR    func    ke_msg_free                298:11
+TAG           struct  ke_msg_handler    309:11
+MEMBER        ushort  id                310:11
+MEMBER        pointer func              311:11
+TAG           struct  ke_state_handler
+                                        314:11
+MEMBER        pointer msg_table         315:11
+MEMBER        ushort  msg_cnt           316:11
+TAG           struct  ke_task_desc      321:11
+MEMBER        pointer state_handler     322:11
+MEMBER        pointer default_handler   323:11
+MEMBER        pointer state             324:11
+MEMBER CONST  ushort  state_max         325:11
+MEMBER CONST  ushort  idx_max           326:11
+EXTERN FAR    func    ke_task_local              328:11
+EXTERN FAR    func    ke_state_get               329:11
+EXTERN FAR    func    ke_state_set               330:11   144      243      245      257      270
+EXTERN FAR    func    ke_task_schedule
+                                                 331:11
+TAG           struct  ke_timer          344:11
+MEMBER        pointer next              345:11
+MEMBER        ushort  id                346:11
+MEMBER        ushort  task              347:11
+MEMBER        ushort  time              348:11
+EXTERN FAR    func    ke_time                    350:11
+EXTERN FAR    func    ke_time_cmp                352:11
+EXTERN FAR    func    ke_time_past               353:11
+EXTERN FAR    func    ke_timer_set               354:11
+EXTERN FAR    func    ke_timer_clear             355:11
+EXTERN FAR    func    ke_timer_schedule
+                                                 356:11
+MEMBER NEAR   int     TASK_NONE         371:11
+MEMBER NEAR   int     TASK_LLM          373:11
+MEMBER NEAR   int     TASK_LLC          374:11
+MEMBER NEAR   int     TASK_LLD          375:11
+MEMBER NEAR   int     TASK_DBG          376:11
+MEMBER NEAR   int     TASK_L2CM         378:11
+MEMBER NEAR   int     TASK_L2CC         379:11
+MEMBER NEAR   int     TASK_SMPM         380:11
+MEMBER NEAR   int     TASK_SMPC         381:11
+MEMBER NEAR   int     TASK_ATTM         382:11
+MEMBER NEAR   int     TASK_ATTC         383:11
+MEMBER NEAR   int     TASK_ATTS         384:11
+MEMBER NEAR   int     TASK_SVC          385:11
+MEMBER NEAR   int     TASK_GATT         386:11
+MEMBER NEAR   int     TASK_GAP          387:11
+MEMBER NEAR   int     TASK_USR_0        390:11
+MEMBER NEAR   int     TASK_USR_1        391:11
+MEMBER NEAR   int     TASK_RBLE         392:11   394:11
+MEMBER NEAR   int     TASK_APP          394:11
+MEMBER NEAR   int     TASK_CON_APPL     398:11    66       70       90       91      144      155      155      155      243
+                                                 245      257      270
+MEMBER NEAR   int     TASK_MAX          498:11   499:11
+MEMBER NEAR   int     TASK_LAST_EMB     499:11
+MEMBER NEAR   int     LLM_IDLE          505:11
+MEMBER NEAR   int     LLM_ADVERTISING   506:11
+MEMBER NEAR   int     LLM_SCANNING      507:11
+MEMBER NEAR   int     LLM_INITIATING    508:11
+MEMBER NEAR   int     LLM_STOPPING      509:11
+MEMBER NEAR   int     LLM_TEST          510:11
+MEMBER NEAR   int     LLM_STATE_MAX     512:11   514:11
+EXTERN NEAR   array   llm_state_handler
+       CONST                                     514:11
+EXTERN NEAR   struct  llm_default_handler
+       CONST                                     515:11
+EXTERN NEAR   array   llm_state                  516:11
+MEMBER NEAR   int     LLC_FREE          521:11
+MEMBER NEAR   int     LLC_CONNECTED     522:11
+MEMBER NEAR   int     LLC_FEAT_WAIT_RSP
+                                        523:11
+MEMBER NEAR   int     LLC_VERS_WAIT_IND
+                                        524:11
+MEMBER NEAR   int     LLC_CON_UPD_WAIT_INSTANT
+                                        525:11
+MEMBER NEAR   int     LLC_MAP_UPD_WAIT_INSTANT
+                                        526:11
+MEMBER NEAR   int     LLC_TERM_WAIT_ACK
+                                        527:11
+MEMBER NEAR   int     LLC_ENC_PAUSING_TRAFFIC
+                                        528:11
+MEMBER NEAR   int     LLC_ENC_TRAFFIC_PAUSED
+                                        529:11
+MEMBER NEAR   int     LLC_ENC_WAIT_RSP
+                                        530:11
+MEMBER NEAR   int     LLC_ENC_WAIT_START_REQ
+                                        531:11
+MEMBER NEAR   int     LLC_ENC_WAIT_START_RSP
+                                        532:11
+MEMBER NEAR   int     LLC_ENC_WAIT_SK   533:11
+MEMBER NEAR   int     LLC_ENC_WAIT_LTK
+                                        534:11
+MEMBER NEAR   int     LLC_ENC_WAIT_PAUSE_RSP
+                                        535:11
+MEMBER NEAR   int     LLC_ENC_PAUSED    536:11
+MEMBER NEAR   int     LLC_ENC_WAIT_REQ
+                                        537:11
+MEMBER NEAR   int     LLC_PAUSED        538:11
+MEMBER NEAR   int     LLC_WAIT_SK       539:11
+MEMBER NEAR   int     LLC_DISC          540:11
+MEMBER NEAR   int     LLC_STOPPING      541:11
+MEMBER NEAR   int     LLCP_WAIT_ACK     542:11
+MEMBER NEAR   int     LLC_STATE_MAX     544:11   546:11
+EXTERN NEAR   array   llc_state_handler
+       CONST                                     546:11
+EXTERN NEAR   struct  llc_default_handler
+       CONST                                     547:11
+EXTERN NEAR   array   llc_state                  548:11
+MEMBER NEAR   int     DBG_IDLE          553:11
+MEMBER NEAR   int     DBG_STATE_MAX     555:11   557:11
+EXTERN NEAR   array   dbg_state_handler
+       CONST                                     557:11
+EXTERN NEAR   struct  dbg_default_handler
+       CONST                                     558:11
+EXTERN NEAR   array   dbg_state                  559:11
+MEMBER NEAR   int     L2CM_IDLE         564:11
+MEMBER NEAR   int     L2CM_W4RESP       565:11
+MEMBER NEAR   int     L2CM_BUSY         566:11
+MEMBER NEAR   int     L2CM_STATE_MAX    568:11   570:11
+EXTERN NEAR   array   l2cm_state_handler
+       CONST                                     570:11
+EXTERN NEAR   struct  l2cm_default_handler
+       CONST                                     571:11
+EXTERN NEAR   array   l2cm_state                 572:11
+MEMBER NEAR   int     L2CC_CONNECTED    577:11
+MEMBER NEAR   int     L2CC_STATE_MAX    579:11   581:11
+EXTERN NEAR   array   l2cc_state_handler
+       CONST                                     581:11
+EXTERN NEAR   struct  l2cc_default_handler
+       CONST                                     582:11
+EXTERN NEAR   array   l2cc_state                 583:11
+MEMBER NEAR   int     GAP_IDLE          588:11
+MEMBER NEAR   int     GAP_DEV_SETUP     589:11
+MEMBER NEAR   int     GAP_RAND_ADDR_SETUP
+                                        590:11
+MEMBER NEAR   int     GAP_CONN_SETUP    591:11
+MEMBER NEAR   int     GAP_ADV_SETUP     592:11
+MEMBER NEAR   int     GAP_ADV           593:11
+MEMBER NEAR   int     GAP_SCAN_SETUP    594:11
+MEMBER NEAR   int     GAP_SCAN          595:11
+MEMBER NEAR   int     GAP_SCONNECTED    596:11
+MEMBER NEAR   int     GAP_MCONNECTED    597:11
+MEMBER NEAR   int     GAP_STATE_MAX     599:11   601:11
+EXTERN NEAR   array   gap_state_handler
+       CONST                                     601:11
+EXTERN NEAR   struct  gap_default_handler
+       CONST                                     602:11
+EXTERN NEAR   array   gap_state                  603:11
+MEMBER NEAR   int     GATT_IDLE         608:11
+MEMBER NEAR   int     GATT_BUSY         609:11
+MEMBER NEAR   int     GATT_STATE_MAX    611:11   613:11
+EXTERN NEAR   array   gatt_state_handler
+       CONST                                     613:11
+EXTERN NEAR   struct  gatt_default_handler
+       CONST                                     614:11
+EXTERN NEAR   array   gatt_state                 615:11
+MEMBER NEAR   int     ATTC_CONNECTED    620:11
+MEMBER NEAR   int     ATTC_DISC_SVC     621:11
+MEMBER NEAR   int     ATTC_RELIABLE_WR
+                                        622:11
+MEMBER NEAR   int     ATTC_BUSY         623:11
+MEMBER NEAR   int     ATTC_FREE         624:11
+MEMBER NEAR   int     ATTC_STATE_MAX    626:11   628:11
+EXTERN NEAR   array   attc_state_handler
+       CONST                                     628:11
+EXTERN NEAR   struct  attc_default_handler
+       CONST                                     629:11
+EXTERN NEAR   array   attc_state                 630:11
+MEMBER NEAR   int     ATTM_IDLE         635:11
+MEMBER NEAR   int     ATTM_STATE_MAX    637:11   639:11
+EXTERN NEAR   array   attm_state_handler
+       CONST                                     639:11
+EXTERN NEAR   struct  attm_default_handler
+       CONST                                     640:11
+EXTERN NEAR   array   attm_state                 641:11
+MEMBER NEAR   int     ATTS_IDLE         646:11
+MEMBER NEAR   int     ATTS_STATE_MAX    648:11   650:11
+EXTERN NEAR   array   atts_state_handler
+       CONST                                     650:11
+EXTERN NEAR   struct  atts_default_handler
+       CONST                                     651:11
+EXTERN NEAR   array   atts_state                 652:11
+MEMBER NEAR   int     SVC_IDLE          657:11
+MEMBER NEAR   int     SVC_STATE_MAX     659:11   661:11
+EXTERN NEAR   array   svc_state_handler
+       CONST                                     661:11
+EXTERN NEAR   struct  svc_default_handler
+       CONST                                     662:11
+EXTERN NEAR   array   svc_state                  663:11
+MEMBER NEAR   int     SMPM_IDLE         668:11
+MEMBER NEAR   int     SMPM_BUSY         669:11
+MEMBER NEAR   int     SMPM_STATE_MAX    671:11   673:11
+EXTERN NEAR   array   smpm_state_handler
+       CONST                                     673:11
+EXTERN NEAR   struct  smpm_default_handler
+       CONST                                     674:11
+EXTERN NEAR   array   smpm_state                 675:11
+MEMBER NEAR   int     SMPC_FREE         680:11
+MEMBER NEAR   int     SMPC_IDLE         681:11
+MEMBER NEAR   int     SMPC_PAIRING      682:11
+MEMBER NEAR   int     SMPC_ENCRYPTING_STK
+                                        683:11
+MEMBER NEAR   int     SMPC_TKDP         684:11
+MEMBER NEAR   int     SMPC_ENCRYPTING_LTK
+                                        685:11
+MEMBER NEAR   int     SMPC_DISC         686:11
+MEMBER NEAR   int     SMPC_STATE_MAX    688:11   690:11
+EXTERN NEAR   array   smpc_state_handler
+       CONST                                     690:11
+EXTERN NEAR   struct  smpc_default_handler
+       CONST                                     691:11
+EXTERN NEAR   array   smpc_state                 692:11
+MEMBER NEAR   int     PRF_STATE_IDLE    696:11
+MEMBER NEAR   int     PRF_STATE_CONNECTED
+                                        697:11   713:11   721:11   729:11   745:11   761:11   769:11   793:11   817:11   833:11
+                                                 849:11   865:11   881:11   897:11   913:11   929:11   945:11
+MEMBER NEAR   int     PRF_STATE_DISCOVERING
+                                        699:11   705:11   737:11   753:11   777:11   785:11   801:11   809:11   825:11   841:11
+                                                 857:11   873:11   889:11   905:11   921:11   937:11
+EXTERN NEAR   array   proxm_state_handler
+       CONST                                     705:11
+EXTERN NEAR   struct  proxm_default_handler
+       CONST                                     706:11
+EXTERN NEAR   array   proxm_state                707:11
+EXTERN NEAR   array   proxr_state_handler
+       CONST                                     713:11
+EXTERN NEAR   struct  proxr_default_handler
+       CONST                                     714:11
+EXTERN NEAR   array   proxr_state                715:11
+EXTERN NEAR   array   findl_state_handler
+       CONST                                     721:11
+EXTERN NEAR   struct  findl_default_handler
+       CONST                                     722:11
+EXTERN NEAR   array   findl_state                723:11
+EXTERN NEAR   array   findt_state_handler
+       CONST                                     729:11
+EXTERN NEAR   struct  findt_default_handler
+       CONST                                     730:11
+EXTERN NEAR   array   findt_state                731:11
+EXTERN NEAR   array   htpc_state_handler
+       CONST                                     737:11
+EXTERN NEAR   struct  htpc_default_handler
+       CONST                                     738:11
+EXTERN NEAR   array   htpc_state                 739:11
+EXTERN NEAR   array   htpt_state_handler
+       CONST                                     745:11
+EXTERN NEAR   struct  htpt_default_handler
+       CONST                                     746:11
+EXTERN NEAR   array   htpt_state                 747:11
+EXTERN NEAR   array   blpc_state_handler
+       CONST                                     753:11
+EXTERN NEAR   struct  blpc_default_handler
+       CONST                                     754:11
+EXTERN NEAR   array   blpc_state                 755:11
+EXTERN NEAR   array   blps_state_handler
+       CONST                                     761:11
+EXTERN NEAR   struct  blps_default_handler
+       CONST                                     762:11
+EXTERN NEAR   array   blps_state                 763:11
+EXTERN NEAR   array   hghd_state_handler
+       CONST                                     769:11
+EXTERN NEAR   struct  hghd_default_handler
+       CONST                                     770:11
+EXTERN NEAR   array   hghd_state                 771:11
+EXTERN NEAR   array   hgbh_state_handler
+       CONST                                     777:11
+EXTERN NEAR   struct  hgbh_default_handler
+       CONST                                     778:11
+EXTERN NEAR   array   hgbh_state                 779:11
+EXTERN NEAR   array   hgrh_state_handler
+       CONST                                     785:11
+EXTERN NEAR   struct  hgrh_default_handler
+       CONST                                     786:11
+EXTERN NEAR   array   hgrh_state                 787:11
+EXTERN NEAR   array   scans_state_handler
+       CONST                                     793:11
+EXTERN NEAR   struct  scans_default_handler
+       CONST                                     794:11
+EXTERN NEAR   array   scans_state                795:11
+EXTERN NEAR   array   scanc_state_handler
+       CONST                                     801:11
+EXTERN NEAR   struct  scanc_default_handler
+       CONST                                     802:11
+EXTERN NEAR   array   scanc_state                803:11
+EXTERN NEAR   array   hrpc_state_handler
+       CONST                                     809:11
+EXTERN NEAR   struct  hrpc_default_handler
+       CONST                                     810:11
+EXTERN NEAR   array   hrpc_state                 811:11
+EXTERN NEAR   array   hrps_state_handler
+       CONST                                     817:11
+EXTERN NEAR   struct  hrps_default_handler
+       CONST                                     818:11
+EXTERN NEAR   array   hrps_state                 819:11
+EXTERN NEAR   array   cscpc_state_handler
+       CONST                                     825:11
+EXTERN NEAR   struct  cscpc_default_handler
+       CONST                                     826:11
+EXTERN NEAR   array   cscpc_state                827:11
+EXTERN NEAR   array   cscps_state_handler
+       CONST                                     833:11
+EXTERN NEAR   struct  cscps_default_handler
+       CONST                                     834:11
+EXTERN NEAR   array   cscps_state                835:11
+EXTERN NEAR   array   glpc_state_handler
+       CONST                                     841:11
+EXTERN NEAR   struct  glpc_default_handler
+       CONST                                     842:11
+EXTERN NEAR   array   glpc_state                 843:11
+EXTERN NEAR   array   glps_state_handler
+       CONST                                     849:11
+EXTERN NEAR   struct  glps_default_handler
+       CONST                                     850:11
+EXTERN NEAR   array   glps_state                 851:11
+EXTERN NEAR   array   cppc_state_handler
+       CONST                                     857:11
+EXTERN NEAR   struct  cppc_default_handler
+       CONST                                     858:11
+EXTERN NEAR   array   cppc_state                 859:11
+EXTERN NEAR   array   cpps_state_handler
+       CONST                                     865:11
+EXTERN NEAR   struct  cpps_default_handler
+       CONST                                     866:11
+EXTERN NEAR   array   cpps_state                 867:11
+EXTERN NEAR   array   tipc_state_handler
+       CONST                                     873:11
+EXTERN NEAR   struct  tipc_default_handler
+       CONST                                     874:11
+EXTERN NEAR   array   tipc_state                 875:11
+EXTERN NEAR   array   tips_state_handler
+       CONST                                     881:11
+EXTERN NEAR   struct  tips_default_handler
+       CONST                                     882:11
+EXTERN NEAR   array   tips_state                 883:11
+EXTERN NEAR   array   anpc_state_handler
+       CONST                                     889:11
+EXTERN NEAR   struct  anpc_default_handler
+       CONST                                     890:11
+EXTERN NEAR   array   anpc_state                 891:11
+EXTERN NEAR   array   anps_state_handler
+       CONST                                     897:11
+EXTERN NEAR   struct  anps_default_handler
+       CONST                                     898:11
+EXTERN NEAR   array   anps_state                 899:11
+EXTERN NEAR   array   lnpc_state_handler
+       CONST                                     905:11
+EXTERN NEAR   struct  lnpc_default_handler
+       CONST                                     906:11
+EXTERN NEAR   array   lnpc_state                 907:11
+EXTERN NEAR   array   lnps_state_handler
+       CONST                                     913:11
+EXTERN NEAR   struct  lnps_default_handler
+       CONST                                     914:11
+EXTERN NEAR   array   lnps_state                 915:11
+EXTERN NEAR   array   paspc_state_handler
+       CONST                                     921:11
+EXTERN NEAR   struct  paspc_default_handler
+       CONST                                     922:11
+EXTERN NEAR   array   paspc_state                923:11
+EXTERN NEAR   array   pasps_state_handler
+       CONST                                     929:11
+EXTERN NEAR   struct  pasps_default_handler
+       CONST                                     930:11
+EXTERN NEAR   array   pasps_state                931:11
+EXTERN NEAR   array   rscpc_state_handler
+       CONST                                     937:11
+EXTERN NEAR   struct  rscpc_default_handler
+       CONST                                     938:11
+EXTERN NEAR   array   rscpc_state                939:11
+EXTERN NEAR   array   rscps_state_handler
+       CONST                                     945:11
+EXTERN NEAR   struct  rscps_default_handler
+       CONST                                     946:11
+EXTERN NEAR   array   rscps_state                947:11
+MEMBER NEAR   int     ACCEL_IDLE        952:11
+MEMBER NEAR   int     ACCEL_ACTIVE      953:11
+MEMBER NEAR   int     ACCEL_STATE_MAX   955:11   958:11
+EXTERN NEAR   array   accel_state_handler
+       CONST                                     958:11
+EXTERN NEAR   struct  accel_default_handler
+       CONST                                     959:11
+EXTERN NEAR   array   accel_state                960:11
+MEMBER NEAR   int     KE_EVT_EVENT_START
+                                        995:11
+MEMBER NEAR   int     KE_EVT_RX         996:11
+MEMBER NEAR   int     KE_EVT_EVENT_END
+                                        997:11
+MEMBER NEAR   int     KE_EVT_HCI_TX_DONE
+                                       1000:11
+MEMBER NEAR   int     KE_EVT_USR_0     1002:11
+MEMBER NEAR   int     KE_EVT_USR_1     1003:11
+MEMBER NEAR   int     KE_EVT_KE_TIMER  1004:11
+MEMBER NEAR   int     KE_EVT_KE_MESSAGE
+                                       1005:11
+MEMBER NEAR   int     KE_EVT_CRYPT     1007:11
+MEMBER NEAR   int     KE_EVT_HCI_RX_DONE
+                                       1009:11
+MEMBER NEAR   int     KE_EVT_USR_2     1010:11
+MEMBER NEAR   int     KE_EVT_USR_3     1011:11
+MEMBER NEAR   int     KE_EVT_MAX       1013:11
+EXTERN FAR    func    lld_evt_schedule
+                                                1016:11
+EXTERN FAR    func    lld_evt_rx                1017:11
+EXTERN FAR    func    lld_evt_end               1018:11
+EXTERN FAR    func    lld_evt_time_get
+                                                1019:11
+EXTERN FAR    func    llm_encryption_done
+                                                1022:11
+MEMBER NEAR   int     CONSOLE_STATE_IN_ENABLE
+                                         59:12   144      243      257
+MEMBER NEAR   int     CONSOLE_STATE_IN_DISABLE
+                                         60:12   245      270
+MEMBER NEAR   int     CONSOLE_STATE_MAX
+                                         61:12    63       73
+EXTYP         enum    CONSOLE_STATE      62:12
+MEMBER        uchar   len                65:12    92
+MEMBER        array   buf                66:12    93
+EXTYP         struct  CONSOLE_MSG        67:12
+EXTERN NEAR   array   console_state               72:12
+EXTERN NEAR   array   console_state_handler
+       CONST                                      73:12
+EXTERN NEAR   struct  console_default_handler
+       CONST                                      74:12
+EXTERN FAR    func    console_init      221       79:12
+EXTERN FAR    func    console_can_sleep
+                                        209       80:12
+EXTERN FAR    func    console_enable_in
+                                        255       81:12
+EXTERN FAR    func    console_disable_in
+                                        267       82:12
+EXTERN FAR    func    Printf            178       83:12   108      117      122
+EXTYP         pointer SERIAL_EVENT_VOID_HANDLER
+                                         55:13
+EXTYP         pointer SERIAL_EVENT_BOOL_HANDLER
+                                         56:13
+MEMBER        pointer rx_callback        58:13   230      234
+MEMBER        pointer tx_callback        59:13   225
+MEMBER        pointer err_callback       60:13   226
+MEMBER        pointer rx_first_byte_callback
+                                         61:13
+MEMBER        pointer rx_cmp_callback    62:13   227
+EXTYP         struct  SERIAL_EVENT_PARAM
+                                         63:13
+EXTERN FAR    func    serial_init                 82:13   239
+EXTERN FAR    func    serial_read                 93:13   130      148      165      242      258
+EXTERN FAR    func    serial_write               104:13   199
+EXTERN FAR    func    serial_stop_ready
+                                                 113:13
+EXTERN FAR    func    serial_stop_finish
+                                                 120:13
+EXTERN FAR    func    sprintf                     17:14
+EXTERN FAR    func    sscanf                      18:14
+EXTERN FAR    func    printf                      19:14
+EXTERN FAR    func    scanf                       20:14
+EXTERN FAR    func    vprintf                     21:14
+EXTERN FAR    func    vsprintf                    22:14   194
+EXTERN FAR    func    getchar                     23:14
+EXTERN FAR    func    putchar                     24:14
+EXTERN FAR    func    puts                        25:14
+EXTERN FAR    func    gets                        26:14
+EXTERN FAR    func    __putc                      27:14
+EXTERN FAR    func    sprintf_n                   29:14
+EXTERN FAR    func    sscanf_n                    30:14
+EXTERN FAR    func    printf_n                    31:14
+EXTERN FAR    func    scanf_n                     32:14
+EXTERN FAR    func    vprintf_n                   33:14
+EXTERN FAR    func    vsprintf_n                  34:14
+EXTERN FAR    func    puts_n                      35:14
+EXTERN FAR    func    gets_n                      36:14
+EXTERN FAR    func    __putc_n                    37:14
+EXTERN FAR    func    sprintf_f                   39:14
+EXTERN FAR    func    sscanf_f                    40:14
+EXTERN FAR    func    printf_f                    41:14
+EXTERN FAR    func    scanf_f                     42:14
+EXTERN FAR    func    vprintf_f                   43:14
+EXTERN FAR    func    vsprintf_f                  44:14
+EXTERN FAR    func    puts_f                      45:14
+EXTERN FAR    func    gets_f                      46:14
+EXTERN FAR    func    __putc_f                    47:14
+EXSTC  FAR    func    console_char_in   100       51       66
+EXSTC  FAR    func    console_char_in_invalid
+                                        135       53       70
+EXSTC  NEAR   array   in_buf             58       93      105      130      140      148      165      242      258
+EXSTC  NEAR   uchar   in_buf_pos         59       88       92       93       97      105      112      116      118      123
+                                                 126      127      130      140      148      165      231      258      269
+EXSTC  NEAR   array   print_buf          60      194      199      199
+EXSTC  NEAR   uchar   is_write_blocked
+                                         61      160      186      197      211      237
+EXSTC  NEAR   ushort  console_in_task_id
+                                         62       91      232
+EXTERN NEAR   array   console_in_enable_handler
+                                         65       74       74
+EXTERN NEAR   array   console_in_disable_handler
+                                         69       75       75
+EXSTC  FAR    func    console_send_msg
+                                         83      109      113      145
+AUTO1         pointer msg                85       90       92       93       95
+AUTO1         ushort  size               86       88       91
+PARAM  CONST  ushort  msgid             100
+PARAM         pointer param             100
+PARAM  CONST  ushort  dest_id           101
+PARAM  CONST  ushort  src_id            101
+AUTO1         uchar   key               103      105      107      107      108      111      115      122
+PARAM  CONST  ushort  msgid             135
+PARAM         pointer param             135
+PARAM  CONST  ushort  dest_id           136
+PARAM  CONST  ushort  src_id            136
+AUTO1         uchar   key               138      140      143
+EXSTC  FAR    func    console_rx_done   153      230
+EXSTC  FAR    func    console_tx_done   158      225
+EXSTC  FAR    func    console_rx_error
+                                        163      226
+PARAM         pointer fmt               178      191      191      191      194
+AUTO1         pointer args              180      183      191      194      195
+PARAM         uchar   enable_in         221      229      241
+PARAM         ushort  task_id           221      232
+AUTO1         struct  param             223      225      226      227      230      234      239
+              #define CFG_FULLEMB                126:18
+              #define CFG_CON                     29:20    31:20   548:11   583:11   630:11   692:11
+              #define CFG_EXMEM_NOT_PRESENT
+                                                  165:18
+              #define CFG_BLECORE_10              79:18
+              #define CFG_FW_NAK                 255:11
+              #define CONFIG_EMBEDDED            395:11
+              #define _USE_REL_RL78               19: 3    27: 3    48: 3   120: 3   217: 3    21: 6
+              #define USE_SAMPLE_PROFILE
+                                                   34:22    47:10
+              #define __CONSOLE_H__      33:12
+              #define _ARCH_H_           18: 7    17:19
+              #define _COMPILER_H_       16: 3    15:21
+              #define _USE_STD_C89       28: 3   248: 3
+              #define _USE_PADDING2      29: 3
+              #define offsetof           15: 1
+              #define NULL               17: 1    78      183      227      234
+              #define _STDDEF_H          20: 1    11:16    11:17    11:25
+              #define __EVENSIZEOF       16: 2   191      191
+              #define va_start           17: 2
+              #define va_starttop        18: 2   191
+              #define va_arg             19: 2
+              #define va_end             20: 2   195
+              #define _STDARG_H          22: 2    11:26
+              #define CHAR_BIT           13:15
+              #define CHAR_MAX           16:15
+              #define CHAR_MIN           17:15
+              #define SCHAR_MAX          22:15
+              #define SCHAR_MIN          23:15
+              #define UCHAR_MAX          24:15
+              #define INT_MAX            25:15
+              #define INT_MIN            26:15
+              #define SHRT_MAX           27:15
+              #define SHRT_MIN           28:15
+              #define UINT_MAX           29:15    39: 7
+              #define USHRT_MAX          30:15
+              #define SINT_MAX           31:15
+              #define SINT_MIN           32:15
+              #define SSHRT_MAX          33:15
+              #define SSHRT_MIN          34:15
+              #define LONG_MAX           35:15
+              #define LONG_MIN           36:15
+              #define ULONG_MAX          37:15    78: 3
+              #define _LIMITS_H          39:15
+              #define bool               86: 3   197:11   257:11   328:11   352:11   353:11    79:12    80:12    56:13   113:13
+                                                  61      209      221
+              #define true               87: 3   197
+              #define false              88: 3   160      237
+              #define _STRING_H          94: 4
+              #define EXIT_SUCCESS       14: 5
+              #define EXIT_FAILURE       15: 5
+              #define RAND_MAX           27: 5
+              #define _STDLIB_H         114: 5
+              #define _char_t_defined_
+                                         96: 3
+              #define read_sfr          124: 3
+              #define read_sfrp         125: 3
+              #define write_sfr         126: 3
+              #define write_sfrp        127: 3
+              #define read1_sfr         128: 3
+              #define write1_sfr        129: 3
+              #define write1_sfrbit     130: 3
+              #define write1_sfr2bit    131: 3
+              #define toggle1_sfr       132: 3
+              #define toggle1_sfrbit    133: 3
+              #define __sfr_function_defined__
+                                        134: 3   229: 3
+              #define __BLEIRQ          136: 3   202: 3
+              #define __IRQ             137: 3
+              #define __FIQ             138: 3
+              #define __INLINE          198: 3
+              #define __MODULE__        213: 3
+              #define codeptr           218: 3   214:11   218:11   331:11   356:11  1016:11  1017:11  1018:11  1022:11
+              #define dataptr           219: 3
+              #define __NO_INIT         256: 3
+              #define CALLT             272: 3   125:11   173:11   240:11   294:11   295:11   296:11
+              #define DPRTN             273: 3   240:11   294:11
+              #define RWBLE_CONFIG_H_    19:18
+              #define CFG_EMB            22:18   130:18
+              #define CFG_CENTRAL        23:18   182:18   182:18   201:18   232:18   506:18
+              #define CFG_ALLROLES       24:18   182:18   182:18   182:18   182:18   201:18   201:18   203:18   232:18   232:18
+                                                 506:18   506:18
+              #define CFG_DBG            25:18   102:18
+              #define CFG_PRF_PXPM       26:18   257:18
+              #define CFG_PRF_PXPR       27:18   264:18
+              #define CFG_PRF_FMPL       28:18   271:18
+              #define CFG_PRF_FMPT       29:18   278:18
+              #define CFG_PRF_HTPC       30:18   285:18
+              #define CFG_PRF_HTPT       31:18   292:18
+              #define CFG_PRF_BLPC       32:18   299:18
+              #define CFG_PRF_BLPS       33:18   306:18
+              #define CFG_PRF_HGHD       34:18   313:18
+              #define CFG_PRF_HGBH       35:18   323:18
+              #define CFG_PRF_HGRH       36:18   330:18
+              #define CFG_PRF_SCANS      37:18   337:18
+              #define CFG_PRF_SCANC      38:18   344:18
+              #define CFG_PRF_HRPC       39:18   351:18
+              #define CFG_PRF_HRPS       40:18   358:18
+              #define CFG_PRF_CSCPC      41:18   365:18
+              #define CFG_PRF_CSCPS      42:18   372:18
+              #define CFG_PRF_GLPC       43:18   379:18
+              #define CFG_PRF_GLPS       44:18   386:18
+              #define CFG_PRF_CPPC       45:18   393:18
+              #define CFG_PRF_CPPS       46:18   400:18
+              #define CFG_PRF_TIPC       47:18   407:18
+              #define CFG_PRF_TIPS       48:18   414:18
+              #define CFG_PRF_ANPC       49:18   421:18
+              #define CFG_PRF_ANPS       50:18   428:18
+              #define CFG_PRF_LNPC       51:18   435:18
+              #define CFG_PRF_LNPS       52:18   442:18
+              #define CFG_PRF_PASPC      53:18   449:18
+              #define CFG_PRF_PASPS      54:18   456:18
+              #define CFG_PRF_RSCPC      55:18   463:18
+              #define CFG_PRF_RSCPS      56:18   470:18
+              #define RW_BLE_SUPPORT     71:18
+              #define RW_DM_SUPPORT      75:18
+              #define BLE10_HW           80:18
+              #define DEEP_SLEEP         94:18
+              #define BLE_DEBUG         103:18
+              #define KE_PROFILING      105:18   191:11   252:11
+              #define BLE_DEBUG_MEM     115:18
+              #define BLE_DEBUG_STACK_PROF
+                                        122:18
+              #define BLE_FULLEMB       127:18   281:11   999:11
+              #define BLE_SPLIT         128:18   281:11   999:11
+              #define BLE_FULLHOST      129:18
+              #define BLE_HOST_PRESENT
+                                        131:18   187:18
+              #define BLE_EMB_PRESENT   132:18   164:18   994:11  1006:11
+              #define BLE_APP_PRESENT   133:18   597:18
+              #define BLE_EM_PRESENT    166:18
+              #define BLE_BROADCASTER   175:18   182:18   203:18   506:18
+              #define BLE_OBSERVER      176:18   182:18   506:18
+              #define BLE_PERIPHERAL    177:18   182:18   201:18   232:18
+              #define BLE_CENTRAL       178:18   182:18   201:18   232:18
+              #define RW_BLE_USE_CRYPT
+                                        179:18
+              #define RW_BLE_WLAN_COEX
+                                        180:18
+              #define BLE_RAM_OPTIMIZED
+                                        189:18
+              #define BLE_SDS           191:18
+              #define BLE_TEST_MODE_SUPPORT
+                                        194:18
+              #define BLE_RX_BUFFER_CNT
+                                        202:18
+              #define BLE_DUPLICATE_FILTER_MAX
+                                        210:18
+              #define BLE_ADV_REPORTS_MAX
+                                        213:18
+              #define BLE_HEAP_END      216:18
+              #define BLE_COMP_ID       219:18
+              #define BITE_VERS_1_0_3_0
+                                        223:18
+              #define BLE_UPF           226:18
+              #define MODEM2MODEM       229:18
+              #define ATT_QUALIF_MODE   238:18
+              #define BLE_Q_NOCHK_MCFM
+                                        243:18
+              #define BLE_Q_BREDR_ATT_ERR
+                                        245:18
+              #define BLE_Q_BAD_PREP_WR_RSP
+                                        247:18
+              #define BLE_Q_NOCHK_HDL   250:18
+              #define BLE_Q_TEMPM_LEN   252:18
+              #define BLE_Q_SVC_SHOW    254:18
+              #define BLE_PROX_MONITOR
+                                        258:18   477:18
+              #define BLE_PROX_REPORTER
+                                        265:18   484:18
+              #define BLE_FINDME_LOCATOR
+                                        272:18   477:18
+              #define BLE_FINDME_TARGET
+                                        279:18   484:18
+              #define BLE_HT_COLLECTOR
+                                        286:18   477:18
+              #define BLE_HT_THERMOM    293:18   484:18
+              #define BLE_BL_COLLECTOR
+                                        300:18   477:18
+              #define BLE_BL_SENSOR     307:18   484:18
+              #define BLE_HOG_HDEVICE   314:18   484:18
+              #define HID_MULTI_SERVICE
+                                        317:18
+              #define BLE_HOG_BHOST     324:18   477:18
+              #define BLE_HOG_RHOST     331:18   477:18
+              #define BLE_SCANPARAM_SERVER
+                                        338:18   484:18
+              #define BLE_SCANPARAM_CLIENT
+                                        345:18   477:18
+              #define BLE_HR_COLLECTOR
+                                        352:18   477:18
+              #define BLE_HR_SENSOR     359:18   484:18
+              #define BLE_CSC_COLLECTOR
+                                        366:18   477:18
+              #define BLE_CSC_SENSOR    373:18   484:18
+              #define BLE_GL_COLLECTOR
+                                        380:18   477:18
+              #define BLE_GL_SENSOR     387:18   484:18
+              #define BLE_CP_COLLECTOR
+                                        394:18   477:18
+              #define BLE_CP_SENSOR     401:18   484:18
+              #define BLE_TI_CLIENT     408:18
+              #define BLE_TI_SERVER     415:18
+              #define BLE_AN_CLIENT     422:18   477:18
+              #define BLE_AN_SERVER     429:18   484:18
+              #define BLE_LN_COLLECTOR
+                                        436:18   477:18
+              #define BLE_LN_SENSOR     443:18   484:18
+              #define BLE_PAS_CLIENT    450:18   477:18
+              #define BLE_PAS_SERVER    457:18   484:18
+              #define BLE_RSC_COLLECTOR
+                                        464:18   477:18
+              #define BLE_RSC_SENSOR    471:18   484:18
+              #define BLE_CLIENT_PRF    478:18   492:18
+              #define BLE_SERVER_PRF    485:18   499:18
+              #define BLE_ATTC          493:18
+              #define BLE_ATTS          500:18
+              #define BLE_ACCEL         600:18   494:11
+              #define ATT_CHANGED_IDX   604:18
+              #define GATT_PTS          607:18
+              #define __DTM2WIRE_UART_USE__
+                                        610:18
+              #define _LL_H_             16: 6
+              #define __enable_interrupt
+                                         24: 6
+              #define __disable_interrupt
+                                         25: 6
+              #define __no_operation     26: 6
+              #define __halt             27: 6
+              #define GLOBAL_INT_START
+                                         55: 6
+              #define GLOBAL_INT_STOP    69: 6
+              #define GLOBAL_INT_DISABLE
+                                        101: 6
+              #define GLOBAL_INT_RESTORE
+                                        124: 6
+              #define WFI               139: 6
+              #define CPU_WORD_SIZE      40: 7
+              #define CPU_LE             50: 7   126:11   137:11
+              #define RESET_NO_ERROR     53: 7
+              #define RESET_MEM_ALLOC_FAIL
+                                         54: 7
+              #define ASSERT_ERR         90: 7
+              #define ASSERT_WARN        93: 7
+              #define LOG_OUTPUT        104: 7
+              #define __RBLE_INC__       16: 9
+              #define __TYPES_H__        14: 8
+              #define RBLE_MAJOR_VERSION
+                                         24: 9
+              #define RBLE_MINOR_VERSION
+                                         25: 9
+              #define RBLE_EVT_CMN_DISALLOWED
+                                        324: 9   361: 9   374: 9   404: 9   410: 9   416: 9   422: 9   430: 9   440: 9   450: 9
+                                                 458: 9   467: 9   480: 9   489: 9   500: 9   508: 9   515: 9   537: 9   548: 9
+                                                 557: 9   567: 9   577: 9   588: 9   599: 9   612: 9   624: 9   635: 9   644: 9
+                                                 655: 9   665: 9   679: 9   691: 9   702: 9   712: 9   722: 9   732: 9
+              #define RBLE_EVENT_ID_MASK
+                                        858: 9
+              #define TRUE              861: 9
+              #define FALSE             865: 9
+              #define _RWKE_API_H_       20:11
+              #define _ARCH_CONFIG_H_    16:20
+              #define _PRF_SEL_H_        18:22    17:23    17:24
+              #define USE_CUSTOM_DEMO    35:22
+              #define PXPM_TABLE_SIZE    38:22
+              #define PXPR_TABLE_SIZE    39:22
+              #define FMPL_TABLE_SIZE    40:22
+              #define FMPT_TABLE_SIZE    41:22
+              #define HTPC_TABLE_SIZE    42:22
+              #define HTPT_TABLE_SIZE    43:22
+              #define BLPC_TABLE_SIZE    44:22
+              #define BLPS_TABLE_SIZE    45:22
+              #define HGHD_TABLE_SIZE    46:22
+              #define HGBH_TABLE_SIZE    47:22
+              #define HGRH_TABLE_SIZE    48:22
+              #define SPPS_TABLE_SIZE    49:22
+              #define SPPC_TABLE_SIZE    50:22
+              #define HRPC_TABLE_SIZE    51:22
+              #define HRPS_TABLE_SIZE    52:22
+              #define CSCC_TABLE_SIZE    53:22
+              #define CSCS_TABLE_SIZE    54:22
+              #define GLPC_TABLE_SIZE    55:22
+              #define GLPS_TABLE_SIZE    56:22
+              #define CPPS_TABLE_SIZE    57:22
+              #define CPPC_TABLE_SIZE    58:22
+              #define TIPS_TABLE_SIZE    59:22
+              #define TIPC_TABLE_SIZE    60:22
+              #define ANPS_TABLE_SIZE    61:22
+              #define ANPC_TABLE_SIZE    62:22
+              #define LNPS_TABLE_SIZE    63:22
+              #define LNPC_TABLE_SIZE    64:22
+              #define PASS_TABLE_SIZE    65:22
+              #define PASC_TABLE_SIZE    66:22
+              #define RSCS_TABLE_SIZE    67:22
+              #define RSCC_TABLE_SIZE    68:22
+              #define HOST_TABLE_SIZE    70:22
+              #define GATT_DB_STRUCT_SIZE
+                                         72:22
+              #define RBLE_TABLE_SIZE    82:22
+              #define _DB_HANDLE_H_      19:10
+              #define BLE_CONN_MAX       27:20    29:20    31:20   548:11   583:11   630:11   692:11
+              #define BLE_HEAP_CONT      30:20
+              #define BLE_HEAP_HOST      50:20
+              #define BLE_DB_STRUCT_SIZE
+                                         54:20
+              #define BLE_DB_SIZE        56:20
+              #define BLE_HEAP_SIZE      64:20
+              #define userinfo_top       76:20
+              #define public_addr_ptr    78:20
+              #define devce_name_ptr     79:20
+              #define CFG_TEST_BDADDR    86:20
+              #define _KE_CONFIG_H_      31:11
+              #define _KE_TASK_H_        32:11
+              #define _KE_TIMER_H_       33:11
+              #define _KE_ENV_H_         34:11
+              #define _KE_QUEUE_H_       35:11
+              #define _KE_EVENT_H_       36:11
+              #define _KE_MEM_H_         37:11
+              #define _KE_MSG_H_         38:11
+              #define _CO_VERSION_H_     41:11
+              #define _CO_ERROR_H_       42:11
+              #define _CO_ENDIAN_H_      43:11
+              #define _CO_MATH_H_        44:11
+              #define _CO_UTILS_H_       45:11
+              #define _CO_LIST_H_        46:11
+              #define RWBT_SW_VERSION_MAJOR
+                                         59:11
+              #define RWBT_SW_VERSION_MINOR
+                                         60:11
+              #define RWBT_SW_VERSION_BUILD
+                                         61:11
+              #define RWBT_SW_VERSION_SUB_BUILD
+                                         62:11
+              #define CO_ERROR_NO_ERROR
+                                         65:11
+              #define CO_ERROR_UNKNOWN_HCI_COMMAND
+                                         66:11
+              #define CO_ERROR_UNKNOWN_CONNECTION_ID
+                                         67:11
+              #define CO_ERROR_HARDWARE_FAILURE
+                                         68:11
+              #define CO_ERROR_PAGE_TIMEOUT
+                                         69:11
+              #define CO_ERROR_AUTH_FAILURE
+                                         70:11
+              #define CO_ERROR_PIN_MISSING
+                                         71:11
+              #define CO_ERROR_MEMORY_CAPA_EXCEED
+                                         72:11
+              #define CO_ERROR_CON_TIMEOUT
+                                         73:11
+              #define CO_ERROR_CON_LIMIT_EXCEED
+                                         74:11
+              #define CO_ERROR_COMMAND_DISALLOWED
+                                         75:11
+              #define CO_ERROR_CONN_REJ_LIMITED_RESOURCES
+                                         76:11
+              #define CO_ERROR_CONN_REJ_SECURITY_REASONS
+                                         77:11
+              #define CO_ERROR_CONN_REJ_UNACCEPTABLE_BDADDR
+                                         78:11
+              #define CO_ERROR_CONN_ACCEPT_TIMEOUT_EXCEED
+                                         79:11
+              #define CO_ERROR_UNSUPPORTED
+                                         80:11
+              #define CO_ERROR_INVALID_HCI_PARAM
+                                         81:11
+              #define CO_ERROR_REMOTE_USER_TERM_CON
+                                         82:11
+              #define CO_ERROR_REMOTE_DEV_TERM_LOW_RESOURCES
+                                         83:11
+              #define CO_ERROR_REMOTE_DEV_POWER_OFF
+                                         84:11
+              #define CO_ERROR_CON_TERM_BY_LOCAL_HOST
+                                         85:11
+              #define CO_ERROR_REPEATED_ATTEMPTS
+                                         86:11
+              #define CO_ERROR_PAIRING_NOT_ALLOWED
+                                         87:11
+              #define CO_ERROR_UNSUPPORTED_REMOTE_FEATURE
+                                         88:11
+              #define CO_ERROR_UNSPECIFIED_ERROR
+                                         89:11
+              #define CO_ERROR_LMP_RSP_TIMEOUT
+                                         90:11
+              #define CO_ERROR_ENC_MODE_NOT_ACCEPT
+                                         91:11
+              #define CO_ERROR_LINK_KEY_CANT_CHANGE
+                                         92:11
+              #define CO_ERROR_INSTANT_PASSED
+                                         93:11
+              #define CO_ERROR_PAIRING_WITH_UNIT_KEY_NOT_SUP
+                                         94:11
+              #define CO_ERROR_DIFF_TRANSACTION_COLLISION
+                                         95:11
+              #define CO_ERROR_CHANNEL_CLASS_NOT_SUP
+                                         96:11
+              #define CO_ERROR_INSUFFICIENT_SECURITY
+                                         97:11
+              #define CO_ERROR_PARAM_OUT_OF_MAND_RANGE
+                                         98:11
+              #define CO_ERROR_SP_NOT_SUPPORTED_HOST
+                                         99:11
+              #define CO_ERROR_HOST_BUSY_PAIRING
+                                        100:11
+              #define CO_ERROR_CONTROLLER_BUSY
+                                        101:11
+              #define CO_ERROR_UNACCEPTABLE_CONN_INT
+                                        102:11
+              #define CO_ERROR_DIRECT_ADV_TO
+                                        103:11
+              #define CO_ERROR_TERMINATED_MIC_FAILURE
+                                        104:11
+              #define CO_ERROR_CONN_FAILED_TO_BE_EST
+                                        105:11
+              #define CO_ERROR_HW_UART_OUT_OF_SYNC
+                                        107:11
+              #define CO_ERROR_HW_MEM_ALLOC_FAIL
+                                        108:11
+              #define CO_ERROR_HW_LLCHMAP_ERR
+                                        109:11
+              #define CO_ERROR_HW_CSTXPTR_ERR
+                                        110:11
+              #define CO_ERROR_HW_CSFORMAT_ERR
+                                        111:11
+              #define CO_ERROR_HW_TXCRYPT_ERR
+                                        112:11
+              #define CO_ERROR_HW_PKTCNTL_EMACC_ERR
+                                        113:11
+              #define CO_ERROR_HW_TXDESC_ERR
+                                        114:11
+              #define CO_ERROR_HW_WHITELIST_ERR
+                                        115:11
+              #define CO_ERROR_HW_RXCRYPT_ERR
+                                        116:11
+              #define CO_ERROR_HW_IFS_UNDERRUN
+                                        117:11
+              #define CO_ERROR_HW_RADIO_EMACC_ERR
+                                        118:11
+              #define CO_ERROR_HW_RF_WAKEUP_ERR
+                                        120:11
+              #define CO_ERROR_HW_RF_INITIAL_ERR
+                                        121:11
+              #define co_htonl          132:11
+              #define co_htons          133:11
+              #define co_ntohl          134:11
+              #define co_ntohs          135:11
+              #define co_htobl          138:11
+              #define co_htobs          139:11
+              #define co_btohl          140:11
+              #define co_btohs          141:11
+              #define CO_BIT            158:11
+              #define CO_BIT8           159:11
+              #define CO_BIT16          160:11
+              #define CO_ALIGN4_HI      161:11
+              #define CO_ALIGN4_LO      162:11
+              #define CO_ALIGN2_HI      163:11
+              #define CO_ALIGN2_LO      164:11
+              #define CO_MAX            176:11
+              #define CO_MIN            177:11
+              #define CO_GET_INDEX      179:11
+              #define KE_BUILD_ID       300:11
+              #define KE_TYPE_GET       301:11
+              #define KE_IDX_GET        302:11
+              #define KE_MSG_ALLOC      304:11
+              #define KE_MSG_FREE       305:11
+              #define KE_STATE_HANDLER
+                                        318:11    74       75
+              #define KE_STATE_HANDLER_NONE
+                                        319:11    78
+              #define KE_FIRST_MSG      336:11    66       70       90      155
+              #define MSG_T             337:11
+              #define MSG_I             338:11
+              #define ke_time_get       351:11
+              #define LLM_IDX_MAX       513:11   516:11
+              #define LLC_IDX_MAX       545:11   548:11
+              #define DBG_IDX_MAX       556:11   559:11
+              #define L2CM_IDX_MAX      569:11   572:11
+              #define L2CC_IDX_MAX      580:11   583:11
+              #define GAP_IDX_MAX       600:11   603:11
+              #define GATT_IDX_MAX      612:11   615:11
+              #define ATTC_IDX_MAX      627:11   630:11
+              #define ATTM_IDX_MAX      638:11   641:11
+              #define ATTS_IDX_MAX      649:11   652:11
+              #define SVC_IDX_MAX       660:11   663:11
+              #define SMPM_IDX_MAX      672:11   675:11
+              #define SMPC_IDX_MAX      689:11   692:11
+              #define PROXM_STATE_MAX   702:11   705:11
+              #define PROXM_IDX_MAX     704:11   707:11
+              #define PROXR_STATE_MAX   710:11   713:11
+              #define PROXR_IDX_MAX     712:11   715:11
+              #define FINDL_STATE_MAX   718:11   721:11
+              #define FINDL_IDX_MAX     720:11   723:11
+              #define FINDT_STATE_MAX   726:11   729:11
+              #define FINDT_IDX_MAX     728:11   731:11
+              #define HTPC_STATE_MAX    734:11   737:11
+              #define HTPC_IDX_MAX      736:11   739:11
+              #define HTPT_STATE_MAX    742:11   745:11
+              #define HTPT_IDX_MAX      744:11   747:11
+              #define BLPC_STATE_MAX    750:11   753:11
+              #define BLPC_IDX_MAX      752:11   755:11
+              #define BLPS_STATE_MAX    758:11   761:11
+              #define BLPS_IDX_MAX      760:11   763:11
+              #define HGHD_STATE_MAX    766:11   769:11
+              #define HGHD_IDX_MAX      768:11   771:11
+              #define HGBH_STATE_MAX    774:11   777:11
+              #define HGBH_IDX_MAX      776:11   779:11
+              #define HGRH_STATE_MAX    782:11   785:11
+              #define HGRH_IDX_MAX      784:11   787:11
+              #define SCANS_STATE_MAX   790:11   793:11
+              #define SCANS_IDX_MAX     792:11   795:11   803:11
+              #define SCANC_STATE_MAX   798:11   801:11
+              #define SCANC_IDX_MAX     800:11
+              #define HRPC_STATE_MAX    806:11   809:11
+              #define HRPC_IDX_MAX      808:11   811:11
+              #define HRPS_STATE_MAX    814:11   817:11
+              #define HRPS_IDX_MAX      816:11   819:11
+              #define CSCPC_STATE_MAX   822:11   825:11
+              #define CSCPC_IDX_MAX     824:11   827:11
+              #define CSCPS_STATE_MAX   830:11   833:11
+              #define CSCPS_IDX_MAX     832:11   835:11
+              #define GLPC_STATE_MAX    838:11   841:11
+              #define GLPC_IDX_MAX      840:11   843:11
+              #define GLPS_STATE_MAX    846:11   849:11
+              #define GLPS_IDX_MAX      848:11   851:11
+              #define CPPC_STATE_MAX    854:11   857:11
+              #define CPPC_IDX_MAX      856:11   859:11
+              #define CPPS_STATE_MAX    862:11   865:11
+              #define CPPS_IDX_MAX      864:11   867:11
+              #define TIPC_STATE_MAX    870:11   873:11
+              #define TIPC_IDX_MAX      872:11   875:11
+              #define TIPS_STATE_MAX    878:11   881:11
+              #define TIPS_IDX_MAX      880:11   883:11
+              #define ANPC_STATE_MAX    886:11   889:11
+              #define ANPC_IDX_MAX      888:11   891:11
+              #define ANPS_STATE_MAX    894:11   897:11
+              #define ANPS_IDX_MAX      896:11   899:11
+              #define LNPC_STATE_MAX    902:11   905:11
+              #define LNPC_IDX_MAX      904:11   907:11
+              #define LNPS_STATE_MAX    910:11   913:11
+              #define LNPS_IDX_MAX      912:11   915:11
+              #define PASPC_STATE_MAX   918:11   921:11
+              #define PASPC_IDX_MAX     920:11   923:11
+              #define PASPS_STATE_MAX   926:11   929:11
+              #define PASPS_IDX_MAX     928:11   931:11
+              #define RSCPC_STATE_MAX   934:11   937:11
+              #define RSCPC_IDX_MAX     936:11   939:11
+              #define RSCPS_STATE_MAX   942:11   945:11
+              #define RSCPS_IDX_MAX     944:11   947:11
+              #define ACCEL_IDX_MAX     957:11   960:11
+              #define BS_KEY_CODE        45:12   115      117      117
+              #define CR_KEY_CODE        46:12   107
+              #define LF_KEY_CODE        47:12   107
+              #define ESC_KEY_CODE       48:12   111      143
+              #define CONSOLE_MSG_CHAR_IN
+                                         50:12    66       70      155
+              #define CONSOLE_MSG_LINE_IN
+                                         51:12    90
+              #define CONSOLE_IDX_MAX    53:12
+              #define _SERIAL_H_         16:13
+              #define SERIAL_U_2WIRE     43:13
+              #define SERIAL_U_3WIRE     44:13   122:13
+              #define SERIAL_U_DIV_2WIRE
+                                         45:13   122:13
+              #define SERIAL_C_4WIRE     46:13
+              #define SERIAL_C_5WIRE     47:13   122:13
+              #define SERIAL_I_3WIRE     48:13
+              #define SERIAL_CALLBACK_VOID
+                                         69:13
+              #define SERIAL_CALLBACK_BOOL
+                                         70:13
+              #define EOF                15:14
+              #define _STDIO_H           49:14
+              #define IN_BUF_MAX         42       58      126
+              #define PRINT_BUF_MAX      43       60
+              #define CONSOLE_TASK_ID    45       91      144      155      155      243      245      257      270
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.20 

@@ -1,0 +1,365 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\wakeup.asm -_msgoff -pD
+          efaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\wakeup.asm
+Obj-file: DefaultBuild\wakeup.rel
+Prn-file: DefaultBuild\wakeup.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:28
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\wakeup\wakeup.c -o
+    5     5                      ;             DefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_N
+    6     6                      ;             OT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBLE,CF
+    7     7                      ;             G_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE
+    8     8                      ;             _SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8
+    9     9                      ;             MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i.
+   10    10                      ;             .\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\..\src
+   11    11                      ;             \driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\.
+   12    12                      ;             .\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -
+   13    13                      ;             i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\
+   14    14                      ;             ..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\.
+   15    15                      ;             .\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\..\..\
+   16    16                      ;             ..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\.
+   17    17                      ;             .\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i..\..
+   18    18                      ;             \..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i.
+   19    19                      ;             .\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\driver\p
+   20    20                      ;             ktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bl
+   21    21                      ;             eip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..\..\.
+   22    22                      ;             .\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sampl
+   23    23                      ;             e_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm
+   24    24                      ;              -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\wakeup\wakeup.c
+   26    26                      ; Asm-file  : DefaultBuild\wakeup.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         025H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, wakeup.c
+   37    37                      $DGS    MOD_NAM, wakeup,        00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    GLV_SYM, _wakeup_init_ent,      U,      U,      01H,    026H,   01H,    02H
+   55    55                      $DGS    AUX_FUN, 00H,           U,      U,      019H,   01H,    00H
+   56    56                      $DGS    BEG_FUN, ??bf_wakeup_init_ent,  U,      U,      00H,    065H,   01H,    00H
+   57    57                      $DGS    AUX_BEG, 04DH,          00H,    019H
+   58    58                      $DGS    END_FUN, ??ef_wakeup_init_ent,  U,      U,      00H,    065H,   01H,    00H
+   59    59                      $DGS    AUX_END, 019H
+   60    60                      $DGS    GLV_SYM, _wakeup_ready, U,      U,      0CH,    026H,   01H,    02H
+   61    61                      $DGS    AUX_FUN, 00H,           U,      U,      01FH,   01H,    00H
+   62    62                      $DGS    BEG_FUN, ??bf_wakeup_ready,     U,      U,      00H,    065H,   01H,    00H
+   63    63                      $DGS    AUX_BEG, 06FH,          00H,    01FH
+   64    64                      $DGS    END_FUN, ??ef_wakeup_ready,     U,      U,      00H,    065H,   01H,    00H
+   65    65                      $DGS    AUX_END, 01BH
+   66    66                      $DGS    GLV_SYM, _wakeup_finish,        U,      U,      01H,    026H,   01H,    02H
+   67    67                      $DGS    AUX_FUN, 00H,           U,      U,      025H,   01H,    00H
+   68    68                      $DGS    BEG_FUN, ??bf_wakeup_finish,    U,      U,      00H,    065H,   01H,    00H
+   69    69                      $DGS    AUX_BEG, 091H,          00H,    025H
+   70    70                      $DGS    END_FUN, ??ef_wakeup_finish,    U,      U,      00H,    065H,   01H,    00H
+   71    71                      $DGS    AUX_END, 01FH
+   72    72                      $DGS    GLV_SYM, _serial_stop_ready,    U,      U,      0CH,    02H,    01H,    02H
+   73    73                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+   74    74                      $DGS    GLV_SYM, _serial_stop_finish,   U,      U,      01H,    02H,    01H,    02H
+   75    75                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+   76    76                      
+   77    77                              EXTRN   _serial_stop_ready
+   78    78                              EXTRN   _serial_stop_finish
+   79    79                              PUBLIC  _wakeup_init_ent
+   80    80                              PUBLIC  _wakeup_ready
+   81    81                              PUBLIC  _wakeup_finish
+   82    82                      
+   83    83 -----                @@BITS  BSEG
+   84    84                      
+   85    85 -----                @@CNST  CSEG    MIRRORP
+   86    86                      
+   87    87 -----                @@R_INIT        CSEG    UNIT64KP
+   88    88                      
+   89    89 -----                @@INIT  DSEG    BASEP
+   90    90                      
+   91    91 -----                @@DATA  DSEG    BASEP
+   92    92                      
+   93    93 -----                @@R_INIS        CSEG    UNIT64KP
+   94    94                      
+   95    95 -----                @@INIS  DSEG    SADDRP
+   96    96                      
+   97    97 -----                @@DATS  DSEG    SADDRP
+   98    98                      
+   99    99 -----                @@CNSTL CSEG    PAGE64KP
+  100   100                      
+  101   101 -----                @@RLINIT        CSEG    UNIT64KP
+  102   102                      
+  103   103 -----                @@INITL DSEG    UNIT64KP
+  104   104                      
+  105   105 -----                @@DATAL DSEG    UNIT64KP
+  106   106                      
+  107   107 -----                @@CALT  CSEG    CALLT0
+  108   108                      
+  109   109                      ; line    13
+  110   110                      ; line    14
+  111   111                      ; line    13
+  112   112                      ; line    14
+  113   113                      ; line    15
+  114   114                      ; line    74
+  115   115                      ; line    75
+  116   116                      ; line    76
+  117   117                      ; line    77
+  118   118                      ; line    79
+  119   119                      ; line    80
+  120   120                      ; line    84
+  121   121                      ; line    85
+  122   122                      ; line    16
+  123   123                      ; line    18
+  124   124                      ; line    19
+  125   125                      ; line    20
+  126   126                      ; line    21
+  127   127                      ; line    22
+  128   128                      ; line    23
+  129   129                      ; line    24
+  130   130                      ; line    25
+  131   131                      ; line    26
+  132   132                      ; line    27
+  133   133                      ; line    28
+  134   134                      ; line    29
+  135   135                      ; line    30
+  136   136                      ; line    31
+  137   137                      ; line    32
+  138   138                      ; line    33
+  139   139                      ; line    35
+  140   140                      ; line    37
+  141   141                      ; line    38
+  142   142                      ; line    39
+  143   143                      ; line    40
+  144   144                      ; line    43
+  145   145                      ; line    45
+  146   146                      ; line    46
+  147   147                      ; line    47
+  148   148                      ; line    48
+  149   149                      ; line    49
+  150   150                      ; line    50
+  151   151                      ; line    51
+  152   152                      ; line    52
+  153   153                      ; line    53
+  154   154                      ; line    54
+  155   155                      ; line    55
+  156   156                      ; line    56
+  157   157                      ; line    57
+  158   158                      ; line    58
+  159   159                      ; line    59
+  160   160                      ; line    60
+  161   161                      ; line    62
+  162   162                      ; line    64
+  163   163                      ; line    65
+  164   164                      ; line    66
+  165   165                      ; line    69
+  166   166                      ; line    71
+  167   167                      ; line    72
+  168   168                      ; line    73
+  169   169                      ; line    74
+  170   170                      ; line    75
+  171   171                      ; line    76
+  172   172                      ; line    77
+  173   173                      ; line    78
+  174   174                      ; line    79
+  175   175                      ; line    80
+  176   176                      ; line    81
+  177   177                      ; line    82
+  178   178                      ; line    83
+  179   179                      ; line    84
+  180   180                      ; line    85
+  181   181                      ; line    86
+  182   182                      ; line    88
+  183   183                      ; line    90
+  184   184                      ; line    91
+  185   185                      ; line    92
+  186   186                      ; line    20
+  187   187                      ; line    25
+  188   188                      ; line    29
+  189   189                      ; line    30
+  190   190                      ; line    31
+  191   191                      ; line    32
+  192   192                      ; line    33
+  193   193                      ; line    34
+  194   194                      ; line    35
+  195   195                      ; line    36
+  196   196                      ; line    37
+  197   197                      ; line    38
+  198   198                      ; line    39
+  199   199                      ; line    40
+  200   200                      ; line    41
+  201   201                      ; line    42
+  202   202                      ; line    43
+  203   203                      ; line    45
+  204   204                      ; line    46
+  205   205                      ; line    51
+  206   206                      ; line    52
+  207   207                      ; line    54
+  208   208                      ; line    59
+  209   209                      ; line    60
+  210   210                      ; line    65
+  211   211                      ; line    66
+  212   212                      ; line    67
+  213   213                      ; line    68
+  214   214                      ; line    70
+  215   215                      ; line    71
+  216   216                      ; line    72
+  217   217                      ; line    73
+  218   218                      ; line    74
+  219   219                      ; line    75
+  220   220                      ; line    76
+  221   221                      ; line    78
+  222   222                      ; line    83
+  223   223                      ; line    84
+  224   224                      ; line    89
+  225   225                      ; line    90
+  226   226                      ; line    92
+  227   227                      ; line    93
+  228   228                      ; line    94
+  229   229                      ; line    95
+  230   230                      ; line    96
+  231   231                      ; line    97
+  232   232                      ; line    98
+  233   233                      ; line   100
+  234   234                      ; line   105
+  235   235                      ; line   106
+  236   236                      ; line   111
+  237   237                      ; line   112
+  238   238                      ; line    95
+  239   239                      ; line   220
+  240   240                      ; line   221
+  241   241                      ; line    22
+  242   242                      ; line    23
+  243   243                      ; line    67
+  244   244                      ; line    68
+  245   245                      ; line   125
+  246   246                      ; line    49
+  247   247                      ; line    55
+  248   248                      ; line    56
+  249   249                      ; line    63
+  250   250                      ; line    82
+  251   251                      ; line    93
+  252   252                      ; line   104
+  253   253                      ; line   113
+  254   254                      ; line   120
+  255   255                      ; line    77
+  256   256                      
+  257   257 -----                @@CODEL CSEG
+  258   258 00000                _wakeup_init_ent:
+  259   259                      $DGL    1,19
+  260   260 00000                ??bf_wakeup_init_ent:
+  261   261                      ; line   101
+  262   262                      $DGL    0,25
+  263   263 00000                ??ef_wakeup_init_ent:
+  264   264 00000  D7                    ret                                                     ;[INF] 1, 6
+  265   265 00001                ??ee_wakeup_init_ent:
+  266   266                      ; line   111
+  267   267 00001                _wakeup_ready:
+  268   268                      $DGL    1,25
+  269   269 00001                ??bf_wakeup_ready:
+  270   270                      ; line   135
+  271   271                      $DGL    0,25
+  272   272 00001 RFC000000              call    !!_serial_stop_ready                            ;[INF] 4, 3
+  273   273 00005  F3                    clrb    b                                               ;[INF] 1, 1
+  274   274                      ; line   137
+  275   275                      ; line   137
+  276   276                      $DGL    0,27
+  277   277 00006                ??ef_wakeup_ready:
+  278   278 00006  D7                    ret                                                     ;[INF] 1, 6
+  279   279 00007                ??ee_wakeup_ready:
+  280   280                      ; line   145
+  281   281 00007                _wakeup_finish:
+  282   282                      $DGL    1,31
+  283   283 00007                ??bf_wakeup_finish:
+  284   284                      ; line   173
+  285   285                      $DGL    0,29
+  286   286 00007 REC000000              br      !!_serial_stop_finish                           ;[INF] 4, 3
+  287   287 0000B                ??ef_wakeup_finish:
+  288   288 0000B                ??ee_wakeup_finish:
+  289   289                      
+  290   290 -----                @@CODE  CSEG    BASE
+  291   291                      
+  292   292 -----                @@BASE  CSEG    BASE
+  293   293                              END
+  294   294                      
+  295   295                      
+  296   296                      ; *** Code Information ***
+  297   297                      ;
+  298   298                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  299   299                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\driver\wakeup\wa
+  300   300                      ;       keup.c
+  301   301                      ;
+  302   302                      ; $FUNC wakeup_init_ent(77)
+  303   303                      ;       void=(void)
+  304   304                      ;       CODE SIZE= 1 bytes, CLOCK_SIZE= 6 clocks, STACK_SIZE= 0 bytes
+  305   305                      ;
+  306   306                      ; $FUNC wakeup_ready(111)
+  307   307                      ;       bc=(void)
+  308   308                      ;       CODE SIZE= 6 bytes, CLOCK_SIZE= 10 clocks, STACK_SIZE= 4 bytes
+  309   309                      ;
+  310   310                      ; $CALL serial_stop_ready(135)
+  311   311                      ;       bc=(void)
+  312   312                      ;
+  313   313                      ; $FUNC wakeup_finish(145)
+  314   314                      ;       void=(void)
+  315   315                      ;       CODE SIZE= 4 bytes, CLOCK_SIZE= 3 clocks, STACK_SIZE= 0 bytes
+  316   316                      ;
+  317   317                      ; $CALL serial_stop_finish(173)
+  318   318                      ;       void=(void)
+  319   319                      
+  320   320                      ; Target chip : R5F11AGJ
+  321   321                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 0000BH   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

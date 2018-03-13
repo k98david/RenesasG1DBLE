@@ -1,0 +1,170 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\fdl_descriptor_t02.asm
+          -_msgoff -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\fdl_descriptor_t02.asm
+Obj-file: DefaultBuild\fdl_descriptor_t02.rel
+Prn-file: DefaultBuild\fdl_descriptor_t02.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:28
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\driver\dataflash\fdl_desc
+    5     5                      ;             riptor_t02.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CO
+    6     6                      ;             N=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY
+    7     7                      ;             _ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78
+    8     8                      ;             ,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PRO
+    9     9                      ;             FILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4
+   10    10                      ;             ,USE_SECLIB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\
+   11    11                      ;             ..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup 
+   12    12                      ;             -i..\..\..\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\dri
+   13    13                      ;             ver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\
+   14    14                      ;             ..\src -i..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl
+   15    15                      ;             78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\
+   16    16                      ;             led -i..\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\dr
+   17    17                      ;             iver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\dr
+   18    18                      ;             iver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\dri
+   19    19                      ;             ver\push_sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\
+   20    20                      ;             ..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..
+   21    21                      ;             \..\..\..\..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\in
+   22    22                      ;             clude -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..
+   23    23                      ;             \rBLE\src\sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_p
+   24    24                      ;             rofile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\driver\dataflash\fdl_descriptor_t02.c
+   26    26                      ; Asm-file  : DefaultBuild\fdl_descriptor_t02.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         01EH,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, fdl_descriptor_t02.c
+   37    37                      $DGS    MOD_NAM, fdl_descriptor_t02,    00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, FDL_CNST,      U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    STR_STR, .3fake,        00H,    0FFFEH, 08H,    0AH,    01H,    00H
+   55    55                      $DGS    AUX_TAG, 0AH,           01EH
+   56    56                      $DGS    MEB_STR, _eel_pool_bytes_u16,   00H,    0FFFFH, 0EH,    08H,    00H,    00H
+   57    57                      $DGS    MEB_STR, _fdl_pool_bytes_u16,   02H,    0FFFFH, 0EH,    08H,    00H,    00H
+   58    58                      $DGS    MEB_STR, _fdl_delay_u16,        04H,    0FFFFH, 0EH,    08H,    00H,    00H
+   59    59                      $DGS    MEB_STR, _eel_pool_blocks_u08,  06H,    0FFFFH, 0CH,    08H,    00H,    00H
+   60    60                      $DGS    MEB_STR, _fdl_pool_blocks_u08,  07H,    0FFFFH, 0CH,    08H,    00H,    00H
+   61    61                      $DGS    MEB_STR, _fx_MHz_u08,   08H,    0FFFFH, 0CH,    08H,    00H,    00H
+   62    62                      $DGS    MEB_STR, _wide_voltage_mode_u08,        09H,    0FFFFH, 0CH,    08H,    00H,    00H
+   63    63                      $DGS    END_STR, .eos,          0AH,    0FFFFH, 00H,    066H,   01H,    00H
+   64    64                      $DGS    AUX_EOS, 013H,          0AH
+   65    65                      $DGS    GLV_SYM, _fdl_descriptor_str,   U,      U,      0D008H, 026H,   01H,    00H
+   66    66                      $DGS    AUX_STR, 013H,          00H,    0AH,    00H,    00H,    00H,    00H,    00H
+   67    67                      
+   68    68                              PUBLIC  _fdl_descriptor_str
+   69    69                      
+   70    70 -----                @@BITS  BSEG
+   71    71                      
+   72    72 -----                @@CNST  CSEG    MIRRORP
+   73    73                      
+   74    74 -----                @@R_INIT        CSEG    UNIT64KP
+   75    75                      
+   76    76 -----                @@INIT  DSEG    BASEP
+   77    77                      
+   78    78 -----                @@DATA  DSEG    BASEP
+   79    79                      
+   80    80 -----                @@R_INIS        CSEG    UNIT64KP
+   81    81                      
+   82    82 -----                @@INIS  DSEG    SADDRP
+   83    83                      
+   84    84 -----                @@DATS  DSEG    SADDRP
+   85    85                      
+   86    86 -----                FDL_CNST        CSEG    PAGE64KP
+   87    87 00000  0020          _fdl_descriptor_str:    DW      02000H  ; 8192
+   88    88 00002  0000                  DW      00H     ; 0
+   89    89 00004  0D00                  DW      0DH     ; 13
+   90    90 00006  08                    DB      08H     ; 8
+   91    91 00007  00                    DB      00H     ; 0
+   92    92 00008  08                    DB      08H     ; 8
+   93    93 00009  01                    DB      01H     ; 1
+   94    94                      
+   95    95 -----                @@RLINIT        CSEG    UNIT64KP
+   96    96                      
+   97    97 -----                @@INITL DSEG    UNIT64KP
+   98    98                      
+   99    99 -----                @@DATAL DSEG    UNIT64KP
+  100   100                      
+  101   101 -----                @@CALT  CSEG    CALLT0
+  102   102                      
+  103   103                      ; line    42
+  104   104                      ; line    43
+  105   105                      ; line    44
+  106   106                      ; line    66
+  107   107                      ; line    87
+  108   108                      ; line    98
+  109   109                      ; line   113
+  110   110                      ; line    97
+  111   111                      ; line   101
+  112   112                      ; line   103
+  113   113                      ; line   106
+  114   114                      
+  115   115 -----                @@CODE  CSEG    BASE
+  116   116                      
+  117   117 -----                @@CODEL CSEG
+  118   118                      
+  119   119 -----                @@BASE  CSEG    BASE
+  120   120                              END
+  121   121                      
+  122   122                      
+  123   123                      ; *** Code Information ***
+  124   124                      
+  125   125                      ; Target chip : R5F11AGJ
+  126   126                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 0000AH   FDL_CNST
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00000H   @@CODE
+00000 00000H   @@CODEL
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

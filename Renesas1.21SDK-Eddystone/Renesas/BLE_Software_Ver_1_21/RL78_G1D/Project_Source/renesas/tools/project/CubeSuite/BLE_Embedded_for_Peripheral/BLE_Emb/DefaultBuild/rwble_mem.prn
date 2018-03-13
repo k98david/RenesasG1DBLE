@@ -1,0 +1,374 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\rwble_mem.asm -_msgoff
+          -pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\rwble_mem.asm
+Obj-file: DefaultBuild\rwble_mem.rel
+Prn-file: DefaultBuild\rwble_mem.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:23
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\src\arch\rl78\rwble_mem.c -oD
+    5     5                      ;             efaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NO
+    6     6                      ;             T_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBLE,CFG
+    7     7                      ;             _USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_
+    8     8                      ;             SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8M
+    9     9                      ;             HZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..
+   10    10                      ;             \..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..\..\src\
+   11    11                      ;             driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..
+   12    12                      ;             \src\driver\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i
+   13    13                      ;             ..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\.
+   14    14                      ;             .\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..
+   15    15                      ;             \..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..\..\..\.
+   16    16                      ;             .\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..
+   17    17                      ;             \..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf -i..\..\
+   18    18                      ;             ..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..
+   19    19                      ;             \..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\driver\pk
+   20    20                      ;             tmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\ble
+   21    21                      ;             ip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i..\..\..
+   22    22                      ;             \..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample
+   23    23                      ;             _app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm 
+   24    24                      ;             -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\src\arch\rl78\rwble_mem.c
+   26    26                      ; Asm-file  : DefaultBuild\rwble_mem.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         019H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, rwble_mem.c
+   37    37                      $DGS    MOD_NAM, rwble_mem,     00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    GLV_SYM, _rwble_set_mem,        U,      U,      01H,    026H,   01H,    02H
+   55    55                      $DGS    AUX_FUN, 00H,           U,      U,      019H,   01H,    00H
+   56    56                      $DGS    BEG_FUN, ??bf_rwble_set_mem,    U,      U,      00H,    065H,   01H,    00H
+   57    57                      $DGS    AUX_BEG, 032H,          00H,    019H
+   58    58                      $DGS    END_FUN, ??ef_rwble_set_mem,    U,      U,      00H,    065H,   01H,    00H
+   59    59                      $DGS    AUX_END, 0FH
+   60    60                      $DGS    GLV_SYM, _rwble_set_mem_cont,   U,      U,      01H,    02H,    01H,    02H
+   61    61                      $DGS    AUX_FUN, 00H,           U,      U,      00H,    01H,    00H
+   62    62                      $DGS    GLV_SYM, _rwble_set_mem_gap_func,       U,      U,      05001H, 02H,    01H,    09H
+   63    63                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   64    64                      $DGS    GLV_SYM, _rwble_set_mem_l2cap_func,     U,      U,      05001H, 02H,    01H,    09H
+   65    65                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   66    66                      $DGS    GLV_SYM, _rwble_set_mem_gatt_func,      U,      U,      05001H, 02H,    01H,    09H
+   67    67                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   68    68                      $DGS    GLV_SYM, _rwble_set_mem_att_func,       U,      U,      05001H, 02H,    01H,    09H
+   69    69                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   70    70                      $DGS    GLV_SYM, _rwble_set_mem_smp_func,       U,      U,      05001H, 02H,    01H,    09H
+   71    71                      $DGS    AUX_STR, 00H,           00H,    04H,    00H,    00H,    00H,    00H,    02H
+   72    72                      
+   73    73                              EXTRN   _rwble_set_mem_cont
+   74    74                              EXTRN   _rwble_set_mem_gap_func
+   75    75                              EXTRN   _rwble_set_mem_l2cap_func
+   76    76                              EXTRN   _rwble_set_mem_gatt_func
+   77    77                              EXTRN   _rwble_set_mem_att_func
+   78    78                              EXTRN   _rwble_set_mem_smp_func
+   79    79                              PUBLIC  _rwble_set_mem
+   80    80                      
+   81    81 -----                @@BITS  BSEG
+   82    82                      
+   83    83 -----                @@CNST  CSEG    MIRRORP
+   84    84                      
+   85    85 -----                @@R_INIT        CSEG    UNIT64KP
+   86    86                      
+   87    87 -----                @@INIT  DSEG    BASEP
+   88    88                      
+   89    89 -----                @@DATA  DSEG    BASEP
+   90    90                      
+   91    91 -----                @@R_INIS        CSEG    UNIT64KP
+   92    92                      
+   93    93 -----                @@INIS  DSEG    SADDRP
+   94    94                      
+   95    95 -----                @@DATS  DSEG    SADDRP
+   96    96                      
+   97    97 -----                @@CNSTL CSEG    PAGE64KP
+   98    98                      
+   99    99 -----                @@RLINIT        CSEG    UNIT64KP
+  100   100                      
+  101   101 -----                @@INITL DSEG    UNIT64KP
+  102   102                      
+  103   103 -----                @@DATAL DSEG    UNIT64KP
+  104   104                      
+  105   105 -----                @@CALT  CSEG    CALLT0
+  106   106                      
+  107   107                      ; line    13
+  108   108                      ; line    14
+  109   109                      ; line    13
+  110   110                      ; line    14
+  111   111                      ; line    15
+  112   112                      ; line    74
+  113   113                      ; line    75
+  114   114                      ; line    76
+  115   115                      ; line    77
+  116   116                      ; line    79
+  117   117                      ; line    80
+  118   118                      ; line    84
+  119   119                      ; line    85
+  120   120                      ; line    16
+  121   121                      ; line    18
+  122   122                      ; line    19
+  123   123                      ; line    20
+  124   124                      ; line    21
+  125   125                      ; line    22
+  126   126                      ; line    23
+  127   127                      ; line    24
+  128   128                      ; line    25
+  129   129                      ; line    26
+  130   130                      ; line    27
+  131   131                      ; line    28
+  132   132                      ; line    29
+  133   133                      ; line    30
+  134   134                      ; line    31
+  135   135                      ; line    32
+  136   136                      ; line    33
+  137   137                      ; line    35
+  138   138                      ; line    37
+  139   139                      ; line    38
+  140   140                      ; line    39
+  141   141                      ; line    40
+  142   142                      ; line    43
+  143   143                      ; line    45
+  144   144                      ; line    46
+  145   145                      ; line    47
+  146   146                      ; line    48
+  147   147                      ; line    49
+  148   148                      ; line    50
+  149   149                      ; line    51
+  150   150                      ; line    52
+  151   151                      ; line    53
+  152   152                      ; line    54
+  153   153                      ; line    55
+  154   154                      ; line    56
+  155   155                      ; line    57
+  156   156                      ; line    58
+  157   157                      ; line    59
+  158   158                      ; line    60
+  159   159                      ; line    62
+  160   160                      ; line    64
+  161   161                      ; line    65
+  162   162                      ; line    66
+  163   163                      ; line    69
+  164   164                      ; line    71
+  165   165                      ; line    72
+  166   166                      ; line    73
+  167   167                      ; line    74
+  168   168                      ; line    75
+  169   169                      ; line    76
+  170   170                      ; line    77
+  171   171                      ; line    78
+  172   172                      ; line    79
+  173   173                      ; line    80
+  174   174                      ; line    81
+  175   175                      ; line    82
+  176   176                      ; line    83
+  177   177                      ; line    84
+  178   178                      ; line    85
+  179   179                      ; line    86
+  180   180                      ; line    88
+  181   181                      ; line    90
+  182   182                      ; line    91
+  183   183                      ; line    92
+  184   184                      ; line    20
+  185   185                      ; line    25
+  186   186                      ; line    29
+  187   187                      ; line    30
+  188   188                      ; line    31
+  189   189                      ; line    32
+  190   190                      ; line    33
+  191   191                      ; line    34
+  192   192                      ; line    35
+  193   193                      ; line    36
+  194   194                      ; line    37
+  195   195                      ; line    38
+  196   196                      ; line    39
+  197   197                      ; line    40
+  198   198                      ; line    41
+  199   199                      ; line    42
+  200   200                      ; line    43
+  201   201                      ; line    45
+  202   202                      ; line    46
+  203   203                      ; line    51
+  204   204                      ; line    52
+  205   205                      ; line    54
+  206   206                      ; line    59
+  207   207                      ; line    60
+  208   208                      ; line    65
+  209   209                      ; line    66
+  210   210                      ; line    67
+  211   211                      ; line    68
+  212   212                      ; line    70
+  213   213                      ; line    71
+  214   214                      ; line    72
+  215   215                      ; line    73
+  216   216                      ; line    74
+  217   217                      ; line    75
+  218   218                      ; line    76
+  219   219                      ; line    78
+  220   220                      ; line    83
+  221   221                      ; line    84
+  222   222                      ; line    89
+  223   223                      ; line    90
+  224   224                      ; line    92
+  225   225                      ; line    93
+  226   226                      ; line    94
+  227   227                      ; line    95
+  228   228                      ; line    96
+  229   229                      ; line    97
+  230   230                      ; line    98
+  231   231                      ; line   100
+  232   232                      ; line   105
+  233   233                      ; line   106
+  234   234                      ; line   111
+  235   235                      ; line   112
+  236   236                      ; line    95
+  237   237                      ; line   220
+  238   238                      ; line   221
+  239   239                      ; line    22
+  240   240                      ; line    23
+  241   241                      ; line    67
+  242   242                      ; line    68
+  243   243                      ; line   125
+  244   244                      ; line    33
+  245   245                      ; line    39
+  246   246                      ; line    40
+  247   247                      ; line    41
+  248   248                      ; line    42
+  249   249                      ; line    43
+  250   250                      ; line    45
+  251   251                      ; line    53
+  252   252                      ; line    54
+  253   253                      ; line    50
+  254   254                      
+  255   255 -----                @@CODEL CSEG
+  256   256 00000                _rwble_set_mem:
+  257   257                      $DGL    1,19
+  258   258 00000                ??bf_rwble_set_mem:
+  259   259                      ; line    51
+  260   260                      $DGL    0,2
+  261   261 00000 RFC000000              call    !!_rwble_set_mem_cont                           ;[INF] 4, 3
+  262   262                      ; line    54
+  263   263                      $DGL    0,5
+  264   264 00004 R8F0200                mov     a,!_rwble_set_mem_gap_func+2                    ;[INF] 3, 1
+  265   265 00007  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  266   266 00009 RAF0000                movw    ax,!_rwble_set_mem_gap_func                     ;[INF] 3, 1
+  267   267 0000C  61CA                  call    ax                                              ;[INF] 2, 3
+  268   268                      ; line    57
+  269   269                      $DGL    0,8
+  270   270 0000E R8F0200                mov     a,!_rwble_set_mem_l2cap_func+2                  ;[INF] 3, 1
+  271   271 00011  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  272   272 00013 RAF0000                movw    ax,!_rwble_set_mem_l2cap_func                   ;[INF] 3, 1
+  273   273 00016  61CA                  call    ax                                              ;[INF] 2, 3
+  274   274                      ; line    59
+  275   275                      $DGL    0,10
+  276   276 00018 R8F0200                mov     a,!_rwble_set_mem_gatt_func+2                   ;[INF] 3, 1
+  277   277 0001B  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  278   278 0001D RAF0000                movw    ax,!_rwble_set_mem_gatt_func                    ;[INF] 3, 1
+  279   279 00020  61CA                  call    ax                                              ;[INF] 2, 3
+  280   280                      ; line    61
+  281   281                      $DGL    0,12
+  282   282 00022 R8F0200                mov     a,!_rwble_set_mem_att_func+2                    ;[INF] 3, 1
+  283   283 00025  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  284   284 00027 RAF0000                movw    ax,!_rwble_set_mem_att_func                     ;[INF] 3, 1
+  285   285 0002A  61CA                  call    ax                                              ;[INF] 2, 3
+  286   286                      ; line    63
+  287   287                      $DGL    0,14
+  288   288 0002C R8F0200                mov     a,!_rwble_set_mem_smp_func+2                    ;[INF] 3, 1
+  289   289 0002F  9EFC                  mov     CS,a                                            ;[INF] 2, 1
+  290   290 00031 RAF0000                movw    ax,!_rwble_set_mem_smp_func                     ;[INF] 3, 1
+  291   291 00034  61CB                  br      ax                                              ;[INF] 2, 3
+  292   292 00036                ??ef_rwble_set_mem:
+  293   293 00036                ??ee_rwble_set_mem:
+  294   294                      
+  295   295 -----                @@CODE  CSEG    BASE
+  296   296                      
+  297   297 -----                @@BASE  CSEG    BASE
+  298   298                              END
+  299   299                      
+  300   300                      
+  301   301                      ; *** Code Information ***
+  302   302                      ;
+  303   303                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  304   304                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\renesas\src\arch\rl78\rwble_
+  305   305                      ;       mem.c
+  306   306                      ;
+  307   307                      ; $FUNC rwble_set_mem(50)
+  308   308                      ;       void=(void)
+  309   309                      ;       CODE SIZE= 54 bytes, CLOCK_SIZE= 33 clocks, STACK_SIZE= 4 bytes
+  310   310                      ;
+  311   311                      ; $CALL rwble_set_mem_cont(51)
+  312   312                      ;       void=(void)
+  313   313                      ;
+  314   314                      ; $CALL rwble_set_mem_gap_func(54)
+  315   315                      ;       void=(void)
+  316   316                      ;
+  317   317                      ; $CALL rwble_set_mem_l2cap_func(57)
+  318   318                      ;       void=(void)
+  319   319                      ;
+  320   320                      ; $CALL rwble_set_mem_gatt_func(59)
+  321   321                      ;       void=(void)
+  322   322                      ;
+  323   323                      ; $CALL rwble_set_mem_att_func(61)
+  324   324                      ;       void=(void)
+  325   325                      ;
+  326   326                      ; $CALL rwble_set_mem_smp_func(63)
+  327   327                      ;       void=(void)
+  328   328                      
+  329   329                      ; Target chip : R5F11AGJ
+  330   330                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 00036H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

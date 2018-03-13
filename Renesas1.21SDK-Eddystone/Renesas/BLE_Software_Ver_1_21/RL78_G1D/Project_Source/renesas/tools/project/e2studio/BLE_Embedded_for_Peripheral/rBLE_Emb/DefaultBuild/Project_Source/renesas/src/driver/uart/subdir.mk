@@ -1,0 +1,23 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables
+C_SRCS += \
+C:/Users/K98David/Desktop/Renesas1.21SDK/Renesas/BLE_Software_Ver_1_21/RL78_G1D/Project_Source/renesas/src/driver/uart/uart.c 
+
+COMPILER_OBJS += \
+Project_Source/renesas/src/driver/uart/uart.obj 
+
+C_DEPS += \
+Project_Source/renesas/src/driver/uart/uart.d 
+
+# Each subdirectory must supply rules for building sources it contributes
+Project_Source/renesas/src/driver/uart/uart.obj: C:/Users/K98David/Desktop/Renesas1.21SDK/Renesas/BLE_Software_Ver_1_21/RL78_G1D/Project_Source/renesas/src/driver/uart/uart.c Project_Source/renesas/src/driver/uart/uart.sub
+	@echo 'Scanning and building file: $<'
+	@echo 'Invoking: Scanner and Compiler'
+	ccrl -MM -MP -o "Project_Source/renesas/src/driver/uart/uart.d"  -MT="Project_Source/renesas/src/driver/uart/uart.obj"  -MT="Project_Source/renesas/src/driver/uart/uart.d" -cpu=S2  -dev="C:\Renesas\e2_studio\eclipse\\..\\DebugComp\\RL78\RL78\Common\DR5F11AGJ.DVF" -msg_lang=english -I "\inc","..\..\..\..\..\..\..\renesas\src\driver\serial","..\..\..\..\..\..\..\renesas\src\driver\wakeup","..\..\..\..\..\..\..\renesas\src\driver\dataflash\cc_rl","..\..\..\..\..\..\..\renesas\src\driver\dataflash","..\..\..\..\..\..\..\renesas\src\driver\push_state","..\..\..\..\..\..\..\renesas\src\driver\led_onoff","..\..\..\..\..\..\..\renesas\src\driver\DTM2Wire","..\..\..\..\..\..\..\renesas\src\driver\pktmon","..\..\..\..\..\..\..\renesas\src","..\..\..\..\..\..\..\renesas\src\compiler","..\..\..\..\..\..\..\renesas\src\arch\rl78","..\..\..\..\..\..\..\renesas\src\arch\rl78\ll","..\..\..\..\..\..\..\renesas\src\driver\led","..\..\..\..\..\..\..\renesas\src\driver\peak","..\..\..\..\..\..\..\renesas\src\driver\plf","..\..\..\..\..\..\..\renesas\src\driver\port","..\..\..\..\..\..\..\renesas\src\driver\rf","..\..\..\..\..\..\..\renesas\src\driver\uart","..\..\..\..\..\..\..\renesas\src\driver\push_sw","..\..\..\..\..\..\..\bleip\src\common","..\..\..\..\..\..\..\bleip\src\rwble","..\..\..\..\..\..\..\rBLE\src\include","..\..\..\..\..\..\..\rBLE\src\sample_app","..\..\..\..\..\..\..\rBLE\src\sample_profile","..\..\..\..\..\..\..\rBLE\src\sample_app\seclib" -D CFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_SECLIB_BOND_NUM=4,USE_SECLIB,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_CCRL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON -character_set=sjis -memory_model=medium -Osize -goptimize -cref=DefaultBuild -switch=binary -signed_char -convert_cc=ca78k0r -no_warning_num=23082  "$<"
+	ccrl -cpu=S2 -c -dev="C:\Renesas\e2_studio\eclipse\\..\\DebugComp\\RL78\RL78\Common\DR5F11AGJ.DVF" -msg_lang=english -I "\inc","..\..\..\..\..\..\..\renesas\src\driver\serial","..\..\..\..\..\..\..\renesas\src\driver\wakeup","..\..\..\..\..\..\..\renesas\src\driver\dataflash\cc_rl","..\..\..\..\..\..\..\renesas\src\driver\dataflash","..\..\..\..\..\..\..\renesas\src\driver\push_state","..\..\..\..\..\..\..\renesas\src\driver\led_onoff","..\..\..\..\..\..\..\renesas\src\driver\DTM2Wire","..\..\..\..\..\..\..\renesas\src\driver\pktmon","..\..\..\..\..\..\..\renesas\src","..\..\..\..\..\..\..\renesas\src\compiler","..\..\..\..\..\..\..\renesas\src\arch\rl78","..\..\..\..\..\..\..\renesas\src\arch\rl78\ll","..\..\..\..\..\..\..\renesas\src\driver\led","..\..\..\..\..\..\..\renesas\src\driver\peak","..\..\..\..\..\..\..\renesas\src\driver\plf","..\..\..\..\..\..\..\renesas\src\driver\port","..\..\..\..\..\..\..\renesas\src\driver\rf","..\..\..\..\..\..\..\renesas\src\driver\uart","..\..\..\..\..\..\..\renesas\src\driver\push_sw","..\..\..\..\..\..\..\bleip\src\common","..\..\..\..\..\..\..\bleip\src\rwble","..\..\..\..\..\..\..\rBLE\src\include","..\..\..\..\..\..\..\rBLE\src\sample_app","..\..\..\..\..\..\..\rBLE\src\sample_profile","..\..\..\..\..\..\..\rBLE\src\sample_app\seclib" -D CFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_SECLIB_BOND_NUM=4,USE_SECLIB,CFG_PROFEMB,CFG_SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_CCRL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON -character_set=sjis -g -o "Project_Source/renesas/src/driver/uart/uart.obj" -memory_model=medium -Osize -goptimize -cref=DefaultBuild -switch=binary -signed_char -convert_cc=ca78k0r -no_warning_num=23082 "$<"
+	@echo 'Finished Scanning and building: $<'
+	@echo.
+

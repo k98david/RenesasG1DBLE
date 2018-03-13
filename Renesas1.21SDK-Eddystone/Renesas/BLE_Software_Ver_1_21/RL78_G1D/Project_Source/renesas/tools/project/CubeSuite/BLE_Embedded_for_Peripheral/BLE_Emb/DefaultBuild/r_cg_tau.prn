@@ -1,0 +1,409 @@
+
+
+
+78K0R Assembler V1.91                                                                                    Date:13 Mar 2018 Page:   1
+
+
+
+Command:  -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile DefaultBuild\r_cg_tau.asm -_msgoff -
+          pDefaultBuild -oDefaultBuild -zs
+Para-file:
+In-file:  DefaultBuild\r_cg_tau.asm
+Obj-file: DefaultBuild\r_cg_tau.rel
+Prn-file: DefaultBuild\r_cg_tau.prn
+
+      Assemble list
+
+ ALNO  STNO ADRS   OBJECT   M I  SOURCE STATEMENT
+
+    1     1                      ; 78K0R C Compiler V2.72 Assembler Source        Date:13 Mar 2018 Time:18:09:36
+    2     2                      
+    3     3                      ; Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\De
+    4     4                      ;             vice\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_app\r_cg_t
+    5     5                      ;             au.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_
+    6     6                      ;             EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CFG_SECURITY_ON,CFG_
+    7     7                      ;             RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAM
+    8     8                      ;             PLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK,noUSE_FW_UPDATE_PROFILE,CLK
+    9     9                      ;             _HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SEC
+   10    10                      ;             LIB -i..\..\..\..\..\..\rBLE\src\sample_profile\sam -i..\..\..\..
+   11    11                      ;             \..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\
+   12    12                      ;             ..\..\..\src\driver\dataflash\cs -i..\..\..\..\..\src\driver\data
+   13    13                      ;             flash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -
+   14    14                      ;             i..\..\..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\
+   15    15                      ;             ..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -i..
+   16    16                      ;             \..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf
+   17    17                      ;              -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\src\driver\rf 
+   18    18                      ;             -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push
+   19    19                      ;             _sw -i..\..\..\..\..\src\driver\push_state -i..\..\..\..\..\src\d
+   20    20                      ;             river\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\.
+   21    21                      ;             .\..\bleip\src\rwble -i.\ -i..\..\..\..\..\..\rble\src\include -i
+   22    22                      ;             ..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\sr
+   23    23                      ;             c\sample_app\seclib -i..\..\..\..\..\..\rBLE\src\sample_profile -
+   24    24                      ;             zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+   25    25                      ; In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\r_cg_tau.c
+   26    26                      ; Asm-file  : DefaultBuild\r_cg_tau.asm
+   27    27                      ; Para-file : 
+   28    28                      
+   29    29                      $PROCESSOR(F11AGJ)
+   30    30                      $DEBUG
+   31    31                      $NODEBUGA
+   32    32                      $KANJICODE SJIS
+   33    33                      $TOL_INF        03FH, 0272H, 00H, 04000H, 00H, 00H, 00H
+   34    34                      
+   35    35                      $DGS    FIL_NAM, .file,         027H,   0FFFEH, 03FH,   067H,   01H,    00H
+   36    36                      $DGS    AUX_FIL, r_cg_tau.c
+   37    37                      $DGS    MOD_NAM, r_cg_tau,      00H,    0FFFEH, 00H,    077H,   00H,    00H
+   38    38                      $DGS    SEC_NAM, @@BITS,        U,      U,      00H,    078H,   00H,    00H
+   39    39                      $DGS    SEC_NAM, @@CNST,        U,      U,      00H,    078H,   00H,    00H
+   40    40                      $DGS    SEC_NAM, @@R_INIT,      U,      U,      00H,    078H,   00H,    00H
+   41    41                      $DGS    SEC_NAM, @@INIT,        U,      U,      00H,    078H,   00H,    00H
+   42    42                      $DGS    SEC_NAM, @@DATA,        U,      U,      00H,    078H,   00H,    00H
+   43    43                      $DGS    SEC_NAM, @@R_INIS,      U,      U,      00H,    078H,   00H,    00H
+   44    44                      $DGS    SEC_NAM, @@INIS,        U,      U,      00H,    078H,   00H,    00H
+   45    45                      $DGS    SEC_NAM, @@DATS,        U,      U,      00H,    078H,   00H,    00H
+   46    46                      $DGS    SEC_NAM, @@CNSTL,       U,      U,      00H,    078H,   00H,    00H
+   47    47                      $DGS    SEC_NAM, @@RLINIT,      U,      U,      00H,    078H,   00H,    00H
+   48    48                      $DGS    SEC_NAM, @@INITL,       U,      U,      00H,    078H,   00H,    00H
+   49    49                      $DGS    SEC_NAM, @@DATAL,       U,      U,      00H,    078H,   00H,    00H
+   50    50                      $DGS    SEC_NAM, @@CALT,        U,      U,      00H,    078H,   00H,    00H
+   51    51                      $DGS    SEC_NAM, @@CODE,        U,      U,      00H,    078H,   00H,    00H
+   52    52                      $DGS    SEC_NAM, @@CODEL,       U,      U,      00H,    078H,   00H,    00H
+   53    53                      $DGS    SEC_NAM, @@BASE,        U,      U,      00H,    078H,   00H,    00H
+   54    54                      $DGS    LAB_SYM, bs_S0007,      U,      U,      00H,    06H,    00H,    00H
+   55    55                      $DGS    LAB_SYM, es_S0007,      U,      U,      00H,    06H,    00H,    00H
+   56    56                      $DGS    GLV_SYM, _R_TAU0_Create,        U,      U,      01H,    026H,   01H,    02H
+   57    57                      $DGS    AUX_FUN, 00H,           U,      U,      01BH,   01H,    00H
+   58    58                      $DGS    BEG_FUN, ??bf_R_TAU0_Create,    U,      U,      00H,    065H,   01H,    00H
+   59    59                      $DGS    AUX_BEG, 039H,          00H,    01BH
+   60    60                      $DGS    END_FUN, ??ef_R_TAU0_Create,    U,      U,      00H,    065H,   01H,    00H
+   61    61                      $DGS    AUX_END, 03BH
+   62    62                      $DGS    GLV_SYM, _R_TAU0_Channel0_Start,        U,      U,      01H,    026H,   01H,    02H
+   63    63                      $DGS    AUX_FUN, 00H,           U,      U,      021H,   01H,    00H
+   64    64                      $DGS    BEG_FUN, ??bf_R_TAU0_Channel0_Start,    U,      U,      00H,    065H,   01H,    00H
+   65    65                      $DGS    AUX_BEG, 07BH,          00H,    021H
+   66    66                      $DGS    END_FUN, ??ef_R_TAU0_Channel0_Start,    U,      U,      00H,    065H,   01H,    00H
+   67    67                      $DGS    AUX_END, 04H
+   68    68                      $DGS    GLV_SYM, _R_TAU0_Channel0_Stop, U,      U,      01H,    026H,   01H,    02H
+   69    69                      $DGS    AUX_FUN, 00H,           U,      U,      027H,   01H,    00H
+   70    70                      $DGS    BEG_FUN, ??bf_R_TAU0_Channel0_Stop,     U,      U,      00H,    065H,   01H,    00H
+   71    71                      $DGS    AUX_BEG, 086H,          00H,    027H
+   72    72                      $DGS    END_FUN, ??ef_R_TAU0_Channel0_Stop,     U,      U,      00H,    065H,   01H,    00H
+   73    73                      $DGS    AUX_END, 05H
+   74    74                      
+   75    75                              PUBLIC  _R_TAU0_Create
+   76    76                              PUBLIC  _R_TAU0_Channel0_Start
+   77    77                              PUBLIC  _R_TAU0_Channel0_Stop
+   78    78                      
+   79    79 -----                @@BITS  BSEG
+   80    80                      
+   81    81 -----                @@CNST  CSEG    MIRRORP
+   82    82                      
+   83    83 -----                @@R_INIT        CSEG    UNIT64KP
+   84    84                      
+   85    85 -----                @@INIT  DSEG    BASEP
+   86    86                      
+   87    87 -----                @@DATA  DSEG    BASEP
+   88    88                      
+   89    89 -----                @@R_INIS        CSEG    UNIT64KP
+   90    90                      
+   91    91 -----                @@INIS  DSEG    SADDRP
+   92    92                      
+   93    93 -----                @@DATS  DSEG    SADDRP
+   94    94                      
+   95    95 -----                @@CNSTL CSEG    PAGE64KP
+   96    96                      
+   97    97 -----                @@RLINIT        CSEG    UNIT64KP
+   98    98                      
+   99    99 -----                @@INITL DSEG    UNIT64KP
+  100   100                      
+  101   101 -----                @@DATAL DSEG    UNIT64KP
+  102   102                      
+  103   103 -----                @@CALT  CSEG    CALLT0
+  104   104                      
+  105   105                      ; Sub-Routines created by CC78K0R
+  106   106                      
+  107   107 -----                @@CODEL CSEG
+  108   108 00000                bs_S0007:
+  109   109 00000  AFBA01                movw    ax,!TOE0                                        ;[INF] 3, 1
+  110   110 00003  08                    xch     a,x                                             ;[INF] 1, 1
+  111   111 00004  6C80                  or      a,#080H ; 128                                   ;[INF] 2, 1
+  112   112 00006  08                    xch     a,x                                             ;[INF] 1, 1
+  113   113 00007  BFBA01                movw    !TOE0,ax                                        ;[INF] 3, 1
+  114   114 0000A  D7                    ret                                                     ;[INF] 1, 6
+  115   115 0000B                es_S0007:
+  116   116                      
+  117   117                      ; *** Sub-Routine Information ***
+  118   118                      ;
+  119   119                      ; $SUB bs_S0007
+  120   120                      ;      CODE SIZE= 11 bytes
+  121   121                      
+  122   122                      ; End of Sub-Routines
+  123   123                      
+  124   124                      ; line    72
+  125   125                      ; line    73
+  126   126                      ; line    74
+  127   127                      ; line    75
+  128   128                      ; line    76
+  129   129                      ; line    77
+  130   130                      ; line    78
+  131   131                      ; line    36
+  132   132                      ; line    57
+  133   133                      
+  134   134 -----                @@CODEL CSEG
+  135   135 0000B                _R_TAU0_Create:
+  136   136                      $DGL    1,21
+  137   137 0000B                ??bf_R_TAU0_Create:
+  138   138                      ; line    58
+  139   139                      $DGL    0,2
+  140   140 0000B  7100F000              set1    !PER0.0                                         ;[INF] 4, 2
+  141   141                      ; line    59
+  142   142                      $DGL    0,3
+  143   143 0000F  F6                    clrw    ax                                              ;[INF] 1, 1
+  144   144 00010  BFB601                movw    !TPS0,ax                                        ;[INF] 3, 1
+  145   145                      ; line    64
+  146   146                      $DGL    0,8
+  147   147 00013  30FF0A                movw    ax,#0AFFH       ; 2815                          ;[INF] 3, 1
+  148   148 00016  BFB401                movw    !TT0,ax                                         ;[INF] 3, 1
+  149   149                      ; line    66
+  150   150                      $DGL    0,10
+  151   151 00019  714AE6                set1    MK1L.4                                          ;[INF] 3, 2
+  152   152                      ; line    67
+  153   153                      $DGL    0,11
+  154   154 0001C  714BE2                clr1    IF1L.4                                          ;[INF] 3, 2
+  155   155                      ; line    69
+  156   156                      $DGL    0,13
+  157   157 0001F  715AE6                set1    MK1L.5                                          ;[INF] 3, 2
+  158   158                      ; line    70
+  159   159                      $DGL    0,14
+  160   160 00022  715BE2                clr1    IF1L.5                                          ;[INF] 3, 2
+  161   161                      ; line    72
+  162   162                      $DGL    0,16
+  163   163 00025  717AE5                set1    MK0H.7                                          ;[INF] 3, 2
+  164   164                      ; line    73
+  165   165                      $DGL    0,17
+  166   166 00028  717BE1                clr1    IF0H.7                                          ;[INF] 3, 2
+  167   167                      ; line    75
+  168   168                      $DGL    0,19
+  169   169 0002B  716AE6                set1    MK1L.6                                          ;[INF] 3, 2
+  170   170                      ; line    76
+  171   171                      $DGL    0,20
+  172   172 0002E  716BE2                clr1    IF1L.6                                          ;[INF] 3, 2
+  173   173                      ; line    78
+  174   174                      $DGL    0,22
+  175   175 00031  717AE6                set1    MK1L.7                                          ;[INF] 3, 2
+  176   176                      ; line    79
+  177   177                      $DGL    0,23
+  178   178 00034  717BE2                clr1    IF1L.7                                          ;[INF] 3, 2
+  179   179                      ; line    81
+  180   180                      $DGL    0,25
+  181   181 00037  712AE6                set1    MK1L.2                                          ;[INF] 3, 2
+  182   182                      ; line    82
+  183   183                      $DGL    0,26
+  184   184 0003A  712BE2                clr1    IF1L.2                                          ;[INF] 3, 2
+  185   185                      ; line    84
+  186   186                      $DGL    0,28
+  187   187 0003D  717AE7                set1    MK1H.7                                          ;[INF] 3, 2
+  188   188                      ; line    85
+  189   189                      $DGL    0,29
+  190   190 00040  717BE3                clr1    IF1H.7                                          ;[INF] 3, 2
+  191   191                      ; line    87
+  192   192                      $DGL    0,31
+  193   193 00043  710AD4                set1    MK2L.0                                          ;[INF] 3, 2
+  194   194                      ; line    88
+  195   195                      $DGL    0,32
+  196   196 00046  710BD0                clr1    IF2L.0                                          ;[INF] 3, 2
+  197   197                      ; line    90
+  198   198                      $DGL    0,34
+  199   199 00049  711AD4                set1    MK2L.1                                          ;[INF] 3, 2
+  200   200                      ; line    91
+  201   201                      $DGL    0,35
+  202   202 0004C  711BD0                clr1    IF2L.1                                          ;[INF] 3, 2
+  203   203                      ; line    93
+  204   204                      $DGL    0,37
+  205   205 0004F  712AD4                set1    MK2L.2                                          ;[INF] 3, 2
+  206   206                      ; line    94
+  207   207                      $DGL    0,38
+  208   208 00052  712BD0                clr1    IF2L.2                                          ;[INF] 3, 2
+  209   209                      ; line    97
+  210   210                      $DGL    0,41
+  211   211 00055  E6                    onew    ax                                              ;[INF] 1, 1
+  212   212 00056  BF9001                movw    !TMR00,ax                                       ;[INF] 3, 1
+  213   213                      ; line    98
+  214   214                      $DGL    0,42
+  215   215 00059  C918CF07              movw    TDR00,#07CFH    ; 1999                          ;[INF] 4, 1
+  216   216                      ; line    99
+  217   217                      $DGL    0,43
+  218   218 0005D  AFBE01                movw    ax,!TOM0                                        ;[INF] 3, 1
+  219   219 00060  08                    xch     a,x                                             ;[INF] 1, 1
+  220   220 00061  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  221   221 00063  08                    xch     a,x                                             ;[INF] 1, 1
+  222   222 00064  BFBE01                movw    !TOM0,ax                                        ;[INF] 3, 1
+  223   223                      ; line   100
+  224   224                      $DGL    0,44
+  225   225 00067  AFBC01                movw    ax,!TOL0                                        ;[INF] 3, 1
+  226   226 0006A  08                    xch     a,x                                             ;[INF] 1, 1
+  227   227 0006B  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  228   228 0006D  08                    xch     a,x                                             ;[INF] 1, 1
+  229   229 0006E  BFBC01                movw    !TOL0,ax                                        ;[INF] 3, 1
+  230   230                      ; line   101
+  231   231                      $DGL    0,45
+  232   232 00071  AFB801                movw    ax,!TO0                                         ;[INF] 3, 1
+  233   233 00074  08                    xch     a,x                                             ;[INF] 1, 1
+  234   234 00075  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  235   235 00077  08                    xch     a,x                                             ;[INF] 1, 1
+  236   236 00078  BFB801                movw    !TO0,ax                                         ;[INF] 3, 1
+  237   237                      ; line   102
+  238   238                      $DGL    0,46
+  239   239 0007B  AFBA01                movw    ax,!TOE0                                        ;[INF] 3, 1
+  240   240 0007E  08                    xch     a,x                                             ;[INF] 1, 1
+  241   241 0007F  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  242   242 00081  08                    xch     a,x                                             ;[INF] 1, 1
+  243   243 00082  BFBA01                movw    !TOE0,ax                                        ;[INF] 3, 1
+  244   244                      ; line   105
+  245   245                      $DGL    0,49
+  246   246 00085  300904                movw    ax,#0409H       ; 1033                          ;[INF] 3, 1
+  247   247 00088  BF9E01                movw    !TMR07,ax                                       ;[INF] 3, 1
+  248   248                      ; line   106
+  249   249                      $DGL    0,50
+  250   250 0008B  CB6EE803              movw    TDR07,#03E8H    ; 1000                          ;[INF] 4, 1
+  251   251                      ; line   107
+  252   252                      $DGL    0,51
+  253   253 0008F  AFBE01                movw    ax,!TOM0                                        ;[INF] 3, 1
+  254   254 00092  08                    xch     a,x                                             ;[INF] 1, 1
+  255   255 00093  6C80                  or      a,#080H ; 128                                   ;[INF] 2, 1
+  256   256 00095  08                    xch     a,x                                             ;[INF] 1, 1
+  257   257 00096  BFBE01                movw    !TOM0,ax                                        ;[INF] 3, 1
+  258   258                      ; line   108
+  259   259                      $DGL    0,52
+  260   260 00099  AFBC01                movw    ax,!TOL0                                        ;[INF] 3, 1
+  261   261 0009C  08                    xch     a,x                                             ;[INF] 1, 1
+  262   262 0009D  5C7F                  and     a,#07FH ; 127                                   ;[INF] 2, 1
+  263   263 0009F  08                    xch     a,x                                             ;[INF] 1, 1
+  264   264 000A0  BFBC01                movw    !TOL0,ax                                        ;[INF] 3, 1
+  265   265                      ; line   109
+  266   266                      $DGL    0,53
+  267   267 000A3  AFB801                movw    ax,!TO0                                         ;[INF] 3, 1
+  268   268 000A6  08                    xch     a,x                                             ;[INF] 1, 1
+  269   269 000A7  5C7F                  and     a,#07FH ; 127                                   ;[INF] 2, 1
+  270   270 000A9  08                    xch     a,x                                             ;[INF] 1, 1
+  271   271 000AA  BFB801                movw    !TO0,ax                                         ;[INF] 3, 1
+  272   272                      ; line   110
+  273   273                      $DGL    0,54
+  274   274 000AD  FE50FF                call    $!bs_S0007                                      ;[INF] 3, 3
+  275   275                      ; line   112
+  276   276                      $DGL    0,56
+  277   277 000B0  8F5100                mov     a,!POM1                                         ;[INF] 3, 1
+  278   278 000B3  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  279   279 000B5  9F5100                mov     !POM1,a                                         ;[INF] 3, 1
+  280   280                      ; line   113
+  281   281                      $DGL    0,57
+  282   282 000B8  5A01FE                and     P1,#0FEH        ; 254                           ;[INF] 3, 2
+  283   283                      ; line   114
+  284   284                      $DGL    0,58
+  285   285 000BB  8E21                  mov     a,PM1                                           ;[INF] 2, 1
+  286   286 000BD  5CFE                  and     a,#0FEH ; 254                                   ;[INF] 2, 1
+  287   287 000BF  9E21                  mov     PM1,a                                           ;[INF] 2, 1
+  288   288                      ; line   115
+  289   289                      $DGL    0,59
+  290   290 000C1                ??ef_R_TAU0_Create:
+  291   291 000C1  D7                    ret                                                     ;[INF] 1, 6
+  292   292 000C2                ??ee_R_TAU0_Create:
+  293   293                      ; line   123
+  294   294 000C2                _R_TAU0_Channel0_Start:
+  295   295                      $DGL    1,27
+  296   296 000C2                ??bf_R_TAU0_Channel0_Start:
+  297   297                      ; line   124
+  298   298                      $DGL    0,2
+  299   299 000C2  FE3BFF                call    $!bs_S0007                                      ;[INF] 3, 3
+  300   300                      ; line   125
+  301   301                      $DGL    0,3
+  302   302 000C5  AFB201                movw    ax,!TS0                                         ;[INF] 3, 1
+  303   303 000C8  08                    xch     a,x                                             ;[INF] 1, 1
+  304   304 000C9  6C81                  or      a,#081H ; 129                                   ;[INF] 2, 1
+  305   305 000CB  08                    xch     a,x                                             ;[INF] 1, 1
+  306   306 000CC  BFB201                movw    !TS0,ax                                         ;[INF] 3, 1
+  307   307                      ; line   126
+  308   308                      $DGL    0,4
+  309   309 000CF                ??ef_R_TAU0_Channel0_Start:
+  310   310 000CF  D7                    ret                                                     ;[INF] 1, 6
+  311   311 000D0                ??ee_R_TAU0_Channel0_Start:
+  312   312                      ; line   134
+  313   313 000D0                _R_TAU0_Channel0_Stop:
+  314   314                      $DGL    1,33
+  315   315 000D0                ??bf_R_TAU0_Channel0_Stop:
+  316   316                      ; line   135
+  317   317                      $DGL    0,2
+  318   318 000D0  AFB401                movw    ax,!TT0                                         ;[INF] 3, 1
+  319   319 000D3  08                    xch     a,x                                             ;[INF] 1, 1
+  320   320 000D4  6C81                  or      a,#081H ; 129                                   ;[INF] 2, 1
+  321   321 000D6  08                    xch     a,x                                             ;[INF] 1, 1
+  322   322 000D7  BFB401                movw    !TT0,ax                                         ;[INF] 3, 1
+  323   323                      ; line   136
+  324   324                      $DGL    0,3
+  325   325 000DA  AFBA01                movw    ax,!TOE0                                        ;[INF] 3, 1
+  326   326 000DD  08                    xch     a,x                                             ;[INF] 1, 1
+  327   327 000DE  5C7F                  and     a,#07FH ; 127                                   ;[INF] 2, 1
+  328   328 000E0  08                    xch     a,x                                             ;[INF] 1, 1
+  329   329 000E1  BFBA01                movw    !TOE0,ax                                        ;[INF] 3, 1
+  330   330                      ; line   137
+  331   331                      $DGL    0,4
+  332   332 000E4  F6                    clrw    ax                                              ;[INF] 1, 1
+  333   333 000E5  BFB801                movw    !TO0,ax                                         ;[INF] 3, 1
+  334   334                      ; line   138
+  335   335                      $DGL    0,5
+  336   336 000E8                ??ef_R_TAU0_Channel0_Stop:
+  337   337 000E8  D7                    ret                                                     ;[INF] 1, 6
+  338   338 000E9                ??ee_R_TAU0_Channel0_Stop:
+  339   339                      
+  340   340 -----                @@CODE  CSEG    BASE
+  341   341                      
+  342   342 -----                @@BASE  CSEG    BASE
+  343   343                              END
+  344   344                      
+  345   345                      
+  346   346                      ; *** Code Information ***
+  347   347                      ;
+  348   348                      ; $FILE C:\Users\K98David\Documents\¤u§@°Ï\Renesas1.21SDK-Eddystone\Renesas\BLE
+  349   349                      ;       _Software_Ver_1_21\RL78_G1D\Project_Source\rBLE\src\sample_app\r_cg_tau
+  350   350                      ;       .c
+  351   351                      ;
+  352   352                      ; $FUNC R_TAU0_Create(57)
+  353   353                      ;       void=(void)
+  354   354                      ;       CODE SIZE= 183 bytes, CLOCK_SIZE= 115 clocks, STACK_SIZE= 4 bytes
+  355   355                      ;
+  356   356                      ; $FUNC R_TAU0_Channel0_Start(123)
+  357   357                      ;       void=(void)
+  358   358                      ;       CODE SIZE= 14 bytes, CLOCK_SIZE= 25 clocks, STACK_SIZE= 4 bytes
+  359   359                      ;
+  360   360                      ; $FUNC R_TAU0_Channel0_Stop(134)
+  361   361                      ;       void=(void)
+  362   362                      ;       CODE SIZE= 25 bytes, CLOCK_SIZE= 18 clocks, STACK_SIZE= 0 bytes
+  363   363                      
+  364   364                      ; Target chip : R5F11AGJ
+  365   365                      ; Device file : V1.20 
+
+Segment informations:
+
+ADRS  LEN      NAME
+
+00000 00000H.0 @@BITS
+00000 00000H   @@CNST
+00000 00000H   @@R_INIT
+00000 00000H   @@INIT
+00000 00000H   @@DATA
+00000 00000H   @@R_INIS
+00000 00000H   @@INIS
+00000 00000H   @@DATS
+00000 00000H   @@CNSTL
+00000 00000H   @@RLINIT
+00000 00000H   @@INITL
+00000 00000H   @@DATAL
+00000 00000H   @@CALT
+00000 000E9H   @@CODEL
+00000 00000H   @@CODE
+00000 00000H   @@BASE
+
+ Target chip : R5F11AGJ
+ Device file : V1.20
+Assembly complete,     0 error(s) and     0 warning(s) found. (    0)
+

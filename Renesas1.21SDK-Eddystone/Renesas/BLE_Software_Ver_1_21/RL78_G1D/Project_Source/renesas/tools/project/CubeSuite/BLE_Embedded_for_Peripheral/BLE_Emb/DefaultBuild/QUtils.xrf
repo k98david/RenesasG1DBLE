@@ -1,0 +1,1352 @@
+
+
+
+78K0R C Compiler V2.72 Cross reference List                                                               Date:13 Mar 2018 Page:   1
+
+Command   : -cf11agj -yC:\Program Files (x86)\Renesas Electronics\CS+\CACX\Device\RL78\Devicefile ..\..\..\..\..\..\rBLE\src\sample_
+            app\QUtils.c -oDefaultBuild -_msgoff -qwvjl3 -dCFG_FULLEMB,CFG_CON=1,CFG_EXMEM_NOT_PRESENT,CFG_BLECORE_10,CFG_PROFEMB,CF
+            G_SECURITY_ON,CFG_RBLE,CFG_USE_EEL,CFG_FW_NAK,CONFIG_EMBEDDED,_USE_REL_RL78,CFG_SAMPLE,USE_SAMPLE_PROFILE,noCFG_USE_PEAK
+            ,noUSE_FW_UPDATE_PROFILE,CLK_HOCO_8MHZ,CLK_SUB_XT1,noCFG_PKTMON,CFG_SECLIB_BOND_NUM=4,USE_SECLIB -i..\..\..\..\..\..\rBL
+            E\src\sample_profile\sam -i..\..\..\..\..\src\driver\serial -i..\..\..\..\..\src\driver\wakeup -i..\..\..\..\..\src\driv
+            er\dataflash\cs -i..\..\..\..\..\src\driver\dataflash -i..\..\..\..\..\src\driver\DTM2Wire -i..\..\..\..\..\src -i..\..\
+            ..\..\..\src\compiler -i..\..\..\..\..\src\arch\rl78 -i..\..\..\..\..\src\arch\rl78\ll -i..\..\..\..\..\src\driver\led -
+            i..\..\..\..\..\src\driver\led_onoff -i..\..\..\..\..\src\driver\plf -i..\..\..\..\..\src\driver\port -i..\..\..\..\..\s
+            rc\driver\rf -i..\..\..\..\..\src\driver\uart -i..\..\..\..\..\src\driver\push_sw -i..\..\..\..\..\src\driver\push_state
+             -i..\..\..\..\..\src\driver\pktmon -i..\..\..\..\..\..\bleip\src\common -i..\..\..\..\..\..\bleip\src\rwble -i.\ -i..\.
+            .\..\..\..\..\rble\src\include -i..\..\..\..\..\..\rBLE\src\sample_app -i..\..\..\..\..\..\rBLE\src\sample_app\seclib -i
+            ..\..\..\..\..\..\rBLE\src\sample_profile -zps -mm -mi0 -aDefaultBuild -no -rc -xDefaultBuild -g2
+In-file   : ..\..\..\..\..\..\rBLE\src\sample_app\QUtils.c
+Xref-file : DefaultBuild\QUtils.xrf
+Para-file : 
+Inc-file  : [ 1] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [ 2] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdarg.h
+            [ 3] ..\..\..\..\..\src\compiler\compiler.h
+            [ 4] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\string.h
+            [ 5] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stdlib.h
+            [ 6] ..\..\..\..\..\src\arch\rl78\ll\ll.h
+            [ 7] ..\..\..\..\..\src\arch\rl78\arch.h
+            [ 8] ..\..\..\..\..\src\arch\rl78\db_handle.h
+            [ 9] ..\..\..\..\..\src\arch\rl78\rwke_api.h
+            [10] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\limits.h
+            [11] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [12] C:\Program Files (x86)\Renesas Electronics\CS+\CACX\CA78K0R\V1.72\Bin\..\inc78k0r\stddef.h
+            [13] ..\..\..\..\..\..\bleip\src\rwble\rwble_config.h
+            [14] ..\..\..\..\..\src\arch\rl78\config.h
+            [15] ..\..\..\..\..\src\compiler\compiler.h
+            [16] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+            [17] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+            [18] ..\..\..\..\..\src\arch\rl78\prf_sel.h
+
+ATTRIB MODIFY TYPE    SYMBOL          DEFINE   REFERENCE
+
+EXTYP         int     ptrdiff_t          13: 1
+EXTYP         uint    size_t             14: 1
+EXTYP         pointer va_list            13: 2
+EXTYP         pointer va_list_n          14: 2
+EXTYP         pointer va_list_f          15: 2
+EXTYP         char    int8_t             74: 3
+EXTYP         short   int16_t            75: 3
+EXTYP         uchar   uint8_t            76: 3
+EXTYP         ushort  uint16_t           77: 3
+EXTYP         long    int32_t            79: 3
+EXTYP         ulong   uint32_t           80: 3
+EXTYP         ulong   uintptr_t          84: 3
+EXTYP         uchar   _Bool              85: 3
+EXTERN FAR    func    memcpy                      16: 4
+EXTERN FAR    func    memmove                     18: 4
+EXTERN FAR    func    strcpy                      19: 4
+EXTERN FAR    func    strncpy                     20: 4
+EXTERN FAR    func    strcat                      21: 4
+EXTERN FAR    func    strncat                     22: 4
+EXTERN FAR    func    memcmp                      23: 4
+EXTERN FAR    func    strcmp                      24: 4
+EXTERN FAR    func    strncmp                     25: 4
+EXTERN FAR    func    memchr                      26: 4
+EXTERN FAR    func    strchr                      27: 4
+EXTERN FAR    func    strcspn                     28: 4
+EXTERN FAR    func    strpbrk                     29: 4
+EXTERN FAR    func    strrchr                     30: 4
+EXTERN FAR    func    strspn                      31: 4
+EXTERN FAR    func    strstr                      32: 4
+EXTERN FAR    func    strtok                      33: 4
+EXTERN FAR    func    memset                      35: 4
+EXTERN FAR    func    strerror                    37: 4
+EXTERN FAR    func    strlen                      38: 4
+EXTERN FAR    func    strcoll                     39: 4
+EXTERN FAR    func    strxfrm                     40: 4
+EXTERN FAR    func    memcpy_n                    43: 4
+EXTERN FAR    func    memmove_n                   45: 4
+EXTERN FAR    func    strcpy_n                    46: 4
+EXTERN FAR    func    strncpy_n                   47: 4
+EXTERN FAR    func    strcat_n                    48: 4
+EXTERN FAR    func    strncat_n                   49: 4
+EXTERN FAR    func    memcmp_n                    50: 4
+EXTERN FAR    func    strcmp_n                    51: 4
+EXTERN FAR    func    strncmp_n                   52: 4
+EXTERN FAR    func    memchr_n                    53: 4
+EXTERN FAR    func    strchr_n                    54: 4
+EXTERN FAR    func    strcspn_n                   55: 4
+EXTERN FAR    func    strpbrk_n                   56: 4
+EXTERN FAR    func    strrchr_n                   57: 4
+EXTERN FAR    func    strspn_n                    58: 4
+EXTERN FAR    func    strstr_n                    59: 4
+EXTERN FAR    func    strtok_n                    60: 4
+EXTERN FAR    func    memset_n                    62: 4
+EXTERN FAR    func    strlen_n                    64: 4
+EXTERN FAR    func    strcoll_n                   65: 4
+EXTERN FAR    func    strxfrm_n                   66: 4
+EXTERN FAR    func    memcpy_f                    69: 4
+EXTERN FAR    func    memmove_f                   71: 4
+EXTERN FAR    func    strcpy_f                    72: 4
+EXTERN FAR    func    strncpy_f                   73: 4
+EXTERN FAR    func    strcat_f                    74: 4
+EXTERN FAR    func    strncat_f                   75: 4
+EXTERN FAR    func    memcmp_f                    76: 4
+EXTERN FAR    func    strcmp_f                    77: 4
+EXTERN FAR    func    strncmp_f                   78: 4
+EXTERN FAR    func    memchr_f                    79: 4
+EXTERN FAR    func    strchr_f                    80: 4
+EXTERN FAR    func    strcspn_f                   81: 4
+EXTERN FAR    func    strpbrk_f                   82: 4
+EXTERN FAR    func    strrchr_f                   83: 4
+EXTERN FAR    func    strspn_f                    84: 4
+EXTERN FAR    func    strstr_f                    85: 4
+EXTERN FAR    func    strtok_f                    86: 4
+EXTERN FAR    func    memset_f                    88: 4
+EXTERN FAR    func    strlen_f                    90: 4
+EXTERN FAR    func    strcoll_f                   91: 4
+EXTERN FAR    func    strxfrm_f                   92: 4
+MEMBER        int     quot               18: 5
+MEMBER        int     rem                19: 5
+EXTYP         struct  div_t              20: 5
+MEMBER        long    quot               23: 5
+MEMBER        long    rem                24: 5
+EXTYP         struct  ldiv_t             25: 5
+EXTERN FAR    func    atoi                        29: 5
+EXTERN FAR    func    atol                        30: 5
+EXTERN FAR    func    strtol                      31: 5
+EXTERN FAR    func    strtoul                     32: 5
+EXTERN FAR    func    calloc                      33: 5
+EXTERN FAR    func    free                        34: 5
+EXTERN FAR    func    malloc                      35: 5
+EXTERN FAR    func    realloc                     36: 5
+EXTERN FAR    func    abort                       37: 5
+EXTERN FAR    func    atexit                      38: 5
+EXTERN FAR    func    exit                        39: 5
+EXTERN FAR    func    abs                         40: 5
+EXTERN FAR    func    div                         41: 5
+EXTERN FAR    func    labs                        42: 5
+EXTERN FAR    func    ldiv                        43: 5
+EXTERN FAR    func    brk                         45: 5
+EXTERN FAR    func    sbrk                        46: 5
+EXTERN FAR    func    atof                        51: 5
+EXTERN FAR    func    strtod                      52: 5
+EXTERN FAR    func    itoa                        54: 5
+EXTERN FAR    func    ltoa                        59: 5
+EXTERN FAR    func    ultoa                       60: 5
+EXTERN FAR    func    rand                        65: 5
+EXTERN FAR    func    srand                       66: 5
+EXTERN FAR    func    bsearch                     67: 5
+EXTERN FAR    func    qsort                       68: 5
+EXTERN FAR    func    atoi_n                      70: 5
+EXTERN FAR    func    atol_n                      71: 5
+EXTERN FAR    func    strtol_n                    72: 5
+EXTERN FAR    func    strtoul_n                   73: 5
+EXTERN FAR    func    atexit_n                    74: 5
+EXTERN FAR    func    atof_n                      75: 5
+EXTERN FAR    func    strtod_n                    76: 5
+EXTERN FAR    func    itoa_n                      78: 5
+EXTERN FAR    func    ltoa_n                      83: 5
+EXTERN FAR    func    ultoa_n                     84: 5
+EXTERN FAR    func    bsearch_n                   89: 5
+EXTERN FAR    func    qsort_n                     90: 5
+EXTERN FAR    func    atoi_f                      92: 5
+EXTERN FAR    func    atol_f                      93: 5
+EXTERN FAR    func    strtol_f                    94: 5
+EXTERN FAR    func    strtoul_f                   95: 5
+EXTERN FAR    func    atexit_f                    96: 5
+EXTERN FAR    func    atof_f                      97: 5
+EXTERN FAR    func    strtod_f                    98: 5
+EXTERN FAR    func    itoa_f                     100: 5
+EXTERN FAR    func    ltoa_f                     105: 5
+EXTERN FAR    func    ultoa_f                    106: 5
+EXTERN FAR    func    bsearch_f                  111: 5
+EXTERN FAR    func    qsort_f                    112: 5
+EXTYP         char    char_t             95: 3
+EXTYP         ulong   uintcodeptr_t     220: 3
+EXTYP         ulong   uintdataptr_t     221: 3
+EXTYP         uchar   __istate_t         22: 6
+EXTERN FAR    func    __get_interrupt_state
+                                                  23: 6
+EXTERN FAR    func    assert_err                  67: 7
+EXTERN FAR    func    assert_warn                 68: 7
+EXTERN FAR    func    platform_reset             125: 7
+MEMBER NEAR   int     GAP_HDL_PRIM_SVC
+                                         32: 8
+MEMBER NEAR   int     GAP_HDL_CHAR_DEVNAME
+                                         33: 8
+MEMBER NEAR   int     GAP_HDL_DEVNAME    34: 8
+MEMBER NEAR   int     GAP_HDL_CHAR_ICON
+                                         35: 8
+MEMBER NEAR   int     GAP_HDL_ICON       36: 8
+MEMBER NEAR   int     GAP_HDL_CHAR_SLAVE_PREF_PARAM
+                                         37: 8
+MEMBER NEAR   int     GAP_HDL_SLAVE_PREF_PARAM
+                                         38: 8
+MEMBER NEAR   int     GATT_HDL_PRIM_SVC
+                                         41: 8
+MEMBER NEAR   int     GATT_HDL_CHAR_SVC_CHANGED
+                                         42: 8
+MEMBER NEAR   int     GATT_HDL_SVC_CHANGED
+                                         43: 8
+MEMBER NEAR   int     GATT_HDL_SVC_CHANGED_IND_CFG
+                                         44: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_SVC_BEACON_SERVICE
+                                         48: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_CHAR
+                                         49: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_VAL
+                                         50: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_UID_DESC
+                                         51: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_CHAR
+                                         52: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_VAL
+                                         53: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_UID_DESC
+                                         54: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_CHAR
+                                         55: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_VAL
+                                         56: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_UID_DESC
+                                         57: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_CHAR
+                                         59: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_VAL
+                                         60: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_N_URL_DESC
+                                         61: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_CHAR
+                                         62: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_VAL
+                                         63: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_L_URL_DESC
+                                         64: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_CHAR
+                                         65: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_VAL
+                                         66: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_R_URL_DESC
+                                         67: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_CHAR
+                                         69: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_VAL
+                                         70: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set1_DESC
+                                         71: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_CHAR
+                                         72: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_VAL
+                                         73: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set2_DESC
+                                         74: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_CHAR
+                                         75: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_VAL
+                                         76: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set3_DESC
+                                         77: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_CHAR
+                                         78: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_VAL
+                                         79: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_Set4_DESC
+                                         80: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_CHAR
+                                         83: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_VAL
+                                         84: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_BS_CMD_DESC
+                                         85: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_SVC_DEVICE_INFORMATION
+                                         87: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MANUFACTURER_NAME_STRING_CHAR
+                                         88: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MANUFACTURER_NAME_STRING_VAL
+                                         89: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MODEL_NUMBER_STRING_CHAR
+                                         90: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_MODEL_NUMBER_STRING_VAL
+                                         91: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SERIAL_NUMBER_STRING_CHAR
+                                         92: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SERIAL_NUMBER_STRING_VAL
+                                         93: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_HARDWARE_REVISION_STRING_CHAR
+                                         94: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_HARDWARE_REVISION_STRING_VAL
+                                         95: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_FIRMWARE_REVISION_STRING_CHAR
+                                         96: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_FIRMWARE_REVISION_STRING_VAL
+                                         97: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SOFTWARE_REVISION_STRING_CHAR
+                                         98: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SOFTWARE_REVISION_STRING_VAL
+                                         99: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SYSTEM_ID_CHAR
+                                        100: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_SYSTEM_ID_VAL
+                                        101: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_IEEE_11073_20601_REGULATORY_CERTIFICATION_DATA_LIST_CHAR
+                                        102: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_IEEE_11073_20601_REGULATORY_CERTIFICATION_DATA_LIST_VAL
+                                        103: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_PNP_ID_CHAR
+                                        104: 8
+MEMBER NEAR   int     NEW_PROFILE_HDL_DI_PNP_ID_VAL
+                                        105: 8
+MEMBER NEAR   int     DB_HDL_MAX        110: 8
+EXTERN FAR    func    co_bswap32                 124: 9
+EXTERN CALLT  func    co_bswap16                 125: 9
+EXTERN FAR    func    co_clz                     150: 9
+EXTERN FAR    func    co_random_init             151: 9
+EXTERN FAR    func    co_rand_byte               152: 9
+EXTERN FAR    func    co_rand_hword              153: 9
+EXTERN FAR    func    co_rand_word               154: 9
+EXTERN FAR    func    co_min                     155: 9
+EXTERN FAR    func    co_max                     156: 9
+EXTERN FAR    func    co_abs                     157: 9
+EXTERN FAR    func    co_read32                  167: 9
+EXTERN FAR    func    co_read16                  168: 9
+EXTERN FAR    func    co_write32                 169: 9
+EXTERN FAR    func    co_write16                 170: 9
+EXTERN FAR    func    co_write8                  171: 9
+EXTERN FAR    func    co_read32p                 172: 9
+EXTERN CALLT  func    co_read16p                 173: 9
+EXTERN FAR    func    co_write32p                174: 9
+EXTERN FAR    func    co_write16p                175: 9
+TAG           struct  co_list_hdr       183: 9
+MEMBER        pointer next              184: 9
+TAG           struct  co_list           188: 9
+MEMBER        pointer first             189: 9
+MEMBER        pointer last              190: 9
+EXTERN FAR    func    co_list_is_empty
+                                                 197: 9
+EXTERN FAR    func    co_list_pick               198: 9
+EXTERN FAR    func    co_list_next               199: 9
+EXTYP         ulong   evt_field_t       213: 9
+EXTYP         pointer evt_ptr_t         214: 9
+EXTYP         ushort  ke_state_t        215: 9
+EXTYP         ushort  ke_task_id_t      216: 9
+EXTYP         ushort  ke_msg_id_t       217: 9
+EXTYP         pointer ke_msg_func_t     218: 9
+EXTYP         ushort  ke_time_t         219: 9
+TAG           struct  mblock_used       228: 9
+MEMBER        uint    size              229: 9
+TAG           struct  mblock_free       232: 9
+MEMBER        pointer next              233: 9
+MEMBER        uint    size              234: 9
+EXTERN NEAR   pointer ke_mem_heap                237: 9
+EXTERN NEAR   pointer ke_mem_heap_end            238: 9
+TAG           struct  block_free        239: 9
+EXTERN FAR    func    ke_mem_init                239: 9
+EXTERN CALLT  func    ke_malloc                  240: 9
+EXTERN FAR    func    ke_free                    241: 9
+TAG           struct  ke_env_tag        246: 9
+MEMBER VLT    ulong   evt_field         247: 9
+MEMBER        struct  queue_send        248: 9
+MEMBER        struct  queue_saved       249: 9
+MEMBER        struct  queue_timer       250: 9
+MEMBER        pointer mblock_first      251: 9
+MEMBER        ulong   heap_used         256: 9
+MEMBER        uchar   nak_req           257: 9
+EXTERN NEAR   struct  ke_env                     260: 9
+EXTERN FAR    func    ke_evt_get                 264: 9
+EXTERN FAR    func    ke_evt_set                 265: 9
+EXTERN FAR    func    ke_evt_clear               266: 9
+EXTERN FAR    func    ke_evt_init                267: 9
+EXTERN FAR    func    ke_evt_flush               268: 9
+EXTERN FAR    func    ke_evt_schedule            269: 9
+TAG           enum    ke_msg_status_tag
+                                        273: 9
+MEMBER NEAR   int     KE_MSG_CONSUMED   274: 9
+MEMBER NEAR   int     KE_MSG_NO_FREE    275: 9
+MEMBER NEAR   int     KE_MSG_SAVED      277: 9
+TAG           struct  ke_msg            279: 9
+MEMBER        struct  hdr               280: 9
+MEMBER        uchar   hci_type          282: 9
+MEMBER        char    hci_off           283: 9
+MEMBER        ushort  hci_len           284: 9
+MEMBER        ushort  id                286: 9
+MEMBER        ushort  dest_id           287: 9
+MEMBER        ushort  src_id            288: 9
+MEMBER        ushort  param_len         289: 9
+MEMBER        array   param             290: 9
+EXTERN FAR    func    ke_param2msg               292: 9
+EXTERN FAR    func    ke_msg2param               293: 9
+EXTERN CALLT  func    ke_msg_alloc               294: 9
+EXTERN CALLT  func    ke_msg_send                295: 9
+EXTERN CALLT  func    ke_msg_send_basic
+                                                 296: 9
+EXTERN FAR    func    ke_msg_forward             297: 9
+EXTERN FAR    func    ke_msg_free                298: 9
+TAG           struct  ke_msg_handler    309: 9
+MEMBER        ushort  id                310: 9
+MEMBER        pointer func              311: 9
+TAG           struct  ke_state_handler
+                                        314: 9
+MEMBER        pointer msg_table         315: 9
+MEMBER        ushort  msg_cnt           316: 9
+TAG           struct  ke_task_desc      321: 9
+MEMBER        pointer state_handler     322: 9
+MEMBER        pointer default_handler   323: 9
+MEMBER        pointer state             324: 9
+MEMBER CONST  ushort  state_max         325: 9
+MEMBER CONST  ushort  idx_max           326: 9
+EXTERN FAR    func    ke_task_local              328: 9
+EXTERN FAR    func    ke_state_get               329: 9
+EXTERN FAR    func    ke_state_set               330: 9
+EXTERN FAR    func    ke_task_schedule
+                                                 331: 9
+TAG           struct  ke_timer          344: 9
+MEMBER        pointer next              345: 9
+MEMBER        ushort  id                346: 9
+MEMBER        ushort  task              347: 9
+MEMBER        ushort  time              348: 9
+EXTERN FAR    func    ke_time                    350: 9
+EXTERN FAR    func    ke_time_cmp                352: 9
+EXTERN FAR    func    ke_time_past               353: 9
+EXTERN FAR    func    ke_timer_set               354: 9
+EXTERN FAR    func    ke_timer_clear             355: 9
+EXTERN FAR    func    ke_timer_schedule
+                                                 356: 9
+MEMBER NEAR   int     TASK_NONE         371: 9
+MEMBER NEAR   int     TASK_LLM          373: 9
+MEMBER NEAR   int     TASK_LLC          374: 9
+MEMBER NEAR   int     TASK_LLD          375: 9
+MEMBER NEAR   int     TASK_DBG          376: 9
+MEMBER NEAR   int     TASK_L2CM         378: 9
+MEMBER NEAR   int     TASK_L2CC         379: 9
+MEMBER NEAR   int     TASK_SMPM         380: 9
+MEMBER NEAR   int     TASK_SMPC         381: 9
+MEMBER NEAR   int     TASK_ATTM         382: 9
+MEMBER NEAR   int     TASK_ATTC         383: 9
+MEMBER NEAR   int     TASK_ATTS         384: 9
+MEMBER NEAR   int     TASK_SVC          385: 9
+MEMBER NEAR   int     TASK_GATT         386: 9
+MEMBER NEAR   int     TASK_GAP          387: 9
+MEMBER NEAR   int     TASK_USR_0        390: 9
+MEMBER NEAR   int     TASK_USR_1        391: 9
+MEMBER NEAR   int     TASK_RBLE         392: 9   394: 9
+MEMBER NEAR   int     TASK_APP          394: 9
+MEMBER NEAR   int     TASK_CON_APPL     398: 9
+MEMBER NEAR   int     TASK_MAX          498: 9   499: 9
+MEMBER NEAR   int     TASK_LAST_EMB     499: 9
+MEMBER NEAR   int     LLM_IDLE          505: 9
+MEMBER NEAR   int     LLM_ADVERTISING   506: 9
+MEMBER NEAR   int     LLM_SCANNING      507: 9
+MEMBER NEAR   int     LLM_INITIATING    508: 9
+MEMBER NEAR   int     LLM_STOPPING      509: 9
+MEMBER NEAR   int     LLM_TEST          510: 9
+MEMBER NEAR   int     LLM_STATE_MAX     512: 9   514: 9
+EXTERN NEAR   array   llm_state_handler
+       CONST                                     514: 9
+EXTERN NEAR   struct  llm_default_handler
+       CONST                                     515: 9
+EXTERN NEAR   array   llm_state                  516: 9
+MEMBER NEAR   int     LLC_FREE          521: 9
+MEMBER NEAR   int     LLC_CONNECTED     522: 9
+MEMBER NEAR   int     LLC_FEAT_WAIT_RSP
+                                        523: 9
+MEMBER NEAR   int     LLC_VERS_WAIT_IND
+                                        524: 9
+MEMBER NEAR   int     LLC_CON_UPD_WAIT_INSTANT
+                                        525: 9
+MEMBER NEAR   int     LLC_MAP_UPD_WAIT_INSTANT
+                                        526: 9
+MEMBER NEAR   int     LLC_TERM_WAIT_ACK
+                                        527: 9
+MEMBER NEAR   int     LLC_ENC_PAUSING_TRAFFIC
+                                        528: 9
+MEMBER NEAR   int     LLC_ENC_TRAFFIC_PAUSED
+                                        529: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_RSP
+                                        530: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_START_REQ
+                                        531: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_START_RSP
+                                        532: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_SK   533: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_LTK
+                                        534: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_PAUSE_RSP
+                                        535: 9
+MEMBER NEAR   int     LLC_ENC_PAUSED    536: 9
+MEMBER NEAR   int     LLC_ENC_WAIT_REQ
+                                        537: 9
+MEMBER NEAR   int     LLC_PAUSED        538: 9
+MEMBER NEAR   int     LLC_WAIT_SK       539: 9
+MEMBER NEAR   int     LLC_DISC          540: 9
+MEMBER NEAR   int     LLC_STOPPING      541: 9
+MEMBER NEAR   int     LLCP_WAIT_ACK     542: 9
+MEMBER NEAR   int     LLC_STATE_MAX     544: 9   546: 9
+EXTERN NEAR   array   llc_state_handler
+       CONST                                     546: 9
+EXTERN NEAR   struct  llc_default_handler
+       CONST                                     547: 9
+EXTERN NEAR   array   llc_state                  548: 9
+MEMBER NEAR   int     DBG_IDLE          553: 9
+MEMBER NEAR   int     DBG_STATE_MAX     555: 9   557: 9
+EXTERN NEAR   array   dbg_state_handler
+       CONST                                     557: 9
+EXTERN NEAR   struct  dbg_default_handler
+       CONST                                     558: 9
+EXTERN NEAR   array   dbg_state                  559: 9
+MEMBER NEAR   int     L2CM_IDLE         564: 9
+MEMBER NEAR   int     L2CM_W4RESP       565: 9
+MEMBER NEAR   int     L2CM_BUSY         566: 9
+MEMBER NEAR   int     L2CM_STATE_MAX    568: 9   570: 9
+EXTERN NEAR   array   l2cm_state_handler
+       CONST                                     570: 9
+EXTERN NEAR   struct  l2cm_default_handler
+       CONST                                     571: 9
+EXTERN NEAR   array   l2cm_state                 572: 9
+MEMBER NEAR   int     L2CC_CONNECTED    577: 9
+MEMBER NEAR   int     L2CC_STATE_MAX    579: 9   581: 9
+EXTERN NEAR   array   l2cc_state_handler
+       CONST                                     581: 9
+EXTERN NEAR   struct  l2cc_default_handler
+       CONST                                     582: 9
+EXTERN NEAR   array   l2cc_state                 583: 9
+MEMBER NEAR   int     GAP_IDLE          588: 9
+MEMBER NEAR   int     GAP_DEV_SETUP     589: 9
+MEMBER NEAR   int     GAP_RAND_ADDR_SETUP
+                                        590: 9
+MEMBER NEAR   int     GAP_CONN_SETUP    591: 9
+MEMBER NEAR   int     GAP_ADV_SETUP     592: 9
+MEMBER NEAR   int     GAP_ADV           593: 9
+MEMBER NEAR   int     GAP_SCAN_SETUP    594: 9
+MEMBER NEAR   int     GAP_SCAN          595: 9
+MEMBER NEAR   int     GAP_SCONNECTED    596: 9
+MEMBER NEAR   int     GAP_MCONNECTED    597: 9
+MEMBER NEAR   int     GAP_STATE_MAX     599: 9   601: 9
+EXTERN NEAR   array   gap_state_handler
+       CONST                                     601: 9
+EXTERN NEAR   struct  gap_default_handler
+       CONST                                     602: 9
+EXTERN NEAR   array   gap_state                  603: 9
+MEMBER NEAR   int     GATT_IDLE         608: 9
+MEMBER NEAR   int     GATT_BUSY         609: 9
+MEMBER NEAR   int     GATT_STATE_MAX    611: 9   613: 9
+EXTERN NEAR   array   gatt_state_handler
+       CONST                                     613: 9
+EXTERN NEAR   struct  gatt_default_handler
+       CONST                                     614: 9
+EXTERN NEAR   array   gatt_state                 615: 9
+MEMBER NEAR   int     ATTC_CONNECTED    620: 9
+MEMBER NEAR   int     ATTC_DISC_SVC     621: 9
+MEMBER NEAR   int     ATTC_RELIABLE_WR
+                                        622: 9
+MEMBER NEAR   int     ATTC_BUSY         623: 9
+MEMBER NEAR   int     ATTC_FREE         624: 9
+MEMBER NEAR   int     ATTC_STATE_MAX    626: 9   628: 9
+EXTERN NEAR   array   attc_state_handler
+       CONST                                     628: 9
+EXTERN NEAR   struct  attc_default_handler
+       CONST                                     629: 9
+EXTERN NEAR   array   attc_state                 630: 9
+MEMBER NEAR   int     ATTM_IDLE         635: 9
+MEMBER NEAR   int     ATTM_STATE_MAX    637: 9   639: 9
+EXTERN NEAR   array   attm_state_handler
+       CONST                                     639: 9
+EXTERN NEAR   struct  attm_default_handler
+       CONST                                     640: 9
+EXTERN NEAR   array   attm_state                 641: 9
+MEMBER NEAR   int     ATTS_IDLE         646: 9
+MEMBER NEAR   int     ATTS_STATE_MAX    648: 9   650: 9
+EXTERN NEAR   array   atts_state_handler
+       CONST                                     650: 9
+EXTERN NEAR   struct  atts_default_handler
+       CONST                                     651: 9
+EXTERN NEAR   array   atts_state                 652: 9
+MEMBER NEAR   int     SVC_IDLE          657: 9
+MEMBER NEAR   int     SVC_STATE_MAX     659: 9   661: 9
+EXTERN NEAR   array   svc_state_handler
+       CONST                                     661: 9
+EXTERN NEAR   struct  svc_default_handler
+       CONST                                     662: 9
+EXTERN NEAR   array   svc_state                  663: 9
+MEMBER NEAR   int     SMPM_IDLE         668: 9
+MEMBER NEAR   int     SMPM_BUSY         669: 9
+MEMBER NEAR   int     SMPM_STATE_MAX    671: 9   673: 9
+EXTERN NEAR   array   smpm_state_handler
+       CONST                                     673: 9
+EXTERN NEAR   struct  smpm_default_handler
+       CONST                                     674: 9
+EXTERN NEAR   array   smpm_state                 675: 9
+MEMBER NEAR   int     SMPC_FREE         680: 9
+MEMBER NEAR   int     SMPC_IDLE         681: 9
+MEMBER NEAR   int     SMPC_PAIRING      682: 9
+MEMBER NEAR   int     SMPC_ENCRYPTING_STK
+                                        683: 9
+MEMBER NEAR   int     SMPC_TKDP         684: 9
+MEMBER NEAR   int     SMPC_ENCRYPTING_LTK
+                                        685: 9
+MEMBER NEAR   int     SMPC_DISC         686: 9
+MEMBER NEAR   int     SMPC_STATE_MAX    688: 9   690: 9
+EXTERN NEAR   array   smpc_state_handler
+       CONST                                     690: 9
+EXTERN NEAR   struct  smpc_default_handler
+       CONST                                     691: 9
+EXTERN NEAR   array   smpc_state                 692: 9
+MEMBER NEAR   int     PRF_STATE_IDLE    696: 9
+MEMBER NEAR   int     PRF_STATE_CONNECTED
+                                        697: 9   713: 9   721: 9   729: 9   745: 9   761: 9   769: 9   793: 9   817: 9   833: 9
+                                                 849: 9   865: 9   881: 9   897: 9   913: 9   929: 9   945: 9
+MEMBER NEAR   int     PRF_STATE_DISCOVERING
+                                        699: 9   705: 9   737: 9   753: 9   777: 9   785: 9   801: 9   809: 9   825: 9   841: 9
+                                                 857: 9   873: 9   889: 9   905: 9   921: 9   937: 9
+EXTERN NEAR   array   proxm_state_handler
+       CONST                                     705: 9
+EXTERN NEAR   struct  proxm_default_handler
+       CONST                                     706: 9
+EXTERN NEAR   array   proxm_state                707: 9
+EXTERN NEAR   array   proxr_state_handler
+       CONST                                     713: 9
+EXTERN NEAR   struct  proxr_default_handler
+       CONST                                     714: 9
+EXTERN NEAR   array   proxr_state                715: 9
+EXTERN NEAR   array   findl_state_handler
+       CONST                                     721: 9
+EXTERN NEAR   struct  findl_default_handler
+       CONST                                     722: 9
+EXTERN NEAR   array   findl_state                723: 9
+EXTERN NEAR   array   findt_state_handler
+       CONST                                     729: 9
+EXTERN NEAR   struct  findt_default_handler
+       CONST                                     730: 9
+EXTERN NEAR   array   findt_state                731: 9
+EXTERN NEAR   array   htpc_state_handler
+       CONST                                     737: 9
+EXTERN NEAR   struct  htpc_default_handler
+       CONST                                     738: 9
+EXTERN NEAR   array   htpc_state                 739: 9
+EXTERN NEAR   array   htpt_state_handler
+       CONST                                     745: 9
+EXTERN NEAR   struct  htpt_default_handler
+       CONST                                     746: 9
+EXTERN NEAR   array   htpt_state                 747: 9
+EXTERN NEAR   array   blpc_state_handler
+       CONST                                     753: 9
+EXTERN NEAR   struct  blpc_default_handler
+       CONST                                     754: 9
+EXTERN NEAR   array   blpc_state                 755: 9
+EXTERN NEAR   array   blps_state_handler
+       CONST                                     761: 9
+EXTERN NEAR   struct  blps_default_handler
+       CONST                                     762: 9
+EXTERN NEAR   array   blps_state                 763: 9
+EXTERN NEAR   array   hghd_state_handler
+       CONST                                     769: 9
+EXTERN NEAR   struct  hghd_default_handler
+       CONST                                     770: 9
+EXTERN NEAR   array   hghd_state                 771: 9
+EXTERN NEAR   array   hgbh_state_handler
+       CONST                                     777: 9
+EXTERN NEAR   struct  hgbh_default_handler
+       CONST                                     778: 9
+EXTERN NEAR   array   hgbh_state                 779: 9
+EXTERN NEAR   array   hgrh_state_handler
+       CONST                                     785: 9
+EXTERN NEAR   struct  hgrh_default_handler
+       CONST                                     786: 9
+EXTERN NEAR   array   hgrh_state                 787: 9
+EXTERN NEAR   array   scans_state_handler
+       CONST                                     793: 9
+EXTERN NEAR   struct  scans_default_handler
+       CONST                                     794: 9
+EXTERN NEAR   array   scans_state                795: 9
+EXTERN NEAR   array   scanc_state_handler
+       CONST                                     801: 9
+EXTERN NEAR   struct  scanc_default_handler
+       CONST                                     802: 9
+EXTERN NEAR   array   scanc_state                803: 9
+EXTERN NEAR   array   hrpc_state_handler
+       CONST                                     809: 9
+EXTERN NEAR   struct  hrpc_default_handler
+       CONST                                     810: 9
+EXTERN NEAR   array   hrpc_state                 811: 9
+EXTERN NEAR   array   hrps_state_handler
+       CONST                                     817: 9
+EXTERN NEAR   struct  hrps_default_handler
+       CONST                                     818: 9
+EXTERN NEAR   array   hrps_state                 819: 9
+EXTERN NEAR   array   cscpc_state_handler
+       CONST                                     825: 9
+EXTERN NEAR   struct  cscpc_default_handler
+       CONST                                     826: 9
+EXTERN NEAR   array   cscpc_state                827: 9
+EXTERN NEAR   array   cscps_state_handler
+       CONST                                     833: 9
+EXTERN NEAR   struct  cscps_default_handler
+       CONST                                     834: 9
+EXTERN NEAR   array   cscps_state                835: 9
+EXTERN NEAR   array   glpc_state_handler
+       CONST                                     841: 9
+EXTERN NEAR   struct  glpc_default_handler
+       CONST                                     842: 9
+EXTERN NEAR   array   glpc_state                 843: 9
+EXTERN NEAR   array   glps_state_handler
+       CONST                                     849: 9
+EXTERN NEAR   struct  glps_default_handler
+       CONST                                     850: 9
+EXTERN NEAR   array   glps_state                 851: 9
+EXTERN NEAR   array   cppc_state_handler
+       CONST                                     857: 9
+EXTERN NEAR   struct  cppc_default_handler
+       CONST                                     858: 9
+EXTERN NEAR   array   cppc_state                 859: 9
+EXTERN NEAR   array   cpps_state_handler
+       CONST                                     865: 9
+EXTERN NEAR   struct  cpps_default_handler
+       CONST                                     866: 9
+EXTERN NEAR   array   cpps_state                 867: 9
+EXTERN NEAR   array   tipc_state_handler
+       CONST                                     873: 9
+EXTERN NEAR   struct  tipc_default_handler
+       CONST                                     874: 9
+EXTERN NEAR   array   tipc_state                 875: 9
+EXTERN NEAR   array   tips_state_handler
+       CONST                                     881: 9
+EXTERN NEAR   struct  tips_default_handler
+       CONST                                     882: 9
+EXTERN NEAR   array   tips_state                 883: 9
+EXTERN NEAR   array   anpc_state_handler
+       CONST                                     889: 9
+EXTERN NEAR   struct  anpc_default_handler
+       CONST                                     890: 9
+EXTERN NEAR   array   anpc_state                 891: 9
+EXTERN NEAR   array   anps_state_handler
+       CONST                                     897: 9
+EXTERN NEAR   struct  anps_default_handler
+       CONST                                     898: 9
+EXTERN NEAR   array   anps_state                 899: 9
+EXTERN NEAR   array   lnpc_state_handler
+       CONST                                     905: 9
+EXTERN NEAR   struct  lnpc_default_handler
+       CONST                                     906: 9
+EXTERN NEAR   array   lnpc_state                 907: 9
+EXTERN NEAR   array   lnps_state_handler
+       CONST                                     913: 9
+EXTERN NEAR   struct  lnps_default_handler
+       CONST                                     914: 9
+EXTERN NEAR   array   lnps_state                 915: 9
+EXTERN NEAR   array   paspc_state_handler
+       CONST                                     921: 9
+EXTERN NEAR   struct  paspc_default_handler
+       CONST                                     922: 9
+EXTERN NEAR   array   paspc_state                923: 9
+EXTERN NEAR   array   pasps_state_handler
+       CONST                                     929: 9
+EXTERN NEAR   struct  pasps_default_handler
+       CONST                                     930: 9
+EXTERN NEAR   array   pasps_state                931: 9
+EXTERN NEAR   array   rscpc_state_handler
+       CONST                                     937: 9
+EXTERN NEAR   struct  rscpc_default_handler
+       CONST                                     938: 9
+EXTERN NEAR   array   rscpc_state                939: 9
+EXTERN NEAR   array   rscps_state_handler
+       CONST                                     945: 9
+EXTERN NEAR   struct  rscps_default_handler
+       CONST                                     946: 9
+EXTERN NEAR   array   rscps_state                947: 9
+MEMBER NEAR   int     ACCEL_IDLE        952: 9
+MEMBER NEAR   int     ACCEL_ACTIVE      953: 9
+MEMBER NEAR   int     ACCEL_STATE_MAX   955: 9   958: 9
+EXTERN NEAR   array   accel_state_handler
+       CONST                                     958: 9
+EXTERN NEAR   struct  accel_default_handler
+       CONST                                     959: 9
+EXTERN NEAR   array   accel_state                960: 9
+MEMBER NEAR   int     KE_EVT_EVENT_START
+                                        995: 9
+MEMBER NEAR   int     KE_EVT_RX         996: 9
+MEMBER NEAR   int     KE_EVT_EVENT_END
+                                        997: 9
+MEMBER NEAR   int     KE_EVT_HCI_TX_DONE
+                                       1000: 9
+MEMBER NEAR   int     KE_EVT_USR_0     1002: 9
+MEMBER NEAR   int     KE_EVT_USR_1     1003: 9
+MEMBER NEAR   int     KE_EVT_KE_TIMER  1004: 9
+MEMBER NEAR   int     KE_EVT_KE_MESSAGE
+                                       1005: 9
+MEMBER NEAR   int     KE_EVT_CRYPT     1007: 9
+MEMBER NEAR   int     KE_EVT_HCI_RX_DONE
+                                       1009: 9
+MEMBER NEAR   int     KE_EVT_USR_2     1010: 9
+MEMBER NEAR   int     KE_EVT_USR_3     1011: 9
+MEMBER NEAR   int     KE_EVT_MAX       1013: 9
+EXTERN FAR    func    lld_evt_schedule
+                                                1016: 9
+EXTERN FAR    func    lld_evt_rx                1017: 9
+EXTERN FAR    func    lld_evt_end               1018: 9
+EXTERN FAR    func    lld_evt_time_get
+                                                1019: 9
+EXTERN FAR    func    llm_encryption_done
+                                                1022: 9
+EXTERN FAR    func    convertASCII2Hex
+                                         10
+PARAM         pointer aWord              10       14       14       15       18       18       19       21       21       22
+                                                  26       26       27       29       29       30       31       31       32
+AUTO1         char    abyte              12       15       16       16       19       20       20       22       23       23
+                                                  27       30       32       36
+EXTERN FAR    func    convertHex2ASCII_HighNibble
+                                         39
+PARAM         uchar   hexdigit           39       42
+AUTO1         char    result             40       44       46       48
+AUTO1         uchar   value              41       42       43       44       46
+EXTERN FAR    func    convertHex2ASCII_LowNibble
+                                         51
+PARAM         uchar   hexdigit           51       54
+AUTO1         char    result             52       56       58       60
+AUTO1         uchar   value              53       54       55       56       58
+              #define CFG_FULLEMB                126:13
+              #define CFG_CON                     29:14    31:14   548: 9   583: 9   630: 9   692: 9
+              #define CFG_EXMEM_NOT_PRESENT
+                                                  165:13
+              #define CFG_BLECORE_10              79:13
+              #define CFG_FW_NAK                 255: 9
+              #define CONFIG_EMBEDDED            395: 9
+              #define _USE_REL_RL78               19: 3    27: 3    48: 3   120: 3   217: 3    21: 6
+              #define USE_SAMPLE_PROFILE
+                                                   34:16    47: 8
+              #define _RWKE_API_H_       20: 9
+              #define _ARCH_H_           18: 7
+              #define _COMPILER_H_       16: 3    15:15
+              #define _USE_STD_C89       28: 3   248: 3
+              #define _USE_PADDING2      29: 3
+              #define offsetof           15: 1
+              #define NULL               17: 1
+              #define _STDDEF_H          20: 1    11:11    11:12
+              #define __EVENSIZEOF       16: 2
+              #define va_start           17: 2
+              #define va_starttop        18: 2
+              #define va_arg             19: 2
+              #define va_end             20: 2
+              #define _STDARG_H          22: 2
+              #define CHAR_BIT           13:10
+              #define CHAR_MAX           16:10
+              #define CHAR_MIN           17:10
+              #define SCHAR_MAX          22:10
+              #define SCHAR_MIN          23:10
+              #define UCHAR_MAX          24:10
+              #define INT_MAX            25:10
+              #define INT_MIN            26:10
+              #define SHRT_MAX           27:10
+              #define SHRT_MIN           28:10
+              #define UINT_MAX           29:10    39: 7
+              #define USHRT_MAX          30:10
+              #define SINT_MAX           31:10
+              #define SINT_MIN           32:10
+              #define SSHRT_MAX          33:10
+              #define SSHRT_MIN          34:10
+              #define LONG_MAX           35:10
+              #define LONG_MIN           36:10
+              #define ULONG_MAX          37:10    78: 3
+              #define _LIMITS_H          39:10
+              #define bool               86: 3   197: 9   257: 9   328: 9   352: 9   353: 9
+              #define true               87: 3
+              #define false              88: 3
+              #define _STRING_H          94: 4
+              #define EXIT_SUCCESS       14: 5
+              #define EXIT_FAILURE       15: 5
+              #define RAND_MAX           27: 5
+              #define _STDLIB_H         114: 5
+              #define _char_t_defined_
+                                         96: 3
+              #define read_sfr          124: 3
+              #define read_sfrp         125: 3
+              #define write_sfr         126: 3
+              #define write_sfrp        127: 3
+              #define read1_sfr         128: 3
+              #define write1_sfr        129: 3
+              #define write1_sfrbit     130: 3
+              #define write1_sfr2bit    131: 3
+              #define toggle1_sfr       132: 3
+              #define toggle1_sfrbit    133: 3
+              #define __sfr_function_defined__
+                                        134: 3   229: 3
+              #define __BLEIRQ          136: 3   202: 3
+              #define __IRQ             137: 3
+              #define __FIQ             138: 3
+              #define __INLINE          198: 3
+              #define __MODULE__        213: 3
+              #define codeptr           218: 3   214: 9   218: 9   331: 9   356: 9  1016: 9  1017: 9  1018: 9  1022: 9
+              #define dataptr           219: 3
+              #define __NO_INIT         256: 3
+              #define CALLT             272: 3   125: 9   173: 9   240: 9   294: 9   295: 9   296: 9
+              #define DPRTN             273: 3   240: 9   294: 9
+              #define RWBLE_CONFIG_H_    19:13
+              #define CFG_EMB            22:13   130:13
+              #define CFG_CENTRAL        23:13   182:13   182:13   201:13   232:13   506:13
+              #define CFG_ALLROLES       24:13   182:13   182:13   182:13   182:13   201:13   201:13   203:13   232:13   232:13
+                                                 506:13   506:13
+              #define CFG_DBG            25:13   102:13
+              #define CFG_PRF_PXPM       26:13   257:13
+              #define CFG_PRF_PXPR       27:13   264:13
+              #define CFG_PRF_FMPL       28:13   271:13
+              #define CFG_PRF_FMPT       29:13   278:13
+              #define CFG_PRF_HTPC       30:13   285:13
+              #define CFG_PRF_HTPT       31:13   292:13
+              #define CFG_PRF_BLPC       32:13   299:13
+              #define CFG_PRF_BLPS       33:13   306:13
+              #define CFG_PRF_HGHD       34:13   313:13
+              #define CFG_PRF_HGBH       35:13   323:13
+              #define CFG_PRF_HGRH       36:13   330:13
+              #define CFG_PRF_SCANS      37:13   337:13
+              #define CFG_PRF_SCANC      38:13   344:13
+              #define CFG_PRF_HRPC       39:13   351:13
+              #define CFG_PRF_HRPS       40:13   358:13
+              #define CFG_PRF_CSCPC      41:13   365:13
+              #define CFG_PRF_CSCPS      42:13   372:13
+              #define CFG_PRF_GLPC       43:13   379:13
+              #define CFG_PRF_GLPS       44:13   386:13
+              #define CFG_PRF_CPPC       45:13   393:13
+              #define CFG_PRF_CPPS       46:13   400:13
+              #define CFG_PRF_TIPC       47:13   407:13
+              #define CFG_PRF_TIPS       48:13   414:13
+              #define CFG_PRF_ANPC       49:13   421:13
+              #define CFG_PRF_ANPS       50:13   428:13
+              #define CFG_PRF_LNPC       51:13   435:13
+              #define CFG_PRF_LNPS       52:13   442:13
+              #define CFG_PRF_PASPC      53:13   449:13
+              #define CFG_PRF_PASPS      54:13   456:13
+              #define CFG_PRF_RSCPC      55:13   463:13
+              #define CFG_PRF_RSCPS      56:13   470:13
+              #define RW_BLE_SUPPORT     71:13
+              #define RW_DM_SUPPORT      75:13
+              #define BLE10_HW           80:13
+              #define DEEP_SLEEP         94:13
+              #define BLE_DEBUG         103:13
+              #define KE_PROFILING      105:13   191: 9   252: 9
+              #define BLE_DEBUG_MEM     115:13
+              #define BLE_DEBUG_STACK_PROF
+                                        122:13
+              #define BLE_FULLEMB       127:13   281: 9   999: 9
+              #define BLE_SPLIT         128:13   281: 9   999: 9
+              #define BLE_FULLHOST      129:13
+              #define BLE_HOST_PRESENT
+                                        131:13   187:13
+              #define BLE_EMB_PRESENT   132:13   164:13   994: 9  1006: 9
+              #define BLE_APP_PRESENT   133:13   597:13
+              #define BLE_EM_PRESENT    166:13
+              #define BLE_BROADCASTER   175:13   182:13   203:13   506:13
+              #define BLE_OBSERVER      176:13   182:13   506:13
+              #define BLE_PERIPHERAL    177:13   182:13   201:13   232:13
+              #define BLE_CENTRAL       178:13   182:13   201:13   232:13
+              #define RW_BLE_USE_CRYPT
+                                        179:13
+              #define RW_BLE_WLAN_COEX
+                                        180:13
+              #define BLE_RAM_OPTIMIZED
+                                        189:13
+              #define BLE_SDS           191:13
+              #define BLE_TEST_MODE_SUPPORT
+                                        194:13
+              #define BLE_RX_BUFFER_CNT
+                                        202:13
+              #define BLE_DUPLICATE_FILTER_MAX
+                                        210:13
+              #define BLE_ADV_REPORTS_MAX
+                                        213:13
+              #define BLE_HEAP_END      216:13
+              #define BLE_COMP_ID       219:13
+              #define BITE_VERS_1_0_3_0
+                                        223:13
+              #define BLE_UPF           226:13
+              #define MODEM2MODEM       229:13
+              #define ATT_QUALIF_MODE   238:13
+              #define BLE_Q_NOCHK_MCFM
+                                        243:13
+              #define BLE_Q_BREDR_ATT_ERR
+                                        245:13
+              #define BLE_Q_BAD_PREP_WR_RSP
+                                        247:13
+              #define BLE_Q_NOCHK_HDL   250:13
+              #define BLE_Q_TEMPM_LEN   252:13
+              #define BLE_Q_SVC_SHOW    254:13
+              #define BLE_PROX_MONITOR
+                                        258:13   477:13
+              #define BLE_PROX_REPORTER
+                                        265:13   484:13
+              #define BLE_FINDME_LOCATOR
+                                        272:13   477:13
+              #define BLE_FINDME_TARGET
+                                        279:13   484:13
+              #define BLE_HT_COLLECTOR
+                                        286:13   477:13
+              #define BLE_HT_THERMOM    293:13   484:13
+              #define BLE_BL_COLLECTOR
+                                        300:13   477:13
+              #define BLE_BL_SENSOR     307:13   484:13
+              #define BLE_HOG_HDEVICE   314:13   484:13
+              #define HID_MULTI_SERVICE
+                                        317:13
+              #define BLE_HOG_BHOST     324:13   477:13
+              #define BLE_HOG_RHOST     331:13   477:13
+              #define BLE_SCANPARAM_SERVER
+                                        338:13   484:13
+              #define BLE_SCANPARAM_CLIENT
+                                        345:13   477:13
+              #define BLE_HR_COLLECTOR
+                                        352:13   477:13
+              #define BLE_HR_SENSOR     359:13   484:13
+              #define BLE_CSC_COLLECTOR
+                                        366:13   477:13
+              #define BLE_CSC_SENSOR    373:13   484:13
+              #define BLE_GL_COLLECTOR
+                                        380:13   477:13
+              #define BLE_GL_SENSOR     387:13   484:13
+              #define BLE_CP_COLLECTOR
+                                        394:13   477:13
+              #define BLE_CP_SENSOR     401:13   484:13
+              #define BLE_TI_CLIENT     408:13
+              #define BLE_TI_SERVER     415:13
+              #define BLE_AN_CLIENT     422:13   477:13
+              #define BLE_AN_SERVER     429:13   484:13
+              #define BLE_LN_COLLECTOR
+                                        436:13   477:13
+              #define BLE_LN_SENSOR     443:13   484:13
+              #define BLE_PAS_CLIENT    450:13   477:13
+              #define BLE_PAS_SERVER    457:13   484:13
+              #define BLE_RSC_COLLECTOR
+                                        464:13   477:13
+              #define BLE_RSC_SENSOR    471:13   484:13
+              #define BLE_CLIENT_PRF    478:13   492:13
+              #define BLE_SERVER_PRF    485:13   499:13
+              #define BLE_ATTC          493:13
+              #define BLE_ATTS          500:13
+              #define BLE_ACCEL         600:13   494: 9
+              #define ATT_CHANGED_IDX   604:13
+              #define GATT_PTS          607:13
+              #define __DTM2WIRE_UART_USE__
+                                        610:13
+              #define _LL_H_             16: 6
+              #define __enable_interrupt
+                                         24: 6
+              #define __disable_interrupt
+                                         25: 6
+              #define __no_operation     26: 6
+              #define __halt             27: 6
+              #define GLOBAL_INT_START
+                                         55: 6
+              #define GLOBAL_INT_STOP    69: 6
+              #define GLOBAL_INT_DISABLE
+                                        101: 6
+              #define GLOBAL_INT_RESTORE
+                                        124: 6
+              #define WFI               139: 6
+              #define CPU_WORD_SIZE      40: 7
+              #define CPU_LE             50: 7   126: 9   137: 9
+              #define RESET_NO_ERROR     53: 7
+              #define RESET_MEM_ALLOC_FAIL
+                                         54: 7
+              #define ASSERT_ERR         90: 7
+              #define ASSERT_WARN        93: 7
+              #define LOG_OUTPUT        104: 7
+              #define _ARCH_CONFIG_H_    16:14
+              #define _PRF_SEL_H_        18:16    17:17    17:18
+              #define USE_CUSTOM_DEMO    35:16
+              #define PXPM_TABLE_SIZE    38:16
+              #define PXPR_TABLE_SIZE    39:16
+              #define FMPL_TABLE_SIZE    40:16
+              #define FMPT_TABLE_SIZE    41:16
+              #define HTPC_TABLE_SIZE    42:16
+              #define HTPT_TABLE_SIZE    43:16
+              #define BLPC_TABLE_SIZE    44:16
+              #define BLPS_TABLE_SIZE    45:16
+              #define HGHD_TABLE_SIZE    46:16
+              #define HGBH_TABLE_SIZE    47:16
+              #define HGRH_TABLE_SIZE    48:16
+              #define SPPS_TABLE_SIZE    49:16
+              #define SPPC_TABLE_SIZE    50:16
+              #define HRPC_TABLE_SIZE    51:16
+              #define HRPS_TABLE_SIZE    52:16
+              #define CSCC_TABLE_SIZE    53:16
+              #define CSCS_TABLE_SIZE    54:16
+              #define GLPC_TABLE_SIZE    55:16
+              #define GLPS_TABLE_SIZE    56:16
+              #define CPPS_TABLE_SIZE    57:16
+              #define CPPC_TABLE_SIZE    58:16
+              #define TIPS_TABLE_SIZE    59:16
+              #define TIPC_TABLE_SIZE    60:16
+              #define ANPS_TABLE_SIZE    61:16
+              #define ANPC_TABLE_SIZE    62:16
+              #define LNPS_TABLE_SIZE    63:16
+              #define LNPC_TABLE_SIZE    64:16
+              #define PASS_TABLE_SIZE    65:16
+              #define PASC_TABLE_SIZE    66:16
+              #define RSCS_TABLE_SIZE    67:16
+              #define RSCC_TABLE_SIZE    68:16
+              #define HOST_TABLE_SIZE    70:16
+              #define GATT_DB_STRUCT_SIZE
+                                         72:16
+              #define RBLE_TABLE_SIZE    82:16
+              #define _DB_HANDLE_H_      19: 8
+              #define BLE_CONN_MAX       27:14    29:14    31:14   548: 9   583: 9   630: 9   692: 9
+              #define BLE_HEAP_CONT      30:14
+              #define BLE_HEAP_HOST      50:14
+              #define BLE_DB_STRUCT_SIZE
+                                         54:14
+              #define BLE_DB_SIZE        56:14
+              #define BLE_HEAP_SIZE      64:14
+              #define userinfo_top       76:14
+              #define public_addr_ptr    78:14
+              #define devce_name_ptr     79:14
+              #define CFG_TEST_BDADDR    86:14
+              #define _KE_CONFIG_H_      31: 9
+              #define _KE_TASK_H_        32: 9
+              #define _KE_TIMER_H_       33: 9
+              #define _KE_ENV_H_         34: 9
+              #define _KE_QUEUE_H_       35: 9
+              #define _KE_EVENT_H_       36: 9
+              #define _KE_MEM_H_         37: 9
+              #define _KE_MSG_H_         38: 9
+              #define _CO_VERSION_H_     41: 9
+              #define _CO_ERROR_H_       42: 9
+              #define _CO_ENDIAN_H_      43: 9
+              #define _CO_MATH_H_        44: 9
+              #define _CO_UTILS_H_       45: 9
+              #define _CO_LIST_H_        46: 9
+              #define RWBT_SW_VERSION_MAJOR
+                                         59: 9
+              #define RWBT_SW_VERSION_MINOR
+                                         60: 9
+              #define RWBT_SW_VERSION_BUILD
+                                         61: 9
+              #define RWBT_SW_VERSION_SUB_BUILD
+                                         62: 9
+              #define CO_ERROR_NO_ERROR
+                                         65: 9
+              #define CO_ERROR_UNKNOWN_HCI_COMMAND
+                                         66: 9
+              #define CO_ERROR_UNKNOWN_CONNECTION_ID
+                                         67: 9
+              #define CO_ERROR_HARDWARE_FAILURE
+                                         68: 9
+              #define CO_ERROR_PAGE_TIMEOUT
+                                         69: 9
+              #define CO_ERROR_AUTH_FAILURE
+                                         70: 9
+              #define CO_ERROR_PIN_MISSING
+                                         71: 9
+              #define CO_ERROR_MEMORY_CAPA_EXCEED
+                                         72: 9
+              #define CO_ERROR_CON_TIMEOUT
+                                         73: 9
+              #define CO_ERROR_CON_LIMIT_EXCEED
+                                         74: 9
+              #define CO_ERROR_COMMAND_DISALLOWED
+                                         75: 9
+              #define CO_ERROR_CONN_REJ_LIMITED_RESOURCES
+                                         76: 9
+              #define CO_ERROR_CONN_REJ_SECURITY_REASONS
+                                         77: 9
+              #define CO_ERROR_CONN_REJ_UNACCEPTABLE_BDADDR
+                                         78: 9
+              #define CO_ERROR_CONN_ACCEPT_TIMEOUT_EXCEED
+                                         79: 9
+              #define CO_ERROR_UNSUPPORTED
+                                         80: 9
+              #define CO_ERROR_INVALID_HCI_PARAM
+                                         81: 9
+              #define CO_ERROR_REMOTE_USER_TERM_CON
+                                         82: 9
+              #define CO_ERROR_REMOTE_DEV_TERM_LOW_RESOURCES
+                                         83: 9
+              #define CO_ERROR_REMOTE_DEV_POWER_OFF
+                                         84: 9
+              #define CO_ERROR_CON_TERM_BY_LOCAL_HOST
+                                         85: 9
+              #define CO_ERROR_REPEATED_ATTEMPTS
+                                         86: 9
+              #define CO_ERROR_PAIRING_NOT_ALLOWED
+                                         87: 9
+              #define CO_ERROR_UNSUPPORTED_REMOTE_FEATURE
+                                         88: 9
+              #define CO_ERROR_UNSPECIFIED_ERROR
+                                         89: 9
+              #define CO_ERROR_LMP_RSP_TIMEOUT
+                                         90: 9
+              #define CO_ERROR_ENC_MODE_NOT_ACCEPT
+                                         91: 9
+              #define CO_ERROR_LINK_KEY_CANT_CHANGE
+                                         92: 9
+              #define CO_ERROR_INSTANT_PASSED
+                                         93: 9
+              #define CO_ERROR_PAIRING_WITH_UNIT_KEY_NOT_SUP
+                                         94: 9
+              #define CO_ERROR_DIFF_TRANSACTION_COLLISION
+                                         95: 9
+              #define CO_ERROR_CHANNEL_CLASS_NOT_SUP
+                                         96: 9
+              #define CO_ERROR_INSUFFICIENT_SECURITY
+                                         97: 9
+              #define CO_ERROR_PARAM_OUT_OF_MAND_RANGE
+                                         98: 9
+              #define CO_ERROR_SP_NOT_SUPPORTED_HOST
+                                         99: 9
+              #define CO_ERROR_HOST_BUSY_PAIRING
+                                        100: 9
+              #define CO_ERROR_CONTROLLER_BUSY
+                                        101: 9
+              #define CO_ERROR_UNACCEPTABLE_CONN_INT
+                                        102: 9
+              #define CO_ERROR_DIRECT_ADV_TO
+                                        103: 9
+              #define CO_ERROR_TERMINATED_MIC_FAILURE
+                                        104: 9
+              #define CO_ERROR_CONN_FAILED_TO_BE_EST
+                                        105: 9
+              #define CO_ERROR_HW_UART_OUT_OF_SYNC
+                                        107: 9
+              #define CO_ERROR_HW_MEM_ALLOC_FAIL
+                                        108: 9
+              #define CO_ERROR_HW_LLCHMAP_ERR
+                                        109: 9
+              #define CO_ERROR_HW_CSTXPTR_ERR
+                                        110: 9
+              #define CO_ERROR_HW_CSFORMAT_ERR
+                                        111: 9
+              #define CO_ERROR_HW_TXCRYPT_ERR
+                                        112: 9
+              #define CO_ERROR_HW_PKTCNTL_EMACC_ERR
+                                        113: 9
+              #define CO_ERROR_HW_TXDESC_ERR
+                                        114: 9
+              #define CO_ERROR_HW_WHITELIST_ERR
+                                        115: 9
+              #define CO_ERROR_HW_RXCRYPT_ERR
+                                        116: 9
+              #define CO_ERROR_HW_IFS_UNDERRUN
+                                        117: 9
+              #define CO_ERROR_HW_RADIO_EMACC_ERR
+                                        118: 9
+              #define CO_ERROR_HW_RF_WAKEUP_ERR
+                                        120: 9
+              #define CO_ERROR_HW_RF_INITIAL_ERR
+                                        121: 9
+              #define co_htonl          132: 9
+              #define co_htons          133: 9
+              #define co_ntohl          134: 9
+              #define co_ntohs          135: 9
+              #define co_htobl          138: 9
+              #define co_htobs          139: 9
+              #define co_btohl          140: 9
+              #define co_btohs          141: 9
+              #define CO_BIT            158: 9
+              #define CO_BIT8           159: 9
+              #define CO_BIT16          160: 9
+              #define CO_ALIGN4_HI      161: 9
+              #define CO_ALIGN4_LO      162: 9
+              #define CO_ALIGN2_HI      163: 9
+              #define CO_ALIGN2_LO      164: 9
+              #define CO_MAX            176: 9
+              #define CO_MIN            177: 9
+              #define CO_GET_INDEX      179: 9
+              #define KE_BUILD_ID       300: 9
+              #define KE_TYPE_GET       301: 9
+              #define KE_IDX_GET        302: 9
+              #define KE_MSG_ALLOC      304: 9
+              #define KE_MSG_FREE       305: 9
+              #define KE_STATE_HANDLER
+                                        318: 9
+              #define KE_STATE_HANDLER_NONE
+                                        319: 9
+              #define KE_FIRST_MSG      336: 9
+              #define MSG_T             337: 9
+              #define MSG_I             338: 9
+              #define ke_time_get       351: 9
+              #define LLM_IDX_MAX       513: 9   516: 9
+              #define LLC_IDX_MAX       545: 9   548: 9
+              #define DBG_IDX_MAX       556: 9   559: 9
+              #define L2CM_IDX_MAX      569: 9   572: 9
+              #define L2CC_IDX_MAX      580: 9   583: 9
+              #define GAP_IDX_MAX       600: 9   603: 9
+              #define GATT_IDX_MAX      612: 9   615: 9
+              #define ATTC_IDX_MAX      627: 9   630: 9
+              #define ATTM_IDX_MAX      638: 9   641: 9
+              #define ATTS_IDX_MAX      649: 9   652: 9
+              #define SVC_IDX_MAX       660: 9   663: 9
+              #define SMPM_IDX_MAX      672: 9   675: 9
+              #define SMPC_IDX_MAX      689: 9   692: 9
+              #define PROXM_STATE_MAX   702: 9   705: 9
+              #define PROXM_IDX_MAX     704: 9   707: 9
+              #define PROXR_STATE_MAX   710: 9   713: 9
+              #define PROXR_IDX_MAX     712: 9   715: 9
+              #define FINDL_STATE_MAX   718: 9   721: 9
+              #define FINDL_IDX_MAX     720: 9   723: 9
+              #define FINDT_STATE_MAX   726: 9   729: 9
+              #define FINDT_IDX_MAX     728: 9   731: 9
+              #define HTPC_STATE_MAX    734: 9   737: 9
+              #define HTPC_IDX_MAX      736: 9   739: 9
+              #define HTPT_STATE_MAX    742: 9   745: 9
+              #define HTPT_IDX_MAX      744: 9   747: 9
+              #define BLPC_STATE_MAX    750: 9   753: 9
+              #define BLPC_IDX_MAX      752: 9   755: 9
+              #define BLPS_STATE_MAX    758: 9   761: 9
+              #define BLPS_IDX_MAX      760: 9   763: 9
+              #define HGHD_STATE_MAX    766: 9   769: 9
+              #define HGHD_IDX_MAX      768: 9   771: 9
+              #define HGBH_STATE_MAX    774: 9   777: 9
+              #define HGBH_IDX_MAX      776: 9   779: 9
+              #define HGRH_STATE_MAX    782: 9   785: 9
+              #define HGRH_IDX_MAX      784: 9   787: 9
+              #define SCANS_STATE_MAX   790: 9   793: 9
+              #define SCANS_IDX_MAX     792: 9   795: 9   803: 9
+              #define SCANC_STATE_MAX   798: 9   801: 9
+              #define SCANC_IDX_MAX     800: 9
+              #define HRPC_STATE_MAX    806: 9   809: 9
+              #define HRPC_IDX_MAX      808: 9   811: 9
+              #define HRPS_STATE_MAX    814: 9   817: 9
+              #define HRPS_IDX_MAX      816: 9   819: 9
+              #define CSCPC_STATE_MAX   822: 9   825: 9
+              #define CSCPC_IDX_MAX     824: 9   827: 9
+              #define CSCPS_STATE_MAX   830: 9   833: 9
+              #define CSCPS_IDX_MAX     832: 9   835: 9
+              #define GLPC_STATE_MAX    838: 9   841: 9
+              #define GLPC_IDX_MAX      840: 9   843: 9
+              #define GLPS_STATE_MAX    846: 9   849: 9
+              #define GLPS_IDX_MAX      848: 9   851: 9
+              #define CPPC_STATE_MAX    854: 9   857: 9
+              #define CPPC_IDX_MAX      856: 9   859: 9
+              #define CPPS_STATE_MAX    862: 9   865: 9
+              #define CPPS_IDX_MAX      864: 9   867: 9
+              #define TIPC_STATE_MAX    870: 9   873: 9
+              #define TIPC_IDX_MAX      872: 9   875: 9
+              #define TIPS_STATE_MAX    878: 9   881: 9
+              #define TIPS_IDX_MAX      880: 9   883: 9
+              #define ANPC_STATE_MAX    886: 9   889: 9
+              #define ANPC_IDX_MAX      888: 9   891: 9
+              #define ANPS_STATE_MAX    894: 9   897: 9
+              #define ANPS_IDX_MAX      896: 9   899: 9
+              #define LNPC_STATE_MAX    902: 9   905: 9
+              #define LNPC_IDX_MAX      904: 9   907: 9
+              #define LNPS_STATE_MAX    910: 9   913: 9
+              #define LNPS_IDX_MAX      912: 9   915: 9
+              #define PASPC_STATE_MAX   918: 9   921: 9
+              #define PASPC_IDX_MAX     920: 9   923: 9
+              #define PASPS_STATE_MAX   926: 9   929: 9
+              #define PASPS_IDX_MAX     928: 9   931: 9
+              #define RSCPC_STATE_MAX   934: 9   937: 9
+              #define RSCPC_IDX_MAX     936: 9   939: 9
+              #define RSCPS_STATE_MAX   942: 9   945: 9
+              #define RSCPS_IDX_MAX     944: 9   947: 9
+              #define ACCEL_IDX_MAX     957: 9   960: 9
+
+
+ Target chip : R5F11AGJ
+ Device file : V1.20 
